@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0F2131;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Ériu Sports Brand Colors */
+  --color-emerald: #1A533E;
+  --color-emerald-dark: #133d2d;
+  --color-teal: #1C7C83;
+  --color-teal-dark: #155f65;
+  --color-navy: #0F2131;
+  --color-navy-light: #1a3347;
+  --color-slate: #404040;
+  --color-heather: #757575;
+  --color-celtic-white: #ffffff;
+
+  --font-sans: var(--font-lexend), sans-serif;
+}
+
+.dark {
+  --background: #0F2131;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
