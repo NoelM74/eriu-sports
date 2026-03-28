@@ -4,10 +4,10 @@ import ProductCard from "@/components/catalog/ProductCard";
 
 export default function Trending() {
   const targetIds = [
-    "652706785", // Liverpool (Red)
-    "671313157", // Man Utd (Black/Yellow/Green details)
-    "652644296", // Man City (Light Blue)
-    "670532150", // Arsenal (Yellow)
+    "liverpool-96-98-home-shirt", // Liverpool (Red)
+    "manchester-united-away-1993-95", // Man Utd (Black/Yellow/Green details)
+    "man-city-9899-home", // Man City (Light Blue)
+    "arsenal-1991-93-bruised-banana", // Arsenal (Yellow)
   ];
   
   // Create an array mapping to exactly these IDs

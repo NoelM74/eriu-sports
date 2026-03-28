@@ -15,7 +15,7 @@ export default function GAAGearCollection() {
             GAA Gear
           </h1>
           <p className="text-xl md:text-2xl font-light text-zinc-100 max-w-2xl px-4 leading-relaxed">
-            The heart and soul of Irish sports. Official GAA gear crafted for the fans and players alike.
+            The heart and soul of Irish sports. GAA gear crafted for the fans and players alike.
           </p>
         </div>
       </section>
