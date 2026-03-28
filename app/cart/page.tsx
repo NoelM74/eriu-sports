@@ -6,6 +6,7 @@ import { useCart } from "@/lib/cart-context";
 
 export default function CartPage() {
   const { items, cartTotal, removeItem, updateQty, clearCart } = useCart();
+  const shippingCost = cartTotal > 49 ? 0 : 5;
 
   if (items.length === 0) {
     return (
@@ -120,11 +121,11 @@ export default function CartPage() {
               <dt className="flex items-center text-sm text-gray-600">
                 <span>Shipping estimate</span>
               </dt>
-              <dd className="text-sm font-medium text-gray-900">€{(cartTotal > 50 ? 0 : 5).toFixed(2)}</dd>
+              <dd className="text-sm font-medium text-gray-900">€{shippingCost.toFixed(2)}</dd>
             </div>
             <div className="border-t border-gray-200 pt-4 flex items-center justify-between">
               <dt className="text-base font-bold text-[#0F2131]">Order total</dt>
-              <dd className="text-base font-bold text-[#0F2131]">€{(cartTotal + (cartTotal > 50 ? 0 : 5)).toFixed(2)}</dd>
+              <dd className="text-base font-bold text-[#0F2131]">€{(cartTotal + shippingCost).toFixed(2)}</dd>
             </div>
           </dl>
 

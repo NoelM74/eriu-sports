@@ -41,15 +41,20 @@ export default function ProductCard({ product }: ProductCardProps) {
         )}
         {/* Quick add overlay */}
         <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              addItem(product, product.sizes[0]);
-            }}
-            className="w-full bg-[#1A533E] text-white text-xs font-bold uppercase tracking-widest py-3 hover:bg-[#133d2d] transition-colors"
-          >
-            Quick Add
-          </button>
+          <div className="flex w-full h-full">
+            {product.sizes.map(size => (
+              <button
+                key={size}
+                onClick={(e) => {
+                  e.preventDefault();
+                  addItem(product, size);
+                }}
+                className="flex-1 bg-[#1A533E]/95 text-white text-xs font-bold uppercase tracking-widest py-3 hover:bg-[#133d2d] transition-colors border-r border-[#133d2d] last:border-r-0"
+              >
+                {size}
+              </button>
+            ))}
+          </div>
         </div>
       </Link>
 

@@ -13,7 +13,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
       {/* Promo bar */}
       <div className="bg-[#0F2131] text-white text-center text-[10px] py-2 tracking-[0.25em] uppercase font-bold">
-        FREE SHIPPING ON ORDERS OVER €50
+        FREE SHIPPING ON ORDERS OVER €49
       </div>
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">

@@ -63,7 +63,7 @@ export default function CheckoutPage() {
     );
   }
 
-  const shippingCost = cartTotal > 50 ? 0 : 5;
+  const shippingCost = cartTotal > 49 ? 0 : 5;
   const orderTotal = cartTotal + shippingCost;
 
   return (
