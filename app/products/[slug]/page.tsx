@@ -5,10 +5,12 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getProductBySlug } from '@/lib/products';
 import { ShoppingCart, Heart, ShieldCheck, Truck } from 'lucide-react';
+import { useCart } from '@/lib/cart-context';
 
 export default function ProductDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const product = getProductBySlug(slug);
+  const { addItem } = useCart();
   
   const [selectedSize, setSelectedSize] = useState<string>('');
   const [activeImage, setActiveImage] = useState<number>(0);
@@ -17,7 +19,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
     notFound();
   }
 
-  const sizes = ['S', 'M', 'L', 'XL'];
+  const sizes = product.sizes || ['S', 'M', 'L', 'XL'];
 
   return (
     <div className="bg-white min-h-screen text-[var(--color-foreground)]">
@@ -33,7 +35,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                   <button
                     key={idx}
                     className={`relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-zinc-100 text-sm font-medium uppercase text-gray-900 overflow-hidden outline-none ${
-                        activeImage === idx ? 'ring-2 ring-[var(--color-eriu-emerald)] ring-offset-2' : ''
+                        activeImage === idx ? 'ring-2 ring-[var(--color-emerald)] ring-offset-2' : ''
                     }`}
                     onClick={() => setActiveImage(idx)}
                   >
@@ -49,7 +51,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
             </div>
 
             {/* Main Image */}
-            <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden group shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white">
+            <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden group shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white relative">
               <Image
                 src={product.images[activeImage] || '/placeholder.png'}
                 alt={product.title}
@@ -57,6 +59,12 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                 height={1000}
                 className="h-full w-full object-contain object-center sm:rounded-lg"
               />
+              {/* Badge */}
+              {product.badge && (
+                <div className="absolute top-4 left-4 bg-red-100 text-red-800 text-xs px-3 py-1.5 uppercase font-bold tracking-wider rounded-sm shadow-sm">
+                  {product.badge}
+                </div>
+              )}
             </div>
           </div>
 
@@ -71,14 +79,11 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
               <p className="text-3xl font-bold tracking-tight text-gray-900">
                 €{product.price.toFixed(2)}
               </p>
-              <div className="bg-red-100 text-red-800 text-xs px-2 py-1 uppercase font-bold tracking-wider rounded-sm animate-pulse">
-                Selling Fast
-              </div>
             </div>
 
             <div className="mt-8">
               <h3 className="sr-only">Description</h3>
-              <div className="space-y-4 text-base text-[var(--color-heather-grey)] leading-relaxed font-light whitespace-pre-line">
+              <div className="space-y-4 text-base text-[var(--color-heather)] leading-relaxed font-light whitespace-pre-line">
                 {product.description}
               </div>
             </div>
@@ -99,7 +104,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                     onClick={() => setSelectedSize(size)}
                     className={`group relative flex items-center justify-center rounded-sm border px-4 py-4 text-sm font-medium uppercase transition-colors sm:flex-1 ${
                       selectedSize === size
-                        ? 'bg-[var(--color-atlantic-teal)] border-transparent text-white shadow-xl transform scale-105'
+                        ? 'bg-[var(--color-teal)] border-transparent text-white shadow-xl transform scale-105'
                         : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
                     }`}
                   >
@@ -119,10 +124,16 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                 <button
                   type="button"
                   disabled={!selectedSize}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (selectedSize) {
+                      addItem(product, selectedSize);
+                    }
+                  }}
                   className={`flex max-w-xs flex-1 items-center justify-center rounded-sm border border-transparent px-8 py-4 text-base font-extrabold uppercase text-white shadow-lg transition-all ${
                     !selectedSize 
                       ? 'bg-zinc-400 cursor-not-allowed' 
-                      : 'bg-[var(--color-eriu-emerald)] hover:bg-[var(--color-midnight-navy)] hover:scale-105 hover:shadow-2xl'
+                      : 'bg-[var(--color-emerald)] hover:bg-[var(--color-navy)] hover:scale-105 hover:shadow-2xl'
                   } sm:w-full`}
                 >
                   {selectedSize ? `Add to Bag - €${product.price.toFixed(2)}` : 'Select Size'}
@@ -139,12 +150,12 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
 
             {/* Trust Signals */}
             <div className="mt-8 border-t border-zinc-200 pt-8 flex flex-col gap-4">
-              <div className="flex items-center text-sm text-[var(--color-heather-grey)]">
-                <Truck className="h-5 w-5 mr-3 text-[var(--color-atlantic-teal)]" />
+              <div className="flex items-center text-sm text-[var(--color-heather)]">
+                <Truck className="h-5 w-5 mr-3 text-[var(--color-teal)]" />
                 <span>Ready to dispatch. Fast delivery worldwide.</span>
               </div>
-              <div className="flex items-center text-sm text-[var(--color-heather-grey)]">
-                <ShieldCheck className="h-5 w-5 mr-3 text-[var(--color-atlantic-teal)]" />
+              <div className="flex items-center text-sm text-[var(--color-heather)]">
+                <ShieldCheck className="h-5 w-5 mr-3 text-[var(--color-teal)]" />
                 <span>Authenticity Guaranteed. Quality verified retro classics.</span>
               </div>
             </div>
