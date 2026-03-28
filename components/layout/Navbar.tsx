@@ -18,12 +18,9 @@ export default function Navbar() {
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <img
-            src="/images/logo.svg"
-            alt="Ériu Sports"
-            className="h-12 w-auto object-contain"
-          />
+        <Link href="/" className="flex items-center gap-1 shrink-0 font-[family-name:var(--font-lexend)]">
+          <span className="text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
+          <span className="text-3xl font-extrabold tracking-tight text-[#000000]">SPORTS</span>
         </Link>
         
         {/* Desktop nav links */}

@@ -1,18 +1,15 @@
-<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Accent Line -->
-  <rect x="25" y="85" width="220" height="4" fill="#1C7C83" rx="2" />
+<svg width="600" height="160" viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap');
+      .eriu { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 84px; fill: #007A44; letter-spacing: -1px; }
+      .sports { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 84px; fill: #000000; letter-spacing: -1px; }
+      .tagline { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 20px; fill: #000000; letter-spacing: 1.5px; }
+    </style>
+  </defs>
   
-  <!-- "ÉRIU" Text -->
-  <text x="25" y="70" font-family="'Inter', 'Lexend', system-ui, sans-serif" font-weight="800" font-size="64" fill="#0F2131" letter-spacing="-0.02em">
-    ÉRIU
-  </text>
+  <text x="30" y="90" class="eriu">ÉRIU</text>
+  <text x="235" y="90" class="sports">SPORTS</text>
   
-  <!-- "SPORTS" Text -->
-  <text x="180" y="70" font-family="'Inter', 'Lexend', system-ui, sans-serif" font-weight="300" font-size="64" fill="#0F2131" letter-spacing="-0.02em">
-    SPORTS
-  </text>
-  
-  <!-- Shamrock symbol/Badge minimal -->
-  <circle cx="360" cy="50" r="24" fill="#1C7C83" opacity="0.1" />
-  <path d="M360 38C356 38 353 41 353 45C353 47 354.5 49 356 50.5C354.5 52 353 54 353 56C353 60 356 63 360 63C364 63 367 60 367 56C367 54 365.5 52 364 50.5C365.5 49 367 47 367 45C367 41 364 38 360 38ZM359 62V70" stroke="#1C7C83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text x="35" y="135" class="tagline">DESIGNED IN IRELAND • BUILT FOR PERFORMANCE</text>
 </svg>

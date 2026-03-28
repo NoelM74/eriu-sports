@@ -8,11 +8,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-          <img
-            src="/images/logo.svg"
-            alt="Ériu Sports"
-            className="h-9 w-auto object-contain mb-4 brightness-0 invert"
-          />
+          <Link href="/" className="flex items-center gap-1 shrink-0 font-[family-name:var(--font-lexend)] mb-4">
+            <span className="text-2xl font-bold tracking-tighter text-white">ÉRIU</span>
+            <span className="text-2xl font-extrabold tracking-tight text-white/90">SPORTS</span>
+          </Link>
           <p className="text-[#757575] text-sm leading-relaxed max-w-xs">
             Premium GAA sports merchandise and performance gear. Designed in
             Ireland, built for performance.
