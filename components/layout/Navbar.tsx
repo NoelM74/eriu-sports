@@ -41,6 +41,9 @@ export default function Navbar() {
                 <Link href="/collections/ireland-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
                   Ireland Classics
                 </Link>
+                <Link href="/collections/premier-league-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
+                  Premier League Classics
+                </Link>
               </div>
             </div>
           </div>
@@ -97,6 +100,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-gray-100 ml-1">
               <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-gray-500">All Jerseys</Link>
               <Link href="/collections/ireland-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Ireland Classics</Link>
+              <Link href="/collections/premier-league-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Premier League Classics</Link>
             </div>
           </div>
           <Link href="/catalog?category=Footballs" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Footballs</Link>
