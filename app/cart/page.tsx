@@ -129,16 +129,12 @@ export default function CartPage() {
           </dl>
 
           <div className="mt-6">
-            <button
-              onClick={() => {
-                alert("Checkout functionality not yet implemented!");
-                clearCart();
-              }}
-              type="button"
-              className="w-full bg-[#0F2131] border border-transparent rounded-none shadow-sm py-4 px-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-[#0A7A44] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#0A7A44]"
+            <Link
+              href="/checkout"
+              className="w-full inline-flex justify-center items-center bg-[#0F2131] border border-transparent rounded-none shadow-sm py-4 px-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-[#0A7A44] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#0A7A44]"
             >
               Checkout
-            </button>
+            </Link>
           </div>
         </section>
       </div>
