@@ -30,13 +30,13 @@ export default function Navbar() {
           </Link>
           <div className="relative group py-6">
             <Link href="/catalog?category=Jerseys" className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
-              Jerseys
+              Soccer Jerseys
               <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7"/></svg>
             </Link>
             <div className="absolute top-full left-0 w-56 bg-white border border-[#0F2131]/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="flex flex-col">
                 <Link href="/catalog?category=Jerseys" className="px-5 py-3.5 border-b border-gray-50 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  All Jerseys
+                  All Soccer Jerseys
                 </Link>
                 <Link href="/collections/ireland-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
                   Ireland Classics
@@ -49,9 +49,6 @@ export default function Navbar() {
           </div>
           <Link href="/collections/gaa-gear" className="hover:text-[#1C7C83] transition-colors">
             GAA Gear
-          </Link>
-          <Link href="/catalog?category=Socks" className="hover:text-[#1C7C83] transition-colors">
-            Socks
           </Link>
           <Link href="/catalog?category=Accessories" className="hover:text-[#1C7C83] transition-colors">
             Accessories
@@ -96,15 +93,14 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 flex flex-col gap-4 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
           <Link href="/catalog" onClick={() => setMenuOpen(false)} className="pt-4 hover:text-[#1C7C83]">Shop All</Link>
           <div className="flex flex-col gap-4">
-            <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Jerseys</Link>
+            <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Soccer Jerseys</Link>
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-gray-100 ml-1">
-              <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-gray-500">All Jerseys</Link>
+              <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-gray-500">All Soccer Jerseys</Link>
               <Link href="/collections/ireland-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Ireland Classics</Link>
               <Link href="/collections/premier-league-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Premier League Classics</Link>
             </div>
           </div>
           <Link href="/collections/gaa-gear" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">GAA Gear</Link>
-          <Link href="/catalog?category=Socks" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Socks</Link>
           <Link href="/catalog?category=Accessories" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Accessories</Link>
         </div>
       )}
