@@ -47,8 +47,8 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <Link href="/catalog?category=Footballs" className="hover:text-[#1C7C83] transition-colors">
-            Footballs
+          <Link href="/collections/gaa-gear" className="hover:text-[#1C7C83] transition-colors">
+            GAA Gear
           </Link>
           <Link href="/catalog?category=Socks" className="hover:text-[#1C7C83] transition-colors">
             Socks
@@ -103,7 +103,7 @@ export default function Navbar() {
               <Link href="/collections/premier-league-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Premier League Classics</Link>
             </div>
           </div>
-          <Link href="/catalog?category=Footballs" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Footballs</Link>
+          <Link href="/collections/gaa-gear" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">GAA Gear</Link>
           <Link href="/catalog?category=Socks" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Socks</Link>
           <Link href="/catalog?category=Accessories" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Accessories</Link>
         </div>
