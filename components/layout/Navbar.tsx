@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <img
-            src="https://eriusports.com/cdn/shop/files/Eriu.png?v=1733479493"
+            src="/images/logo.svg"
             alt="Ériu Sports"
             className="h-12 w-auto object-contain"
           />

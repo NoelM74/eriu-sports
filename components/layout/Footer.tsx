@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-1 sm:col-span-2 lg:col-span-1">
           <img
-            src="https://eriusports.com/cdn/shop/files/Eriu.png?v=1733479493"
+            src="/images/logo.svg"
             alt="Ériu Sports"
             className="h-9 w-auto object-contain mb-4 brightness-0 invert"
           />
