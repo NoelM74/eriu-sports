@@ -3,10 +3,7 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useState } from "react";
 
-const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
-if (!paypalClientId) {
-  throw new Error("NEXT_PUBLIC_PAYPAL_CLIENT_ID is not set.");
-}
+const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ?? "";
 
 export default function PayPalPaymentForm({
   amount,
