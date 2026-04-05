@@ -1,0 +1,34 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "eriu-sports",
+  "compatibility_date": "2025-04-05",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      // Self-reference service binding required for OpenNext caching
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "eriu-sports"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "eriu-sports-opennext-cache"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  // Local development environment variables
+  // For production secrets use: wrangler secret put STRIPE_SECRET_KEY etc.
+  "vars": {
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
+    "NEXT_PUBLIC_PAYPAL_CLIENT_ID": "",
+    "PAYPAL_API_URL": "https://api-m.sandbox.paypal.com"
+  }
+}
