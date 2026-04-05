@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import Stripe from "stripe";
 
 export const runtime = "edge";
 
@@ -13,11 +12,6 @@ export async function POST(req: Request) {
       );
     }
 
-    const stripe = new Stripe(key, {
-      // Required for Edge / Cloudflare Workers — uses fetch instead of Node http
-      httpClient: Stripe.createFetchHttpClient(),
-    });
-
     const body = await req.json();
     const amount = Number(body.amount);
 
@@ -25,13 +19,29 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid amount." }, { status: 400 });
     }
 
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: Math.round(amount * 100),
-      currency: "eur",
-      automatic_payment_methods: { enabled: true },
+    const response = await fetch("https://api.stripe.com/v1/payment_intents", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${key}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({
+        amount: String(Math.round(amount * 100)),
+        currency: "eur",
+        "automatic_payment_methods[enabled]": "true",
+      }),
     });
 
-    return NextResponse.json({ clientSecret: paymentIntent.client_secret });
+    const data = await response.json();
+
+    if (!response.ok) {
+      return NextResponse.json(
+        { error: data.error?.message || "Stripe payment failed." },
+        { status: response.status }
+      );
+    }
+
+    return NextResponse.json({ clientSecret: data.client_secret });
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Internal server error.";

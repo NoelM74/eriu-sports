@@ -40,6 +40,7 @@
   "vars": {
     "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_live_51THYQbL6ixPkwbaKV6d1hbKOJh0oEEeVRQMt3eZa3Kf0rNtjmsOy8nqhA2JFRWHuGvYv1zqO7Cm7wgyVNSf2dfTo00GiYxaJnq",
     "NEXT_PUBLIC_PAYPAL_CLIENT_ID": "AZatLxoP6jeDlBe8P5Y8z0Iw3dSj4sS1LZ6Um3bg03QRK2HnWybVUkhxpWbhqj47qrfA_i4vwczv1uHp",
+    "PAYPAL_CLIENT_ID": "AZatLxoP6jeDlBe8P5Y8z0Iw3dSj4sS1LZ6Um3bg03QRK2HnWybVUkhxpWbhqj47qrfA_i4vwczv1uHp",
     "PAYPAL_API_URL": "https://api-m.paypal.com"
   }
 }
