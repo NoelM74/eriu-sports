@@ -9,7 +9,7 @@ export async function generateAccessToken(): Promise<string> {
     throw new Error("PayPal credentials are not configured.");
   }
 
-  const auth = Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
+  const auth = btoa(`${clientId}:${clientSecret}`);
 
   const response = await fetch(`${PAYPAL_API}/v1/oauth2/token`, {
     method: "POST",

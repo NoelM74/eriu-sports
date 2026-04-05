@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.18.0",
     "@paypal/checkout-server-sdk": "^1.0.3",
     "@paypal/react-paypal-js": "^9.1.0",
     "@stripe/react-stripe-js": "^6.1.0",
