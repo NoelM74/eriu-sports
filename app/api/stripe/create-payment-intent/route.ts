@@ -4,17 +4,25 @@ import Stripe from "stripe";
 export const runtime = "edge";
 
 export async function POST(req: Request) {
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
-
   try {
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!key) {
+      return NextResponse.json(
+        { error: "Stripe is not configured." },
+        { status: 500 }
+      );
+    }
+
+    const stripe = new Stripe(key, {
+      // Required for Edge / Cloudflare Workers — uses fetch instead of Node http
+      httpClient: Stripe.createFetchHttpClient(),
+    });
+
     const body = await req.json();
     const amount = Number(body.amount);
 
     if (!Number.isFinite(amount) || amount <= 0 || amount > 10000) {
-      return NextResponse.json(
-        { error: "Invalid amount." },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Invalid amount." }, { status: 400 });
     }
 
     const paymentIntent = await stripe.paymentIntents.create({
@@ -25,7 +33,8 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ clientSecret: paymentIntent.client_secret });
   } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Internal server error.";
+    const message =
+      error instanceof Error ? error.message : "Internal server error.";
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
