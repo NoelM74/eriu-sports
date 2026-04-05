@@ -4,6 +4,8 @@ import {
   createContext,
   useContext,
   useReducer,
+  useEffect,
+  useState,
   ReactNode,
 } from "react";
 import { Product } from "./products";
@@ -22,7 +24,8 @@ type CartAction =
   | { type: "ADD_ITEM"; product: Product; size: string }
   | { type: "REMOVE_ITEM"; productId: string; size: string }
   | { type: "UPDATE_QTY"; productId: string; size: string; quantity: number }
-  | { type: "CLEAR_CART" };
+  | { type: "CLEAR_CART" }
+  | { type: "HYDRATE"; items: CartItem[] };
 
 function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
@@ -66,6 +69,8 @@ function cartReducer(state: CartState, action: CartAction): CartState {
       };
     case "CLEAR_CART":
       return { items: [] };
+    case "HYDRATE":
+      return { items: action.items };
     default:
       return state;
   }
@@ -83,14 +88,44 @@ interface CartContextValue {
 
 const CartContext = createContext<CartContextValue | null>(null);
 
+const CART_STORAGE_KEY = "eriu_cart";
+
 export function CartProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(cartReducer, { items: [] });
+  const [hydrated, setHydrated] = useState(false);
+
+  // Load cart from localStorage on first mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(CART_STORAGE_KEY);
+      if (saved) {
+        const items = JSON.parse(saved) as CartItem[];
+        if (Array.isArray(items)) {
+          dispatch({ type: "HYDRATE", items });
+        }
+      }
+    } catch {
+      // Ignore parse errors — start with empty cart
+    }
+    setHydrated(true);
+  }, []);
+
+  // Persist cart to localStorage whenever it changes (after hydration)
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(state.items));
+    } catch {
+      // Ignore write errors (e.g. private browsing quota)
+    }
+  }, [state.items, hydrated]);
 
   const cartCount = state.items.reduce((sum, i) => sum + i.quantity, 0);
-  const cartTotal = state.items.reduce(
-    (sum, i) => sum + i.product.price * i.quantity,
-    0
-  );
+  // Round to 2 decimal places to avoid floating-point drift
+  const cartTotal =
+    Math.round(
+      state.items.reduce((sum, i) => sum + i.product.price * i.quantity, 0) * 100
+    ) / 100;
 
   return (
     <CartContext.Provider

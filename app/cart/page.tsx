@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/lib/cart-context";
+import { calculateShipping } from "@/lib/shipping";
 
 export default function CartPage() {
   const { items, cartTotal, removeItem, updateQty, clearCart } = useCart();
-  const shippingCost = cartTotal > 49 ? 0 : 5;
+  const shippingCost = calculateShipping(cartTotal);
 
   if (items.length === 0) {
     return (
@@ -121,7 +122,13 @@ export default function CartPage() {
               <dt className="flex items-center text-sm text-gray-600">
                 <span>Shipping estimate</span>
               </dt>
-              <dd className="text-sm font-medium text-gray-900">€{shippingCost.toFixed(2)}</dd>
+              <dd className="text-sm font-medium text-gray-900">
+                {shippingCost === 0 ? (
+                  <span className="text-[#0A7A44] font-bold uppercase tracking-wider text-xs">Free</span>
+                ) : (
+                  `€${shippingCost.toFixed(2)}`
+                )}
+              </dd>
             </div>
             <div className="border-t border-gray-200 pt-4 flex items-center justify-between">
               <dt className="text-base font-bold text-[#0F2131]">Order total</dt>
