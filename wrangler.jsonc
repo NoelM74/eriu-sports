@@ -2,33 +2,44 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
   "name": "eriu-sports",
-  "compatibility_date": "2025-04-05",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "compatibility_date": "2026-04-05",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "routes": [
+    {
+      "pattern": "eriusports.com",
+      "zone_name": "eriusports.com",
+      "custom_domain": true
+    }
+  ],
   "services": [
     {
       // Self-reference service binding required for OpenNext caching
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "eriu-sports"
+      "service": "eriu-sports",
+      "environment": "production"
     }
   ],
-  "r2_buckets": [
-    {
-      "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "eriu-sports-opennext-cache"
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true
     }
-  ],
+  },
   "images": {
     "binding": "IMAGES"
   },
   // Local development environment variables
   // For production secrets use: wrangler secret put STRIPE_SECRET_KEY etc.
   "vars": {
-    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "",
-    "NEXT_PUBLIC_PAYPAL_CLIENT_ID": "",
-    "PAYPAL_API_URL": "https://api-m.sandbox.paypal.com"
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_live_51THYQbL6ixPkwbaKV6d1hbKOJh0oEEeVRQMt3eZa3Kf0rNtjmsOy8nqhA2JFRWHuGvYv1zqO7Cm7wgyVNSf2dfTo00GiYxaJnq",
+    "NEXT_PUBLIC_PAYPAL_CLIENT_ID": "AZatLxoP6jeDlBe8P5Y8z0Iw3dSj4sS1LZ6Um3bg03QRK2HnWybVUkhxpWbhqj47qrfA_i4vwczv1uHp",
+    "PAYPAL_API_URL": "https://api-m.paypal.com"
   }
 }
