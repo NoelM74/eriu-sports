@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { getProductsByCollection } from '@/lib/products';
 import ProductCard from '@/components/catalog/ProductCard';
 
