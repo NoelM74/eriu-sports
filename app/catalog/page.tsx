@@ -1,12 +1,13 @@
-import { products, getProductsByCategory } from '@/lib/products';
+import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/catalog/ProductCard';
 
-export default function CatalogPage({
+export default async function CatalogPage({
   searchParams,
 }: {
-  searchParams: { category?: string };
+  searchParams: Promise<{ category?: string }>;
 }) {
-  const category = searchParams.category || 'All';
+  const { category: rawCategory } = await searchParams;
+  const category = rawCategory || 'All';
   const displayProducts = getProductsByCategory(category === 'Jerseys' ? 'Jerseys' : 'All');
 
   return (

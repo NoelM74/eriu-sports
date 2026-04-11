@@ -50,7 +50,7 @@ export default function Hero() {
             <div className="relative w-full aspect-[4/5] max-w-md mx-auto">
               <Image
                 src="/images/ireland-classics/677983042-1.jpg"
-                alt="Ireland 1992 94 Home Retro Jersey"
+                alt="Ireland 1992-94 Home Retro Jersey"
                 fill
                 className="object-contain object-center scale-110 drop-shadow-2xl"
                 priority
