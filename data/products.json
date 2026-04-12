@@ -660,5 +660,20 @@
     "collection": "GAA Gear",
     "currency": "EUR",
     "name": "Tyrone Away Jersey"
+  },
+  {
+    "id": "900000001",
+    "title": "Liverpool 1993-95 Home Jersey",
+    "slug": "liverpool-1993-95-home-jersey",
+    "description": "Liverpool 1993-95 Home Jersey - an early 90s Anfield classic from the Adidas Equipment era. Iconic red base with signature white and green contrast trim on collar and cuffs, the classic Carlsberg sponsor, and the famous Liverpool FC crest. 1994-95 League Cup winning season. Worn by Rush, Fowler, McManaman and Redknapp during one of Liverpool's most memorable early Premier League campaigns.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000001-1.jpg",
+      "/images/premier-league-classics/900000001-2.jpg",
+      "/images/premier-league-classics/900000001-3.jpg",
+      "/images/premier-league-classics/900000001-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
   }
 ]
