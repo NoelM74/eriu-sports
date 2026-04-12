@@ -660,5 +660,95 @@
     "collection": "GAA Gear",
     "currency": "EUR",
     "name": "Tyrone Away Jersey"
+  },
+  {
+    "id": "900000001",
+    "title": "Liverpool 1993-95 Home Jersey",
+    "slug": "liverpool-1993-95-home-jersey",
+    "description": "Liverpool 1993-95 Home Jersey - an early 90s Anfield classic from the Adidas Equipment era. Iconic red base with signature white and green contrast trim on collar and cuffs, the classic Carlsberg sponsor, and the famous Liverpool FC crest. 1994-95 League Cup winning season. Worn by Rush, Fowler, McManaman and Redknapp during one of Liverpool's most memorable early Premier League campaigns.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000001-1.jpg",
+      "/images/premier-league-classics/900000001-2.jpg",
+      "/images/premier-league-classics/900000001-3.jpg",
+      "/images/premier-league-classics/900000001-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
+  },
+  {
+    "id": "900000002",
+    "title": "Manchester United 2012-13 Away Jersey",
+    "slug": "manchester-united-2012-13-away-jersey",
+    "description": "Manchester United 2012-13 Away Jersey - Fergie's Final Title. 2012/13 Premier League Champions. Clean white base with iconic red and black Henley collar, subtle gingham pattern detail on the sleeve cuffs, embroidered Manchester United crest and Nike swoosh, classic AON sponsor and \"Forged in Industry, Striving for Glory\" inner neck tribute. Van Persie, Rooney, Giggs, Scholes era. The shirt worn during Sir Alex Ferguson's legendary final season at Old Trafford.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000002-1.jpg",
+      "/images/premier-league-classics/900000002-2.jpg",
+      "/images/premier-league-classics/900000002-3.jpg",
+      "/images/premier-league-classics/900000002-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
+  },
+  {
+    "id": "900000003",
+    "title": "Arsenal 1992-94 Home Jersey",
+    "slug": "arsenal-1992-94-home-jersey",
+    "description": "Arsenal 1992-94 Home Jersey - The Cup Double. 1992/93 FA Cup & League Cup Winners. Iconic red body with classic white sleeves, featuring the vintage JVC sponsor era, classic wrap-around white collar with red and navy trim, Arsenal shield crest and Adidas Equipment logo. Wright, Adams, Merson, Parlour era. One of the most beloved home designs of the early 90s.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000003-1.jpg",
+      "/images/premier-league-classics/900000003-2.jpg",
+      "/images/premier-league-classics/900000003-3.jpg",
+      "/images/premier-league-classics/900000003-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
+  },
+  {
+    "id": "900000004",
+    "title": "Tipperary 2026 Home Jersey",
+    "slug": "tipperary-2026-home-jersey",
+    "description": "Tipperary 2026 Home Jersey - The Premier County. 2026 Championship Season. Classic blue base with the iconic yellow central hoop, official O'Neills branding with Tipperary GAA crest, features the current Clover sponsor. Modern era Championship kit. Up the Premier!",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000004-1.jpg",
+      "/images/gaa-gear/900000004-2.jpg",
+      "/images/gaa-gear/900000004-3.jpg",
+      "/images/gaa-gear/900000004-4.jpg"
+    ],
+    "collection": "GAA Gear",
+    "currency": "EUR"
+  },
+  {
+    "id": "900000005",
+    "title": "Wexford 2026 Home Jersey",
+    "slug": "wexford-2026-home-jersey",
+    "description": "Wexford 2026 Home Jersey - The Model County. 2026 Championship Season. Iconic purple and gold Model County design, modern O'Neills template with the signature gold chest panel, features the 'le croí agus lámh' (with heart and hand) motto detail, official Zurich sponsor and embroidered Loch Garman crest. Current 2026 Championship era. Up the Yellowbellies!",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000005-1.jpg",
+      "/images/gaa-gear/900000005-2.jpg",
+      "/images/gaa-gear/900000005-3.jpg",
+      "/images/gaa-gear/900000005-4.jpg"
+    ],
+    "collection": "GAA Gear",
+    "currency": "EUR"
+  },
+  {
+    "id": "900000006",
+    "title": "Dublin GAA 2026 Home Jersey",
+    "slug": "dublin-gaa-2026-home-jersey",
+    "description": "Dublin GAA 2026 Home Jersey - The Boys in Blue. 2026 Championship Season. Classic sky blue base featuring a stylish navy pinstripe design, bold navy contrast on the sleeves and upper chest panel, Dublin GAA (Áth Cliath) crest, features the Staycity Aparthotels sponsor. Current 2026 Championship era. Up the Dubs!",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000006-1.jpg",
+      "/images/gaa-gear/900000006-2.jpg",
+      "/images/gaa-gear/900000006-3.jpg",
+      "/images/gaa-gear/900000006-4.jpg"
+    ],
+    "collection": "GAA Gear",
+    "currency": "EUR"
   }
 ]
