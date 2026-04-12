@@ -675,5 +675,20 @@
     ],
     "collection": "Premier League Classics",
     "currency": "EUR"
+  },
+  {
+    "id": "900000002",
+    "title": "Manchester United 2012-13 Away Jersey",
+    "slug": "manchester-united-2012-13-away-jersey",
+    "description": "Manchester United 2012-13 Away Jersey - Fergie's Final Title. 2012/13 Premier League Champions. Clean white base with iconic red and black Henley collar, subtle gingham pattern detail on the sleeve cuffs, embroidered Manchester United crest and Nike swoosh, classic AON sponsor and \"Forged in Industry, Striving for Glory\" inner neck tribute. Van Persie, Rooney, Giggs, Scholes era. The shirt worn during Sir Alex Ferguson's legendary final season at Old Trafford.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000002-1.jpg",
+      "/images/premier-league-classics/900000002-2.jpg",
+      "/images/premier-league-classics/900000002-3.jpg",
+      "/images/premier-league-classics/900000002-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
   }
 ]
