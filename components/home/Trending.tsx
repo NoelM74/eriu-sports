@@ -6,7 +6,7 @@ export default function Trending() {
   const targetIds = [
     "liverpool-96-98-home-shirt", // Liverpool (Red)
     "manchester-united-away-1993-95", // Man Utd (Black/Yellow/Green details)
-    "man-city-9899-home", // Man City (Light Blue)
+    "man-city-98-99-home", // Man City (Light Blue)
     "arsenal-1991-93-bruised-banana", // Arsenal (Yellow)
   ];
   
