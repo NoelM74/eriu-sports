@@ -690,5 +690,20 @@
     ],
     "collection": "Premier League Classics",
     "currency": "EUR"
+  },
+  {
+    "id": "900000003",
+    "title": "Arsenal 1992-94 Home Jersey",
+    "slug": "arsenal-1992-94-home-jersey",
+    "description": "Arsenal 1992-94 Home Jersey - The Cup Double. 1992/93 FA Cup & League Cup Winners. Iconic red body with classic white sleeves, featuring the vintage JVC sponsor era, classic wrap-around white collar with red and navy trim, Arsenal shield crest and Adidas Equipment logo. Wright, Adams, Merson, Parlour era. One of the most beloved home designs of the early 90s.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/900000003-1.jpg",
+      "/images/premier-league-classics/900000003-2.jpg",
+      "/images/premier-league-classics/900000003-3.jpg",
+      "/images/premier-league-classics/900000003-4.jpg"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR"
   }
 ]
