@@ -59,7 +59,8 @@ export function getProductById(id: string): Product | undefined {
 }
 
 export function getProductsByCollection(collection: string): Product[] {
-  return products.filter(p => p.collection === collection);
+  // Newest listings (added at the end of products.json) appear first
+  return products.filter(p => p.collection === collection).reverse();
 }
 
 export function getProductsByCategory(category: string): Product[] {

@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { products } from "@/lib/products";
+import { getProductsByCollection } from "@/lib/products";
 import ProductCard from "@/components/catalog/ProductCard";
 
 export default function LatestArrivals() {
-  const latest = products.slice(0, 4);
+  const latest = getProductsByCollection("Ireland Classics").slice(0, 4);
 
   return (
     <section id="latest-arrivals" className="bg-white py-16">
