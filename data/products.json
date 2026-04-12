@@ -720,5 +720,20 @@
     ],
     "collection": "GAA Gear",
     "currency": "EUR"
+  },
+  {
+    "id": "900000005",
+    "title": "Wexford 2026 Home Jersey",
+    "slug": "wexford-2026-home-jersey",
+    "description": "Wexford 2026 Home Jersey - The Model County. 2026 Championship Season. Iconic purple and gold Model County design, modern O'Neills template with the signature gold chest panel, features the 'le croí agus lámh' (with heart and hand) motto detail, official Zurich sponsor and embroidered Loch Garman crest. Current 2026 Championship era. Up the Yellowbellies!",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000005-1.jpg",
+      "/images/gaa-gear/900000005-2.jpg",
+      "/images/gaa-gear/900000005-3.jpg",
+      "/images/gaa-gear/900000005-4.jpg"
+    ],
+    "collection": "GAA Gear",
+    "currency": "EUR"
   }
 ]
