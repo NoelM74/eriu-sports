@@ -735,5 +735,20 @@
     ],
     "collection": "GAA Gear",
     "currency": "EUR"
+  },
+  {
+    "id": "900000006",
+    "title": "Dublin GAA 2026 Home Jersey",
+    "slug": "dublin-gaa-2026-home-jersey",
+    "description": "Dublin GAA 2026 Home Jersey - The Boys in Blue. 2026 Championship Season. Classic sky blue base featuring a stylish navy pinstripe design, bold navy contrast on the sleeves and upper chest panel, Dublin GAA (Áth Cliath) crest, features the Staycity Aparthotels sponsor. Current 2026 Championship era. Up the Dubs!",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000006-1.jpg",
+      "/images/gaa-gear/900000006-2.jpg",
+      "/images/gaa-gear/900000006-3.jpg",
+      "/images/gaa-gear/900000006-4.jpg"
+    ],
+    "collection": "GAA Gear",
+    "currency": "EUR"
   }
 ]
