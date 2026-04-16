@@ -37,7 +37,7 @@ const euCountries = [
  * Uses Cloudflare header (cf-ipcountry) or defaults to EU.
  */
 export function getGeoConfig(countryCode?: string): GeoConfig {
-    if (!countryCode) return countryToLocale.EU;
+    if (!countryCode) return countryToLocale.IE;
 
     if (countryToLocale[countryCode]) {
         return countryToLocale[countryCode];
