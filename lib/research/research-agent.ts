@@ -29,34 +29,31 @@ export class JerseyResearchAgent {
         // Simulate verified research with official sources
         const result: ResearchResult = {
             id: 'cork-city-1988-89',
-            title: 'The Cork City 1988/89 Home Jersey: A Tribute to Early League of Ireland Years',
+            title: 'Cork City 1988/89: Guinness, Turner\'s Cross, and a First Season in the Top Flight',
             slug: 'cork-city-1988-89',
-            summary: 'The 1988/89 Cork City home jersey, featuring the iconic Guinness sponsorship, represents a pivotal season in the club\'s history as they established themselves in the League of Ireland. This jersey was worn during the club\'s first full season after their 1988 promotion to the top flight.',
-            content: `The Cork City 1988/89 home jersey is more than just a piece of football kit - it's a tangible connection to a defining season in the club's history.`,
+            summary: 'Cork City had just won promotion to the League of Ireland Premier Division when this jersey was made. The Guinness logo across the chest. A debut season against Shamrock Rovers, Bohemians, and Shelbourne. This shirt is from the year it all started.',
+            content: `Cork City\'s first season in the League of Ireland Premier Division. This is that jersey.`,
             featuredImage: '/images/blog/cork-fai-cup-finalists-1989.webp',
             sections: [
                 {
-                    heading: 'A Defining Season in Cork City History',
+                    heading: 'Promotion and a First Season at the Top',
                     paragraphs: [
-                        'The Cork City 1988/89 home jersey is more than just a piece of football kit - it\'s a tangible connection to a defining season in the club\'s history. This was Cork City\'s first full season in the League of Ireland Premier Division after achieving promotion in 1988, marking their arrival at the highest level of Irish football.',
+                        'Cork City had won promotion to the League of Ireland Premier Division in 1988, and this jersey was worn in their first full season at that level. For a club built on support from the Leeside community, it was a significant moment.',
+                        'The Premier Division brought matches against the established sides — Shamrock Rovers, Bohemians, Shelbourne. Cork City held their own.',
                     ],
                 },
                 {
-                    heading: 'Design & Features',
+                    heading: 'The Kit',
                     paragraphs: [
-                        'The jersey features the classic Guinness sponsorship in large, bold lettering across the chest - a partnership that defined an era for both the club and the brewery. The design is simple and effective: a clean white base with the club\'s traditional blue and white stripes on the collar and sleeves, and the iconic Cork City crest featuring the city\'s coat of arms.',
+                        'The home jersey was white with green and black detailing — Cork City\'s traditional colours. Guinness sat across the chest as shirt sponsor, as they did for many League of Ireland clubs during this period.',
+                        'It is an honest, workmanlike kit. No dramatic redesign, no gimmicks. Just the crest, the sponsor, and the colours.',
                     ],
                 },
                 {
-                    heading: 'The 1988/89 Season',
+                    heading: 'The Players',
                     paragraphs: [
-                        'This jersey was worn during the 1988/89 season when Cork City established themselves in the top flight. The team finished 7th in their first Premier Division season, with memorable performances against traditional powerhouses like Shamrock Rovers and Bohemians. The jersey was worn by players like Billy O\'Callaghan, who would go on to become a club legend, and goalkeeper Dave Barry, who made crucial saves throughout the season.',
-                    ],
-                },
-                {
-                    heading: 'Legacy',
-                    paragraphs: [
-                        'The 1988/89 season was significant for Cork City as it marked their transition from a regional club to a national force. The Guinness sponsorship wasn\'t just financial support - it represented a partnership between two Irish institutions that shared values of tradition, quality, and community. This jersey is a tribute to that era and the players who wore it with pride during Cork City\'s formative years in the League of Ireland Premier Division.',
+                        'Dave Barry was one of the key figures in Cork City during this era — a midfielder who also represented the Republic of Ireland at senior level. A proper Cork man, well capable at this level.',
+                        'The side was built around players who knew the city, knew the club, and had earned their place in the Premier Division.',
                     ],
                 },
             ],
@@ -154,34 +151,31 @@ export class JerseyResearchAgent {
 
         const result: ResearchResult = {
             id: 'liverpool-1995-96-carlsberg',
-            title: 'Liverpool\'s 1995/96 Carlsberg Away Kit: The White and Teal Shirt of Mid-90s Anfield',
+            title: 'Liverpool 1995/96: The White and Teal Away Shirt',
             slug: 'liverpool-1995-96-carlsberg',
-            summary: 'The Liverpool 1995/96 Carlsberg away jersey, with its distinctive white base and teal green trim, was worn during a memorable mid-90s season featuring the talents of Robbie Fowler, Steve McManaman, and Jamie Redknapp.',
-            content: `The Liverpool 1995/96 Carlsberg away jersey is a true classic of the mid-90s football era.`,
+            summary: 'Liverpool finished third in the Premier League and reached the FA Cup final in 1995/96. This is the away kit from that season — white with teal green Adidas trim, Carlsberg across the chest.',
+            content: `One of the cleaner away kits of the 1990s.`,
             featuredImage: '/images/blog/liverpool-95-96-carlsberg-away-kit.webp',
             sections: [
                 {
-                    heading: 'A Mid-90s Classic',
+                    heading: 'The Kit',
                     paragraphs: [
-                        'The Liverpool 1995/96 Carlsberg away jersey is a true classic of the mid-90s football era. Featuring a clean white base with striking teal green trim on the collar, sleeves, and three stripes on the shoulders, this jersey was worn during one of Liverpool\'s most memorable pre-Premier League era seasons.',
+                        'White base, teal trim on the collar and sleeves, three Adidas stripes across the shoulders. Carlsberg on the chest. It\'s a clean design that sits apart from the more garish away kits of the same era — no abstract print, no strange colour gradients.',
+                        'Liverpool wore it across the Premier League, FA Cup, and League Cup throughout the 1995/96 campaign.',
                     ],
                 },
                 {
                     heading: 'The 1995/96 Season',
                     paragraphs: [
-                        'The jersey was introduced at the start of the 1995/96 season, replacing the previous season\'s away kit. It was worn during a season that saw Liverpool finish 3rd in the Premier League, their highest finish since 1991, and reach the FA Cup final where they lost to Manchester United.',
+                        'Liverpool finished third in the Premier League and reached the FA Cup final, where they lost to Manchester United. Robbie Fowler was at his peak scoring form that season. Steve McManaman ran the right side. Jamie Redknapp anchored midfield.',
+                        'Roy Evans\' side was good enough to compete, not quite good enough to win. But the football was worth watching.',
                     ],
                 },
                 {
-                    heading: 'Iconic Players',
+                    heading: 'Why It Holds Up',
                     paragraphs: [
-                        'This jersey was worn by some of Liverpool\'s most iconic players of the era: Robbie Fowler, who scored 25 league goals that season; Steve McManaman, who was in his prime and would go on to win the Champions League with Real Madrid; and Jamie Redknapp, who established himself as one of England\'s most talented midfielders.',
-                    ],
-                },
-                {
-                    heading: 'Legacy',
-                    paragraphs: [
-                        'The Carlsberg sponsorship was a significant partnership for Liverpool, and the jersey design reflected the brand\'s identity with its sophisticated white and teal color scheme. This jersey represents a transitional period for Liverpool - a bridge between the early 90s and the Champions League era, worn by players who would go on to achieve legendary status at both Anfield and beyond.',
+                        'Kit design in the mid-90s could go badly wrong — and often did. This one didn\'t. The teal and white combination aged better than most of its contemporaries, and the players who wore it are well remembered.',
+                        'It\'s a shirt from a specific moment in Liverpool\'s history. That\'s usually enough.',
                     ],
                 },
             ],
