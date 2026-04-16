@@ -31,22 +31,22 @@ function deriveCategory(collection: string): string {
 }
 
 /**
- * Derive badge from product attributes instead of array index.
+ * Derive badge from product attributes.
+ * Conservative: only badge explicitly new or limited products.
+ * Most products should have no badge.
  */
-function deriveBadge(p: any, index: number): string | null {
-  // Check title/description for hints
+function deriveBadge(p: any): string | null {
   const title = (p.title || '').toLowerCase();
   const desc = (p.description || '').toLowerCase();
 
-  if (title.includes('new') || desc.includes('new release')) return "New Arrival";
-  if (title.includes('limited') || desc.includes('limited edition')) return "Limited Edition";
-  if (desc.includes('iconic') || desc.includes('legendary')) return "Classic";
+  // Only mark as Limited Edition if explicitly stated
+  if (desc.includes('limited edition') || title.includes('limited edition')) return 'Limited Edition';
 
-  // Fallback: assign based on position for demo purposes
-  if (index % 5 === 0) return "New Arrival";
-  if (index % 7 === 0) return "Selling Fast";
-  if (index % 11 === 0) return "Classic";
+  // Only mark as New Arrival if it's a recent year release
+  if (title.includes('2026') || title.includes('2025')) return 'New Arrival';
+  if (desc.includes('new arrival') || desc.includes('new release')) return 'New Arrival';
 
+  // No badge for classic/retro products — they speak for themselves
   return null;
 }
 
@@ -63,7 +63,7 @@ export const products: Product[] = (productsData as any[]).map((p, index) => {
     price: p.price,
     images: p.images,
     sizes: ["S", "M", "L", "XL"],
-    badge: deriveBadge(p, index),
+    badge: deriveBadge(p),
     description: p.description,
     specs: [
       "Classic retro design",

@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { getProductBySlug, products } from '@/lib/products';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
+import ImageGallery from './ImageGallery';
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -127,41 +127,11 @@ export default async function ProductDetail({ params }: ProductPageProps) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
 
           {/* Image Gallery */}
-          <div className="flex flex-col-reverse">
-            {/* Image selector */}
-            <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
-              <div className="grid grid-cols-4 gap-4">
-                {product.images.map((image, idx) => (
-                  <Image
-                    key={idx}
-                    src={image}
-                    alt={`${product.title} view ${idx + 1}`}
-                    width={200}
-                    height={200}
-                    className="object-cover rounded-md cursor-pointer hover:ring-2 hover:ring-[var(--color-emerald)] transition-all aspect-square"
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Main Image */}
-            <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden group shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white relative">
-              <Image
-                src={product.images[0] || '/placeholder.png'}
-                alt={product.title}
-                width={800}
-                height={1000}
-                className="h-full w-full object-contain object-center sm:rounded-lg"
-                priority
-              />
-              {/* Badge */}
-              {product.badge && (
-                <div className="absolute top-4 left-4 bg-red-100 text-red-800 text-xs px-3 py-1.5 uppercase font-bold tracking-wider rounded-sm shadow-sm">
-                  {product.badge}
-                </div>
-              )}
-            </div>
-          </div>
+          <ImageGallery
+            images={product.images}
+            title={product.title}
+            badge={product.badge}
+          />
 
           {/* Product Info */}
           <div className="mt-10 px-4 sm:px-0 lg:mt-0">

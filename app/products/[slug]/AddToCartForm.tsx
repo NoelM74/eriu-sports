@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { ShoppingCart, Heart } from 'lucide-react';
+import { ShoppingCart, Heart, X } from 'lucide-react';
 import { useCart } from '@/lib/cart-context';
 import { useCurrency } from '@/lib/currency-context';
 import { Product } from '@/lib/products';
@@ -18,6 +18,7 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
     const [quantity, setQuantity] = useState<number>(1);
     const [showToast, setShowToast] = useState(false);
     const [addedToWishlist, setAddedToWishlist] = useState(false);
+    const [showSizeChart, setShowSizeChart] = useState(false);
 
     const convertedPrice = convertPrice(product.price);
     const totalPrice = convertedPrice * quantity;
@@ -58,12 +59,58 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                 </div>
             )}
 
+            {/* Size Chart Modal */}
+            {showSizeChart && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" onClick={() => setShowSizeChart(false)}>
+                    <div className="bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative" onClick={(e) => e.stopPropagation()}>
+                        <button
+                            type="button"
+                            onClick={() => setShowSizeChart(false)}
+                            className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 transition-colors"
+                            aria-label="Close size chart"
+                        >
+                            <X className="w-5 h-5" />
+                        </button>
+                        <h2 className="text-lg font-bold uppercase tracking-widest text-gray-900 mb-4">Size Guide</h2>
+                        <p className="text-xs text-gray-500 mb-4">Measurements in centimetres (cm). Measure over a light shirt for best fit.</p>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm text-center border-collapse">
+                                <thead>
+                                    <tr className="bg-gray-100 text-gray-700 uppercase text-xs tracking-wider">
+                                        <th className="py-2 px-3 border border-gray-200 text-left">Size</th>
+                                        <th className="py-2 px-3 border border-gray-200">Chest</th>
+                                        <th className="py-2 px-3 border border-gray-200">Length</th>
+                                        <th className="py-2 px-3 border border-gray-200">Shoulder</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-700">
+                                    {[
+                                        { size: 'S',  chest: '86–91',  length: '68', shoulder: '42' },
+                                        { size: 'M',  chest: '93–98',  length: '71', shoulder: '44' },
+                                        { size: 'L',  chest: '100–106', length: '74', shoulder: '46' },
+                                        { size: 'XL', chest: '108–114', length: '77', shoulder: '48' },
+                                    ].map((row) => (
+                                        <tr key={row.size} className="even:bg-gray-50">
+                                            <td className="py-2 px-3 border border-gray-200 font-bold text-left">{row.size}</td>
+                                            <td className="py-2 px-3 border border-gray-200">{row.chest}</td>
+                                            <td className="py-2 px-3 border border-gray-200">{row.length}</td>
+                                            <td className="py-2 px-3 border border-gray-200">{row.shoulder}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-xs text-gray-400 mt-4">If you&apos;re between sizes, we recommend sizing up for a more relaxed fit.</p>
+                    </div>
+                </div>
+            )}
+
             <form onSubmit={handleAddToCart} className="mt-10">
                 <div className="mt-6 flex items-center justify-between">
                     <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-widest">
                         Size
                     </h3>
-                    <button type="button" className="text-sm text-[var(--color-teal)] underline hover:text-[var(--color-emerald)] transition-colors">
+                    <button type="button" onClick={() => setShowSizeChart(true)} className="text-sm text-[var(--color-teal)] underline hover:text-[var(--color-emerald)] transition-colors">
                         Size Guide
                     </button>
                 </div>
