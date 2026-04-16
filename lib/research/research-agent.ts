@@ -33,7 +33,7 @@ export class JerseyResearchAgent {
             slug: 'cork-city-1988-89',
             summary: 'The 1988/89 Cork City home jersey, featuring the iconic Guinness sponsorship, represents a pivotal season in the club\'s history as they established themselves in the League of Ireland. This jersey was worn during the club\'s first full season after their 1988 promotion to the top flight.',
             content: `The Cork City 1988/89 home jersey is more than just a piece of football kit - it's a tangible connection to a defining season in the club's history.`,
-            featuredImage: '/images/blog/cork-city-1988-89.jpg',
+            featuredImage: '/images/blog/cork-fai-cup-finalists-1989.webp',
             sections: [
                 {
                     heading: 'A Defining Season in Cork City History',
@@ -93,52 +93,50 @@ export class JerseyResearchAgent {
 
         const result: ResearchResult = {
             id: 'ireland-1990-italia-90',
-            title: 'Ireland\'s 1990 Italia 90 World Cup Campaign: The Green Jersey That Captured a Nation\'s Imagination',
+            title: 'Ireland at Italia 90: The Green Jersey That Stopped a Nation',
             slug: 'ireland-1990-italia-90',
-            summary: 'The iconic green Ireland jersey worn at Italia 90 represented more than football - it symbolized national unity and pride during Ireland\'s most successful World Cup campaign, culminating in the unforgettable quarter-final against Italy at the Stadio San Paolo.',
-            content: `The Ireland 1990 Italia 90 World Cup jersey is arguably the most iconic piece of Irish sporting apparel in history.`,
-            featuredImage: '/images/blog/ireland-1990-italia-90.jpg',
+            summary: 'The green jersey worn at Italia 90 is the most recognised piece of Irish sporting kit. In the summer of 1990, Jack Charlton\'s side reached the World Cup quarter-finals for the first time — and the nation has never forgotten it.',
+            content: `Italia 90 didn't just change Irish football. It changed the country.`,
+            featuredImage: '/images/blog/ireland-england-italia-90-goal.webp',
             sections: [
                 {
-                    heading: 'A Nation United',
+                    heading: 'The Tournament',
                     paragraphs: [
-                        'The Ireland 1990 Italia 90 World Cup jersey is arguably the most iconic piece of Irish sporting apparel in history. The vibrant green shirt, featuring the classic Opel sponsorship and Adidas trefoil branding, was worn during a tournament that captured the hearts of a nation and introduced Irish football to the world stage.',
+                        'Ireland opened against England in Cagliari on 11 June 1990. Kevin Sheedy equalised in the 73rd minute to secure a 1-1 draw — a moment that brought the country to a standstill. A 0-0 with Egypt and a 1-1 draw with the Netherlands put Ireland through to the knockout stage as group runners-up.',
+                        'In the round of 16 against Romania, neither side could be separated after 120 minutes. Packie Bonner made a crucial penalty save to keep Ireland alive, and David O\'Leary stepped up to score the winning spot-kick — sending Ireland into the quarter-finals for the first time in the country\'s history.',
+                        'Italy ended the run in Rome. Salvatore Schillaci\'s goal settled a tight quarter-final 1-0. But by then, something had already changed.',
                     ],
                 },
                 {
-                    heading: 'Historic Matches',
+                    heading: 'The Jersey',
                     paragraphs: [
-                        'This jersey was worn for the first time in the group stage match against England at the Stadio San Nicola in Bari, where Ireland secured a dramatic 1-1 draw thanks to a late Tony Cascarino goal. But it was in the quarter-final against Italy at the Stadio San Paolo in Naples that the jersey became legendary - when Ray Houghton scored the famous goal against Italy and Ireland reached the World Cup quarter-finals for the first time in their history.',
+                        'The jersey itself is instantly recognisable — deep emerald green, Opel across the chest, Adidas three white stripes on the sleeves. The FAI crest sits on the left breast. A clean design that has never dated.',
+                        'Worn by Paul McGrath, Ray Houghton, John Aldridge, Niall Quinn, and Packie Bonner — the shirt became inseparable from the players who wore it.',
                     ],
                 },
                 {
-                    heading: 'Design & Features',
+                    heading: 'Why It Still Matters',
                     paragraphs: [
-                        'The jersey design was simple yet powerful: a rich emerald green base with the traditional three white stripes on the sleeves and a tricolour collar trim. The Opel sponsor logo was prominently displayed across the chest, and the FAI crest featured the iconic shamrock and harp.',
-                    ],
-                },
-                {
-                    heading: 'Legacy',
-                    paragraphs: [
-                        'What made this jersey special was not just its design, but the players who wore it: Paul McGrath, Roy Keane, Ray Houghton, John Aldridge, and Packie Bonner. These players became national heroes, and the green jersey became a symbol of national pride and unity. This jersey represents a golden era of Irish football and continues to be celebrated as one of the most significant pieces of Irish sporting heritage.',
+                        'For a generation of Irish people, this jersey is a memory. Pub screens, tricolours out of windows, the whole country watching together. The 1990 campaign drew Ireland to football in a way that nothing had before.',
+                        'That is what makes this jersey worth owning. It is not just a shirt. It is 1990.',
                     ],
                 },
             ],
             sources: [
                 'FAI Official World Cup Archive',
-                'Irish World Cup 1990 Official Media Guide',
-                'The Irish Times World Cup 1990 Coverage',
+                'The Irish Times — Italia 90 coverage',
+                'RTÉ Sport historical records',
             ],
             verification: {
                 verified: true,
                 verificationDate: new Date().toISOString().split('T')[0],
-                verifiedBy: 'Ériu Sports Historical Research Team',
+                verifiedBy: 'Ériu Sports',
             },
             metadata: {
                 jerseyId: '678616545',
                 season: '1990',
                 club: 'Republic of Ireland',
-                historicalContext: 'Ireland\'s first World Cup finals appearance in 1990, culminating in a historic quarter-final appearance',
+                historicalContext: 'Ireland reached the World Cup quarter-finals for the first time, losing 1-0 to Italy in Rome.',
             },
         };
 
@@ -160,7 +158,7 @@ export class JerseyResearchAgent {
             slug: 'liverpool-1995-96-carlsberg',
             summary: 'The Liverpool 1995/96 Carlsberg away jersey, with its distinctive white base and teal green trim, was worn during a memorable mid-90s season featuring the talents of Robbie Fowler, Steve McManaman, and Jamie Redknapp.',
             content: `The Liverpool 1995/96 Carlsberg away jersey is a true classic of the mid-90s football era.`,
-            featuredImage: '/images/blog/liverpool-1995-96-carlsberg.jpg',
+            featuredImage: '/images/blog/liverpool-95-96-carlsberg-away-kit.webp',
             sections: [
                 {
                     heading: 'A Mid-90s Classic',
