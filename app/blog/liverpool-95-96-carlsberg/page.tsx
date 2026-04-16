@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { JerseyResearchAgent } from '@/lib/research';
+import { JerseyResearchAgent, ContentSection } from '@/lib/research';
 
 export const metadata: Metadata = {
     title: 'Liverpool\'s 1995/96 Carlsberg Away Kit | Ériu Sports Blog',
@@ -50,10 +50,10 @@ export default async function Liverpool9596CarlsbergPage() {
                         {research.content}
                     </p>
 
-                    {research.sections.map((section, index) => (
+                    {research.sections.map((section: ContentSection, index: number) => (
                         <section key={index} className="mb-8">
                             <h2 className="text-2xl font-bold text-[#0F2131] mb-4">{section.heading}</h2>
-                            {section.paragraphs.map((paragraph, paraIndex) => (
+                            {section.paragraphs.map((paragraph: string, paraIndex: number) => (
                                 <p key={paraIndex} className="text-gray-700 mb-4">
                                     {paragraph}
                                 </p>
