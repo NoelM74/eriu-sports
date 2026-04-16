@@ -29,8 +29,12 @@ export default function BlogPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center">
-                            <span className="text-gray-500">Cork City 1988/89</span>
+                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                            <img
+                                src="/images/blog/cork-fai-cup-finalists-1989.webp"
+                                alt="Cork City 1988/89"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <div className="p-6">
                             <h2 className="text-xl font-bold text-[#0F2131] mb-2">
@@ -54,8 +58,12 @@ export default function BlogPage() {
                     </article>
 
                     <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center">
-                            <span className="text-gray-500">Ireland 1990 Italia 90</span>
+                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                            <img
+                                src="/images/blog/ireland-england-italia-90-goal.webp"
+                                alt="Ireland 1990 Italia 90"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <div className="p-6">
                             <h2 className="text-xl font-bold text-[#0F2131] mb-2">
@@ -79,8 +87,12 @@ export default function BlogPage() {
                     </article>
 
                     <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center">
-                            <span className="text-gray-500">Liverpool 95-96 Carlsberg</span>
+                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+                            <img
+                                src="/images/blog/liverpool-95-96-carlsberg-away-kit.webp"
+                                alt="Liverpool 95-96 Carlsberg"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                         <div className="p-6">
                             <h2 className="text-xl font-bold text-[#0F2131] mb-2">

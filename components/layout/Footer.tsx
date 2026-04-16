@@ -37,8 +37,6 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-[#757575]">
             <li><Link href="/catalog" className="hover:text-white transition-colors">All Products</Link></li>
             <li><Link href="/catalog?category=Jerseys" className="hover:text-white transition-colors">Jerseys</Link></li>
-            <li><Link href="/catalog?category=Footballs" className="hover:text-white transition-colors">Footballs</Link></li>
-            <li><Link href="/catalog?category=Socks" className="hover:text-white transition-colors">Socks</Link></li>
             <li><Link href="/catalog?category=Accessories" className="hover:text-white transition-colors">Accessories</Link></li>
           </ul>
         </div>
@@ -61,7 +59,6 @@ export default function Footer() {
             <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link></li>
             <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Club Partnerships</a></li>
           </ul>
         </div>

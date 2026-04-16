@@ -1,9 +1,16 @@
+export interface ContentSection {
+    heading?: string;
+    paragraphs: string[];
+}
+
 export interface ResearchResult {
     id: string;
     title: string;
     slug: string;
     summary: string;
     content: string;
+    sections: ContentSection[];
+    featuredImage: string;
     sources: string[];
     verification: {
         verified: boolean;
