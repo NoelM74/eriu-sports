@@ -47,10 +47,10 @@ export default function Footer() {
         <div>
           <h3 className="text-xs font-bold uppercase tracking-widest text-[#1C7C83] mb-4">Support</h3>
           <ul className="space-y-3 text-sm text-[#757575]">
-            <li><a href="#" className="hover:text-white transition-colors">Shipping & Returns</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Size Guide</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+            <li><Link href="/shipping-returns" className="hover:text-white transition-colors">Shipping & Returns</Link></li>
+            <li><Link href="/size-guide" className="hover:text-white transition-colors">Size Guide</Link></li>
+            <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+            <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
           </ul>
         </div>
 

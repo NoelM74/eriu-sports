@@ -28,6 +28,9 @@ export default function Navbar() {
           <Link href="/catalog" className="hover:text-[#1C7C83] transition-colors">
             Shop
           </Link>
+          <Link href="/blog" className="hover:text-[#1C7C83] transition-colors">
+            Stories
+          </Link>
           <div className="relative group py-6">
             <Link href="/catalog?category=Jerseys" className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
               Soccer Jerseys
@@ -95,6 +98,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 flex flex-col gap-4 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
           <Link href="/catalog" onClick={() => setMenuOpen(false)} className="pt-4 hover:text-[#1C7C83]">Shop All</Link>
+          <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Stories</Link>
           <div className="flex flex-col gap-4">
             <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Soccer Jerseys</Link>
             <div className="flex flex-col gap-4 pl-4 border-l-2 border-gray-100 ml-1">
