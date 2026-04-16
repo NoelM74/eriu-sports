@@ -11,7 +11,7 @@ export function calculateShipping(
   const config = getGeoConfig(countryCode);
 
   return {
-    cost: subtotal > config.freeShippingThreshold ? 0 : config.shippingRate,
+    cost: subtotal >= config.freeShippingThreshold ? 0 : config.shippingRate,
     currency: config.currency,
     symbol: config.symbol,
     freeThreshold: config.freeShippingThreshold,

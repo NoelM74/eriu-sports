@@ -71,7 +71,7 @@ export const products: Product[] = (productsData as any[]).map((p, index) => {
       "Embroidered crest",
       "Designed in Ireland"
     ],
-    rating: 4.8 + (index % 10) * 0.02,
+    rating: Math.round((4.8 + (index % 10) * 0.02) * 10) / 10,
     reviewCount: 42 + index * 17,
     slug: p.slug,
     currency: p.currency || "EUR",
