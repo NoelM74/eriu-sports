@@ -1,19 +1,59 @@
-"use client";
-
-import { use, useState } from 'react';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getProductBySlug } from '@/lib/products';
-import { ShoppingCart, Heart, ShieldCheck, Truck } from 'lucide-react';
-import { useCart } from '@/lib/cart-context';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Metadata } from 'next';
+import { getProductBySlug, products } from '@/lib/products';
+import AddToCartForm from './AddToCartForm';
+import PriceDisplay from './PriceDisplay';
 
-export default function ProductDetail({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+interface ProductPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+  const { slug } = await params;
   const product = getProductBySlug(slug);
-  const { addItem } = useCart();
-  
-  const [selectedSize, setSelectedSize] = useState<string>('');
-  const [activeImage, setActiveImage] = useState<number>(0);
+
+  if (!product) {
+    return {
+      title: 'Product Not Found | Ériu Sports',
+    };
+  }
+
+  const imageUrl = product.images[0] ? `https://eriusports.com${product.images[0]}` : undefined;
+
+  return {
+    title: `${product.title} | Ériu Sports`,
+    description: product.description,
+    keywords: [product.title, product.category, 'retro jersey', 'vintage football shirt', 'Ériu Sports'],
+    openGraph: {
+      title: `${product.title} | Ériu Sports`,
+      description: product.description,
+      type: 'website',
+      url: `/products/${product.slug}`,
+      images: imageUrl ? [{ url: imageUrl, width: 800, height: 1000, alt: product.title }] : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.title} | Ériu Sports`,
+      description: product.description,
+      images: imageUrl ? [imageUrl] : undefined,
+    },
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
+  };
+}
+
+export default async function ProductDetail({ params }: ProductPageProps) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();
@@ -21,31 +61,85 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
 
   const sizes = product.sizes || ['S', 'M', 'L', 'XL'];
 
+  // JSON-LD structured data
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description,
+    image: product.images.map((img) => `https://eriusports.com${img}`),
+    brand: {
+      '@type': 'Brand',
+      name: 'Ériu Sports',
+    },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: product.currency,
+      lowPrice: product.price,
+      highPrice: product.price,
+      offerCount: sizes.length,
+      availability: 'https://schema.org/InStock',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: product.rating,
+      reviewCount: product.reviewCount,
+    },
+    sku: product.originalId,
+  };
+
   return (
     <div className="bg-white min-h-screen text-[var(--color-foreground)]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <ol className="flex items-center text-sm text-gray-500">
+          <li>
+            <Link href="/" className="hover:text-[var(--color-teal)] transition-colors">
+              Home
+            </Link>
+          </li>
+          <li className="mx-2">/</li>
+          <li>
+            <Link href="/catalog" className="hover:text-[var(--color-teal)] transition-colors">
+              Shop
+            </Link>
+          </li>
+          <li className="mx-2">/</li>
+          <li>
+            <Link href={`/catalog?category=${product.category}`} className="hover:text-[var(--color-teal)] transition-colors">
+              {product.category}
+            </Link>
+          </li>
+          <li className="mx-2">/</li>
+          <li aria-current="page" className="text-gray-900 font-medium truncate max-w-[200px]">
+            {product.title}
+          </li>
+        </ol>
+      </nav>
+
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
-          
+
           {/* Image Gallery */}
           <div className="flex flex-col-reverse">
             {/* Image selector */}
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
               <div className="grid grid-cols-4 gap-4">
                 {product.images.map((image, idx) => (
-                  <button
+                  <Image
                     key={idx}
-                    className={`relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-zinc-100 text-sm font-medium uppercase text-gray-900 overflow-hidden outline-none ${
-                        activeImage === idx ? 'ring-2 ring-[var(--color-emerald)] ring-offset-2' : ''
-                    }`}
-                    onClick={() => setActiveImage(idx)}
-                  >
-                    <Image
-                      src={image}
-                      alt={`${product.title} view ${idx + 1}`}
-                      fill
-                      className="object-cover object-center"
-                    />
-                  </button>
+                    src={image}
+                    alt={`${product.title} view ${idx + 1}`}
+                    width={200}
+                    height={200}
+                    className="object-cover rounded-md cursor-pointer hover:ring-2 hover:ring-[var(--color-emerald)] transition-all aspect-square"
+                  />
                 ))}
               </div>
             </div>
@@ -53,11 +147,12 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
             {/* Main Image */}
             <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden group shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white relative">
               <Image
-                src={product.images[activeImage] || '/placeholder.png'}
+                src={product.images[0] || '/placeholder.png'}
                 alt={product.title}
                 width={800}
                 height={1000}
                 className="h-full w-full object-contain object-center sm:rounded-lg"
+                priority
               />
               {/* Badge */}
               {product.badge && (
@@ -73,90 +168,63 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 uppercase">
               {product.title}
             </h1>
-            
+
             <div className="mt-4 flex items-center gap-4">
-              <h2 className="sr-only">Product information</h2>
-              <p className="text-3xl font-bold tracking-tight text-gray-900">
-                €{product.price.toFixed(2)}
-              </p>
+              <PriceDisplay eurPrice={product.price} />
+              {/* Rating */}
+              <div className="flex items-center gap-1">
+                <span className="text-yellow-400 text-lg">★</span>
+                <span className="text-sm text-gray-600">{product.rating}</span>
+                <span className="text-sm text-gray-400">({product.reviewCount} reviews)</span>
+              </div>
             </div>
 
             <div className="mt-8">
-              <h3 className="sr-only">Description</h3>
-              <div className="space-y-4 text-base text-[var(--color-heather)] leading-relaxed font-light whitespace-pre-line">
+              <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-3">
+                Description
+              </h2>
+              <div className="space-y-4 text-base text-gray-600 leading-relaxed font-light whitespace-pre-line">
                 {product.description}
               </div>
             </div>
 
-            {/* Size Selector */}
-            <form className="mt-10">
-              <div className="mt-6 flex items-center justify-between">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-widest">
-                  Size
-                </h3>
-              </div>
-
-              <div className="mt-4 grid grid-cols-4 gap-4">
-                {sizes.map((size) => (
-                  <button
-                    key={size}
-                    type="button"
-                    onClick={() => setSelectedSize(size)}
-                    className={`group relative flex items-center justify-center rounded-sm border px-4 py-4 text-sm font-medium uppercase transition-colors sm:flex-1 ${
-                      selectedSize === size
-                        ? 'bg-[var(--color-teal)] border-transparent text-white shadow-xl transform scale-105'
-                        : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
-                    }`}
-                  >
-                    {size}
-                  </button>
+            {/* Specs */}
+            <div className="mt-8 border-t border-gray-200 pt-8">
+              <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-4">
+                Product Details
+              </h2>
+              <ul className="space-y-2 text-sm text-gray-600">
+                {product.specs.map((spec, idx) => (
+                  <li key={idx} className="flex items-center gap-2">
+                    <span className="text-[var(--color-teal)]">✓</span>
+                    {spec}
+                  </li>
                 ))}
-              </div>
-              
-              {!selectedSize && (
-                <p className="text-sm text-red-500 font-medium mt-3 italic">
-                  * Please select a size
-                </p>
-              )}
+              </ul>
+            </div>
 
-              {/* Add to Cart CTA */}
-              <div className="mt-10 flex border-t border-zinc-200 pt-8 gap-x-4">
-                <button
-                  type="button"
-                  disabled={!selectedSize}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (selectedSize) {
-                      addItem(product, selectedSize);
-                    }
-                  }}
-                  className={`flex max-w-xs flex-1 items-center justify-center rounded-sm border border-transparent px-8 py-4 text-base font-extrabold uppercase text-white shadow-lg transition-all ${
-                    !selectedSize 
-                      ? 'bg-zinc-400 cursor-not-allowed' 
-                      : 'bg-[var(--color-emerald)] hover:bg-[var(--color-navy)] hover:scale-105 hover:shadow-2xl'
-                  } sm:w-full`}
-                >
-                  {selectedSize ? `Add to Bag - €${product.price.toFixed(2)}` : 'Select Size'}
-                </button>
-                <button
-                  type="button"
-                  className="ml-4 flex items-center justify-center rounded-sm px-4 py-3 text-zinc-400 hover:text-red-500 hover:bg-red-50 transition-colors"
-                >
-                  <Heart className="h-8 w-8 flex-shrink-0" aria-hidden="true" />
-                  <span className="sr-only">Add to favorites</span>
-                </button>
-              </div>
-            </form>
+            {/* Size Selector & Add to Cart (Client Component) */}
+            <AddToCartForm product={product} sizes={sizes} />
 
             {/* Trust Signals */}
-            <div className="mt-8 border-t border-zinc-200 pt-8 flex flex-col gap-4">
-              <div className="flex items-center text-sm text-[var(--color-heather)]">
-                <Truck className="h-5 w-5 mr-3 text-[var(--color-teal)]" />
-                <span>Ready to dispatch. Fast delivery worldwide.</span>
+            <div className="mt-8 border-t border-gray-200 pt-8 flex flex-col gap-4">
+              <div className="flex items-center text-sm text-gray-600">
+                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+                <span>Free shipping on orders over €49. Fast delivery worldwide.</span>
               </div>
-              <div className="flex items-center text-sm text-[var(--color-heather)]">
-                <ShieldCheck className="h-5 w-5 mr-3 text-[var(--color-teal)]" />
+              <div className="flex items-center text-sm text-gray-600">
+                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
                 <span>Authenticity Guaranteed. Quality verified retro classics.</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <span>Free returns within 30 days. No questions asked.</span>
               </div>
             </div>
 

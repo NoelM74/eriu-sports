@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/lib/cart-context";
+import CurrencySelector from "./CurrencySelector";
 
 export default function Navbar() {
   const { cartCount } = useCart();
@@ -21,7 +22,7 @@ export default function Navbar() {
           <span className="text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
           <span className="text-3xl font-extrabold tracking-tight text-[#000000]">SPORTS</span>
         </Link>
-        
+
         {/* Desktop nav links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
           <Link href="/catalog" className="hover:text-[#1C7C83] transition-colors">
@@ -30,7 +31,7 @@ export default function Navbar() {
           <div className="relative group py-6">
             <Link href="/catalog?category=Jerseys" className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
               Soccer Jerseys
-              <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7"/></svg>
+              <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" /></svg>
             </Link>
             <div className="absolute top-full left-0 w-56 bg-white border border-[#0F2131]/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="flex flex-col">
@@ -56,6 +57,9 @@ export default function Navbar() {
 
         {/* Right actions */}
         <div className="flex items-center gap-4">
+          {/* Currency Selector */}
+          <CurrencySelector />
+
           {/* Cart */}
           <Link href="/cart" className="relative p-1 text-[#0F2131] hover:text-[#1C7C83] transition-colors">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">

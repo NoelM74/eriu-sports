@@ -1,5 +1,38 @@
+import { Metadata } from 'next';
 import { getProductsByCategory } from '@/lib/products';
 import ProductCard from '@/components/catalog/ProductCard';
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string }>;
+}): Promise<Metadata> {
+  const { category: rawCategory } = await searchParams;
+  const category = rawCategory || 'All';
+
+  const title = category === 'All'
+    ? 'Complete Collection | Ériu Sports'
+    : `${category} | Ériu Sports`;
+
+  const description = category === 'All'
+    ? 'Browse our complete collection of premium retro football jerseys and GAA gear. Designed in Ireland, built for performance.'
+    : `Shop our ${category} collection. Premium retro football jerseys and GAA gear. Designed in Ireland.`;
+
+  return {
+    title,
+    description,
+    keywords: [category === 'All' ? 'football jerseys' : category, 'retro shirts', 'Ériu Sports'],
+    openGraph: {
+      title,
+      description,
+      url: `/catalog${rawCategory ? `?category=${rawCategory}` : ''}`,
+      type: 'website',
+    },
+    alternates: {
+      canonical: `/catalog${rawCategory ? `?category=${rawCategory}` : ''}`,
+    },
+  };
+}
 
 export default async function CatalogPage({
   searchParams,

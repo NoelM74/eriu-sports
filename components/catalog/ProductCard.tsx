@@ -4,14 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
+import { useCurrency } from "@/lib/currency-context";
 import Badge from "@/components/ui/Badge";
 
 interface ProductCardProps {
   product: Product;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product }: ProductCardProps): React.ReactElement {
   const { addItem } = useCart();
+  const { convertPrice, formatPrice } = useCurrency();
+
+  const convertedPrice = convertPrice(product.price);
 
   function getBadgeVariant(badge: string): "new" | "bestseller" | "selling" | "sale" | "official" | "limited" {
     if (badge === "New Arrival") return "new";
@@ -25,7 +29,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group relative bg-white">
       {/* Image */}
-      <Link href={`/products/${product.id}`} className="block relative aspect-square overflow-hidden bg-gray-50">
+      <Link href={`/products/${product.slug}`} className="block relative aspect-square overflow-hidden bg-gray-50">
         <Image
           src={product.images[0]}
           alt={product.name}
@@ -63,13 +67,13 @@ export default function ProductCard({ product }: ProductCardProps) {
         <p className="text-[10px] font-bold uppercase tracking-widest text-[#1C7C83] mb-0.5">
           {product.category}
         </p>
-        <Link href={`/products/${product.id}`}>
+        <Link href={`/products/${product.slug}`}>
           <h3 className="text-sm font-semibold text-[#0F2131] hover:text-[#1A533E] transition-colors leading-tight">
             {product.name}
           </h3>
         </Link>
         <div className="flex items-center justify-between mt-1.5">
-          <span className="text-sm font-bold text-[#0F2131]">€{product.price.toFixed(2)}</span>
+          <span className="text-sm font-bold text-[#0F2131]">{formatPrice(convertedPrice)}</span>
           <div className="flex items-center gap-1">
             <span className="text-yellow-400 text-xs">★</span>
             <span className="text-xs text-[#757575]">{product.rating}</span>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/lib/cart-context";
+import { useCurrency } from "@/lib/currency-context";
 import StripePaymentForm from "@/components/checkout/StripePaymentForm";
 import PayPalPaymentForm from "@/components/checkout/PayPalPaymentForm";
 import { calculateShipping } from "@/lib/shipping";
@@ -112,7 +113,12 @@ export default function CheckoutPage() {
     );
   }
 
-  const shippingCost = calculateShipping(cartTotal);
+  const { convertPrice, formatPrice } = useCurrency();
+  const shippingInfo = calculateShipping(cartTotal);
+  const shippingCost = shippingInfo.cost;
+  const convertedCartTotal = convertPrice(cartTotal);
+  const convertedShipping = convertPrice(shippingCost);
+  const convertedTotal = convertPrice(cartTotal + shippingCost);
   const orderTotal = Math.round((cartTotal + shippingCost) * 100) / 100;
 
   const handleField = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -136,10 +142,9 @@ export default function CheckoutPage() {
   };
 
   const inputClass = (field: keyof FormErrors) =>
-    `mt-1 block w-full rounded-md shadow-sm focus:ring-[#0A7A44] sm:text-sm py-3 px-4 bg-gray-50 border ${
-      formSubmitted && errors[field]
-        ? "border-red-400 focus:border-red-400 focus:ring-red-400"
-        : "border-gray-300 focus:border-[#0A7A44]"
+    `mt-1 block w-full rounded-md shadow-sm focus:ring-[#0A7A44] sm:text-sm py-3 px-4 bg-gray-50 border ${formSubmitted && errors[field]
+      ? "border-red-400 focus:border-red-400 focus:ring-red-400"
+      : "border-gray-300 focus:border-[#0A7A44]"
     }`;
 
   return (
@@ -337,11 +342,10 @@ export default function CheckoutPage() {
 
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <label
-                      className={`flex-1 border-2 p-4 flex items-center cursor-pointer rounded-md ${
-                        paymentMethod === "stripe"
-                          ? "border-[#0A7A44] bg-[#0A7A44]/5"
-                          : "border-gray-200"
-                      }`}
+                      className={`flex-1 border-2 p-4 flex items-center cursor-pointer rounded-md ${paymentMethod === "stripe"
+                        ? "border-[#0A7A44] bg-[#0A7A44]/5"
+                        : "border-gray-200"
+                        }`}
                     >
                       <input
                         type="radio"
@@ -356,11 +360,10 @@ export default function CheckoutPage() {
                       </span>
                     </label>
                     <label
-                      className={`flex-1 border-2 p-4 flex items-center cursor-pointer rounded-md ${
-                        paymentMethod === "paypal"
-                          ? "border-[#0A7A44] bg-[#0A7A44]/5"
-                          : "border-gray-200"
-                      }`}
+                      className={`flex-1 border-2 p-4 flex items-center cursor-pointer rounded-md ${paymentMethod === "paypal"
+                        ? "border-[#0A7A44] bg-[#0A7A44]/5"
+                        : "border-gray-200"
+                        }`}
                     >
                       <input
                         type="radio"
@@ -428,7 +431,7 @@ export default function CheckoutPage() {
               <dl className="space-y-4 text-sm text-gray-600">
                 <div className="flex justify-between">
                   <dt>Subtotal</dt>
-                  <dd className="font-medium text-gray-900">€{cartTotal.toFixed(2)}</dd>
+                  <dd className="font-medium text-gray-900">{formatPrice(convertedCartTotal)}</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt>Shipping</dt>
@@ -438,13 +441,13 @@ export default function CheckoutPage() {
                         Free
                       </span>
                     ) : (
-                      `€${shippingCost.toFixed(2)}`
+                      formatPrice(convertedShipping)
                     )}
                   </dd>
                 </div>
                 <div className="flex justify-between border-t border-gray-200 pt-4 text-[#0F2131]">
                   <dt className="text-base font-extrabold uppercase">Total</dt>
-                  <dd className="text-xl font-extrabold">€{orderTotal.toFixed(2)}</dd>
+                  <dd className="text-xl font-extrabold">{formatPrice(convertedTotal)}</dd>
                 </div>
               </dl>
 

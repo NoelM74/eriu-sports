@@ -19,23 +19,51 @@ export interface Product {
   currency: string;
 }
 
+/**
+ * Derive a category from the collection name.
+ * This allows filtering by broader categories while keeping collection-specific data.
+ */
+function deriveCategory(collection: string): string {
+  if (collection === 'Ireland Classics') return 'Jerseys';
+  if (collection === 'Premier League Classics') return 'Jerseys';
+  if (collection === 'GAA Gear') return 'GAA';
+  return 'Jerseys';
+}
+
+/**
+ * Derive badge from product attributes instead of array index.
+ */
+function deriveBadge(p: any, index: number): string | null {
+  // Check title/description for hints
+  const title = (p.title || '').toLowerCase();
+  const desc = (p.description || '').toLowerCase();
+
+  if (title.includes('new') || desc.includes('new release')) return "New Arrival";
+  if (title.includes('limited') || desc.includes('limited edition')) return "Limited Edition";
+  if (desc.includes('iconic') || desc.includes('legendary')) return "Classic";
+
+  // Fallback: assign based on position for demo purposes
+  if (index % 5 === 0) return "New Arrival";
+  if (index % 7 === 0) return "Selling Fast";
+  if (index % 11 === 0) return "Classic";
+
+  return null;
+}
+
 export const products: Product[] = (productsData as any[]).map((p, index) => {
-  let badge: string | null = null;
-  if (index === 0) badge = "New Arrival";
-  if (index === 1) badge = "Selling Fast";
-  if (index === 3) badge = "Classic";
-  
+  const collection = p.collection || "Ireland Classics";
+
   return {
-    id: p.slug, // GitHub's UI uses product.id for routing
+    id: p.slug, // Used for routing
     originalId: p.id,
-    name: p.title, // GitHub's UI expects name
+    name: p.title,
     title: p.title,
-    category: "Jerseys",
-    collection: p.collection || "ireland-classics",
+    category: deriveCategory(collection),
+    collection: collection,
     price: p.price,
     images: p.images,
     sizes: ["S", "M", "L", "XL"],
-    badge,
+    badge: deriveBadge(p, index),
     description: p.description,
     specs: [
       "Classic retro design",
@@ -43,7 +71,7 @@ export const products: Product[] = (productsData as any[]).map((p, index) => {
       "Embroidered crest",
       "Designed in Ireland"
     ],
-    rating: 5.0,
+    rating: 4.8 + (index % 10) * 0.02,
     reviewCount: 42 + index * 17,
     slug: p.slug,
     currency: p.currency || "EUR",
@@ -59,6 +87,7 @@ export function getProductById(id: string): Product | undefined {
 }
 
 export function getProductsByCollection(collection: string): Product[] {
+  if (collection === 'All') return products;
   // Newest listings (added at the end of products.json) appear first
   return products.filter(p => p.collection === collection).reverse();
 }
@@ -71,4 +100,13 @@ export function getProductsByCategory(category: string): Product[] {
 export const categories = [
   "All",
   "Jerseys",
+  "GAA",
+  "Accessories",
+];
+
+export const collections = [
+  "All",
+  "Ireland Classics",
+  "Premier League Classics",
+  "GAA Gear",
 ];

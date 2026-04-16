@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import { getProductsByCollection } from '@/lib/products';
 import ProductCard from '@/components/catalog/ProductCard';
+
+export const metadata: Metadata = {
+  title: 'GAA Gear | Authentic Gaelic Athletic Association Merchandise',
+  description: 'The heart and soul of Irish sports. GAA gear crafted for fans and players. Shop authentic county jerseys, hurley gear, and Gaelic football merchandise.',
+  keywords: ['GAA gear', 'Gaelic Athletic Association', 'county jerseys', 'GAA merchandise', 'Irish sports', 'GAA fans'],
+  openGraph: {
+    title: 'GAA Gear | Ériu Sports',
+    description: 'The heart and soul of Irish sports. GAA gear crafted for fans and players.',
+    url: '/collections/gaa-gear',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/collections/gaa-gear',
+  },
+};
 
 export default function GAAGearCollection() {
   const products = getProductsByCollection('GAA Gear');
@@ -23,8 +39,8 @@ export default function GAAGearCollection() {
       <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {products.length === 0 ? (
           <div className="text-center py-20">
-             <h2 className="text-2xl font-bold text-gray-800 mb-4">Coming Soon</h2>
-             <p className="text-gray-500">We are currently sourcing the best vintage and authentic GAA gear for this collection. Check back soon!</p>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Coming Soon</h2>
+            <p className="text-gray-500">We are currently sourcing the best vintage and authentic GAA gear for this collection. Check back soon!</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
