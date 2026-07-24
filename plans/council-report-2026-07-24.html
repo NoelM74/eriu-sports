@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM Council — Ériu Rebuild Review</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --card2:#1e222b; --ink:#e9ecf1; --muted:#9aa4b2;
+    --line:#2a2f3a; --emerald:#3ba676; --teal:#38b9c0; --amber:#e0a13b; --red:#e07a5f;
+    --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f4f5f2; --card:#ffffff; --card2:#f0f1ee; --ink:#161a1e; --muted:#5c6672; --line:#e0e2dc; --shadow:0 10px 30px -14px rgba(15,25,35,.2); }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(1.2rem,4vw,3rem);}
+  header.top{border-bottom:1px solid var(--line);padding-bottom:1.4rem;margin-bottom:2rem;}
+  .kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);}
+  h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:.5rem 0 .3rem;letter-spacing:-.02em;line-height:1.1;}
+  .q{color:var(--muted);font-size:1.02rem;}
+  .meta{font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:.7rem;}
+
+  .verdict{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--shadow);margin-bottom:1.6rem;}
+  .verdict h2{font-size:.8rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--emerald);margin:0 0 .3rem;}
+  .rec{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;}
+  .first{margin-top:1.2rem;padding:1rem 1.2rem;border-left:3px solid var(--teal);background:var(--card2);border-radius:0 8px 8px 0;}
+  .first .lbl{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);}
+  .first p{margin:.3rem 0 0;font-weight:600;}
+
+  h3.sec{font-size:1.05rem;margin:2rem 0 .8rem;letter-spacing:-.01em;}
+  ul.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem;}
+  ul.pts li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;font-size:.96rem;}
+  ul.pts li b{color:var(--ink);}
+  .tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+
+  .clash{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;}
+  @media(max-width:620px){.clash{grid-template-columns:1fr;}}
+  .clash .side{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem;}
+  .clash .side h4{margin:0 0 .4rem;font-size:.9rem;}
+  .clash .side.a h4{color:var(--amber);}
+  .clash .side.b h4{color:var(--teal);}
+  .clash .side p{margin:0;font-size:.9rem;color:var(--muted);}
+
+  /* alignment grid */
+  .align{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem;margin:.4rem 0 0;}
+  .align table{width:100%;border-collapse:collapse;font-size:.86rem;}
+  .align th,.align td{text-align:left;padding:.5rem .5rem;border-bottom:1px solid var(--line);vertical-align:top;}
+  .align th{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;}
+  .align td.adv{font-weight:600;white-space:nowrap;}
+  .pill{display:inline-block;font-family:var(--mono);font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;padding:.2em .5em;border-radius:20px;border:1px solid var(--line);}
+  .pill.fix{color:var(--teal);border-color:color-mix(in srgb,var(--teal) 50%,transparent);}
+  .pill.grow{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 50%,transparent);}
+  .pill.strong{color:var(--emerald);border-color:color-mix(in srgb,var(--emerald) 50%,transparent);}
+
+  details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-top:.6rem;overflow:hidden;}
+  summary{cursor:pointer;padding:.9rem 1.1rem;font-weight:600;font-size:.94rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+  summary::-webkit-details-marker{display:none;}
+  summary .who{font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+  details[open] summary{border-bottom:1px solid var(--line);}
+  .body{padding:1rem 1.1rem;font-size:.92rem;color:var(--ink);}
+  .body.muted{color:var(--muted);}
+
+  footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.66rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="kicker">LLM Council · Verdict</p>
+    <h1>Ériu Rebuild — Review for Improvements &amp; Shortfalls</h1>
+    <p class="q">Five advisors independently reviewed the branch rebuild (retro-jersey shop → custom bulk performance-leisurewear manufacturer), then peer-reviewed each other. Chairman synthesis below.</p>
+    <p class="meta">5 advisors · 5 peer reviews · 2026-07-24</p>
+  </header>
+
+  <div class="verdict">
+    <h2>The Recommendation</h2>
+    <p class="rec">Stop adding features. Turn the build from a brochure into a lead-capture machine — and validate the pivot without killing the live site. Wire the quote form to a real inbox, get real photos of the bestsellers, fix the trust gaps, and run the new site <em>alongside</em> the earning one until a real bulk quote lands.</p>
+    <div class="first">
+      <span class="lbl">Do this first</span>
+      <p>Wire <span style="font-family:var(--mono)">/order/checkout</span> to a real destination (owner's inbox + stored lead), and stop it showing a "we've got it" confirmation until a server actually has the payload. Everything else is polish on a brochure.</p>
+    </div>
+  </div>
+
+  <h3 class="sec">✅ Where the council agrees <span class="tag">high-confidence</span></h3>
+  <ul class="pts">
+    <li><b>The checkout is the #1 problem.</b> It mints a reference and promises a quote — but sends nothing. Worse than a broken button: it silently drops real B2B leads. <span class="tag">Contrarian · Executor · First Principles</span></li>
+    <li><b>No real photography = no conversion.</b> SVG silhouettes fatally undercut a "premium / world-class" B2B claim. <span class="tag">Contrarian · Outsider · First Principles</span></li>
+    <li><b>Trust &amp; proof are missing.</b> No factory story, lead times, client names, "made in", or sample pack; the stats read as invented. <span class="tag">Outsider · First Principles</span></li>
+    <li><b>The legacy dual system is a liability.</b> Live payment routes + duplicate SEO + a buyable single jersey on a 10-piece-minimum site. Redirect and kill before launch. <span class="tag">Contrarian · Executor</span></li>
+    <li><b>Get a preview URL live; launch with 24, not 100.</b> Nothing is real until the owner can click it. <span class="tag">Executor</span></li>
+  </ul>
+
+  <h3 class="sec">⚔️ Where the council clashes</h3>
+  <div class="clash">
+    <div class="side a">
+      <h4>Build the platform now</h4>
+      <p>The Expansionist: the configurator is a quote-engine platform — go 10x (shareable quote links, logo-on-garment mockups, programmatic SEO, adjacent verticals).</p>
+    </div>
+    <div class="side b">
+      <h4>Fix the floor first</h4>
+      <p>Everyone else + 4/5 reviewers: right about <em>what</em> it is, wrong about <em>when</em>. The lead path is broken; bank the vision, ship the foundation. Pull only the two cheapest wins forward (logo mockup, saved/shareable quote).</p>
+    </div>
+  </div>
+  <p style="color:var(--muted);font-size:.92rem;margin-top:1rem;"><b>Deeper clash — replace vs run-alongside.</b> The First Principles Thinker (echoed across peer review): don't replace proven B2C revenue with an unvalidated B2B model. Run the new funnel alongside the live site until one real quote comes through.</p>
+
+  <h3 class="sec">🔍 Blind spots the peer round caught</h3>
+  <ul class="pts">
+    <li><b>The pivot itself is unvalidated</b> — no evidence bulk buyers exist. Don't cannibalise live revenue before one real quote.</li>
+    <li><b>No migration/rollback plan</b> for the DNS cutover; existing SEO and customers are at risk.</li>
+    <li><b>Legal/tax/GDPR exposure</b> — live legacy card routes beside a demo checkout, and a mailto lead path handling personal + order data.</li>
+    <li><b>Strategy leak</b> — publishing full tiered pricing/MOQ economics hands competitors the playbook.</li>
+    <li><b>Fulfilment reality</b> — who actually makes 250-garment runs (sampling, supply chain, working capital)? The thing buyers pay for is unaddressed.</li>
+  </ul>
+
+  <h3 class="sec">📊 Advisor alignment</h3>
+  <div class="align">
+    <table>
+      <thead><tr><th>Advisor</th><th>Core call</th><th>Stance</th></tr></thead>
+      <tbody>
+        <tr><td class="adv">Contrarian</td><td>Checkout is a live trap; kill the dual system; no photos sinks it</td><td><span class="pill fix">fix floor</span> <span class="pill strong">rated strongest ×4</span></td></tr>
+        <tr><td class="adv">Executor</td><td>Wire the form, ship a preview URL, redirect legacy, 24 products is fine</td><td><span class="pill fix">fix floor</span></td></tr>
+        <tr><td class="adv">First Principles</td><td>You're solving a B2C question in a B2B market; validate one quote first</td><td><span class="pill fix">fix floor</span></td></tr>
+        <tr><td class="adv">Outsider</td><td>Name, silhouettes, invented stats, hidden price, four CTAs → I bounce</td><td><span class="pill fix">fix floor</span></td></tr>
+        <tr><td class="adv">Expansionist</td><td>It's a quote engine, not a shop — go 10x platform</td><td><span class="pill grow">grow</span> <span class="pill" style="color:var(--amber);border-color:color-mix(in srgb,var(--amber) 50%,transparent)">biggest blind spot ×4</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sec">🗂 Full advisor responses</h3>
+
+  <details>
+    <summary>The Contrarian <span class="who">rated strongest by 4/5</span></summary>
+    <div class="body">The demo checkout isn't a "known gap" to wire later — it's a live trap. Checkout mints a reference and tells the customer "we'll send your quote within one working day." Nothing is sent. The mailto is an optional afterthought that most won't click and that depends on a configured mail client. The happy path manufactures false confidence and silently drops real B2B leads — worse than a broken button. Second landmine: two parallel commerce systems coexist — legacy Stripe/PayPal cart/checkout/products/catalog ship alongside new /order and /shop, meaning live payment endpoints, duplicate SEO content, split trust, and a customer who can actually pay for a single jersey on a site that claims 10-piece minimums. Third: MOQ is enforced per product page, but the cart has no cross-order minimum. And the fatal non-technical flaw: pitching "world-class, built to perfection" B2B trust while every product is an SVG silhouette. No buyer drops four figures on bulk activewear they've never seen photographed. That gap, not the code, sinks launch.</div>
+  </details>
+
+  <details>
+    <summary>The First Principles Thinker <span class="who">reframes the milestone</span></summary>
+    <div class="body">You're optimising the storefront. But a B2B bulk buyer converts on trust that a factory 500km away will deliver 250 correctly-branded garments, on time, at an agreed price. Everything world-class about the build — colourway switcher, volume slider, JSON-LD — answers a B2C question in a market that asks a B2B one. The three things that close a bulk quote: proof of production capability (real samples, client logos, turnaround, MOQ economics), a frictionless human quote path, and a sample/first-order de-risker. The build has none — checkout is a mailto demo, products are silhouettes, no factory story, no lead time, no "order a sample pack," no case study. The real risk is flipping a live revenue B2C site into a B2B model whose funnel (quote→sample→PO→repeat) has never been validated with one real buyer. Reframe the milestone: not "finish 100 products," but "get one real bulk quote through a working inbox with real photography of three hero products." Ship it as a lead-gen page against the live site first; don't replace proven revenue with an unproven model.</div>
+  </details>
+
+  <details>
+    <summary>The Expansionist <span class="who">biggest blind spot per 4/5 — but sharpest vision</span></summary>
+    <div class="body">The configurator and typed data model are the crown jewels, and they're being treated as store furniture instead of the actual product. What's built — per-unit tiered pricing, branding methods, placements, size-run matrices, MOQ logic, fabric specs, curated cross-sell — is a quote engine, not a catalogue. The 10x move: expose it as a shareable, editable quote link a coach/gym owner can tweak and forward to whoever holds the budget. Adjacent upside: drop a logo onto the SVG garment for see-your-brand-before-you-buy (Gymshark can't); saved-config reorders as a recurring-revenue moat; the data model as a wedge into corporate merch, events, hospitality, universities (each a landing page + filter); programmatic SEO (products × families × use-cases × cities = hundreds of "custom tank tops for gyms in Dublin" pages). It's a kit-configuration platform that happens to sell blanks — price and position it as the former.</div>
+  </details>
+
+  <details>
+    <summary>The Outsider <span class="who">first-time visitor, zero context</span></summary>
+    <div class="body">Walking in cold: the name "ÉRIU" stops me — I can't say it, don't know what it means or what you sell. "Performance wear, branded as yours" — I read it twice; am I buying clothes or a service? The cartoon silhouette drawings kill the "premium" claim — for a 10+ order with my logo I need real stitching, fabric, people. The stats ("620+ teams, 85k units/yr, 4.9★") read as invented with no names, logos, or reviews behind them. I never learn what it costs — a slider that "drops" but the real number hides behind "request a quote." Too many front doors — "Shop the range," "Order samples," "Start a bulk order," "Request a quote" — four verbs for one thing; tell me the ONE next step. And who are you? No "made in," no lead times, no faces, no minimum-to-delivery timeline. That silence stops me ordering.</div>
+  </details>
+
+  <details>
+    <summary>The Executor <span class="who">critical path to launch</span></summary>
+    <div class="body">The single biggest blocker: the checkout goes nowhere. A mailto fallback is not "taking orders" — you have a brochure, not a business. Critical path: (1) Day 1-2, wire the quote form to a real destination (Formspree, Resend, or Supabase) that emails the owner and stores the lead — no Stripe needed. (2) Day 1 parallel, get a preview URL live (resolve the Cloudflare connector or deploy to Vercel/Pages temporarily). (3) Week 1, photography stopgap — 6-10 hero flat-lays/mockups for bestsellers, keep SVGs elsewhere with a "sample imagery" note. (4) Week 1, 301-redirect old /products, /catalog, /cart and kill legacy pages before flipping DNS. Cut/defer: full catalogue, tests, R2/Cloudflare Images, multi-currency, perf/a11y. Monday morning: pick the form endpoint, get one preview URL in the owner's hands.</div>
+  </details>
+
+  <details>
+    <summary>Peer review highlights <span class="who">5 reviewers, anonymised</span></summary>
+    <div class="body muted">
+      <p><b>Strongest:</b> the Contrarian (4 of 5) — sees the whole system, fuses technical landmines (dead checkout, dual commerce, no cross-cart MOQ) with the non-technical dealbreaker (no photos). One reviewer picked the Expansionist for best understanding what was built.</p>
+      <p><b>Biggest blind spot:</b> the Expansionist (4 of 5) — sharpest vision, but "castle-building on sand": ignores the broken lead path and dual payment systems. Right altitude for month 3, wrong for pre-launch.</p>
+      <p><b>What all five missed:</b> the ownership-level question — a live, revenue-generating business gambled on an unvalidated pivot, with no migration/rollback plan, no demand evidence, no unit economics, unclear fulfilment/supply chain, and legal/tax/GDPR exposure from live-payment-routes-beside-a-demo.</p>
+    </div>
+  </details>
+
+  <footer>
+    <span>LLM Council · Ériu rebuild review</span>
+    <span>2026-07-24 · 5 advisors + 5 peer reviews + chairman</span>
+  </footer>
+</div>
+</body>
+</html>
