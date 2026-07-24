@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Lexend, Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -12,22 +12,35 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
+const archivo = Archivo({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  variable: "--font-archivo",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-jbmono",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://eriusports.com"),
   title: {
-    default: "Ériu Sports | Premium Irish Football Heritage & GAA Gear",
-    template: "%s | Ériu Sports",
+    default: "Ériu | Custom Performance Leisurewear, Branded for Your Team",
+    template: "%s | Ériu Performance Wear",
   },
   description:
-    "Premium retro football jerseys and GAA gear. Designed in Ireland, built for performance. Shop classic Ireland jerseys, Premier League classics, and authentic GAA merchandise. Free shipping on orders over €49.",
+    "Premium custom activewear, manufactured to order and branded for teams, gyms, studios and brands. Men & women. Tops, tanks, compression, shorts, leggings and yoga wear from just 10 pieces. Designed in Ireland.",
   keywords: [
-    "retro football jerseys",
-    "Irish football",
-    "GAA gear",
-    "vintage soccer shirts",
-    "Ireland classics",
-    "Premier League retro kits",
-    "Ériu Sports",
+    "custom activewear manufacturer",
+    "bulk gym wear",
+    "branded leisurewear",
+    "custom team kit",
+    "wholesale activewear",
+    "custom compression wear",
+    "branded yoga wear",
+    "Ériu Performance Wear",
     "designed in Ireland",
   ],
   authors: [{ name: "Ériu Sports" }],
@@ -45,23 +58,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IE",
     url: "https://eriusports.com",
-    title: "Ériu Sports | Premium Irish Football Heritage",
+    title: "Ériu | Custom Performance Leisurewear",
     description:
-      "Premium retro football jerseys and GAA gear. Designed in Ireland, built for performance.",
-    siteName: "Ériu Sports",
+      "Premium custom activewear, manufactured to order and branded for teams, gyms and brands. Men & women, from just 10 pieces.",
+    siteName: "Ériu Performance Wear",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Ériu Sports - Premium Irish Football Heritage",
+        alt: "Ériu Performance Wear — custom branded activewear",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ériu Sports",
-    description: "Premium retro football jerseys and GAA gear.",
+    title: "Ériu Performance Wear",
+    description: "Custom activewear, branded for your team. From 10 pieces.",
     creator: "@eriusports",
     images: ["/og-image.jpg"],
   },
@@ -100,7 +113,7 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="en-US" href="https://eriusports.com/en-US" />
         <link rel="alternate" hrefLang="x-default" href="https://eriusports.com" />
       </head>
-      <body className={`${lexend.variable} antialiased`}>
+      <body className={`${lexend.variable} ${archivo.variable} ${jetBrainsMono.variable} antialiased`}>
         <CurrencyProvider>
           <CartProvider>
             <Navbar />

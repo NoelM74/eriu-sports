@@ -3,112 +3,76 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/lib/cart-context";
-import CurrencySelector from "./CurrencySelector";
+import ThemeToggle from "./ThemeToggle";
+
+const NAV = [
+  { href: "/shop", label: "The Range" },
+  { href: "/shop?gender=women", label: "Women" },
+  { href: "/shop?gender=men", label: "Men" },
+  { href: "/customise", label: "Customise" },
+  { href: "/for/teams", label: "For Teams" },
+  { href: "/fabric", label: "Fabric Tech" },
+];
 
 export default function Navbar() {
   const { cartCount } = useCart();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
-      {/* Promo bar */}
-      <div className="bg-[#0F2131] text-white text-center text-[10px] py-2 tracking-[0.25em] uppercase font-bold">
-        FREE SHIPPING ON ORDERS OVER €49
+    <header className="eriu e-nav">
+      <div className="e-util">
+        <div className="track">
+          <span><b>MOQ 10 pcs</b> · print · embroidery · sublimation</span>
+          <span>Men &amp; Women · 40+ colourways</span>
+          <span><b>10–14 day</b> production lead</span>
+        </div>
       </div>
 
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-1 shrink-0 font-[family-name:var(--font-lexend)]">
-          <span className="text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
-          <span className="text-3xl font-extrabold tracking-tight text-[#000000]">SPORTS</span>
+      <nav className="e-wrap e-nav-in" aria-label="Primary">
+        <Link href="/" className="e-brand" aria-label="Ériu home" onClick={() => setOpen(false)}>
+          <span className="mk">ÉRIU</span><span className="reg">®</span>
+          <span className="sm">Performance&nbsp;Wear</span>
         </Link>
 
-        {/* Desktop nav links */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
-          <Link href="/catalog" className="hover:text-[#1C7C83] transition-colors">
-            Shop
-          </Link>
-          <Link href="/blog" className="hover:text-[#1C7C83] transition-colors">
-            Stories
-          </Link>
-          <div className="relative group py-6">
-            <Link href="/catalog?category=Jerseys" className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
-              Soccer Jerseys
-              <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" /></svg>
-            </Link>
-            <div className="absolute top-full left-0 w-56 bg-white border border-[#0F2131]/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-              <div className="flex flex-col">
-                <Link href="/catalog?category=Jerseys" className="px-5 py-3.5 border-b border-gray-50 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  All Soccer Jerseys
-                </Link>
-                <Link href="/collections/ireland-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  Ireland Classics
-                </Link>
-                <Link href="/collections/premier-league-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  Premier League Classics
-                </Link>
-              </div>
-            </div>
-          </div>
-          <Link href="/collections/gaa-gear" className="hover:text-[#1C7C83] transition-colors">
-            GAA Gear
-          </Link>
-          <Link href="/catalog?category=Accessories" className="hover:text-[#1C7C83] transition-colors">
-            Accessories
-          </Link>
-        </nav>
+        <div className="e-nav-links">
+          {NAV.map((n) => (
+            <Link key={n.label} href={n.href}>{n.label}</Link>
+          ))}
+        </div>
 
-        {/* Right actions */}
-        <div className="flex items-center gap-4">
-          {/* Currency Selector */}
-          <CurrencySelector />
-
-          {/* Cart */}
-          <Link href="/cart" className="relative p-1 text-[#0F2131] hover:text-[#1C7C83] transition-colors">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        <div className="e-nav-right">
+          <ThemeToggle />
+          <Link href="/cart" className="e-icon" aria-label={`Cart, ${cartCount} items`}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 3h1.4a1.1 1.1 0 0 1 1.1.9L7 14.2a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.5-1.1l1.8-6.4H6" />
+              <circle cx="9" cy="20" r="1.3" /><circle cx="18" cy="20" r="1.3" />
             </svg>
-            {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#1A533E] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">
-                {cartCount}
-              </span>
-            )}
+            {cartCount > 0 && <span className="e-cart-count">{cartCount}</span>}
           </Link>
-
-          {/* Mobile menu toggle */}
+          <Link className="e-btn e-btn-solid e-nav-cta" href="/customise">Start a bulk order</Link>
           <button
-            className="md:hidden p-1 text-[#0F2131]"
-            onClick={() => setMenuOpen(!menuOpen)}
+            className="e-icon e-menu-btn"
+            onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
+            aria-expanded={open}
           >
-            {menuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+            {open ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 6l12 12M18 6 6 18" /></svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3.5 7h17M3.5 12h17M3.5 17h17" /></svg>
             )}
           </button>
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 flex flex-col gap-4 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
-          <Link href="/catalog" onClick={() => setMenuOpen(false)} className="pt-4 hover:text-[#1C7C83]">Shop All</Link>
-          <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Stories</Link>
-          <div className="flex flex-col gap-4">
-            <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Soccer Jerseys</Link>
-            <div className="flex flex-col gap-4 pl-4 border-l-2 border-gray-100 ml-1">
-              <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-gray-500">All Soccer Jerseys</Link>
-              <Link href="/collections/ireland-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Ireland Classics</Link>
-              <Link href="/collections/premier-league-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Premier League Classics</Link>
-            </div>
-          </div>
-          <Link href="/collections/gaa-gear" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">GAA Gear</Link>
-          <Link href="/catalog?category=Accessories" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Accessories</Link>
+      {open && (
+        <div className="e-mobile">
+          {NAV.map((n) => (
+            <Link key={n.label} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>
+          ))}
+          <Link href="/customise" onClick={() => setOpen(false)} className="e-btn e-btn-solid e-btn-block" style={{ marginTop: ".8rem" }}>
+            Start a bulk order
+          </Link>
         </div>
       )}
     </header>
