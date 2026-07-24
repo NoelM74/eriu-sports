@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import Garment from "@/components/shop/Garment";
+import { useOrder } from "@/lib/order-context";
 import {
   orderTotal,
   nextTier,
@@ -23,6 +25,7 @@ function fmt(n: number): string {
 }
 
 export default function ProductConfigurator({ product }: { product: Product }) {
+  const { addLine } = useOrder();
   const [cwIndex, setCwIndex] = useState(0);
   const [run, setRun] = useState<SizeRun>(() =>
     Object.fromEntries(product.sizes.map((s) => [s, 0]))
@@ -46,8 +49,16 @@ export default function ProductConfigurator({ product }: { product: Product }) {
 
   const addToOrder = () => {
     if (!canOrder) return;
+    addLine({
+      slug: product.slug,
+      colourwayId: cw.id,
+      run: { ...run },
+      method,
+      placement,
+      namesNumbers,
+    });
     setToast(true);
-    window.setTimeout(() => setToast(false), 4000);
+    window.setTimeout(() => setToast(false), 5000);
   };
 
   return (
@@ -232,8 +243,8 @@ export default function ProductConfigurator({ product }: { product: Product }) {
       </div>
 
       <div className={`e-toast${toast ? " show" : ""}`} role="status" aria-live="polite">
-        <span>✓ Built: {summary.qty} × {product.name} ({cw.name}) — €{fmt(summary.total)}</span>
-        <a href="/customise">Continue →</a>
+        <span>✓ Added {summary.qty} × {product.name} ({cw.name}) — €{fmt(summary.total)}</span>
+        <Link href="/order">View order →</Link>
       </div>
     </>
   );

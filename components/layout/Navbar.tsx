@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useCart } from "@/lib/cart-context";
+import { useOrder } from "@/lib/order-context";
 import ThemeToggle from "./ThemeToggle";
 
 const NAV = [
@@ -15,7 +15,7 @@ const NAV = [
 ];
 
 export default function Navbar() {
-  const { cartCount } = useCart();
+  const { totalUnits } = useOrder();
   const [open, setOpen] = useState(false);
 
   return (
@@ -42,12 +42,12 @@ export default function Navbar() {
 
         <div className="e-nav-right">
           <ThemeToggle />
-          <Link href="/cart" className="e-icon" aria-label={`Cart, ${cartCount} items`}>
+          <Link href="/order" className="e-icon" aria-label={`Your order, ${totalUnits} pieces`}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.5 3h1.4a1.1 1.1 0 0 1 1.1.9L7 14.2a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.5-1.1l1.8-6.4H6" />
               <circle cx="9" cy="20" r="1.3" /><circle cx="18" cy="20" r="1.3" />
             </svg>
-            {cartCount > 0 && <span className="e-cart-count">{cartCount}</span>}
+            {totalUnits > 0 && <span className="e-cart-count">{totalUnits}</span>}
           </Link>
           <Link className="e-btn e-btn-solid e-nav-cta" href="/customise">Start a bulk order</Link>
           <button

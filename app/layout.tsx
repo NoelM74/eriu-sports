@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { CartProvider } from "@/lib/cart-context";
 import { CurrencyProvider } from "@/lib/currency-context";
+import { BulkOrderProvider } from "@/lib/order-context";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -145,9 +146,11 @@ export default function RootLayout({
         />
         <CurrencyProvider>
           <CartProvider>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
+            <BulkOrderProvider>
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </BulkOrderProvider>
           </CartProvider>
         </CurrencyProvider>
       </body>
