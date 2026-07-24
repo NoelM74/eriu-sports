@@ -10,27 +10,40 @@ const METHOD_LABELS: Record<string, string> = { print: "Screen print", embroider
 const fmt = (n: number) => n.toLocaleString("en-IE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 interface Form {
-  name: string; company: string; email: string; phone: string; country: string; needBy: string; notes: string;
+  name: string; company: string; email: string; phone: string; country: string; needBy: string; notes: string; wantsSamples: boolean;
 }
+type Status = "idle" | "sending" | "sent" | "mailto" | "error";
 
 export default function CheckoutPage() {
   const { lines, totalUnits, orderTotal, clear } = useOrder();
-  const [form, setForm] = useState<Form>({ name: "", company: "", email: "", phone: "", country: "Ireland", needBy: "", notes: "" });
+  const [form, setForm] = useState<Form>({ name: "", company: "", email: "", phone: "", country: "Ireland", needBy: "", notes: "", wantsSamples: false });
   const [errors, setErrors] = useState<Partial<Record<keyof Form, string>>>({});
+  const [status, setStatus] = useState<Status>("idle");
   const [ref, setRef] = useState<string | null>(null);
 
-  const summaryText = useMemo(() => {
-    const rows = lines.map((l) => {
-      const s = lineSummary(l);
-      if (!s.product) return "";
-      const cw = s.product.colourways.find((c) => c.id === l.colourwayId)?.name ?? "";
-      const run = Object.entries(l.run).filter(([, n]) => n > 0).map(([sz, n]) => `${n}×${sz}`).join(" ");
-      return `• ${s.qty} × ${s.product.name} (${cw}) — ${METHOD_LABELS[l.method] ?? l.method}, ${l.placement}${l.namesNumbers ? ", names & numbers" : ""} [${run}] @ €${fmt(s.unit + s.brandingPerUnit)}/unit = €${fmt(s.total)}`;
-    });
-    return rows.join("\n");
-  }, [lines]);
+  const payloadLines = useMemo(
+    () =>
+      lines.map((l) => {
+        const s = lineSummary(l);
+        const cw = s.product?.colourways.find((c) => c.id === l.colourwayId)?.name ?? "";
+        const run = Object.entries(l.run).filter(([, n]) => n > 0).map(([sz, n]) => `${n}×${sz}`).join(" ");
+        return {
+          name: s.product?.name ?? l.slug,
+          family: s.product ? FAMILY_LABELS[s.product.family] : "",
+          colourway: cw,
+          method: METHOD_LABELS[l.method] ?? l.method,
+          placement: l.placement,
+          namesNumbers: l.namesNumbers,
+          run,
+          qty: s.qty,
+          unit: s.unit + s.brandingPerUnit,
+          total: s.total,
+        };
+      }),
+    [lines]
+  );
 
-  const set = (k: keyof Form, v: string) => setForm((f) => ({ ...f, [k]: v }));
+  const set = <K extends keyof Form>(k: K, v: Form[K]) => setForm((f) => ({ ...f, [k]: v }));
 
   const validate = () => {
     const e: Partial<Record<keyof Form, string>> = {};
@@ -48,9 +61,10 @@ export default function CheckoutPage() {
       form.phone ? `Phone: ${form.phone}` : "",
       `Deliver to: ${form.country}`,
       form.needBy ? `Needed by: ${form.needBy}` : "",
+      form.wantsSamples ? "Wants a sample pack first: YES" : "",
       "",
       "Order:",
-      summaryText,
+      ...payloadLines.map((l) => `• ${l.qty} × ${l.name} (${l.colourway}) — ${l.method}, ${l.placement}${l.namesNumbers ? ", names & numbers" : ""} [${l.run}] @ €${fmt(l.unit)}/unit = €${fmt(l.total)}`),
       "",
       `Total: ${totalUnits} pieces — €${fmt(orderTotal)} (est.)`,
       form.notes ? `\nNotes: ${form.notes}` : "",
@@ -58,33 +72,63 @@ export default function CheckoutPage() {
     return `mailto:${SALES_EMAIL}?subject=${encodeURIComponent(`Quote request — ${form.name}`)}&body=${encodeURIComponent(body)}`;
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
-    setRef(`ER-${Date.now().toString(36).toUpperCase().slice(-6)}`);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ...form, lines: payloadLines, totalUnits, orderTotal }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        setRef(data.reference);
+        setStatus("sent");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else if (res.status === 501) {
+        // Inbox not connected yet — route to a real email, don't fake receipt.
+        setStatus("mailto");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
-  // --- Confirmation ---
-  if (ref) {
+  // --- Confirmed (server received it) ---
+  if (status === "sent" && ref) {
     return (
       <div className="eriu">
         <section className="e-section e-wrap" style={{ maxWidth: 640, textAlign: "center" }}>
           <p className="e-eyebrow">Request received</p>
-          <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", textTransform: "uppercase", margin: ".6rem 0 1rem" }}>
-            Thanks, {form.name.split(" ")[0]}.
-          </h2>
+          <h2 style={{ fontSize: "clamp(2rem,5vw,3rem)", textTransform: "uppercase", margin: ".6rem 0 1rem" }}>Thanks, {form.name.split(" ")[0]}.</h2>
           <p style={{ color: "var(--e-muted)", marginBottom: "1.4rem" }}>
-            Your reference is <b className="e-mono" style={{ color: "var(--e-ink)" }}>{ref}</b>. We&apos;ll send your
-            digital mock-up and a locked-in quote within one working day.
+            Your reference is <b className="e-mono" style={{ color: "var(--e-ink)" }}>{ref}</b>. We&apos;ll send your digital mock-up and a locked-in quote within one working day{form.wantsSamples ? ", along with your sample pack details" : ""}.
+          </p>
+          <Link className="e-btn e-btn-solid" href="/shop" onClick={() => clear()}>Shop the range</Link>
+        </section>
+      </div>
+    );
+  }
+
+  // --- Inbox not connected: honest mailto handoff ---
+  if (status === "mailto") {
+    return (
+      <div className="eriu">
+        <section className="e-section e-wrap" style={{ maxWidth: 640, textAlign: "center" }}>
+          <p className="e-eyebrow">One quick step</p>
+          <h2 style={{ fontSize: "clamp(1.8rem,5vw,2.6rem)", textTransform: "uppercase", margin: ".6rem 0 1rem" }}>Send your order to us.</h2>
+          <p style={{ color: "var(--e-muted)", marginBottom: "1.4rem" }}>
+            Your order is ready. Tap below to send it straight to our team — it opens your email with everything filled in. We reply within one working day.
           </p>
           <div style={{ display: "flex", gap: ".7rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <a className="e-btn e-btn-solid" href={mailtoHref()}>Email us the details too</a>
-            <Link className="e-btn e-btn-ghost" href="/shop" onClick={() => clear()}>Start a new order</Link>
+            <a className="e-btn e-btn-solid" href={mailtoHref()}>Email my order →</a>
+            <button className="e-btn e-btn-ghost" onClick={() => setStatus("idle")}>Back to form</button>
           </div>
-          <p style={{ color: "var(--e-muted)", fontFamily: "var(--font-mono)", fontSize: ".7rem", marginTop: "1.6rem" }}>
-            Note: this is a demo submission. Connecting it to email + payment is the final wiring step.
-          </p>
         </section>
       </div>
     );
@@ -127,11 +171,20 @@ export default function CheckoutPage() {
               <Field label="Deliver to (country)" id="country" value={form.country} onChange={(v) => set("country", v)} />
               <Field label="Needed by (optional)" id="needBy" type="date" value={form.needBy} onChange={(v) => set("needBy", v)} />
             </div>
+            <label className="e-check">
+              <input type="checkbox" checked={form.wantsSamples} onChange={(e) => set("wantsSamples", e.target.checked)} />
+              Send me a sample pack first
+            </label>
             <div className="e-form-field">
               <label htmlFor="notes">Anything else? (logo, colours, deadline)</label>
               <textarea id="notes" rows={4} value={form.notes} onChange={(e) => set("notes", e.target.value)} />
             </div>
-            <button className="e-btn e-btn-solid e-btn-block" type="submit" style={{ marginTop: ".4rem" }}>Send my request →</button>
+            {status === "error" && (
+              <p className="e-form-err" role="alert">Something went wrong sending that. Please try again, or <a href={mailtoHref()} style={{ textDecoration: "underline" }}>email us directly</a>.</p>
+            )}
+            <button className="e-btn e-btn-solid e-btn-block" type="submit" disabled={status === "sending"} style={{ marginTop: ".4rem", opacity: status === "sending" ? 0.6 : 1 }}>
+              {status === "sending" ? "Sending…" : "Send my request →"}
+            </button>
             <p style={{ color: "var(--e-muted)", fontFamily: "var(--font-mono)", fontSize: ".68rem", marginTop: ".8rem" }}>
               We reply within one working day. No charge until you approve your mock-up.
             </p>

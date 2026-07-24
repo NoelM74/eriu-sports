@@ -47,7 +47,8 @@ function reducer(state: OrderState, action: Action): OrderState {
 /** Live pricing for a single line, derived from the current catalogue. */
 export function lineSummary(line: OrderLine) {
   const product = getProduct(line.slug);
-  if (!product) return { qty: totalQty(line.run), unit: 0, total: 0, meetsMoq: false, savingsPct: 0, product: undefined };
+  if (!product)
+    return { qty: totalQty(line.run), unit: 0, brandingPerUnit: 0, subtotal: 0, total: 0, meetsMoq: false, savingsPct: 0, product: undefined };
   const s = orderTotal(product, line.run, line.namesNumbers);
   return { ...s, product };
 }

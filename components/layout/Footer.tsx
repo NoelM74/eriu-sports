@@ -34,10 +34,11 @@ export default function Footer() {
           </div>
 
           <div className="e-foot-col">
-            <h4>Company</h4>
-            <Link href="/for/teams">For teams</Link>
-            <Link href="/for/gyms">For gyms</Link>
-            <Link href="/for/business">For business</Link>
+            <h4>Who we kit</h4>
+            <Link href="/for/teams">Clubs &amp; teams</Link>
+            <Link href="/for/gyms">Gyms &amp; studios</Link>
+            <Link href="/for/events">Events &amp; races</Link>
+            <Link href="/for/business">Corporate &amp; brands</Link>
             <Link href="/contact">Contact</Link>
           </div>
         </div>

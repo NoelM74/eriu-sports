@@ -293,13 +293,15 @@ body { background: var(--background); color: var(--foreground); }
 .e-tech p{ color:var(--e-muted); font-size:.92rem; margin:0; }
 
 /* ---- Use cases ---- */
-.e-cases{ display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; }
-@media (max-width:820px){ .e-cases{ grid-template-columns:1fr; } }
-.e-case{ position:relative; border-radius:10px; overflow:hidden; min-height:340px; display:flex; flex-direction:column; justify-content:flex-end; padding:1.7rem; color:#F1F2ED; border:1px solid var(--e-line); }
+.e-cases{ display:grid; grid-template-columns: repeat(4,1fr); gap:1rem; }
+@media (max-width:1040px){ .e-cases{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width:560px){ .e-cases{ grid-template-columns:1fr; } }
+.e-case{ position:relative; border-radius:10px; overflow:hidden; min-height:320px; display:flex; flex-direction:column; justify-content:flex-end; padding:1.6rem; color:#F1F2ED; border:1px solid var(--e-line); }
 .e-case .bg{ position:absolute; inset:0; z-index:0; }
 .e-case.c1 .bg{ background: linear-gradient(150deg, #123f30, #1C7C83); }
 .e-case.c2 .bg{ background: linear-gradient(150deg, #0F2131, #1A533E); }
 .e-case.c3 .bg{ background: linear-gradient(150deg, #155f65, #0F2131); }
+.e-case.c4 .bg{ background: linear-gradient(150deg, #1A533E, #0F2131); }
 .e-case .bg::after{ content:""; position:absolute; inset:0; background: radial-gradient(120% 80% at 80% 10%, rgba(255,255,255,.14), transparent 60%); }
 .e-case .body{ position:relative; z-index:1; }
 .e-case .k{ font-family:var(--font-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color: rgba(255,255,255,.72); }

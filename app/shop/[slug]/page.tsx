@@ -60,15 +60,7 @@ export default async function ProductPage({
     category: FAMILY_LABELS[product.family],
     material: product.fabric.composition,
     audience: { "@type": "PeopleAudience", suggestedGender: product.gender },
-    ...(product.rating
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: product.rating,
-            reviewCount: product.reviewCount,
-          },
-        }
-      : {}),
+    // aggregateRating intentionally omitted until real reviews exist (no fabricated rich-result data).
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",

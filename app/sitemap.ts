@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/fabric`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/for/teams`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/for/gyms`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/for/events`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/for/business`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 

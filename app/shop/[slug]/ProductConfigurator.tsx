@@ -90,12 +90,7 @@ export default function ProductConfigurator({ product }: { product: Product }) {
           <p className="e-pdp-fam">{FAMILY_LABELS[product.family]} · {GENDER_LABELS[product.gender]}</p>
           <h1>{product.name}</h1>
           <p className="tagline">{product.tagline}</p>
-          {product.rating && (
-            <div className="e-pdp-rating">
-              <span className="stars">{"★".repeat(Math.round(product.rating))}</span>
-              <span>{product.rating.toFixed(1)} · {product.reviewCount} reviews</span>
-            </div>
-          )}
+          {/* Star ratings hidden until real customer reviews exist — no fabricated social proof. */}
 
           <div className="e-pdp-from">
             <span className="lbl">From</span>

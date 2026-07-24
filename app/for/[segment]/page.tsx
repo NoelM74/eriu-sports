@@ -20,10 +20,16 @@ const SEGMENTS = {
     picks: ["charge-seamless-tank", "flow-high-waist-leggings", "studio-seamless-bra", "contour-compression-leggings"],
   },
   business: {
-    eyebrow: "Corporate & Events",
+    eyebrow: "Corporate & Brands",
     h1: "Merch that gets worn.",
-    sub: "Conference drops, charity runs and staff kits people keep — premium leisurewear branded to your identity, not landfill tees.",
+    sub: "Conference drops and staff kits people keep — premium leisurewear branded to your identity, not landfill tees.",
     picks: ["apex-training-tee", "pulse-long-sleeve", "terrain-zip-layer", "field-cap"],
+  },
+  events: {
+    eyebrow: "Events & Races",
+    h1: "The full race-day kit.",
+    sub: "Finisher tees, event tanks and hoodies, caps and beanies — plus medals, lanyards and promo bags to complete the pack. Branded to your event and delivered on time for the big day. High volumes, sharp pricing.",
+    picks: ["stride-performance-tee", "apex-training-tee", "summit-hoodie", "field-cap"],
   },
 } as const;
 

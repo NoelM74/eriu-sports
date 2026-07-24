@@ -170,9 +170,19 @@ export function UseCases() {
           <p className="e-eyebrow">Built for · Every kind of team</p>
           <h2>Who we kit out.</h2>
         </div>
-        <p className="lead">From a twelve-person CrossFit box to a nationwide corporate rollout — same range, same quality, scaled to the order.</p>
+        <p className="lead">From a twelve-person CrossFit box to a 5,000-runner race — same range, same quality, scaled to the order.</p>
       </div>
       <div className="e-cases">
+        <Link href="/for/events" className="e-case c4" data-reveal>
+          <div className="bg" />
+          <span className="wm"><svg viewBox="0 0 100 100" fill="none" stroke="#fff" strokeWidth="3"><circle cx="50" cy="42" r="20" /><path d="M38 60 32 88 50 78 68 88 62 60" /></svg></span>
+          <div className="body">
+            <p className="k">Events &amp; Races</p>
+            <h3>Finish lines &amp;<br />finisher kit</h3>
+            <p>Finisher tees, event tanks, medals, lanyards and promo bags — the full race kit, branded and delivered on time for the big day.</p>
+            <span className="go">Kit an event →</span>
+          </div>
+        </Link>
         <Link href="/for/teams" className="e-case c1" data-reveal>
           <div className="bg" />
           <span className="wm"><svg viewBox="0 0 100 100" fill="none" stroke="#fff" strokeWidth="3"><circle cx="50" cy="50" r="30" /><path d="M50 20v60M20 50h60" /></svg></span>
@@ -214,19 +224,18 @@ export function Proof() {
     <div className="e-proof">
       <div className="e-wrap e-section e-proof-in">
         <div data-reveal>
-          <p className="e-eyebrow">Why brands reorder</p>
+          <p className="e-eyebrow">Why buyers choose Ériu</p>
           <p className="e-quote">
-            &ldquo;We came for the price break on 200 tanks. We{" "}
-            <span className="hl">stayed because the fabric and fit matched the big activewear labels</span>{" "}
-            — at a kit-supplier price.&rdquo;
+            Kit that <span className="hl">matches the fit and feel of the big activewear labels</span> —
+            at a supplier price, from ten pieces.
           </p>
-          <p className="e-quote-by">— Studio owner · 6-location fitness group, Leinster</p>
+          <p className="e-quote-by">Designed in Ireland · Made to order</p>
         </div>
         <div className="e-logos" data-reveal>
-          <div className="lg">NORTHSIDE BOX <span>· CrossFit</span></div>
-          <div className="lg">TARA RUGBY <span>· Club</span></div>
-          <div className="lg">FLOW STUDIO <span>· Yoga</span></div>
-          <div className="lg">MERIDIAN <span>· Corporate</span></div>
+          <div className="lg">SAME FABRIC LEAGUE <span>· GSM-rated knits</span></div>
+          <div className="lg">LOW MINIMUMS <span>· from 10 pcs</span></div>
+          <div className="lg">MEN &amp; WOMEN <span>· one fit block</span></div>
+          <div className="lg">REORDER ANYTIME <span>· locked pricing</span></div>
         </div>
       </div>
     </div>
@@ -242,8 +251,8 @@ export function FinalCTA() {
         <h2>Your brand, on gear worth wearing.</h2>
         <p>Send us your logo and roughly what you need. We&apos;ll come back with a digital mock-up and a locked-in unit price within one working day — free, no commitment.</p>
         <div className="row">
-          <Link className="e-btn e-btn-solid" href="/customise">Start a bulk order →</Link>
-          <Link className="e-btn e-btn-ghost" href="/customise">Order a sample pack</Link>
+          <Link className="e-btn e-btn-solid" href="/shop">Shop the range →</Link>
+          <Link className="e-btn e-btn-ghost" href="/customise">Get a quote</Link>
         </div>
       </div>
     </section>

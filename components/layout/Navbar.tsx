@@ -49,7 +49,7 @@ export default function Navbar() {
             </svg>
             {totalUnits > 0 && <span className="e-cart-count">{totalUnits}</span>}
           </Link>
-          <Link className="e-btn e-btn-solid e-nav-cta" href="/customise">Start a bulk order</Link>
+          <Link className="e-btn e-btn-solid e-nav-cta" href="/customise">Get a quote</Link>
           <button
             className="e-icon e-menu-btn"
             onClick={() => setOpen(!open)}
@@ -71,7 +71,7 @@ export default function Navbar() {
             <Link key={n.label} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>
           ))}
           <Link href="/customise" onClick={() => setOpen(false)} className="e-btn e-btn-solid e-btn-block" style={{ marginTop: ".8rem" }}>
-            Start a bulk order
+            Get a quote
           </Link>
         </div>
       )}

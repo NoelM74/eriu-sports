@@ -32,13 +32,13 @@ export default function Hero() {
           </p>
           <div className="e-hero-cta">
             <Link className="e-btn e-btn-teal" href="/shop">Shop the range →</Link>
-            <Link className="e-btn e-btn-ghost" href="/customise">Order samples</Link>
+            <Link className="e-btn e-btn-ghost" href="/customise">Get a quote</Link>
           </div>
           <div className="e-hero-stats">
-            <div><b>620<em>+</em></b><span>Teams &amp; brands kitted</span></div>
-            <div><b>85k</b><span>Units shipped / yr</span></div>
             <div><b>10<em>pc</em></b><span>Minimum order</span></div>
-            <div><b>4.9<em>★</em></b><span>Client rating</span></div>
+            <div><b>40<em>+</em></b><span>Stock colourways</span></div>
+            <div><b>3</b><span>Branding methods</span></div>
+            <div><b>10–14<em>d</em></b><span>Made to order</span></div>
           </div>
         </div>
 
