@@ -1,122 +1,53 @@
-import { MetadataRoute } from 'next';
-import { products } from '@/lib/products';
+import { MetadataRoute } from "next";
+import { allProducts, FAMILY_LABELS } from "@/lib/catalog";
+import type { Family } from "@/lib/catalog/types";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://eriusports.com';
+  const baseUrl = "https://eriusports.com";
+  const now = new Date();
 
-    // Static pages
-    const staticPages: MetadataRoute.Sitemap = [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/catalog`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/ireland-classics`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/premier-league-classics`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/gaa-gear`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/cart`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/checkout`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/privacy-policy`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/terms-of-service`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/blog`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/blog/cork-city-1988-89`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/blog/ireland-1990-italia-90`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/blog/liverpool-1995-96-carlsberg`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/shipping-returns`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/size-guide`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/faq`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-    ];
+  // Core rebuild pages
+  const corePages: MetadataRoute.Sitemap = [
+    { url: baseUrl, lastModified: now, changeFrequency: "daily", priority: 1 },
+    { url: `${baseUrl}/shop`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${baseUrl}/customise`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/fabric`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/for/teams`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/for/gyms`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/for/business`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  ];
 
-    // Product pages
-    const productPages: MetadataRoute.Sitemap = products.map((product) => ({
-        url: `${baseUrl}/products/${product.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-    }));
+  // Family filter pages
+  const families = Object.keys(FAMILY_LABELS) as Family[];
+  const familyPages: MetadataRoute.Sitemap = families.map((family) => ({
+    url: `${baseUrl}/shop?family=${family}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
 
-    return [...staticPages, ...productPages];
+  // Product pages
+  const productPages: MetadataRoute.Sitemap = allProducts().map((product) => ({
+    url: `${baseUrl}/shop/${product.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // Support / legal
+  const supportPages: MetadataRoute.Sitemap = [
+    "/contact",
+    "/faq",
+    "/shipping-returns",
+    "/size-guide",
+    "/privacy-policy",
+    "/terms-of-service",
+  ].map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  return [...corePages, ...familyPages, ...productPages, ...supportPages];
 }

@@ -1,5 +1,6 @@
 import Hero from "@/components/marketing/Hero";
 import RevealInit from "@/components/marketing/RevealInit";
+import FAQ from "@/components/marketing/FAQ";
 import {
   SpecStrip,
   RangeGrid,
@@ -21,6 +22,7 @@ export default function HomePage() {
       <FabricTech />
       <UseCases />
       <Proof />
+      <FAQ />
       <FinalCTA />
     </div>
   );

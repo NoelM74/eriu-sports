@@ -51,13 +51,15 @@ export default async function ProductPage({
   const upsells = upsellsFor(product);
   const related = relatedFor(product);
 
-  const jsonLd = {
+  const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     description: product.description,
     brand: { "@type": "Brand", name: "Ériu Performance Wear" },
     category: FAMILY_LABELS[product.family],
+    material: product.fabric.composition,
+    audience: { "@type": "PeopleAudience", suggestedGender: product.gender },
     ...(product.rating
       ? {
           aggregateRating: {
@@ -74,13 +76,26 @@ export default async function ProductPage({
       highPrice: fromPrice(product),
       offerCount: product.pricing.tiers.length,
       availability: "https://schema.org/InStock",
+      eligibleQuantity: { "@type": "QuantitativeValue", minValue: product.moq, unitText: "pieces" },
     },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://eriusports.com" },
+      { "@type": "ListItem", position: 2, name: "Shop", item: "https://eriusports.com/shop" },
+      { "@type": "ListItem", position: 3, name: FAMILY_LABELS[product.family], item: `https://eriusports.com/shop?family=${product.family}` },
+      { "@type": "ListItem", position: 4, name: product.name, item: `https://eriusports.com/shop/${product.slug}` },
+    ],
   };
 
   return (
     <div className="eriu">
       <RevealInit />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
 
       <div className="e-wrap">
         <nav className="e-breadcrumb" aria-label="Breadcrumb">

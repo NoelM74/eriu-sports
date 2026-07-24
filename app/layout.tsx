@@ -114,6 +114,35 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="x-default" href="https://eriusports.com" />
       </head>
       <body className={`${lexend.variable} ${archivo.variable} ${jetBrainsMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Ériu Performance Wear",
+                url: "https://eriusports.com",
+                description:
+                  "Custom performance leisurewear, manufactured to order and branded for teams, gyms and brands. Men and women, from 10 pieces.",
+                slogan: "Performance wear, branded as yours.",
+                areaServed: "Worldwide",
+                foundingLocation: { "@type": "Place", name: "Ireland" },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Ériu Performance Wear",
+                url: "https://eriusports.com",
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: "https://eriusports.com/shop?q={search_term_string}",
+                  "query-input": "required name=search_term_string",
+                },
+              },
+            ]),
+          }}
+        />
         <CurrencyProvider>
           <CartProvider>
             <Navbar />

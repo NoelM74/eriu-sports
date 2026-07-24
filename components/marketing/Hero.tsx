@@ -27,8 +27,8 @@ export default function Hero() {
             Performance<br />wear, <em>branded</em><br /><span className="out">as yours.</span>
           </h1>
           <p className="e-hero-sub">
-            Premium blank leisurewear — engineered for training, finished with <b>your</b> logo,
-            colours and crest. Kitted out for teams, gyms, studios and brands, in bulk from just ten pieces.
+            Premium blank activewear, finished with <b>your</b> logo and colours.
+            For teams, gyms and brands — in bulk, from just ten pieces.
           </p>
           <div className="e-hero-cta">
             <Link className="e-btn e-btn-teal" href="/shop">Shop the range →</Link>
