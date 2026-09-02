@@ -29,6 +29,13 @@ interface FormErrors {
   country?: string;
 }
 
+/**
+ * Card (Stripe) payments are currently switched off — Stripe payouts are on hold
+ * pending account verification, so card takings could not be withdrawn.
+ * Set this back to `true` to re-enable card payments; everything else is wired up.
+ */
+const CARD_PAYMENTS_ENABLED = false;
+
 const COUNTRIES: { code: string; name: string }[] = [
   { code: "IE", name: "Ireland" },
   { code: "GB", name: "United Kingdom" },
@@ -67,7 +74,9 @@ export default function CheckoutPage() {
   const { items, cartTotal, clearCart } = useCart();
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">("stripe");
+  const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">(
+    CARD_PAYMENTS_ENABLED ? "stripe" : "paypal"
+  );
   const [formReady, setFormReady] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -383,6 +392,7 @@ export default function CheckoutPage() {
                     Payment Method
                   </h2>
 
+                  {CARD_PAYMENTS_ENABLED && (
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <label
                       className={`flex-1 border-2 p-4 flex items-center cursor-pointer rounded-md ${paymentMethod === "stripe"
@@ -419,6 +429,7 @@ export default function CheckoutPage() {
                       <span className="ml-3 font-medium text-[#0F2131]">PayPal</span>
                     </label>
                   </div>
+                  )}
 
                   <div className="mt-6">
                     {paymentMethod === "stripe" && (
@@ -441,7 +452,23 @@ export default function CheckoutPage() {
                       />
                     )}
                     {paymentMethod === "paypal" && (
-                      <PayPalPaymentForm amount={orderTotal} onSuccess={handleSuccess} />
+                      <PayPalPaymentForm
+                        amount={orderTotal}
+                        onSuccess={handleSuccess}
+                        customer={{
+                          email: fields.email.trim(),
+                          name: `${fields.firstName.trim()} ${fields.lastName.trim()}`.trim(),
+                          address: {
+                            line1: fields.address.trim(),
+                            city: fields.city.trim(),
+                            postal_code: fields.postalCode.trim(),
+                            country: fields.country,
+                          },
+                          items: items
+                            .map((i) => `${i.quantity}x ${i.product.title} (${i.size})`)
+                            .join("; "),
+                        }}
+                      />
                     )}
                   </div>
                 </div>

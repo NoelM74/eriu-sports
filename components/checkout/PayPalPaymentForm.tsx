@@ -5,12 +5,26 @@ import { useState } from "react";
 
 const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ?? "";
 
+export interface PayPalCustomerDetails {
+  email: string;
+  name: string;
+  address: {
+    line1: string;
+    city: string;
+    postal_code: string;
+    country: string;
+  };
+  items: string;
+}
+
 export default function PayPalPaymentForm({
   amount,
   onSuccess,
+  customer,
 }: {
   amount: number;
   onSuccess: () => void;
+  customer?: PayPalCustomerDetails;
 }) {
   const [error, setError] = useState<string | null>(null);
 
@@ -31,7 +45,7 @@ export default function PayPalPaymentForm({
               const response = await fetch("/api/paypal/create-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ amount }),
+                body: JSON.stringify({ amount, ...(customer ?? {}) }),
               });
 
               const orderData = await response.json();
