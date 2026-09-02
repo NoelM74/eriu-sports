@@ -74,6 +74,7 @@ export default function CheckoutPage() {
   const { items, cartTotal, clearCart } = useCart();
 
   const [isSuccess, setIsSuccess] = useState(false);
+  const [orderRef, setOrderRef] = useState<string | null>(null);
   const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">(
     CARD_PAYMENTS_ENABLED ? "stripe" : "paypal"
   );
@@ -110,7 +111,8 @@ export default function CheckoutPage() {
     );
   }
 
-  const handleSuccess = () => {
+  const handleSuccess = (reference?: string) => {
+    if (reference) setOrderRef(reference);
     clearCart();
     setIsSuccess(true);
   };
@@ -126,9 +128,14 @@ export default function CheckoutPage() {
         <h1 className="text-4xl font-extrabold text-[#0F2131] mb-4 uppercase tracking-tight text-center">
           Order Confirmed!
         </h1>
+        {orderRef && (
+          <p className="text-sm font-mono uppercase tracking-widest text-[#0A7A44] mb-4">
+            Order reference: <span className="font-bold">{orderRef}</span>
+          </p>
+        )}
         <p className="text-gray-600 mb-8 max-w-md text-center text-lg">
-          Thank you for choosing Ériu Sports. Your vintage jersey is getting prepped for
-          shipment right now. A confirmation email is on its way.
+          Thank you for choosing Ériu Sports. We&apos;ve got your order and we&apos;re getting it
+          ready. A confirmation email is on its way — please keep your reference handy.
         </p>
         <Link
           href="/catalog"
@@ -467,6 +474,11 @@ export default function CheckoutPage() {
                           items: items
                             .map((i) => `${i.quantity}x ${i.product.title} (${i.size})`)
                             .join("; "),
+                          lines: items.map((i) => ({
+                            title: i.product.title,
+                            size: i.size,
+                            quantity: i.quantity,
+                          })),
                         }}
                       />
                     )}

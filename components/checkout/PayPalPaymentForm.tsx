@@ -15,6 +15,8 @@ export interface PayPalCustomerDetails {
     country: string;
   };
   items: string;
+  /** Structured lines, used for the order record + confirmation emails. */
+  lines?: { title: string; size: string; quantity: number }[];
 }
 
 export default function PayPalPaymentForm({
@@ -23,7 +25,7 @@ export default function PayPalPaymentForm({
   customer,
 }: {
   amount: number;
-  onSuccess: () => void;
+  onSuccess: (reference?: string) => void;
   customer?: PayPalCustomerDetails;
 }) {
   const [error, setError] = useState<string | null>(null);
@@ -70,7 +72,11 @@ export default function PayPalPaymentForm({
               const response = await fetch("/api/paypal/capture-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ orderID: data.orderID }),
+                body: JSON.stringify({
+                  orderID: data.orderID,
+                  items: customer?.lines ?? [],
+                  email: customer?.email ?? "",
+                }),
               });
 
               const orderData = await response.json();
@@ -88,7 +94,7 @@ export default function PayPalPaymentForm({
                 );
               }
 
-              onSuccess();
+              onSuccess(orderData?.reference);
             } catch (err: unknown) {
               const message =
                 err instanceof Error ? err.message : "Payment failed. Please try again.";
