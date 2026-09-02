@@ -102,15 +102,32 @@ function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => 
   );
 }
 
+export interface StripeCustomerDetails {
+  email: string;
+  name: string;
+  address: {
+    line1: string;
+    city: string;
+    postal_code: string;
+    country: string;
+  };
+  items: string;
+}
+
 export default function StripePaymentForm({
   amount,
   onSuccess,
+  customer,
 }: {
   amount: number;
   onSuccess: () => void;
+  customer?: StripeCustomerDetails;
 }) {
   const [clientSecret, setClientSecret] = useState("");
   const [fetchError, setFetchError] = useState<string | null>(null);
+
+  // Serialise so the intent is recreated if the customer edits their details.
+  const customerKey = JSON.stringify(customer ?? {});
 
   useEffect(() => {
     setFetchError(null);
@@ -119,7 +136,7 @@ export default function StripePaymentForm({
     fetch("/api/stripe/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount }),
+      body: JSON.stringify({ amount, ...(customer ?? {}) }),
     })
       .then(async (res) => {
         const data = await res.json();
@@ -134,7 +151,8 @@ export default function StripePaymentForm({
       .catch((err: Error) => {
         setFetchError(err.message || "Could not load payment form. Please try again.");
       });
-  }, [amount]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [amount, customerKey]);
 
   const appearance = {
     theme: "stripe" as const,

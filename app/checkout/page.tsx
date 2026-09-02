@@ -16,6 +16,7 @@ interface FormFields {
   address: string;
   city: string;
   postalCode: string;
+  country: string;
 }
 
 interface FormErrors {
@@ -25,7 +26,22 @@ interface FormErrors {
   address?: string;
   city?: string;
   postalCode?: string;
+  country?: string;
 }
+
+const COUNTRIES: { code: string; name: string }[] = [
+  { code: "IE", name: "Ireland" },
+  { code: "GB", name: "United Kingdom" },
+  { code: "US", name: "United States" },
+  { code: "FR", name: "France" },
+  { code: "DE", name: "Germany" },
+  { code: "ES", name: "Spain" },
+  { code: "IT", name: "Italy" },
+  { code: "NL", name: "Netherlands" },
+  { code: "BE", name: "Belgium" },
+  { code: "AU", name: "Australia" },
+  { code: "CA", name: "Canada" },
+];
 
 function validateEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
@@ -43,6 +59,7 @@ function validateForm(fields: FormFields): FormErrors {
   if (!fields.address.trim()) errors.address = "Address is required.";
   if (!fields.city.trim()) errors.city = "City is required.";
   if (!fields.postalCode.trim()) errors.postalCode = "Postal code is required.";
+  if (!fields.country.trim()) errors.country = "Country is required.";
   return errors;
 }
 
@@ -61,6 +78,7 @@ export default function CheckoutPage() {
     address: "",
     city: "",
     postalCode: "",
+    country: "IE",
   });
   const [errors, setErrors] = useState<FormErrors>({});
 
@@ -121,7 +139,9 @@ export default function CheckoutPage() {
   const convertedTotal = convertPrice(cartTotal + shippingCost);
   const orderTotal = Math.round((cartTotal + shippingCost) * 100) / 100;
 
-  const handleField = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleField = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFields((prev) => ({ ...prev, [name]: value }));
     // Clear the error for this field as the user types
@@ -304,6 +324,29 @@ export default function CheckoutPage() {
                       <p className="mt-1 text-xs text-red-500">{errors.postalCode}</p>
                     )}
                   </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                      Country
+                    </label>
+                    <select
+                      id="country"
+                      name="country"
+                      value={fields.country}
+                      onChange={handleField}
+                      disabled={formReady}
+                      className={inputClass("country")}
+                      autoComplete="country"
+                    >
+                      {COUNTRIES.map((c) => (
+                        <option key={c.code} value={c.code}>
+                          {c.name}
+                        </option>
+                      ))}
+                    </select>
+                    {formSubmitted && errors.country && (
+                      <p className="mt-1 text-xs text-red-500">{errors.country}</p>
+                    )}
+                  </div>
                 </div>
 
                 {!formReady && (
@@ -379,7 +422,23 @@ export default function CheckoutPage() {
 
                   <div className="mt-6">
                     {paymentMethod === "stripe" && (
-                      <StripePaymentForm amount={orderTotal} onSuccess={handleSuccess} />
+                      <StripePaymentForm
+                        amount={orderTotal}
+                        onSuccess={handleSuccess}
+                        customer={{
+                          email: fields.email.trim(),
+                          name: `${fields.firstName.trim()} ${fields.lastName.trim()}`.trim(),
+                          address: {
+                            line1: fields.address.trim(),
+                            city: fields.city.trim(),
+                            postal_code: fields.postalCode.trim(),
+                            country: fields.country,
+                          },
+                          items: items
+                            .map((i) => `${i.quantity}x ${i.product.title} (${i.size})`)
+                            .join("; "),
+                        }}
+                      />
                     )}
                     {paymentMethod === "paypal" && (
                       <PayPalPaymentForm amount={orderTotal} onSuccess={handleSuccess} />
