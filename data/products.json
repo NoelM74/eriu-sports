@@ -1142,28 +1142,6 @@
     }
   },
   {
-    "id": "900000002",
-    "title": "Manchester United 2012-13 Away Shirt",
-    "slug": "manchester-united-2012-13-away-jersey",
-    "description": "United's white away shirt from Sir Alex Ferguson's final title-winning season, with a red and black collar.",
-    "price": 25,
-    "images": [
-      "/images/premier-league-classics/900000002-1.webp",
-      "/images/premier-league-classics/900000002-2.webp",
-      "/images/premier-league-classics/900000002-3.webp",
-      "/images/premier-league-classics/900000002-4.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Manchester United",
-      "season": "2012-13",
-      "kit": "Away",
-      "colours": "White / Red / Black",
-      "condition": "New"
-    }
-  },
-  {
     "id": "900000003",
     "title": "Arsenal 1992-94 Home Shirt",
     "slug": "arsenal-1992-94-home-jersey",
@@ -3780,36 +3758,6 @@
     "sizeChart": "jersey"
   },
   {
-    "id": "mj-648337",
-    "title": "Arsenal 2014-15 Home Shirt",
-    "slug": "arsenal-2014-15-home-shirt",
-    "description": "Arsenal's 2014-15 home shirt. Red with white sleeves and the Fly Emirates sponsor. Arsenal won the FA Cup that season, beating Aston Villa 4-0 in the final.",
-    "price": 25,
-    "images": [
-      "/images/premier-league-classics/arsenal-2014-15-home-shirt-1.webp",
-      "/images/premier-league-classics/arsenal-2014-15-home-shirt-2.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Arsenal FC",
-      "season": "2014-15",
-      "kit": "Home",
-      "sponsor": "Fly Emirates",
-      "colours": "Red / White",
-      "fit": "Modern fit, slimmer than the 90s shirts",
-      "condition": "New"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ],
-    "sizeChart": "jersey"
-  },
-  {
     "id": "mj-563443",
     "title": "Liverpool 1995-96 Home Shirt – Collymore 8",
     "slug": "liverpool-1995-96-home-shirt-collymore-8",
@@ -4093,101 +4041,6 @@
       "fit": "Regular fit, true to size",
       "condition": "New",
       "print": "Gerrard 8"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ]
-  },
-  {
-    "id": "mj-563433",
-    "title": "Liverpool 2010-12 Home Shirt – Gerrard 8",
-    "slug": "liverpool-2010-12-home-shirt-gerrard-8",
-    "description": "Liverpool's home shirt from 2010 to 2012, the first with Standard Chartered as sponsor. Liverpool won the League Cup in 2012. Printed with GERRARD 8 on the back. Steven Gerrard, club captain, wore number 8.",
-    "price": 35,
-    "images": [
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-gerrard-8-1.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-gerrard-8-2.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-gerrard-8-3.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-gerrard-8-4.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Liverpool FC",
-      "season": "2010-12",
-      "kit": "Home",
-      "sponsor": "Standard Chartered",
-      "colours": "Red / White",
-      "fit": "Regular fit, true to size",
-      "condition": "New",
-      "print": "Gerrard 8"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ]
-  },
-  {
-    "id": "mj-563434",
-    "title": "Liverpool 2010-12 Home Shirt – Suárez 7",
-    "slug": "liverpool-2010-12-home-shirt-suarez-7",
-    "description": "Liverpool's home shirt from 2010 to 2012, the first with Standard Chartered as sponsor. Liverpool won the League Cup in 2012. Printed with SUAREZ 7 on the back. Luis Suárez joined in January 2011 and wore number 7.",
-    "price": 35,
-    "images": [
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-suarez-7-1.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-suarez-7-2.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-suarez-7-3.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-suarez-7-4.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Liverpool FC",
-      "season": "2010-12",
-      "kit": "Home",
-      "sponsor": "Standard Chartered",
-      "colours": "Red / White",
-      "fit": "Regular fit, true to size",
-      "condition": "New",
-      "print": "Suárez 7"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ]
-  },
-  {
-    "id": "mj-565716",
-    "title": "Liverpool 2013-14 Home Shirt – Suárez 7",
-    "slug": "liverpool-2013-14-home-shirt-suarez-7",
-    "description": "Liverpool's 2013-14 home shirt, with the Standard Chartered sponsor. The season Liverpool finished second, two points behind Manchester City. Printed with SUAREZ 7 on the back. Luis Suárez scored 31 league goals in 2013-14 and was named PFA Player of the Year.",
-    "price": 35,
-    "images": [
-      "/images/premier-league-classics/liverpool-2013-14-home-shirt-suarez-7-1.webp",
-      "/images/premier-league-classics/liverpool-2013-14-home-shirt-suarez-7-2.webp",
-      "/images/premier-league-classics/liverpool-2013-14-home-shirt-suarez-7-3.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Liverpool FC",
-      "season": "2013-14",
-      "kit": "Home",
-      "sponsor": "Standard Chartered",
-      "colours": "Red / White",
-      "fit": "Modern fit, slimmer than the 90s shirts",
-      "condition": "New",
-      "print": "Suárez 7"
     },
     "sizes": [
       "S",
@@ -4496,65 +4349,6 @@
       "sponsor": "Carlsberg",
       "colours": "Red / White",
       "fit": "Regular fit, true to size",
-      "condition": "New"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ]
-  },
-  {
-    "id": "mj-555591",
-    "title": "Liverpool 2010-12 Home Shirt",
-    "slug": "liverpool-2010-12-home-shirt",
-    "description": "Liverpool's home shirt from 2010 to 2012, the first with Standard Chartered as sponsor. Liverpool won the League Cup in 2012.",
-    "price": 25,
-    "images": [
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-1.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-2010-12-home-shirt-3.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Liverpool FC",
-      "season": "2010-12",
-      "kit": "Home",
-      "sponsor": "Standard Chartered",
-      "colours": "Red / White",
-      "fit": "Regular fit, true to size",
-      "condition": "New"
-    },
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ]
-  },
-  {
-    "id": "mj-565715",
-    "title": "Liverpool 2013-14 Home Shirt",
-    "slug": "liverpool-2013-14-home-shirt",
-    "description": "Liverpool's 2013-14 home shirt, with the Standard Chartered sponsor. The season Liverpool finished second, two points behind Manchester City.",
-    "price": 25,
-    "images": [
-      "/images/premier-league-classics/liverpool-2013-14-home-shirt-1.webp",
-      "/images/premier-league-classics/liverpool-2013-14-home-shirt-2.webp"
-    ],
-    "collection": "Premier League Classics",
-    "currency": "EUR",
-    "details": {
-      "team": "Liverpool FC",
-      "season": "2013-14",
-      "kit": "Home",
-      "sponsor": "Standard Chartered",
-      "colours": "Red / White",
-      "fit": "Modern fit, slimmer than the 90s shirts",
       "condition": "New"
     },
     "sizes": [
