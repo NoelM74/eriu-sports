@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { getNewIn } from "@/lib/products";
-import ProductCard from "@/components/catalog/ProductCard";
+import ShuffledGrid from "@/components/catalog/ShuffledGrid";
 
 export default function LatestArrivals() {
-  // One shirt per club in turn from the latest additions, reshuffled on each deploy.
-  const latest = getNewIn(8);
+  // A club-mixed pool of recent additions; the grid shows a fresh 8 on each visit.
+  const pool = getNewIn(40);
 
   return (
     <section id="latest-arrivals" className="bg-white py-12 md:py-16">
@@ -21,11 +21,7 @@ export default function LatestArrivals() {
             All football shirts →
           </Link>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {latest.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <ShuffledGrid products={pool} limit={8} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
       </div>
     </section>
   );

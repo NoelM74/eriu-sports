@@ -22,5 +22,8 @@ export const PLAYER_BIOS: Record<string, string> = {
   'cesc-fabregas': "Joined Arsenal from Barcelona's academy at 16 and went on to captain the club.",
   'robin-van-persie': 'The Dutch striker spent eight seasons at Arsenal and later won the league with Manchester United.',
   'eric-cantona': 'The Frenchman who changed Manchester United, winning four league titles in five seasons.',
+  'gabriel-batistuta':
+    "'Batigol'. Argentina's great striker and Fiorentina's record Serie A scorer, who stayed with the club after relegation in 1993.",
+  'rui-costa': 'The Portuguese playmaker wore 10 for Fiorentina for seven seasons before joining AC Milan.',
   'lionel-messi': "Barcelona's all-time top scorer, who came through the club's academy.",
 };

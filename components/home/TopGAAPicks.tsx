@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { getProductsByCollectionSlug } from "@/lib/products";
-import ProductCard from "@/components/catalog/ProductCard";
+import ShuffledGrid from "@/components/catalog/ShuffledGrid";
 
 export default function TopGAAPicks() {
-  const picks = getProductsByCollectionSlug("gaa-jerseys").slice(0, 4);
+  // All county jerseys; the grid shows a random 4, mixed by county, on each visit.
+  const picks = getProductsByCollectionSlug("gaa-jerseys");
   if (picks.length === 0) return null;
 
   return (
@@ -30,11 +31,7 @@ export default function TopGAAPicks() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {picks.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <ShuffledGrid products={picks} limit={4} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
       </div>
     </section>
   );

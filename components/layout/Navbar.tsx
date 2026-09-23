@@ -51,14 +51,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
       <div className="bg-[#0F2131] text-white text-center text-[10px] sm:text-[11px] py-2 px-2 tracking-[0.18em] uppercase font-bold">
-        Free delivery over €49 <span className="text-[#1C7C83] px-1">·</span> Delivered in 8–14 days
+        <span className="whitespace-nowrap">Free delivery over €49</span> <span className="text-[#1C7C83] px-1">·</span>{" "}
+        <span className="whitespace-nowrap">Delivered in 8–14 days</span>
         <span className="hidden sm:inline"><span className="text-[#1C7C83] px-1">·</span> Ireland &amp; UK</span>
       </div>
 
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20" aria-label="Main">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3 h-16 md:h-20" aria-label="Main">
         <Link href="/" className="flex items-center gap-1 shrink-0" aria-label="Ériu Sports home" onClick={close}>
-          <span className="text-2xl md:text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
-          <span className="text-2xl md:text-3xl font-extrabold tracking-tight text-black">SPORTS</span>
+          <span className="text-[22px] sm:text-2xl md:text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
+          <span className="text-[22px] sm:text-2xl md:text-3xl font-extrabold tracking-tight text-black">SPORTS</span>
         </Link>
 
         <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
@@ -91,7 +92,7 @@ export default function Navbar() {
           )}
         </ul>
 
-        <div className="flex items-center gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4 shrink-0">
           <CurrencySelector />
           <Link href="/catalog#search" className="p-1 text-[#0F2131] hover:text-[#1C7C83] transition-colors" aria-label="Search shirts">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>

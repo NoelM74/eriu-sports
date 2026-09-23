@@ -1,5 +1,6 @@
 import productsData from '../data/products.json';
 import { COLLECTIONS, getCollectionByName, type CategoryKey } from './collections';
+import { mixByClub, seededRandom } from './shuffle';
 
 export interface ProductDetails {
   team?: string;
@@ -212,45 +213,13 @@ export function searchProducts(query: string, list: Product[] = products): Produ
   });
 }
 
-/** Small seeded shuffle, so the order changes with each deploy but not between page loads. */
-function seededShuffle<T>(list: T[], seed: number): T[] {
-  const out = [...list];
-  let s = seed || 1;
-  for (let i = out.length - 1; i > 0; i--) {
-    s = (s * 1664525 + 1013904223) % 4294967296;
-    const j = s % (i + 1);
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
 /**
- * A mix of recently added shirts across different clubs, for the homepage.
- * Takes the newest additions, then picks one shirt per club in turn, shuffled at build time.
+ * A club-mixed selection of recently added football shirts for the homepage.
+ * The server order changes daily; ShuffledGrid reshuffles it on every visit.
  */
 export function getNewIn(limit = 8, pool = 100): Product[] {
   const recent = getProductsByCategory('football').slice(0, pool);
-  const seed = Math.floor(Date.now() / 86_400_000);
-  const byClub = new Map<string, Product[]>();
-  for (const p of seededShuffle(recent, seed)) {
-    const key = p.club?.slug ?? p.slug;
-    byClub.set(key, [...(byClub.get(key) ?? []), p]);
-  }
-  const queues = seededShuffle([...byClub.values()], seed + 1);
-  const picked: Product[] = [];
-  const players = new Set<string>();
-  while (picked.length < limit && queues.some((q) => q.length)) {
-    for (const q of queues) {
-      if (!q.length) continue;
-      // Prefer a shirt whose printed player isn't already showing.
-      const i = Math.max(0, q.findIndex((p) => !p.details.print || !players.has(p.details.print)));
-      const [next] = q.splice(i, 1);
-      if (next.details.print) players.add(next.details.print);
-      picked.push(next);
-      if (picked.length === limit) break;
-    }
-  }
-  return picked;
+  return mixByClub(recent, seededRandom(Math.floor(Date.now() / 86_400_000))).slice(0, limit);
 }
 
 export interface PlayerSummary extends Player {

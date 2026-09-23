@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import ProductCard from '@/components/catalog/ProductCard';
+import ShuffledGrid from '@/components/catalog/ShuffledGrid';
+import ClubPicker from '@/components/catalog/ClubPicker';
 import { COLLECTIONS, getCollectionBySlug, CATEGORIES, DELIVERY } from '@/lib/collections';
 import { getProductsByCollectionSlug, type ClubSummary } from '@/lib/products';
 
@@ -113,30 +114,10 @@ export default async function CollectionPage({ params }: Props) {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
         {clubs.length > 1 && (
-          <nav aria-label="Shop by club" className="mb-8">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-[#0F2131] mb-3">
-              {c.category === 'gaa' ? 'Shop by county' : 'Shop by club'}
-            </h2>
-            <ul className="flex gap-2 overflow-x-auto pb-1 sm:flex-wrap">
-              {clubs.map((club) => (
-                <li key={club.slug} className="shrink-0">
-                  <Link
-                    href={`/clubs/${club.slug}`}
-                    className="inline-block border border-gray-200 px-4 py-2 text-sm font-medium text-[#0F2131] hover:border-[#1A533E] hover:text-[#1A533E] transition-colors"
-                  >
-                    {club.name} <span className="text-gray-400">({club.count})</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <ClubPicker clubs={clubs} label={c.category === 'gaa' ? 'Shop by county' : 'Shop by club'} />
         )}
         <p className="text-sm text-gray-500 mb-6">{items.length} {items.length === 1 ? 'item' : 'items'}</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {items.map((product, i) => (
-            <ProductCard key={product.id} product={product} priority={i < 4} />
-          ))}
-        </div>
+        <ShuffledGrid products={items} priorityCount={4} />
       </section>
 
       <section className="border-t border-gray-100 bg-gray-50">
