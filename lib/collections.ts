@@ -58,11 +58,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro European & World Shirts",
     intro:
-      "Great shirts from beyond the Premier League: Serie A, the Bundesliga, La Liga and Liga MX. €25 each, delivered in 8–14 days.",
-    seoTitle: "Retro Serie A, Bundesliga & La Liga Shirts",
+      "Great shirts from beyond the Premier League: Barcelona, Serie A, the Bundesliga and Liga MX. €25, or €35 with a player name and number. Delivered in 8–14 days.",
+    seoTitle: "Retro Barcelona, Serie A & Bundesliga Shirts",
     seoDescription:
-      "Retro football shirts from Juventus, Roma, Bayern Munich, Real Betis and Club América. €25 each, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["retro Serie A shirts", "retro Juventus shirt", "retro Roma shirt", "retro Bayern Munich shirt", "retro European football shirts"],
+      "Retro football shirts from Barcelona, Juventus, Roma, Bayern Munich, Real Betis and Club América. From €25, delivered to Ireland and the UK in 8–14 days.",
+    keywords: ["retro Barcelona shirt", "Ronaldinho Barcelona shirt", "retro Serie A shirts", "retro Juventus shirt", "retro Roma shirt", "retro Bayern Munich shirt", "retro European football shirts"],
     priceFrom: 25,
   },
   {

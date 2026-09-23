@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { getProductsByCategory } from "@/lib/products";
+import { getNewIn } from "@/lib/products";
 import ProductCard from "@/components/catalog/ProductCard";
 
 export default function LatestArrivals() {
-  const latest = getProductsByCategory("football").slice(0, 4);
+  // One shirt per club in turn from the latest additions, reshuffled on each deploy.
+  const latest = getNewIn(8);
 
   return (
     <section id="latest-arrivals" className="bg-white py-12 md:py-16">
