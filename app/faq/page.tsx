@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
-const EMAIL = 'borufashions@gmail.com';
+const EMAIL = 'noel@eriusports.com';
 
 export const metadata: Metadata = {
   title: 'FAQ | Delivery, Sizing & Returns',

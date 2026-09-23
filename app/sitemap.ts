@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
 import { COLLECTIONS, CATEGORIES } from '@/lib/collections';
+import { getPosts } from '@/lib/blog';
 
 const SITE = 'https://eriusports.com';
 
@@ -23,9 +24,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       images: p.images.slice(0, 3).map((img) => `${SITE}${img}`),
     })),
     page('/blog', 0.6, 'weekly'),
-    page('/blog/ireland-1990-italia-90', 0.6, 'monthly'),
-    page('/blog/cork-city-1988-89', 0.6, 'monthly'),
-    page('/blog/liverpool-95-96-carlsberg', 0.6, 'monthly'),
+    ...getPosts().map((post) => ({
+      ...page(`/blog/${post.slug}`, 0.6, 'monthly'),
+      lastModified: new Date(post.dateModified ?? post.datePublished),
+      images: [`${SITE}${post.heroImage}`],
+    })),
     page('/shipping-returns', 0.5, 'monthly'),
     page('/size-guide', 0.5, 'monthly'),
     page('/faq', 0.5, 'monthly'),

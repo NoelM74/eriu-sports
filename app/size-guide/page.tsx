@@ -163,7 +163,7 @@ export default function SizeGuidePage() {
                             Need Help With Sizing?
                         </h2>
                         <p className="text-gray-700 mb-4">
-                            Our team is happy to help you find the perfect size. Contact us at <a href="mailto:borufashions@gmail.com" className="text-[#1C7C83] font-bold hover:underline">borufashions@gmail.com</a>
+                            Our team is happy to help you find the perfect size. Contact us at <a href="mailto:noel@eriusports.com" className="text-[#1C7C83] font-bold hover:underline">noel@eriusports.com</a>
                             and tell us your measurements and which jersey you're interested in.
                         </p>
                         <a

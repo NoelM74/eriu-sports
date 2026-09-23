@@ -1,121 +1,62 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { getPosts, readingMinutes, formatDate } from '@/lib/blog';
 
 export const metadata: Metadata = {
-    title: 'Ériu Sports Blog | Jersey Histories & Football Stories',
-    description: 'Discover the stories behind our retro jerseys - the history, famous games, and legendary players who wore them.',
-    openGraph: {
-        title: 'Ériu Sports Blog',
-        description: 'Discover the stories behind our retro jerseys.',
-        url: '/blog',
-    },
-    alternates: {
-        canonical: '/blog',
-    },
+  title: 'Shirt Stories | Retro Football & GAA Jersey History',
+  description:
+    'The seasons, matches and players behind our retro football shirts and GAA jerseys, plus a GAA size guide. Italia 90, the 1999 Treble, Cork City and more.',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'Shirt Stories | Ériu Sports',
+    description: 'The seasons, matches and players behind our retro shirts and GAA jerseys.',
+    url: '/blog',
+  },
 };
 
 export default function BlogPage() {
-    return (
-        <div className="bg-white min-h-screen py-16">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-4">
-                        The Ériu Sports Blog
-                    </h1>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Discover the stories behind our retro jerseys - the history, famous games,
-                        and legendary players who wore them.
-                    </p>
-                </div>
+  const posts = getPosts();
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
-                            <img
-                                src="/images/blog/cork-fai-cup-finalists-1989.webp"
-                                alt="Cork City 1988/89"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h2 className="text-xl font-bold text-[#0F2131] mb-2">
-                                The Cork City 1988/89 Home Jersey
-                            </h2>
-                            <p className="text-gray-600 mb-4">
-                                A tribute to Cork City's early years in the League of Ireland, featuring the classic Guinness sponsor logo.
-                            </p>
-                            <div className="flex items-center text-sm text-gray-500">
-                                <span>April 15, 2026</span>
-                                <span className="mx-2">•</span>
-                                <span>12 min read</span>
-                            </div>
-                            <a
-                                href="/blog/cork-city-1988-89"
-                                className="mt-4 inline-block text-[#1C7C83] font-bold hover:text-[#1A533E] transition-colors"
-                            >
-                                Read the full story →
-                            </a>
-                        </div>
-                    </article>
-
-                    <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
-                            <img
-                                src="/images/blog/ireland-england-italia-90-goal.webp"
-                                alt="Ireland 1990 Italia 90"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h2 className="text-xl font-bold text-[#0F2131] mb-2">
-                                Ireland's Italia 90 World Cup Campaign
-                            </h2>
-                            <p className="text-gray-600 mb-4">
-                                Relive the legendary World Cup campaign in Italy with the iconic green jersey that captured the nation's imagination.
-                            </p>
-                            <div className="flex items-center text-sm text-gray-500">
-                                <span>April 14, 2026</span>
-                                <span className="mx-2">•</span>
-                                <span>15 min read</span>
-                            </div>
-                            <a
-                                href="/blog/ireland-1990-italia-90"
-                                className="mt-4 inline-block text-[#1C7C83] font-bold hover:text-[#1A533E] transition-colors"
-                            >
-                                Read the full story →
-                            </a>
-                        </div>
-                    </article>
-
-                    <article className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                        <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
-                            <img
-                                src="/images/blog/liverpool-95-96-carlsberg-away-kit.webp"
-                                alt="Liverpool 95-96 Carlsberg"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <div className="p-6">
-                            <h2 className="text-xl font-bold text-[#0F2131] mb-2">
-                                Liverpool's 1995-96 Carlsberg Away Kit
-                            </h2>
-                            <p className="text-gray-600 mb-4">
-                                The classic white and teal away shirt worn during one of Liverpool's most memorable mid-90s seasons.
-                            </p>
-                            <div className="flex items-center text-sm text-gray-500">
-                                <span>April 13, 2026</span>
-                                <span className="mx-2">•</span>
-                                <span>10 min read</span>
-                            </div>
-                            <a
-                                href="/blog/liverpool-95-96-carlsberg"
-                                className="mt-4 inline-block text-[#1C7C83] font-bold hover:text-[#1A533E] transition-colors"
-                            >
-                                Read the full story →
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
+  return (
+    <div className="bg-white min-h-screen py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-10">
+          <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Shirt Stories</h1>
+          <p className="text-lg text-gray-600 max-w-2xl">
+            The seasons, matches and players behind the shirts, plus a few guides to help you choose.
+          </p>
         </div>
-    );
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {posts.map((post, i) => (
+            <article key={post.slug} className="group border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <Link href={`/blog/${post.slug}`} className="relative block h-52 bg-[#f3f5f4] overflow-hidden">
+                <Image
+                  src={post.heroImage}
+                  alt={post.heroAlt}
+                  fill
+                  priority={i < 3}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className={`${post.heroFit === 'contain' ? 'object-contain p-4' : 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
+                />
+              </Link>
+              <div className="p-6 flex flex-col flex-1">
+                <p className="text-[11px] font-bold uppercase tracking-widest text-[#1C7C83] mb-2">{post.category}</p>
+                <h2 className="text-xl font-bold text-[#0F2131] mb-2 leading-snug">
+                  <Link href={`/blog/${post.slug}`} className="hover:text-[#1A533E]">{post.title}</Link>
+                </h2>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{post.description}</p>
+                <p className="mt-auto text-sm text-gray-500">
+                  <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
+                  <span className="mx-2" aria-hidden>·</span>
+                  {readingMinutes(post)} min read
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }

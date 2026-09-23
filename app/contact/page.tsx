@@ -38,8 +38,8 @@ export default function ContactPage() {
                                 <p className="text-gray-700">
                                     We reply to all emails within 24 hours. You can reach us at:
                                 </p>
-                                <a href="mailto:borufashions@gmail.com" className="text-[#1C7C83] font-bold hover:underline text-lg mt-3 block">
-                                    borufashions@gmail.com
+                                <a href="mailto:noel@eriusports.com" className="text-[#1C7C83] font-bold hover:underline text-lg mt-3 block">
+                                    noel@eriusports.com
                                 </a>
                             </div>
 

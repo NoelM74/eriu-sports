@@ -217,7 +217,7 @@
     "id": "677960419",
     "title": "Cork City 1988-89 Home Jersey",
     "slug": "cork-city-1988-89-retro-jersey",
-    "description": "Cork City's home jersey from their early League of Ireland years, with the Guinness sponsor.",
+    "description": "Cork City's home jersey from 1988-89, the season they reached their first FAI Cup final. White with green and red chevrons across the chest and the Guinness sponsor.",
     "price": 25,
     "images": [
       "/images/ireland-classics/677960419-1.webp",
@@ -233,6 +233,7 @@
       "team": "Cork City FC",
       "season": "1988-89",
       "kit": "Home",
+      "colours": "White / Green / Red",
       "sponsor": "Guinness",
       "condition": "New"
     }
