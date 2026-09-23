@@ -33,5 +33,19 @@ export const PLAYER_BIOS: Record<string, string> = {
     "Milan's captain and one of the great defenders. He played 25 seasons for the club and won the European Cup five times.",
   'alessandro-nesta':
     'The Italian centre-back joined Milan from Lazio in 2002 and won two Champions Leagues with the club.',
+  'pavel-nedved':
+    "The Czech midfielder won the Cup Winners' Cup and Serie A with Lazio, then moved to Juventus in 2001 and won the Ballon d'Or in 2003.",
+  'hidetoshi-nakata':
+    "Japan's best-known player of his generation. He played in Serie A for Perugia, Roma and Parma, winning the league with Roma in 2001.",
+  'marcelo-salas':
+    "Chile's great striker, who won Serie A and the Cup Winners' Cup with Lazio.",
+  'luka-modric':
+    'The Croatian playmaker spent four seasons at Spurs before joining Real Madrid in 2012.',
+  'gianluca-vialli':
+    'The Italian striker joined Chelsea in 1996 and became player-manager in 1998, winning the League Cup and the Cup Winners\' Cup.',
+  'didier-drogba':
+    "Chelsea's big-game striker. He won four league titles with the club and scored the equaliser and winning penalty in the 2012 Champions League final.",
+  'eidur-gudjohnsen':
+    'The Icelandic forward won two league titles with Chelsea before joining Barcelona in 2006.',
   'lionel-messi': "Barcelona's all-time top scorer, who came through the club's academy.",
 };

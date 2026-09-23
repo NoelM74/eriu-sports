@@ -81,6 +81,13 @@ export function slugify(s: string): string {
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+    // Letters that don't split into a base letter plus an accent
+    .replace(/[ðđ]/g, 'd')
+    .replace(/þ/g, 'th')
+    .replace(/æ/g, 'ae')
+    .replace(/ø/g, 'o')
+    .replace(/ß/g, 'ss')
+    .replace(/ł/g, 'l')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 }

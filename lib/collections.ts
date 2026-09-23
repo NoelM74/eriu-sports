@@ -44,11 +44,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro Premier League Shirts",
     intro:
-      "Classic shirts from the 80s, 90s and 2000s: Arsenal, Liverpool, Manchester United, Chelsea, Newcastle, West Ham and Man City. €25, or €35 with a player name and number. Delivered in 8–14 days.",
+      "Classic shirts from the 80s, 90s and 2000s: Arsenal, Liverpool, Manchester United, Chelsea, Spurs, Man City, Leeds, Newcastle and West Ham. €25, or €35 with a player name and number. Delivered in 8–14 days.",
     seoTitle: "Retro Premier League Shirts | 90s Classics",
     seoDescription:
-      "Retro football shirts from Arsenal, Liverpool, Man United, Chelsea, Newcastle, West Ham and more. From €25, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["retro football shirts", "90s football shirts", "retro Liverpool shirt", "retro Man United shirt", "retro Arsenal shirt"],
+      "Retro football shirts from Arsenal, Liverpool, Man United, Chelsea, Spurs, Man City and more. From €25, delivered to Ireland and the UK in 8–14 days.",
+    keywords: ["retro football shirts", "90s football shirts", "retro Liverpool shirt", "retro Man United shirt", "retro Arsenal shirt", "retro Chelsea shirt", "retro Spurs shirt", "retro Man City shirt", "retro Leeds shirt", "Klinsmann Spurs shirt", "Robbie Keane Spurs shirt"],
     priceFrom: 25,
     featured: "manchester-united-1994-96-third-shirt",
   },
@@ -58,11 +58,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro European & World Shirts",
     intro:
-      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Juventus, AC Milan, Inter, Napoli, Fiorentina, Brazil, Italy and more. €25, or €35 with a player name and number. Delivered in 8–14 days.",
+      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Juventus, the Milan clubs, Lazio, Roma, Parma, Bayern, Ajax, PSG, Marseille and more. €25, or €35 with a player name and number. Delivered in 8–14 days.",
     seoTitle: "Retro Barcelona, Real Madrid & Serie A Shirts",
     seoDescription:
       "Retro football shirts from Barcelona, Real Madrid, Inter, AC Milan, Juventus, Brazil and Italy. From €25, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Bayern Munich shirt", "retro European football shirts"],
+    keywords: ["retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Lazio shirt", "retro Parma shirt", "retro Bayern Munich shirt", "retro Dortmund shirt", "retro Ajax shirt", "retro PSG shirt", "Ronaldinho PSG shirt", "retro Marseille shirt", "retro Chivas shirt", "retro European football shirts"],
     priceFrom: 25,
   },
   {
