@@ -17,6 +17,8 @@ export interface CollectionDef {
   seoDescription: string;
   keywords: string[];
   priceFrom: number;
+  /** Product slug whose photo is used on the homepage tile. Defaults to the first product. */
+  featured?: string;
 }
 
 export const DELIVERY = "8–14 days";
@@ -34,6 +36,7 @@ export const COLLECTIONS: CollectionDef[] = [
       "Retro Republic of Ireland jerseys from Euro 88, Italia 90 and USA 94. €25 each, delivered to Ireland and the UK in 8–14 days.",
     keywords: ["retro Ireland jersey", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "Ireland football jersey"],
     priceFrom: 25,
+    featured: "ireland-1990-italia-90-world",
   },
   {
     slug: "premier-league-classics",

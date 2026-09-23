@@ -7,7 +7,8 @@ import { getProductsByCollectionSlug } from "@/lib/products";
 export default function FeatureBento() {
   const tiles = COLLECTIONS.map((c) => {
     const items = getProductsByCollectionSlug(c.slug);
-    return { ...c, count: items.length, image: items[0]?.images[0] };
+    const featured = items.find((p) => p.slug === c.featured) ?? items[0];
+    return { ...c, count: items.length, image: featured?.images[0] };
   });
 
   return (
