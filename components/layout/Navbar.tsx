@@ -28,6 +28,18 @@ const MENU: { label: string; href: string; children?: { label: string; href: str
     ],
   },
   { label: "AFL", href: "/collections/afl-jerseys" },
+  {
+    label: "Players",
+    href: "/players",
+    children: [
+      { label: "Ronaldo (R9)", href: "/players/ronaldo-nazario" },
+      { label: "Roberto Baggio", href: "/players/roberto-baggio" },
+      { label: "Thierry Henry", href: "/players/thierry-henry" },
+      { label: "Ronaldinho", href: "/players/ronaldinho" },
+      { label: "Dennis Bergkamp", href: "/players/dennis-bergkamp" },
+      { label: "All Players", href: "/players" },
+    ],
+  },
   { label: "Stories", href: "/blog" },
 ];
 

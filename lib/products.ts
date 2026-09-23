@@ -11,6 +11,13 @@ export interface ProductDetails {
   condition?: string;
   /** Player name and number printed on the back, e.g. "Henry 14". */
   print?: string;
+  /** Full name of the player on the back, e.g. "Thierry Henry". */
+  player?: string;
+}
+
+export interface Player {
+  name: string;
+  slug: string;
 }
 
 export interface Club {
@@ -41,6 +48,7 @@ export interface Product {
   details: ProductDetails;
   sizeGuide?: SizeGuide;
   club: Club | null;
+  player: Player | null;
   slug: string;
   currency: string;
 }
@@ -103,6 +111,7 @@ export const products: Product[] = (productsData as RawProduct[]).map((p) => {
       ? { size: p.sizeGuide.size, rows: p.sizeGuide.rows.map((r) => [r[0], r[1]] as [string, string]) }
       : undefined,
     club: toClub(p.details?.team),
+    player: p.details?.player ? { name: p.details.player, slug: slugify(p.details.player) } : null,
     slug: p.slug,
     currency: p.currency || 'EUR',
   };
@@ -185,7 +194,10 @@ function seasonYears(season?: string): string {
 }
 
 /** Common short forms people type. */
-const ALIASES: Record<string, string> = { utd: 'united', spurs: 'tottenham', gunners: 'arsenal', reds: 'liverpool', roi: 'ireland' };
+const ALIASES: Record<string, string> = {
+  utd: 'united', spurs: 'tottenham', gunners: 'arsenal', reds: 'liverpool', roi: 'ireland',
+  r9: 'nazario', cr7: 'cristiano', barca: 'barcelona',
+};
 
 /** Simple keyword search across title, team, season, kit, sponsor and printed name. */
 export function searchProducts(query: string, list: Product[] = products): Product[] {
@@ -194,7 +206,7 @@ export function searchProducts(query: string, list: Product[] = products): Produ
   return list.filter((p) => {
     const d = p.details;
     const hay = slugify(
-      [p.title, d.team, d.season, seasonYears(d.season), d.kit, d.sponsor, d.colours, d.print, p.collection].filter(Boolean).join(' ')
+      [p.title, d.team, d.season, seasonYears(d.season), d.kit, d.sponsor, d.colours, d.print, d.player, p.collection].filter(Boolean).join(' ')
     );
     return words.every((w) => hay.includes(w));
   });
@@ -239,4 +251,47 @@ export function getNewIn(limit = 8, pool = 100): Product[] {
     }
   }
   return picked;
+}
+
+export interface PlayerSummary extends Player {
+  count: number;
+  /** Clubs and countries the player's shirts come from, earliest first. */
+  teams: string[];
+  image: string;
+}
+
+function seasonStart(p: Product): number {
+  const m = p.details.season?.match(/\d{4}/);
+  return m ? Number(m[0]) : 0;
+}
+
+/** Players with at least `min` shirts, most shirts first. */
+export function getPlayers(min = 2): PlayerSummary[] {
+  const map = new Map<string, Product[]>();
+  for (const p of products) {
+    if (!p.player) continue;
+    map.set(p.player.slug, [...(map.get(p.player.slug) ?? []), p]);
+  }
+  return [...map.values()]
+    .filter((list) => list.length >= min)
+    .map((list) => {
+      const sorted = [...list].sort((a, b) => seasonStart(a) - seasonStart(b));
+      return {
+        ...list[0].player!,
+        count: list.length,
+        teams: [...new Set(sorted.map((p) => p.club?.name).filter((t): t is string => Boolean(t)))],
+        // First photo is the back of the shirt, showing the name.
+        image: sorted[sorted.length - 1].images[0],
+      };
+    })
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+}
+
+export function getPlayerBySlug(slug: string): PlayerSummary | undefined {
+  return getPlayers(1).find((p) => p.slug === slug);
+}
+
+/** A player's shirts, oldest season first. */
+export function getProductsByPlayer(slug: string): Product[] {
+  return products.filter((p) => p.player?.slug === slug).sort((a, b) => seasonStart(a) - seasonStart(b));
 }

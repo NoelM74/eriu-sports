@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getProductBySlug, getRelatedProducts, products, type ProductDetails } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
 import { CATEGORIES, getCollectionBySlug, DELIVERY } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
@@ -90,6 +90,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
   const collection = getCollectionBySlug(product.collectionSlug)!;
   const category = CATEGORIES.find((c) => c.key === product.category)!;
   const related = getRelatedProducts(product);
+  const player = product.player ? getPlayerBySlug(product.player.slug) : undefined;
   const url = `${SITE}/products/${product.slug}`;
   const details = DETAIL_LABELS.filter(([key]) => product.details[key]);
   const altBase = product.details.colours
@@ -185,6 +186,15 @@ export default async function ProductDetail({ params }: ProductPageProps) {
                   </div>
                 ))}
               </dl>
+            )}
+
+            {player && player.count > 1 && (
+              <Link
+                href={`/players/${player.slug}`}
+                className="mt-4 inline-block text-sm font-semibold text-[var(--color-teal)] underline underline-offset-4"
+              >
+                See all {player.count} {player.name} shirts →
+              </Link>
             )}
 
             <AddToCartForm product={product} sizes={product.sizes} />
