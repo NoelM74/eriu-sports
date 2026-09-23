@@ -29,5 +29,9 @@ export const PLAYER_BIOS: Record<string, string> = {
     "Juventus's all-time record appearance maker and top scorer, who wore 10 for the club from 1995 to 2012.",
   'zinedine-zidane':
     "France's 1998 World Cup winner. He won two Serie A titles at Juventus before joining Real Madrid in 2001.",
+  'paolo-maldini':
+    "Milan's captain and one of the great defenders. He played 25 seasons for the club and won the European Cup five times.",
+  'alessandro-nesta':
+    'The Italian centre-back joined Milan from Lazio in 2002 and won two Champions Leagues with the club.',
   'lionel-messi': "Barcelona's all-time top scorer, who came through the club's academy.",
 };
