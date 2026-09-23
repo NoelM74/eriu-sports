@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(post.dateModified ?? post.datePublished),
       images: [`${SITE}${post.heroImage}`],
     })),
+    page('/why-choose-us', 0.5, 'monthly'),
     page('/shipping-returns', 0.5, 'monthly'),
     page('/size-guide', 0.5, 'monthly'),
     page('/faq', 0.5, 'monthly'),

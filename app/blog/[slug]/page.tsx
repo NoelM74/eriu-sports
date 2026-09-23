@@ -68,6 +68,19 @@ export default async function BlogPostPage({ params }: Props) {
         { '@type': 'ListItem', position: 3, name: post.title, item: url },
       ],
     },
+    ...(post.faqs?.length
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: post.faqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          },
+        ]
+      : []),
   ];
 
   const contain = post.heroFit === 'contain';
@@ -145,6 +158,20 @@ export default async function BlogPostPage({ params }: Props) {
             </section>
           ))}
         </div>
+
+        {post.faqs && post.faqs.length > 0 && (
+          <section className="mt-12 p-6 bg-gray-50 border border-gray-200" aria-labelledby="quick-answers">
+            <h2 id="quick-answers" className="text-xl font-bold text-[#0F2131] mb-4">Quick answers</h2>
+            <dl className="space-y-4">
+              {post.faqs.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-semibold text-[#0F2131]">{f.q}</dt>
+                  <dd className="text-gray-700 leading-relaxed mt-1">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
       </div>
 
       {products.length > 0 && (

@@ -27,9 +27,209 @@ export interface BlogPost {
   /** Product slugs featured at the end of the post. */
   products: string[];
   cta: { label: string; href: string };
+  /** Short question-and-answer pairs, shown as "Quick answers" and marked up as FAQPage. */
+  faqs?: { q: string; a: string }[];
 }
 
 export const POSTS: BlogPost[] = [
+  {
+    slug: "juventus-1997-98-pink-shirt-del-piero-zidane",
+    title: "Juventus 1997/98: Del Piero, Zidane and the Pink Away Shirt",
+    seoTitle: "Juventus 1997/98 Shirts: Del Piero, Zidane & the Pink Away",
+    description:
+      "Why Juventus wear pink, and the 1997/98 season behind the shirt: a Serie A title, a third Champions League final in a row, and Del Piero and Zidane at their best.",
+    category: "European & World Classics",
+    datePublished: "2026-09-23",
+    heroImage: "/images/european-world-classics/juventus-1997-98-away-shirt-1.webp",
+    heroAlt: "Juventus 1997-98 pink away shirt with Sony MiniDisc sponsor",
+    heroFit: "contain",
+    intro:
+      "Juventus won Serie A in 1997/98 and reached their third Champions League final in a row. They had Alessandro Del Piero and Zinedine Zidane, and an away shirt in pink.",
+    sections: [
+      {
+        heading: "Why do Juventus wear pink?",
+        paragraphs: [
+          "Pink was Juventus's first colour. When the club was founded in Turin in 1897, the players wore pink shirts with a black tie.",
+          "In 1903 they switched to black and white stripes, using shirts sent over from Notts County in England. The stripes stuck, but pink keeps coming back as an away colour.",
+        ],
+      },
+      {
+        heading: "The 1997/98 season",
+        paragraphs: [
+          "Marcello Lippi's side won Serie A. Del Piero scored 21 league goals, with Filippo Inzaghi, signed from Atalanta that summer, alongside him.",
+          "In Europe, Juve reached a third Champions League final in a row. They lost 1-0 to Real Madrid in Amsterdam, with Predrag Mijatović scoring.",
+        ],
+      },
+      {
+        heading: "Del Piero and Zidane",
+        paragraphs: [
+          "Del Piero wore 10 for Juventus from 1995 to 2012. He is the club's record scorer and has made more appearances than anyone else.",
+          "Zidane joined from Bordeaux in 1996 and wore 21. A few weeks after the 1998 final, he scored twice in the World Cup final for France, and he won the Ballon d'Or that December.",
+        ],
+      },
+      {
+        heading: "The shirts",
+        paragraphs: [
+          "Both shirts are made by Kappa, with Sony MiniDisc across the front.",
+          "The home shirt is black and white stripes with a polo collar. The away shirt is pink with a black collar and cuffs. We have both plain, or printed with DEL PIERO 10 or ZIDANE 21.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Why are Juventus away shirts pink?",
+        a: "Juventus wore pink when the club was founded in 1897, before switching to black and white stripes in 1903. Pink has come back as an away colour many times, including in 1997/98.",
+      },
+      { q: "What number did Zidane wear at Juventus?", a: "21, from 1996 to 2001." },
+      { q: "Who sponsored Juventus in 1997/98?", a: "Sony MiniDisc. The kit was made by Kappa." },
+    ],
+    products: [
+      "juventus-1997-98-away-shirt-del-piero-10",
+      "juventus-1997-98-away-shirt-zidane-21",
+      "juventus-1997-98-home-shirt-del-piero-10",
+      "juventus-1997-98-home-shirt-zidane-21",
+      "juventus-1997-98-away-shirt",
+      "juventus-1997-98-home-shirt",
+    ],
+    cta: { label: "Shop Juventus shirts", href: "/clubs/juventus" },
+  },
+  {
+    slug: "ronaldo-r9-career-in-shirts",
+    title: "Ronaldo R9: A Career in Shirts",
+    seoTitle: "Ronaldo R9 Shirts: PSV, Inter, Brazil, Real Madrid & Milan",
+    description:
+      "From PSV to AC Milan: the shirts Ronaldo Nazário wore, the numbers on the back and what he won in each. A quick guide to R9's career.",
+    category: "Players",
+    datePublished: "2026-09-23",
+    heroImage: "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-1.webp",
+    heroAlt: "Brazil 2002 World Cup home shirt printed RONALDO 9",
+    heroFit: "contain",
+    intro:
+      "Ronaldo Nazário, known as R9, won two World Cups with Brazil and is one of the greatest strikers of all time. He played for five clubs in Europe and changed numbers more than once. Here is his career, shirt by shirt.",
+    sections: [
+      {
+        heading: "PSV Eindhoven, 1994–96",
+        paragraphs: [
+          "Ronaldo joined PSV from Cruzeiro at 17, just after the 1994 World Cup. He was in Brazil's winning squad but did not play.",
+          "He wore 9 and scored 30 league goals in his first season in Europe.",
+        ],
+      },
+      {
+        heading: "Barcelona, 1996–97",
+        paragraphs: [
+          "One season, 47 goals in all competitions. Barcelona won the Cup Winners' Cup and the Copa del Rey, and Ronaldo was named FIFA World Player of the Year at 20.",
+        ],
+      },
+      {
+        heading: "Inter, 1997–2002",
+        paragraphs: [
+          "Inter paid a world-record fee for him in 1997. He wore 10 in his first season, scored in the UEFA Cup final win over Lazio and won the Ballon d'Or.",
+          "When Roberto Baggio arrived in 1998 and took 10, Ronaldo moved to 9. Serious knee injuries kept him out for most of the next two years.",
+        ],
+      },
+      {
+        heading: "Brazil, 2002",
+        paragraphs: [
+          "Ronaldo came back to score eight goals at the 2002 World Cup, including both in the 2-0 final against Germany. He won the Golden Boot and, that December, a second Ballon d'Or.",
+        ],
+      },
+      {
+        heading: "Real Madrid, 2002–07",
+        paragraphs: [
+          "He joined Real Madrid after the World Cup. He wore 11 in his first season, when Real won La Liga, then switched to 9 and was the league's top scorer in 2003/04.",
+        ],
+      },
+      {
+        heading: "AC Milan, 2007–08",
+        paragraphs: [
+          "Ronaldo joined Milan in January 2007. Filippo Inzaghi already had 9, so he took 99.",
+          "He had played in the Champions League for Real Madrid earlier that season, so he was cup-tied when Milan won the final in May.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Why is Ronaldo Nazário called R9?",
+        a: "To tell him apart from other players called Ronaldo, especially Cristiano Ronaldo (CR7). The 9 is the number he wore for Brazil and most of his clubs.",
+      },
+      { q: "What number did Ronaldo wear at Inter?", a: "10 in 1997/98, then 9 from 1998 onwards." },
+      { q: "Why did Ronaldo wear 99 at AC Milan?", a: "Filippo Inzaghi already wore 9, so Ronaldo took 99." },
+    ],
+    products: [
+      "psv-eindhoven-1994-95-home-shirt-number-9",
+      "inter-milan-1997-98-uefa-cup-away-shirt-ronaldo-10",
+      "inter-milan-1998-99-home-shirt-ronaldo-9",
+      "brazil-2002-world-cup-home-shirt-ronaldo-9",
+      "real-madrid-2002-03-centenary-home-shirt-ronaldo-11",
+      "real-madrid-2003-04-home-shirt-ronaldo-9",
+      "ac-milan-2006-07-home-shirt-ronaldo-99",
+      "brazil-1998-world-cup-home-shirt-ronaldo-9",
+    ],
+    cta: { label: "Shop all Ronaldo R9 shirts", href: "/players/ronaldo-nazario" },
+  },
+  {
+    slug: "arsenal-invincibles-2003-04-shirts",
+    title: "Arsenal 2003/04: The Invincibles and Their Shirts",
+    seoTitle: "Arsenal Invincibles Shirt 2003/04: Home & Away Kits",
+    description:
+      "38 games, 26 wins, 12 draws, no defeats. The home and away shirts Arsenal wore in the 2003/04 Invincibles season, and the players whose names went on the back.",
+    category: "Premier League Classics",
+    datePublished: "2026-09-23",
+    heroImage: "/images/premier-league-classics/arsenal-2002-04-home-shirt-1.webp",
+    heroAlt: "Arsenal 2002-04 home shirt, red with white sleeves and the O2 sponsor",
+    heroFit: "contain",
+    intro:
+      "In 2003/04, Arsenal went through a whole Premier League season without losing. They won 26 and drew 12 of their 38 games and finished with 90 points. No team has done it in the Premier League since.",
+    sections: [
+      {
+        heading: "The unbeaten season",
+        paragraphs: [
+          "Arsène Wenger's side won the title at White Hart Lane in April 2004, with a 2-2 draw against Tottenham. They finished 11 points clear of Chelsea.",
+          "The last team to go a whole top-flight season unbeaten in England was Preston North End, in 1888/89.",
+        ],
+      },
+      {
+        heading: "The players",
+        paragraphs: [
+          "Thierry Henry scored 30 league goals and was the league's top scorer. Patrick Vieira was captain.",
+          "Around them were Dennis Bergkamp, Robert Pires, Freddie Ljungberg, Sol Campbell, Ashley Cole, Lauren, Kolo Touré and Jens Lehmann. José Antonio Reyes joined from Sevilla in January.",
+        ],
+      },
+      {
+        heading: "The shirts",
+        paragraphs: [
+          "Nike made both, with O2 across the front.",
+          "The home shirt has a red body and white sleeves. Arsenal first wore it in 2002/03 and kept it for the unbeaten season. The away shirt is yellow with a blue collar.",
+          "We have both plain, or printed with HENRY 14, VIEIRA 4, BERGKAMP 10, LJUNGBERG 8 or REYES 9.",
+        ],
+      },
+      {
+        heading: "49 games",
+        paragraphs: [
+          "The run went on into the next season and reached 49 league games. Manchester United ended it at Old Trafford in October 2004.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "How many games were Arsenal's Invincibles unbeaten?",
+        a: "All 38 league games in 2003/04 (26 wins, 12 draws), and 49 league games in a row in total, from May 2003 to October 2004.",
+      },
+      { q: "Who sponsored Arsenal in 2003/04?", a: "O2. The kit was made by Nike." },
+      { q: "What number did Thierry Henry wear for Arsenal?", a: "14." },
+    ],
+    products: [
+      "arsenal-2002-04-home-shirt-henry-14",
+      "arsenal-2003-04-away-shirt-henry-14",
+      "arsenal-2002-04-home-shirt-vieira-4",
+      "arsenal-2003-04-away-shirt-bergkamp-10",
+      "arsenal-2002-04-home-shirt",
+      "arsenal-2003-04-away-shirt",
+      "arsenal-2003-04-away-shirt-reyes-9",
+      "arsenal-2002-04-home-shirt-ljungberg-8",
+    ],
+    cta: { label: "Shop Arsenal shirts", href: "/clubs/arsenal" },
+  },
   {
     slug: "manchester-united-1998-99-treble-shirts",
     title: "Manchester United 1998/99: The Shirts of the Treble",
