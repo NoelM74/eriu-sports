@@ -25,5 +25,9 @@ export const PLAYER_BIOS: Record<string, string> = {
   'gabriel-batistuta':
     "'Batigol'. Argentina's great striker and Fiorentina's record Serie A scorer, who stayed with the club after relegation in 1993.",
   'rui-costa': 'The Portuguese playmaker wore 10 for Fiorentina for seven seasons before joining AC Milan.',
+  'alessandro-del-piero':
+    "Juventus's all-time record appearance maker and top scorer, who wore 10 for the club from 1995 to 2012.",
+  'zinedine-zidane':
+    "France's 1998 World Cup winner. He won two Serie A titles at Juventus before joining Real Madrid in 2001.",
   'lionel-messi': "Barcelona's all-time top scorer, who came through the club's academy.",
 };

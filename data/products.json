@@ -7927,5 +7927,730 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "mj-557670",
+    "title": "Juventus 1992-94 Home Shirt",
+    "slug": "juventus-1992-94-home-shirt",
+    "description": "Juventus's black and white striped home shirt from 1992-94, with the Danone sponsor and Kappa logos. Juve won the UEFA Cup in 1993.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1992-94-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-1992-94-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-1992-94-home-shirt-3.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1992-94",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Danone"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-546793",
+    "title": "Juventus 1996-97 Home Shirt",
+    "slug": "juventus-1996-97-home-shirt",
+    "description": "Juventus's 1996-97 home shirt, black and white stripes with a white collar and the Sony sponsor. Juve won Serie A that season.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1996-97-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-1996-97-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-1996-97-home-shirt-3.webp",
+      "/images/european-world-classics/juventus-1996-97-home-shirt-4.webp",
+      "/images/european-world-classics/juventus-1996-97-home-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1996-97",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-546794",
+    "title": "Juventus 1996-97 Away Shirt",
+    "slug": "juventus-1996-97-away-shirt",
+    "description": "The navy away shirt from 1996-97, with yellow stars across the shoulders and the Sony sponsor.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1996-97-away-shirt-1.webp",
+      "/images/european-world-classics/juventus-1996-97-away-shirt-2.webp",
+      "/images/european-world-classics/juventus-1996-97-away-shirt-3.webp",
+      "/images/european-world-classics/juventus-1996-97-away-shirt-4.webp",
+      "/images/european-world-classics/juventus-1996-97-away-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1996-97",
+      "kit": "Away",
+      "colours": "Navy / Yellow",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-641708",
+    "title": "Juventus 1997-98 Home Shirt",
+    "slug": "juventus-1997-98-home-shirt",
+    "description": "Juventus's black and white home shirt from 1997-98, with the Sony MiniDisc sponsor. Juve won Serie A and reached the Champions League final that season.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-1997-98-home-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-545912",
+    "title": "Juventus 1997-98 Away Shirt",
+    "slug": "juventus-1997-98-away-shirt",
+    "description": "The pink away shirt from 1997-98, with black trim and the Sony MiniDisc sponsor. Pink was Juventus's first colour when the club was founded in 1897.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-away-shirt-1.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-2.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-3.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-4.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Away",
+      "colours": "Pink / Black",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-558879",
+    "title": "Juventus 1997-98 Home Shirt – Del Piero 10",
+    "slug": "juventus-1997-98-home-shirt-del-piero-10",
+    "description": "Juventus's black and white home shirt from 1997-98, with the Sony MiniDisc sponsor. Juve won Serie A and reached the Champions League final that season. Printed with DEL PIERO 10 on the back. Alessandro Del Piero wore 10 and scored 21 league goals that season.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-home-shirt-del-piero-10-1.webp",
+      "/images/european-world-classics/juventus-1997-98-home-shirt-del-piero-10-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc",
+      "print": "Del Piero 10",
+      "player": "Alessandro Del Piero"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-563994",
+    "title": "Juventus 1997-98 Home Shirt – Zidane 21",
+    "slug": "juventus-1997-98-home-shirt-zidane-21",
+    "description": "Juventus's black and white home shirt from 1997-98, with the Sony MiniDisc sponsor. Juve won Serie A and reached the Champions League final that season. Printed with ZIDANE 21 on the back. Zinedine Zidane wore 21 at Juventus from 1996 to 2001.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-home-shirt-zidane-21-1.webp",
+      "/images/european-world-classics/juventus-1997-98-home-shirt-zidane-21-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc",
+      "print": "Zidane 21",
+      "player": "Zinedine Zidane"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613895",
+    "title": "Juventus 1997-98 Away Shirt – Del Piero 10",
+    "slug": "juventus-1997-98-away-shirt-del-piero-10",
+    "description": "The pink away shirt from 1997-98, with black trim and the Sony MiniDisc sponsor. Pink was Juventus's first colour when the club was founded in 1897. Printed with DEL PIERO 10 on the back. Alessandro Del Piero wore 10 and scored 21 league goals that season.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-1.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-2.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-3.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-4.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Away",
+      "colours": "Pink / Black",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc",
+      "print": "Del Piero 10",
+      "player": "Alessandro Del Piero"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613896",
+    "title": "Juventus 1997-98 Away Shirt – Zidane 21",
+    "slug": "juventus-1997-98-away-shirt-zidane-21",
+    "description": "The pink away shirt from 1997-98, with black trim and the Sony MiniDisc sponsor. Pink was Juventus's first colour when the club was founded in 1897. Printed with ZIDANE 21 on the back. Zinedine Zidane wore 21 at Juventus from 1996 to 2001.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-1.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-2.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-3.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-4.webp",
+      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1997-98",
+      "kit": "Away",
+      "colours": "Pink / Black",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sony MiniDisc",
+      "print": "Zidane 21",
+      "player": "Zinedine Zidane"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-563986",
+    "title": "Juventus 1998-99 Home Shirt",
+    "slug": "juventus-1998-99-home-shirt",
+    "description": "Juventus's 1998-99 home shirt, black and white stripes with the D+ Libertà Digitale sponsor.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1998-99-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-1998-99-home-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1998-99",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "D+"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-546828",
+    "title": "Juventus 1999-2000 Home Shirt",
+    "slug": "juventus-1999-2000-home-shirt",
+    "description": "Juventus's 1999-2000 home shirt, black and white stripes with the D+ sponsor and Kappa tape on the shoulders.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-1999-2000-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-1999-2000-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-1999-2000-home-shirt-3.webp",
+      "/images/european-world-classics/juventus-1999-2000-home-shirt-4.webp",
+      "/images/european-world-classics/juventus-1999-2000-home-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "1999-00",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "D+"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-556351",
+    "title": "Juventus 2001-02 Home Shirt",
+    "slug": "juventus-2001-02-home-shirt",
+    "description": "Juventus's 2001-02 home shirt, black and white stripes with the Fastweb sponsor and Lotto trim. Juve won Serie A that season.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2001-02-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-2001-02-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-2001-02-home-shirt-3.webp",
+      "/images/european-world-classics/juventus-2001-02-home-shirt-4.webp",
+      "/images/european-world-classics/juventus-2001-02-home-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2001-02",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Fastweb"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-559935",
+    "title": "Juventus 2001-02 Away Shirt",
+    "slug": "juventus-2001-02-away-shirt",
+    "description": "Juventus's black away shirt from 2001-02, with gold Fastweb lettering and Lotto diamonds on the sleeves. Juve won Serie A that season.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2001-02-away-shirt-1.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-2.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-3.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-4.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2001-02",
+      "kit": "Away",
+      "colours": "Black / Gold",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Fastweb"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613897",
+    "title": "Juventus 2001-02 Away Shirt – Del Piero 10",
+    "slug": "juventus-2001-02-away-shirt-del-piero-10",
+    "description": "Juventus's black away shirt from 2001-02, with gold Fastweb lettering and Lotto diamonds on the sleeves. Juve won Serie A that season. Printed with DEL PIERO 10 on the back. Alessandro Del Piero wore 10 as Juve won the league.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-1.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-2.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-3.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-4.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2001-02",
+      "kit": "Away",
+      "colours": "Black / Gold",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Fastweb",
+      "print": "Del Piero 10",
+      "player": "Alessandro Del Piero"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613898",
+    "title": "Juventus 2001-02 Away Shirt – Nedved 11",
+    "slug": "juventus-2001-02-away-shirt-nedved-11",
+    "description": "Juventus's black away shirt from 2001-02, with gold Fastweb lettering and Lotto diamonds on the sleeves. Juve won Serie A that season. Printed with NEDVED 11 on the back. Pavel Nedvěd joined from Lazio in 2001 and wore 11.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-1.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-2.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-3.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-4.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2001-02",
+      "kit": "Away",
+      "colours": "Black / Gold",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Fastweb",
+      "print": "Nedved 11",
+      "player": "Pavel Nedvěd"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613899",
+    "title": "Juventus 2001-02 Away Shirt – Trezeguet 17",
+    "slug": "juventus-2001-02-away-shirt-trezeguet-17",
+    "description": "Juventus's black away shirt from 2001-02, with gold Fastweb lettering and Lotto diamonds on the sleeves. Juve won Serie A that season. Printed with TREZEGUET 17 on the back. David Trezeguet wore 17 and was Serie A's joint top scorer that season with 24 goals.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-1.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-2.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-3.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-4.webp",
+      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2001-02",
+      "kit": "Away",
+      "colours": "Black / Gold",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Fastweb",
+      "print": "Trezeguet 17",
+      "player": "David Trezeguet"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-547784",
+    "title": "Juventus 2002-03 Champions League Home Shirt",
+    "slug": "juventus-2002-03-champions-league-home-shirt",
+    "description": "Juventus's 2002-03 home shirt in the Champions League style, with the Tamoil sponsor and the Italian champions' shield. Juve won Serie A and reached the Champions League final at Old Trafford that season.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-3.webp",
+      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-4.webp",
+      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2002-03",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Tamoil"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-551441",
+    "title": "Juventus 2002-03 Goalkeeper Shirt",
+    "slug": "juventus-2002-03-goalkeeper-shirt",
+    "description": "Juventus's pink and black goalkeeper shirt from 2002-03, with the Tamoil sponsor. Plain, with no name or number.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2002-03-goalkeeper-shirt-1.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2002-03",
+      "kit": "Goalkeeper",
+      "colours": "Pink / Black",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Tamoil"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-565603",
+    "title": "Juventus 2003-04 Home Shirt",
+    "slug": "juventus-2003-04-home-shirt",
+    "description": "Juventus's 2003-04 home shirt, black and white stripes with the Fastweb sponsor. The first season in Nike kit.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2003-04-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-2003-04-home-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2003-04",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Fastweb"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-565626",
+    "title": "Juventus 2003-04 Away Shirt",
+    "slug": "juventus-2003-04-away-shirt",
+    "description": "Juventus's pale pink away shirt from 2003-04, with black trim and the Fastweb sponsor.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2003-04-away-shirt-1.webp",
+      "/images/european-world-classics/juventus-2003-04-away-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2003-04",
+      "kit": "Away",
+      "colours": "Pale Pink / Black",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Fastweb"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-556127",
+    "title": "Juventus 2005-06 Home Shirt",
+    "slug": "juventus-2005-06-home-shirt",
+    "description": "Juventus's 2005-06 home shirt, black and white stripes with the Tamoil sponsor and Nike trim.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2005-06-home-shirt-1.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-2.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-3.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-4.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2005-06",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Tamoil"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-613903",
+    "title": "Juventus 2005-06 Home Shirt – Del Piero 10",
+    "slug": "juventus-2005-06-home-shirt-del-piero-10",
+    "description": "Juventus's 2005-06 home shirt, black and white stripes with the Tamoil sponsor and Nike trim. Printed with DEL PIERO 10 on the back. Alessandro Del Piero wore 10 for Juventus from 1995 until he left in 2012.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-1.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-2.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-3.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-4.webp",
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-5.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2005-06",
+      "kit": "Home",
+      "colours": "Black / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Tamoil",
+      "print": "Del Piero 10",
+      "player": "Alessandro Del Piero"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-563677",
+    "title": "Juventus 2005-06 Away Shirt",
+    "slug": "juventus-2005-06-away-shirt",
+    "description": "Juventus's red away shirt from 2005-06, with a green and white stripe down the front and the Tamoil sponsor.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/juventus-2005-06-away-shirt-1.webp",
+      "/images/european-world-classics/juventus-2005-06-away-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Juventus",
+      "season": "2005-06",
+      "kit": "Away",
+      "colours": "Red / Green / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Tamoil"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

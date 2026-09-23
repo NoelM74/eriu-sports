@@ -62,7 +62,7 @@ export const COLLECTIONS: CollectionDef[] = [
     seoTitle: "Retro Barcelona, Real Madrid & Serie A Shirts",
     seoDescription:
       "Retro football shirts from Barcelona, Real Madrid, Inter, AC Milan, Juventus, Brazil and Italy. From €25, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro Serie A shirts", "retro Juventus shirt", "retro Roma shirt", "retro Bayern Munich shirt", "retro European football shirts"],
+    keywords: ["retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Bayern Munich shirt", "retro European football shirts"],
     priceFrom: 25,
   },
   {
