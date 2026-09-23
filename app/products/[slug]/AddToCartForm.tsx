@@ -103,7 +103,7 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                     </button>
                 </div>
 
-                <div className={`mt-4 grid gap-3 ${sizes.length > 4 ? 'grid-cols-5' : 'grid-cols-4'}`}>
+                <div className={`mt-4 grid ${sizes.length > 5 ? 'grid-cols-6 gap-2' : sizes.length > 4 ? 'grid-cols-5 gap-3' : 'grid-cols-4 gap-3'}`}>
                     {sizes.map((size) => (
                         <button
                             key={size}

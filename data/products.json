@@ -4564,5 +4564,833 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "mj-563324",
+    "title": "Manchester United 1992-94 Home Shirt – Cantona 7",
+    "slug": "manchester-united-1992-94-home-shirt-cantona-7",
+    "description": "The home shirt with the lace-up collar, a patterned red body and the Sharp sponsor. United won the first Premier League title in this shirt in 1992-93. Printed with CANTONA 7 on the back. Eric Cantona's famous number 7.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-1.webp",
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-2.webp",
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-3.webp",
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-4.webp",
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-5.webp",
+      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-6.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1992-94",
+      "kit": "Home",
+      "colours": "Red / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp",
+      "print": "Cantona 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650766",
+    "title": "Manchester United 1993-95 Away Shirt – Cantona 7",
+    "slug": "manchester-united-1993-95-away-shirt-cantona-7",
+    "description": "The black away shirt with gold and blue trim and the Sharp Viewcam sponsor. Printed with CANTONA 7 on the back. Eric Cantona's famous number 7.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-1.webp",
+      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-2.webp",
+      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1993-95",
+      "kit": "Away",
+      "colours": "Black / Gold",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp Viewcam",
+      "print": "Cantona 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-558762",
+    "title": "Manchester United 2000-02 Home Shirt – Beckham 7",
+    "slug": "manchester-united-2000-02-home-shirt-beckham-7",
+    "description": "The 2000-02 home shirt, the first with Vodafone as sponsor. United won the league in 2000-01. Printed with BECKHAM 7 on the back. David Beckham's number 7.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-3.webp",
+      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-4.webp",
+      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2000-02",
+      "kit": "Home",
+      "colours": "Red / Black / White",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Vodafone",
+      "print": "Beckham 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-564348",
+    "title": "Manchester United 2004-06 Home Shirt – Ronaldo 7",
+    "slug": "manchester-united-2004-06-home-shirt-ronaldo-7",
+    "description": "The 2004-06 home shirt with a white collar and the Vodafone sponsor. Printed with RONALDO 7 on the back. Cristiano Ronaldo's number 7.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2004-06",
+      "kit": "Home",
+      "colours": "Red / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Vodafone",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-642258",
+    "title": "Manchester United 2006-07 Home Shirt – Ronaldo 7",
+    "slug": "manchester-united-2006-07-home-shirt-ronaldo-7",
+    "description": "The 2006-07 home shirt, the first with AIG as sponsor, with gold trim. United won the league that season. Printed with RONALDO 7 on the back. Cristiano Ronaldo was named PFA Player of the Year that season.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-3.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-4.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2006-07",
+      "kit": "Home",
+      "colours": "Red / Gold",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650776",
+    "title": "Manchester United 2006-08 Away Shirt – Rooney 8",
+    "slug": "manchester-united-2006-08-away-shirt-rooney-8",
+    "description": "The white away shirt from 2006 to 2008, with black side panels, gold trim and the AIG sponsor. Printed with ROONEY 8 on the back. Wayne Rooney wore 8 before switching to 10 in 2008.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-1.webp",
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-2.webp",
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2006-08",
+      "kit": "Away",
+      "colours": "White / Black / Gold",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Rooney 8"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650629",
+    "title": "Manchester United 2007-08 Home Shirt – Ronaldo 7",
+    "slug": "manchester-united-2007-08-home-shirt-ronaldo-7",
+    "description": "The 2007-08 home shirt, from the season United won the league and the Champions League in Moscow. Printed with RONALDO 7 on the back. Cristiano Ronaldo scored 42 goals that season and won the Ballon d'Or.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2007-08",
+      "kit": "Home",
+      "colours": "Red / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650627",
+    "title": "Manchester United 2007-08 Away Shirt – Ronaldo 7",
+    "slug": "manchester-united-2007-08-away-shirt-ronaldo-7",
+    "description": "The black away shirt from 2007-08, with red trim and the AIG sponsor. Printed with RONALDO 7 on the back. Cristiano Ronaldo's number 7.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-3.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-4.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2007-08",
+      "kit": "Away",
+      "colours": "Black / Red",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-563385",
+    "title": "Manchester United 2008-09 Away Shirt – Ronaldo 7",
+    "slug": "manchester-united-2008-09-away-shirt-ronaldo-7",
+    "description": "The white away shirt from 2008-09, with blue trim and the AIG sponsor. Printed with RONALDO 7 on the back. Cristiano Ronaldo's last season at United before joining Real Madrid.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-ronaldo-7-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2008-09",
+      "kit": "Away",
+      "colours": "White / Blue / Red",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650694",
+    "title": "Manchester United 2008-09 Third Shirt – Ronaldo 7",
+    "slug": "manchester-united-2008-09-third-shirt-ronaldo-7",
+    "description": "The blue third shirt from 2008-09, with the AIG sponsor. Printed with RONALDO 7 on the back. Cristiano Ronaldo's last season at United before joining Real Madrid.",
+    "price": 35,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-1.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-2.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-3.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-4.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2008-09",
+      "kit": "Third",
+      "colours": "Blue",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG",
+      "print": "Ronaldo 7"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-550768",
+    "title": "Manchester United 1986 Away Shirt",
+    "slug": "manchester-united-1986-away-shirt",
+    "description": "The blue away shirt from 1986, with a tonal striped pattern, red and white trim and the Sharp sponsor. Alex Ferguson took over as manager that November.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-3.webp",
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-4.webp",
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-5.webp",
+      "/images/premier-league-classics/manchester-united-1986-away-shirt-6.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1986",
+      "kit": "Away",
+      "colours": "Blue / Red / White",
+      "fit": "Classic 80s cut, a little boxy",
+      "condition": "New",
+      "sponsor": "Sharp"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-664463",
+    "title": "Manchester United 1990-92 Away Shirt",
+    "slug": "manchester-united-1990-92-away-shirt",
+    "description": "The blue and white patterned away shirt from 1990 to 1992, with the Sharp sponsor. United won the Cup Winners' Cup in 1991.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1990-92-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1990-92-away-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1990-92",
+      "kit": "Away",
+      "colours": "Blue / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650785",
+    "title": "Manchester United 1991 Away Shirt",
+    "slug": "manchester-united-1991-away-shirt",
+    "description": "A white away shirt from 1991, with red striped shoulders and trim and no sponsor on the front.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1991-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1991-away-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1991",
+      "kit": "Away",
+      "colours": "White / Red",
+      "fit": "Classic early-90s cut",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-549012",
+    "title": "Manchester United 1995-96 Grey Away Shirt",
+    "slug": "manchester-united-1995-96-grey-away-shirt",
+    "description": "The grey away shirt from 1995-96. United famously changed out of it at half-time at Southampton in April 1996, 3-0 down, saying the players couldn't pick each other out.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1995-96",
+      "kit": "Away",
+      "colours": "Grey / Blue",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp Viewcam"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-546009",
+    "title": "Manchester United 1999 Champions League Final Shirt",
+    "slug": "manchester-united-1999-champions-league-final-shirt",
+    "description": "The home shirt from the 1999 Champions League final at the Camp Nou, where United scored twice in injury time to beat Bayern Munich and win the Treble. Embroidered with the final details.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-3.webp",
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-4.webp",
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-5.webp",
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-6.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1998-99",
+      "kit": "Home",
+      "colours": "Red / White / Black",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-551476",
+    "title": "Manchester United 1999-00 Away Shirt",
+    "slug": "manchester-united-1999-00-away-shirt",
+    "description": "The navy away shirt with fine white stripes from 1999-00, with the Sharp Digital sponsor. United won the league that season.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-1999-00-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-1999-00-away-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1999-00",
+      "kit": "Away",
+      "colours": "Navy / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New",
+      "sponsor": "Sharp Digital"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "id": "mj-563816",
+    "title": "Manchester United 2000-01 Third Shirt",
+    "slug": "manchester-united-2000-01-third-shirt",
+    "description": "The navy third shirt from 2000-01, with red side panels and the Vodafone sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2000-01-third-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2000-01-third-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2000-01",
+      "kit": "Third",
+      "colours": "Navy / Red",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Vodafone"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-540828",
+    "title": "Manchester United 2001-02 Centenary Reversible Shirt",
+    "slug": "manchester-united-2001-02-centenary-reversible-shirt",
+    "description": "Made for 100 years of the Manchester United name (1902-2002). A reversible shirt: white with black trim on one side, gold on the other, with the Vodafone sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-3.webp",
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-4.webp",
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2001-02",
+      "kit": "Away",
+      "colours": "White / Gold / Black",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New",
+      "sponsor": "Vodafone"
+    },
+    "sizes": [
+      "S",
+      "XL"
+    ]
+  },
+  {
+    "id": "mj-564559",
+    "title": "Manchester United 2002-03 Third Shirt",
+    "slug": "manchester-united-2002-03-third-shirt",
+    "description": "The blue third shirt from 2002-03, with the Vodafone sponsor. United won the league that season.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2002-03-third-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2002-03-third-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2002-03",
+      "kit": "Third",
+      "colours": "Blue / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Vodafone"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-570613",
+    "title": "Manchester United 2002-04 Home Shirt",
+    "slug": "manchester-united-2002-04-home-shirt",
+    "description": "The 2002-04 home shirt with black side panels and the Vodafone sponsor. United won the FA Cup in 2004.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2002-04-home-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2002-04-home-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2002-04",
+      "kit": "Home",
+      "colours": "Red / Black",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Vodafone"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-563290",
+    "title": "Manchester United 2004-06 Home Shirt",
+    "slug": "manchester-united-2004-06-home-shirt",
+    "description": "The 2004-06 home shirt with a white collar and the Vodafone sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2004-06",
+      "kit": "Home",
+      "colours": "Red / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "Vodafone"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-547780",
+    "title": "Manchester United 2006-07 Home Shirt",
+    "slug": "manchester-united-2006-07-home-shirt",
+    "description": "The 2006-07 home shirt, the first with AIG as sponsor, with gold trim. United won the league that season.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-3.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-4.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-5.webp",
+      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-6.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2006-07",
+      "kit": "Home",
+      "colours": "Red / Gold",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650775",
+    "title": "Manchester United 2006-08 Away Shirt",
+    "slug": "manchester-united-2006-08-away-shirt",
+    "description": "The white away shirt from 2006 to 2008, with black side panels, gold trim and the AIG sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2006-08",
+      "kit": "Away",
+      "colours": "White / Black / Gold",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650628",
+    "title": "Manchester United 2007-08 Home Shirt",
+    "slug": "manchester-united-2007-08-home-shirt",
+    "description": "The 2007-08 home shirt, from the season United won the league and the Champions League in Moscow.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-3.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-4.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-5.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2007-08",
+      "kit": "Home",
+      "colours": "Red / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-650617",
+    "title": "Manchester United 2007-08 Away Shirt",
+    "slug": "manchester-united-2007-08-away-shirt",
+    "description": "The black away shirt from 2007-08, with red trim and the AIG sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2007-08",
+      "kit": "Away",
+      "colours": "Black / Red",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-551873",
+    "title": "Manchester United 2008-09 Away Shirt",
+    "slug": "manchester-united-2008-09-away-shirt",
+    "description": "The white away shirt from 2008-09, with blue trim and the AIG sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-2.webp",
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-3.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2008-09",
+      "kit": "Away",
+      "colours": "White / Blue / Red",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-553958",
+    "title": "Manchester United 2009-10 Home Shirt",
+    "slug": "manchester-united-2009-10-home-shirt",
+    "description": "The 2009-10 home shirt, with a black chevron across the chest and the AIG sponsor, in AIG's last season as sponsor.",
+    "price": 25,
+    "images": [
+      "/images/premier-league-classics/manchester-united-2009-10-home-shirt-1.webp",
+      "/images/premier-league-classics/manchester-united-2009-10-home-shirt-2.webp"
+    ],
+    "collection": "Premier League Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2009-10",
+      "kit": "Home",
+      "colours": "Red / Black",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "sponsor": "AIG"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "2XL"
+    ]
   }
 ]
