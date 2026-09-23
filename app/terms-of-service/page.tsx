@@ -42,12 +42,12 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-[#0F2131] mt-12 mb-4">3. Shipping & Delivery</h2>
                     <p>
-                        <strong>Standard Shipping:</strong> 10-15 business days for international orders.
-                        Orders are processed within 2-3 business days of payment confirmation.
+                        <strong>Delivery Time:</strong> Orders are delivered within 8–14 days of the date the
+                        order is placed. We deliver to Ireland and the United Kingdom.
                     </p>
                     <p>
-                        <strong>Tracking:</strong> All orders include tracking numbers that are emailed to you
-                        once your order ships. You can track your order on our website or through the carrier.
+                        <strong>Tracking:</strong> All orders include a tracking number, emailed to you
+                        once your order is on its way. You can follow your parcel through the carrier.
                     </p>
                     <p>
                         <strong>Shipping Costs:</strong> Free shipping on orders over €49.

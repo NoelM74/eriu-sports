@@ -1,52 +1,81 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getProductBySlug, products } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, products, type ProductDetails } from '@/lib/products';
+import { CATEGORIES, getCollectionBySlug, DELIVERY } from '@/lib/collections';
+import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
 import ImageGallery from './ImageGallery';
+
+const SITE = 'https://eriusports.com';
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return products.map((product) => ({
-    slug: product.slug,
-  }));
+  return products.map((product) => ({ slug: product.slug }));
+}
+
+function formatPrice(p: number) {
+  return `€${p % 1 ? p.toFixed(2) : p}`;
+}
+
+function firstSentence(text: string, max = 110) {
+  const s = text.split(/(?<=\.)\s/)[0];
+  return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
+  if (!product) return { title: 'Product not found' };
 
-  if (!product) {
-    return {
-      title: 'Product Not Found | Ériu Sports',
-    };
-  }
-
-  const imageUrl = product.images[0] ? `https://eriusports.com${product.images[0]}` : undefined;
+  const price = formatPrice(product.price);
+  const description = `${firstSentence(product.description)} ${price}, sizes S–XL, delivered to Ireland and the UK in ${DELIVERY}.`;
+  const image = product.images[0] ? `${SITE}${product.images[0]}` : undefined;
 
   return {
-    title: `${product.title} | Ériu Sports`,
-    description: product.description,
-    keywords: [product.title, product.category, 'retro jersey', 'vintage football shirt', 'Ériu Sports'],
+    title: `${product.title} | ${price}`,
+    description,
+    alternates: { canonical: `/products/${product.slug}` },
     openGraph: {
       title: `${product.title} | Ériu Sports`,
-      description: product.description,
-      type: 'website',
+      description,
       url: `/products/${product.slug}`,
-      images: imageUrl ? [{ url: imageUrl, width: 800, height: 1000, alt: product.title }] : undefined,
+      type: 'website',
+      images: image ? [{ url: image, alt: product.title }] : undefined,
     },
     twitter: {
       card: 'summary_large_image',
       title: `${product.title} | Ériu Sports`,
-      description: product.description,
-      images: imageUrl ? [imageUrl] : undefined,
+      description,
+      images: image ? [image] : undefined,
     },
-    alternates: {
-      canonical: `/products/${product.slug}`,
+  };
+}
+
+const DETAIL_LABELS: [keyof ProductDetails, string][] = [
+  ['team', 'Team'],
+  ['season', 'Season'],
+  ['kit', 'Kit'],
+  ['sponsor', 'Sponsor'],
+  ['colours', 'Colours'],
+  ['fit', 'Fit'],
+  ['condition', 'Condition'],
+];
+
+/** Offer shipping details for one country: 8–14 days from order. */
+function shippingTo(country: 'IE' | 'GB') {
+  return {
+    '@type': 'OfferShippingDetails',
+    shippingRate: { '@type': 'MonetaryAmount', value: 4.95, currency: 'EUR' },
+    shippingDestination: { '@type': 'DefinedRegion', addressCountry: country },
+    deliveryTime: {
+      '@type': 'ShippingDeliveryTime',
+      handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 2, unitCode: 'DAY' },
+      transitTime: { '@type': 'QuantitativeValue', minValue: 8, maxValue: 12, unitCode: 'DAY' },
     },
   };
 }
@@ -54,152 +83,152 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 export default async function ProductDetail({ params }: ProductPageProps) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
+  if (!product) notFound();
 
-  if (!product) {
-    notFound();
-  }
+  const collection = getCollectionBySlug(product.collectionSlug)!;
+  const category = CATEGORIES.find((c) => c.key === product.category)!;
+  const related = getRelatedProducts(product);
+  const url = `${SITE}/products/${product.slug}`;
+  const details = DETAIL_LABELS.filter(([key]) => product.details[key]);
+  const altBase = product.details.colours
+    ? `${product.title} in ${product.details.colours.replace(/ \/ /g, ', ').toLowerCase()}`
+    : product.title;
 
-  const sizes = product.sizes || ['S', 'M', 'L', 'XL'];
-
-  // JSON-LD structured data
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.title,
-    description: product.description,
-    image: product.images.map((img) => `https://eriusports.com${img}`),
-    brand: {
-      '@type': 'Brand',
-      name: 'Ériu Sports',
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.title,
+      description: product.description,
+      image: product.images.map((img) => `${SITE}${img}`),
+      sku: product.originalId,
+      category: collection.name,
+      ...(product.details.colours ? { color: product.details.colours } : {}),
+      offers: {
+        '@type': 'Offer',
+        url,
+        price: product.price,
+        priceCurrency: product.currency,
+        availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
+        seller: { '@type': 'Organization', name: 'Ériu Sports' },
+        shippingDetails: [shippingTo('IE'), shippingTo('GB')],
+        hasMerchantReturnPolicy: {
+          '@type': 'MerchantReturnPolicy',
+          applicableCountry: ['IE', 'GB'],
+          returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          merchantReturnDays: 30,
+          returnMethod: 'https://schema.org/ReturnByMail',
+        },
+      },
     },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: product.currency,
-      lowPrice: product.price,
-      highPrice: product.price,
-      offerCount: sizes.length,
-      availability: 'https://schema.org/InStock',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+        { '@type': 'ListItem', position: 2, name: category.label, item: `${SITE}/catalog?category=${category.key}` },
+        { '@type': 'ListItem', position: 3, name: collection.name, item: `${SITE}/collections/${collection.slug}` },
+        { '@type': 'ListItem', position: 4, name: product.title, item: url },
+      ],
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: product.rating,
-      reviewCount: product.reviewCount,
-    },
-    sku: product.originalId,
-  };
+  ];
 
   return (
     <div className="bg-white min-h-screen text-[var(--color-foreground)]">
-      {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ol className="flex items-center text-sm text-gray-500">
-          <li>
-            <Link href="/" className="hover:text-[var(--color-teal)] transition-colors">
-              Home
-            </Link>
-          </li>
-          <li className="mx-2">/</li>
-          <li>
-            <Link href="/catalog" className="hover:text-[var(--color-teal)] transition-colors">
-              Shop
-            </Link>
-          </li>
-          <li className="mx-2">/</li>
-          <li>
-            <Link href={`/catalog?category=${product.category}`} className="hover:text-[var(--color-teal)] transition-colors">
-              {product.category}
-            </Link>
-          </li>
-          <li className="mx-2">/</li>
-          <li aria-current="page" className="text-gray-900 font-medium truncate max-w-[200px]">
-            {product.title}
-          </li>
+        <ol className="flex flex-wrap items-center gap-x-2 text-sm text-gray-500">
+          <li><Link href="/" className="hover:text-[var(--color-teal)]">Home</Link></li>
+          <li aria-hidden>/</li>
+          <li><Link href={`/collections/${collection.slug}`} className="hover:text-[var(--color-teal)]">{collection.name}</Link></li>
+          <li aria-hidden>/</li>
+          <li aria-current="page" className="text-gray-900 font-medium truncate max-w-[220px]">{product.title}</li>
         </ol>
       </nav>
 
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
+          <ImageGallery images={product.images} title={altBase} badge={product.badge} />
 
-          {/* Image Gallery */}
-          <ImageGallery
-            images={product.images}
-            title={product.title}
-            badge={product.badge}
-          />
-
-          {/* Product Info */}
-          <div className="mt-10 px-4 sm:px-0 lg:mt-0">
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 uppercase">
+          <div className="mt-8 lg:mt-0">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--color-teal)]">{collection.name}</p>
+            <h1 className="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 uppercase leading-tight">
               {product.title}
             </h1>
 
-            <div className="mt-4 flex items-center gap-4">
+            <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
               <PriceDisplay eurPrice={product.price} />
-              {/* Rating */}
-              <div className="flex items-center gap-1">
-                <span className="text-yellow-400 text-lg">★</span>
-                <span className="text-sm text-gray-600">{product.rating}</span>
-                <span className="text-sm text-gray-400">({product.reviewCount} reviews)</span>
-              </div>
+              <span className="text-sm text-gray-500">Free delivery on orders over €49</span>
             </div>
 
-            <div className="mt-8">
-              <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-3">
-                Description
-              </h2>
-              <div className="space-y-4 text-base text-gray-600 leading-relaxed font-light whitespace-pre-line">
-                {product.description}
-              </div>
-            </div>
+            <p className="mt-6 text-base text-gray-700 leading-relaxed">{product.description}</p>
 
-            {/* Specs */}
-            <div className="mt-8 border-t border-gray-200 pt-8">
-              <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest mb-4">
-                Product Details
-              </h2>
-              <ul className="space-y-2 text-sm text-gray-600">
-                {product.specs.map((spec, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
-                    <span className="text-[var(--color-teal)]">✓</span>
-                    {spec}
-                  </li>
+            {details.length > 0 && (
+              <dl className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm border-t border-gray-200 pt-6">
+                {details.map(([key, label]) => (
+                  <div key={key} className="contents">
+                    <dt className="font-semibold text-gray-900">{label}</dt>
+                    <dd className="text-gray-600">{product.details[key]}</dd>
+                  </div>
                 ))}
+              </dl>
+            )}
+
+            <AddToCartForm product={product} sizes={product.sizes} />
+
+            <div className="mt-8 border border-gray-200 bg-gray-50 p-5 text-sm text-gray-700">
+              <p className="font-semibold text-gray-900">Delivered in {DELIVERY} from order</p>
+              <ul className="mt-2 space-y-1">
+                <li>Tracked delivery to Ireland and the UK</li>
+                <li>€4.95 delivery, free on orders over €49</li>
+                <li>30-day returns on unworn items with tags on</li>
               </ul>
+              <Link href="/shipping-returns" className="mt-3 inline-block text-[var(--color-teal)] underline underline-offset-4">
+                Delivery &amp; returns
+              </Link>
             </div>
 
-            {/* Size Selector & Add to Cart (Client Component) */}
-            <AddToCartForm product={product} sizes={sizes} />
-
-            {/* Trust Signals */}
-            <div className="mt-8 border-t border-gray-200 pt-8 flex flex-col gap-4">
-              <div className="flex items-center text-sm text-gray-600">
-                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                </svg>
-                <span>Free shipping on orders over €49. Fast delivery worldwide.</span>
+            {product.sizeGuide && (
+              <div className="mt-6">
+                <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-widest">Fit guide</h2>
+                <p className="mt-1 text-sm text-gray-600">
+                  Measured flat on a size {product.sizeGuide.size}. Other sizes scale up or down from here.
+                </p>
+                <table className="mt-3 w-full max-w-sm text-sm">
+                  <tbody>
+                    {product.sizeGuide.rows.map(([label, value]) => (
+                      <tr key={label} className="border-b border-gray-100">
+                        <th scope="row" className="py-2 pr-4 text-left font-medium text-gray-900">{label}</th>
+                        <td className="py-2 text-gray-600">{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <Link href="/size-guide" className="mt-3 inline-block text-sm text-[var(--color-teal)] underline underline-offset-4">
+                  Full size guide
+                </Link>
               </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                <span>Quality verified retro classics.</span>
-              </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <svg className="h-5 w-5 mr-3 text-[var(--color-teal)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-                <span>Returns within 30 days.</span>
-              </div>
-            </div>
-
+            )}
           </div>
         </div>
+
+        {related.length > 0 && (
+          <section className="mt-16 border-t border-gray-200 pt-10" aria-labelledby="related">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+              <h2 id="related" className="text-2xl font-bold uppercase text-[#0F2131]">You might also like</h2>
+              <Link href={`/collections/${collection.slug}`} className="shrink-0 text-xs font-bold uppercase tracking-widest text-[#1A533E] border-b border-[#1A533E] pb-0.5">
+                More {collection.name} →
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {related.map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

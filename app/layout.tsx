@@ -12,57 +12,33 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
+const SITE = "https://eriusports.com";
+const DESCRIPTION =
+  "Retro football shirts, county GAA jerseys, GAA training vests and AFL jerseys. From €25, delivered to Ireland and the UK in 8–14 days. Free delivery over €49.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://eriusports.com"),
+  metadataBase: new URL(SITE),
   title: {
-    default: "Ériu Sports | Premium Irish Football Heritage & GAA Gear",
+    default: "Retro Football Shirts & GAA Jerseys | Ériu Sports",
     template: "%s | Ériu Sports",
   },
-  description:
-    "Premium retro football jerseys and GAA gear. Designed in Ireland, built for performance. Shop classic Ireland jerseys, Premier League classics, and authentic GAA merchandise. Free shipping on orders over €49.",
-  keywords: [
-    "retro football jerseys",
-    "Irish football",
-    "GAA gear",
-    "vintage soccer shirts",
-    "Ireland classics",
-    "Premier League retro kits",
-    "Ériu Sports",
-    "designed in Ireland",
-  ],
-  authors: [{ name: "Ériu Sports" }],
-  creator: "Ériu Sports",
-  publisher: "Ériu Sports",
-  alternates: {
-    canonical: "/",
-    languages: {
-      'en-IE': '/en-IE',
-      'en-GB': '/en-GB',
-      'en-US': '/en-US',
-    },
-  },
+  description: DESCRIPTION,
+  applicationName: "Ériu Sports",
+  // Canonicals are set per page; there are no language/region variants of the site.
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://eriusports.com",
-    title: "Ériu Sports | Premium Irish Football Heritage",
-    description:
-      "Premium retro football jerseys and GAA gear. Designed in Ireland, built for performance.",
+    alternateLocale: ["en_GB"],
+    url: SITE,
     siteName: "Ériu Sports",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Ériu Sports - Premium Irish Football Heritage",
-      },
-    ],
+    title: "Retro Football Shirts & GAA Jerseys | Ériu Sports",
+    description: DESCRIPTION,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Ériu Sports: retro football shirts and GAA jerseys" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ériu Sports",
-    description: "Premium retro football jerseys and GAA gear.",
-    creator: "@eriusports",
+    title: "Retro Football Shirts & GAA Jerseys | Ériu Sports",
+    description: DESCRIPTION,
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -80,11 +56,41 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  verification: {
-    // Add your Google Search Console verification code here
-    // google: "your-verification-code",
-  },
 };
+
+const storeJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "@id": `${SITE}/#store`,
+    name: "Ériu Sports",
+    url: SITE,
+    logo: `${SITE}/apple-touch-icon.png`,
+    image: `${SITE}/og-image.jpg`,
+    description: DESCRIPTION,
+    areaServed: [
+      { "@type": "Country", name: "Ireland" },
+      { "@type": "Country", name: "United Kingdom" },
+    ],
+    sameAs: ["https://www.instagram.com/eriusports/", "https://www.facebook.com/EriuSports"],
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      applicableCountry: ["IE", "GB"],
+      returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+      merchantReturnDays: 30,
+      returnMethod: "https://schema.org/ReturnByMail",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE}/#website`,
+    name: "Ériu Sports",
+    url: SITE,
+    inLanguage: "en-IE",
+    publisher: { "@id": `${SITE}/#store` },
+  },
+];
 
 export default function RootLayout({
   children,
@@ -92,15 +98,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        {/* hreflang tags for international SEO */}
-        <link rel="alternate" hrefLang="en-IE" href="https://eriusports.com/en-IE" />
-        <link rel="alternate" hrefLang="en-GB" href="https://eriusports.com/en-GB" />
-        <link rel="alternate" hrefLang="en-US" href="https://eriusports.com/en-US" />
-        <link rel="alternate" hrefLang="x-default" href="https://eriusports.com" />
-      </head>
+    <html lang="en-IE">
       <body className={`${lexend.variable} antialiased`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }} />
         <CurrencyProvider>
           <CartProvider>
             <Navbar />

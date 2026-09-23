@@ -59,7 +59,7 @@ export default function ContactPage() {
                                 <h3 className="text-xl font-bold text-[#0F2131] mb-3">Our Team</h3>
                                 <p className="text-gray-700">
                                     We're a small team of jersey lovers based in Cork and Dublin.
-                                    Every jersey we sell has been carefully researched and verified.
+                                    Looking for a particular shirt? Just ask and we will see if we can find it.
                                 </p>
                             </div>
                         </div>

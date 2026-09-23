@@ -52,13 +52,13 @@ export default function NotFound() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                     <Link href="/collections/ireland-classics" className="text-sm text-[var(--color-teal)] hover:text-[var(--color-emerald)] transition-colors underline">
-                        Ireland Classics
+                        Retro Ireland Jerseys
                     </Link>
                     <Link href="/collections/premier-league-classics" className="text-sm text-[var(--color-teal)] hover:text-[var(--color-emerald)] transition-colors underline">
                         Premier League Classics
                     </Link>
-                    <Link href="/collections/gaa-gear" className="text-sm text-[var(--color-teal)] hover:text-[var(--color-emerald)] transition-colors underline">
-                        GAA Gear
+                    <Link href="/collections/gaa-jerseys" className="text-sm text-[var(--color-teal)] hover:text-[var(--color-emerald)] transition-colors underline">
+                        GAA Jerseys
                     </Link>
                 </div>
             </div>

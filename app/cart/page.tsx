@@ -18,7 +18,7 @@ export default function CartPage() {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center px-4">
         <h1 className="text-3xl font-bold text-[#0F2131] mb-4 uppercase tracking-wider">Your Cart is Empty</h1>
-        <p className="text-gray-500 mb-8 max-w-md text-center">Looks like you haven't added any vintage classics to your cart yet.</p>
+        <p className="text-gray-500 mb-8 max-w-md text-center">Looks like you haven't added any shirts to your bag yet.</p>
         <Link
           href="/catalog"
           className="bg-[#0A7A44] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#086035] transition-colors"
@@ -151,6 +151,9 @@ export default function CartPage() {
             >
               Checkout
             </Link>
+            <p className="mt-3 text-center text-sm text-gray-600">
+              Delivered in 8–14 days from order. Tracked.
+            </p>
           </div>
         </section>
       </div>

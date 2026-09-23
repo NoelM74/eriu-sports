@@ -5,67 +5,82 @@ import { useState } from "react";
 import { useCart } from "@/lib/cart-context";
 import CurrencySelector from "./CurrencySelector";
 
+const MENU: { label: string; href: string; children?: { label: string; href: string }[] }[] = [
+  { label: "Shop All", href: "/catalog" },
+  {
+    label: "Football Shirts",
+    href: "/catalog?category=football",
+    children: [
+      { label: "Retro Ireland Jerseys", href: "/collections/ireland-classics" },
+      { label: "Premier League Classics", href: "/collections/premier-league-classics" },
+      { label: "European & World Classics", href: "/collections/european-world-classics" },
+      { label: "All Football Shirts", href: "/catalog?category=football" },
+    ],
+  },
+  {
+    label: "GAA",
+    href: "/catalog?category=gaa",
+    children: [
+      { label: "GAA County Jerseys", href: "/collections/gaa-jerseys" },
+      { label: "GAA Training Vests", href: "/collections/gaa-training-vests" },
+    ],
+  },
+  { label: "AFL", href: "/collections/afl-jerseys" },
+  { label: "Stories", href: "/blog" },
+];
+
 export default function Navbar() {
   const { cartCount } = useCart();
   const [menuOpen, setMenuOpen] = useState(false);
+  const close = () => setMenuOpen(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
-      {/* Promo bar */}
-      <div className="bg-[#0F2131] text-white text-center text-[10px] py-2 tracking-[0.25em] uppercase font-bold">
-        FREE SHIPPING ON ORDERS OVER €49
+      <div className="bg-[#0F2131] text-white text-center text-[10px] sm:text-[11px] py-2 px-2 tracking-[0.18em] uppercase font-bold">
+        Free delivery over €49 <span className="text-[#1C7C83] px-1">·</span> Delivered in 8–14 days
+        <span className="hidden sm:inline"><span className="text-[#1C7C83] px-1">·</span> Ireland &amp; UK</span>
       </div>
 
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-1 shrink-0 font-[family-name:var(--font-lexend)]">
-          <span className="text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
-          <span className="text-3xl font-extrabold tracking-tight text-[#000000]">SPORTS</span>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20" aria-label="Main">
+        <Link href="/" className="flex items-center gap-1 shrink-0" aria-label="Ériu Sports home" onClick={close}>
+          <span className="text-2xl md:text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
+          <span className="text-2xl md:text-3xl font-extrabold tracking-tight text-black">SPORTS</span>
         </Link>
 
-        {/* Desktop nav links */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
-          <Link href="/catalog" className="hover:text-[#1C7C83] transition-colors">
-            Shop
-          </Link>
-          <Link href="/blog" className="hover:text-[#1C7C83] transition-colors">
-            Stories
-          </Link>
-          <div className="relative group py-6">
-            <Link href="/catalog?category=Jerseys" className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
-              Soccer Jerseys
-              <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" /></svg>
-            </Link>
-            <div className="absolute top-full left-0 w-56 bg-white border border-[#0F2131]/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-              <div className="flex flex-col">
-                <Link href="/catalog?category=Jerseys" className="px-5 py-3.5 border-b border-gray-50 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  All Soccer Jerseys
+        <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
+          {MENU.map((item) =>
+            item.children ? (
+              <li key={item.label} className="relative group py-6">
+                <Link href={item.href} className="hover:text-[#1C7C83] transition-colors flex items-center gap-1">
+                  {item.label}
+                  <svg className="w-3 h-3 text-[#0F2131]/50 group-hover:text-[#1C7C83]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </Link>
-                <Link href="/collections/ireland-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  Ireland Classics
+                <ul className="absolute top-full left-0 w-64 bg-white border border-[#0F2131]/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50 normal-case tracking-normal">
+                  {item.children.map((child) => (
+                    <li key={child.href}>
+                      <Link href={child.href} className="block px-5 py-3.5 border-b border-gray-50 last:border-b-0 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
+                        {child.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={item.label}>
+                <Link href={item.href} className="hover:text-[#1C7C83] transition-colors">
+                  {item.label}
                 </Link>
-                <Link href="/collections/premier-league-classics" className="px-5 py-3.5 hover:bg-[#F8F9FA] hover:text-[#1C7C83] transition-colors">
-                  Premier League Classics
-                </Link>
-              </div>
-            </div>
-          </div>
-          <Link href="/collections/gaa-gear" className="hover:text-[#1C7C83] transition-colors">
-            GAA Gear
-          </Link>
-          <Link href="/catalog?category=Accessories" className="hover:text-[#1C7C83] transition-colors">
-            Accessories
-          </Link>
-        </nav>
+              </li>
+            )
+          )}
+        </ul>
 
-        {/* Right actions */}
-        <div className="flex items-center gap-4">
-          {/* Currency Selector */}
+        <div className="flex items-center gap-3 md:gap-4">
           <CurrencySelector />
-
-          {/* Cart */}
-          <Link href="/cart" className="relative p-1 text-[#0F2131] hover:text-[#1C7C83] transition-colors">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+          <Link href="/cart" className="relative p-1 text-[#0F2131] hover:text-[#1C7C83] transition-colors" aria-label={`Bag, ${cartCount} items`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden>
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
             </svg>
             {cartCount > 0 && (
@@ -74,41 +89,41 @@ export default function Navbar() {
               </span>
             )}
           </Link>
-
-          {/* Mobile menu toggle */}
           <button
-            className="md:hidden p-1 text-[#0F2131]"
+            className="lg:hidden p-1 text-[#0F2131]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
             )}
           </button>
         </div>
       </nav>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 flex flex-col gap-4 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
-          <Link href="/catalog" onClick={() => setMenuOpen(false)} className="pt-4 hover:text-[#1C7C83]">Shop All</Link>
-          <Link href="/blog" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Stories</Link>
-          <div className="flex flex-col gap-4">
-            <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Soccer Jerseys</Link>
-            <div className="flex flex-col gap-4 pl-4 border-l-2 border-gray-100 ml-1">
-              <Link href="/catalog?category=Jerseys" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-gray-500">All Soccer Jerseys</Link>
-              <Link href="/collections/ireland-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Ireland Classics</Link>
-              <Link href="/collections/premier-league-classics" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83] text-[#1C7C83]">Premier League Classics</Link>
+        <div className="lg:hidden bg-white border-t border-gray-100 px-4 pb-5 text-sm font-medium text-[#0F2131] max-h-[75vh] overflow-y-auto">
+          {MENU.map((item) => (
+            <div key={item.label} className="border-b border-gray-100 py-3">
+              <Link href={item.href} onClick={close} className="block uppercase tracking-wide font-semibold hover:text-[#1C7C83]">
+                {item.label}
+              </Link>
+              {item.children && (
+                <ul className="mt-2 pl-3 border-l-2 border-gray-100 space-y-2">
+                  {item.children.map((child) => (
+                    <li key={child.href}>
+                      <Link href={child.href} onClick={close} className="block py-1 text-[#1C7C83]">
+                        {child.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-          </div>
-          <Link href="/collections/gaa-gear" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">GAA Gear</Link>
-          <Link href="/catalog?category=Accessories" onClick={() => setMenuOpen(false)} className="hover:text-[#1C7C83]">Accessories</Link>
+          ))}
         </div>
       )}
     </header>

@@ -1,112 +1,121 @@
 import productsData from '../data/products.json';
+import { COLLECTIONS, getCollectionByName, type CategoryKey } from './collections';
+
+export interface ProductDetails {
+  team?: string;
+  season?: string;
+  kit?: string;
+  sponsor?: string;
+  colours?: string;
+  fit?: string;
+  condition?: string;
+}
+
+/** Measurements for one sample size, used as a fit guide on the product page. */
+export interface SizeGuide {
+  size: string;
+  rows: [string, string][];
+}
 
 export interface Product {
   id: string;
   originalId: string;
   name: string;
   title: string;
-  category: string;
+  /** Top-level category: football | gaa | afl */
+  category: CategoryKey;
   collection: string;
+  collectionSlug: string;
   price: number;
   images: string[];
   sizes: string[];
   badge: string | null;
   description: string;
-  specs: string[];
-  rating: number;
-  reviewCount: number;
+  details: ProductDetails;
+  sizeGuide?: SizeGuide;
   slug: string;
   currency: string;
 }
 
-/**
- * Derive a category from the collection name.
- * This allows filtering by broader categories while keeping collection-specific data.
- */
-function deriveCategory(collection: string): string {
-  if (collection === 'Ireland Classics') return 'Jerseys';
-  if (collection === 'Premier League Classics') return 'Jerseys';
-  if (collection === 'GAA Gear') return 'GAA';
-  return 'Jerseys';
+interface RawProduct {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  price: number;
+  images: string[];
+  collection: string;
+  currency?: string;
+  details?: ProductDetails;
+  sizeGuide?: { size: string; rows: string[][] };
 }
 
-/**
- * Derive badge from product attributes.
- * Conservative: only badge explicitly new or limited products.
- * Most products should have no badge.
- */
-function deriveBadge(p: any): string | null {
-  const title = (p.title || '').toLowerCase();
-  const desc = (p.description || '').toLowerCase();
+export const SIZES = ['S', 'M', 'L', 'XL'];
 
-  // Only mark as Limited Edition if explicitly stated
-  if (desc.includes('limited edition') || title.includes('limited edition')) return 'Limited Edition';
-
-  // Only mark as New Arrival if it's a recent year release
-  if (title.includes('2026') || title.includes('2025')) return 'New Arrival';
-  if (desc.includes('new arrival') || desc.includes('new release')) return 'New Arrival';
-
-  // No badge for classic/retro products — they speak for themselves
+/** Only flag current-season kits. Most retro products need no badge. */
+function deriveBadge(p: RawProduct): string | null {
+  if (/\b(2025|2026)\b/.test(p.title)) return 'New Season';
   return null;
 }
 
-export const products: Product[] = (productsData as any[]).map((p, index) => {
-  const collection = p.collection || "Ireland Classics";
-
+export const products: Product[] = (productsData as RawProduct[]).map((p) => {
+  const coll = getCollectionByName(p.collection) ?? COLLECTIONS[0];
   return {
-    id: p.slug, // Used for routing
+    id: p.slug,
     originalId: p.id,
     name: p.title,
     title: p.title,
-    category: deriveCategory(collection),
-    collection: collection,
+    category: coll.category,
+    collection: coll.name,
+    collectionSlug: coll.slug,
     price: p.price,
     images: p.images,
-    sizes: ["S", "M", "L", "XL"],
+    sizes: SIZES,
     badge: deriveBadge(p),
     description: p.description,
-    specs: [
-      "Classic retro design",
-      "Premium breathable material",
-      "Embroidered crest",
-      "Designed in Ireland"
-    ],
-    rating: Math.round((4.8 + (index % 10) * 0.02) * 10) / 10,
-    reviewCount: 42 + index * 17,
+    details: p.details ?? {},
+    sizeGuide: p.sizeGuide
+      ? { size: p.sizeGuide.size, rows: p.sizeGuide.rows.map((r) => [r[0], r[1]] as [string, string]) }
+      : undefined,
     slug: p.slug,
-    currency: p.currency || "EUR",
+    currency: p.currency || 'EUR',
   };
 });
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find(p => p.slug === slug);
+  return products.find((p) => p.slug === slug);
 }
 
 export function getProductById(id: string): Product | undefined {
-  return products.find(p => p.id === id);
+  return products.find((p) => p.id === id);
 }
 
-export function getProductsByCollection(collection: string): Product[] {
-  if (collection === 'All') return products;
-  // Newest listings (added at the end of products.json) appear first
-  return products.filter(p => p.collection === collection).reverse();
+/** Products in a collection, newest listings first. */
+export function getProductsByCollection(collectionName: string): Product[] {
+  return products.filter((p) => p.collection === collectionName).reverse();
 }
 
-export function getProductsByCategory(category: string): Product[] {
-  if (category === "All") return products;
-  return products.filter((p) => p.category === category);
+export function getProductsByCollectionSlug(slug: string): Product[] {
+  return products.filter((p) => p.collectionSlug === slug).reverse();
 }
 
-export const categories = [
-  "All",
-  "Jerseys",
-  "GAA",
-  "Accessories",
-];
+/** Products in a top-level category, newest first. `all` returns everything. */
+export function getProductsByCategory(category: CategoryKey | 'all'): Product[] {
+  const list = category === 'all' ? products : products.filter((p) => p.category === category);
+  return [...list].reverse();
+}
 
-export const collections = [
-  "All",
-  "Ireland Classics",
-  "Premier League Classics",
-  "GAA Gear",
-];
+/** Most recently added products across the whole shop. */
+export function getLatestProducts(limit = 8): Product[] {
+  return [...products].reverse().slice(0, limit);
+}
+
+/** Other products from the same team, then the same collection. */
+export function getRelatedProducts(product: Product, limit = 4): Product[] {
+  const team = product.details.team;
+  const sameTeam = team ? products.filter((p) => p.slug !== product.slug && p.details.team === team) : [];
+  const sameCollection = products.filter(
+    (p) => p.slug !== product.slug && p.collection === product.collection && !sameTeam.includes(p)
+  );
+  return [...sameTeam, ...sameCollection].slice(0, limit);
+}

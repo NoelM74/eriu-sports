@@ -1,122 +1,36 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
+import { COLLECTIONS, CATEGORIES } from '@/lib/collections';
+
+const SITE = 'https://eriusports.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://eriusports.com';
+  const now = new Date();
+  const page = (path: string, priority: number, changeFrequency: 'daily' | 'weekly' | 'monthly' | 'yearly') => ({
+    url: `${SITE}${path}`,
+    lastModified: now,
+    changeFrequency,
+    priority,
+  });
 
-    // Static pages
-    const staticPages: MetadataRoute.Sitemap = [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/catalog`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/ireland-classics`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/premier-league-classics`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/collections/gaa-gear`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/cart`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/checkout`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/privacy-policy`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/terms-of-service`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/blog`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/blog/cork-city-1988-89`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/blog/ireland-1990-italia-90`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/blog/liverpool-1995-96-carlsberg`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.95,
-        },
-        {
-            url: `${baseUrl}/shipping-returns`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/size-guide`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/faq`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-    ];
-
-    // Product pages
-    const productPages: MetadataRoute.Sitemap = products.map((product) => ({
-        url: `${baseUrl}/products/${product.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-    }));
-
-    return [...staticPages, ...productPages];
+  return [
+    page('', 1, 'daily'),
+    page('/catalog', 0.8, 'daily'),
+    ...CATEGORIES.map((c) => page(`/catalog?category=${c.key}`, 0.8, 'weekly')),
+    ...COLLECTIONS.map((c) => page(`/collections/${c.slug}`, 0.9, 'weekly')),
+    ...products.map((p) => ({
+      ...page(`/products/${p.slug}`, 0.7, 'weekly'),
+      images: p.images.slice(0, 3).map((img) => `${SITE}${img}`),
+    })),
+    page('/blog', 0.6, 'weekly'),
+    page('/blog/ireland-1990-italia-90', 0.6, 'monthly'),
+    page('/blog/cork-city-1988-89', 0.6, 'monthly'),
+    page('/blog/liverpool-95-96-carlsberg', 0.6, 'monthly'),
+    page('/shipping-returns', 0.5, 'monthly'),
+    page('/size-guide', 0.5, 'monthly'),
+    page('/faq', 0.5, 'monthly'),
+    page('/contact', 0.4, 'yearly'),
+    page('/privacy-policy', 0.2, 'yearly'),
+    page('/terms-of-service', 0.2, 'yearly'),
+  ];
 }

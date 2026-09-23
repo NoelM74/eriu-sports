@@ -101,7 +101,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
       if (saved) {
         const items = JSON.parse(saved) as CartItem[];
         if (Array.isArray(items)) {
-          dispatch({ type: "HYDRATE", items });
+          // Product photos moved from .jpg/.png to .webp — update baskets saved before the switch.
+          const migrated = items.map((i) => ({
+            ...i,
+            product: {
+              ...i.product,
+              images: (i.product?.images ?? []).map((src) => src.replace(/\.(jpe?g|png)$/i, ".webp")),
+            },
+          }));
+          dispatch({ type: "HYDRATE", items: migrated });
         }
       }
     } catch {

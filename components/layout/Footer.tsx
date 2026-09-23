@@ -11,9 +11,9 @@ export default function Footer() {
             <span className="text-2xl font-bold tracking-tighter text-white">ÉRIU</span>
             <span className="text-2xl font-extrabold tracking-tight text-white/90">SPORTS</span>
           </Link>
-          <p className="text-[#757575] text-sm leading-relaxed max-w-xs">
-            Premium GAA sports merchandise and performance gear. Designed in
-            Ireland, built for performance.
+          <p className="text-white/60 text-sm leading-relaxed max-w-xs">
+            Retro football shirts, GAA county jerseys, training vests and AFL jerseys.
+            Irish-run, delivered to Ireland and the UK in 8–14 days.
           </p>
           <div className="flex gap-4 mt-6">
             {/* Instagram */}
@@ -34,17 +34,20 @@ export default function Footer() {
         {/* Shop */}
         <div>
           <h3 className="text-xs font-bold uppercase tracking-widest text-[#1C7C83] mb-4">Shop</h3>
-          <ul className="space-y-3 text-sm text-[#757575]">
-            <li><Link href="/catalog" className="hover:text-white transition-colors">All Products</Link></li>
-            <li><Link href="/catalog?category=Jerseys" className="hover:text-white transition-colors">Jerseys</Link></li>
-            <li><Link href="/catalog?category=Accessories" className="hover:text-white transition-colors">Accessories</Link></li>
+          <ul className="space-y-3 text-sm text-white/60">
+            <li><Link href="/collections/ireland-classics" className="hover:text-white transition-colors">Retro Ireland Jerseys</Link></li>
+            <li><Link href="/collections/premier-league-classics" className="hover:text-white transition-colors">Premier League Classics</Link></li>
+            <li><Link href="/collections/european-world-classics" className="hover:text-white transition-colors">European &amp; World Classics</Link></li>
+            <li><Link href="/collections/gaa-jerseys" className="hover:text-white transition-colors">GAA County Jerseys</Link></li>
+            <li><Link href="/collections/gaa-training-vests" className="hover:text-white transition-colors">GAA Training Vests</Link></li>
+            <li><Link href="/collections/afl-jerseys" className="hover:text-white transition-colors">AFL Jerseys</Link></li>
           </ul>
         </div>
 
         {/* Support */}
         <div>
           <h3 className="text-xs font-bold uppercase tracking-widest text-[#1C7C83] mb-4">Support</h3>
-          <ul className="space-y-3 text-sm text-[#757575]">
+          <ul className="space-y-3 text-sm text-white/60">
             <li><Link href="/shipping-returns" className="hover:text-white transition-colors">Shipping & Returns</Link></li>
             <li><Link href="/size-guide" className="hover:text-white transition-colors">Size Guide</Link></li>
             <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
@@ -55,21 +58,20 @@ export default function Footer() {
         {/* Company */}
         <div>
           <h3 className="text-xs font-bold uppercase tracking-widest text-[#1C7C83] mb-4">Company</h3>
-          <ul className="space-y-3 text-sm text-[#757575]">
+          <ul className="space-y-3 text-sm text-white/60">
+            <li><Link href="/blog" className="hover:text-white transition-colors">Shirt Stories</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             <li><Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link></li>
-            <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Club Partnerships</a></li>
           </ul>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t border-[#1a3347]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[#757575]">
-          <span>© 2026 Ériu Sports. All rights reserved.</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/50">
+          <span>© {new Date().getFullYear()} Ériu Sports. All rights reserved.</span>
           <span className="uppercase tracking-widest font-medium text-[#1C7C83]">
-            Designed in Ireland • Built for Performance
+            Delivered to Ireland &amp; the UK in 8–14 days
           </span>
         </div>
       </div>

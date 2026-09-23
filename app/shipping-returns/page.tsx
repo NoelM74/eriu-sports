@@ -1,142 +1,89 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
+
+const EMAIL = 'borufashions@gmail.com';
 
 export const metadata: Metadata = {
-    title: 'Shipping & Returns | Ériu Sports',
-    description: 'We ship to all countries and offer easy returns. Free shipping on orders over €49.',
-    openGraph: {
-        title: 'Shipping & Returns | Ériu Sports',
-        description: 'We ship to all countries and offer easy returns.',
-        url: '/shipping-returns',
-    },
-    alternates: {
-        canonical: '/shipping-returns',
-    },
+  title: 'Delivery & Returns | Ireland & UK',
+  description:
+    'Delivered to Ireland and the UK in 8–14 days from order, tracked. €4.95 delivery, free on orders over €49. 30-day returns on unworn items.',
+  alternates: { canonical: '/shipping-returns' },
+  openGraph: {
+    title: 'Delivery & Returns | Ériu Sports',
+    description: 'Delivered to Ireland and the UK in 8–14 days. Free delivery over €49. 30-day returns.',
+    url: '/shipping-returns',
+  },
 };
 
+function Card({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="p-6 bg-gray-50 border border-gray-200">
+      <h3 className="text-lg font-bold text-[#0F2131] mb-2">{title}</h3>
+      <div className="text-gray-700 leading-relaxed">{children}</div>
+    </div>
+  );
+}
+
 export default function ShippingReturnsPage() {
-    return (
-        <div className="bg-white min-h-screen py-16">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-4">
-                        Shipping & Returns
-                    </h1>
-                    <p className="text-lg text-gray-600">
-                        We want you to love your Ériu Sports jersey. That's why we make shipping and returns easy.
-                    </p>
-                </div>
-
-                <div className="space-y-12">
-                    <section>
-                        <h2 className="text-2xl font-bold text-[#0F2131] mb-6">
-                            How We Ship Your Order
-                        </h2>
-
-                        <div className="space-y-6">
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">Free Shipping</h3>
-                                <p className="text-gray-700">
-                                    We offer free shipping on all orders over €49. That's our way of saying thanks for shopping with us.
-                                </p>
-                            </div>
-
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">Shipping Times</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span><strong>Ireland & UK:</strong> 2-3 business days</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span><strong>Europe:</strong> 3-5 business days</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span><strong>USA & Canada:</strong> 5-8 business days</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span><strong>Rest of the world:</strong> 7-14 business days</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">Shipping Costs</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span>All orders over €49: <strong>FREE</strong></span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span>Ireland & UK: €4.95</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span>Europe: €7.95</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="text-[#1A533E] mr-3 mt-1">✓</span>
-                                        <span>USA & Canada: €12.95</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2 className="text-2xl font-bold text-[#0F2131] mb-6">
-                            Returns & Exchanges
-                        </h2>
-
-                        <div className="space-y-6">
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">30-Day Returns</h3>
-                                <p className="text-gray-700">
-                                    If you're not happy with your jersey, you can return it within 30 days for a full refund.
-                                    Just make sure it's unworn and in its original packaging with all tags still attached.
-                                </p>
-                            </div>
-
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">How to Return</h3>
-                                <ol className="list-decimal pl-6 space-y-3 text-gray-700">
-                                    <li>Fill out the returns form that came with your order</li>
-                                    <li>Pack the jersey securely in its original packaging</li>
-                                    <li>Send it back to us using the address on the returns form</li>
-                                    <li>Once we receive and check your return, we'll process your refund</li>
-                                </ol>
-                            </div>
-
-                            <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
-                                <h3 className="text-xl font-bold text-[#0F2131] mb-3">Exchanges</h3>
-                                <p className="text-gray-700">
-                                    We can exchange your jersey for a different size or style. Just let us know what you'd like
-                                    instead when you contact us about your return.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="mt-12 pt-8 border-t border-gray-200">
-                        <h2 className="text-2xl font-bold text-[#0F2131] mb-6">
-                            Need Help With Shipping or Returns?
-                        </h2>
-                        <p className="text-gray-700 mb-4">
-                            Our friendly team is here to help. You can contact us at <a href="mailto:borufashions@gmail.com" className="text-[#1C7C83] font-bold hover:underline">borufashions@gmail.com</a>
-                            or use our contact form.
-                        </p>
-                        <a
-                            href="/contact"
-                            className="inline-block bg-[#1A533E] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#133d2d] transition-colors"
-                        >
-                            Contact Us
-                        </a>
-                    </section>
-                </div>
-            </div>
+  return (
+    <div className="bg-white min-h-screen py-12 md:py-16">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-10">
+          <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Delivery &amp; Returns</h1>
+          <p className="text-lg text-gray-600">Straightforward delivery to Ireland and the UK, and easy returns.</p>
         </div>
-    );
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#0F2131] mb-5">Delivery</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Card title="8–14 days">
+              Every order arrives 8–14 days from the day you order. All parcels are tracked.
+            </Card>
+            <Card title="€4.95, or free over €49">
+              Delivery is €4.95 per order. Spend €49 or more and it is free.
+            </Card>
+            <Card title="Ireland &amp; the UK">
+              We deliver across Ireland and the UK, same price and same delivery time.
+            </Card>
+            <Card title="Tracking">
+              You get a tracking link once your order is on its way, so you can follow it to your door.
+            </Card>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#0F2131] mb-5">Returns</h2>
+          <div className="space-y-4">
+            <Card title="30-day returns">
+              Not happy? Return any unworn item with the tags still on within 30 days of receiving it for a full refund.
+            </Card>
+            <Card title="How to return">
+              <ol className="list-decimal pl-5 space-y-1">
+                <li>
+                  Email <a href={`mailto:${EMAIL}`} className="text-[#1C7C83] font-semibold hover:underline">{EMAIL}</a> with your order reference.
+                </li>
+                <li>We will send you return instructions.</li>
+                <li>Pack the shirt securely and send it back.</li>
+                <li>Once it arrives and is checked, we refund you to your original payment method.</li>
+              </ol>
+            </Card>
+            <Card title="Wrong size?">
+              We can swap it for a different size. Just say which size you need when you get in touch.
+            </Card>
+          </div>
+        </section>
+
+        <section className="pt-8 border-t border-gray-200">
+          <h2 className="text-xl font-bold text-[#0F2131] mb-3">Questions about your order?</h2>
+          <p className="text-gray-700 mb-5">
+            Email <a href={`mailto:${EMAIL}`} className="text-[#1C7C83] font-semibold hover:underline">{EMAIL}</a>, or see the{' '}
+            <Link href="/faq" className="text-[#1C7C83] font-semibold hover:underline">FAQ</Link>.
+          </p>
+          <Link href="/contact" className="inline-block bg-[#1A533E] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#133d2d] transition-colors">
+            Contact us
+          </Link>
+        </section>
+      </div>
+    </div>
+  );
 }

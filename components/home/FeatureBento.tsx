@@ -1,78 +1,50 @@
+import Link from "next/link";
+import Image from "next/image";
+import { COLLECTIONS } from "@/lib/collections";
+import { getProductsByCollectionSlug } from "@/lib/products";
+
+/** Shop-by-collection grid: one tile per collection, with a real product photo. */
 export default function FeatureBento() {
+  const tiles = COLLECTIONS.map((c) => {
+    const items = getProductsByCollectionSlug(c.slug);
+    return { ...c, count: items.length, image: items[0]?.images[0] };
+  });
+
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-12 md:py-16" aria-labelledby="shop-by-collection">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 auto-rows-[220px]">
-          
-          {/* Box 1: The Archive (Tall Left) */}
-          <div className="col-span-2 row-span-1 lg:col-span-1 lg:row-span-2 bg-[#0F2131] text-white p-8 flex flex-col justify-between border-l-4 border-[#1A533E]">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-4">
-                THE ARCHIVE
-              </p>
-              <h3 className="text-2xl font-bold leading-tight uppercase tracking-tighter">
-                TIMELESS<br />ICONS
-              </h3>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed font-medium">
-              Recreating the golden era of the beautiful game. Premium fabrics meet the designs that defined a generation.
-            </p>
-          </div>
+        <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#1C7C83] mb-1">Shop by collection</p>
+        <h2 id="shop-by-collection" className="text-3xl sm:text-4xl font-bold uppercase text-[#0F2131] mb-8">
+          Find your shirt
+        </h2>
 
-          {/* Box 2: Gaelic Pride (Top Mid Wide) */}
-          <div className="col-span-2 row-span-1 bg-[#1C7C83] text-white p-8 flex flex-col justify-between relative overflow-hidden">
-            <div className="relative z-10">
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/80 mb-4">
-                GAELIC PRIDE
-              </p>
-              <h3 className="text-2xl font-bold uppercase tracking-tighter mb-2">PROVINCIAL SOUL</h3>
-              <p className="text-white/80 text-sm max-w-sm font-medium">
-                From the parish to the peaks of Croke Park. Durable, vibrant jerseys built for the sideline and the stands.
-              </p>
-            </div>
-          </div>
-
-          {/* Box 3: The Finish (Top Right) */}
-          <div className="col-span-1 bg-[#1A533E] text-white p-6 flex flex-col justify-between">
-            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/60 mb-2">THE FINISH</p>
-            <div>
-              <h3 className="text-lg font-bold uppercase leading-tight mb-1 tracking-tighter">
-                BUILT TO<br />LAST
-              </h3>
-              <p className="text-white/60 text-xs font-medium">Reinforced stitching and fade-resistant pigments. A jersey that ages as well as the memories.</p>
-            </div>
-          </div>
-
-          {/* Box 4: Authentic (Bottom Mid) */}
-          <div className="col-span-1 bg-[#f9fafb] text-[#0F2131] p-6 flex flex-col justify-between border border-gray-100">
-            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-2">AUTHENTIC</p>
-            <div>
-              <h3 className="text-lg font-bold uppercase leading-tight mb-1 tracking-tighter">
-                FIELD<br />SPEC
-              </h3>
-              <p className="text-[#757575] text-xs font-medium">Traditional collars, classic weights. Reimagined for the modern supporter.</p>
-            </div>
-          </div>
-
-          {/* Box 5: The Studio (Bottom Right) */}
-          <div className="col-span-2 lg:col-span-2 bg-[#0F2131] text-white p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-r-4 border-[#1C7C83]">
-            <div className="max-w-md">
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-2">
-                THE STUDIO
-              </p>
-              <h3 className="text-2xl font-bold uppercase tracking-tighter mb-2">CREATE YOUR LEGACY</h3>
-              <p className="text-gray-400 text-sm leading-relaxed font-medium">
-                Your colors, your crest, your way. Bespoke kits crafted specifically for your squad or solo style.
-              </p>
-            </div>
-            <a
-              href="/catalog"
-              className="shrink-0 bg-[#1C7C83] text-white text-[10px] font-bold uppercase tracking-[0.2em] px-6 py-4 hover:bg-white hover:text-[#0F2131] transition-all duration-300 text-center"
-            >
-              Start<br className="hidden sm:block"/>Design 
-            </a>
-          </div>
-        </div>
+        <ul className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+          {tiles.map((t) => (
+            <li key={t.slug}>
+              <Link
+                href={`/collections/${t.slug}`}
+                className="group relative block aspect-[4/5] sm:aspect-[4/3] overflow-hidden bg-[#0F2131]"
+              >
+                {t.image && (
+                  <Image
+                    src={t.image}
+                    alt={`${t.h1}, shop the collection`}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 33vw"
+                    className="object-cover opacity-80 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F2131] via-[#0F2131]/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 text-white">
+                  <h3 className="text-lg md:text-2xl font-bold uppercase tracking-tight leading-tight">{t.h1}</h3>
+                  <p className="mt-1 text-xs md:text-sm text-white/75">
+                    {t.count} styles · from €{t.priceFrom.toFixed(t.priceFrom % 1 ? 2 : 0)}
+                  </p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

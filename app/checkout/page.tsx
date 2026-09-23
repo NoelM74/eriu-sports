@@ -99,7 +99,7 @@ export default function CheckoutPage() {
           Your Cart is Empty
         </h1>
         <p className="text-gray-500 mb-8 max-w-md text-center">
-          Looks like you haven&apos;t added any vintage classics to your cart yet.
+          Looks like you haven&apos;t added any shirts to your bag yet.
         </p>
         <Link
           href="/catalog"
@@ -134,8 +134,8 @@ export default function CheckoutPage() {
           </p>
         )}
         <p className="text-gray-600 mb-8 max-w-md text-center text-lg">
-          Thank you for choosing Ériu Sports. We&apos;ve got your order and we&apos;re getting it
-          ready. A confirmation email is on its way — please keep your reference handy.
+          Thanks for your order. It will arrive within 8–14 days. PayPal will email you a
+          receipt. Please keep your order reference handy.
         </p>
         <Link
           href="/catalog"
@@ -238,7 +238,7 @@ export default function CheckoutPage() {
                       className="h-4 w-4 rounded border-gray-300 text-[#0A7A44] focus:ring-[#0A7A44]"
                     />
                     <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-600">
-                      Email me with news and offers regarding vintage drops
+                      Email me about new shirts and offers
                     </label>
                   </div>
                 </div>
