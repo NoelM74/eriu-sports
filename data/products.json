@@ -7098,5 +7098,102 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "mj-632144",
+    "title": "Atlético Madrid 2004-05 Spider-Man Away Shirt – Torres 9",
+    "slug": "atletico-madrid-2004-05-spider-man-away-shirt-torres-9",
+    "description": "The famous navy away shirt from 2004-05, with a spider web design and a Spider-Man 2 sponsor promoting the film. Printed with F.TORRES 9 on the back. Fernando Torres was Atlético's captain as a teenager and wore 9 before joining Liverpool in 2007.",
+    "price": 35,
+    "images": [
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-1.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-2.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-3.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-4.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-5.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-6.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Atlético Madrid",
+      "season": "2004-05",
+      "kit": "Away",
+      "sponsor": "Spider-Man 2",
+      "colours": "Navy / Red / Light Blue",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "print": "Torres 9",
+      "player": "Fernando Torres"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-564652",
+    "title": "Atlético Madrid 1995-96 Home Shirt",
+    "slug": "atletico-madrid-1995-96-home-shirt",
+    "description": "Atlético's red and white striped home shirt from 1995-96, with the Marbella sponsor. That season Atlético won the Double: La Liga and the Copa del Rey.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/atletico-madrid-1995-96-home-shirt-1.webp",
+      "/images/european-world-classics/atletico-madrid-1995-96-home-shirt-2.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Atlético Madrid",
+      "season": "1995-96",
+      "kit": "Home",
+      "sponsor": "Marbella",
+      "colours": "Red / White / Blue",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "mj-632143",
+    "title": "Atlético Madrid 2004-05 Spider-Man Away Shirt",
+    "slug": "atletico-madrid-2004-05-spider-man-away-shirt",
+    "description": "The famous navy away shirt from 2004-05, with a spider web design and a Spider-Man 2 sponsor promoting the film.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-1.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-2.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-3.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-4.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-5.webp",
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-6.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Atlético Madrid",
+      "season": "2004-05",
+      "kit": "Away",
+      "sponsor": "Spider-Man 2",
+      "colours": "Navy / Red / Light Blue",
+      "fit": "Regular fit, true to size",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

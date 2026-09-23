@@ -58,7 +58,7 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro European & World Shirts",
     intro:
-      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Inter, AC Milan, Fiorentina, Brazil, Italy and more. €25, or €35 with a player name and number. Delivered in 8–14 days.",
+      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Atlético, Inter, AC Milan, Fiorentina, Brazil, Italy and more. €25, or €35 with a player name and number. Delivered in 8–14 days.",
     seoTitle: "Retro Barcelona, Real Madrid & Serie A Shirts",
     seoDescription:
       "Retro football shirts from Barcelona, Real Madrid, Inter, AC Milan, Juventus, Brazil and Italy. From €25, delivered to Ireland and the UK in 8–14 days.",
