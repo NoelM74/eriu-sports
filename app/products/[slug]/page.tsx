@@ -33,7 +33,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   if (!product) return { title: 'Product not found' };
 
   const price = formatPrice(product.price);
-  const description = `${firstSentence(product.description)} ${price}, sizes S–XL, delivered to Ireland and the UK in ${DELIVERY}.`;
+  const sizeRange = `${product.sizes[0]}–${product.sizes[product.sizes.length - 1]}`;
+  const description = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}, delivered to Ireland and the UK in ${DELIVERY}.`;
   const image = product.images[0] ? `${SITE}${product.images[0]}` : undefined;
 
   return {
@@ -61,6 +62,7 @@ const DETAIL_LABELS: [keyof ProductDetails, string][] = [
   ['season', 'Season'],
   ['kit', 'Kit'],
   ['sponsor', 'Sponsor'],
+  ['print', 'Name & number'],
   ['colours', 'Colours'],
   ['fit', 'Fit'],
   ['condition', 'Condition'],
@@ -129,7 +131,10 @@ export default async function ProductDetail({ params }: ProductPageProps) {
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
         { '@type': 'ListItem', position: 2, name: category.label, item: `${SITE}/catalog?category=${category.key}` },
         { '@type': 'ListItem', position: 3, name: collection.name, item: `${SITE}/collections/${collection.slug}` },
-        { '@type': 'ListItem', position: 4, name: product.title, item: url },
+        ...(product.club
+          ? [{ '@type': 'ListItem', position: 4, name: product.club.name, item: `${SITE}/clubs/${product.club.slug}` }]
+          : []),
+        { '@type': 'ListItem', position: product.club ? 5 : 4, name: product.title, item: url },
       ],
     },
   ];
@@ -143,6 +148,12 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           <li><Link href="/" className="hover:text-[var(--color-teal)]">Home</Link></li>
           <li aria-hidden>/</li>
           <li><Link href={`/collections/${collection.slug}`} className="hover:text-[var(--color-teal)]">{collection.name}</Link></li>
+          {product.club && (
+            <>
+              <li aria-hidden>/</li>
+              <li><Link href={`/clubs/${product.club.slug}`} className="hover:text-[var(--color-teal)]">{product.club.name}</Link></li>
+            </>
+          )}
           <li aria-hidden>/</li>
           <li aria-current="page" className="text-gray-900 font-medium truncate max-w-[220px]">{product.title}</li>
         </ol>
@@ -218,8 +229,11 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           <section className="mt-16 border-t border-gray-200 pt-10" aria-labelledby="related">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
               <h2 id="related" className="text-2xl font-bold uppercase text-[#0F2131]">You might also like</h2>
-              <Link href={`/collections/${collection.slug}`} className="shrink-0 text-xs font-bold uppercase tracking-widest text-[#1A533E] border-b border-[#1A533E] pb-0.5">
-                More {collection.name} →
+              <Link
+                href={product.club ? `/clubs/${product.club.slug}` : `/collections/${collection.slug}`}
+                className="shrink-0 text-xs font-bold uppercase tracking-widest text-[#1A533E] border-b border-[#1A533E] pb-0.5"
+              >
+                More {product.club?.name ?? collection.name} →
               </Link>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

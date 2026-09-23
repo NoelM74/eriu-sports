@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { products } from '@/lib/products';
+import { products, getClubs } from '@/lib/products';
 import { COLLECTIONS, CATEGORIES } from '@/lib/collections';
 import { getPosts } from '@/lib/blog';
 
@@ -19,6 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page('/catalog', 0.8, 'daily'),
     ...CATEGORIES.map((c) => page(`/catalog?category=${c.key}`, 0.8, 'weekly')),
     ...COLLECTIONS.map((c) => page(`/collections/${c.slug}`, 0.9, 'weekly')),
+    page('/clubs', 0.8, 'weekly'),
+    ...getClubs()
+      .filter((c) => c.count >= 2)
+      .map((c) => page(`/clubs/${c.slug}`, 0.8, 'weekly')),
     ...products.map((p) => ({
       ...page(`/products/${p.slug}`, 0.7, 'weekly'),
       images: p.images.slice(0, 3).map((img) => `${SITE}${img}`),

@@ -89,6 +89,11 @@ const storeJsonLd = [
     url: SITE,
     inLanguage: "en-IE",
     publisher: { "@id": `${SITE}/#store` },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${SITE}/catalog?q={search_term_string}` },
+      "query-input": "required name=search_term_string",
+    },
   },
 ];
 

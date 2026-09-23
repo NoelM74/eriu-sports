@@ -44,12 +44,13 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro Premier League Shirts",
     intro:
-      "Classic shirts from the 80s, 90s and 2000s: Liverpool, Manchester United, Arsenal, Chelsea, Newcastle, West Ham and Man City. €25 each, delivered in 8–14 days.",
+      "Classic shirts from the 80s, 90s and 2000s: Arsenal, Liverpool, Manchester United, Chelsea, Newcastle, West Ham and Man City. €25, or €35 with a player name and number. Delivered in 8–14 days.",
     seoTitle: "Retro Premier League Shirts | 90s Classics",
     seoDescription:
-      "Retro football shirts from Liverpool, Man United, Arsenal, Chelsea, Newcastle, West Ham and more. €25 each, delivered to Ireland and the UK in 8–14 days.",
+      "Retro football shirts from Arsenal, Liverpool, Man United, Chelsea, Newcastle, West Ham and more. From €25, delivered to Ireland and the UK in 8–14 days.",
     keywords: ["retro football shirts", "90s football shirts", "retro Liverpool shirt", "retro Man United shirt", "retro Arsenal shirt"],
     priceFrom: 25,
+    featured: "manchester-united-1994-96-third-shirt",
   },
   {
     slug: "european-world-classics",
@@ -111,7 +112,7 @@ export const CATEGORIES: { key: CategoryKey; label: string; h1: string; descript
     label: "Football Shirts",
     h1: "Retro Football Shirts",
     description:
-      "Retro football shirts and jerseys from Ireland, the Premier League and Europe. €25 each, delivered to Ireland and the UK in 8–14 days.",
+      "Retro football shirts and jerseys from Ireland, the Premier League and Europe. From €25, delivered to Ireland and the UK in 8–14 days.",
   },
   {
     key: "gaa",

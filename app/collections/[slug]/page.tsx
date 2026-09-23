@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { COLLECTIONS, getCollectionBySlug, CATEGORIES, DELIVERY } from '@/lib/collections';
-import { getProductsByCollectionSlug } from '@/lib/products';
+import { getProductsByCollectionSlug, type ClubSummary } from '@/lib/products';
 
 const SITE = 'https://eriusports.com';
 
@@ -43,6 +43,15 @@ export default async function CollectionPage({ params }: Props) {
   const items = getProductsByCollectionSlug(slug);
   const category = CATEGORIES.find((cat) => cat.key === c.category)!;
   const siblings = COLLECTIONS.filter((x) => x.slug !== c.slug);
+  const sizes = [...new Set(items.flatMap((p) => p.sizes))];
+  const clubMap = new Map<string, ClubSummary>();
+  for (const p of items) {
+    if (!p.club) continue;
+    const found = clubMap.get(p.club.slug);
+    if (found) found.count++;
+    else clubMap.set(p.club.slug, { ...p.club, count: 1, category: p.category });
+  }
+  const clubs = [...clubMap.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
   const jsonLd = [
     {
@@ -97,12 +106,31 @@ export default async function CollectionPage({ params }: Props) {
             <li className="border border-white/20 px-3 py-2">From €{c.priceFrom.toFixed(c.priceFrom % 1 ? 2 : 0)}</li>
             <li className="border border-white/20 px-3 py-2">Delivered in {DELIVERY}</li>
             <li className="border border-white/20 px-3 py-2">Ireland &amp; UK</li>
-            <li className="border border-white/20 px-3 py-2">Sizes S–XL</li>
+            <li className="border border-white/20 px-3 py-2">Sizes {sizes[0]}–{sizes[sizes.length - 1]}</li>
           </ul>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+        {clubs.length > 1 && (
+          <nav aria-label="Shop by club" className="mb-8">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-[#0F2131] mb-3">
+              {c.category === 'gaa' ? 'Shop by county' : 'Shop by club'}
+            </h2>
+            <ul className="flex gap-2 overflow-x-auto pb-1 sm:flex-wrap">
+              {clubs.map((club) => (
+                <li key={club.slug} className="shrink-0">
+                  <Link
+                    href={`/clubs/${club.slug}`}
+                    className="inline-block border border-gray-200 px-4 py-2 text-sm font-medium text-[#0F2131] hover:border-[#1A533E] hover:text-[#1A533E] transition-colors"
+                  >
+                    {club.name} <span className="text-gray-400">({club.count})</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
         <p className="text-sm text-gray-500 mb-6">{items.length} {items.length === 1 ? 'item' : 'items'}</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {items.map((product, i) => (

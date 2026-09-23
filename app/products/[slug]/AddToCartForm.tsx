@@ -5,6 +5,7 @@ import { ShoppingCart, Heart, X } from 'lucide-react';
 import { useCart } from '@/lib/cart-context';
 import { useCurrency } from '@/lib/currency-context';
 import { Product } from '@/lib/products';
+import SizeChart from '@/components/SizeChart';
 
 interface AddToCartFormProps {
     product: Product;
@@ -61,46 +62,33 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
 
             {/* Size Chart Modal */}
             {showSizeChart && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" onClick={() => setShowSizeChart(false)}>
-                    <div className="bg-white rounded-lg shadow-2xl max-w-lg w-full p-6 relative" onClick={(e) => e.stopPropagation()}>
+                <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 sm:p-4" onClick={() => setShowSizeChart(false)}>
+                    <div
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="size-chart-title"
+                        className="bg-white shadow-2xl w-full sm:max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-6 relative"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <button
                             type="button"
                             onClick={() => setShowSizeChart(false)}
-                            className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 transition-colors"
+                            className="absolute top-3 right-3 p-1 text-gray-400 hover:text-gray-700 transition-colors"
                             aria-label="Close size chart"
                         >
                             <X className="w-5 h-5" />
                         </button>
-                        <h2 className="text-lg font-bold uppercase tracking-widest text-gray-900 mb-4">Size Guide</h2>
-                        <p className="text-xs text-gray-500 mb-4">Measurements in centimetres (cm). Measure over a light shirt for best fit.</p>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-sm text-center border-collapse">
-                                <thead>
-                                    <tr className="bg-gray-100 text-gray-700 uppercase text-xs tracking-wider">
-                                        <th className="py-2 px-3 border border-gray-200 text-left">Size</th>
-                                        <th className="py-2 px-3 border border-gray-200">Chest</th>
-                                        <th className="py-2 px-3 border border-gray-200">Length</th>
-                                        <th className="py-2 px-3 border border-gray-200">Shoulder</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="text-gray-700">
-                                    {[
-                                        { size: 'S',  chest: '86–91',  length: '68', shoulder: '42' },
-                                        { size: 'M',  chest: '93–98',  length: '71', shoulder: '44' },
-                                        { size: 'L',  chest: '100–106', length: '74', shoulder: '46' },
-                                        { size: 'XL', chest: '108–114', length: '77', shoulder: '48' },
-                                    ].map((row) => (
-                                        <tr key={row.size} className="even:bg-gray-50">
-                                            <td className="py-2 px-3 border border-gray-200 font-bold text-left">{row.size}</td>
-                                            <td className="py-2 px-3 border border-gray-200">{row.chest}</td>
-                                            <td className="py-2 px-3 border border-gray-200">{row.length}</td>
-                                            <td className="py-2 px-3 border border-gray-200">{row.shoulder}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                        <p className="text-xs text-gray-400 mt-4">If you&apos;re between sizes, we recommend sizing up for a more relaxed fit.</p>
+                        <h2 id="size-chart-title" className="text-lg font-bold uppercase tracking-widest text-gray-900 mb-1">Find your size</h2>
+                        <p className="text-sm text-gray-600 mb-4">Measure your chest at the widest point and match it to the chart.</p>
+                        <SizeChart available={sizes} />
+                        <p className="mt-4 text-sm text-gray-700 bg-gray-50 border border-gray-200 p-3">
+                            Not sure? Email your height and weight to{' '}
+                            <a href="mailto:noel@eriusports.com" className="text-[var(--color-teal)] underline">noel@eriusports.com</a>{' '}
+                            and we&apos;ll tell you which size to order.
+                        </p>
+                        <a href="/size-guide" className="mt-3 inline-block text-sm text-[var(--color-teal)] underline underline-offset-4">
+                            How to measure
+                        </a>
                     </div>
                 </div>
             )}
@@ -115,13 +103,13 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                     </button>
                 </div>
 
-                <div className="mt-4 grid grid-cols-4 gap-4">
+                <div className={`mt-4 grid gap-3 ${sizes.length > 4 ? 'grid-cols-5' : 'grid-cols-4'}`}>
                     {sizes.map((size) => (
                         <button
                             key={size}
                             type="button"
                             onClick={() => setSelectedSize(size)}
-                            className={`group relative flex items-center justify-center rounded-sm border px-4 py-4 text-sm font-medium uppercase transition-all ${selectedSize === size
+                            className={`group relative flex items-center justify-center rounded-sm border px-2 py-4 text-sm font-medium uppercase transition-all ${selectedSize === size
                                 ? 'bg-[var(--color-teal)] border-transparent text-white shadow-xl transform scale-105'
                                 : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
                                 }`}
