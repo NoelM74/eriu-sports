@@ -13532,5 +13532,28 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000019",
+    "title": "Sligo GAA 2025 Goalkeeper Jersey",
+    "slug": "sligo-gaa-2025-goalkeeper-jersey",
+    "description": "Sligo's 2025 goalkeeper jersey in red, with a black diamond-mesh pattern cutting across the body, black stripes down the sides and a ribbed red and black crew neck. AbbVie is on the front, ATU (Atlantic Technological University) on the back and OBG on the sleeves. The crest shows Benbulben, an open book and a scallop shell under 'Sligeach', the Irish name for Sligo, which means 'shelly place'. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000019-1.webp",
+      "/images/gaa-gear/900000019-2.webp",
+      "/images/gaa-gear/900000019-3.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Sligo",
+      "season": "2025",
+      "kit": "Goalkeeper",
+      "sponsor": "AbbVie",
+      "colours": "Red / Black",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
