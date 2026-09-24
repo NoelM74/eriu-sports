@@ -13465,5 +13465,36 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000017",
+    "title": "Ireland 2002 World Cup Home Jersey",
+    "slug": "ireland-2002-world-cup-home-jersey",
+    "description": "Ireland's home jersey from the 2002 World Cup era, made by Umbro with eircom across the chest. Bright green with white contrast stitching down the seams, a green and white ribbed collar and the FAI crest with 'Ireland' underneath. Mick McCarthy's side went through their group unbeaten in Japan and South Korea, with Robbie Keane's stoppage-time equaliser against Germany, before losing to Spain on penalties in the last 16. FIFA doesn't allow sponsors on World Cup match shirts, so this eircom version is the one fans wore.",
+    "price": 25,
+    "images": [
+      "/images/ireland-classics/ireland-2002-world-cup-home-jersey-1.webp",
+      "/images/ireland-classics/ireland-2002-world-cup-home-jersey-2.webp",
+      "/images/ireland-classics/ireland-2002-world-cup-home-jersey-3.webp",
+      "/images/ireland-classics/ireland-2002-world-cup-home-jersey-4.webp"
+    ],
+    "collection": "Ireland Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2002",
+      "kit": "Home",
+      "sponsor": "eircom",
+      "colours": "Green / White",
+      "fit": "Relaxed early-2000s cut",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
