@@ -13185,5 +13185,30 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000007",
+    "title": "Louth GAA 2026 Home Jersey",
+    "slug": "louth-gaa-2026-home-jersey",
+    "description": "Louth's 2026 home jersey: red with a tonal pattern, black and white trim on the collar and cuffs, and the StatSports sponsor. Blackstone Motors on the back, Sports Direct on the sleeves and 'Lú Abú' inside the collar.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000007-1.webp",
+      "/images/gaa-gear/900000007-2.webp",
+      "/images/gaa-gear/900000007-3.webp",
+      "/images/gaa-gear/900000007-4.webp",
+      "/images/gaa-gear/900000007-5.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Louth",
+      "season": "2026",
+      "kit": "Home",
+      "sponsor": "StatSports",
+      "colours": "Red / Black / White",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
