@@ -13631,5 +13631,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000023",
+    "title": "Galway GAA 2025 Alternative Goalkeeper Jersey",
+    "slug": "galway-gaa-2025-alternative-goalkeeper-jersey",
+    "description": "Galway's 2025 special edition alternative goalkeeper jersey in mint, covered in grey sketches of landmarks from Galway, New York, Boston, Chicago and San Francisco. You can pick out the Statue of Liberty, the Brooklyn Bridge and the Golden Gate Bridge. The five cities are the ones in Galway GAA's 'Dancing Like A Star Stateside' charity event in New York. Supermac's is on the front, Papa Johns on the back and Só Hotels on the sleeves, with black and white striped cuffs and a knitted collar. The Gaillimh crest shows the ship and lion. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000023-1.webp",
+      "/images/gaa-gear/900000023-2.webp",
+      "/images/gaa-gear/900000023-3.webp",
+      "/images/gaa-gear/900000023-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Galway",
+      "season": "2025",
+      "kit": "Alternative Goalkeeper",
+      "sponsor": "Supermac's",
+      "colours": "Mint / Grey / Black",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
