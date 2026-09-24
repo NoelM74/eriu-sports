@@ -13679,5 +13679,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000025",
+    "title": "Down GAA 2025-26 Home Jersey",
+    "slug": "down-gaa-2025-26-home-jersey",
+    "description": "Down's 2025-26 home jersey: scarlet red with a fine tonal pinstripe, black sleeves and side panels, red and white striped cuffs and a red, black and white ribbed crew neck. Three white stripes run down each side at the back. EOS IT Solutions is on the front and back, with Murdock Builders Merchants on the sleeves, and the An Dún crest sits on the chest. The Mourne County have won five All-Ireland football titles: 1960, 1961, 1968, 1991 and 1994. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000025-1.webp",
+      "/images/gaa-gear/900000025-2.webp",
+      "/images/gaa-gear/900000025-3.webp",
+      "/images/gaa-gear/900000025-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Down",
+      "season": "2025-26",
+      "kit": "Home",
+      "sponsor": "EOS IT Solutions",
+      "colours": "Red / Black / White",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
