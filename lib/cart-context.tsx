@@ -141,8 +141,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
         items: state.items,
         cartCount,
         cartTotal,
-        addItem: (product, size) =>
-          dispatch({ type: "ADD_ITEM", product, size }),
+        addItem: (product, size) => {
+          // Never add a size that has sold out.
+          if (product.soldOut?.includes(size)) return;
+          dispatch({ type: "ADD_ITEM", product, size });
+        },
         removeItem: (productId, size) =>
           dispatch({ type: "REMOVE_ITEM", productId, size }),
         updateQty: (productId, size, quantity) =>

@@ -15,6 +15,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, priority = false }: ProductCardProps): React.ReactElement {
   const { addItem } = useCart();
+  const soldOutAll = product.sizes.every((size) => product.soldOut.includes(size));
   const { convertPrice, formatPrice } = useCurrency();
 
   const convertedPrice = convertPrice(product.price);
@@ -38,23 +39,38 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
           </div>
         )}
         {/* Quick add (hover devices) */}
-        <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <div className="flex w-full h-full">
-            {product.sizes.map((size) => (
-              <button
-                key={size}
-                onClick={(e) => {
-                  e.preventDefault();
-                  addItem(product, size);
-                }}
-                aria-label={`Add ${product.title}, size ${size}, to bag`}
-                className="flex-1 bg-[#1A533E]/95 text-white text-xs font-bold uppercase tracking-widest py-3 hover:bg-[#133d2d] transition-colors border-r border-[#133d2d] last:border-r-0"
-              >
-                {size}
-              </button>
-            ))}
+        {soldOutAll ? (
+          <div className="absolute inset-x-0 bottom-0 bg-[#0F2131]/90 text-white text-xs font-bold uppercase tracking-widest py-3 text-center">
+            Sold out
           </div>
-        </div>
+        ) : (
+          <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <div className="flex w-full h-full">
+              {product.sizes.map((size) => {
+                const soldOut = product.soldOut.includes(size);
+                return (
+                  <button
+                    key={size}
+                    disabled={soldOut}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (!soldOut) addItem(product, size);
+                    }}
+                    aria-label={soldOut ? `Size ${size} sold out` : `Add ${product.title}, size ${size}, to bag`}
+                    title={soldOut ? 'Sold out' : undefined}
+                    className={`flex-1 text-xs font-bold uppercase tracking-widest py-3 transition-colors border-r border-[#133d2d] last:border-r-0 ${
+                      soldOut
+                        ? 'bg-[#1A533E]/70 text-white/40 line-through cursor-not-allowed'
+                        : 'bg-[#1A533E]/95 text-white hover:bg-[#133d2d]'
+                    }`}
+                  >
+                    {size}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </Link>
 
       <div className="pt-3 pb-2">
