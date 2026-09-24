@@ -13441,5 +13441,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000016",
+    "title": "Tyrone GAA 2026 Home Jersey",
+    "slug": "tyrone-gaa-2026-home-jersey",
+    "description": "Tyrone's 2026 home jersey, a modern classic inspired by the county's kits of the past. White with red side panels, sewn-on red stripes over the shoulders, a ribbed red and white crew neck and the Tyrone crest. Four red stars and 'Tír Eoghain' on the right sleeve mark Tyrone's four All-Ireland football titles: 2003, 2005, 2008 and 2021. McAleer & Rushe on the front and back.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000016-1.webp",
+      "/images/gaa-gear/900000016-2.webp",
+      "/images/gaa-gear/900000016-3.webp",
+      "/images/gaa-gear/900000016-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Tyrone",
+      "season": "2026",
+      "kit": "Home",
+      "sponsor": "McAleer & Rushe",
+      "colours": "White / Red",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
