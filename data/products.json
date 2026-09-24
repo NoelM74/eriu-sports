@@ -967,7 +967,10 @@
           "108 cm (42\")"
         ]
       ]
-    }
+    },
+    "soldOut": [
+      "S"
+    ]
   },
   {
     "id": "592699949",
@@ -1974,7 +1977,12 @@
           "108 cm (42\")"
         ]
       ]
-    }
+    },
+    "soldOut": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": "noe8mcgrath73-tyrone-training-vest-550c",
@@ -13496,5 +13504,30 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000018",
+    "title": "Clare GAA 2025 Alternative Goalkeeper Jersey",
+    "slug": "clare-gaa-2025-alternative-goalkeeper-jersey",
+    "description": "Clare's 2025 alternative goalkeeper jersey: white with bold blue slashes across the body, a navy and white ribbed crew neck, blue cuffs and navy stripes down the sides. Pat O'Donnell is on the front and back, with Volvo on the sleeves. Along the base of the back, in Irish, runs Clare's old motto, 'Na ceáda sa cat agus na deireanaca as': the first into battle and the last out. It came out the season after Clare won the 2024 All-Ireland hurling title, beating Cork after extra time.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000018-1.webp",
+      "/images/gaa-gear/900000018-2.webp",
+      "/images/gaa-gear/900000018-3.webp",
+      "/images/gaa-gear/900000018-4.webp",
+      "/images/gaa-gear/900000018-5.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Clare",
+      "season": "2025",
+      "kit": "Alternative Goalkeeper",
+      "sponsor": "Pat O'Donnell",
+      "colours": "White / Blue / Navy",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]

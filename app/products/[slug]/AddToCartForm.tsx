@@ -105,20 +105,33 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                 </div>
 
                 <div className={`mt-4 grid ${sizes.length > 5 ? 'grid-cols-6 gap-2' : sizes.length > 4 ? 'grid-cols-5 gap-3' : 'grid-cols-4 gap-3'}`}>
-                    {sizes.map((size) => (
-                        <button
-                            key={size}
-                            type="button"
-                            onClick={() => setSelectedSize(size)}
-                            className={`group relative flex items-center justify-center rounded-sm border px-2 py-4 text-sm font-medium uppercase transition-all ${selectedSize === size
-                                ? 'bg-[var(--color-teal)] border-transparent text-white shadow-xl transform scale-105'
-                                : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
-                                }`}
-                        >
-                            {size}
-                        </button>
-                    ))}
+                    {sizes.map((size) => {
+                        const soldOut = product.soldOut.includes(size);
+                        return (
+                            <button
+                                key={size}
+                                type="button"
+                                disabled={soldOut}
+                                onClick={() => setSelectedSize(size)}
+                                aria-label={soldOut ? `${size}, sold out` : size}
+                                title={soldOut ? 'Sold out' : undefined}
+                                className={`group relative flex items-center justify-center rounded-sm border px-2 py-4 text-sm font-medium uppercase transition-all ${soldOut
+                                    ? 'bg-zinc-50 border-zinc-200 text-zinc-300 line-through cursor-not-allowed'
+                                    : selectedSize === size
+                                    ? 'bg-[var(--color-teal)] border-transparent text-white shadow-xl transform scale-105'
+                                    : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
+                                    }`}
+                            >
+                                {size}
+                            </button>
+                        );
+                    })}
                 </div>
+                {product.soldOut.length > 0 && (
+                    <p className="text-xs text-gray-500 mt-2">
+                        Crossed-out sizes are sold out. Email noel@eriusports.com and we&apos;ll let you know if they come back.
+                    </p>
+                )}
 
                 {!selectedSize && (
                     <p className="text-sm text-red-500 font-medium mt-3 italic">

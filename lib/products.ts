@@ -44,6 +44,8 @@ export interface Product {
   price: number;
   images: string[];
   sizes: string[];
+  /** Sizes listed but no longer in stock. Shown crossed out. */
+  soldOut: string[];
   badge: string | null;
   description: string;
   details: ProductDetails;
@@ -66,6 +68,7 @@ interface RawProduct {
   details?: ProductDetails;
   sizeGuide?: { size: string; rows: string[][] };
   sizes?: string[];
+  soldOut?: string[];
 }
 
 export const SIZES = ['S', 'M', 'L', 'XL'];
@@ -112,6 +115,7 @@ export const products: Product[] = (productsData as RawProduct[]).map((p) => {
     price: p.price,
     images: p.images,
     sizes: p.sizes ?? SIZES,
+    soldOut: p.soldOut ?? [],
     badge: deriveBadge(p),
     description: p.description,
     details: p.details ?? {},

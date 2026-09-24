@@ -112,7 +112,9 @@ export default async function ProductDetail({ params }: ProductPageProps) {
         url,
         price: product.price,
         priceCurrency: product.currency,
-        availability: 'https://schema.org/InStock',
+        availability: product.sizes.every((sz) => product.soldOut.includes(sz))
+          ? 'https://schema.org/OutOfStock'
+          : 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
         seller: { '@type': 'Organization', name: 'Ériu Sports' },
         shippingDetails: [shippingTo('IE'), shippingTo('GB')],
