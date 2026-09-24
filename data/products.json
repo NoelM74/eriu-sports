@@ -13601,5 +13601,28 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000022",
+    "title": "Donegal GAA 2024-25 Away Jersey",
+    "slug": "donegal-gaa-2024-25-away-jersey",
+    "description": "Donegal's 2024-25 away jersey: white with faint grey contour lines, green sleeves with amber cuffs, three green stripes over each shoulder and a green and amber ribbed crew neck. Near the hem on the back is a faint outline of the Donegal coastline. Circet is on the front, Abbey Hotel on the back, with Pod-Trak and MCR Group on the sleeves. The Dún na nGall crest has green and amber waves around a shield with a red cross. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000022-1.webp",
+      "/images/gaa-gear/900000022-2.webp",
+      "/images/gaa-gear/900000022-3.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Donegal",
+      "season": "2024-25",
+      "kit": "Away",
+      "sponsor": "Circet",
+      "colours": "White / Green / Amber",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
