@@ -13244,25 +13244,25 @@
   },
   {
     "id": "900000009",
-    "title": "Bohemians Guinness White Jersey",
-    "slug": "bohemians-guinness-white-jersey",
-    "description": "Bohemians' white jersey with the Guinness sponsor, thin red pinstripes across the body, black and white stripes on the shoulders and a black ribbed collar. The crest reads 'Dublin's Originals, since 1890', '1890 BFC' runs inside the collar and there's a Ha'penny Bridge patch on the hem. A standout shirt for match days, collectors or streetwear.",
+    "title": "Bohemians 2025 Guinness Away Jersey",
+    "slug": "bohemians-2025-guinness-away-jersey",
+    "description": "Bohemians' 2025 away jersey, made with Guinness. A cream body with thin red pinstripes, a 1980s Guinness logo and an old-style O'Neills logo from the same era, black and cream trim on the collar and cuffs, and an embroidered Ha'penny Bridge tag on the hem with Irish and English inscriptions. The crest reads 'Dublin's Originals, since 1890'.",
     "price": 25,
     "images": [
-      "/images/ireland-classics/bohemians-guinness-white-jersey-1.webp",
-      "/images/ireland-classics/bohemians-guinness-white-jersey-2.webp",
-      "/images/ireland-classics/bohemians-guinness-white-jersey-3.webp",
-      "/images/ireland-classics/bohemians-guinness-white-jersey-4.webp",
-      "/images/ireland-classics/bohemians-guinness-white-jersey-5.webp"
+      "/images/ireland-classics/bohemians-2025-guinness-away-jersey-1.webp",
+      "/images/ireland-classics/bohemians-2025-guinness-away-jersey-2.webp",
+      "/images/ireland-classics/bohemians-2025-guinness-away-jersey-3.webp",
+      "/images/ireland-classics/bohemians-2025-guinness-away-jersey-4.webp",
+      "/images/ireland-classics/bohemians-2025-guinness-away-jersey-5.webp"
     ],
     "collection": "Ireland Classics",
     "currency": "EUR",
     "details": {
       "team": "Bohemians",
-      "season": "Current",
-      "kit": "Special",
+      "season": "2025",
+      "kit": "Away",
       "sponsor": "Guinness",
-      "colours": "White / Black / Red",
+      "colours": "Cream / Black / Red",
       "fit": "Regular fit, true to size",
       "condition": "New"
     },
@@ -13276,25 +13276,54 @@
   },
   {
     "id": "900000010",
-    "title": "Bohemians Oasis 2025-26 Shirt",
-    "slug": "bohemians-oasis-2025-26-shirt",
-    "description": "Bohemians' 2025-26 Oasis shirt: sky blue with a darker blue geometric pattern, the Oasis logo in a black box across the front and the Bohemian Football Club crest. Navy, sky blue and white striped rib on the collar and cuffs.",
+    "title": "Bohemians x Oasis 2025 FAI Cup Jersey",
+    "slug": "bohemians-oasis-2025-fai-cup-jersey",
+    "description": "Bohemians' special 2025 FAI Cup shirt, a nod to Oasis and the Gallagher brothers' Irish roots. The Oasis logo sits across the front in the traditional blue tones of Dublin City, with 90s styling, a sublimated chevron pattern, the Bohemian Football Club crest and white and navy striped trim on the collar and cuffs.",
     "price": 25,
     "images": [
-      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-1.webp",
-      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-2.webp",
-      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-3.webp",
-      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-4.webp",
-      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-5.webp"
+      "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-2.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-3.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-4.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-5.webp"
     ],
     "collection": "Ireland Classics",
     "currency": "EUR",
     "details": {
       "team": "Bohemians",
-      "season": "2025-26",
-      "kit": "Special",
+      "season": "2025",
+      "kit": "Cup",
       "sponsor": "Oasis",
-      "colours": "Sky Blue / Navy",
+      "colours": "Sky Blue / Navy / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000011",
+    "title": "Bohemians 2026 Kneecap Away Jersey",
+    "slug": "bohemians-2026-kneecap-away-jersey",
+    "description": "Bohemians' 2026 away jersey, made with Irish band Kneecap. White, with a keffiyeh-inspired pattern that weaves the colours of the Irish and Palestinian flags together, Kneecap across a black chest band and the club crest on the chest. BOHEMIAN and a large club crest on the back, and green, white and orange stripes on the shoulders.",
+    "price": 25,
+    "images": [
+      "/images/ireland-classics/bohemians-2026-kneecap-away-jersey-1.webp",
+      "/images/ireland-classics/bohemians-2026-kneecap-away-jersey-2.webp"
+    ],
+    "collection": "Ireland Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Bohemians",
+      "season": "2026",
+      "kit": "Away",
+      "sponsor": "Kneecap",
+      "colours": "White / Black / Red",
       "fit": "Regular fit, true to size",
       "condition": "New"
     },
