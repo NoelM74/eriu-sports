@@ -13417,5 +13417,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000015",
+    "title": "Down GAA 2026 Alternative Jersey",
+    "slug": "down-gaa-2026-alternative-jersey",
+    "description": "Down's 2026 alternative jersey, a modern twist on the county's classic look. Navy with mint and light blue chevron stripes, a navy, mint and white ribbed collar, white stripes at the hem and the Down crest with 'An Dún'. EOS IT Solutions on the front and back, and Murdock Builders Merchants on the sleeves. Breathable, quick-drying fabric.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000015-1.webp",
+      "/images/gaa-gear/900000015-2.webp",
+      "/images/gaa-gear/900000015-3.webp",
+      "/images/gaa-gear/900000015-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Down",
+      "season": "2026",
+      "kit": "Alternative",
+      "sponsor": "EOS IT Solutions",
+      "colours": "Navy / Mint / White",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
