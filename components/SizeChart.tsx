@@ -1,18 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import { CHART_SIZES, sizeChart, type ChartUnit } from "@/lib/size-chart";
+import { CHARTS, sizeChart, type ChartKey, type ChartUnit } from "@/lib/size-chart";
 
 interface Props {
+  /** Which chart to show: football, GAA or AFL. */
+  chart?: ChartKey;
   /** Sizes this shirt comes in. Other columns are greyed out. Omit to show all. */
   available?: string[];
 }
 
-/** Body-measurement size chart with a cm / inches switch. Scrolls sideways on small screens. */
-export default function SizeChart({ available }: Props) {
+/** Size chart with a cm / inches switch. Scrolls sideways on small screens. */
+export default function SizeChart({ chart = "football", available }: Props) {
   const [unit, setUnit] = useState<ChartUnit>("cm");
-  const rows = sizeChart(unit);
+  const { sizes, note } = CHARTS[chart];
+  const rows = sizeChart(chart, unit);
   const has = (s: string) => !available || available.includes(s);
+  const extra = available?.filter((s) => !sizes.includes(s)) ?? [];
 
   return (
     <div>
@@ -33,11 +37,11 @@ export default function SizeChart({ available }: Props) {
       </div>
 
       <div className="overflow-x-auto border border-gray-200">
-        <table className="w-full min-w-[560px] text-sm text-center border-collapse">
+        <table className="w-full min-w-[520px] text-sm text-center border-collapse">
           <thead>
             <tr className="bg-[#0F2131] text-white">
               <th scope="col" className="sticky left-0 bg-[#0F2131] py-3 px-3 text-left font-semibold">Size</th>
-              {CHART_SIZES.map((s) => (
+              {sizes.map((s) => (
                 <th key={s} scope="col" className={`py-3 px-3 font-bold ${has(s) ? "" : "text-white/40"}`}>
                   {s}
                 </th>
@@ -51,7 +55,7 @@ export default function SizeChart({ available }: Props) {
                   {row.label}
                 </th>
                 {row.values.map((v, i) => (
-                  <td key={i} className={`py-3 px-3 whitespace-nowrap ${has(CHART_SIZES[i]) ? "text-gray-700" : "text-gray-300"}`}>
+                  <td key={i} className={`py-3 px-3 whitespace-nowrap ${has(sizes[i]) ? "text-gray-700" : "text-gray-300"}`}>
                     {v}
                   </td>
                 ))}
@@ -61,8 +65,9 @@ export default function SizeChart({ available }: Props) {
         </table>
       </div>
       <p className="mt-2 text-xs text-gray-500">
-        These are body measurements. A difference of 2–3 cm is normal when measuring by hand.
-        {available && !CHART_SIZES.every(has) && " Greyed-out sizes aren't available for this shirt."}
+        {note}
+        {available && !sizes.every(has) && " Greyed-out sizes aren't available for this shirt."}
+        {extra.length > 0 && ` Also comes in ${extra.join(", ")}: email us for measurements.`}
       </p>
     </div>
   );

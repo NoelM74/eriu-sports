@@ -13210,5 +13210,36 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000008",
+    "title": "Bohemians Fontaines D.C. 2025 Third Jersey",
+    "slug": "bohemians-fontaines-dc-2025-third-jersey",
+    "description": "Bohemians' 2025 third jersey, made with Dublin band Fontaines D.C. Sky blue fading to pink, with pink pinstripes, neon yellow and pink stripes on the shoulders, a ribbed crew neck and Fontaines D.C. across the front. 'I thought it was love' on the back, 'Romance' inside the collar and a Saoirse don Phalaistín patch on the hem.",
+    "price": 25,
+    "images": [
+      "/images/ireland-classics/bohemians-fontaines-dc-2025-third-jersey-1.webp",
+      "/images/ireland-classics/bohemians-fontaines-dc-2025-third-jersey-2.webp",
+      "/images/ireland-classics/bohemians-fontaines-dc-2025-third-jersey-3.webp",
+      "/images/ireland-classics/bohemians-fontaines-dc-2025-third-jersey-4.webp"
+    ],
+    "collection": "Ireland Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Bohemians",
+      "season": "2025",
+      "kit": "Third",
+      "sponsor": "Fontaines D.C.",
+      "colours": "Sky Blue / Pink",
+      "fit": "Regular fit, true to size",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

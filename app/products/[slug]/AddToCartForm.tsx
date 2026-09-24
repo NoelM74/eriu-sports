@@ -6,6 +6,7 @@ import { useCart } from '@/lib/cart-context';
 import { useCurrency } from '@/lib/currency-context';
 import { Product } from '@/lib/products';
 import SizeChart from '@/components/SizeChart';
+import { CHARTS } from '@/lib/size-chart';
 
 interface AddToCartFormProps {
     product: Product;
@@ -79,8 +80,8 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                             <X className="w-5 h-5" />
                         </button>
                         <h2 id="size-chart-title" className="text-lg font-bold uppercase tracking-widest text-gray-900 mb-1">Find your size</h2>
-                        <p className="text-sm text-gray-600 mb-4">Measure your chest at the widest point and match it to the chart.</p>
-                        <SizeChart available={sizes} />
+                        <p className="text-sm text-gray-600 mb-4">{CHARTS[product.category].howTo}</p>
+                        <SizeChart chart={product.category} available={sizes} />
                         <p className="mt-4 text-sm text-gray-700 bg-gray-50 border border-gray-200 p-3">
                             Not sure? Email your height and weight to{' '}
                             <a href="mailto:noel@eriusports.com" className="text-[var(--color-teal)] underline">noel@eriusports.com</a>{' '}

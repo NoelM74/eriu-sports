@@ -4,24 +4,26 @@ import Link from 'next/link';
 import SizeChart from '@/components/SizeChart';
 
 export const metadata: Metadata = {
-  title: 'Size Guide | Football Shirt Sizes S–3XL',
+  title: 'Size Guide | Retro Football Shirt Sizes S–2XL',
   description:
-    'Football shirt size chart in cm and inches, from S to 3XL, with chest, waist, hip, height and weight. How to measure yourself and pick the right size.',
+    'Retro football shirt size chart in cm and inches, S to 2XL: chest, waist, length and shoulder, with a height and weight guide. Plus GAA and AFL sizing.',
   alternates: { canonical: '/size-guide' },
   openGraph: {
     title: 'Size Guide | Ériu Sports',
-    description: 'Football shirt size chart in cm and inches, S to 3XL.',
+    description: 'Retro football shirt size chart in cm and inches, S to 2XL, plus GAA and AFL sizing.',
     url: '/size-guide',
   },
 };
 
 const STEPS = [
-  { title: 'Chest', text: 'Around the fullest part of your chest, under your arms. Keep the tape level.' },
-  { title: 'Waist', text: 'Around your natural waistline, just above your belly button.' },
-  { title: 'Hip', text: 'Around the widest part of your hips.' },
+  { title: 'Chest', text: 'Lay a shirt that fits you well flat. Measure straight across, just under the arms, then double it.' },
+  { title: 'Waist', text: 'Measure straight across the shirt at the narrowest point, then double it.' },
+  { title: 'Length', text: 'From the top of the shoulder, next to the collar, straight down to the hem.' },
+  { title: 'Shoulder', text: 'Across the back, from one shoulder seam to the other.' },
 ];
 
 const TIPS = [
+  'No shirt to hand? Use the height and weight rows as a guide.',
   'Chest is the measurement that matters most for a football shirt.',
   'Between two sizes? Go up one for a relaxed fit.',
   '90s shirts are cut a bit boxier than modern ones. Each listing tells you the fit.',
@@ -34,15 +36,22 @@ export default function SizeGuidePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Size Guide</h1>
-          <p className="text-lg text-gray-600">Measure yourself, then match your chest to the chart. It takes two minutes.</p>
+          <p className="text-lg text-gray-600">Compare the chart with a shirt that fits you well, or go by your height and weight.</p>
         </header>
 
         <section aria-labelledby="chart" className="mb-12">
-          <h2 id="chart" className="text-2xl font-bold text-[#0F2131] mb-4">Football shirt size chart</h2>
-          <SizeChart />
+          <h2 id="chart" className="text-2xl font-bold text-[#0F2131] mb-4">Retro football shirt size chart</h2>
+          <SizeChart chart="football" />
+          <p className="mt-4 text-sm text-gray-600">Each shirt page shows which sizes that shirt comes in.</p>
+        </section>
+
+        <section aria-labelledby="gaa-afl" className="mb-12">
+          <h2 id="gaa-afl" className="text-2xl font-bold text-[#0F2131] mb-4">GAA and AFL jersey sizes</h2>
+          <SizeChart chart="gaa" />
           <p className="mt-4 text-sm text-gray-600">
-            Each shirt page shows which sizes that shirt comes in. GAA jerseys run slightly differently, see our{' '}
-            <Link href="/blog/gaa-jersey-size-guide" className="text-[#1C7C83] underline underline-offset-4">GAA size guide</Link>.
+            GAA jerseys are a player fit, so they sit close to the body. See our{' '}
+            <Link href="/blog/gaa-jersey-size-guide" className="text-[#1C7C83] underline underline-offset-4">GAA size guide</Link>{' '}
+            for more.
           </p>
         </section>
 
@@ -51,7 +60,7 @@ export default function SizeGuidePage() {
           <div className="grid md:grid-cols-[260px_1fr] gap-8 items-center">
             <Image
               src="/images/size-guide/how-to-measure.webp"
-              alt="Shirt diagram showing where to measure chest, waist and hip"
+              alt="Shirt diagram showing where to measure the chest and waist"
               width={260}
               height={260}
               className="mx-auto border border-gray-100"
