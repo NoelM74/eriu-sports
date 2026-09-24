@@ -13394,5 +13394,28 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000014",
+    "title": "Antrim GAA 2026 Alternative Jersey",
+    "slug": "antrim-gaa-2026-alternative-jersey",
+    "description": "Antrim's 2026 alternative jersey, a modern take on the Saffron County's colours. A bold green pattern on a dark base, with amber and white trim on the ribbed collar and cuffs, amber stripes at the hem and the Antrim crest. Fibrus Broadband on the front and Northern Property on the back. Breathable, quick-drying fabric.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000014-1.webp",
+      "/images/gaa-gear/900000014-2.webp",
+      "/images/gaa-gear/900000014-3.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Antrim",
+      "season": "2026",
+      "kit": "Alternative",
+      "sponsor": "Fibrus Broadband",
+      "colours": "Black / Green / Amber",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
