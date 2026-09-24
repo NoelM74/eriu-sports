@@ -13241,5 +13241,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000009",
+    "title": "Bohemians Guinness White Jersey",
+    "slug": "bohemians-guinness-white-jersey",
+    "description": "Bohemians' white jersey with the Guinness sponsor, thin red pinstripes across the body, black and white stripes on the shoulders and a black ribbed collar. The crest reads 'Dublin's Originals, since 1890', '1890 BFC' runs inside the collar and there's a Ha'penny Bridge patch on the hem. A standout shirt for match days, collectors or streetwear.",
+    "price": 25,
+    "images": [
+      "/images/ireland-classics/bohemians-guinness-white-jersey-1.webp",
+      "/images/ireland-classics/bohemians-guinness-white-jersey-2.webp",
+      "/images/ireland-classics/bohemians-guinness-white-jersey-3.webp",
+      "/images/ireland-classics/bohemians-guinness-white-jersey-4.webp",
+      "/images/ireland-classics/bohemians-guinness-white-jersey-5.webp"
+    ],
+    "collection": "Ireland Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Bohemians",
+      "season": "Current",
+      "kit": "Special",
+      "sponsor": "Guinness",
+      "colours": "White / Black / Red",
+      "fit": "Regular fit, true to size",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
