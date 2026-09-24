@@ -13555,5 +13555,28 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000020",
+    "title": "Antrim GAA 2025 Goalkeeper Jersey",
+    "slug": "antrim-gaa-2025-goalkeeper-jersey",
+    "description": "Antrim's 2025 goalkeeper jersey: black with a grey geometric print, amber sleeves, and a black and amber ribbed crew neck. Amber stripes run down the sides at the back. Fibrus Broadband is on the front, Northern Property on the back and Premier Electrics on the sleeves. The Aontroim crest has the Red Hand of Ulster at its centre. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000020-1.webp",
+      "/images/gaa-gear/900000020-2.webp",
+      "/images/gaa-gear/900000020-3.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Antrim",
+      "season": "2025",
+      "kit": "Goalkeeper",
+      "sponsor": "Fibrus Broadband",
+      "colours": "Black / Amber",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
