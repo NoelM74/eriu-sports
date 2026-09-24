@@ -13578,5 +13578,28 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000021",
+    "title": "Fermanagh GAA 2025 Alternative Goalkeeper Jersey",
+    "slug": "fermanagh-gaa-2025-alternative-goalkeeper-jersey",
+    "description": "Fermanagh's 2025 alternative goalkeeper jersey: white with a soft grey marbled print, navy cuffs with a mint stripe, and a navy and mint ribbed crew neck. Navy stripes run down the sides at the back. Tracey Concrete is on the front, McMahon Healthcare on the back, with Monaghan Bros and Modern Tyres on the sleeves. The crest shows a round tower and old church ruins above a knight on horseback marked 'Maguire', the family who once ruled Fermanagh, with 'Fear Manach' on the scroll. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000021-1.webp",
+      "/images/gaa-gear/900000021-2.webp",
+      "/images/gaa-gear/900000021-3.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Fermanagh",
+      "season": "2025",
+      "kit": "Alternative Goalkeeper",
+      "sponsor": "Tracey Concrete",
+      "colours": "White / Navy",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
