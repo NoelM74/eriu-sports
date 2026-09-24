@@ -13365,5 +13365,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000013",
+    "title": "St Kilda Saints AFL Home Jersey",
+    "slug": "st-kilda-saints-afl-home-jersey",
+    "description": "St Kilda's home jersey in the club's red, white and black panels, with the St K.F.C. crest, the CMC Invest sponsor and Chery at the neck. Black back with RSEA Safety and Chery. Sleeveless, in a regular fit.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/st-kilda-saints-afl-home-jersey-1.webp",
+      "/images/afl-jerseys/st-kilda-saints-afl-home-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "St Kilda Saints",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "CMC Invest",
+      "colours": "Red / White / Black",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
