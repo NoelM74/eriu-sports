@@ -13655,5 +13655,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000024",
+    "title": "Roscommon GAA 2025 Home Jersey",
+    "slug": "roscommon-gaa-2025-home-jersey",
+    "description": "Roscommon's 2025 home jersey is hooped all over, with wide yellow and royal blue bands with thin pinstripes between them, three blue stripes on each shoulder and a blue and yellow ribbed crew neck. Ballymore is on the front in blue and on the back in white. The Ros Comáin crest shows a cross, a crown and sheep, with the county motto 'Constans Hiberniae Cor', the steadfast heart of Ireland. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000024-1.webp",
+      "/images/gaa-gear/900000024-2.webp",
+      "/images/gaa-gear/900000024-3.webp",
+      "/images/gaa-gear/900000024-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Roscommon",
+      "season": "2025",
+      "kit": "Home",
+      "sponsor": "Ballymore",
+      "colours": "Yellow / Royal Blue",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
