@@ -33,6 +33,216 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "bohemians-music-shirts-fontaines-dc-oasis-kneecap",
+    title: "Bohemians' Music Shirts: Fontaines D.C., Oasis and Kneecap",
+    seoTitle: "Bohemians Jerseys: Fontaines D.C., Oasis, Kneecap & Guinness",
+    description:
+      "Why Dublin's Bohemian FC keeps teaming up with bands. The stories behind the Fontaines D.C., Oasis, Kneecap and Guinness shirts, and how they fit.",
+    category: "Ireland Classics",
+    datePublished: "2026-09-24",
+    heroImage: "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
+    heroAlt: "Bohemians x Oasis 2025 FAI Cup jersey in sky blue with the Oasis logo",
+    heroFit: "contain",
+    intro:
+      "Bohemian FC have made their shirts about more than football. The Dublin club, founded in 1890 and owned by its members, has teamed up with some of the best-known names in Irish and British music. Here are the shirts we stock, and the stories behind them.",
+    sections: [
+      {
+        heading: "A football club with a music story",
+        paragraphs: [
+          "Bohs play at Dalymount Park in Phibsborough, north Dublin. The ground has hosted concerts as well as matches, including Bob Marley in 1980.",
+          "The music shirts have found fans well beyond the League of Ireland, among people who follow the bands as much as the club.",
+        ],
+      },
+      {
+        heading: "Fontaines D.C., 2025 third",
+        paragraphs: [
+          "Fontaines D.C. are a Dublin band, and their name runs across a sky blue shirt that fades to pink, with neon yellow and pink stripes on the shoulders.",
+          "'Romance', the title of their 2024 album, is printed inside the collar, and 'I thought it was love' is on the back.",
+        ],
+      },
+      {
+        heading: "Oasis, 2025 FAI Cup",
+        paragraphs: [
+          "Bohs released a special FAI Cup shirt with the Oasis logo across the front, in the same year the band's reunion tour came to Croke Park.",
+          "Noel and Liam Gallagher were born in Manchester to Irish parents. The shirt uses the blue tones of Dublin City with a 90s-style chevron pattern.",
+        ],
+      },
+      {
+        heading: "Guinness, 2025 away",
+        paragraphs: [
+          "A cream shirt with thin red pinstripes, a 1980s Guinness logo and an old-style O'Neills logo from the same era. An embroidered Ha'penny Bridge tag sits on the hem.",
+        ],
+      },
+      {
+        heading: "Kneecap, 2026 away",
+        paragraphs: [
+          "Kneecap are an Irish-language rap trio from Belfast. The white away shirt has a keffiyeh-inspired pattern in the colours of the Irish and Palestinian flags, with Kneecap across a black chest band.",
+          "There is also a black version with the band's balaclava face in red and a 'Dlúthpháirtíocht / Solidarity' patch on the hem.",
+        ],
+      },
+      {
+        heading: "How they fit",
+        paragraphs: [
+          "All of these shirts are a regular fit, in sizes S to 2XL. Each shirt page has a size chart with the chest, length and a height and weight guide.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Where do Bohemians play?", a: "Dalymount Park in Phibsborough, north Dublin." },
+      { q: "Is Bohemian FC fan-owned?", a: "Yes. The club is owned by its members." },
+      { q: "What sizes do the Bohemians shirts come in?", a: "S to 2XL, in a regular fit. Delivery to Ireland and the UK takes 8 to 14 days." },
+    ],
+    products: [
+      "bohemians-oasis-2025-fai-cup-jersey",
+      "bohemians-fontaines-dc-2025-third-jersey",
+      "bohemians-2026-kneecap-away-jersey",
+      "bohemians-2025-guinness-away-jersey",
+      "bohemians-2026-kneecap-black-jersey",
+    ],
+    cta: { label: "Shop all Bohemians shirts", href: "/clubs/bohemians" },
+  },
+  {
+    slug: "gaa-county-jerseys-2026",
+    title: "GAA County Jerseys 2026: Dublin, Tyrone, Down, Antrim and Louth",
+    seoTitle: "GAA Jerseys 2026: Dublin, Tyrone, Down, Antrim & Louth",
+    description:
+      "The new 2026 county jerseys from Dublin, Tyrone, Down, Antrim and Louth: the designs, the sponsors, what player fit means and how to pick your size.",
+    category: "GAA",
+    datePublished: "2026-09-24",
+    heroImage: "/images/gaa-gear/900000016-1.webp",
+    heroAlt: "Tyrone GAA 2026 home jersey in white and red with the McAleer & Rushe sponsor",
+    heroFit: "contain",
+    intro:
+      "New county jerseys are one of the first signs of a new GAA season. Here are the 2026 jerseys in our range, what makes each one different, and how to get the right size.",
+    sections: [
+      {
+        heading: "Dublin: sky blue and navy",
+        paragraphs: [
+          "Dublin's 2026 home jersey keeps the sky blue body, with a navy pinstripe and a navy yoke and sleeves. Staycity is the sponsor.",
+        ],
+      },
+      {
+        heading: "Tyrone: four stars on the sleeve",
+        paragraphs: [
+          "White with red side panels and sewn-on red stripes over the shoulders, inspired by Tyrone kits of the past.",
+          "Four red stars on the right sleeve mark the county's All-Ireland football titles in 2003, 2005, 2008 and 2021. McAleer & Rushe is on the front and back.",
+        ],
+      },
+      {
+        heading: "Down: navy and mint",
+        paragraphs: [
+          "Down's 2026 alternative jersey is navy with mint and light blue chevron stripes, with 'An Dún' under the crest and EOS IT Solutions as the sponsor.",
+          "Down have won five All-Ireland football titles, in 1960, 1961, 1968, 1991 and 1994.",
+        ],
+      },
+      {
+        heading: "Antrim: the Saffron County",
+        paragraphs: [
+          "Antrim's 2026 alternative jersey is a bold green pattern on a dark base, with amber trim for the county's saffron. Fibrus Broadband is on the front and Northern Property on the back.",
+        ],
+      },
+      {
+        heading: "Louth: red, with 'Lú Abú'",
+        paragraphs: [
+          "Louth's 2026 home jersey is red with a tonal pattern and black and white trim. StatSports is on the front, and 'Lú Abú' is stitched inside the collar.",
+        ],
+      },
+      {
+        heading: "What is player fit?",
+        paragraphs: [
+          "County jerseys are cut as a player fit. They sit close to the body, the way they are worn on the pitch. If you like room through the chest and stomach, go up a size.",
+          "Chest sizes, measured flat across the jersey:",
+        ],
+        bullets: ["Small: 52 cm", "Medium: 54 cm", "Large: 56 cm", "XL: 58 cm"],
+      },
+    ],
+    faqs: [
+      { q: "Do GAA jerseys run small?", a: "They are a player fit, so they sit close to the body. Many people go up one size for a looser fit." },
+      { q: "How many All-Irelands have Tyrone won?", a: "Four senior football titles: 2003, 2005, 2008 and 2021." },
+      { q: "How long does delivery take?", a: "8 to 14 days to Ireland and the UK. Delivery is free on orders over €49." },
+    ],
+    products: [
+      "dublin-gaa-2026-home-jersey",
+      "tyrone-gaa-2026-home-jersey",
+      "down-gaa-2026-alternative-jersey",
+      "antrim-gaa-2026-alternative-jersey",
+      "louth-gaa-2026-home-jersey",
+    ],
+    cta: { label: "Shop GAA jerseys", href: "/collections/gaa-jerseys" },
+  },
+  {
+    slug: "serie-a-90s-shirts",
+    title: "Serie A in the 90s: The Shirts of Calcio's Golden Era",
+    seoTitle: "90s Serie A Shirts: Milan, Inter, Lazio, Parma & Napoli",
+    description:
+      "From Maradona's Napoli to Lazio's centenary title: the stories behind classic Serie A shirts from Milan, Inter, Parma, Lazio and Napoli, and the weekends of Football Italia.",
+    category: "European & World Classics",
+    datePublished: "2026-09-24",
+    heroImage: "/images/european-world-classics/ac-milan-1991-92-home-shirt-1.webp",
+    heroAlt: "AC Milan 1991-92 home shirt in red and black stripes with the Mediolanum sponsor",
+    heroFit: "contain",
+    intro:
+      "For a decade, Serie A was where the best players in the world wanted to be. In Ireland and the UK, a generation watched it every weekend on Channel 4's Football Italia. These are the shirts from that era in our range.",
+    sections: [
+      {
+        heading: "Football Italia",
+        paragraphs: [
+          "Channel 4 began showing live Serie A in 1992, the year Paul Gascoigne joined Lazio. It ran until 2002, and the Saturday morning show Gazzetta Football Italia, presented by James Richardson, became a cult favourite.",
+        ],
+      },
+      {
+        heading: "Napoli and Maradona",
+        paragraphs: [
+          "Diego Maradona led Napoli to their first league title in 1987 and a second in 1990, with the UEFA Cup in between in 1989.",
+          "The sky blue 1986-87 shirt carries the Buitoni sponsor. By 1990-91 it was Mars, with the champions' shield on the chest.",
+        ],
+      },
+      {
+        heading: "Milan: unbeaten",
+        paragraphs: [
+          "Fabio Capello's Milan won Serie A in 1991-92 without losing a game. Two seasons later they beat Barcelona 4-0 in the Champions League final in Athens.",
+        ],
+      },
+      {
+        heading: "Parma's rise",
+        paragraphs: [
+          "Backed by Parmalat, Parma won the Cup Winners' Cup in 1993 and the UEFA Cup in 1995 and 1999. Their white home shirt with blue and yellow trim is from that first run.",
+        ],
+      },
+      {
+        heading: "Inter and Ronaldo",
+        paragraphs: [
+          "Inter signed Ronaldo in 1997, and in his first season they won the UEFA Cup, beating Lazio 3-0 in the final in Paris.",
+        ],
+      },
+      {
+        heading: "Lazio's centenary",
+        paragraphs: [
+          "Lazio won the Cup Winners' Cup in 1999 and Serie A in 2000, the club's 100th year, with Nedvěd, Nesta, Salas and Mancini in the side.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "When was Football Italia on Channel 4?", a: "From 1992 to 2002." },
+      {
+        q: "Who won Serie A in the 90s?",
+        a: "Between 1990 and 2000, Milan won it five times and Juventus three times, with Napoli, Sampdoria and Lazio winning it once each.",
+      },
+      { q: "Do 90s shirts fit differently?", a: "They are cut a little boxier than modern shirts. Each shirt page lists the fit and has a size chart." },
+    ],
+    products: [
+      "napoli-1986-87-home-shirt",
+      "ac-milan-1991-92-home-shirt",
+      "ac-milan-1993-94-away-shirt",
+      "parma-1993-95-home-shirt",
+      "inter-milan-1997-98-home-shirt",
+      "lazio-1998-2000-home-shirt",
+      "napoli-1990-91-home-shirt",
+      "lazio-1998-2000-away-shirt",
+    ],
+    cta: { label: "Shop European & World classics", href: "/collections/european-world-classics" },
+  },
+  {
     slug: "juventus-1997-98-pink-shirt-del-piero-zidane",
     title: "Juventus 1997/98: Del Piero, Zidane and the Pink Away Shirt",
     seoTitle: "Juventus 1997/98 Shirts: Del Piero, Zidane & the Pink Away",
