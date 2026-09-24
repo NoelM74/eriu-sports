@@ -14,7 +14,24 @@ export default function ImageGallery({ images, title, badge }: ImageGalleryProps
   const mainImage = images[selectedIdx] || images[0] || '/placeholder.png';
 
   return (
-    <div className="flex flex-col-reverse">
+    <div className="flex flex-col lg:self-start">
+      {/* Main Image */}
+      <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white relative">
+        <Image
+          src={mainImage}
+          alt={title}
+          width={800}
+          height={1000}
+          className="h-full w-full object-contain object-center sm:rounded-lg transition-opacity duration-200"
+          priority
+        />
+        {/* Badge */}
+        {badge && (
+          <div className="absolute top-4 left-4 bg-red-100 text-red-800 text-xs px-3 py-1.5 uppercase font-bold tracking-wider rounded-sm shadow-sm">
+            {badge}
+          </div>
+        )}
+      </div>
       {/* Thumbnail strip */}
       {images.length > 1 && (
         <div className="mx-auto mt-4 w-full max-w-2xl sm:block lg:max-w-none">
@@ -44,23 +61,6 @@ export default function ImageGallery({ images, title, badge }: ImageGalleryProps
         </div>
       )}
 
-      {/* Main Image */}
-      <div className="aspect-[4/5] w-full bg-zinc-100 rounded-lg overflow-hidden shadow-md p-4 bg-gradient-to-t from-zinc-200 to-white relative">
-        <Image
-          src={mainImage}
-          alt={title}
-          width={800}
-          height={1000}
-          className="h-full w-full object-contain object-center sm:rounded-lg transition-opacity duration-200"
-          priority
-        />
-        {/* Badge */}
-        {badge && (
-          <div className="absolute top-4 left-4 bg-red-100 text-red-800 text-xs px-3 py-1.5 uppercase font-bold tracking-wider rounded-sm shadow-sm">
-            {badge}
-          </div>
-        )}
-      </div>
     </div>
   );
 }

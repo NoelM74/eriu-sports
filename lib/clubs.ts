@@ -1,11 +1,15 @@
 import { DELIVERY, type CategoryKey } from './collections';
 import type { ClubSummary, Product } from './products';
 
-/** Page heading for a club, e.g. "Retro Arsenal Shirts" or "Dublin GAA Jerseys". */
-export function clubHeading(club: { name: string; category: CategoryKey }): string {
+/**
+ * Page heading for a club, e.g. "Retro Arsenal Shirts" or "Dublin GAA Jerseys".
+ * Football clubs only get "Retro" when at least one shirt is from before 2015.
+ */
+export function clubHeading(club: { name: string; category: CategoryKey }, items: Product[] = []): string {
   if (club.category === 'gaa') return `${club.name} GAA Jerseys`;
   if (club.category === 'afl') return `${club.name} AFL Jerseys`;
-  return `Retro ${club.name} Shirts`;
+  const retro = items.length === 0 || items.some((p) => (startYear(p.details.season) ?? 9999) < 2015);
+  return `${retro ? 'Retro ' : ''}${club.name} Shirts`;
 }
 
 function startYear(season?: string): number | null {

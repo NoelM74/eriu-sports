@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const club = getClubBySlug(slug);
   if (!club) return { title: 'Club not found' };
   const items = getProductsByClub(slug);
-  const heading = clubHeading(club);
+  const heading = clubHeading(club, items);
   const description = clubIntro(club, items);
   const image = items[0]?.images[0];
   return {
@@ -46,7 +46,7 @@ export default async function ClubPage({ params }: Props) {
   if (!club) notFound();
 
   const items = getProductsByClub(slug);
-  const heading = clubHeading(club);
+  const heading = clubHeading(club, items);
   const category = CATEGORIES.find((c) => c.key === club.category)!;
   const groups = groupByDecade(items);
   const others = getClubs(club.category).filter((c) => c.slug !== club.slug);
