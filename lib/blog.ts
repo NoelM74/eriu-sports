@@ -37,59 +37,61 @@ export const POSTS: BlogPost[] = [
     title: "Bohemians' Music Shirts: Fontaines D.C., Oasis and Kneecap",
     seoTitle: "Bohemians Jerseys: Fontaines D.C., Oasis, Kneecap & Guinness",
     description:
-      "Why Dublin's Bohemian FC keeps teaming up with bands. The stories behind the Fontaines D.C., Oasis, Kneecap and Guinness shirts, and how they fit.",
+      "How a Phibsborough football club ended up with Fontaines D.C., Oasis and Kneecap on its shirts. The story behind each Bohemians jersey, from Bob Marley to Guinness, and how they fit.",
     category: "Ireland Classics",
     datePublished: "2026-09-24",
     heroImage: "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
     heroAlt: "Bohemians x Oasis 2025 FAI Cup jersey in sky blue with the Oasis logo",
     heroFit: "contain",
     intro:
-      "Bohemian FC have made their shirts about more than football. The Dublin club, founded in 1890 and owned by its members, has teamed up with some of the best-known names in Irish and British music. Here are the shirts we stock, and the stories behind them.",
+      "Bohemians call themselves Dublin's Originals. The club was founded in 1890, it's owned by its members, and in the last few years it has put more bands on its shirts than any club we know of. The shirts turn up at gigs as well as at Dalymount.",
     sections: [
       {
-        heading: "A football club with a music story",
+        heading: "It started with Bob Marley",
         paragraphs: [
-          "Bohs play at Dalymount Park in Phibsborough, north Dublin. The ground has hosted concerts as well as matches, including Bob Marley in 1980.",
-          "The music shirts have found fans well beyond the League of Ireland, among people who follow the bands as much as the club.",
+          "In July 1980, Bob Marley played Dalymount Park. More than forty years later, in 2022, Bohs put his face on their away shirt, made with the Marley family's blessing and with a copy of the concert ticket stitched on the hem.",
+          "That shirt sold well beyond Dublin, and the club kept going. Most releases since have paired Bohs with an artist, a brand or a cause.",
         ],
       },
       {
         heading: "Fontaines D.C., 2025 third",
         paragraphs: [
-          "Fontaines D.C. are a Dublin band, and their name runs across a sky blue shirt that fades to pink, with neon yellow and pink stripes on the shoulders.",
-          "'Romance', the title of their 2024 album, is printed inside the collar, and 'I thought it was love' is on the back.",
+          "Fontaines D.C. formed in Dublin, and guitarist Carlos O'Connell worked on this one with the club's designers. The colours come from their 2024 album Romance: sky blue fading into pink, with neon yellow and pink stripes on the shoulders.",
+          "A line from the record, 'I thought it was love', runs across the upper back, and 'Romance' repeats inside the collar. On the hem you'll find a Palestinian flag patch with 'Saoirse don Phalaistín'. Of the five, it's the loudest and the easiest to wear with jeans.",
         ],
       },
       {
         heading: "Oasis, 2025 FAI Cup",
         paragraphs: [
-          "Bohs released a special FAI Cup shirt with the Oasis logo across the front, in the same year the band's reunion tour came to Croke Park.",
-          "Noel and Liam Gallagher were born in Manchester to Irish parents. The shirt uses the blue tones of Dublin City with a 90s-style chevron pattern.",
+          "Oasis played two nights at Croke Park in August 2025, less than a mile from Dalymount. Bohs marked it with a cup shirt: the Oasis logo in its black box across the chest, a 90s chevron pattern in the blues of Dublin City, and a striped collar that could have come out of 1995.",
+          "Noel and Liam grew up in Manchester, but their parents, Peggy and Tommy, came from Ireland. Noel has said the Irish influence runs heavy through what the band did, because they were all of Irish descent.",
         ],
       },
       {
         heading: "Guinness, 2025 away",
         paragraphs: [
-          "A cream shirt with thin red pinstripes, a 1980s Guinness logo and an old-style O'Neills logo from the same era. An embroidered Ha'penny Bridge tag sits on the hem.",
+          "The Guinness shirt looks back to the 1980s. It has a cream body with thin red pinstripes, the old Guinness lettering and an O'Neills logo from the same era. The hem tag shows the Ha'penny Bridge with its name in Irish and English.",
+          "The club sold it at the Guinness Storehouse at St James's Gate as well as its own shop, which tells you who it had in mind.",
         ],
       },
       {
-        heading: "Kneecap, 2026 away",
+        heading: "Kneecap, 2026 away and black",
         paragraphs: [
-          "Kneecap are an Irish-language rap trio from Belfast. The white away shirt has a keffiyeh-inspired pattern in the colours of the Irish and Palestinian flags, with Kneecap across a black chest band.",
-          "There is also a black version with the band's balaclava face in red and a 'Dlúthpháirtíocht / Solidarity' patch on the hem.",
+          "Kneecap, the Belfast trio who rap in Irish, designed the 2026 away shirt with the club. The white body carries a keffiyeh pattern woven with the colours of the Irish and Palestinian flags. The crest is in Irish, and the collar tape spells out CEARTA, 'rights', from one of the band's tracks.",
+          "The black version swaps the chest band for Kneecap's balaclava face in red, with thin red pinstripes and a 'Dlúthpháirtíocht / Solidarity' patch on the hem.",
         ],
       },
       {
-        heading: "How they fit",
+        heading: "Sizing",
         paragraphs: [
-          "All of these shirts are a regular fit, in sizes S to 2XL. Each shirt page has a size chart with the chest, length and a height and weight guide.",
+          "All five are a regular fit, in S to 2XL. Each shirt page has a chart with the chest, length and a height and weight guide. Between sizes? Email us your height and weight and we'll tell you which to order.",
         ],
       },
     ],
     faqs: [
-      { q: "Where do Bohemians play?", a: "Dalymount Park in Phibsborough, north Dublin." },
+      { q: "Where do Bohemians play?", a: "Dalymount Park in Phibsborough, north Dublin, less than a mile from Croke Park." },
       { q: "Is Bohemian FC fan-owned?", a: "Yes. The club is owned by its members." },
+      { q: "Who designed the Fontaines D.C. shirt?", a: "Guitarist Carlos O'Connell, working with the club's own designers." },
       { q: "What sizes do the Bohemians shirts come in?", a: "S to 2XL, in a regular fit. Delivery to Ireland and the UK takes 8 to 14 days." },
     ],
     products: [
@@ -106,59 +108,62 @@ export const POSTS: BlogPost[] = [
     title: "GAA County Jerseys 2026: Dublin, Tyrone, Down, Antrim and Louth",
     seoTitle: "GAA Jerseys 2026: Dublin, Tyrone, Down, Antrim & Louth",
     description:
-      "The new 2026 county jerseys from Dublin, Tyrone, Down, Antrim and Louth: the designs, the sponsors, what player fit means and how to pick your size.",
+      "The 2026 county jerseys from Dublin, Tyrone, Down, Antrim and Louth: what's on each one, the history behind the details, and how player fit sizing works.",
     category: "GAA",
     datePublished: "2026-09-24",
     heroImage: "/images/gaa-gear/900000016-1.webp",
     heroAlt: "Tyrone GAA 2026 home jersey in white and red with the McAleer & Rushe sponsor",
     heroFit: "contain",
     intro:
-      "New county jerseys are one of the first signs of a new GAA season. Here are the 2026 jerseys in our range, what makes each one different, and how to get the right size.",
+      "The new county jersey turns up around the start of the League, and for a lot of us it's the first sign the season is on its way. These are the five 2026 jerseys in our range, and the stories stitched into them.",
     sections: [
       {
-        heading: "Dublin: sky blue and navy",
+        heading: "Dublin: the sky blue",
         paragraphs: [
-          "Dublin's 2026 home jersey keeps the sky blue body, with a navy pinstripe and a navy yoke and sleeves. Staycity is the sponsor.",
+          "Dublin kept it familiar: a sky blue body with a navy pinstripe, and a navy yoke and sleeves. Staycity is the sponsor.",
+          "It's the look that won six All-Irelands in a row between 2015 and 2020, and the county hasn't strayed far from it since.",
         ],
       },
       {
         heading: "Tyrone: four stars on the sleeve",
         paragraphs: [
-          "White with red side panels and sewn-on red stripes over the shoulders, inspired by Tyrone kits of the past.",
-          "Four red stars on the right sleeve mark the county's All-Ireland football titles in 2003, 2005, 2008 and 2021. McAleer & Rushe is on the front and back.",
+          "Tyrone went back to their older kits for 2026. The jersey is white with red side panels and red stripes sewn over the shoulders, with McAleer & Rushe on the front and back.",
+          "Look at the right sleeve. Four red stars sit above 'Tír Eoghain', one for each All-Ireland: 2003, 2005, 2008 and 2021, when they beat Mayo in the final.",
         ],
       },
       {
         heading: "Down: navy and mint",
         paragraphs: [
-          "Down's 2026 alternative jersey is navy with mint and light blue chevron stripes, with 'An Dún' under the crest and EOS IT Solutions as the sponsor.",
-          "Down have won five All-Ireland football titles, in 1960, 1961, 1968, 1991 and 1994.",
+          "Down's alternative jersey is navy with mint and light blue chevron stripes, and 'An Dún' under the crest. EOS IT Solutions sponsors it, with Murdock Builders Merchants on the sleeves.",
+          "In 1960, Down became the first team to take Sam Maguire across the border into the North. They won it again in 1961, 1968, 1991 and 1994.",
         ],
       },
       {
         heading: "Antrim: the Saffron County",
         paragraphs: [
-          "Antrim's 2026 alternative jersey is a bold green pattern on a dark base, with amber trim for the county's saffron. Fibrus Broadband is on the front and Northern Property on the back.",
+          "Antrim's alternative jersey swaps the saffron body for a dark base covered in a bold green pattern. The amber stays, on the collar, cuffs and hem stripes, so nobody mistakes whose it is. Fibrus Broadband is on the front and Northern Property on the back.",
         ],
       },
       {
         heading: "Louth: red, with 'Lú Abú'",
         paragraphs: [
-          "Louth's 2026 home jersey is red with a tonal pattern and black and white trim. StatSports is on the front, and 'Lú Abú' is stitched inside the collar.",
+          "Louth's home jersey is red with a tonal pattern, black and white trim, and StatSports across the chest. 'Lú Abú' is stitched inside the collar.",
+          "It arrives after the best year the Wee County has had in generations. In May 2025, Louth beat Meath 3-14 to 1-18 at Croke Park to win Leinster for the first time since 1957, with captain Sam Mulroy scoring 1-7.",
         ],
       },
       {
-        heading: "What is player fit?",
+        heading: "Getting the size right",
         paragraphs: [
-          "County jerseys are cut as a player fit. They sit close to the body, the way they are worn on the pitch. If you like room through the chest and stomach, go up a size.",
-          "Chest sizes, measured flat across the jersey:",
+          "County jerseys are cut as a player fit. They sit close to the body, the way the players wear them. If you like a bit of room through the chest and stomach, go up a size.",
+          "Measured flat across the chest, just under the arms:",
         ],
         bullets: ["Small: 52 cm", "Medium: 54 cm", "Large: 56 cm", "XL: 58 cm"],
       },
     ],
     faqs: [
-      { q: "Do GAA jerseys run small?", a: "They are a player fit, so they sit close to the body. Many people go up one size for a looser fit." },
+      { q: "Do GAA jerseys run small?", a: "They're a player fit, so they sit close to the body. Many people go up one size for a looser fit." },
       { q: "How many All-Irelands have Tyrone won?", a: "Four senior football titles: 2003, 2005, 2008 and 2021." },
+      { q: "When did Louth last win Leinster?", a: "2025, beating Meath 3-14 to 1-18. Before that, their last Leinster title came in 1957." },
       { q: "How long does delivery take?", a: "8 to 14 days to Ireland and the UK. Delivery is free on orders over €49." },
     ],
     products: [
@@ -175,60 +180,58 @@ export const POSTS: BlogPost[] = [
     title: "Serie A in the 90s: The Shirts of Calcio's Golden Era",
     seoTitle: "90s Serie A Shirts: Milan, Inter, Lazio, Parma & Napoli",
     description:
-      "From Maradona's Napoli to Lazio's centenary title: the stories behind classic Serie A shirts from Milan, Inter, Parma, Lazio and Napoli, and the weekends of Football Italia.",
+      "Football Italia, Gazzetta on a Saturday morning, and the Serie A shirts we grew up watching: Maradona's Napoli, Capello's Milan, Parma, Inter and Lazio.",
     category: "European & World Classics",
     datePublished: "2026-09-24",
     heroImage: "/images/european-world-classics/ac-milan-1991-92-home-shirt-1.webp",
     heroAlt: "AC Milan 1991-92 home shirt in red and black stripes with the Mediolanum sponsor",
     heroFit: "contain",
     intro:
-      "For a decade, Serie A was where the best players in the world wanted to be. In Ireland and the UK, a generation watched it every weekend on Channel 4's Football Italia. These are the shirts from that era in our range.",
+      "If you grew up in Ireland or Britain in the 90s, Serie A came into your house every weekend. For ten years, the best players in the world played in Italy, and Channel 4 showed us all of it. These are the shirts from that era in our range.",
     sections: [
       {
-        heading: "Football Italia",
+        heading: "Sunday afternoons with Football Italia",
         paragraphs: [
-          "Channel 4 began showing live Serie A in 1992, the year Paul Gascoigne joined Lazio. It ran until 2002, and the Saturday morning show Gazzetta Football Italia, presented by James Richardson, became a cult favourite.",
+          "Channel 4 showed its first live Serie A match on 6 September 1992. Three million people watched Sampdoria and Lazio draw 3-3, with Signori scoring twice, and a lot of them never went back to thinking Italian football was dull.",
+          "Paul Gascoigne had joined Lazio that summer, which helped. So did Gazzetta Football Italia on a Saturday morning, with James Richardson at a café table working through the pink papers. It ran until 2002, and it's the reason so many of us can still name Parma's back three.",
         ],
       },
       {
-        heading: "Napoli and Maradona",
+        heading: "Napoli: Maradona's shirts",
         paragraphs: [
-          "Diego Maradona led Napoli to their first league title in 1987 and a second in 1990, with the UEFA Cup in between in 1989.",
-          "The sky blue 1986-87 shirt carries the Buitoni sponsor. By 1990-91 it was Mars, with the champions' shield on the chest.",
+          "Napoli had never won the league before Diego Maradona arrived. He led them to the title in 1987 and again in 1990, with the UEFA Cup in between in 1989.",
+          "The sky blue 1986-87 shirt carries Buitoni across the chest. By 1990-91 the sponsor was Mars, and the champions' shield sat on the chest. We'd call the 86-87 one of the best-looking shirts of the whole decade.",
         ],
       },
       {
         heading: "Milan: unbeaten",
         paragraphs: [
-          "Fabio Capello's Milan won Serie A in 1991-92 without losing a game. Two seasons later they beat Barcelona 4-0 in the Champions League final in Athens.",
+          "Fabio Capello's Milan went through the 1991-92 league season without losing a game. Baresi and Maldini kept it tight at the back, and Van Basten scored the goals.",
+          "Two years later, Milan beat Cruyff's Barcelona 4-0 in the Champions League final in Athens. They wore white that night, with Motta across the front.",
         ],
       },
       {
-        heading: "Parma's rise",
+        heading: "Parma: the club that came from nowhere",
         paragraphs: [
-          "Backed by Parmalat, Parma won the Cup Winners' Cup in 1993 and the UEFA Cup in 1995 and 1999. Their white home shirt with blue and yellow trim is from that first run.",
+          "Parma only reached Serie A in 1990. With money from Parmalat, they won the Cup Winners' Cup at Wembley in 1993, the UEFA Cup in 1995 and again in 1999.",
+          "Their white home shirt with blue and yellow trim is from that first run, when Tomas Brolin and Gianfranco Zola wore it.",
         ],
       },
       {
-        heading: "Inter and Ronaldo",
+        heading: "Inter and Lazio",
         paragraphs: [
-          "Inter signed Ronaldo in 1997, and in his first season they won the UEFA Cup, beating Lazio 3-0 in the final in Paris.",
-        ],
-      },
-      {
-        heading: "Lazio's centenary",
-        paragraphs: [
-          "Lazio won the Cup Winners' Cup in 1999 and Serie A in 2000, the club's 100th year, with Nedvěd, Nesta, Salas and Mancini in the side.",
+          "Inter paid a world-record fee for Ronaldo in 1997, and in his first season they won the UEFA Cup, beating Lazio 3-0 in Paris.",
+          "Lazio had the last word on the decade. They won the Cup Winners' Cup in 1999 and Serie A in 2000, the club's hundredth year, with Nedvěd, Nesta and Mancini in the team.",
         ],
       },
     ],
     faqs: [
-      { q: "When was Football Italia on Channel 4?", a: "From 1992 to 2002." },
+      { q: "When was Football Italia on Channel 4?", a: "From September 1992 to 2002. The first live game was Sampdoria 3-3 Lazio." },
       {
         q: "Who won Serie A in the 90s?",
         a: "Between 1990 and 2000, Milan won it five times and Juventus three times, with Napoli, Sampdoria and Lazio winning it once each.",
       },
-      { q: "Do 90s shirts fit differently?", a: "They are cut a little boxier than modern shirts. Each shirt page lists the fit and has a size chart." },
+      { q: "Do 90s shirts fit differently?", a: "They're cut a little boxier than modern shirts. Each shirt page lists the fit and has a size chart." },
     ],
     products: [
       "napoli-1986-87-home-shirt",
@@ -247,41 +250,42 @@ export const POSTS: BlogPost[] = [
     title: "Juventus 1997/98: Del Piero, Zidane and the Pink Away Shirt",
     seoTitle: "Juventus 1997/98 Shirts: Del Piero, Zidane & the Pink Away",
     description:
-      "Why Juventus wear pink, and the 1997/98 season behind the shirt: a Serie A title, a third Champions League final in a row, and Del Piero and Zidane at their best.",
+      "Why Juventus wear pink, and the 1997/98 season behind the shirt: Del Piero's 21 goals, Zidane in the number 21, the Iuliano game and a third Champions League final in a row.",
     category: "European & World Classics",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/european-world-classics/juventus-1997-98-away-shirt-1.webp",
     heroAlt: "Juventus 1997-98 pink away shirt with Sony MiniDisc sponsor",
     heroFit: "contain",
     intro:
-      "Juventus won Serie A in 1997/98 and reached their third Champions League final in a row. They had Alessandro Del Piero and Zinedine Zidane, and an away shirt in pink.",
+      "Lippi's Juventus of 1997/98 had Zidane pulling the strings, Del Piero scoring for fun and Inzaghi fresh from Atalanta. They won the league and reached a third Champions League final in a row. They also had the best away shirt in Italy, and it was pink.",
     sections: [
       {
-        heading: "Why do Juventus wear pink?",
+        heading: "Why Juventus wear pink",
         paragraphs: [
-          "Pink was Juventus's first colour. When the club was founded in Turin in 1897, the players wore pink shirts with a black tie.",
-          "In 1903 they switched to black and white stripes, using shirts sent over from Notts County in England. The stripes stuck, but pink keeps coming back as an away colour.",
+          "Pink was Juventus's first colour. The students who founded the club in Turin in 1897 played in pink shirts with black ties.",
+          "In 1903, an English member called John Savage asked a friend in Nottingham to send replacements. The friend supported Notts County and sent black and white stripes. Juve kept them, and pink has come back as an away colour ever since.",
         ],
       },
       {
         heading: "The 1997/98 season",
         paragraphs: [
-          "Marcello Lippi's side won Serie A. Del Piero scored 21 league goals, with Filippo Inzaghi, signed from Atalanta that summer, alongside him.",
-          "In Europe, Juve reached a third Champions League final in a row. They lost 1-0 to Real Madrid in Amsterdam, with Predrag Mijatović scoring.",
+          "Del Piero scored 21 league goals, wearing the 10 he'd taken over from Roberto Baggio. Zidane, in his second season after arriving from Bordeaux, wore 21 and ran the midfield.",
+          "The title came down to Juventus and Ronaldo's Inter. They met in Turin in April, and Juve won 1-0 after the referee waved away Inter's penalty claim when Mark Iuliano ran into Ronaldo. Italians still argue about it.",
         ],
       },
       {
-        heading: "Del Piero and Zidane",
+        heading: "Amsterdam",
         paragraphs: [
-          "Del Piero wore 10 for Juventus from 1995 to 2012. He is the club's record scorer and has made more appearances than anyone else.",
-          "Zidane joined from Bordeaux in 1996 and wore 21. A few weeks after the 1998 final, he scored twice in the World Cup final for France, and he won the Ballon d'Or that December.",
+          "Juventus had won the Champions League in 1996 and lost the 1997 final to Dortmund. In May 1998 they lost again, 1-0 to Real Madrid in Amsterdam, with Predrag Mijatović scoring.",
+          "Zidane got his revenge that summer. He headed twice in the World Cup final for France and won the Ballon d'Or in December.",
         ],
       },
       {
         heading: "The shirts",
         paragraphs: [
-          "Both shirts are made by Kappa, with Sony MiniDisc across the front.",
-          "The home shirt is black and white stripes with a polo collar. The away shirt is pink with a black collar and cuffs. We have both plain, or printed with DEL PIERO 10 or ZIDANE 21.",
+          "Kappa made both, with Sony MiniDisc across the front. The home shirt is black and white stripes with a buttoned collar. The away is pink with a black collar and cuffs, and it looks better now than it did then.",
+          "We have both plain, or printed with DEL PIERO 10 or ZIDANE 21.",
         ],
       },
     ],
@@ -290,8 +294,8 @@ export const POSTS: BlogPost[] = [
         q: "Why are Juventus away shirts pink?",
         a: "Juventus wore pink when the club was founded in 1897, before switching to black and white stripes in 1903. Pink has come back as an away colour many times, including in 1997/98.",
       },
+      { q: "Why do Juventus wear black and white?", a: "In 1903 a friend in Nottingham sent the club a set of Notts County shirts, and Juve kept the stripes." },
       { q: "What number did Zidane wear at Juventus?", a: "21, from 1996 to 2001." },
-      { q: "Who sponsored Juventus in 1997/98?", a: "Sony MiniDisc. The kit was made by Kappa." },
     ],
     products: [
       "juventus-1997-98-away-shirt-del-piero-10",
@@ -308,52 +312,54 @@ export const POSTS: BlogPost[] = [
     title: "Ronaldo R9: A Career in Shirts",
     seoTitle: "Ronaldo R9 Shirts: PSV, Inter, Brazil, Real Madrid & Milan",
     description:
-      "From PSV to AC Milan: the shirts Ronaldo Nazário wore, the numbers on the back and what he won in each. A quick guide to R9's career.",
+      "From PSV to AC Milan, the shirts Ronaldo Nazário wore, the numbers on his back and the moments that went with them, including the night Old Trafford stood for him.",
     category: "Players",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-1.webp",
     heroAlt: "Brazil 2002 World Cup home shirt printed RONALDO 9",
     heroFit: "contain",
     intro:
-      "Ronaldo Nazário, known as R9, won two World Cups with Brazil and is one of the greatest strikers of all time. He played for five clubs in Europe and changed numbers more than once. Here is his career, shirt by shirt.",
+      "Ask anyone who watched football in the late 90s who the best player in the world was, and most will say Ronaldo. The Brazilian one. He played for five clubs in Europe, changed his number more than once and wrecked both knees, and he still won two World Cups.",
     sections: [
       {
-        heading: "PSV Eindhoven, 1994–96",
+        heading: "PSV, 1994–96",
         paragraphs: [
-          "Ronaldo joined PSV from Cruzeiro at 17, just after the 1994 World Cup. He was in Brazil's winning squad but did not play.",
-          "He wore 9 and scored 30 league goals in his first season in Europe.",
+          "Ronaldo was 17 when he joined PSV from Cruzeiro, straight after the 1994 World Cup. He'd been in Brazil's squad in America but never got on the pitch.",
+          "He wore 9 in Eindhoven and scored 30 league goals in his first season.",
         ],
       },
       {
         heading: "Barcelona, 1996–97",
         paragraphs: [
-          "One season, 47 goals in all competitions. Barcelona won the Cup Winners' Cup and the Copa del Rey, and Ronaldo was named FIFA World Player of the Year at 20.",
+          "He spent one season at the Camp Nou and scored 47 goals. The one people remember came against Compostela, when he ran from his own half through most of their team.",
+          "Barcelona won the Cup Winners' Cup and the Copa del Rey, and at 20 he was named FIFA World Player of the Year.",
         ],
       },
       {
         heading: "Inter, 1997–2002",
         paragraphs: [
-          "Inter paid a world-record fee for him in 1997. He wore 10 in his first season, scored in the UEFA Cup final win over Lazio and won the Ballon d'Or.",
-          "When Roberto Baggio arrived in 1998 and took 10, Ronaldo moved to 9. Serious knee injuries kept him out for most of the next two years.",
+          "Inter paid a world-record fee for him in 1997. He wore 10 in his first season, scored in the UEFA Cup final win over Lazio and won the Ballon d'Or. When Roberto Baggio arrived in 1998 and took the 10, Ronaldo moved to 9.",
+          "Then his knee went, in November 1999. He came back in the Coppa Italia final the following April, lasted six minutes and the tendon went. He barely played for two years.",
         ],
       },
       {
         heading: "Brazil, 2002",
         paragraphs: [
-          "Ronaldo came back to score eight goals at the 2002 World Cup, including both in the 2-0 final against Germany. He won the Golden Boot and, that December, a second Ballon d'Or.",
+          "He came back for the 2002 World Cup with that haircut and scored eight goals, including both in the 2-0 final against Germany. He won the Golden Boot and, that December, his second Ballon d'Or.",
         ],
       },
       {
         heading: "Real Madrid, 2002–07",
         paragraphs: [
-          "He joined Real Madrid after the World Cup. He wore 11 in his first season, when Real won La Liga, then switched to 9 and was the league's top scorer in 2003/04.",
+          "Real signed him that summer. He wore 11 in his first season because Morientes had the 9, and Real won La Liga.",
+          "In April 2003 he scored a hat-trick against Manchester United at Old Trafford in the Champions League. When he went off, the United fans stood and applauded him. He moved to 9 the next season and finished as the league's top scorer.",
         ],
       },
       {
         heading: "AC Milan, 2007–08",
         paragraphs: [
-          "Ronaldo joined Milan in January 2007. Filippo Inzaghi already had 9, so he took 99.",
-          "He had played in the Champions League for Real Madrid earlier that season, so he was cup-tied when Milan won the final in May.",
+          "He joined Milan in January 2007. Filippo Inzaghi had the 9, so he took 99. He'd played in the Champions League for Real earlier that season, so he watched from the stands when Milan won the final in May.",
         ],
       },
     ],
@@ -363,6 +369,7 @@ export const POSTS: BlogPost[] = [
         a: "To tell him apart from other players called Ronaldo, especially Cristiano Ronaldo (CR7). The 9 is the number he wore for Brazil and most of his clubs.",
       },
       { q: "What number did Ronaldo wear at Inter?", a: "10 in 1997/98, then 9 from 1998 onwards." },
+      { q: "Why did Ronaldo wear 11 at Real Madrid?", a: "Fernando Morientes had the 9 in 2002/03. Ronaldo took it the following season." },
       { q: "Why did Ronaldo wear 99 at AC Milan?", a: "Filippo Inzaghi already wore 9, so Ronaldo took 99." },
     ],
     products: [
@@ -382,41 +389,41 @@ export const POSTS: BlogPost[] = [
     title: "Arsenal 2003/04: The Invincibles and Their Shirts",
     seoTitle: "Arsenal Invincibles Shirt 2003/04: Home & Away Kits",
     description:
-      "38 games, 26 wins, 12 draws, no defeats. The home and away shirts Arsenal wore in the 2003/04 Invincibles season, and the players whose names went on the back.",
+      "38 games, 26 wins, 12 draws, no defeats. The home and away shirts Arsenal wore in the 2003/04 Invincibles season, the games that nearly broke the run, and the names on the back.",
     category: "Premier League Classics",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/premier-league-classics/arsenal-2002-04-home-shirt-1.webp",
     heroAlt: "Arsenal 2002-04 home shirt, red with white sleeves and the O2 sponsor",
     heroFit: "contain",
     intro:
-      "In 2003/04, Arsenal went through a whole Premier League season without losing. They won 26 and drew 12 of their 38 games and finished with 90 points. No team has done it in the Premier League since.",
+      "Arsenal went through the 2003/04 Premier League season without losing. They won 26, drew 12 and finished on 90 points. Twenty-odd years on, nobody else has done it in the Premier League, and you can still start an argument in any pub by asking whether they were the best side the league has seen.",
     sections: [
       {
-        heading: "The unbeaten season",
+        heading: "The one that nearly ended it",
         paragraphs: [
-          "Arsène Wenger's side won the title at White Hart Lane in April 2004, with a 2-2 draw against Tottenham. They finished 11 points clear of Chelsea.",
-          "The last team to go a whole top-flight season unbeaten in England was Preston North End, in 1888/89.",
+          "The run almost stopped in September, at Old Trafford. In the last minute, Ruud van Nistelrooy stepped up for a United penalty and hit the bar. It finished 0-0, and the scenes at the final whistle earned a pile of fines.",
+          "After that, Arsenal kept finding ways. They clinched the title at White Hart Lane in April with a 2-2 draw, which Spurs fans have never enjoyed hearing about.",
         ],
       },
       {
-        heading: "The players",
+        heading: "The team",
         paragraphs: [
-          "Thierry Henry scored 30 league goals and was the league's top scorer. Patrick Vieira was captain.",
-          "Around them were Dennis Bergkamp, Robert Pires, Freddie Ljungberg, Sol Campbell, Ashley Cole, Lauren, Kolo Touré and Jens Lehmann. José Antonio Reyes joined from Sevilla in January.",
+          "Thierry Henry scored 30 league goals and was the division's top scorer. Patrick Vieira captained a side with Bergkamp, Pires, Ljungberg, Campbell, Ashley Cole, Lauren, Kolo Touré and Jens Lehmann in goal. José Antonio Reyes arrived from Sevilla in January.",
+          "On the last day they beat Leicester 2-1 at Highbury, with Henry scoring a penalty and Vieira the winner. The Premier League gave them a specially made gold trophy.",
         ],
       },
       {
         heading: "The shirts",
         paragraphs: [
-          "Nike made both, with O2 across the front.",
-          "The home shirt has a red body and white sleeves. Arsenal first wore it in 2002/03 and kept it for the unbeaten season. The away shirt is yellow with a blue collar.",
-          "We have both plain, or printed with HENRY 14, VIEIRA 4, BERGKAMP 10, LJUNGBERG 8 or REYES 9.",
+          "Nike made both, with O2 across the front. The home shirt has the red body and white sleeves Arsenal have worn since Herbert Chapman's day. They first wore this version in 2002/03 and kept it for the unbeaten season.",
+          "The away shirt is yellow with a blue collar. We have both plain, or printed with HENRY 14, VIEIRA 4, BERGKAMP 10, LJUNGBERG 8 or REYES 9.",
         ],
       },
       {
-        heading: "49 games",
+        heading: "Forty-nine",
         paragraphs: [
-          "The run went on into the next season and reached 49 league games. Manchester United ended it at Old Trafford in October 2004.",
+          "The run carried on into the next season and reached 49 league games. It ended where it nearly ended the year before, at Old Trafford, in October 2004. United won 2-0, and afterwards somebody threw a slice of pizza at Alex Ferguson in the tunnel.",
         ],
       },
     ],
@@ -445,38 +452,42 @@ export const POSTS: BlogPost[] = [
     title: "Manchester United 1998/99: The Shirts of the Treble",
     seoTitle: "Man United 1998/99 Treble Shirts: Home, Away & Third",
     description:
-      "League, FA Cup and Champions League in ten days. The home, away and black third shirts from Manchester United's 1998/99 Treble season, and the two Cork men at the heart of it.",
+      "League, FA Cup and Champions League in eleven days. The home, away and black third shirts from Manchester United's 1998/99 Treble season, and the two Cork men at the heart of it.",
     category: "Premier League Classics",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/premier-league-classics/647601889-1.webp",
     heroAlt: "Manchester United 1998-99 home shirt with SHARP sponsor",
     heroFit: "contain",
     intro:
-      "In ten days in May 1999, Manchester United won the Premier League, the FA Cup and the Champions League. No English club had done it before.",
+      "Between 16 and 26 May 1999, Manchester United won the Premier League, the FA Cup and the Champions League. No English club had done it before. For Irish United fans the season had an extra pull, because two Cork men played a big part in it.",
     sections: [
       {
-        heading: "Ten days in May",
+        heading: "Eleven days in May",
         paragraphs: [
-          "United beat Tottenham 2-1 at Old Trafford on the last day of the season to win the league.",
-          "Six days later they beat Newcastle 2-0 in the FA Cup final, with goals from Teddy Sheringham and Paul Scholes.",
-          "Then came Barcelona. Bayern Munich led through Mario Basler's early goal until injury time, when Sheringham and Ole Gunnar Solskjær scored within minutes of each other to win it 2-1.",
+          "United beat Tottenham 2-1 at Old Trafford on the last day to win the league. Six days later they beat Newcastle 2-0 in the FA Cup final, with goals from Teddy Sheringham and Paul Scholes.",
+          "Then came Barcelona. Bayern Munich led through Mario Basler's early free kick, and the game was into stoppage time when Sheringham equalised. Ole Gunnar Solskjær won it two minutes later. Alex Ferguson summed it up on television afterwards: 'Football. Bloody hell.'",
         ],
       },
       {
         heading: "The Cork connection",
         paragraphs: [
-          "Roy Keane captained the side and drove them through the semi-final in Turin, where United came from 2-0 down to beat Juventus 3-2. A booking that night ruled him out of the final.",
-          "Paul Scholes missed the final too. Denis Irwin, another Cork man, started at left-back in Barcelona.",
+          "Roy Keane dragged United through the semi-final in Turin. They were 2-0 down to Juventus inside eleven minutes, and Keane started the comeback with a header from Beckham's corner. Nine minutes later he was booked, which ruled him out of the final, and he played the rest of the game as if it didn't matter. United won 3-2.",
+          "With Keane and Scholes both suspended, Peter Schmeichel captained the side in Barcelona in his last game for the club. Denis Irwin, from Togher, started at left-back.",
         ],
       },
       {
         heading: "The shirts",
         paragraphs: [
-          "The home shirt is classic United red, with the SHARP sponsor and a quarter-zip collar.",
-          "The white away shirt has black and red diamond taping on the shoulders.",
-          "The black third shirt has red, white and black piping and the same quarter-zip neck. It is our pick of the three.",
+          "Umbro made all three, with SHARP across the front. The home is classic United red with a quarter-zip collar. The white away has black and red diamond taping on the shoulders.",
+          "The black third has red and white piping and the same quarter-zip neck. It's our favourite of the three, and it's the one you see least often.",
         ],
       },
+    ],
+    faqs: [
+      { q: "When did Manchester United win the Treble?", a: "In May 1999: the Premier League on 16 May, the FA Cup on 22 May and the Champions League on 26 May." },
+      { q: "Who scored in the 1999 Champions League final?", a: "Mario Basler for Bayern Munich, then Teddy Sheringham and Ole Gunnar Solskjær in stoppage time for United." },
+      { q: "Who sponsored Manchester United in 1998/99?", a: "SHARP. The kit was made by Umbro." },
     ],
     products: [
       "manchester-united-98-99-treble-season",
@@ -491,49 +502,53 @@ export const POSTS: BlogPost[] = [
     title: "Beyond the Premier League: Five Classic European and World Shirts",
     seoTitle: "Retro European Football Shirts: Juventus, Roma, Bayern & More",
     description:
-      "Juventus's Champions League season, Capello's first year at Roma, Bayern's run to Barcelona, Betis's cup final and Club América's flames. Five classic shirts from beyond England.",
+      "Juventus's Champions League season, Capello's first year at Roma, Trapattoni's Bayern, Betis's cup final and Club América's flames. Five classic shirts from beyond England, and the stories behind them.",
     category: "European & World Classics",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/european-world-classics/juventus-1995-96-away-shirt-1.webp",
     heroAlt: "Juventus 1995-96 away shirt in blue with gold star panels",
     heroFit: "contain",
     intro:
-      "The Premier League gets most of the attention, but some of the best shirts of the 90s came from Italy, Germany, Spain and Mexico. Here are five of our favourites, and the seasons behind them.",
+      "The Premier League gets most of the attention, but some of the best shirts of the 90s came from Italy, Germany, Spain and Mexico. These five are our favourites from outside England, and each one comes with a season worth remembering.",
     sections: [
       {
         heading: "Juventus 1995/96 away",
         paragraphs: [
-          "Juventus won the Champions League in 1996, beating Ajax on penalties in the final in Rome.",
-          "Their away shirt from that season is blue, with gold star panels on the shoulders and the Sony sponsor.",
+          "Juventus won the Champions League in 1996, beating Ajax on penalties in Rome after Fabrizio Ravanelli scored in a 1-1 draw. Gianluca Vialli lifted the cup in his last game for the club before he moved to Chelsea.",
+          "Their away shirt that season is blue, with gold star panels on the shoulders and Sony across the chest.",
         ],
       },
       {
         heading: "Roma 1999/00 away",
         paragraphs: [
-          "This was Fabio Capello's first season in charge. Roma finished sixth, a year before they won the league.",
-          "The grey and black away shirt, with its orange wolf print and INA Assitalia sponsor, has aged beautifully.",
+          "This was Fabio Capello's first season in charge, with a young Francesco Totti wearing the armband. Roma finished sixth, and won the league the following year.",
+          "The grey and black away shirt has an orange wolf print across the shoulders and the INA Assitalia sponsor. It looks better now than it did in 1999.",
         ],
       },
       {
         heading: "Bayern Munich 1997/99 away",
         paragraphs: [
-          "Bayern won the Bundesliga in 1998/99 and reached the Champions League final, where Manchester United scored twice in injury time to beat them in Barcelona.",
-          "The away shirt is navy and red, with the Opel sponsor.",
+          "In March 1998, Giovanni Trapattoni gave a press conference in broken German, thumping the desk and shouting 'Was erlauben Strunz?' about one of his own players. Bayern fans still quote it.",
+          "A year later Bayern won the Bundesliga and were a minute away from the Champions League, until United scored twice in stoppage time in Barcelona. The navy and red away shirt carries the Opel sponsor.",
         ],
       },
       {
         heading: "Real Betis 1995/97 home",
         paragraphs: [
-          "Green and white stripes and the KELIA sponsor. In 1997, Betis reached the Copa del Rey final, losing 3-2 to Barcelona at the Bernabéu.",
+          "Green and white stripes and the KELIA sponsor. Betis had Alfonso and Finidi George in attack, and in 1997 they reached the Copa del Rey final, losing 3-2 to Barcelona after extra time at the Bernabéu.",
         ],
       },
       {
         heading: "Club América 1994 away",
         paragraphs: [
-          "Royal blue with a jagged flame pattern in black, red and yellow, plus the Coca-Cola sponsor.",
-          "It is one of the best-known Mexican shirts of the decade, and a favourite with collectors.",
+          "Royal blue with a jagged flame pattern in black, red and yellow, plus the Coca-Cola sponsor. It came out the year the World Cup went to the USA, and it's still one of the most wanted Mexican shirts of the decade.",
         ],
       },
+    ],
+    faqs: [
+      { q: "When did Juventus last win the Champions League?", a: "1996, beating Ajax on penalties in Rome." },
+      { q: "Who sponsored Bayern Munich in the late 90s?", a: "Opel. The kit was made by adidas." },
     ],
     products: [
       "juventus-1995-96-away-shirt",
@@ -557,19 +572,19 @@ export const POSTS: BlogPost[] = [
     heroAlt: "Dublin GAA home jersey in sky blue with navy pinstripes",
     heroFit: "contain",
     intro:
-      "Buying a GAA jersey online? Fit is the thing to get right. Here is what player fit means, and how to pick your size.",
+      "Buying a county jersey online, the size is the thing people get wrong. GAA jerseys fit tighter than a football shirt, and plenty of us have ordered our usual size and ended up with something closer to a base layer. A couple of minutes with a tape measure fixes that.",
     sections: [
       {
-        heading: "What is player fit?",
+        heading: "What player fit means",
         paragraphs: [
-          "County GAA jerseys and training vests are cut as a player fit. They sit close to the body, the way the players wear them on the pitch.",
-          "If you like a bit of room through the chest and stomach, go up one size.",
+          "County jerseys and training vests are cut as a player fit. They sit close to the body, the way the players wear them in Croke Park.",
+          "If you want to wear it to a match over a t-shirt, or you like a bit of room through the chest and stomach, go up a size.",
         ],
       },
       {
         heading: "Chest sizes",
         paragraphs: [
-          "Measured flat across the chest, just under the arms. Double it for the full chest. They vary a little from county to county.",
+          "Measured flat across the chest, just under the arms. Double it for the full chest. Jerseys vary a little from county to county.",
         ],
         bullets: [
           "Small: 52 cm flat (104 cm, 41 in all round)",
@@ -581,23 +596,27 @@ export const POSTS: BlogPost[] = [
       {
         heading: "How to check your size",
         paragraphs: [
-          "Lay a jersey that fits you well flat. Measure straight across the chest, just below the arms, then double it.",
+          "Take a jersey or t-shirt that fits you the way you like, and lay it flat. Measure straight across the chest, just under the arms.",
           "Compare that with the sizes above, or the full chart on our size guide page, which also gives length, waist and shoulder.",
         ],
       },
       {
-        heading: "Jerseys, vests and AFL",
+        heading: "Vests and AFL jerseys",
         paragraphs: [
           "Training vests use the same player fit as the jerseys.",
-          "AFL jerseys are different: they are sleeveless and a regular fit, so most people take their usual size.",
+          "AFL jerseys work differently. They're sleeveless and a regular fit, so most people take their usual size.",
         ],
       },
       {
         heading: "Still not sure?",
         paragraphs: [
-          "Email noel@eriusports.com with your chest measurement and the jersey you want, and we will tell you which size to go for. If it is not right, we can swap it.",
+          "Email noel@eriusports.com with your chest measurement, or your height and weight, and the jersey you want. We'll tell you which size to go for, and if it's still wrong when it arrives, we'll swap it.",
         ],
       },
+    ],
+    faqs: [
+      { q: "Do GAA jerseys run small?", a: "They're a player fit, so they sit close to the body. Go up one size for a looser fit." },
+      { q: "Is a GAA training vest the same size as a jersey?", a: "Yes. Vests use the same player fit." },
     ],
     products: [
       "dublin-gaa-2026-home-jersey",
@@ -612,38 +631,46 @@ export const POSTS: BlogPost[] = [
     title: "Cork City 1988/89: Guinness, Derry and a First FAI Cup Final",
     seoTitle: "Cork City 1988/89 Jersey and the 1989 FAI Cup Final",
     description:
-      "Cork City reached their first FAI Cup final in 1989, taking Derry City to a replay. The story of the white, green and red Guinness jersey from that season.",
+      "Cork City reached their first FAI Cup final in 1989, five years after they were founded, and took Derry City to a replay. The story of the white, green and red Guinness jersey from that season.",
     category: "Ireland Classics",
     datePublished: "2026-04-15",
-    dateModified: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/blog/cork-fai-cup-finalists-1989.webp",
     heroAlt: "Cork City, 1989 FAI Cup finalists",
     heroFit: "cover",
     intro:
-      "Cork City were founded in 1984 and went straight into the League of Ireland. Five seasons later, they reached their first FAI Cup final. This is the jersey from that season.",
+      "Cork City were only five years old in 1989. The club had been founded in 1984, gone straight into the League of Ireland, and spent most of those years finding its feet. Then came a cup run nobody on Leeside expected, and a jersey that still turns heads.",
     sections: [
       {
         heading: "The 1988/89 season",
         paragraphs: [
-          "Cork City finished eighth in the league, but the cup was a different story. They reached the 1989 FAI Cup final against Derry City.",
-          "The first game finished 0-0. Derry won the replay 1-0 to complete a treble of league, FAI Cup and League Cup.",
-          "Reaching the final still earned Cork a place in the following season's European Cup Winners' Cup.",
+          "City finished eighth in the league, but the FAI Cup was a different story. They reached the final against Derry City, who were chasing a treble.",
+          "The first game finished 0-0. In the replay, Felix Healy scored the only goal, and Derry had their league, cup and League Cup treble. Cork went home with a place in the following season's Cup Winners' Cup, and the start of something.",
         ],
       },
       {
         heading: "The squad",
         paragraphs: [
-          "The side included Phil Harrington, Brian Carey, Mick Conroy, Liam Murphy, Patsy Freyne, John Caulfield and Dave Barry.",
-          "Barry had played in Cork City's first ever league game in 1984. In 1991 he scored against Bayern Munich at Musgrave Park in the UEFA Cup.",
+          "The side included Phil Harrington in goal, Brian Carey, Liam Murphy, Patsy Freyne, John Caulfield and Dave Barry.",
+          "Barry had played in Cork City's first ever league game in 1984. In 1991 he scored against Bayern Munich at Musgrave Park in the UEFA Cup, a 1-1 draw people in Cork still bring up.",
+        ],
+      },
+      {
+        heading: "What came next",
+        paragraphs: [
+          "Four years after that final, Cork City won the league in 1993. Their first FAI Cup followed in 1998. The 1989 side got there first, though, and anyone who followed City then will tell you about that run before either of those.",
         ],
       },
       {
         heading: "The jersey",
         paragraphs: [
-          "White, with a band of green and red chevrons across the chest, a green collar and Guinness across the front.",
-          "It is a simple, confident design, and one of the best-looking League of Ireland shirts of the late 80s.",
+          "White, with a band of green and red chevrons across the chest, a green collar and Guinness across the front. It's a simple design, and it sums up the League of Ireland in the late 80s better than most.",
         ],
       },
+    ],
+    faqs: [
+      { q: "When was Cork City founded?", a: "1984. They joined the League of Ireland that season." },
+      { q: "Who won the 1989 FAI Cup final?", a: "Derry City, 1-0 in a replay against Cork City, with Felix Healy scoring. The first game ended 0-0." },
     ],
     products: ["cork-city-1988-89-retro-jersey", "ireland-euro-88-home-jersey", "ireland-1990-italia-90-world"],
     cta: { label: "Shop retro Ireland jerseys", href: "/collections/ireland-classics" },
@@ -653,40 +680,49 @@ export const POSTS: BlogPost[] = [
     title: "Ireland at Italia 90: The Green Jersey That Stopped a Nation",
     seoTitle: "Ireland Italia 90 Jersey: The Story of the Green Shirt",
     description:
-      "Sheedy's equaliser against England, Bonner's save and O'Leary's penalty against Romania, and a quarter-final in Rome. The story of Ireland's Italia 90 jersey.",
+      "Sheedy's equaliser against England, Bonner's save and O'Leary's penalty against Romania, a meeting with the Pope and a quarter-final in Rome. The story of Ireland's Italia 90 jersey.",
     category: "Ireland Classics",
     datePublished: "2026-04-14",
-    dateModified: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/blog/ireland-england-italia-90-goal.webp",
     heroAlt: "Ireland against England at Italia 90",
     heroFit: "cover",
     intro:
-      "The green jersey from Italia 90 is the best-known piece of Irish football kit. In the summer of 1990, Jack Charlton's side reached a World Cup quarter-final for the first time, and the country has never forgotten it.",
+      "Ask anyone in Ireland over forty where they watched the Romania penalties and they'll tell you. In the summer of 1990, Jack Charlton's side reached a World Cup quarter-final at the country's first attempt, and the green jersey from that tournament has meant something ever since.",
     sections: [
       {
-        heading: "The tournament",
+        heading: "The group",
         paragraphs: [
-          "Ireland opened against England in Cagliari on 11 June 1990. Kevin Sheedy equalised in the 73rd minute for a 1-1 draw, and the country came to a standstill.",
-          "A 0-0 draw with Egypt and a 1-1 draw with the Netherlands took Ireland into the knockout rounds.",
-          "Against Romania in the last 16, it finished 0-0 after extra time. Packie Bonner saved a penalty, and David O'Leary scored the winner in the shoot-out.",
-          "Italy ended the run in Rome, where Salvatore Schillaci scored the only goal of the quarter-final. By then, something had already changed at home.",
+          "Ireland opened against England in Cagliari on 11 June 1990. Gary Lineker put England ahead, and Kevin Sheedy equalised in the 73rd minute to make it 1-1. Pubs from Donegal to Kerry lost the run of themselves.",
+          "Draws with Egypt and the Netherlands followed, both scrappy, and Ireland went through without winning a game. Nobody at home cared.",
+        ],
+      },
+      {
+        heading: "Romania, Genoa",
+        paragraphs: [
+          "The last-16 game against Romania finished 0-0 after extra time. In the shoot-out, Packie Bonner saved from Daniel Timofte.",
+          "David O'Leary, who'd barely featured under Charlton, walked up to take the last penalty. He scored, and George Hamilton's 'The nation holds its breath' is still one of the best-known lines in Irish commentary.",
+        ],
+      },
+      {
+        heading: "Rome",
+        paragraphs: [
+          "Before the quarter-final, the squad met Pope John Paul II in Rome. Italy were next, in front of their own crowd, and Salvatore Schillaci scored the only goal.",
+          "The team flew home to a welcome that filled the streets from the airport into the city centre. 'Put 'Em Under Pressure' was number one in the charts, and half the country could sing it.",
         ],
       },
       {
         heading: "The jersey",
         paragraphs: [
-          "Deep green with a tonal pattern, three white stripes on the sleeves and a white and orange V-neck. The FAI crest sits on the left of the chest.",
-          "FIFA does not allow sponsors on World Cup match shirts, so the Opel version is the one fans wore.",
-          "The squad that wore it included Paul McGrath, Ray Houghton, John Aldridge, Niall Quinn and Packie Bonner.",
+          "Deep green with a tonal pattern, three white stripes on the sleeves and a white and orange V-neck, with the FAI crest on the chest. FIFA doesn't allow sponsors on World Cup match shirts, so the version with Opel across the front is the one fans bought and wore.",
+          "The squad that wore it included Paul McGrath, Ray Houghton, John Aldridge, Niall Quinn and Packie Bonner. We have the home and the white away.",
         ],
       },
-      {
-        heading: "Why it still matters",
-        paragraphs: [
-          "For a generation, this jersey is a memory: pub screens, flags out of windows, the whole country watching together.",
-          "It is not just a shirt. It is 1990.",
-        ],
-      },
+    ],
+    faqs: [
+      { q: "Who scored Ireland's goal against England at Italia 90?", a: "Kevin Sheedy, in the 73rd minute. It finished 1-1." },
+      { q: "Who scored the winning penalty against Romania?", a: "David O'Leary, after Packie Bonner saved from Daniel Timofte." },
+      { q: "Who knocked Ireland out of Italia 90?", a: "Italy, 1-0 in the quarter-final in Rome, with Salvatore Schillaci scoring." },
     ],
     products: [
       "ireland-1990-italia-90-world",
@@ -701,42 +737,47 @@ export const POSTS: BlogPost[] = [
     title: "Liverpool 1995/96: The Green and White Quartered Away Shirt",
     seoTitle: "Liverpool 1995/96 Away Shirt: Green & White Quarters",
     description:
-      "Liverpool's 1995/96 away shirt: green and white quarters with Carlsberg across the chest. A third-place finish and an FA Cup final, told in one shirt.",
+      "Liverpool's 1995/96 away shirt: green and white quarters with Carlsberg across the chest. Fowler, McManaman, the 4-3 against Newcastle and the cream suits at Wembley, told in one shirt.",
     category: "Premier League Classics",
     datePublished: "2026-04-13",
-    dateModified: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/blog/liverpool-95-96-carlsberg-away-kit.webp",
     heroAlt: "Liverpool 1995-96 green and white quartered away shirt",
     heroFit: "cover",
     intro:
-      "Liverpool finished third in the Premier League and reached the FA Cup final in 1995/96. This is the away shirt from that season: bold green and white quarters with Carlsberg across the chest.",
+      "Mid-90s Liverpool were the most entertaining side in the country, with only the 1995 League Cup to show for it. The away shirt from 1995/96 sums them up: bold, a bit mad, and better looking than the grey kit Manchester United ditched at half-time at Southampton that April.",
     sections: [
       {
-        heading: "The kit",
+        heading: "The shirt",
         paragraphs: [
-          "White and deep green quarters, black stripes over the shoulders and a buttoned grandad collar. Carlsberg sits in a white panel across the middle.",
-          "It is one of the boldest Liverpool away shirts of the 90s, and one of the most wanted now.",
+          "Green and white quarters, black stripes over the shoulders and a buttoned grandad collar, with Carlsberg in a white panel across the middle. Adidas made it.",
+          "Plenty of mid-90s kits went wrong. This one took a risk and got it right.",
         ],
       },
       {
-        heading: "The 1995/96 season",
+        heading: "The season",
         paragraphs: [
-          "Roy Evans' side finished third. Robbie Fowler was scoring freely, Steve McManaman ran games from wide and Jamie Redknapp set the tempo in midfield.",
-          "They reached the FA Cup final, losing 1-0 to Manchester United. Eric Cantona scored the winner late on.",
+          "Roy Evans' side finished third. Robbie Fowler scored freely, Steve McManaman ran games from wide and Stan Collymore arrived from Nottingham Forest for a British record fee.",
+          "In April 1996 they beat Newcastle 4-3 at Anfield, with Collymore scoring the winner in stoppage time. Kevin Keegan slumped over the advertising boards, and people still call it the best game the Premier League has had.",
         ],
       },
       {
-        heading: "Why it holds up",
+        heading: "Wembley and the suits",
         paragraphs: [
-          "Mid-90s kits could go badly wrong. This one went bold and got it right, and the quarters look as good now as they did then.",
+          "They reached the FA Cup final against Manchester United and walked out at Wembley in cream Armani suits, picked by David James. Eric Cantona scored late and United won 1-0.",
+          "The suits stuck. Liverpool's away shirt the following season was cream, and we stock that one too.",
         ],
       },
+    ],
+    faqs: [
+      { q: "Who made Liverpool's kit in 1995/96?", a: "Adidas, with Carlsberg as the sponsor." },
+      { q: "Who won the 1996 FA Cup final?", a: "Manchester United, 1-0 against Liverpool, with Eric Cantona scoring." },
     ],
     products: [
       "liverpool-away-1995-96-carlsberg",
       "liverpool-1995-96-home-shirt",
-      "liverpool-1996-97-third-shirt",
       "liverpool-96-97-away-shirt",
+      "liverpool-1996-97-third-shirt",
     ],
     cta: { label: "Shop Premier League classics", href: "/collections/premier-league-classics" },
   },
