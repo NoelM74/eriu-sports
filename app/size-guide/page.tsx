@@ -6,7 +6,7 @@ import SizeChart from '@/components/SizeChart';
 export const metadata: Metadata = {
   title: 'Size Guide | Retro Football Shirt Sizes S–2XL',
   description:
-    'Retro football shirt size chart in cm and inches, S to 2XL: chest, waist, length and shoulder, with a height and weight guide. Plus GAA and AFL sizing.',
+    'Size charts in cm and inches for retro football shirts (S to 2XL, with a height and weight guide), GAA jerseys (S to XL) and AFL jerseys (S to 2XL).',
   alternates: { canonical: '/size-guide' },
   openGraph: {
     title: 'Size Guide | Ériu Sports',
@@ -45,14 +45,19 @@ export default function SizeGuidePage() {
           <p className="mt-4 text-sm text-gray-600">Each shirt page shows which sizes that shirt comes in.</p>
         </section>
 
-        <section aria-labelledby="gaa-afl" className="mb-12">
-          <h2 id="gaa-afl" className="text-2xl font-bold text-[#0F2131] mb-4">GAA and AFL jersey sizes</h2>
+        <section aria-labelledby="gaa" className="mb-12">
+          <h2 id="gaa" className="text-2xl font-bold text-[#0F2131] mb-4">GAA jersey size chart</h2>
           <SizeChart chart="gaa" />
           <p className="mt-4 text-sm text-gray-600">
             GAA jerseys are a player fit, so they sit close to the body. See our{' '}
             <Link href="/blog/gaa-jersey-size-guide" className="text-[#1C7C83] underline underline-offset-4">GAA size guide</Link>{' '}
             for more.
           </p>
+        </section>
+
+        <section aria-labelledby="afl" className="mb-12">
+          <h2 id="afl" className="text-2xl font-bold text-[#0F2131] mb-4">AFL jersey size chart</h2>
+          <SizeChart chart="afl" />
         </section>
 
         <section aria-labelledby="measure" className="mb-12">

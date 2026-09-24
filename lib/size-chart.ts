@@ -2,19 +2,25 @@
  * Size charts, one per type of shirt. Inch, feet and pound values are worked out
  * from the cm/kg figures so both tables always match.
  */
+import type { Product } from './products';
 
-export type ChartKey = 'football' | 'gaa' | 'afl';
+export type ChartKey = 'football' | 'gaa' | 'gaa-kids' | 'afl';
 
 type Value = number | [number, number];
 
 interface ChartDef {
   sizes: readonly string[];
-  rows: { label: string; unit: 'cm' | 'kg'; kind?: 'height'; values: Value[] }[];
+  /** Column headings, when they differ from the size codes (e.g. "XXS (16)"). */
+  headings?: readonly string[];
+  rows: { label: string; unit: 'cm' | 'kg' | 'years'; kind?: 'height'; values: Value[] }[];
   /** Shown under the table. */
   note: string;
   /** One line telling people how to use the chart. */
   howTo: string;
 }
+
+const FLAT_NOTE = 'Measured with the jersey laid flat. A difference of 2–3 cm is normal.';
+const FLAT_HOW_TO = 'Lay a jersey that fits you well flat, measure across the chest just under the arms and compare.';
 
 /** Retro football shirts: the shirt's own measurements, plus a height and weight guide. */
 const FOOTBALL: ChartDef = {
@@ -31,21 +37,54 @@ const FOOTBALL: ChartDef = {
   howTo: 'Match your height and weight, or compare with a shirt that fits you well.',
 };
 
-/** Body measurements. Used for GAA and AFL until their own charts are added. */
-const BODY: ChartDef = {
-  sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL'],
+/** Adult GAA jerseys, measured flat. */
+const GAA: ChartDef = {
+  sizes: ['S', 'M', 'L', 'XL'],
   rows: [
-    { label: 'Chest', unit: 'cm', values: [[96, 102], [104, 110], [112, 116], [118, 126], [128, 132], [134, 144]] },
-    { label: 'Waist', unit: 'cm', values: [[92, 98], [100, 104], [106, 112], [114, 118], [118, 124], [126, 134]] },
-    { label: 'Hip', unit: 'cm', values: [[96, 102], [104, 110], [112, 116], [118, 126], [128, 132], [134, 144]] },
-    { label: 'Height', unit: 'cm', kind: 'height', values: [[160, 170], [170, 175], [175, 180], [180, 185], [185, 188], [188, 192]] },
-    { label: 'Weight', unit: 'kg', values: [[55, 60], [60, 70], [70, 88], [88, 96], [96, 110], [110, 130]] },
+    { label: 'Chest', unit: 'cm', values: [52, 54, 56, 58] },
+    { label: 'Waist', unit: 'cm', values: [49, 51, 53, 55] },
+    { label: 'Hem', unit: 'cm', values: [52, 54, 56, 58] },
+    { label: 'Length', unit: 'cm', values: [71, 73, 75, 77] },
+    { label: 'Shoulder', unit: 'cm', values: [32, 32.5, 33, 33.5] },
   ],
-  note: 'These are body measurements. A difference of 2–3 cm is normal when measuring by hand.',
-  howTo: 'Measure your chest at the widest point and match it to the chart.',
+  note: `${FLAT_NOTE} GAA jerseys are a player fit, so go up a size for a looser fit.`,
+  howTo: FLAT_HOW_TO,
 };
 
-export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, gaa: BODY, afl: BODY };
+/** Kids GAA jerseys and shorts, measured flat. Used for any GAA product with "Kids" in the title. */
+const GAA_KIDS: ChartDef = {
+  sizes: ['XXS', 'XS', 'S', 'M', 'L', 'XL'],
+  headings: ['XXS (16)', 'XS (18)', 'S (20)', 'M (22)', 'L (24)', 'XL (26)'],
+  rows: [
+    { label: 'Age', unit: 'years', values: [[3, 4], [4, 5], [6, 7], [8, 9], [10, 11], [12, 13]] },
+    { label: 'Height', unit: 'cm', kind: 'height', values: [[105, 115], [115, 125], [125, 135], [135, 145], [145, 155], [155, 160]] },
+    { label: 'Jersey chest', unit: 'cm', values: [36, 38, 40, 43, 45, 48] },
+    { label: 'Jersey length', unit: 'cm', values: [51, 54, 57, 60, 63, 66] },
+    { label: 'Shorts waist', unit: 'cm', values: [[21, 40], [22, 41], [23, 42], [24, 44], [25, 47], [26, 50]] },
+    { label: 'Shorts length', unit: 'cm', values: [34, 36, 38, 39, 40, 43] },
+  ],
+  note: `${FLAT_NOTE} Shorts waists stretch, so they show a range.`,
+  howTo: "Go by your child's age and height, or compare with a jersey that fits them well.",
+};
+
+/** AFL jerseys, measured flat. */
+const AFL: ChartDef = {
+  sizes: ['S', 'M', 'L', 'XL', '2XL'],
+  rows: [
+    { label: 'Chest', unit: 'cm', values: [52, 54, 56, 59, 61] },
+    { label: 'Length', unit: 'cm', values: [71, 76, 76, 79, 79] },
+  ],
+  note: `${FLAT_NOTE} AFL jerseys are sleeveless and a regular fit, so most people take their usual size.`,
+  howTo: FLAT_HOW_TO,
+};
+
+export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, gaa: GAA, 'gaa-kids': GAA_KIDS, afl: AFL };
+
+/** The chart that fits a product. */
+export function chartFor(product: Pick<Product, 'category' | 'title'>): ChartKey {
+  if (product.category === 'gaa' && /\bkids?\b/i.test(product.title)) return 'gaa-kids';
+  return product.category;
+}
 
 const inches = (cm: number) => (cm / 2.54).toFixed(1).replace(/\.0$/, '');
 const feet = (cm: number) => {
@@ -65,6 +104,7 @@ const show = (v: Value, fn: (n: number) => string) => (Array.isArray(v) ? `${fn(
 
 export function sizeChart(key: ChartKey, unit: ChartUnit): ChartRow[] {
   return CHARTS[key].rows.map((row) => {
+    if (row.unit === 'years') return { label: 'Age (years)', values: row.values.map((v) => show(v, String)) };
     if (unit === 'cm') return { label: `${row.label} (${row.unit})`, values: row.values.map((v) => show(v, String)) };
     if (row.kind === 'height') return { label: 'Height (ft)', values: row.values.map((v) => show(v, feet)) };
     if (row.unit === 'kg') return { label: 'Weight (lb)', values: row.values.map((v) => show(v, pounds)) };

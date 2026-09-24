@@ -339,9 +339,10 @@ export const POSTS: BlogPost[] = [
     title: "GAA Jersey Sizes: How Player Fit Works",
     seoTitle: "GAA Jersey Size Guide: Player Fit Explained",
     description:
-      "Do GAA jerseys run small? What player fit means, chest measurements for S, M and L, and when to size up for a GAA jersey or training vest.",
+      "Do GAA jerseys run small? What player fit means, chest measurements for S to XL, and when to size up for a GAA jersey or training vest.",
     category: "GAA",
     datePublished: "2026-09-23",
+    dateModified: "2026-09-24",
     heroImage: "/images/gaa-gear/900000006-1.webp",
     heroAlt: "Dublin GAA home jersey in sky blue with navy pinstripes",
     heroFit: "contain",
@@ -357,18 +358,21 @@ export const POSTS: BlogPost[] = [
       },
       {
         heading: "Chest sizes",
-        paragraphs: ["These are the chest measurements from jerseys in our range. They vary a little from county to county."],
+        paragraphs: [
+          "Measured flat across the chest, just under the arms. Double it for the full chest. They vary a little from county to county.",
+        ],
         bullets: [
-          "Small: about 104 cm (41 in)",
-          "Medium: 106 to 108 cm (42 in)",
-          "Large: 108 to 110 cm (42 to 43 in)",
+          "Small: 52 cm flat (104 cm, 41 in all round)",
+          "Medium: 54 cm flat (108 cm, 42.5 in all round)",
+          "Large: 56 cm flat (112 cm, 44 in all round)",
+          "XL: 58 cm flat (116 cm, 45.5 in all round)",
         ],
       },
       {
         heading: "How to check your size",
         paragraphs: [
           "Lay a jersey that fits you well flat. Measure straight across the chest, just below the arms, then double it.",
-          "Compare that with the chest measurement on the product page. Every GAA product lists the size we measured.",
+          "Compare that with the sizes above, or the full chart on our size guide page, which also gives length, waist and shoulder.",
         ],
       },
       {
