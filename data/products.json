@@ -13273,5 +13273,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000010",
+    "title": "Bohemians Oasis 2025-26 Shirt",
+    "slug": "bohemians-oasis-2025-26-shirt",
+    "description": "Bohemians' 2025-26 Oasis shirt: sky blue with a darker blue geometric pattern, the Oasis logo in a black box across the front and the Bohemian Football Club crest. Navy, sky blue and white striped rib on the collar and cuffs.",
+    "price": 25,
+    "images": [
+      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-1.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-2.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-3.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-4.webp",
+      "/images/ireland-classics/bohemians-oasis-2025-26-shirt-5.webp"
+    ],
+    "collection": "Ireland Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Bohemians",
+      "season": "2025-26",
+      "kit": "Special",
+      "sponsor": "Oasis",
+      "colours": "Sky Blue / Navy",
+      "fit": "Regular fit, true to size",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
