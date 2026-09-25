@@ -14166,5 +14166,125 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000042",
+    "title": "Liverpool 1996-98 Home Kids Kit",
+    "slug": "liverpool-1996-98-home-kids-kit",
+    "description": "Liverpool's 1996-98 Reebok home kit in kids sizes: red with a tonal Liver bird pattern, a white collar and cuffs with red stripes, Carlsberg in white and the oval crest, with red shorts. This was Roy Evans's side of Fowler and McManaman. In 1996-97 they went into the final day second, drew 1-1 with Sheffield Wednesday and finished fourth on goal difference. The next season an 18-year-old Michael Owen shared the Golden Boot. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000042-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "1996-98",
+      "kit": "Home",
+      "sponsor": "Carlsberg",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000043",
+    "title": "Liverpool 1996-97 Away Kids Kit",
+    "slug": "liverpool-1996-97-away-kids-kit",
+    "description": "The ecru away kit from 1996-97, in kids sizes: cream with maroon trim on the collar and cuffs, Carlsberg in black, the oval crest and black shorts. Liverpool challenged for the title right to the last day that season before finishing fourth, and reached the semi-finals of the Cup Winners' Cup, where they lost to Paris Saint-Germain. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000043-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "1996-97",
+      "kit": "Away",
+      "sponsor": "Carlsberg",
+      "colours": "Ecru / Maroon / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000044",
+    "title": "Liverpool 2006-08 Home Kids Kit",
+    "slug": "liverpool-2006-08-home-kids-kit",
+    "description": "Liverpool's first adidas home kit after Reebok, from 2006-08, in kids sizes: red with white piping curving down the front, white stripes on the shoulders, Carlsberg in white and the club crest, with red shorts. Rafa Benítez's side reached the 2007 Champions League final in Athens, beating Chelsea on penalties at Anfield in the semi-final, and Fernando Torres arrived in 2007 and scored 24 league goals in his first season. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000044-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2006-08",
+      "kit": "Home",
+      "sponsor": "Carlsberg",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000045",
+    "title": "Liverpool 2006-07 Third Kids Kit",
+    "slug": "liverpool-2006-07-third-kids-kit",
+    "description": "Liverpool's 2006-07 third kit in kids sizes: white with a sweeping green panel down one side and sleeve, green shoulder stripes, Carlsberg in green, with white and green shorts. It's the kit Craig Bellamy wore for his golf-swing celebration at the Nou Camp in February 2007, on the way to the Champions League final. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000045-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2006-07",
+      "kit": "Third",
+      "sponsor": "Carlsberg",
+      "colours": "White / Green",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

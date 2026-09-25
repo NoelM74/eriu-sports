@@ -71,7 +71,7 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Kids Football Kits",
     intro:
-      "Shirt and shorts sets for kids aged 2 to 13: Ireland's 2026 kits, Arsenal and Liverpool 2026-27 kits, and retro classics like Arsenal's Bruised Banana and Liverpool's 1989-91 Candy kits. €30 a kit, delivered in 8–14 days.",
+      "Shirt and shorts sets for kids aged 2 to 13: Ireland's 2026 kits, Arsenal and Liverpool 2026-27 kits, and retro classics from Arsenal's Bruised Banana to Liverpool's Candy and Carlsberg kits. €30 a kit, delivered in 8–14 days.",
     seoTitle: "Kids Football Kits | Ireland, Arsenal & Liverpool",
     seoDescription:
       "Kids football kits with shirt and shorts: Ireland 2026, Arsenal and Liverpool 2026-27, and retro Arsenal and Liverpool kids kits. Ages 2–13. €30 a kit, delivered to Ireland and the UK in 8–14 days.",
