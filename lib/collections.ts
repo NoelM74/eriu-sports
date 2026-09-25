@@ -27,6 +27,13 @@ export const DELIVERY = "8–14 days";
 export const SHIPPING_FEE = 5;
 /** Orders at or over this total (in euro) ship free. */
 export const FREE_DELIVERY_OVER = 49;
+/**
+ * Countries named in structured data for delivery and returns. We deliver to and
+ * accept returns from anywhere; Google needs country codes, so these are the main markets.
+ */
+export const MARKET_COUNTRIES = [
+  'IE', 'GB', 'US', 'CA', 'AU', 'NZ', 'FR', 'DE', 'ES', 'IT', 'NL', 'BE', 'PT', 'AT', 'DK', 'SE', 'NO', 'FI', 'PL',
+];
 
 export const COLLECTIONS: CollectionDef[] = [
   {

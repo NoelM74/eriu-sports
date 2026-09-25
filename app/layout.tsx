@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { CartProvider } from "@/lib/cart-context";
 import { CurrencyProvider } from "@/lib/currency-context";
+import { MARKET_COUNTRIES } from "@/lib/collections";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -73,7 +74,7 @@ const storeJsonLd = [
     sameAs: ["https://www.instagram.com/eriusports/", "https://www.facebook.com/EriuSports"],
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",
-      applicableCountry: ["IE", "GB"],
+      applicableCountry: MARKET_COUNTRIES,
       returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
       merchantReturnDays: 30,
       returnMethod: "https://schema.org/ReturnByMail",

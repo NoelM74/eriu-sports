@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
-import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, SHIPPING_FEE } from '@/lib/collections';
+import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
@@ -68,8 +68,8 @@ const DETAIL_LABELS: [keyof ProductDetails, string][] = [
   ['condition', 'Condition'],
 ];
 
-/** Countries we list in structured data beyond Ireland and the UK. We deliver worldwide. */
-const OTHER_MARKETS = ['US', 'CA', 'AU', 'NZ', 'FR', 'DE', 'ES', 'IT', 'NL', 'BE', 'PT', 'AT', 'DK', 'SE', 'NO', 'FI', 'PL'];
+/** Countries beyond Ireland and the UK, where we don't quote a delivery time. */
+const OTHER_MARKETS = MARKET_COUNTRIES.filter((c) => c !== 'IE' && c !== 'GB');
 
 /**
  * Offer shipping details: the flat worldwide fee, with a delivery time only for
@@ -128,7 +128,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
         shippingDetails: [shippingTo(['IE', 'GB'], true), shippingTo(OTHER_MARKETS, false)],
         hasMerchantReturnPolicy: {
           '@type': 'MerchantReturnPolicy',
-          applicableCountry: ['IE', 'GB'],
+          applicableCountry: MARKET_COUNTRIES,
           returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
           merchantReturnDays: 30,
           returnMethod: 'https://schema.org/ReturnByMail',
