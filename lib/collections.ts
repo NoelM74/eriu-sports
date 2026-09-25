@@ -66,6 +66,20 @@ export const COLLECTIONS: CollectionDef[] = [
     priceFrom: 25,
   },
   {
+    slug: "kids-football-kits",
+    name: "Kids Football Kits",
+    category: "football",
+    h1: "Kids Football Kits",
+    intro:
+      "Shirt and shorts sets for kids aged 2 to 13, starting with Ireland's 2026 home, away and goalkeeper kits. €25 a kit, delivered in 8–14 days.",
+    seoTitle: "Kids Football Kits | Ireland 2026 Kids Kit",
+    seoDescription:
+      "Kids football kits with shirt and shorts, including Ireland's 2026 home, away and goalkeeper kits. Ages 2–13. €25 a kit, delivered to Ireland and the UK in 8–14 days.",
+    keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland"],
+    priceFrom: 25,
+    featured: "ireland-2026-home-kids-kit",
+  },
+  {
     slug: "gaa-jerseys",
     name: "GAA Jerseys",
     category: "gaa",
@@ -112,7 +126,7 @@ export const CATEGORIES: { key: CategoryKey; label: string; h1: string; descript
     label: "Football Shirts",
     h1: "Retro Football Shirts",
     description:
-      "Retro football shirts and jerseys from Ireland, the Premier League and Europe. From €25, delivered to Ireland and the UK in 8–14 days.",
+      "Retro football shirts and jerseys from Ireland, the Premier League and Europe, plus kids football kits. From €25, delivered to Ireland and the UK in 8–14 days.",
   },
   {
     key: "gaa",

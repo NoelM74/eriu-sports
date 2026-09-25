@@ -13775,5 +13775,96 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "price": 25,
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "id": "900000029",
+    "title": "Ireland 2026 Home Kids Kit",
+    "slug": "ireland-2026-home-kids-kit",
+    "description": "A kids version of Ireland's 2026 home kit: a deep green shirt with a white V-neck, and orange and white trim on the collar and cuffs for the tricolour. There's a shamrock below the collar on the back. Sky is on the front, and the green shorts have white side panels. The kit is the shirt and shorts; socks aren't included.",
+    "images": [
+      "/images/kids-kits/900000029-1.webp"
+    ],
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2026",
+      "kit": "Home",
+      "sponsor": "Sky",
+      "colours": "Green / White / Orange",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    }
+  },
+  {
+    "price": 25,
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "id": "900000030",
+    "title": "Ireland 2026 Away Kids Kit",
+    "slug": "ireland-2026-away-kids-kit",
+    "description": "A kids version of Ireland's 2026 away kit: a white shirt with a light green and navy angular graphic across the body and a navy collar, with Sky across the chest. It comes with navy shorts. The kit is the shirt and shorts; socks aren't included.",
+    "images": [
+      "/images/kids-kits/900000030-1.webp"
+    ],
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2026",
+      "kit": "Away",
+      "sponsor": "Sky",
+      "colours": "White / Green / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    }
+  },
+  {
+    "price": 25,
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "id": "900000031",
+    "title": "Ireland 2026 Goalkeeper Kids Kit",
+    "slug": "ireland-2026-goalkeeper-kids-kit",
+    "description": "A kids version of Ireland's 2026 away goalkeeper kit: bright yellow with a brushed tonal pattern, a black crew neck and black cuffs, and Sky in black across the chest. A small black shamrock sits below the collar on the back. The matching yellow shorts carry the crest. The kit is the shirt and shorts; socks aren't included.",
+    "images": [
+      "/images/kids-kits/900000031-1.webp",
+      "/images/kids-kits/900000031-2.webp"
+    ],
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2026",
+      "kit": "Goalkeeper",
+      "sponsor": "Sky",
+      "colours": "Yellow / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    }
   }
 ]

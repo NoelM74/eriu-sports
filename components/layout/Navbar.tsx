@@ -15,6 +15,7 @@ const MENU: { label: string; href: string; children?: { label: string; href: str
       { label: "Retro Ireland Jerseys", href: "/collections/ireland-classics" },
       { label: "Premier League Classics", href: "/collections/premier-league-classics" },
       { label: "European & World Classics", href: "/collections/european-world-classics" },
+      { label: "Kids Football Kits", href: "/collections/kids-football-kits" },
       { label: "All Football Shirts", href: "/catalog?category=football" },
     ],
   },

@@ -38,6 +38,7 @@ export default function Footer() {
             <li><Link href="/collections/ireland-classics" className="hover:text-white transition-colors">Retro Ireland Jerseys</Link></li>
             <li><Link href="/collections/premier-league-classics" className="hover:text-white transition-colors">Premier League Classics</Link></li>
             <li><Link href="/collections/european-world-classics" className="hover:text-white transition-colors">European &amp; World Classics</Link></li>
+            <li><Link href="/collections/kids-football-kits" className="hover:text-white transition-colors">Kids Football Kits</Link></li>
             <li><Link href="/collections/gaa-jerseys" className="hover:text-white transition-colors">GAA County Jerseys</Link></li>
             <li><Link href="/collections/gaa-training-vests" className="hover:text-white transition-colors">GAA Training Vests</Link></li>
             <li><Link href="/collections/afl-jerseys" className="hover:text-white transition-colors">AFL Jerseys</Link></li>

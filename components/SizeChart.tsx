@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CHARTS, sizeChart, type ChartKey, type ChartUnit } from "@/lib/size-chart";
 
 interface Props {
-  /** Which chart to show: football, GAA, kids GAA or AFL. */
+  /** Which chart to show: football, kids football, GAA, kids GAA or AFL. */
   chart?: ChartKey;
   /** Sizes this shirt comes in. Other columns are greyed out. Omit to show all. */
   available?: string[];

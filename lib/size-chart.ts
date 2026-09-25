@@ -4,7 +4,7 @@
  */
 import type { Product } from './products';
 
-export type ChartKey = 'football' | 'gaa' | 'gaa-kids' | 'afl';
+export type ChartKey = 'football' | 'football-kids' | 'gaa' | 'gaa-kids' | 'afl';
 
 type Value = number | [number, number];
 
@@ -35,6 +35,22 @@ const FOOTBALL: ChartDef = {
   ],
   note: "Chest, waist, length and shoulder are the shirt's own measurements. Height and weight are a guide.",
   howTo: 'Match your height and weight, or compare with a shirt that fits you well.',
+};
+
+/** Kids football kits (shirt and shorts). Used for any football product with "Kids" in the title. */
+const FOOTBALL_KIDS: ChartDef = {
+  sizes: ['XXS', 'XS', 'S', 'M', 'L', 'XL', '2XL'],
+  headings: ['XXS (16)', 'XS (18)', 'S (20)', 'M (22)', 'L (24)', 'XL (26)', '2XL (28)'],
+  rows: [
+    { label: 'Age', unit: 'years', values: [[2, 3], [4, 5], [5, 6], [7, 8], [8, 9], [10, 11], [12, 13]] },
+    { label: 'Height', unit: 'cm', kind: 'height', values: [[90, 100], [100, 110], [110, 120], [120, 130], [130, 140], [140, 150], [150, 160]] },
+    { label: 'Shirt length', unit: 'cm', values: [44, 47, 50, 53, 56, 59, 62] },
+    { label: 'Chest (flat)', unit: 'cm', values: [35, 37, 39, 41, 43, 45, 47] },
+    { label: 'Weight', unit: 'kg', values: [[13, 18], [18, 23], [23, 28], [28, 33], [33, 38], [38, 43], [43, 48]] },
+    { label: 'Shorts length', unit: 'cm', values: [32, 34, 36, 38, 39, 40, 43] },
+  ],
+  note: 'Age is a rough guide. Height and the measurements are more reliable. A difference of 2–3 cm is normal.',
+  howTo: "Go by your child's height first, or compare with a kit that fits them well.",
 };
 
 /** Adult GAA jerseys, measured flat. */
@@ -78,11 +94,13 @@ const AFL: ChartDef = {
   howTo: FLAT_HOW_TO,
 };
 
-export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, gaa: GAA, 'gaa-kids': GAA_KIDS, afl: AFL };
+export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, 'football-kids': FOOTBALL_KIDS, gaa: GAA, 'gaa-kids': GAA_KIDS, afl: AFL };
 
 /** The chart that fits a product. */
 export function chartFor(product: Pick<Product, 'category' | 'title'>): ChartKey {
-  if (product.category === 'gaa' && /\bkids?\b/i.test(product.title)) return 'gaa-kids';
+  const kids = /\bkids?\b/i.test(product.title);
+  if (kids && product.category === 'football') return 'football-kids';
+  if (kids && product.category === 'gaa') return 'gaa-kids';
   return product.category;
 }
 

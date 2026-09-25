@@ -45,6 +45,16 @@ export default function SizeGuidePage() {
           <p className="mt-4 text-sm text-gray-600">Each shirt page shows which sizes that shirt comes in.</p>
         </section>
 
+        <section aria-labelledby="kids" className="mb-12">
+          <h2 id="kids" className="text-2xl font-bold text-[#0F2131] mb-4">Kids football kit size chart</h2>
+          <SizeChart chart="football-kids" />
+          <p className="mt-4 text-sm text-gray-600">
+            For our{' '}
+            <Link href="/collections/kids-football-kits" className="text-[#1C7C83] underline underline-offset-4">kids football kits</Link>
+            . Each kit is a shirt and shorts.
+          </p>
+        </section>
+
         <section aria-labelledby="gaa" className="mb-12">
           <h2 id="gaa" className="text-2xl font-bold text-[#0F2131] mb-4">GAA jersey size chart</h2>
           <SizeChart chart="gaa" />
