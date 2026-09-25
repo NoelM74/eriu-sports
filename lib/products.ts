@@ -286,3 +286,35 @@ export function getPlayerBySlug(slug: string): PlayerSummary | undefined {
 export function getProductsByPlayer(slug: string): Product[] {
   return products.filter((p) => p.player?.slug === slug).sort((a, b) => seasonStart(a) - seasonStart(b));
 }
+
+/** National sides, so kids kits can be split into club and international sections. */
+const NATIONAL_TEAMS = new Set([
+  'Republic of Ireland', 'Northern Ireland', 'England', 'Scotland', 'Wales', 'Brazil', 'Italy', 'Argentina',
+  'France', 'Germany', 'Netherlands', 'Spain', 'Portugal', 'Belgium', 'Croatia', 'Mexico', 'USA', 'Japan',
+]);
+
+const KIDS_SECTIONS = [
+  { id: 'premier-league', label: 'Premier League' },
+  { id: 'international', label: 'International' },
+  { id: 'european-clubs', label: 'European Clubs' },
+  { id: 'retro', label: 'Retro Classics' },
+] as const;
+
+/**
+ * Split kids kits into headed sections: current Premier League, international and
+ * European club kits, then retro kits (anything from before 2015). Empty sections are dropped.
+ */
+export function groupKidsKits(items: Product[]): { id: string; label: string; items: Product[] }[] {
+  const premierLeague = new Set(
+    products.filter((p) => p.collection === 'Premier League Classics').map((p) => p.details.team)
+  );
+  const sectionOf = (p: Product) => {
+    if (seasonStart(p) < 2015) return 'retro';
+    if (NATIONAL_TEAMS.has(p.details.team ?? '')) return 'international';
+    if (premierLeague.has(p.details.team)) return 'premier-league';
+    return 'european-clubs';
+  };
+  return KIDS_SECTIONS.map((s) => ({ ...s, items: items.filter((p) => sectionOf(p) === s.id) })).filter(
+    (s) => s.items.length > 0
+  );
+}

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import ClubPicker from '@/components/catalog/ClubPicker';
 import { COLLECTIONS, getCollectionBySlug, CATEGORIES, DELIVERY } from '@/lib/collections';
-import { getProductsByCollectionSlug, toCard, type ClubSummary } from '@/lib/products';
+import { getProductsByCollectionSlug, groupKidsKits, toCard, type ClubSummary } from '@/lib/products';
 
 const SITE = 'https://eriusports.com';
 
@@ -52,6 +52,8 @@ export default async function CollectionPage({ params }: Props) {
     if (found) found.count++;
     else clubMap.set(p.club.slug, { ...p.club, count: 1, category: p.category });
   }
+  // Kids kits are split into Premier League, international and retro sections.
+  const sections = c.slug === 'kids-football-kits' ? groupKidsKits(items) : null;
   const clubs = [...clubMap.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
   const jsonLd = [
@@ -117,7 +119,31 @@ export default async function CollectionPage({ params }: Props) {
           <ClubPicker clubs={clubs} label={c.category === 'gaa' ? 'Shop by county' : 'Shop by club'} />
         )}
         <p className="text-sm text-gray-500 mb-6">{items.length} {items.length === 1 ? 'item' : 'items'}</p>
-        <ShuffledGrid products={items.map(toCard)} priorityCount={4} />
+        {sections ? (
+          <>
+            <nav aria-label="Sections" className="flex flex-wrap gap-2 mb-10">
+              {sections.map((s) => (
+                <a
+                  key={s.id}
+                  href={`#${s.id}`}
+                  className="px-4 py-2.5 text-sm font-semibold uppercase tracking-wider border border-gray-200 text-[#0F2131] hover:border-[#1A533E] hover:text-[#1A533E] transition-colors"
+                >
+                  {s.label} <span className="text-gray-400 font-normal">({s.items.length})</span>
+                </a>
+              ))}
+            </nav>
+            {sections.map((s, i) => (
+              <section key={s.id} id={s.id} aria-labelledby={`${s.id}-heading`} className="mb-14 last:mb-0 scroll-mt-28">
+                <h2 id={`${s.id}-heading`} className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-[#0F2131] mb-6">
+                  {s.label}
+                </h2>
+                <ShuffledGrid products={s.items.map(toCard)} priorityCount={i === 0 ? 4 : 0} />
+              </section>
+            ))}
+          </>
+        ) : (
+          <ShuffledGrid products={items.map(toCard)} priorityCount={4} />
+        )}
       </section>
 
       <section className="border-t border-gray-100 bg-gray-50">
