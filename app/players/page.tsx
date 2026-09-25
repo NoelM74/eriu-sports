@@ -1,12 +1,11 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { DELIVERY } from '@/lib/collections';
 import { getPlayers } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Shop by Player | Retro Shirts with Name & Number',
-  description: `Retro football shirts printed with the names of the greats: Ronaldo, Baggio, Henry, Bergkamp, Ronaldinho, Gerrard and more. €35 each, delivered to Ireland and the UK in ${DELIVERY}.`,
+  description: `Retro football shirts printed with the names of the greats: Ronaldo, Baggio, Henry, Bergkamp, Ronaldinho, Gerrard and more. €35 each. Worldwide delivery, free over €49.`,
   alternates: { canonical: '/players' },
   openGraph: {
     title: 'Shop by Player | Ériu Sports',
@@ -25,7 +24,7 @@ export default function PlayersPage() {
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-3">Name &amp; number shirts</p>
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight">Shop by Player</h1>
           <p className="mt-4 text-base md:text-lg text-white/80 max-w-2xl">
-            Retro shirts printed with the names of the greats. €35 each, delivered to Ireland and the UK in {DELIVERY}.
+            Retro shirts printed with the names of the greats. €35 each. Worldwide delivery, free over €49.
           </p>
         </div>
       </section>

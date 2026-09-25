@@ -17,7 +17,7 @@ export interface GeoConfig {
 // Country to locale/currency mapping
 const countryToLocale: Record<string, GeoConfig> = {
     // Ireland / EU
-    IE: { currency: 'EUR', locale: 'en-IE', shippingRate: 4.95, freeShippingThreshold: 49, symbol: '€' },
+    IE: { currency: 'EUR', locale: 'en-IE', shippingRate: 5, freeShippingThreshold: 49, symbol: '€' },
     // United Kingdom
     GB: { currency: 'GBP', locale: 'en-GB', shippingRate: 5.95, freeShippingThreshold: 39, symbol: '£' },
     // United States

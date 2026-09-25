@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { CATEGORIES, DELIVERY } from '@/lib/collections';
+import { CATEGORIES } from '@/lib/collections';
 import { getClubs } from '@/lib/products';
 
 export const metadata: Metadata = {
   title: 'Shop by Club | Retro Football Shirts & GAA Jerseys',
-  description: `Find retro shirts by club: Arsenal, Liverpool, Manchester United, Ireland and more, plus GAA jerseys by county. Delivered to Ireland and the UK in ${DELIVERY}.`,
+  description: `Find retro shirts by club: Arsenal, Liverpool, Manchester United, Ireland and more, plus GAA jerseys by county. Worldwide delivery, free over €49.`,
   alternates: { canonical: '/clubs' },
   openGraph: {
     title: 'Shop by Club | Ériu Sports',

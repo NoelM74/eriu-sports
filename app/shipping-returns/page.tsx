@@ -4,13 +4,13 @@ import Link from 'next/link';
 const EMAIL = 'noel@eriusports.com';
 
 export const metadata: Metadata = {
-  title: 'Delivery & Returns | Ireland & UK',
+  title: 'Delivery & Returns | Worldwide, Free Over €49',
   description:
-    'Delivered to Ireland and the UK in 8–14 days from order, tracked. €4.95 delivery, free on orders over €49. 30-day returns on unworn items.',
+    'We deliver worldwide for a flat €5, free on orders over €49. Tracked, and 8–14 days to Ireland and the UK. 30-day returns on unworn items.',
   alternates: { canonical: '/shipping-returns' },
   openGraph: {
     title: 'Delivery & Returns | Ériu Sports',
-    description: 'Delivered to Ireland and the UK in 8–14 days. Free delivery over €49. 30-day returns.',
+    description: 'Worldwide delivery for €5, free over €49. 8–14 days to Ireland and the UK. 30-day returns.',
     url: '/shipping-returns',
   },
 };
@@ -30,20 +30,21 @@ export default function ShippingReturnsPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Delivery &amp; Returns</h1>
-          <p className="text-lg text-gray-600">Straightforward delivery to Ireland and the UK, and easy returns.</p>
+          <p className="text-lg text-gray-600">One flat delivery price worldwide, and easy returns.</p>
         </div>
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[#0F2131] mb-5">Delivery</h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <Card title="8–14 days">
-              Every order arrives 8–14 days from the day you order. All parcels are tracked.
+            <Card title="€5, or free over €49">
+              Delivery is a flat €5 per order, wherever you are. Spend €49 or more and it is free.
             </Card>
-            <Card title="€4.95, or free over €49">
-              Delivery is €4.95 per order. Spend €49 or more and it is free.
+            <Card title="Worldwide">
+              We deliver to any country, for the same price.
             </Card>
-            <Card title="Ireland &amp; the UK">
-              We deliver across Ireland and the UK, same price and same delivery time.
+            <Card title="How long it takes">
+              Orders to Ireland and the UK arrive 8–14 days from the day you order. Delivery times to other countries vary.
+              Email us before you order and we&apos;ll give you an idea for your country.
             </Card>
             <Card title="Tracking">
               You get a tracking link once your order is on its way, so you can follow it to your door.

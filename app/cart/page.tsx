@@ -153,7 +153,7 @@ export default function CartPage() {
               Checkout
             </Link>
             <p className="mt-3 text-center text-sm text-gray-600">
-              Delivered in 8–14 days from order. Tracked.
+              Tracked worldwide delivery. 8–14 days to Ireland and the UK.
             </p>
           </div>
         </section>

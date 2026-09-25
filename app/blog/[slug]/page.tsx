@@ -198,7 +198,7 @@ export default async function BlogPostPage({ params }: Props) {
                 ))}
               </div>
             )}
-            <p className="mt-6 text-sm text-gray-600">From €25. Delivered to Ireland and the UK in 8–14 days.</p>
+            <p className="mt-6 text-sm text-gray-600">From €25. Worldwide delivery, free over €49.</p>
           </div>
         </section>
       )}

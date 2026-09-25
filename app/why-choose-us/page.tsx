@@ -7,11 +7,11 @@ const EMAIL = 'noel@eriusports.com';
 export const metadata: Metadata = {
   title: 'Why Choose Us | Retro Shirts from €25',
   description:
-    'Low prices and high quality. Retro football shirts from €25, free delivery over €49 to Ireland and the UK, 30-day returns and bulk pricing for teams and resellers.',
+    'Low prices and high quality. Retro football shirts from €25, €5 delivery worldwide and free over €49, 30-day returns and bulk pricing for teams and resellers.',
   alternates: { canonical: '/why-choose-us' },
   openGraph: {
     title: 'Why Choose Ériu Sports?',
-    description: 'Retro shirts from €25, free delivery over €49 to Ireland and the UK, easy returns and bulk discounts.',
+    description: 'Retro shirts from €25, worldwide delivery free over €49, easy returns and bulk discounts.',
     url: '/why-choose-us',
   },
 };
@@ -34,7 +34,7 @@ const REASONS: { title: string; lead: string; body: React.ReactNode }[] = [
     lead: 'No hidden fees. What you see is what you pay.',
     body: (
       <>
-        We deliver to Ireland and the UK in 8–14 days, tracked. Delivery is €4.95, or free when you spend €49 or more.{' '}
+        We deliver worldwide, tracked, for a flat €5, or free when you spend €49 or more. Orders to Ireland and the UK arrive in 8–14 days.{' '}
         <Link href="/shipping-returns" className="text-[#1C7C83] font-semibold hover:underline">Delivery details</Link>
       </>
     ),

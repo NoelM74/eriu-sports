@@ -53,8 +53,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
       <div className="bg-[#0F2131] text-white text-center text-[10px] sm:text-[11px] py-2 px-2 tracking-[0.18em] uppercase font-bold">
         <span className="whitespace-nowrap">Free delivery over €49</span> <span className="text-[#1C7C83] px-1">·</span>{" "}
-        <span className="whitespace-nowrap">Delivered in 8–14 days</span>
-        <span className="hidden sm:inline"><span className="text-[#1C7C83] px-1">·</span> Ireland &amp; UK</span>
+        <span className="whitespace-nowrap">€5 worldwide delivery</span>
+        <span className="hidden sm:inline"><span className="text-[#1C7C83] px-1">·</span> 8–14 days to Ireland &amp; UK</span>
       </div>
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3 h-16 md:h-20" aria-label="Main">

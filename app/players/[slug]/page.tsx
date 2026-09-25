@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
-import { DELIVERY } from '@/lib/collections';
 import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product } from '@/lib/products';
 import { PLAYER_BIOS } from '@/lib/players';
 
@@ -19,7 +18,7 @@ export function generateStaticParams() {
 const list = new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' });
 
 function intro(name: string, count: number, teams: string[]) {
-  return `${count} retro shirts printed with ${name}'s name and number, from ${list.format(teams)}. €35 each, delivered to Ireland and the UK in ${DELIVERY}.`;
+  return `${count} retro shirts printed with ${name}'s name and number, from ${list.format(teams)}. €35 each. Worldwide delivery, free over €49.`;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

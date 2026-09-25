@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
-import { CATEGORIES, getCollectionBySlug, DELIVERY } from '@/lib/collections';
+import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const price = formatPrice(product.price);
   const sizeRange = `${product.sizes[0]}–${product.sizes[product.sizes.length - 1]}`;
-  const description = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}, delivered to Ireland and the UK in ${DELIVERY}.`;
+  const description = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`;
   const image = product.images[0] ? `${SITE}${product.images[0]}` : undefined;
 
   return {
@@ -68,17 +68,25 @@ const DETAIL_LABELS: [keyof ProductDetails, string][] = [
   ['condition', 'Condition'],
 ];
 
-/** Offer shipping details for one country: 8–14 days from order. */
-function shippingTo(country: 'IE' | 'GB') {
+/** Countries we list in structured data beyond Ireland and the UK. We deliver worldwide. */
+const OTHER_MARKETS = ['US', 'CA', 'AU', 'NZ', 'FR', 'DE', 'ES', 'IT', 'NL', 'BE', 'PT', 'AT', 'DK', 'SE', 'NO', 'FI', 'PL'];
+
+/**
+ * Offer shipping details: the flat worldwide fee, with a delivery time only for
+ * Ireland and the UK (8–14 days from order). Other countries vary, so no time is given.
+ */
+function shippingTo(countries: string[], withTime: boolean) {
   return {
     '@type': 'OfferShippingDetails',
-    shippingRate: { '@type': 'MonetaryAmount', value: 4.95, currency: 'EUR' },
-    shippingDestination: { '@type': 'DefinedRegion', addressCountry: country },
-    deliveryTime: {
-      '@type': 'ShippingDeliveryTime',
-      handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 2, unitCode: 'DAY' },
-      transitTime: { '@type': 'QuantitativeValue', minValue: 8, maxValue: 12, unitCode: 'DAY' },
-    },
+    shippingRate: { '@type': 'MonetaryAmount', value: SHIPPING_FEE, currency: 'EUR' },
+    shippingDestination: countries.map((c) => ({ '@type': 'DefinedRegion', addressCountry: c })),
+    ...(withTime && {
+      deliveryTime: {
+        '@type': 'ShippingDeliveryTime',
+        handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 2, unitCode: 'DAY' },
+        transitTime: { '@type': 'QuantitativeValue', minValue: 8, maxValue: 12, unitCode: 'DAY' },
+      },
+    }),
   };
 }
 
@@ -117,7 +125,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           : 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
         seller: { '@type': 'Organization', name: 'Ériu Sports' },
-        shippingDetails: [shippingTo('IE'), shippingTo('GB')],
+        shippingDetails: [shippingTo(['IE', 'GB'], true), shippingTo(OTHER_MARKETS, false)],
         hasMerchantReturnPolicy: {
           '@type': 'MerchantReturnPolicy',
           applicableCountry: ['IE', 'GB'],
@@ -202,10 +210,10 @@ export default async function ProductDetail({ params }: ProductPageProps) {
             <AddToCartForm product={product} sizes={product.sizes} />
 
             <div className="mt-8 border border-gray-200 bg-gray-50 p-5 text-sm text-gray-700">
-              <p className="font-semibold text-gray-900">Delivered in {DELIVERY} from order</p>
+              <p className="font-semibold text-gray-900">Tracked delivery worldwide</p>
               <ul className="mt-2 space-y-1">
-                <li>Tracked delivery to Ireland and the UK</li>
-                <li>€4.95 delivery, free on orders over €49</li>
+                <li>{DELIVERY} to Ireland and the UK</li>
+                <li>€{SHIPPING_FEE} delivery, free on orders over €{FREE_DELIVERY_OVER}</li>
                 <li>30-day returns on unworn items with tags on</li>
               </ul>
               <Link href="/shipping-returns" className="mt-3 inline-block text-[var(--color-teal)] underline underline-offset-4">

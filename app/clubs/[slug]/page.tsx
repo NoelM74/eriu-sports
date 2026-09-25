@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
-import { CATEGORIES, DELIVERY } from '@/lib/collections';
+import { CATEGORIES } from '@/lib/collections';
 import { getClubs, getClubBySlug, getProductsByClub, toCard } from '@/lib/products';
 import { clubHeading, clubIntro, groupByDecade } from '@/lib/clubs';
 
@@ -103,8 +103,8 @@ export default async function ClubPage({ params }: Props) {
           <p className="mt-5 text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">{clubIntro(club, items)}</p>
           <ul className="mt-7 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider">
             <li className="border border-white/20 px-3 py-2">From €{minPrice % 1 ? minPrice.toFixed(2) : minPrice}</li>
-            <li className="border border-white/20 px-3 py-2">Delivered in {DELIVERY}</li>
-            <li className="border border-white/20 px-3 py-2">Ireland &amp; UK</li>
+            <li className="border border-white/20 px-3 py-2">Worldwide delivery</li>
+            <li className="border border-white/20 px-3 py-2">Free over €49</li>
             <li className="border border-white/20 px-3 py-2">Sizes {sizes[0]}–{sizes[sizes.length - 1]}</li>
           </ul>
         </div>

@@ -14,7 +14,7 @@ const lexend = Lexend({
 
 const SITE = "https://eriusports.com";
 const DESCRIPTION =
-  "Retro football shirts, county GAA jerseys, GAA training vests and AFL jerseys. From €25, delivered to Ireland and the UK in 8–14 days. Free delivery over €49.";
+  "Retro football shirts, county GAA jerseys, GAA training vests and AFL jerseys. From €25. €5 delivery worldwide, free over €49.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -68,10 +68,8 @@ const storeJsonLd = [
     logo: `${SITE}/apple-touch-icon.png`,
     image: `${SITE}/og-image.jpg`,
     description: DESCRIPTION,
-    areaServed: [
-      { "@type": "Country", name: "Ireland" },
-      { "@type": "Country", name: "United Kingdom" },
-    ],
+    // Irish-run, delivering worldwide.
+    areaServed: "Worldwide",
     sameAs: ["https://www.instagram.com/eriusports/", "https://www.facebook.com/EriuSports"],
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",

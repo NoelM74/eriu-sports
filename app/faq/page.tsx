@@ -6,11 +6,11 @@ const EMAIL = 'noel@eriusports.com';
 export const metadata: Metadata = {
   title: 'FAQ | Delivery, Sizing & Returns',
   description:
-    'How long delivery takes to Ireland and the UK (8–14 days), what it costs, how our retro football shirts and GAA jerseys fit, and how returns work.',
+    'Where we deliver (worldwide), what it costs (€5, free over €49), how long it takes, how our retro football shirts and GAA jerseys fit, and how returns work.',
   alternates: { canonical: '/faq' },
   openGraph: {
     title: 'FAQ | Ériu Sports',
-    description: 'Delivery to Ireland and the UK in 8–14 days, sizing and 30-day returns.',
+    description: 'Worldwide delivery for €5, free over €49. Sizing and 30-day returns.',
     url: '/faq',
   },
 };
@@ -21,15 +21,15 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
     items: [
       {
         q: 'How long does delivery take?',
-        a: 'Delivery takes 8–14 days from the day you order. Every parcel is tracked.',
+        a: 'Orders to Ireland and the UK take 8–14 days from the day you order. Times to other countries vary; email us and we will give you an idea. Every parcel is tracked.',
       },
       {
-        q: 'Do you deliver to the UK?',
-        a: 'Yes. We deliver to Ireland and the UK, both in 8–14 days from the day you order.',
+        q: 'Do you deliver outside Ireland?',
+        a: 'Yes. We deliver worldwide, including the UK, for the same price.',
       },
       {
         q: 'How much is delivery?',
-        a: 'Delivery is €4.95. It is free on orders over €49.',
+        a: 'A flat €5 anywhere in the world. It is free on orders over €49.',
       },
     ],
   },

@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import ClubPicker from '@/components/catalog/ClubPicker';
 import KidsKitsBrowser from '@/components/catalog/KidsKitsBrowser';
-import { COLLECTIONS, getCollectionBySlug, CATEGORIES, DELIVERY } from '@/lib/collections';
+import { COLLECTIONS, getCollectionBySlug, CATEGORIES } from '@/lib/collections';
 import { getProductsByCollectionSlug, groupKidsKits, toCard, type ClubSummary } from '@/lib/products';
 
 const SITE = 'https://eriusports.com';
@@ -108,8 +108,8 @@ export default async function CollectionPage({ params }: Props) {
           <p className="mt-5 text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">{c.intro}</p>
           <ul className="mt-7 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wider">
             <li className="border border-white/20 px-3 py-2">From €{c.priceFrom.toFixed(c.priceFrom % 1 ? 2 : 0)}</li>
-            <li className="border border-white/20 px-3 py-2">Delivered in {DELIVERY}</li>
-            <li className="border border-white/20 px-3 py-2">Ireland &amp; UK</li>
+            <li className="border border-white/20 px-3 py-2">Worldwide delivery</li>
+            <li className="border border-white/20 px-3 py-2">Free over €49</li>
             <li className="border border-white/20 px-3 py-2">Sizes {sizes[0]}–{sizes[sizes.length - 1]}</li>
           </ul>
         </div>

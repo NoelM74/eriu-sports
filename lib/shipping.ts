@@ -1,8 +1,9 @@
 import { getGeoConfig, CurrencyCode } from './geo';
+import { FREE_DELIVERY_OVER, SHIPPING_FEE } from './collections';
 
 /**
- * Calculate shipping cost based on country/region.
- * Falls back to EU rates if no country specified.
+ * Delivery cost in euro. One flat fee worldwide, free at or over the threshold.
+ * The country only picks the display currency.
  */
 export function calculateShipping(
   subtotal: number,
@@ -11,10 +12,10 @@ export function calculateShipping(
   const config = getGeoConfig(countryCode);
 
   return {
-    cost: subtotal >= config.freeShippingThreshold ? 0 : config.shippingRate,
+    cost: subtotal >= FREE_DELIVERY_OVER ? 0 : SHIPPING_FEE,
     currency: config.currency,
     symbol: config.symbol,
-    freeThreshold: config.freeShippingThreshold,
+    freeThreshold: FREE_DELIVERY_OVER,
   };
 }
 

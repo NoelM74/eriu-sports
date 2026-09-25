@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getProductsByCategory, getClubs, searchProducts, toCard } from '@/lib/products';
-import { CATEGORIES, COLLECTIONS, DELIVERY, type CategoryKey } from '@/lib/collections';
+import { CATEGORIES, COLLECTIONS, type CategoryKey } from '@/lib/collections';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import CatalogFilters from '@/components/catalog/CatalogFilters';
 
@@ -24,7 +24,7 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
   const title = cat ? `${cat.h1} | Shop` : 'Shop Retro Football Shirts, GAA & AFL Jerseys';
   const description =
     cat?.description ??
-    `Retro football shirts, GAA county jerseys, GAA training vests and AFL jerseys. Delivered to Ireland and the UK in ${DELIVERY}.`;
+    `Retro football shirts, GAA county jerseys, GAA training vests and AFL jerseys. Worldwide delivery, free over €49.`;
   const url = key === 'all' ? '/catalog' : `/catalog?category=${key}`;
   return {
     title,
@@ -62,7 +62,7 @@ export default async function CatalogPage({ searchParams }: { searchParams: Sear
           <p className="mt-4 text-base md:text-lg text-white/80 max-w-2xl">
             {cat
               ? cat.description
-              : `Retro football shirts, GAA jerseys, training vests and AFL jerseys. Delivered to Ireland and the UK in ${DELIVERY}.`}
+              : `Retro football shirts, GAA jerseys, training vests and AFL jerseys. Worldwide delivery, free over €49.`}
           </p>
         </div>
       </section>

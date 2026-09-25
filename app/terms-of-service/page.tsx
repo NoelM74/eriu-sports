@@ -42,8 +42,9 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-[#0F2131] mt-12 mb-4">3. Shipping & Delivery</h2>
                     <p>
-                        <strong>Delivery Time:</strong> Orders are delivered within 8–14 days of the date the
-                        order is placed. We deliver to Ireland and the United Kingdom.
+                        <strong>Delivery Time:</strong> We deliver worldwide. Orders to Ireland and the United
+                        Kingdom are delivered within 8–14 days of the date the order is placed. Delivery times to
+                        other countries vary.
                     </p>
                     <p>
                         <strong>Tracking:</strong> All orders include a tracking number, emailed to you
@@ -51,7 +52,7 @@ export default function TermsOfServicePage() {
                     </p>
                     <p>
                         <strong>Shipping Costs:</strong> Free shipping on orders over €49.
-                        Standard shipping is €4.95 for orders under €49.
+                        Standard shipping is a flat €5 to any country for orders under €49.
                     </p>
 
                     <h2 className="text-2xl font-bold text-[#0F2131] mt-12 mb-4">4. Returns & Exchanges</h2>

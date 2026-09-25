@@ -13,7 +13,7 @@ export default function Footer() {
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs">
             Retro football shirts, GAA county jerseys, training vests and AFL jerseys.
-            Irish-run, delivered to Ireland and the UK in 8–14 days.
+            Irish-run. Worldwide delivery, free over €49.
           </p>
           <div className="flex gap-4 mt-6">
             {/* Instagram */}
@@ -73,7 +73,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/50">
           <span>© {new Date().getFullYear()} Ériu Sports. All rights reserved.</span>
           <span className="uppercase tracking-widest font-medium text-[#1C7C83]">
-            Delivered to Ireland &amp; the UK in 8–14 days
+            Worldwide delivery · 8–14 days to Ireland &amp; the UK
           </span>
         </div>
       </div>

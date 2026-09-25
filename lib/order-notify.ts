@@ -100,7 +100,7 @@ export function buildCustomerHtml(o: OrderRecord): string {
   <p style="margin:0 0 6px"><strong>Total paid:</strong> ${esc(o.currency)} ${esc(o.total)}</p>
   <p style="margin:0 0 4px"><strong>Delivering to:</strong></p>
   <p style="margin:0 0 24px;line-height:1.6;color:#374151">${esc(addressBlock(o)).replace(/\n/g, "<br>")}</p>
-  <p style="margin:0 0 24px;line-height:1.6">It will arrive within 8–14 days of your order. If anything looks wrong, just reply to this email.</p>
+  <p style="margin:0 0 24px;line-height:1.6">Orders to Ireland and the UK arrive within 8–14 days; times to other countries vary. If anything looks wrong, just reply to this email.</p>
   <p style="font-size:13px;color:#6b7280;margin:0">Ériu Sports · Irish-run</p>
 </div></body></html>`;
 }
@@ -181,7 +181,7 @@ export async function notifyOrder(order: OrderRecord): Promise<NotifyResult> {
       to: order.customer.email,
       replyTo: shopTo,
       subject: `Your Ériu Sports order ${order.reference}`,
-      text: `Thanks for your order.\n\nReference: ${order.reference}\nTotal: ${order.currency} ${order.total}\n\nItems:\n${itemLines(order.items)}\n\nDelivering to:\n${addressBlock(order)}\n\nIt will arrive within 8–14 days of your order.`,
+      text: `Thanks for your order.\n\nReference: ${order.reference}\nTotal: ${order.currency} ${order.total}\n\nItems:\n${itemLines(order.items)}\n\nDelivering to:\n${addressBlock(order)}\n\nOrders to Ireland and the UK arrive within 8–14 days; times to other countries vary.`,
       html: buildCustomerHtml(order),
     });
   }

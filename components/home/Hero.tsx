@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           <div className="relative z-10">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-4">
-              Irish-run · Ireland &amp; UK delivery
+              Irish-run · Worldwide delivery
             </p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-[#0F2131] uppercase mb-6">
               Retro Football Shirts<span className="text-[#1C7C83]">.</span>{" "}
@@ -17,7 +17,7 @@ export default function Hero() {
             </h1>
             <p className="text-[#404040] text-base sm:text-lg max-w-md mb-8 leading-relaxed">
               Classic Ireland, Premier League and European shirts, county GAA jerseys and training
-              vests. From €25, delivered in 8–14 days.
+              vests. From €25, delivered worldwide.
             </p>
             <div className="flex flex-wrap gap-4 items-center">
               <Link
@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
 
             <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-10 text-xs font-medium text-[#555] uppercase tracking-wide">
-              <li>✓ Delivered in 8–14 days</li>
+              <li>✓ Worldwide delivery</li>
               <li>✓ Free delivery over €49</li>
               <li>✓ 30-day returns</li>
             </ul>

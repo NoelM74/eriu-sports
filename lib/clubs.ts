@@ -1,4 +1,4 @@
-import { DELIVERY, type CategoryKey } from './collections';
+import type { CategoryKey } from './collections';
 import type { ClubSummary, Product } from './products';
 
 /**
@@ -32,7 +32,7 @@ export function clubIntro(club: ClubSummary, items: Product[]): string {
       : '';
   const printed = items.some((p) => p.details.print) ? ' Some come printed with a player name and number.' : '';
   const noun = club.category === 'football' ? 'shirts' : 'jerseys';
-  return `${items.length} ${club.name} ${noun}${range}.${printed} From ${from}, delivered to Ireland and the UK in ${DELIVERY}.`;
+  return `${items.length} ${club.name} ${noun}${range}.${printed} From ${from}. Worldwide delivery, free over €49.`;
 }
 
 /** Group a club's products by decade ("1990s") when there are enough to need it. */
