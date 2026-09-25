@@ -14016,5 +14016,155 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000037",
+    "title": "Liverpool 1989-91 Home Kids Kit",
+    "slug": "liverpool-1989-91-home-kids-kit",
+    "description": "Liverpool's 1989-91 home kit in kids sizes: red with a shattered-glass pattern, Candy across the chest in white, a white collar, the adidas trefoil and the old Liver bird shield, with shiny red shorts. It's the kit of Kenny Dalglish's 1989-90 title side, the club's 18th league championship, and the last for 30 years until 2019-20. Adidas based the 2026-27 home kit on it, and we have that in kids sizes too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000037-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "1989-91",
+      "kit": "Home",
+      "sponsor": "Candy",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000038",
+    "title": "Liverpool 1989-91 Away Kids Kit",
+    "slug": "liverpool-1989-91-away-kids-kit",
+    "description": "Liverpool's 1989-91 away kit in kids sizes: pale silver-grey with a diamond pattern, Candy in red, red stripes down the sleeves, a red collar and the old Liver bird shield, with silver shorts and red side panels. The away kit from the same era as the 1989-90 title, Liverpool's 18th league championship. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000038-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "1989-91",
+      "kit": "Away",
+      "sponsor": "Candy",
+      "colours": "Silver / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000039",
+    "title": "Liverpool 2026-27 Home Kids Kit",
+    "slug": "liverpool-2026-27-home-kids-kit",
+    "description": "Liverpool's 2026-27 home kit in kids sizes. Adidas based it on the 1989-91 home shirt: deep red with a white shard pattern that echoes the original, white stripes on the shoulders and the Liver bird with 'L.F.C.' Standard Chartered is on the front, with red shorts and white side panels. The 1989-91 original is in the retro section if you want both. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000039-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Standard Chartered",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000040",
+    "title": "Liverpool 2026-27 Away Kids Kit",
+    "slug": "liverpool-2026-27-away-kids-kit",
+    "description": "Liverpool's 2026-27 away kit in kids sizes, inspired by the club's mid-1980s away shirts. It's clean white with red striped trim on the V-neck and cuffs, the adidas trefoil and the old Liver bird shield from that era, with red shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000040-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Standard Chartered",
+      "colours": "White / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000041",
+    "title": "Liverpool 2026-27 Third Kids Kit",
+    "slug": "liverpool-2026-27-third-kids-kit",
+    "description": "Liverpool's 2026-27 third kit in kids sizes: black with a maroon block pattern meant to look like the flags waving on the Kop, and silver stripes, crest and sponsor. Black shorts with silver stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000041-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Standard Chartered",
+      "colours": "Black / Maroon / Silver",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
