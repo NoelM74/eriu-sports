@@ -75,7 +75,8 @@ export const SIZES = ['S', 'M', 'L', 'XL'];
 
 /** Only flag current-season kits. Most retro products need no badge. */
 function deriveBadge(p: RawProduct): string | null {
-  if (/\b(2025|2026)\b/.test(p.title)) return 'New Season';
+  // The current season is 2026-27, so "2025-26" titles don't count.
+  if (/\b(2026|2027)\b/.test(p.title)) return 'New Season';
   return null;
 }
 
