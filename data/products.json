@@ -14376,5 +14376,155 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000049",
+    "title": "Manchester United 1998-99 Treble Home Kids Kit",
+    "slug": "manchester-united-1998-99-treble-home-kids-kit",
+    "description": "The Treble kit, in kids sizes. Umbro red with a white quarter-zip collar, black and white taped sleeves, SHARP across the chest and white shorts. In 1998-99 United won the league, beat Newcastle in the FA Cup final, then came from behind against Bayern Munich at the Camp Nou, with Sheringham and Solskjær scoring in injury time. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000049-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1998-99",
+      "kit": "Home",
+      "sponsor": "SHARP",
+      "colours": "Red / White / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000050",
+    "title": "Manchester United 2007-08 Away Kids Kit",
+    "slug": "manchester-united-2007-08-away-kids-kit",
+    "description": "United's black Nike away kit from 2007-08, in kids sizes: black with red piping and red cuffs, AIG in a white box, 'The Red Devils' near the hem, with white shorts. That season United won the league and then the Champions League, beating Chelsea on penalties in Moscow, and Cristiano Ronaldo scored 42 goals. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000050-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2007-08",
+      "kit": "Away",
+      "sponsor": "AIG",
+      "colours": "Black / Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000051",
+    "title": "Manchester United 2026-27 Home Kids Kit",
+    "slug": "manchester-united-2026-27-home-kids-kit",
+    "description": "United's 2026-27 home kit in kids sizes. Adidas looked back to the 1970s: red with a polo collar, white stripes on the shoulders, black and white tipping on the cuffs and Snapdragon in white, with white shorts. It nods to the 1977 FA Cup final, when United beat Liverpool 2-1 at Wembley. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000051-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Snapdragon",
+      "colours": "Red / White / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000052",
+    "title": "Manchester United 2026-27 Away Kids Kit",
+    "slug": "manchester-united-2026-27-away-kids-kit",
+    "description": "United's 2026-27 away kit in kids sizes, based on the 1986-88 third shirt. Royal blue with tonal wavy stripes that stand for the River Irwell, a blue, white and red V-neck, red stripes on the shoulders and the adidas trefoil, with matching blue shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000052-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Snapdragon",
+      "colours": "Royal Blue / Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000053",
+    "title": "Manchester United 2026-27 Third Kids Kit",
+    "slug": "manchester-united-2026-27-third-kids-kit",
+    "description": "United's 2026-27 third kit in kids sizes: ivory with a faint pattern of hand-drawn roses, a maroon collar and cuffs, dark green shoulder stripes, and the Red Devil and Snapdragon logo in maroon. Ivory shorts with maroon trim. Adidas says it's inspired by the youth culture and creative spirit of Greater Manchester. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000053-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Snapdragon",
+      "colours": "Ivory / Maroon / Green",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
