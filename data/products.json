@@ -14286,5 +14286,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000046",
+    "title": "Arsenal 2026-27 Goalkeeper Kids Kit (Grey)",
+    "slug": "arsenal-2026-27-goalkeeper-kids-kit-grey",
+    "description": "Arsenal's 2026-27 goalkeeper kit in kids sizes: light grey with black shoulder stripes, Emirates and the adidas logo in black, and a white maze-like pattern across the lower half. The matching shorts carry the same pattern and the cannon crest. A good pick for the keeper in the family who still wants to wear Arsenal. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000046-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2026-27",
+      "kit": "Goalkeeper",
+      "sponsor": "Emirates",
+      "colours": "Grey / Black / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000047",
+    "title": "Liverpool 2026-27 Goalkeeper Kids Kit (Green)",
+    "slug": "liverpool-2026-27-goalkeeper-kids-kit-green",
+    "description": "Liverpool's 2026-27 goalkeeper kit in kids sizes: deep green with a white shard pattern, white shoulder stripes, Standard Chartered in white and the Liver bird with 'L.F.C.', with plain green shorts. The shard pattern matches the 2026-27 home shirt, which we also have in kids sizes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000047-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "2026-27",
+      "kit": "Goalkeeper",
+      "sponsor": "Standard Chartered",
+      "colours": "Green / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000048",
+    "title": "Manchester United 2026-27 Goalkeeper Kids Kit (Black)",
+    "slug": "manchester-united-2026-27-goalkeeper-kids-kit-black",
+    "description": "Manchester United's 2026-27 goalkeeper kit in kids sizes: black with white shoulder stripes, Snapdragon in white and the club crest, with a charcoal maze-like pattern across the lower half. The black shorts carry the same pattern and crest. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000048-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2026-27",
+      "kit": "Goalkeeper",
+      "sponsor": "Snapdragon",
+      "colours": "Black / Charcoal / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
