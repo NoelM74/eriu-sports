@@ -13703,5 +13703,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000026",
+    "title": "Offaly GAA 2025-26 Alternative Jersey",
+    "slug": "offaly-gaa-2025-26-alternative-jersey",
+    "description": "Offaly's 2025-26 alternative jersey: white with green sleeves, green, white and gold striped cuffs and a gold and green ribbed crew neck. Gold stripes run down the sides at the back, and along the lower back, in faint script, is 'Esto Fidelis', Latin for 'be faithful', a nod to Offaly's name as the Faithful County. Glenisk is on the front and back, with Galvin Tullamore on the sleeves, and the Uíbh Fhailí crest sits on the chest. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000026-1.webp",
+      "/images/gaa-gear/900000026-2.webp",
+      "/images/gaa-gear/900000026-3.webp",
+      "/images/gaa-gear/900000026-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Offaly",
+      "season": "2025-26",
+      "kit": "Alternative",
+      "sponsor": "Glenisk",
+      "colours": "White / Green / Gold",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
