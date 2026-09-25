@@ -71,11 +71,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Kids Football Kits",
     intro:
-      "Shirt and shorts sets for kids aged 2 to 13, starting with Ireland's 2026 home, away and goalkeeper kits. €30 a kit, delivered in 8–14 days.",
-    seoTitle: "Kids Football Kits | Ireland 2026 Kids Kit",
+      "Shirt and shorts sets for kids aged 2 to 13: Ireland's 2026 kits, Arsenal's 2026-27 kits and retro Arsenal classics like the Bruised Banana. €30 a kit, delivered in 8–14 days.",
+    seoTitle: "Kids Football Kits | Ireland & Arsenal Kids Kits",
     seoDescription:
-      "Kids football kits with shirt and shorts, including Ireland's 2026 home, away and goalkeeper kits. Ages 2–13. €30 a kit, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland"],
+      "Kids football kits with shirt and shorts: Ireland 2026, Arsenal 2026-27 and retro Arsenal kids kits. Ages 2–13. €30 a kit, delivered to Ireland and the UK in 8–14 days.",
+    keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland", "Arsenal kids kit", "Arsenal kids kit 2026-27", "Bruised Banana kids kit", "retro Arsenal kids kit"],
     priceFrom: 30,
     featured: "ireland-2026-home-kids-kit",
   },

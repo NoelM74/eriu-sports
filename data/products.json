@@ -13866,5 +13866,155 @@
       "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000032",
+    "title": "Arsenal 1991-93 'Bruised Banana' Away Kids Kit",
+    "slug": "arsenal-1991-93-bruised-banana-away-kids-kit",
+    "description": "The Bruised Banana, in kids sizes. Yellow with navy zigzags and dashes, JVC in red, the adidas trefoil and a navy V-neck with red trim, with navy shorts. Plenty of people laughed at it in 1991. Now it's one of the best-loved away shirts Arsenal have had, and adidas based the 2026-27 away kit on it. It arrived the season after the 1990-91 title, the same autumn Ian Wright signed from Crystal Palace. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000032-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "1991-93",
+      "kit": "Away",
+      "sponsor": "JVC",
+      "colours": "Yellow / Navy / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000033",
+    "title": "Arsenal 1992-94 Home Kids Kit",
+    "slug": "arsenal-1992-94-home-kids-kit",
+    "description": "Arsenal's home kit from the first two Premier League seasons, in kids sizes: a red body, white sleeves with a navy flash on each shoulder, JVC across the chest and the old cannon crest, with white shorts. Two seasons, three cups. Arsenal beat Sheffield Wednesday in both the League Cup and FA Cup finals in 1993, then Alan Smith's volley beat Parma in Copenhagen to win the 1994 Cup Winners' Cup. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000033-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "1992-94",
+      "kit": "Home",
+      "sponsor": "JVC",
+      "colours": "Red / White / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000034",
+    "title": "Arsenal 2026-27 Home Kids Kit",
+    "slug": "arsenal-2026-27-home-kids-kit",
+    "description": "Arsenal's 2026-27 home kit, in kids sizes. It marks 20 years at the Emirates Stadium: a red body with white raglan sleeves, and a dark red zigzag pattern on the collar and cuffs taken from the stadium's architecture. White shorts with red and dark red trim. It's the first home kit since Arsenal won the 2025-26 Premier League, their first league title in 22 years. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000034-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Emirates",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000035",
+    "title": "Arsenal 2026-27 Away Kids Kit",
+    "slug": "arsenal-2026-27-away-kids-kit",
+    "description": "The Bruised Banana, flipped. Arsenal's 2026-27 away kit is navy with a tonal zigzag graphic taken from the 1991-93 away shirt, with Emirates, the adidas trefoil and the cannon in yellow, and a red and yellow collar and cuffs. Navy shorts with yellow stripes and a yellow cannon. We have the original 1991-93 kit in kids sizes too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000035-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Emirates",
+      "colours": "Navy / Yellow / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000036",
+    "title": "Arsenal 2026-27 Third Kids Kit",
+    "slug": "arsenal-2026-27-third-kids-kit",
+    "description": "Arsenal's 2026-27 third kit, in kids sizes. Pale yellow with navy stripes on the shoulders, a navy cannon and Emirates lettering, and a navy and burgundy collar and cuffs. The navy shorts carry a tonal lightning-bolt graphic, a nod to Arsenal's away kits of the 1990s. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000036-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Emirates",
+      "colours": "Pale Yellow / Navy / Burgundy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
