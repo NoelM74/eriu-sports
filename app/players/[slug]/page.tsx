@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { DELIVERY } from '@/lib/collections';
-import { getPlayers, getPlayerBySlug, getProductsByPlayer, type Product } from '@/lib/products';
+import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product } from '@/lib/products';
 import { PLAYER_BIOS } from '@/lib/players';
 
 const SITE = 'https://eriusports.com';
@@ -120,7 +120,7 @@ export default async function PlayerPage({ params }: Props) {
             )}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {g.items.map((product, i) => (
-                <ProductCard key={product.id} product={product} priority={gi === 0 && i < 4} />
+                <ProductCard key={product.id} product={toCard(product)} priority={gi === 0 && i < 4} />
               ))}
             </div>
           </section>

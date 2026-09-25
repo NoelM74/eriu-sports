@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { POSTS, getPost, readingMinutes, formatDate } from '@/lib/blog';
-import { getProductBySlug, type Product } from '@/lib/products';
+import { getProductBySlug, toCard, type Product } from '@/lib/products';
 
 const SITE = 'https://eriusports.com';
 
@@ -188,13 +188,13 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {products.slice(0, 4).map((p) => (
-                <ProductCard key={p.id} product={p} />
+                <ProductCard key={p.id} product={toCard(p)} />
               ))}
             </div>
             {products.length > 4 && (
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
                 {products.slice(4).map((p) => (
-                  <ProductCard key={p.id} product={p} />
+                  <ProductCard key={p.id} product={toCard(p)} />
                 ))}
               </div>
             )}

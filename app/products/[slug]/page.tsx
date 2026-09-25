@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getProductBySlug, getRelatedProducts, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
 import { CATEGORIES, getCollectionBySlug, DELIVERY } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
@@ -250,7 +250,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {related.map((p) => (
-                <ProductCard key={p.id} product={p} />
+                <ProductCard key={p.id} product={toCard(p)} />
               ))}
             </div>
           </section>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getNewIn } from "@/lib/products";
+import { getNewIn, toCard } from "@/lib/products";
 import ShuffledGrid from "@/components/catalog/ShuffledGrid";
 
 export default function LatestArrivals() {
@@ -21,7 +21,7 @@ export default function LatestArrivals() {
             All football shirts →
           </Link>
         </div>
-        <ShuffledGrid products={pool} limit={8} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
+        <ShuffledGrid products={pool.map(toCard)} limit={8} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
       </div>
     </section>
   );

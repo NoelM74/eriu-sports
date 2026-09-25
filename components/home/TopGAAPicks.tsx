@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getProductsByCollectionSlug } from "@/lib/products";
+import { getProductsByCollectionSlug, toCard } from "@/lib/products";
 import ShuffledGrid from "@/components/catalog/ShuffledGrid";
 
 export default function TopGAAPicks() {
@@ -31,7 +31,7 @@ export default function TopGAAPicks() {
             </Link>
           </div>
         </div>
-        <ShuffledGrid products={picks} limit={4} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
+        <ShuffledGrid products={picks.map(toCard)} limit={4} className="grid grid-cols-2 lg:grid-cols-4 gap-4" />
       </div>
     </section>
   );

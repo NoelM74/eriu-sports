@@ -130,6 +130,16 @@ export const products: Product[] = (productsData as RawProduct[]).map((p) => {
   };
 });
 
+/**
+ * Just what a product card (and the bag) needs. Cards are client components, so
+ * everything passed to them is sent to the browser; long descriptions and extra
+ * photos across hundreds of cards made pages heavy enough to hit Worker limits.
+ */
+export function toCard(p: Product): Product {
+  const { sizeGuide: _sizeGuide, ...rest } = p;
+  return { ...rest, description: '', images: p.images.slice(0, 1), details: { colours: p.details.colours } };
+}
+
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
 }

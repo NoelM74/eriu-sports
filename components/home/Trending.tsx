@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getProductBySlug, type Product } from "@/lib/products";
+import { getProductBySlug, toCard, type Product } from "@/lib/products";
 import ProductCard from "@/components/catalog/ProductCard";
 
 const PICKS = [
@@ -34,7 +34,7 @@ export default function Trending() {
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {picks.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={toCard(product)} />
           ))}
         </div>
       </div>

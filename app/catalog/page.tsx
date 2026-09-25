@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getProductsByCategory, getClubs, searchProducts } from '@/lib/products';
+import { getProductsByCategory, getClubs, searchProducts, toCard } from '@/lib/products';
 import { CATEGORIES, COLLECTIONS, DELIVERY, type CategoryKey } from '@/lib/collections';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import CatalogFilters from '@/components/catalog/CatalogFilters';
@@ -120,7 +120,7 @@ export default async function CatalogPage({ searchParams }: { searchParams: Sear
             </p>
           </div>
         )}
-        <ShuffledGrid key={`${key}-${club?.slug ?? ''}-${query}`} products={products} priorityCount={4} />
+        <ShuffledGrid key={`${key}-${club?.slug ?? ''}-${query}`} products={products.map(toCard)} priorityCount={4} pageSize={48} />
       </section>
     </div>
   );

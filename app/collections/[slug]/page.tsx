@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import ClubPicker from '@/components/catalog/ClubPicker';
 import { COLLECTIONS, getCollectionBySlug, CATEGORIES, DELIVERY } from '@/lib/collections';
-import { getProductsByCollectionSlug, type ClubSummary } from '@/lib/products';
+import { getProductsByCollectionSlug, toCard, type ClubSummary } from '@/lib/products';
 
 const SITE = 'https://eriusports.com';
 
@@ -117,7 +117,7 @@ export default async function CollectionPage({ params }: Props) {
           <ClubPicker clubs={clubs} label={c.category === 'gaa' ? 'Shop by county' : 'Shop by club'} />
         )}
         <p className="text-sm text-gray-500 mb-6">{items.length} {items.length === 1 ? 'item' : 'items'}</p>
-        <ShuffledGrid products={items} priorityCount={4} />
+        <ShuffledGrid products={items.map(toCard)} priorityCount={4} />
       </section>
 
       <section className="border-t border-gray-100 bg-gray-50">
