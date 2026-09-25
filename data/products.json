@@ -13727,5 +13727,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000027",
+    "title": "Cavan GAA 2025-26 Home Jersey",
+    "slug": "cavan-gaa-2025-26-home-jersey",
+    "description": "Cavan's 2025-26 home jersey in deep royal blue, with lighter blue wave lines running down the body, a white and blue ribbed crew neck and three white stripes on each side at the back. Kingspan's gold lion is on the front, and on the back a smaller gold lion sits above 'An Cabhán' in script. Wilton Recycling and O'Reilly Precast are on the sleeves, and the An Cabhán crest is on the chest. Cavan have won five All-Ireland football titles, including the 1947 final against Kerry at the Polo Grounds in New York. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000027-1.webp",
+      "/images/gaa-gear/900000027-2.webp",
+      "/images/gaa-gear/900000027-3.webp",
+      "/images/gaa-gear/900000027-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Cavan",
+      "season": "2025-26",
+      "kit": "Home",
+      "sponsor": "Kingspan",
+      "colours": "Royal Blue / White",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
