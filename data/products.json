@@ -13751,5 +13751,29 @@
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000028",
+    "title": "Kildare GAA 2025-26 Home Jersey",
+    "slug": "kildare-gaa-2025-26-home-jersey",
+    "description": "Kildare's 2025-26 home jersey, all white for the Lilywhites, with a pale grey angular print, thin marine piping on the collar and cuffs, and three marine stripes on each side at the back. Brady Family of Timahoe is on the front and back, with National Broadband Ireland and Westin Homes on the sleeves, and the Cill Dara crest is on the chest. Kildare have won four All-Ireland football titles: 1905, 1919, 1927 and 1928. Player fit, breathable and quick-drying.",
+    "price": 29.95,
+    "images": [
+      "/images/gaa-gear/900000028-1.webp",
+      "/images/gaa-gear/900000028-2.webp",
+      "/images/gaa-gear/900000028-3.webp",
+      "/images/gaa-gear/900000028-4.webp"
+    ],
+    "collection": "GAA Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Kildare",
+      "season": "2025-26",
+      "kit": "Home",
+      "sponsor": "Brady Family",
+      "colours": "White / Marine",
+      "fit": "Player fit, snug through the body. Go up a size for a looser fit",
+      "condition": "New"
+    }
   }
 ]
