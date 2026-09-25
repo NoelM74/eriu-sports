@@ -6,6 +6,7 @@ import { Product } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
 import { useCurrency } from "@/lib/currency-context";
 import Badge from "@/components/ui/Badge";
+import { ageFor } from "@/lib/size-chart";
 
 interface ProductCardProps {
   product: Product;
@@ -48,6 +49,7 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
             <div className="flex w-full h-full">
               {product.sizes.map((size) => {
                 const soldOut = product.soldOut.includes(size);
+                const age = ageFor(product, size);
                 return (
                   <button
                     key={size}
@@ -56,15 +58,15 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
                       e.preventDefault();
                       if (!soldOut) addItem(product, size);
                     }}
-                    aria-label={soldOut ? `Size ${size} sold out` : `Add ${product.title}, size ${size}, to bag`}
+                    aria-label={soldOut ? `Size ${size} sold out` : `Add ${product.title}, ${age ? `age ${age}` : `size ${size}`}, to bag`}
                     title={soldOut ? 'Sold out' : undefined}
-                    className={`flex-1 text-xs font-bold uppercase tracking-widest py-3 transition-colors border-r border-[#133d2d] last:border-r-0 ${
+                    className={`flex-1 text-xs font-bold uppercase whitespace-nowrap ${age ? 'tracking-tight' : 'tracking-widest'} py-3 transition-colors border-r border-[#133d2d] last:border-r-0 ${
                       soldOut
                         ? 'bg-[#1A533E]/70 text-white/40 line-through cursor-not-allowed'
                         : 'bg-[#1A533E]/95 text-white hover:bg-[#133d2d]'
                     }`}
                   >
-                    {size}
+                    {age ?? size}
                   </button>
                 );
               })}

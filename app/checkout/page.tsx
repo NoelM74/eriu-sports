@@ -8,6 +8,7 @@ import { useCurrency } from "@/lib/currency-context";
 import StripePaymentForm from "@/components/checkout/StripePaymentForm";
 import PayPalPaymentForm from "@/components/checkout/PayPalPaymentForm";
 import { calculateShipping } from "@/lib/shipping";
+import { orderSize, sizeLabel } from "@/lib/size-chart";
 
 interface FormFields {
   email: string;
@@ -453,7 +454,7 @@ export default function CheckoutPage() {
                             country: fields.country,
                           },
                           items: items
-                            .map((i) => `${i.quantity}x ${i.product.title} (${i.size})`)
+                            .map((i) => `${i.quantity}x ${i.product.title} (${orderSize(i.product, i.size)})`)
                             .join("; "),
                         }}
                       />
@@ -472,11 +473,11 @@ export default function CheckoutPage() {
                             country: fields.country,
                           },
                           items: items
-                            .map((i) => `${i.quantity}x ${i.product.title} (${i.size})`)
+                            .map((i) => `${i.quantity}x ${i.product.title} (${orderSize(i.product, i.size)})`)
                             .join("; "),
                           lines: items.map((i) => ({
                             title: i.product.title,
-                            size: i.size,
+                            size: orderSize(i.product, i.size),
                             quantity: i.quantity,
                           })),
                         }}
@@ -519,7 +520,7 @@ export default function CheckoutPage() {
                         </span>
                       </div>
                       <p className="text-xs text-gray-500 mt-1">
-                        Size: {item.size} • Qty: {item.quantity}
+                        {sizeLabel(item.product, item.size)} • Qty: {item.quantity}
                       </p>
                     </div>
                   </li>

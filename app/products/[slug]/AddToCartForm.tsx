@@ -6,7 +6,7 @@ import { useCart } from '@/lib/cart-context';
 import { useCurrency } from '@/lib/currency-context';
 import { Product } from '@/lib/products';
 import SizeChart from '@/components/SizeChart';
-import { CHARTS, chartFor } from '@/lib/size-chart';
+import { CHARTS, ageFor, chartFor } from '@/lib/size-chart';
 
 interface AddToCartFormProps {
     product: Product;
@@ -104,16 +104,19 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                     </button>
                 </div>
 
-                <div className={`mt-4 grid ${sizes.length > 5 ? 'grid-cols-6 gap-2' : sizes.length > 4 ? 'grid-cols-5 gap-3' : 'grid-cols-4 gap-3'}`}>
+                <div className={`mt-4 grid ${sizes.length > 6 ? 'grid-cols-4 sm:grid-cols-7 gap-2' : sizes.length > 5 ? 'grid-cols-6 gap-2' : sizes.length > 4 ? 'grid-cols-5 gap-3' : 'grid-cols-4 gap-3'}`}>
                     {sizes.map((size) => {
                         const soldOut = product.soldOut.includes(size);
+                        // Kids kits show the age instead of the size code.
+                        const age = ageFor(product, size);
+                        const name = age ? `Age ${age} (size ${size})` : size;
                         return (
                             <button
                                 key={size}
                                 type="button"
                                 disabled={soldOut}
                                 onClick={() => setSelectedSize(size)}
-                                aria-label={soldOut ? `${size}, sold out` : size}
+                                aria-label={soldOut ? `${name}, sold out` : name}
                                 title={soldOut ? 'Sold out' : undefined}
                                 className={`group relative flex items-center justify-center rounded-sm border px-2 py-4 text-sm font-medium uppercase transition-all ${soldOut
                                     ? 'bg-zinc-50 border-zinc-200 text-zinc-300 line-through cursor-not-allowed'
@@ -122,7 +125,14 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                                     : 'bg-white border-zinc-200 text-zinc-900 hover:bg-zinc-50'
                                     }`}
                             >
-                                {size}
+                                {age ? (
+                                    <span className="flex flex-col items-center leading-tight">
+                                        <span>{age}</span>
+                                        <span className="text-[10px] normal-case opacity-70">years</span>
+                                    </span>
+                                ) : (
+                                    size
+                                )}
                             </button>
                         );
                     })}

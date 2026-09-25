@@ -104,6 +104,28 @@ export function chartFor(product: Pick<Product, 'category' | 'title'>): ChartKey
   return product.category;
 }
 
+/** Kids sizes read better as ages: "XXS" becomes "2–3". Null for adult sizes. */
+export function ageFor(product: Pick<Product, 'category' | 'title'>, size: string): string | null {
+  const chart = CHARTS[chartFor(product)];
+  const row = chart.rows.find((r) => r.unit === 'years');
+  const i = chart.sizes.indexOf(size);
+  if (!row || i < 0) return null;
+  const v = row.values[i];
+  return Array.isArray(v) ? `${v[0]}–${v[1]}` : String(v);
+}
+
+/** How to show a chosen size in the bag and at checkout: "Age 2–3 (XXS)" for kids, "Size M" otherwise. */
+export function sizeLabel(product: Pick<Product, 'category' | 'title'>, size: string): string {
+  const age = ageFor(product, size);
+  return age ? `Age ${age} (${size})` : `Size ${size}`;
+}
+
+/** Size as written on an order, so kids orders carry the age too: "XXS, age 2–3". */
+export function orderSize(product: Pick<Product, 'category' | 'title'>, size: string): string {
+  const age = ageFor(product, size);
+  return age ? `${size}, age ${age}` : size;
+}
+
 const inches = (cm: number) => (cm / 2.54).toFixed(1).replace(/\.0$/, '');
 const feet = (cm: number) => {
   const total = Math.round(cm / 2.54);

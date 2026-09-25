@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useCart } from "@/lib/cart-context";
 import { useCurrency } from "@/lib/currency-context";
 import { calculateShipping } from "@/lib/shipping";
+import { sizeLabel } from "@/lib/size-chart";
 
 export default function CartPage() {
   const { items, cartTotal, removeItem, updateQty, clearCart } = useCart();
@@ -68,7 +69,7 @@ export default function CartPage() {
                           </h3>
                         </div>
                         <div className="mt-1 flex text-sm">
-                          <p className="text-gray-500">Size {item.size}</p>
+                          <p className="text-gray-500">{sizeLabel(item.product, item.size)}</p>
                         </div>
                         <p className="mt-1 text-sm font-medium text-gray-900">{formatPrice(convertedPrice)}</p>
                       </div>
