@@ -38,7 +38,7 @@ export const POSTS: BlogPost[] = [
     seoTitle: "Bohemians Jerseys: Fontaines D.C., Oasis, Kneecap & Guinness",
     description:
       "How a Phibsborough football club ended up with Fontaines D.C., Oasis and Kneecap on its shirts. The story behind each Bohemians jersey, from Bob Marley to Guinness, and how they fit.",
-    category: "Ireland Classics",
+    category: "Irish Classics",
     datePublished: "2026-09-24",
     heroImage: "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
     heroAlt: "Bohemians x Oasis 2025 FAI Cup jersey in sky blue with the Oasis logo",
@@ -632,7 +632,7 @@ export const POSTS: BlogPost[] = [
     seoTitle: "Cork City 1988/89 Jersey and the 1989 FAI Cup Final",
     description:
       "Cork City reached their first FAI Cup final in 1989, five years after they were founded, and took Derry City to a replay. The story of the white, green and red Guinness jersey from that season.",
-    category: "Ireland Classics",
+    category: "Irish Classics",
     datePublished: "2026-04-15",
     dateModified: "2026-09-24",
     heroImage: "/images/blog/cork-fai-cup-finalists-1989.webp",
@@ -673,7 +673,7 @@ export const POSTS: BlogPost[] = [
       { q: "Who won the 1989 FAI Cup final?", a: "Derry City, 1-0 in a replay against Cork City, with Felix Healy scoring. The first game ended 0-0." },
     ],
     products: ["cork-city-1988-89-retro-jersey", "ireland-euro-88-home-jersey", "ireland-1990-italia-90-world"],
-    cta: { label: "Shop retro Ireland jerseys", href: "/collections/ireland-classics" },
+    cta: { label: "Shop retro Irish shirts", href: "/collections/ireland-classics" },
   },
   {
     slug: "ireland-1990-italia-90",
@@ -681,7 +681,7 @@ export const POSTS: BlogPost[] = [
     seoTitle: "Ireland Italia 90 Jersey: The Story of the Green Shirt",
     description:
       "Sheedy's equaliser against England, Bonner's save and O'Leary's penalty against Romania, a meeting with the Pope and a quarter-final in Rome. The story of Ireland's Italia 90 jersey.",
-    category: "Ireland Classics",
+    category: "Irish Classics",
     datePublished: "2026-04-14",
     dateModified: "2026-09-24",
     heroImage: "/images/blog/ireland-england-italia-90-goal.webp",
@@ -730,7 +730,7 @@ export const POSTS: BlogPost[] = [
       "ireland-euro-88-home-jersey",
       "ireland-1994-world-cup-home",
     ],
-    cta: { label: "Shop retro Ireland jerseys", href: "/collections/ireland-classics" },
+    cta: { label: "Shop retro Irish shirts", href: "/collections/ireland-classics" },
   },
   {
     slug: "liverpool-95-96-carlsberg",

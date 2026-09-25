@@ -35,7 +35,7 @@ export default function Footer() {
         <div>
           <h3 className="text-xs font-bold uppercase tracking-widest text-[#1C7C83] mb-4">Shop</h3>
           <ul className="space-y-3 text-sm text-white/60">
-            <li><Link href="/collections/ireland-classics" className="hover:text-white transition-colors">Retro Ireland Jerseys</Link></li>
+            <li><Link href="/collections/ireland-classics" className="hover:text-white transition-colors">Retro Irish Shirts</Link></li>
             <li><Link href="/collections/premier-league-classics" className="hover:text-white transition-colors">Premier League Classics</Link></li>
             <li><Link href="/collections/european-world-classics" className="hover:text-white transition-colors">European &amp; World Classics</Link></li>
             <li><Link href="/collections/kids-football-kits" className="hover:text-white transition-colors">Kids Football Kits</Link></li>

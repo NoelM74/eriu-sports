@@ -26,15 +26,15 @@ export const DELIVERY = "8–14 days";
 export const COLLECTIONS: CollectionDef[] = [
   {
     slug: "ireland-classics",
-    name: "Ireland Classics",
+    name: "Irish Classics",
     category: "football",
-    h1: "Retro Ireland Jerseys",
+    h1: "Retro Irish Shirts",
     intro:
-      "The Ireland jerseys everyone remembers: Euro 88, Italia 90, USA 94 and the famous orange away kit. €25 each, delivered in 8–14 days.",
-    seoTitle: "Retro Ireland Jerseys | Italia 90 & USA 94",
+      "Ireland shirts everyone remembers from Euro 88, Italia 90 and USA 94, plus League of Ireland shirts from Bohemians and Cork City. €25 each, delivered in 8–14 days.",
+    seoTitle: "Retro Irish Shirts | Ireland & League of Ireland",
     seoDescription:
-      "Retro Republic of Ireland jerseys from Euro 88, Italia 90 and USA 94. €25 each, delivered to Ireland and the UK in 8–14 days.",
-    keywords: ["retro Ireland jersey", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "Ireland football jersey"],
+      "Retro Ireland jerseys from Euro 88, Italia 90 and USA 94, plus League of Ireland shirts from Bohemians and Cork City. €25 each, delivered to Ireland and the UK in 8–14 days.",
+    keywords: ["retro Irish shirts", "retro Ireland jersey", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Cork City jersey"],
     priceFrom: 25,
     featured: "ireland-1990-italia-90-world",
   },
@@ -71,12 +71,12 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Kids Football Kits",
     intro:
-      "Shirt and shorts sets for kids aged 2 to 13, starting with Ireland's 2026 home, away and goalkeeper kits. €25 a kit, delivered in 8–14 days.",
+      "Shirt and shorts sets for kids aged 2 to 13, starting with Ireland's 2026 home, away and goalkeeper kits. €30 a kit, delivered in 8–14 days.",
     seoTitle: "Kids Football Kits | Ireland 2026 Kids Kit",
     seoDescription:
-      "Kids football kits with shirt and shorts, including Ireland's 2026 home, away and goalkeeper kits. Ages 2–13. €25 a kit, delivered to Ireland and the UK in 8–14 days.",
+      "Kids football kits with shirt and shorts, including Ireland's 2026 home, away and goalkeeper kits. Ages 2–13. €30 a kit, delivered to Ireland and the UK in 8–14 days.",
     keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland"],
-    priceFrom: 25,
+    priceFrom: 30,
     featured: "ireland-2026-home-kids-kit",
   },
   {

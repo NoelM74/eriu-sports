@@ -12,7 +12,7 @@ const MENU: { label: string; href: string; children?: { label: string; href: str
     href: "/catalog?category=football",
     children: [
       { label: "Shop by Club", href: "/clubs" },
-      { label: "Retro Ireland Jerseys", href: "/collections/ireland-classics" },
+      { label: "Retro Irish Shirts", href: "/collections/ireland-classics" },
       { label: "Premier League Classics", href: "/collections/premier-league-classics" },
       { label: "European & World Classics", href: "/collections/european-world-classics" },
       { label: "Kids Football Kits", href: "/collections/kids-football-kits" },
