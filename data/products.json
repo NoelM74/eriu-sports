@@ -718,7 +718,8 @@
       "season": "1989-91",
       "kit": "Away",
       "sponsor": "Candy",
-      "condition": "New"
+      "condition": "New",
+      "colours": "Silver / Red"
     }
   },
   {
@@ -791,7 +792,8 @@
       "team": "Liverpool FC",
       "season": "2001-03",
       "kit": "Away",
-      "condition": "New"
+      "condition": "New",
+      "colours": "White / Navy"
     }
   },
   {
@@ -1118,7 +1120,8 @@
       "season": "Current",
       "kit": "Away",
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
-      "condition": "New"
+      "condition": "New",
+      "colours": "Maroon / White"
     }
   },
   {
