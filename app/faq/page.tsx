@@ -31,6 +31,10 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
         q: 'How much is delivery?',
         a: 'A flat €5 anywhere in the world. It is free on orders over €49.',
       },
+      {
+        q: 'Will I have to pay customs charges?',
+        a: 'No. Orders ship from our warehouse in China and are sent duties paid, so there are no import charges or taxes to pay on delivery.',
+      },
     ],
   },
   {
@@ -76,7 +80,7 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
     items: [
       {
         q: 'Can I return a shirt?',
-        a: 'Yes. You can return unworn items with the tags on within 30 days of receiving it for a full refund.',
+        a: 'Yes. You can return unworn items with the tags on within 30 days of receiving them. You pay the return postage, unless the item is faulty or not what you ordered.',
       },
       {
         q: 'What if my order arrives damaged?',

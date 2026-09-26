@@ -44,7 +44,7 @@ const REASONS: { title: string; lead: string; body: React.ReactNode }[] = [
     lead: 'Your satisfaction is our priority.',
     body: (
       <>
-        Not happy? Return any unworn item with the tags on within 30 days for a full refund, or swap it for another
+        Not happy? Return any unworn item with the tags on within 30 days for a refund, or swap it for another
         size.{' '}
         <Link href="/shipping-returns" className="text-[#1C7C83] font-semibold hover:underline">How returns work</Link>
       </>

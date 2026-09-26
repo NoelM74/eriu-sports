@@ -47,7 +47,11 @@ export default function ShippingReturnsPage() {
               Email us before you order and we&apos;ll give you an idea for your country.
             </Card>
             <Card title="Tracking">
-              You get a tracking link once your order is on its way, so you can follow it to your door.
+              Orders ship from our warehouse in China. You get a tracking link once your order is on its way, so you can
+              follow it to your door.
+            </Card>
+            <Card title="No customs charges">
+              Every order is sent duties paid, so there are no import charges or taxes to pay when it arrives.
             </Card>
           </div>
         </section>
@@ -56,15 +60,15 @@ export default function ShippingReturnsPage() {
           <h2 className="text-2xl font-bold text-[#0F2131] mb-5">Returns</h2>
           <div className="space-y-4">
             <Card title="30-day returns">
-              Not happy? Return any unworn item with the tags still on within 30 days of receiving it for a full refund.
+              Not happy? Return any unworn item with the tags still on within 30 days of receiving it for a refund. You pay the return postage, unless the item is faulty or not what you ordered.
             </Card>
             <Card title="How to return">
               <ol className="list-decimal pl-5 space-y-1">
                 <li>
                   Email <a href={`mailto:${EMAIL}`} className="text-[#1C7C83] font-semibold hover:underline">{EMAIL}</a> with your order reference.
                 </li>
-                <li>We will send you return instructions.</li>
-                <li>Pack the shirt securely and send it back.</li>
+                <li>We will send you the return address.</li>
+                <li>Pack the shirt securely and send it back, ideally by a tracked service.</li>
                 <li>Once it arrives and is checked, we refund you to your original payment method.</li>
               </ol>
             </Card>
