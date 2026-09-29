@@ -7,26 +7,36 @@ const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ?? "";
 
 export interface PayPalCustomerDetails {
   email: string;
+  phone: string;
   name: string;
   address: {
     line1: string;
+    line2: string;
     city: string;
+    region: string;
     postal_code: string;
     country: string;
   };
-  items: string;
-  /** Structured lines, used for the order record + confirmation emails. */
-  lines?: { title: string; size: string; quantity: number }[];
+}
+
+/** What's in the bag. The server prices it from the catalogue. */
+export interface BasketLine {
+  slug: string;
+  size: string;
+  quantity: number;
 }
 
 export default function PayPalPaymentForm({
   amount,
+  lines,
   onSuccess,
   customer,
 }: {
+  /** The total shown on the page. The server checks it matches its own price. */
   amount: number;
-  onSuccess: (reference?: string) => void;
-  customer?: PayPalCustomerDetails;
+  lines: BasketLine[];
+  onSuccess: (reference?: string, status?: string) => void;
+  customer: PayPalCustomerDetails;
 }) {
   const [error, setError] = useState<string | null>(null);
 
@@ -47,7 +57,7 @@ export default function PayPalPaymentForm({
               const response = await fetch("/api/paypal/create-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ amount, ...(customer ?? {}) }),
+                body: JSON.stringify({ lines, expectedTotal: amount, ...customer }),
               });
 
               const orderData = await response.json();
@@ -72,29 +82,20 @@ export default function PayPalPaymentForm({
               const response = await fetch("/api/paypal/capture-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                  orderID: data.orderID,
-                  items: customer?.lines ?? [],
-                  email: customer?.email ?? "",
-                }),
+                body: JSON.stringify({ orderID: data.orderID }),
               });
 
-              const orderData = await response.json();
+              const orderData = await response.json().catch(() => ({}));
 
-              if (!response.ok) {
-                throw new Error(orderData.error || "Payment capture failed.");
-              }
-
-              const errorDetail = orderData?.details?.[0];
-              if (errorDetail?.issue === "INSTRUMENT_DECLINED") {
+              // Card declined: PayPal lets the customer pick another card or funding source.
+              if (orderData?.details?.[0]?.issue === "INSTRUMENT_DECLINED") {
                 return actions.restart();
-              } else if (errorDetail) {
-                throw new Error(
-                  errorDetail.description || "Payment could not be completed."
-                );
+              }
+              if (!response.ok) {
+                throw new Error(orderData.error || "Payment could not be completed.");
               }
 
-              onSuccess(orderData?.reference);
+              onSuccess(orderData?.reference, orderData?.status);
             } catch (err: unknown) {
               const message =
                 err instanceof Error ? err.message : "Payment failed. Please try again.";

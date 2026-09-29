@@ -1,3 +1,12 @@
+/**
+ * PayPal settings, all set in Cloudflare (Workers → eriu-sports → Settings):
+ *   PAYPAL_API_URL        - variable: https://api-m.paypal.com for live payments
+ *   PAYPAL_CLIENT_ID      - variable: the live REST app's client ID
+ *   PAYPAL_CLIENT_SECRET  - secret: the live REST app's secret
+ *   PAYPAL_WEBHOOK_ID     - secret: ID of the webhook pointing at /api/paypal/webhook
+ * The browser button also needs NEXT_PUBLIC_PAYPAL_CLIENT_ID as a *build* variable,
+ * because Next.js bakes it into the page when the site is built.
+ */
 export const PAYPAL_API =
   process.env.PAYPAL_API_URL || "https://api-m.sandbox.paypal.com";
 

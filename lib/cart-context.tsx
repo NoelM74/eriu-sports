@@ -25,7 +25,16 @@ type CartAction =
   | { type: "REMOVE_ITEM"; productId: string; size: string }
   | { type: "UPDATE_QTY"; productId: string; size: string; quantity: number }
   | { type: "CLEAR_CART" }
-  | { type: "HYDRATE"; items: CartItem[] };
+  | { type: "HYDRATE"; items: CartItem[] }
+  | { type: "REFRESH"; catalogue: Record<string, CataloguePrice> };
+
+/** Current price and stock for one product, from /cart-prices.json. */
+interface CataloguePrice {
+  price: number;
+  sizes: string[];
+  soldOut: string[];
+  title: string;
+}
 
 function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
@@ -71,6 +80,15 @@ function cartReducer(state: CartState, action: CartAction): CartState {
       return { items: [] };
     case "HYDRATE":
       return { items: action.items };
+    case "REFRESH":
+      // Use today's prices and stock. Drop lines for products or sizes that no longer exist.
+      return {
+        items: state.items.flatMap((i) => {
+          const current = action.catalogue[i.product.slug];
+          if (!current || !current.sizes.includes(i.size)) return [];
+          return [{ ...i, product: { ...i.product, price: current.price, title: current.title, name: current.title, sizes: current.sizes, soldOut: current.soldOut } }];
+        }),
+      };
     default:
       return state;
   }
@@ -117,6 +135,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
     }
     setHydrated(true);
   }, []);
+
+  // Baskets can be days old: refresh prices and stock from the live catalogue.
+  useEffect(() => {
+    if (!hydrated) return;
+    fetch("/cart-prices.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((catalogue) => catalogue && dispatch({ type: "REFRESH", catalogue }))
+      .catch(() => {});
+  }, [hydrated]);
 
   // Persist cart to localStorage whenever it changes (after hydration)
   useEffect(() => {

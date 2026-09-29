@@ -9,13 +9,17 @@ import StripePaymentForm from "@/components/checkout/StripePaymentForm";
 import PayPalPaymentForm from "@/components/checkout/PayPalPaymentForm";
 import { calculateShipping } from "@/lib/shipping";
 import { orderSize, sizeLabel } from "@/lib/size-chart";
+import { REGION_REQUIRED } from "@/lib/regions";
 
 interface FormFields {
   email: string;
   firstName: string;
   lastName: string;
+  phone: string;
   address: string;
+  address2: string;
   city: string;
+  region: string;
   postalCode: string;
   country: string;
 }
@@ -24,8 +28,11 @@ interface FormErrors {
   email?: string;
   firstName?: string;
   lastName?: string;
+  phone?: string;
   address?: string;
+  address2?: string;
   city?: string;
+  region?: string;
   postalCode?: string;
   country?: string;
 }
@@ -61,7 +68,11 @@ function validateForm(fields: FormFields): FormErrors {
   }
   if (!fields.firstName.trim()) errors.firstName = "First name is required.";
   if (!fields.lastName.trim()) errors.lastName = "Last name is required.";
+  if (fields.phone.replace(/[^\d]/g, "").length < 6) errors.phone = "A phone number is needed for the courier.";
   if (!fields.address.trim()) errors.address = "Address is required.";
+  if (REGION_REQUIRED.includes(fields.country) && !fields.region.trim()) {
+    errors.region = "State, province or county is required for this country.";
+  }
   if (!fields.city.trim()) errors.city = "City is required.";
   if (!fields.postalCode.trim()) errors.postalCode = "Postal code is required.";
   if (!fields.country.trim()) errors.country = "Country is required.";
@@ -73,6 +84,7 @@ export default function CheckoutPage() {
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [orderRef, setOrderRef] = useState<string | null>(null);
+  const [paymentPending, setPaymentPending] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">(
     CARD_PAYMENTS_ENABLED ? "stripe" : "paypal"
   );
@@ -83,8 +95,11 @@ export default function CheckoutPage() {
     email: "",
     firstName: "",
     lastName: "",
+    phone: "",
     address: "",
+    address2: "",
     city: "",
+    region: "",
     postalCode: "",
     country: "IE",
   });
@@ -109,8 +124,9 @@ export default function CheckoutPage() {
     );
   }
 
-  const handleSuccess = (reference?: string) => {
+  const handleSuccess = (reference?: string, status?: string) => {
     if (reference) setOrderRef(reference);
+    setPaymentPending(status === "PENDING");
     clearCart();
     setIsSuccess(true);
   };
@@ -135,6 +151,12 @@ export default function CheckoutPage() {
           Thanks for your order. Orders to Ireland and the UK arrive within 8–14 days; times to other countries vary. PayPal will email you a
           receipt. Please keep your order reference handy.
         </p>
+        {paymentPending && (
+          <p className="text-amber-700 bg-amber-50 border border-amber-200 p-4 mb-8 max-w-md text-center text-sm">
+            PayPal is still processing your payment. We&apos;ll send your order as soon as it clears, and PayPal will email you
+            when it does.
+          </p>
+        )}
         <Link
           href="/catalog"
           className="bg-[#0F2131] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#0A7A44] transition-colors"
@@ -302,6 +324,24 @@ export default function CheckoutPage() {
                       <p className="mt-1 text-xs text-red-500">{errors.address}</p>
                     )}
                   </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="address2" className="block text-sm font-medium text-gray-700">
+                      Apartment, unit, etc. <span className="text-gray-400 font-normal">(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="address2"
+                      name="address2"
+                      value={fields.address2}
+                      onChange={handleField}
+                      disabled={formReady}
+                      className={inputClass("address2")}
+                      autoComplete="address-line2"
+                    />
+                    {formSubmitted && errors.address2 && (
+                      <p className="mt-1 text-xs text-red-500">{errors.address2}</p>
+                    )}
+                  </div>
                   <div>
                     <label htmlFor="city" className="block text-sm font-medium text-gray-700">
                       City
@@ -359,6 +399,42 @@ export default function CheckoutPage() {
                     </select>
                     {formSubmitted && errors.country && (
                       <p className="mt-1 text-xs text-red-500">{errors.country}</p>
+                    )}
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="region" className="block text-sm font-medium text-gray-700">
+                      {REGION_REQUIRED.includes(fields.country) ? "State, province or county" : <>County or region <span className="text-gray-400 font-normal">(optional)</span></>}
+                    </label>
+                    <input
+                      type="text"
+                      id="region"
+                      name="region"
+                      value={fields.region}
+                      onChange={handleField}
+                      disabled={formReady}
+                      className={inputClass("region")}
+                      autoComplete="address-level1"
+                    />
+                    {formSubmitted && errors.region && (
+                      <p className="mt-1 text-xs text-red-500">{errors.region}</p>
+                    )}
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                      Phone
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={fields.phone}
+                      onChange={handleField}
+                      disabled={formReady}
+                      className={inputClass("phone")}
+                      autoComplete="tel"
+                    />
+                    {formSubmitted && errors.phone && (
+                      <p className="mt-1 text-xs text-red-500">{errors.phone}</p>
                     )}
                   </div>
                 </div>
@@ -459,24 +535,20 @@ export default function CheckoutPage() {
                     {paymentMethod === "paypal" && (
                       <PayPalPaymentForm
                         amount={orderTotal}
+                        lines={items.map((i) => ({ slug: i.product.slug, size: i.size, quantity: i.quantity }))}
                         onSuccess={handleSuccess}
                         customer={{
                           email: fields.email.trim(),
+                          phone: fields.phone.trim(),
                           name: `${fields.firstName.trim()} ${fields.lastName.trim()}`.trim(),
                           address: {
                             line1: fields.address.trim(),
+                            line2: fields.address2.trim(),
                             city: fields.city.trim(),
+                            region: fields.region.trim(),
                             postal_code: fields.postalCode.trim(),
                             country: fields.country,
                           },
-                          items: items
-                            .map((i) => `${i.quantity}x ${i.product.title} (${orderSize(i.product, i.size)})`)
-                            .join("; "),
-                          lines: items.map((i) => ({
-                            title: i.product.title,
-                            size: orderSize(i.product, i.size),
-                            quantity: i.quantity,
-                          })),
                         }}
                       />
                     )}

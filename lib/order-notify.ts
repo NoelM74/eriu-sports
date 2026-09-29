@@ -19,6 +19,8 @@ export interface OrderItem {
   title: string;
   size: string;
   quantity: number;
+  /** Price per item in euro, when known. */
+  unitPrice?: string;
 }
 
 export interface OrderRecord {
@@ -26,11 +28,15 @@ export interface OrderRecord {
   paypalOrderId: string;
   captureId: string;
   placedAt: string;
-  customer: { name: string; email: string };
+  /** PayPal capture status. Anything other than COMPLETED means the money hasn't landed yet. */
+  paymentStatus: string;
+  customer: { name: string; email: string; phone?: string };
   shipping: {
     name: string;
     line1: string;
+    line2?: string;
     city: string;
+    region?: string;
     postalCode: string;
     country: string;
   };
@@ -39,17 +45,22 @@ export interface OrderRecord {
   total: string;
 }
 
+/** Short order reference, e.g. ER-K3F9Q2X. Unique enough to use as the PayPal invoice ID. */
 export function makeReference(): string {
-  return `ER-${Date.now().toString(36).toUpperCase().slice(-6)}`;
+  const time = Date.now().toString(36).toUpperCase().slice(-5);
+  const rand = Math.random().toString(36).toUpperCase().slice(2, 5);
+  return `ER-${time}${rand}`;
 }
 
 function itemLines(items: OrderItem[]): string {
   if (!items.length) return "  (see PayPal transaction for details)";
-  return items.map((i) => `  • ${i.quantity} × ${i.title} — size ${i.size}`).join("\n");
+  return items
+    .map((i) => `  • ${i.quantity} × ${i.title} — size ${i.size}${i.unitPrice ? ` — €${i.unitPrice} each` : ""}`)
+    .join("\n");
 }
 
 function addressBlock(o: OrderRecord): string {
-  return [o.shipping.name, o.shipping.line1, o.shipping.city, o.shipping.postalCode, o.shipping.country]
+  return [o.shipping.name, o.shipping.line1, o.shipping.line2, o.shipping.city, o.shipping.region, o.shipping.postalCode, o.shipping.country]
     .filter(Boolean)
     .join("\n");
 }
@@ -59,6 +70,9 @@ export function buildShopText(o: OrderRecord): string {
   return [
     `NEW ORDER — ${o.reference}`,
     `Placed: ${o.placedAt}`,
+    o.paymentStatus === "COMPLETED"
+      ? "Payment: COMPLETED"
+      : `Payment: ${o.paymentStatus} — NOT PAID YET. Check PayPal and don't ship until it shows as completed.`,
     "",
     `Total: ${o.currency} ${o.total}`,
     "",
@@ -70,6 +84,7 @@ export function buildShopText(o: OrderRecord): string {
     "",
     `Customer: ${o.customer.name || "—"}`,
     `Email: ${o.customer.email || "—"}`,
+    `Phone: ${o.customer.phone || "—"}`,
     "",
     `PayPal order: ${o.paypalOrderId}`,
     `PayPal capture: ${o.captureId || "—"}`,
@@ -127,8 +142,12 @@ async function sendEmail(opts: {
         html: opts.html,
       }),
     });
+    if (!res.ok) {
+      console.error(`[order-email] Resend refused email to ${opts.to}: ${res.status} ${await res.text().catch(() => "")}`);
+    }
     return res.ok;
-  } catch {
+  } catch (e) {
+    console.error(`[order-email] Could not reach Resend: ${e instanceof Error ? e.message : e}`);
     return false;
   }
 }
@@ -150,6 +169,14 @@ export async function notifyOrder(order: OrderRecord): Promise<NotifyResult> {
 
   const shopText = buildShopText(order);
 
+  // Always log the order, so it's in Cloudflare's Workers Logs even if every email fails.
+  console.log(`[order] ${shopText.replace(/\n+/g, " | ")}`);
+  if (!apiKey) console.error("[order-email] RESEND_API_KEY is not set, so no order emails were sent.");
+  if (apiKey && !shopTo) console.error("[order-email] ORDER_TO_EMAIL is not set, so the shop was not emailed.");
+  if (apiKey && !process.env.ORDER_FROM_EMAIL) {
+    console.error("[order-email] ORDER_FROM_EMAIL is not set. Resend's test sender only delivers to the Resend account owner.");
+  }
+
   if (webhook) {
     try {
       const res = await fetch(webhook, {
@@ -169,7 +196,7 @@ export async function notifyOrder(order: OrderRecord): Promise<NotifyResult> {
       from,
       to: shopTo,
       replyTo: order.customer.email || undefined,
-      subject: `New order ${order.reference} — ${order.currency} ${order.total}`,
+      subject: `${order.paymentStatus === "COMPLETED" ? "New order" : "PAYMENT PENDING"} ${order.reference} — ${order.currency} ${order.total}`,
       text: shopText,
     });
   }
@@ -187,4 +214,19 @@ export async function notifyOrder(order: OrderRecord): Promise<NotifyResult> {
   }
 
   return result;
+}
+
+/** A short alert to the shop, e.g. a payment PayPal later reversed. Never throws. */
+export async function alertShop(subject: string, text: string): Promise<boolean> {
+  console.error(`[order-alert] ${subject} | ${text.replace(/\n+/g, " | ")}`);
+  const apiKey = process.env.RESEND_API_KEY;
+  const shopTo = process.env.ORDER_TO_EMAIL;
+  if (!apiKey || !shopTo) return false;
+  return sendEmail({
+    apiKey,
+    from: process.env.ORDER_FROM_EMAIL || "Ériu Sports <onboarding@resend.dev>",
+    to: shopTo,
+    subject,
+    text,
+  });
 }
