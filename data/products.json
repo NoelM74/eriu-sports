@@ -14529,5 +14529,24 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000099",
+    "title": "Test Product – Do Not Buy",
+    "slug": "test-product-checkout",
+    "description": "Hidden test product used to check that payments and order emails work. It isn't a real item and nothing will be sent.",
+    "price": 1,
+    "images": [
+      "/images/test/test-product.webp"
+    ],
+    "collection": "Irish Classics",
+    "currency": "EUR",
+    "details": {
+      "condition": "Test only"
+    },
+    "sizes": [
+      "One size"
+    ],
+    "test": true
   }
 ]

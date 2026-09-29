@@ -54,6 +54,11 @@ export interface Product {
   player: Player | null;
   slug: string;
   currency: string;
+  /**
+   * Hidden test product for checking payments end to end: reachable only by its URL,
+   * left out of every listing, search, sitemap and feed, and delivered free.
+   */
+  test: boolean;
 }
 
 interface RawProduct {
@@ -69,6 +74,7 @@ interface RawProduct {
   sizeGuide?: { size: string; rows: string[][] };
   sizes?: string[];
   soldOut?: string[];
+  test?: boolean;
 }
 
 export const SIZES = ['S', 'M', 'L', 'XL'];
@@ -103,7 +109,8 @@ function toClub(team?: string): Club | null {
   return { name, slug: slugify(name) };
 }
 
-export const products: Product[] = (productsData as RawProduct[]).map((p) => {
+/** Every product, including hidden test products. Use for lookups by URL and pricing. */
+export const allProducts: Product[] = (productsData as RawProduct[]).map((p) => {
   const coll = getCollectionByName(p.collection) ?? COLLECTIONS[0];
   return {
     id: p.slug,
@@ -127,8 +134,12 @@ export const products: Product[] = (productsData as RawProduct[]).map((p) => {
     player: p.details?.player ? { name: p.details.player, slug: slugify(p.details.player) } : null,
     slug: p.slug,
     currency: p.currency || 'EUR',
+    test: p.test ?? false,
   };
 });
+
+/** Products shown in the shop. Hidden test products are left out. */
+export const products: Product[] = allProducts.filter((p) => !p.test);
 
 /**
  * Just what a product card (and the bag) needs. Cards are client components, so
@@ -141,7 +152,7 @@ export function toCard(p: Product): Product {
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug);
+  return allProducts.find((p) => p.slug === slug);
 }
 
 export function getProductById(id: string): Product | undefined {

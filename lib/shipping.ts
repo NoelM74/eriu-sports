@@ -7,12 +7,14 @@ import { FREE_DELIVERY_OVER, SHIPPING_FEE } from './collections';
  */
 export function calculateShipping(
   subtotal: number,
-  countryCode?: string
+  countryCode?: string,
+  /** True when the basket only holds hidden test products, which ship free. */
+  testOnly = false
 ): { cost: number; currency: CurrencyCode; symbol: string; freeThreshold: number } {
   const config = getGeoConfig(countryCode);
 
   return {
-    cost: subtotal >= FREE_DELIVERY_OVER ? 0 : SHIPPING_FEE,
+    cost: testOnly || subtotal >= FREE_DELIVERY_OVER ? 0 : SHIPPING_FEE,
     currency: config.currency,
     symbol: config.symbol,
     freeThreshold: FREE_DELIVERY_OVER,

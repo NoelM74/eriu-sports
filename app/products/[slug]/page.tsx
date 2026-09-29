@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, products, type ProductDetails } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, products, type ProductDetails } from '@/lib/products';
 import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
@@ -15,7 +15,7 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-  return products.map((product) => ({ slug: product.slug }));
+  return allProducts.map((product) => ({ slug: product.slug }));
 }
 
 function formatPrice(p: number) {
@@ -41,6 +41,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     title: `${product.title} | ${price}`,
     description,
     alternates: { canonical: `/products/${product.slug}` },
+    // Keep the hidden test product out of search engines.
+    ...(product.test && { robots: { index: false, follow: false } }),
     openGraph: {
       title: `${product.title} | Ériu Sports`,
       description,

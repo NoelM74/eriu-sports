@@ -1,4 +1,4 @@
-import { products } from '@/lib/products';
+import { allProducts } from '@/lib/products';
 
 /**
  * Current price and stock for every product. Baskets are saved in the browser, so
@@ -9,7 +9,7 @@ export const dynamic = 'force-static';
 
 export function GET() {
   const data = Object.fromEntries(
-    products.map((p) => [p.slug, { price: p.price, sizes: p.sizes, soldOut: p.soldOut, title: p.title }])
+    allProducts.map((p) => [p.slug, { price: p.price, sizes: p.sizes, soldOut: p.soldOut, title: p.title }])
   );
   return Response.json(data);
 }

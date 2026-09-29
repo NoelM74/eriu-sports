@@ -168,7 +168,7 @@ export default function CheckoutPage() {
   }
 
   const { convertPrice, formatPrice } = useCurrency();
-  const shippingInfo = calculateShipping(cartTotal);
+  const shippingInfo = calculateShipping(cartTotal, undefined, items.length > 0 && items.every((i) => i.product.test));
   const shippingCost = shippingInfo.cost;
   const convertedCartTotal = convertPrice(cartTotal);
   const convertedShipping = convertPrice(shippingCost);

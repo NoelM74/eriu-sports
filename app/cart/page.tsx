@@ -10,7 +10,7 @@ import { sizeLabel } from "@/lib/size-chart";
 export default function CartPage() {
   const { items, cartTotal, removeItem, updateQty, clearCart } = useCart();
   const { convertPrice, formatPrice, symbol } = useCurrency();
-  const shippingInfo = calculateShipping(cartTotal);
+  const shippingInfo = calculateShipping(cartTotal, undefined, items.length > 0 && items.every((i) => i.product.test));
   const convertedCartTotal = convertPrice(cartTotal);
   const convertedShipping = shippingInfo.cost > 0 ? convertPrice(shippingInfo.cost) : 0;
   const convertedTotal = convertedCartTotal + convertedShipping;

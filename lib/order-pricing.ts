@@ -63,7 +63,8 @@ export function priceBasket(raw: unknown): PricedOrder {
   });
 
   const itemTotal = round(lines.reduce((sum, l) => sum + l.unitPrice * l.quantity, 0));
-  const shipping = calculateShipping(itemTotal).cost;
+  const testOnly = lines.every((l) => getProductBySlug(l.slug)?.test);
+  const shipping = calculateShipping(itemTotal, undefined, testOnly).cost;
   return { lines, itemTotal, shipping, total: round(itemTotal + shipping) };
 }
 
