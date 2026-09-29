@@ -25,7 +25,11 @@ export interface OrderItem {
 
 export interface OrderRecord {
   reference: string;
+  /** Who took the payment. Defaults to PayPal. */
+  provider?: "PayPal" | "Card (Stripe)";
+  /** PayPal order ID, or the Stripe PaymentIntent ID for card payments. */
   paypalOrderId: string;
+  /** PayPal capture ID, or the Stripe charge ID for card payments. */
   captureId: string;
   placedAt: string;
   /** PayPal capture status. Anything other than COMPLETED means the money hasn't landed yet. */
@@ -53,7 +57,7 @@ export function makeReference(): string {
 }
 
 function itemLines(items: OrderItem[]): string {
-  if (!items.length) return "  (see PayPal transaction for details)";
+  if (!items.length) return "  (see the payment in PayPal or Stripe for details)";
   return items
     .map((i) => `  • ${i.quantity} × ${i.title} — size ${i.size}${i.unitPrice ? ` — €${i.unitPrice} each` : ""}`)
     .join("\n");
@@ -72,7 +76,7 @@ export function buildShopText(o: OrderRecord): string {
     `Placed: ${o.placedAt}`,
     o.paymentStatus === "COMPLETED"
       ? "Payment: COMPLETED"
-      : `Payment: ${o.paymentStatus} — NOT PAID YET. Check PayPal and don't ship until it shows as completed.`,
+      : `Payment: ${o.paymentStatus} — NOT PAID YET. Check ${o.provider === "Card (Stripe)" ? "Stripe" : "PayPal"} and don't ship until it shows as completed.`,
     "",
     `Total: ${o.currency} ${o.total}`,
     "",
@@ -86,8 +90,9 @@ export function buildShopText(o: OrderRecord): string {
     `Email: ${o.customer.email || "—"}`,
     `Phone: ${o.customer.phone || "—"}`,
     "",
-    `PayPal order: ${o.paypalOrderId}`,
-    `PayPal capture: ${o.captureId || "—"}`,
+    ...(o.provider === "Card (Stripe)"
+      ? [`Paid by card (Stripe)`, `Stripe payment: ${o.paypalOrderId}`, `Stripe charge: ${o.captureId || "—"}`]
+      : [`PayPal order: ${o.paypalOrderId}`, `PayPal capture: ${o.captureId || "—"}`]),
   ].join("\n");
 }
 

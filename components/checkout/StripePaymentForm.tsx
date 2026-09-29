@@ -13,7 +13,24 @@ const stripePromise = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
   ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
   : null;
 
-function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => void }) {
+type OnSuccess = (reference?: string, status?: string) => void;
+
+/**
+ * Confirms a card payment with the server, which checks it with Stripe and sends
+ * the order emails. Returns the order reference and payment status.
+ */
+async function confirmOrder(paymentIntentId: string): Promise<{ reference?: string; status?: string }> {
+  const res = await fetch("/api/stripe/confirm-order", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ paymentIntentId }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "We couldn't confirm your payment. Please email us.");
+  return data;
+}
+
+function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: OnSuccess }) {
   const stripe = useStripe();
   const elements = useElements();
 
@@ -28,14 +45,14 @@ function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => 
     );
     if (!clientSecret) return;
 
+    // Back from a bank check (3D Secure) that needed a redirect.
     stripe.retrievePaymentIntent(clientSecret).then(({ paymentIntent }) => {
       switch (paymentIntent?.status) {
         case "succeeded":
-          setMessage("Payment succeeded!");
-          onSuccess();
-          break;
         case "processing":
-          setMessage("Your payment is processing.");
+          confirmOrder(paymentIntent.id)
+            .then((r) => onSuccess(r.reference, r.status))
+            .catch((err: Error) => setMessage(err.message));
           break;
         case "requires_payment_method":
           setMessage("Your payment was not successful, please try again.");
@@ -54,7 +71,7 @@ function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => 
     setIsLoading(true);
     setMessage(null);
 
-    const { error } = await stripe.confirmPayment({
+    const { error, paymentIntent } = await stripe.confirmPayment({
       elements,
       confirmParams: {
         return_url: window.location.origin + "/checkout",
@@ -68,8 +85,13 @@ function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => 
       } else {
         setMessage("An unexpected error occurred. Please try again.");
       }
-    } else {
-      onSuccess();
+    } else if (paymentIntent) {
+      try {
+        const r = await confirmOrder(paymentIntent.id);
+        onSuccess(r.reference, r.status);
+      } catch (err) {
+        setMessage(err instanceof Error ? err.message : "We couldn't confirm your payment. Please email us.");
+      }
     }
 
     setIsLoading(false);
@@ -104,30 +126,36 @@ function CheckoutForm({ amount, onSuccess }: { amount: number; onSuccess: () => 
 
 export interface StripeCustomerDetails {
   email: string;
+  phone: string;
   name: string;
   address: {
     line1: string;
+    line2: string;
     city: string;
+    region: string;
     postal_code: string;
     country: string;
   };
-  items: string;
 }
 
 export default function StripePaymentForm({
   amount,
+  lines,
   onSuccess,
   customer,
 }: {
+  /** The total shown on the page. The server checks it matches its own price. */
   amount: number;
-  onSuccess: () => void;
-  customer?: StripeCustomerDetails;
+  /** What's in the bag. The server prices it from the catalogue. */
+  lines: { slug: string; size: string; quantity: number }[];
+  onSuccess: OnSuccess;
+  customer: StripeCustomerDetails;
 }) {
   const [clientSecret, setClientSecret] = useState("");
   const [fetchError, setFetchError] = useState<string | null>(null);
 
   // Serialise so the intent is recreated if the customer edits their details.
-  const customerKey = JSON.stringify(customer ?? {});
+  const customerKey = JSON.stringify({ customer, lines });
 
   useEffect(() => {
     setFetchError(null);
@@ -136,7 +164,7 @@ export default function StripePaymentForm({
     fetch("/api/stripe/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount, ...(customer ?? {}) }),
+      body: JSON.stringify({ lines, expectedTotal: amount, ...customer }),
     })
       .then(async (res) => {
         const data = await res.json();

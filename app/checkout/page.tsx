@@ -8,7 +8,7 @@ import { useCurrency } from "@/lib/currency-context";
 import StripePaymentForm from "@/components/checkout/StripePaymentForm";
 import PayPalPaymentForm from "@/components/checkout/PayPalPaymentForm";
 import { calculateShipping } from "@/lib/shipping";
-import { orderSize, sizeLabel } from "@/lib/size-chart";
+import { sizeLabel } from "@/lib/size-chart";
 import { REGION_REQUIRED } from "@/lib/regions";
 
 interface FormFields {
@@ -516,19 +516,20 @@ export default function CheckoutPage() {
                     {paymentMethod === "stripe" && (
                       <StripePaymentForm
                         amount={orderTotal}
+                        lines={items.map((i) => ({ slug: i.product.slug, size: i.size, quantity: i.quantity }))}
                         onSuccess={handleSuccess}
                         customer={{
                           email: fields.email.trim(),
+                          phone: fields.phone.trim(),
                           name: `${fields.firstName.trim()} ${fields.lastName.trim()}`.trim(),
                           address: {
                             line1: fields.address.trim(),
+                            line2: fields.address2.trim(),
                             city: fields.city.trim(),
+                            region: fields.region.trim(),
                             postal_code: fields.postalCode.trim(),
                             country: fields.country,
                           },
-                          items: items
-                            .map((i) => `${i.quantity}x ${i.product.title} (${orderSize(i.product, i.size)})`)
-                            .join("; "),
                         }}
                       />
                     )}
