@@ -14979,5 +14979,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000069",
+    "title": "Real Betis 2026-27 Home Kids Kit",
+    "slug": "real-betis-2026-27-home-kids-kit",
+    "description": "Real Betis's 2026-27 home kit in kids sizes. Green and white stripes, narrower than last season's, with fine diagonal lines across the front and a white polo collar that says 'Somos Balompié' on the inside. Gree is in black across the chest, with the Champions League badge on the sleeve and AUS Global on the green shorts. Troy Parrott joined from AZ Alkmaar in August 2026, so there's an Irish reason to follow Betis this season. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000069-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Gree",
+      "colours": "Green / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000070",
+    "title": "Real Betis 2026-27 Away Kids Kit",
+    "slug": "real-betis-2026-27-away-kids-kit",
+    "description": "Real Betis's 2026-27 away kit in kids sizes. It's split down the middle in two shades of green, with an all-over floral pattern based on the nickname Verde Esperanza, or Green Hope. Gold chevrons on the shoulders, with Gree and the crest in gold. Dark green shorts with gold chevrons and AUS Global. Troy Parrott signed for Betis in August 2026. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000070-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Gree",
+      "colours": "Green / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000071",
+    "title": "Real Betis 2026-27 Third Kids Kit",
+    "slug": "real-betis-2026-27-third-kids-kit",
+    "description": "Real Betis's 2026-27 third kit in kids sizes. Vertical stripes in electric blue and black with a brushstroke effect, and lime piping on the collar and cuffs and lime chevrons on the shoulders. Gree and the crest are in lime too. Black shorts with lime chevrons. Troy Parrott signed for Betis in August 2026 on a five-year deal. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000071-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Gree",
+      "colours": "Blue / Black / Lime",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

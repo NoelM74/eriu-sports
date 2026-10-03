@@ -100,7 +100,7 @@ Read this first. It records how the site is run, how we write everything, and th
 ## 7. Technical reference
 
 - **Data**: `data/products.json` is the source of truth. Fields: `id`, `title`, `slug`, `description`, `price`, `images`, `collection`, `currency`, `details {team, season, kit, sponsor, colours, fit, condition, print?, player?}`, `sizes?`, `soldOut?`, `sizeGuide?`, `test?`.
-- **Manual IDs**: `9000000xx`. Last used 900000068 (Real Madrid third kids kit). The hidden €1 payment test product (900000099) was deleted; the `test: true` flag still works in the code (hidden from lists, sitemap and feed, free delivery) if a new one is needed.
+- **Manual IDs**: `9000000xx`. Last used 900000071 (Real Betis third kids kit). The hidden €1 payment test product (900000099) was deleted; the `test: true` flag still works in the code (hidden from lists, sitemap and feed, free delivery) if a new one is needed.
 - **Images**: convert to WebP (max 1200px, quality 80, flattened on white) with `sharp`. Kids kits live in `public/images/kids-kits/<id>-1.webp`; GAA in `gaa-gear`, AFL in `afl-jerseys`.
 - **Kids kits**: collection "Kids Football Kits", price 30, `sizes` XXS–2XL, fit text "Kids sizes, ages 2 to 13. Go by height rather than age". A title containing "Kids" selects the kids size chart.
 - **Collections copy** in `lib/collections.ts` (intro, SEO title, description, keywords) should mention new clubs as they are added.
