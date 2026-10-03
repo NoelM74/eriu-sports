@@ -14889,5 +14889,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000066",
+    "title": "Real Madrid 2026-27 Home Kids Kit",
+    "slug": "real-madrid-2026-27-home-kids-kit",
+    "description": "Real Madrid's 2026-27 home kit in kids sizes. It's white with a dark green collar and cuffs and pink adidas stripes on the shoulders. Dark green is new on a Madrid home shirt. The pattern on the trim comes from the diamonds and pearls in the club's crown, according to adidas. Emirates Fly Better in dark green across the chest, with HP on the sleeve. White shorts with pink side stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000066-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Madrid",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Emirates",
+      "colours": "White / Green / Pink",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000067",
+    "title": "Real Madrid 2026-27 Away Kids Kit",
+    "slug": "real-madrid-2026-27-away-kids-kit",
+    "description": "Real Madrid's 2026-27 away kit in kids sizes. It's dark green with a pattern woven in that is based on the club crest, and white trim on the notched collar and shoulder stripes. The retro adidas trefoil sits on the chest, a first for a Madrid away shirt in modern times. Emirates Fly Better in white, with HP on the sleeve. Dark green shorts with white side stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000067-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Madrid",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Emirates",
+      "colours": "Dark Green / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000068",
+    "title": "Real Madrid 2026-27 Third Kids Kit",
+    "slug": "real-madrid-2026-27-third-kids-kit",
+    "description": "Real Madrid's 2026-27 third kit in kids sizes, and Madrid's first pink kit in six years. It's pink with a V-neck, cream trim on the collar, cuffs and stripes, and a faint tonal pattern of diamonds and dots across the front. Adidas says the shapes come from Latin craftsmanship. Emirates Fly Better in cream, with HP on the sleeve. Pink shorts with cream stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000068-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Madrid",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Emirates",
+      "colours": "Pink / Cream",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
