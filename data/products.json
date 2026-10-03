@@ -14638,5 +14638,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000057",
+    "title": "Chelsea 2026-27 Home Kids Kit",
+    "slug": "chelsea-2026-27-home-kids-kit",
+    "description": "Chelsea's 2026-27 home kit in kids sizes: royal blue with a polo collar and button placket, yellow piping down the shoulders and sides, and the lion crest, swoosh and USDC in yellow. A faint lion and 'Chelsea Football Club' are woven into the body. Nike says it marks 75 years since Ted Drake brought in the lion, and his side won Chelsea's first league title in 1954-55. Blue shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000057-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Chelsea FC",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "USDC",
+      "colours": "Blue / Yellow",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000058",
+    "title": "Chelsea 2026-27 Away Kids Kit",
+    "slug": "chelsea-2026-27-away-kids-kit",
+    "description": "Chelsea's 2026-27 away kit in kids sizes: black with a fine ribbed texture and gold piping, a gold laurel wreath around the collar and cuffs, and a gold lion in place of the full crest. USDC is in gold across the chest. Nike took its cue from the 1990s and Chelsea's Italian connections, so think Vialli, Zola and Di Matteo and the 1997 FA Cup. Black shorts with gold side panels. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000058-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Chelsea FC",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "USDC",
+      "colours": "Black / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000059",
+    "title": "Chelsea 2026-27 Third Kids Kit",
+    "slug": "chelsea-2026-27-third-kids-kit",
+    "description": "Chelsea's 2026-27 third kit in kids sizes, based on the club's 1993 away shirt: white with thin red pinstripes, a blue V-neck and cuffs, the old CFC shield crest and USDC in blue. 'Chelsea' is printed inside the collar. White shorts with blue side panels. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000059-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Chelsea FC",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "USDC",
+      "colours": "White / Blue / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
