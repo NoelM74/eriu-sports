@@ -83,11 +83,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Kids Football Kits",
     intro:
-      "Shirt and shorts sets for kids aged 2 to 13: Ireland's 2026 kits, Arsenal, Chelsea, Liverpool, Man United and Barcelona 2026-27 kits, and retro classics from Arsenal's Bruised Banana to United's Treble kit. €30 a kit, delivered worldwide.",
-    seoTitle: "Kids Football Kits | Ireland, Arsenal, Chelsea, Liverpool & More",
+      "Shirt and shorts sets for kids aged 2 to 13: Ireland's 2026 kits, Arsenal, Chelsea, Liverpool, Man United, Barcelona and Inter Miami kits, and retro classics from Arsenal's Bruised Banana to United's Treble kit. €30 a kit, delivered worldwide.",
+    seoTitle: "Kids Football Kits | Ireland, Arsenal, Chelsea, Inter Miami & More",
     seoDescription:
-      "Kids football kits with shirt and shorts: Ireland 2026, Arsenal, Chelsea, Liverpool, Man United and Barcelona 2026-27, and retro kids kits including United's Treble kit. Ages 2–13. €30 a kit. Worldwide delivery, free over €49.",
-    keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland", "Arsenal kids kit", "Arsenal kids kit 2026-27", "Bruised Banana kids kit", "retro Arsenal kids kit", "Liverpool kids kit", "Liverpool kids kit 2026-27", "retro Liverpool kids kit", "Liverpool Candy kids kit", "kids goalkeeper kit", "Man United kids goalkeeper kit", "Man United kids kit", "Man United kids kit 2026-27", "Man United Treble kids kit", "retro Man United kids kit", "Barcelona kids kit", "Barcelona kids kit 2026-27", "Barca kids kit", "Chelsea kids kit", "Chelsea kids kit 2026-27"],
+      "Kids football kits with shirt and shorts: Ireland 2026, Arsenal, Chelsea, Liverpool, Man United, Barcelona and Inter Miami, and retro kids kits including United's Treble kit. Ages 2–13. €30 a kit. Worldwide delivery, free over €49.",
+    keywords: ["kids football kit", "Ireland kids kit", "Ireland kids jersey", "kids Ireland football kit 2026", "Ireland goalkeeper kids kit", "children's football kit Ireland", "Arsenal kids kit", "Arsenal kids kit 2026-27", "Bruised Banana kids kit", "retro Arsenal kids kit", "Liverpool kids kit", "Liverpool kids kit 2026-27", "retro Liverpool kids kit", "Liverpool Candy kids kit", "kids goalkeeper kit", "Man United kids goalkeeper kit", "Man United kids kit", "Man United kids kit 2026-27", "Man United Treble kids kit", "retro Man United kids kit", "Barcelona kids kit", "Barcelona kids kit 2026-27", "Barca kids kit", "Chelsea kids kit", "Chelsea kids kit 2026-27", "Inter Miami kids kit", "Inter Miami kids kit 2026", "Messi kids kit"],
     priceFrom: 30,
     featured: "ireland-2026-home-kids-kit",
   },

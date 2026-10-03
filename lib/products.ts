@@ -307,7 +307,7 @@ const NATIONAL_TEAMS = new Set([
 const KIDS_SECTIONS = [
   { id: 'premier-league', label: 'Premier League' },
   { id: 'international', label: 'International' },
-  { id: 'european-clubs', label: 'European Clubs' },
+  { id: 'world-clubs', label: 'European & World Clubs' },
   { id: 'retro', label: 'Retro Classics' },
 ] as const;
 
@@ -323,7 +323,7 @@ export function groupKidsKits(items: Product[]): { id: string; label: string; it
     if (seasonStart(p) < 2015) return 'retro';
     if (NATIONAL_TEAMS.has(p.details.team ?? '')) return 'international';
     if (premierLeague.has(p.details.team)) return 'premier-league';
-    return 'european-clubs';
+    return 'world-clubs';
   };
   return KIDS_SECTIONS.map((s) => ({ ...s, items: items.filter((p) => sectionOf(p) === s.id) })).filter(
     (s) => s.items.length > 0

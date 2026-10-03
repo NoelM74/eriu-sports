@@ -14709,5 +14709,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000060",
+    "title": "Inter Miami 2025-26 Home Kids Kit",
+    "slug": "inter-miami-2025-26-home-kids-kit",
+    "description": "Inter Miami's Euforia home kit in kids sizes: pink stripes in two shades, black adidas stripes on the shoulders and black trim at the collar, with the crest and Royal Caribbean in black. The club says the name stands for the excitement of what comes next. It was worn in 2025, the last season at Chase Stadium, and again in 2026 at Miami Freedom Park. Pink shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000060-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Inter Miami",
+      "season": "2025-26",
+      "kit": "Home",
+      "sponsor": "Royal Caribbean",
+      "colours": "Pink / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000061",
+    "title": "Inter Miami 2026 Away Kids Kit",
+    "slug": "inter-miami-2026-away-kids-kit",
+    "description": "Inter Miami's Presagio away kit in kids sizes. 'Presagio' is Spanish for omen. It's black with a polo collar and grey shoulder stripes, with the crest and Royal Caribbean in pink. The silver star above the crest marks the 2025 MLS Cup, the club's first, won 3-1 against Vancouver on 6 December 2025 with Messi in the side. Black shorts with grey side stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000061-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Inter Miami",
+      "season": "2026",
+      "kit": "Away",
+      "sponsor": "Royal Caribbean",
+      "colours": "Black / Pink / Grey",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000062",
+    "title": "Inter Miami 2026 Third Kids Kit",
+    "slug": "inter-miami-2026-third-kids-kit",
+    "description": "Inter Miami's Cénit third kit in kids sizes. 'Cénit' is Spanish for zenith. It's white with a faint geometric pattern taken from the roof of the new stadium, and pink, turquoise and black trim on the collar, cuffs and shoulder stripes, with the retro adidas trefoil and Royal Caribbean in pink. White shorts with matching stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000062-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Inter Miami",
+      "season": "2026",
+      "kit": "Third",
+      "sponsor": "Royal Caribbean",
+      "colours": "White / Pink / Turquoise",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
