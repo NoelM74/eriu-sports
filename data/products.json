@@ -14548,5 +14548,95 @@
       "One size"
     ],
     "test": true
+  },
+  {
+    "id": "900000054",
+    "title": "Barcelona 2026-27 Home Kids Kit",
+    "slug": "barcelona-2026-27-home-kids-kit",
+    "description": "Barcelona's 2026-27 home kit in kids sizes. The blaugrana stripes come in different widths and shades, from deep navy and bright blue to garnet red, with a navy V-neck and cuffs, a gold Nike swoosh and the Spotify logo in yellow. Navy shorts with blue and red side panels. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000054-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Barcelona",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Spotify",
+      "colours": "Blue / Red / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000055",
+    "title": "Barcelona 2026-27 Away Kids Kit",
+    "slug": "barcelona-2026-27-away-kids-kit",
+    "description": "The Mamba kit, in kids sizes. Barcelona's 2026-27 away shirt is made with Nike's Kobe Bryant line: black fading to purple, the shade linked with Kobe, with an iridescent crest, a gold Spotify logo and the gold Kobe logo on the chest and shorts. The collar has Kobe's line, 'Leave the game better than you found it'. Purple shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000055-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Barcelona",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Spotify",
+      "colours": "Black / Purple / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000056",
+    "title": "Barcelona 2026-27 Third Kids Kit",
+    "slug": "barcelona-2026-27-third-kids-kit",
+    "description": "Barcelona's 2026-27 third kit in kids sizes, a nod to the club's 1990s away shirts. It's split down the middle in two shades of green, with a jagged zigzag edge, a navy collar and cuffs, and the Spotify logo and swoosh in navy. Matching green shorts. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000056-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Barcelona",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "Spotify",
+      "colours": "Turquoise / Mint / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
