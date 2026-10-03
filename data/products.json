@@ -14531,25 +14531,6 @@
     ]
   },
   {
-    "id": "900000099",
-    "title": "Test Product – Do Not Buy",
-    "slug": "test-product-checkout",
-    "description": "Hidden test product used to check that payments and order emails work. It isn't a real item and nothing will be sent.",
-    "price": 1,
-    "images": [
-      "/images/test/test-product.webp"
-    ],
-    "collection": "Irish Classics",
-    "currency": "EUR",
-    "details": {
-      "condition": "Test only"
-    },
-    "sizes": [
-      "One size"
-    ],
-    "test": true
-  },
-  {
     "id": "900000054",
     "title": "Barcelona 2026-27 Home Kids Kit",
     "slug": "barcelona-2026-27-home-kids-kit",
