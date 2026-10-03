@@ -14799,5 +14799,95 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000063",
+    "title": "Al-Nassr 2026-27 Home Kids Kit",
+    "slug": "al-nassr-2026-27-home-kids-kit",
+    "description": "Al-Nassr's 2026-27 home kit in kids sizes. It's yellow with navy shoulder stripes, and a navy collar and cuffs in a woven, chain-link style pattern. HUMAIN runs across the chest in navy beside the club crest. The club's theme for it is \"We Share Our Identity With the Rest of the World\", and the design takes its idea from postage stamps. Navy shorts with the same pattern at the hem. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000063-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Al-Nassr",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "HUMAIN",
+      "colours": "Yellow / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000064",
+    "title": "Al-Nassr 2026-27 Away Kids Kit",
+    "slug": "al-nassr-2026-27-away-kids-kit",
+    "description": "Al-Nassr's 2026-27 away kit in kids sizes, and the first Al-Nassr kit to carry the adidas trefoil. It's navy with a notched polo collar and gold stripes on the shoulders and cuffs, with HUMAIN and the crest in gold. The club calls it \"Beyond the Horizon\", inspired by the skies over Riyadh and the gold of the desert. Navy shorts with gold side stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000064-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Al-Nassr",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "HUMAIN",
+      "colours": "Navy / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000065",
+    "title": "Al-Nassr 2026-27 Third Kids Kit",
+    "slug": "al-nassr-2026-27-third-kids-kit",
+    "description": "Al-Nassr's 2026-27 third kit in kids sizes. It's off-white with gold trim on the collar, cuffs and shoulder stripes, and a faint pattern of ornate vertical panels down the front. HUMAIN, the crest and the adidas logo are in gold. The 2024-25 third kit was white and gold too. White shorts with gold side stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000065-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Al-Nassr",
+      "season": "2026-27",
+      "kit": "Third",
+      "sponsor": "HUMAIN",
+      "colours": "Off-white / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
