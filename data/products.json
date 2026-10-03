@@ -15069,5 +15069,121 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000072",
+    "title": "Argentina 1986 World Cup Home Kids Kit",
+    "slug": "argentina-1986-world-cup-home-kids-kit",
+    "description": "Argentina's 1986 World Cup home kit in kids sizes. Sky blue and white stripes, a white crew neck, the AFA crest on the chest and black shorts with white trim. It's the kit from the final, when Argentina beat West Germany 3-2 at the Azteca on 29 June 1986. Diego Maradona captained the side and set up Burruchaga's winner. It was Argentina's second World Cup. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000072-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Argentina",
+      "season": "1986",
+      "kit": "Home",
+      "colours": "Sky Blue / White / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000073",
+    "title": "Argentina 1986 World Cup Away Kids Kit",
+    "slug": "argentina-1986-world-cup-away-kids-kit",
+    "description": "Argentina's blue away kit from the 1986 World Cup, in kids sizes. Royal blue with a white V-neck and cuffs, light blue stripes on the shoulders and the AFA crest on the chest, with black shorts trimmed in light blue. For the quarter-final against England the team wore a different blue shirt, picked up in Mexico City a few days before. Maradona scored both goals in the 2-1 win. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000073-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Argentina",
+      "season": "1986",
+      "kit": "Away",
+      "colours": "Royal Blue / White / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000074",
+    "title": "Argentina 2026 Home Kids Kit",
+    "slug": "argentina-2026-home-kids-kit",
+    "description": "Argentina's 2026 home kit in kids sizes. White with sky blue stripes that fade through three shades, which the launch says nod to the shirts worn in the three World Cup wins. Navy shoulder stripes and cuffs, with the gold World Champions badge beside the crest and its three stars. Navy shorts with light blue stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000074-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Argentina",
+      "season": "2026",
+      "kit": "Home",
+      "colours": "White / Sky Blue / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000075",
+    "title": "Argentina 2026 Away Kids Kit",
+    "slug": "argentina-2026-away-kids-kit",
+    "description": "Argentina's 2026 away kit in kids sizes. Black with a swirling blue pattern based on Fileteado Porteño, the decorative painting style of Buenos Aires that UNESCO recognises as cultural heritage. White collar and cuffs, white stripes on the shoulders, and a pale World Champions badge beside the crest and its three stars. Black shorts with white stripes. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000075-1.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Argentina",
+      "season": "2026",
+      "kit": "Away",
+      "colours": "Black / Blue / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
