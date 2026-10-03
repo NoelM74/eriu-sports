@@ -27,6 +27,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - Don't invent history. If a fact can't be confirmed, leave it out. Check every date, score and name against a source.
 - Describe only what's visible in the photo. Don't guess sponsors we can't read (ask the user, or say what is legible).
 - Leave sensitive subjects out of a shop listing (e.g. Hillsborough).
+- Don't name kit makers or their logos (adidas, Nike, Umbro, Reebok, trefoil, swoosh and so on) in listings. Sponsors on the shirt (Emirates, Spotify, Carlsberg) are fine. Retro adult shirts from the supplier import still carry some maker names; clean up when asked.
 
 **Never use**
 - Words: "elevate", "unleash", "game-changer", "iconic" (more than once), "timeless", "must-have", "world-class", "passion", "journey".
