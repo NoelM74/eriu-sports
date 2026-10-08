@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
                         Privacy Policy
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Last updated: April 15, 2026
+                        Last updated: 8 October 2026
                     </p>
                 </div>
 
@@ -69,6 +69,23 @@ export default function PrivacyPolicyPage() {
                         <li>Service providers who assist with our business operations</li>
                         <li>Legal authorities when required by law</li>
                     </ul>
+
+                    <h2 id="cookies" className="text-2xl font-bold text-[#0F2131] mt-12 mb-4">Cookies and analytics</h2>
+                    <p>
+                        We use Google Analytics to count visits and see which pages are popular. It sets cookies
+                        (named _ga and _ga_ followed by a code) and sends details such as the pages you view, your
+                        approximate location and your browser type to Google.
+                    </p>
+                    <p className="mt-4">
+                        These cookies are off by default. Google Analytics only loads if you choose Accept on our
+                        cookie banner, and we use it only to understand how the site is used. Your bag is kept in your
+                        browser&apos;s local storage so it is still there when you come back. That is needed for the shop
+                        to work, and nothing in it is sent to us until you check out.
+                    </p>
+                    <p className="mt-4">
+                        You can change your mind at any time with the &quot;Cookie settings&quot; link at the bottom of every page.
+                        Choosing Reject removes the analytics cookies we have set.
+                    </p>
 
                     <h2 className="text-2xl font-bold text-[#0F2131] mt-12 mb-4">Data Security</h2>
                     <p>
