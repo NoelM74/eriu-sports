@@ -51,7 +51,20 @@ export default async function BlogPostPage({ params }: Props) {
       '@type': 'BlogPosting',
       headline: post.title,
       description: post.description,
-      image: `${SITE}${post.heroImage}`,
+      image: [
+        `${SITE}${post.heroImage}`,
+        ...post.sections
+          .filter((s) => s.image)
+          .map((s) => ({
+            '@type': 'ImageObject',
+            contentUrl: `${SITE}${s.image!.src}`,
+            caption: s.image!.caption,
+            creditText: `${s.image!.credit.author}, ${s.image!.credit.license}, via Wikimedia Commons`,
+            creator: { '@type': 'Person', name: s.image!.credit.author },
+            license: s.image!.credit.licenseUrl,
+            acquireLicensePage: s.image!.credit.sourceUrl,
+          })),
+      ],
       datePublished: post.datePublished,
       dateModified: post.dateModified ?? post.datePublished,
       mainEntityOfPage: url,
@@ -145,6 +158,33 @@ export default async function BlogPostPage({ params }: Props) {
               {section.paragraphs.map((p) => (
                 <p key={p} className="text-gray-700 leading-relaxed mb-4">{p}</p>
               ))}
+              {section.image && (
+                <figure className="my-6">
+                  <div className="relative w-full aspect-[3/2] bg-gray-100 overflow-hidden">
+                    <Image
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      fill
+                      sizes="(min-width: 768px) 768px, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-sm text-gray-600">
+                    {section.image.caption}{' '}
+                    <span className="text-gray-500">
+                      Photo:{' '}
+                      <a href={section.image.credit.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline">
+                        {section.image.credit.author}
+                      </a>
+                      ,{' '}
+                      <a href={section.image.credit.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
+                        {section.image.credit.license}
+                      </a>
+                      , via Wikimedia Commons.
+                    </span>
+                  </figcaption>
+                </figure>
+              )}
               {section.bullets && (
                 <ul className="mt-2 space-y-2">
                   {section.bullets.map((b) => (

@@ -3,10 +3,25 @@
  * to the shirts it covers. Read time is worked out from the word count.
  */
 
+/** An openly licensed photo shown inside a section, with the credit its licence requires. */
+export interface BlogImage {
+  src: string;
+  alt: string;
+  caption: string;
+  credit: {
+    author: string;
+    license: string;
+    licenseUrl: string;
+    /** Page the photo came from (e.g. its Wikimedia Commons file page). */
+    sourceUrl: string;
+  };
+}
+
 export interface BlogSection {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  image?: BlogImage;
 }
 
 export interface BlogPost {
@@ -32,6 +47,188 @@ export interface BlogPost {
 }
 
 export const POSTS: BlogPost[] = [
+  {
+    slug: "ronaldinho-shirts-psg-barcelona-milan",
+    title: "Ronaldinho's Shirts: PSG, Barcelona and AC Milan",
+    seoTitle: "Ronaldinho Shirts: PSG, Barcelona & AC Milan Jerseys",
+    description:
+      "The numbers Ronaldinho wore at PSG, Barcelona and AC Milan, and the story behind each shirt: 21 and 10 in Paris, 10 in Catalonia, and why he took 80 at Milan.",
+    category: "Players",
+    datePublished: "2026-10-08",
+    heroImage: "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-1.webp",
+    heroAlt: "Barcelona 2005-06 yellow away shirt printed RONALDINHO 10",
+    heroFit: "contain",
+    intro:
+      "Ronaldinho wore three numbers at three clubs. He was 21 and then 10 at Paris Saint-Germain, 10 at Barcelona and 80 at AC Milan. Most people remember the Barcelona years, from 2003 to 2008, but every one of those shirts has a story.",
+    sections: [
+      {
+        heading: "PSG, 2001–03: 21, then 10",
+        paragraphs: [
+          "Ronaldinho joined Paris Saint-Germain from Grêmio in 2001 on a five-year deal, for about €5 million. He wore 21 in his first season, in the navy home shirt with the red stripe and Opel across the chest.",
+          "In 2002 he won the World Cup with Brazil. He came back to Paris as the 10 for 2002-03, with Thomson on the front. It was his last season at the club.",
+        ],
+      },
+      {
+        heading: "Barcelona, 2003–08: the 10",
+        paragraphs: [
+          "Barcelona signed him in 2003 for €30 million, ahead of Manchester United, and gave him the 10. Two seasons later he was collecting awards. He was FIFA World Player of the Year in 2004 and 2005, and he won the Ballon d'Or in 2005.",
+          "Barcelona won La Liga in 2004-05 and 2005-06. The 2005-06 season gave us the bright yellow away shirt and the home shirt from the Champions League final.",
+        ],
+        image: {
+          src: "/images/blog/ronaldinho-barcelona-goal-celebration-2006.webp",
+          alt: "Ronaldinho in the red and blue Barcelona shirt, number 10, celebrating a goal with two team-mates",
+          caption: "Ronaldinho celebrates a goal against Real Sociedad with Belletti and Giuly, 9 December 2006.",
+          credit: {
+            author: "Darz Mol",
+            license: "CC BY-SA 3.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ronaldinho_Belletti_and_Giuly_9dec2006.jpg",
+          },
+        },
+      },
+      {
+        heading: "Two nights in a Barcelona shirt",
+        paragraphs: [
+          "On 19 November 2005, Barcelona won 3-0 at Real Madrid. Ronaldinho scored twice, and the Bernabéu stood to applaud him.",
+          "On 17 May 2006, Barcelona beat Arsenal 2-1 in the Champions League final in Paris. We stock the home shirt from that season with the final's details embroidered on the front.",
+        ],
+      },
+      {
+        heading: "AC Milan, 2008–11: number 80",
+        paragraphs: [
+          "Ronaldinho joined Milan in July 2008 on a three-year deal. Clarence Seedorf already had the 10, so he chose 80, for the year he was born, 1980.",
+          "He left for Flamengo in January 2011. Our 2009-10 shirt is the white away, with red and black trim on the sleeves and bwin across the chest, printed RONALDINHO 80.",
+        ],
+        image: {
+          src: "/images/blog/ronaldinho-ac-milan-penalty-2010.webp",
+          alt: "Ronaldinho in a red and black striped AC Milan shirt, number 80, about to take a penalty",
+          caption: "Ronaldinho takes a penalty for AC Milan in a friendly against Montreal Impact, 2 June 2010.",
+          credit: {
+            author: "abdallahh",
+            license: "CC BY 2.0",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Penalty_Ronaldinho_Montreal_Impact-AC_Milan.jpg",
+          },
+        },
+      },
+      {
+        heading: "Which Ronaldinho shirt?",
+        paragraphs: [
+          "Every name and number we stock for him matches what he wore that season. Our football shirts run from S to 2XL, and the size guide has measurements.",
+        ],
+        bullets: [
+          "PSG 2001-02, number 21: his first season in Europe.",
+          "PSG 2002-03, number 10: the year after the World Cup.",
+          "Barcelona 2003-04, number 10: his first season in Catalonia.",
+          "Barcelona 2005-06, number 10: the Ballon d'Or year, in yellow away or the Champions League final home.",
+          "AC Milan 2009-10, number 80: the Milan shirt.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What number did Ronaldinho wear at Barcelona?", a: "10, from 2003 to 2008." },
+      { q: "What number did Ronaldinho wear at PSG?", a: "21 in 2001-02, then 10 in 2002-03." },
+      {
+        q: "Why did Ronaldinho wear 80 at AC Milan?",
+        a: "Clarence Seedorf had the 10, so Ronaldinho chose 80 for the year he was born, 1980.",
+      },
+      { q: "When did Ronaldinho win the Ballon d'Or?", a: "In 2005. It is his only one." },
+      {
+        q: "How much did Barcelona pay for Ronaldinho?",
+        a: "€30 million in 2003. Paris Saint-Germain had signed him from Grêmio for €5 million in 2001.",
+      },
+    ],
+    products: [
+      "psg-2001-02-home-shirt-ronaldinho-21",
+      "psg-2002-03-home-shirt-ronaldinho-10",
+      "barcelona-2003-04-home-shirt-ronaldinho-10",
+      "barcelona-2005-06-away-shirt-ronaldinho-10",
+      "barcelona-2006-champions-league-final-shirt-ronaldinho-10",
+      "barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10",
+      "psg-2001-02-away-shirt-ronaldinho-21",
+      "ac-milan-2009-10-away-shirt-ronaldinho-80",
+    ],
+    cta: { label: "Shop all Ronaldinho shirts", href: "/players/ronaldinho" },
+  },
+  {
+    slug: "inter-milan-2009-10-treble-shirt",
+    title: "Inter Milan 2009/10: The Treble Shirt",
+    seoTitle: "Inter Milan 2010 Champions League Final Shirt: The Treble Kit",
+    description:
+      "Inter's 2009/10 black and blue stripes with Pirelli: the shirt Mourinho's side wore to win Serie A, the Coppa Italia and the Champions League, with Milito's two goals in Madrid.",
+    category: "European & World Classics",
+    datePublished: "2026-10-08",
+    heroImage: "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-1.webp",
+    heroAlt: "Inter Milan 2009-10 black and blue striped home shirt with the Champions League final details",
+    heroFit: "contain",
+    intro:
+      "In 2009/10 Inter won Serie A, the Coppa Italia and the Champions League. No Italian club had won the treble before. The black and blue stripes with Pirelli across the chest are the shirt they wore in Madrid on 22 May 2010.",
+    sections: [
+      {
+        heading: "The shirt",
+        paragraphs: [
+          "Black and blue stripes, with Pirelli in white across the chest. It's the home shirt Inter wore all season, and the final version has the match's details stitched on the front.",
+        ],
+      },
+      {
+        heading: "The side Mourinho built",
+        paragraphs: [
+          "José Mourinho's second season came after a busy summer. Diego Milito and Thiago Motta arrived from Genoa, Wesley Sneijder from Real Madrid and Lúcio from Bayern Munich. Samuel Eto'o came in a swap that sent Zlatan Ibrahimović to Barcelona.",
+          "Javier Zanetti stayed on as the captain and the heart of the side.",
+        ],
+        image: {
+          src: "/images/blog/inter-milan-2009-10-squad-photo.webp",
+          alt: "Inter Milan players posing for a team photo in black and blue striped shirts with Pirelli on the front",
+          caption: "Inter in their 2009-10 home shirts before a pre-season friendly in Kapfenberg, Austria, 16 August 2009.",
+          credit: {
+            author: "Steindy",
+            license: "CC BY-SA 3.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Inter_Mailand_(2009-08-16).jpg",
+          },
+        },
+      },
+      {
+        heading: "Three trophies",
+        paragraphs: [
+          "Inter won Serie A on the final matchday, ahead of Roma. A few weeks earlier Milito scored the only goal of the Coppa Italia final against Roma at the Stadio Olimpico.",
+          "In Europe they beat Barcelona in the semi-final, 3-1 at the San Siro and then losing 1-0 at the Camp Nou with Thiago Motta sent off. They went through 3-2 on aggregate.",
+        ],
+      },
+      {
+        heading: "Madrid, 22 May 2010",
+        paragraphs: [
+          "Inter beat Bayern Munich 2-0 at the Santiago Bernabéu. Milito scored both, in the 35th and 70th minutes. It was their first European Cup since 1965.",
+          "It was also Zanetti's 700th appearance for the club. Esteban Cambiasso lifted the trophy wearing Giacinto Facchetti's number 3 shirt. Mourinho left for Real Madrid within the week.",
+        ],
+      },
+      {
+        heading: "Which Inter shirt?",
+        paragraphs: [
+          "The Champions League final shirt is the one to get if you want the night itself. The standard 2009-10 home is the same shirt without the match details, and we have the away too.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Who scored in the 2010 Champions League final?",
+        a: "Diego Milito, twice, in the 35th and 70th minutes, as Inter beat Bayern Munich 2-0 at the Santiago Bernabéu.",
+      },
+      {
+        q: "Was Inter's 2009/10 side the first Italian club to win the treble?",
+        a: "Yes. They won Serie A, the Coppa Italia and the Champions League, and no Italian club had done that before.",
+      },
+      { q: "When did Inter last win the European Cup before 2010?", a: "In 1965." },
+      { q: "Who sponsored Inter in 2009/10?", a: "Pirelli." },
+    ],
+    products: [
+      "inter-milan-2010-champions-league-final-home-shirt",
+      "inter-milan-2009-10-home-shirt",
+      "inter-milan-2009-10-away-shirt",
+      "inter-milan-2005-06-away-shirt",
+    ],
+    cta: { label: "Shop European and world classics", href: "/collections/european-world-classics" },
+  },
   {
     slug: "bohemians-music-shirts-fontaines-dc-oasis-kneecap",
     title: "Bohemians' Music Shirts: Fontaines D.C., Oasis and Kneecap",

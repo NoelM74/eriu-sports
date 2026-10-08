@@ -103,6 +103,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Manual IDs**: `9000000xx`. Last used 900000075 (Argentina 2026 away kids kit). The hidden €1 payment test product (900000099) was deleted; the `test: true` flag still works in the code (hidden from lists, sitemap and feed, free delivery) if a new one is needed.
 - **Images**: convert to WebP (max 1200px, quality 80, flattened on white) with `sharp`. Kids kits live in `public/images/kids-kits/<id>-1.webp`; GAA in `gaa-gear`, AFL in `afl-jerseys`.
 - **Kids kits**: collection "Kids Football Kits", price 30, `sizes` XXS–2XL, fit text "Kids sizes, ages 2 to 13. Go by height rather than age". A title containing "Kids" selects the kids size chart.
+- **Blog photos**: only openly licensed images (Wikimedia Commons CC BY or CC BY-SA, or public domain), saved to `public/images/blog/` as WebP, set as `image` on a section in `lib/blog.ts` with author, licence, licence URL and file page. The post shows the credit under the photo and adds it to the structured data. Check that the shirt in the photo matches the caption.
 - **Collections copy** in `lib/collections.ts` (intro, SEO title, description, keywords) should mention new clubs as they are added.
 - **Feed**: Google Merchant Center feed at `/merchant-feed.xml` (one item per size). Counterfeit-policy risk was explained to the user.
 - **Page cache**: `open-next.config.ts` uses the static assets incremental cache with cache interception, and product cards get only card fields (`toCard`). Do not remove them (Error 1102).
