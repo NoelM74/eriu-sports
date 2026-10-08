@@ -111,3 +111,16 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Payments**: prices and delivery are always set on the server (`lib/order-pricing.ts`). PayPal and Stripe routes under `app/api`. Webhooks at `/api/paypal/webhook` and `/api/stripe/webhook`. Settings live in Cloudflare (`RESEND_API_KEY`, `ORDER_TO_EMAIL` = sales@, `ORDER_FROM_EMAIL` = hello@, `PAYPAL_CLIENT_SECRET`, `PAYPAL_WEBHOOK_ID`, `STRIPE_*`). Order emails come from Resend (eriusports.com verified).
 - **Pending on the user's side**: verify PayPal and Stripe bank accounts; add the PayPal webhook; possibly switch PayPal account (then update client ID, secret, webhook, and rerun the €1 test).
 - **Scratchpad** (`/tmp/claude-0/.../scratchpad`) and the user's attached images (`.../images/N.webp`) can be lost when the container resets.
+
+## Compact Instructions
+
+When the conversation is compacted, the summary must always keep:
+
+- **Where the site stands**: which version is live, the latest commit, and anything half-done.
+- **The user's decisions, word for word**: prices, shipping, returns, legal and VAT position, product facts and copy approvals. Never paraphrase numbers or policies.
+- **Open questions and steps waiting on the user** (e.g. PayPal and Stripe verification, webhooks, "go live" approvals).
+- **Actions the safety rules blocked** (writing secrets, bulk deletes), so they are not retried.
+- **Errors and their fixes**, so the same dead ends are not repeated.
+- **The hard rules**: never commit private files, how secrets go in (Cloudflare settings, never the repo), no invented claims, never push to `main` without "go live", the writing rules in section 2.
+
+The summary should drop long file contents, test logs that passed and step-by-step accounts of finished work. Keep file paths and commit numbers instead.
