@@ -48,6 +48,122 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "ireland-usa-94-world-cup-shirts",
+    title: "Ireland 1992–94 and USA 94: The Shirts That Beat Italy",
+    seoTitle: "Ireland USA 94 Jersey & 1992-94 Shirts: Houghton v Italy",
+    description:
+      "Ray Houghton's goal against Italy at Giants Stadium, McLoughlin's equaliser at Windsor Park and a last-16 exit in Orlando. The story behind Ireland's 1992-94 and USA 94 jerseys.",
+    category: "Irish Classics",
+    datePublished: "2026-10-08",
+    heroImage: "/images/ireland-classics/692734038-1.webp",
+    heroAlt: "Ireland USA 94 World Cup home jersey in emerald green with a black geometric pattern",
+    heroFit: "contain",
+    intro:
+      "Ireland qualified for USA 94 with a draw in Belfast, then beat Italy 1-0 in New Jersey with a goal from Ray Houghton. Two jerseys cover that run: the 1992-94 shirts from the qualifying campaign, and the USA 94 shirts from the tournament itself.",
+    sections: [
+      {
+        heading: "Windsor Park, November 1993",
+        paragraphs: [
+          "Ireland needed a result in Belfast. Northern Ireland went ahead on 71 minutes through a Jimmy Quinn volley, and five minutes later Alan McLoughlin hit a shot from the edge of the box into the corner. It finished 1-1.",
+          "With Denmark losing to Spain in the other game, the draw was enough. Ireland went to the World Cup as runners-up in the group.",
+        ],
+      },
+      {
+        heading: "The 1992–94 shirts",
+        paragraphs: [
+          "The 1992-94 home is the green jersey with Opel across the chest, worn through that qualifying campaign. The away is white with green detailing.",
+          "These are the shirts from the road to America. We stock both.",
+        ],
+      },
+      {
+        heading: "Giants Stadium, 18 June 1994",
+        paragraphs: [
+          "Ireland's first game was against Italy at Giants Stadium. After 11 minutes Ray Houghton took a ball on the edge of the box and chipped it over Gianluigi Pagliuca. It stayed 1-0.",
+          "It was Ireland's first win in a World Cup finals match.",
+        ],
+      },
+      {
+        heading: "Orlando and the last 16",
+        paragraphs: [
+          "Mexico won the next game 2-1 in Orlando, after leading 2-0 with 65 minutes gone. Ireland then drew 0-0 with Norway at Giants Stadium, and that point was enough to reach the last 16.",
+          "The Netherlands knocked them out 2-0 in Orlando.",
+        ],
+      },
+      {
+        heading: "The USA 94 shirts",
+        paragraphs: [
+          "The home is emerald green with a bold black geometric pattern and tricolour trim at the collar. The away is white with three broad green stripes, the FAI crest and the Opel sponsor.",
+          "Sizes run S to 2XL, and the size guide has measurements.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Who scored for Ireland against Italy at USA 94?", a: "Ray Houghton, after 11 minutes at Giants Stadium on 18 June 1994. It finished 1-0." },
+      {
+        q: "How did Ireland qualify for USA 94?",
+        a: "A 1-1 draw with Northern Ireland at Windsor Park in November 1993. Alan McLoughlin scored the equaliser, and Ireland went through as group runners-up.",
+      },
+      { q: "Who knocked Ireland out of USA 94?", a: "The Netherlands, 2-0 in Orlando in the last 16." },
+      { q: "Was Ireland's USA 94 away shirt sponsored?", a: "The version we sell has the Opel sponsor, with the FAI crest and three green stripes." },
+    ],
+    products: [
+      "ireland-1994-world-cup-home",
+      "ireland-1994-world-cup-away",
+      "ireland-1992-94-home-retro-jersey",
+      "ireland-1992-94-away-retro-jersey",
+    ],
+    cta: { label: "Shop retro Irish shirts", href: "/collections/ireland-classics" },
+  },
+  {
+    slug: "ireland-euro-88-shirt",
+    title: "Ireland at Euro 88: The Shirt From Stuttgart",
+    seoTitle: "Ireland Euro 88 Jersey: Houghton's Header v England",
+    description:
+      "Ray Houghton's header against England in Stuttgart, Whelan's volley against the USSR and a late Dutch goal. The story behind Ireland's Euro 88 jersey, Jack Charlton's first tournament.",
+    category: "Irish Classics",
+    datePublished: "2026-10-08",
+    heroImage: "/images/ireland-classics/679941594-1.webp",
+    heroAlt: "Ireland Euro 88 home jersey in emerald green with white and orange trim",
+    heroFit: "contain",
+    intro:
+      "Ireland's first major tournament was Euro 88 in West Germany. They beat England 1-0 in the opening game, drew with the USSR and lost to the Netherlands to a goal nine minutes from the end. The green jersey from that summer is where it all started.",
+    sections: [
+      {
+        heading: "Stuttgart, 12 June 1988",
+        paragraphs: [
+          "Ireland opened against England. After six minutes a cross wasn't cleared and Ray Houghton looped a header over Peter Shilton. It finished 1-0.",
+          "England were one of the favourites. Ireland had never played at a major finals before.",
+        ],
+      },
+      {
+        heading: "Hanover and Gelsenkirchen",
+        paragraphs: [
+          "Against the USSR in Hanover, Ronnie Whelan volleyed Ireland ahead, and Oleh Protasov equalised for a 1-1 draw.",
+          "The last game was against the Netherlands in Gelsenkirchen. Paul McGrath hit a Dutch post at one end. At the other, Wim Kieft headed in after 82 minutes.",
+        ],
+      },
+      {
+        heading: "The shirt",
+        paragraphs: [
+          "Emerald green with white and orange trim. It was Jack Charlton's first major tournament as manager, and it set up everything that followed, from Italia 90 to USA 94.",
+          "We stock the home, in sizes S to 2XL.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Who scored Ireland's winner against England at Euro 88?", a: "Ray Houghton, with a header after six minutes in Stuttgart on 12 June 1988." },
+      { q: "Who scored for Ireland against the USSR at Euro 88?", a: "Ronnie Whelan. The game finished 1-1." },
+      { q: "Who knocked Ireland out of Euro 88?", a: "The Netherlands, 1-0 in Gelsenkirchen, with Wim Kieft scoring after 82 minutes." },
+    ],
+    products: [
+      "ireland-euro-88-home-jersey",
+      "ireland-1990-italia-90-world",
+      "ireland-1994-world-cup-home",
+      "ireland-1992-94-home-retro-jersey",
+    ],
+    cta: { label: "Shop retro Irish shirts", href: "/collections/ireland-classics" },
+  },
+  {
     slug: "ronaldinho-shirts-psg-barcelona-milan",
     title: "Ronaldinho's Shirts: PSG, Barcelona and AC Milan",
     seoTitle: "Ronaldinho Shirts: PSG, Barcelona & AC Milan Jerseys",
