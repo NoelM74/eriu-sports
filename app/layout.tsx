@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -104,6 +105,13 @@ export default function RootLayout({
   return (
     <html lang="en-IE">
       <body className={`${lexend.variable} antialiased`}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-NEML64KY0M" strategy="afterInteractive" />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NEML64KY0M');`}
+        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }} />
         <CurrencyProvider>
           <CartProvider>
