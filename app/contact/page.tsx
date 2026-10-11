@@ -39,7 +39,7 @@ export default function ContactPage() {
                             <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                                 <h3 className="text-xl font-bold text-[#0F2131] mb-3">Email</h3>
                                 <p className="text-gray-700">
-                                    We reply to all emails within 24 hours. You can reach us at:
+                                    We reply as soon as we can. You can reach us at:
                                 </p>
                                 <a href="mailto:noel@eriusports.com" className="text-[#1C7C83] font-bold hover:underline text-lg mt-3 block">
                                     noel@eriusports.com
@@ -49,12 +49,10 @@ export default function ContactPage() {
                             <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                                 <h3 className="text-xl font-bold text-[#0F2131] mb-3">Hours</h3>
                                 <p className="text-gray-700">
-                                    We&apos;re available to help you Monday to Friday:
+                                    We&apos;re open Monday to Saturday:
                                 </p>
                                 <ul className="mt-3 space-y-1 text-gray-700">
-                                    <li>9:00 AM - 5:30 PM (Ireland Time)</li>
-                                    <li>9:00 AM - 5:30 PM (UK Time)</li>
-                                    <li>4:00 AM - 12:30 PM (USA Eastern Time)</li>
+                                    <li>9:00 AM - 3:00 PM (Irish time)</li>
                                 </ul>
                             </div>
 

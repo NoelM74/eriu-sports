@@ -87,6 +87,12 @@ const storeJsonLd = [
       email: "noel@eriusports.com",
       availableLanguage: "English",
     },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "09:00",
+      closes: "15:00",
+    },
     sameAs: ["https://www.instagram.com/eriusports/", "https://www.facebook.com/EriuSports"],
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",

@@ -6,7 +6,7 @@ Read this first. It records how the site is run, how we write everything, and th
 
 - **eriusports.com**: Irish-run reseller of retro football shirts, GAA jerseys and training vests, AFL jerseys and kids football kits. Based at Elevation Business Park, Ennis, Co. Clare.
 - **Stack**: Next.js 16 (App Router, static generation), Tailwind v4, OpenNext on Cloudflare Workers. `main` auto-deploys.
-- **Contact**: noel@eriusports.com (also sales@ and hello@, received through Cloudflare Email Routing).
+- **Contact**: noel@eriusports.com (also sales@ and hello@, received through Cloudflare Email Routing). Open Monday to Saturday, 9am to 3pm Irish time.
 - **Audience**: UK and Ireland first, plus worldwide. SEO, AI search and GEO all matter.
 - **Stock**: shipped by Noel directly from China, sent DDP (duties paid). Not VAT registered.
 

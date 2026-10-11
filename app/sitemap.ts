@@ -6,10 +6,9 @@ import { getPosts } from '@/lib/blog';
 const SITE = 'https://eriusports.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  // No lastModified on most pages: a build-time date would claim everything changed on every deploy.
   const page = (path: string, priority: number, changeFrequency: 'daily' | 'weekly' | 'monthly' | 'yearly') => ({
     url: `${SITE}${path}`,
-    lastModified: now,
     changeFrequency,
     priority,
   });
