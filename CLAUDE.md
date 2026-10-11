@@ -111,7 +111,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Feed**: Google Merchant Center feed at `/merchant-feed.xml` (one item per size). Counterfeit-policy risk was explained to the user.
 - **Page cache**: `open-next.config.ts` uses the static assets incremental cache with cache interception, and product cards get only card fields (`toCard`). Do not remove them (Error 1102).
 - **Payments**: prices and delivery are always set on the server (`lib/order-pricing.ts`). PayPal and Stripe routes under `app/api`. Webhooks at `/api/paypal/webhook` and `/api/stripe/webhook`. Settings live in Cloudflare (`RESEND_API_KEY`, `ORDER_TO_EMAIL` = sales@, `ORDER_FROM_EMAIL` = hello@, `PAYPAL_CLIENT_SECRET`, `PAYPAL_WEBHOOK_ID`, `STRIPE_*`). Order emails come from Resend (eriusports.com verified).
-- **Pending on the user's side**: verify PayPal and Stripe bank accounts; add the PayPal webhook; possibly switch PayPal account (then update client ID, secret, webhook, and rerun the €1 test).
+- **Payments status (11 October 2026)**: PayPal account verified, bank confirmed, PayPal webhook added and `PAYPAL_WEBHOOK_ID` saved in Cloudflare, full €1 test passed. Nothing pending for PayPal. Stripe is not in use (cards off); when the user wants cards, they verify Stripe, add the Stripe webhook and `STRIPE_WEBHOOK_SECRET`, then we set `CARD_PAYMENTS_ENABLED` to true in `app/checkout/page.tsx`.
 - **Scratchpad** (`/tmp/claude-0/.../scratchpad`) and the user's attached images (`.../images/N.webp`) can be lost when the container resets.
 
 ## Compact Instructions
