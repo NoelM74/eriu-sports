@@ -1,0 +1,36 @@
+# Ériu Sports
+
+> Irish-run online shop selling fan replica retro football shirts, GAA county jerseys and training vests, AFL jerseys and kids football kits. Based in Ennis, Co. Clare, Ireland. Tracked delivery worldwide. Not affiliated with any club, county board, federation or kit brand.
+
+## Key facts
+
+- Prices are in euro with no VAT added. Retro football shirts from €25 (named and numbered shirts €35), GAA jerseys €29.95, GAA training vests €25, AFL jerseys €25, kids football kits €30.
+- Delivery: tracked, flat €5 worldwide, free on orders of €49 or more. 8 to 14 days to Ireland and the UK; other countries vary.
+- Customs: every order is sent duties paid, so there is nothing to pay on delivery.
+- Returns: 30 days, unworn with tags on. The buyer pays return postage unless the item is faulty or not as described.
+- Payment: PayPal. Contact: noel@eriusports.com
+
+## Shop
+
+- [All shirts and jerseys](https://eriusports.com/catalog): search and filter the full range
+- [Retro Irish Shirts](https://eriusports.com/collections/ireland-classics): Ireland and League of Ireland
+- [Premier League Classics](https://eriusports.com/collections/premier-league-classics)
+- [European & World Classics](https://eriusports.com/collections/european-world-classics)
+- [Kids Football Kits](https://eriusports.com/collections/kids-football-kits): shirt and shorts, ages 2 to 13
+- [GAA Jerseys](https://eriusports.com/collections/gaa-jerseys)
+- [GAA Training Vests](https://eriusports.com/collections/gaa-training-vests)
+- [AFL Jerseys](https://eriusports.com/collections/afl-jerseys)
+- [Shop by club](https://eriusports.com/clubs) and [by player](https://eriusports.com/players)
+
+## Guides and stories
+
+- [Shirt stories](https://eriusports.com/blog): researched histories of the shirts we sell
+- [GAA jersey size guide](https://eriusports.com/size-guide)
+- [Delivery and returns](https://eriusports.com/shipping-returns)
+- [FAQ](https://eriusports.com/faq)
+- [Terms and conditions](https://eriusports.com/terms-of-service) and [Privacy Policy](https://eriusports.com/privacy-policy)
+
+## Data
+
+- [Sitemap](https://eriusports.com/sitemap.xml)
+- [Product feed](https://eriusports.com/merchant-feed.xml)

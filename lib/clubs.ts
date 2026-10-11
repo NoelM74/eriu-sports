@@ -32,7 +32,9 @@ export function clubIntro(club: ClubSummary, items: Product[]): string {
       : '';
   const printed = items.some((p) => p.details.print) ? ' Some come printed with a player name and number.' : '';
   const noun = club.category === 'football' ? 'shirts' : 'jerseys';
-  return `${items.length} ${club.name} ${noun}${range}.${printed} From ${from}. Worldwide delivery, free over €49.`;
+  const lead = `${items.length} ${club.name} ${noun}${range}.${printed}`;
+  const tail = `From ${from}. Worldwide delivery, free over €49, 30-day returns.`;
+  return `${lead} ${tail}`;
 }
 
 /** Group a club's products by decade ("1990s") when there are enough to need it. */

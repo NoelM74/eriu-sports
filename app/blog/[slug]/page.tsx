@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { POSTS, getPost, readingMinutes, formatDate } from '@/lib/blog';
 import { getProductBySlug, toCard, type Product } from '@/lib/products';
+import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
 
@@ -100,7 +101,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <article className="bg-white min-h-screen">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
 
       <header className={contain ? 'bg-[#f3f5f4]' : 'relative bg-gray-900'}>
         {contain ? (

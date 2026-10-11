@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getProductsByCategory, getClubs, searchProducts, toCard } from '@/lib/products';
 import { CATEGORIES, COLLECTIONS, type CategoryKey } from '@/lib/collections';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
+import { OG_IMAGES } from '@/lib/seo';
 import CatalogFilters from '@/components/catalog/CatalogFilters';
 
 type SearchParams = Promise<{ category?: string; club?: string; q?: string }>;
@@ -32,7 +33,7 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
     alternates: { canonical: url },
     // Search and club-filter results point search engines at /clubs pages instead.
     ...(filtered ? { robots: { index: false, follow: true } } : {}),
-    openGraph: { title: `${title} | Ériu Sports`, description, url, type: 'website' },
+    openGraph: { title: `${title} | Ériu Sports`, description, url, type: 'website', images: OG_IMAGES },
   };
 }
 

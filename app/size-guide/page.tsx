@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import SizeChart from '@/components/SizeChart';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Size Guide | Retro Football Shirt Sizes S–2XL',
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Size Guide | Ériu Sports',
     description: 'Retro football shirt size chart in cm and inches, S to 2XL, plus GAA and AFL sizing.',
     url: '/size-guide',
+    images: OG_IMAGES,
   },
 };
 

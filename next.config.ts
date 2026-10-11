@@ -1,6 +1,22 @@
 import type { NextConfig } from "next";
 
+// Safe, site-wide security headers. The CSP covers framing, plugins, <base> and form
+// targets only; a full script-src policy would need nonces to keep PayPal, Stripe and
+// Google Analytics working.
+const securityHeaders = [
+  { key: "Strict-Transport-Security", value: "max-age=31536000" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "X-Frame-Options", value: "DENY" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
+  { key: "Content-Security-Policy", value: "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'" },
+];
+
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  async headers() {
+    return [{ source: "/:path*", headers: securityHeaders }];
+  },
   images: {
     unoptimized: true,
   },

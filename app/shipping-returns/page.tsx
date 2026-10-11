@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { OG_IMAGES } from '@/lib/seo';
 
 const EMAIL = 'noel@eriusports.com';
 
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Delivery & Returns | Ériu Sports',
     description: 'Worldwide delivery for €5, free over €49. 8–14 days to Ireland and the UK. 30-day returns.',
     url: '/shipping-returns',
+    images: OG_IMAGES,
   },
 };
 

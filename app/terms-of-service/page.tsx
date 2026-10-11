@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { OG_IMAGES } from '@/lib/seo';
 
 const EMAIL = 'noel@eriusports.com';
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | Ériu Sports',
     description: 'Our products, prices, worldwide delivery with duties paid, returns and your rights.',
     url: '/terms-of-service',
+    images: OG_IMAGES,
   },
   alternates: {
     canonical: '/terms-of-service',

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy | Ériu Sports',
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
         title: 'Privacy Policy | Ériu Sports',
         description: 'Ériu Sports Privacy Policy - How we collect, use, and protect your personal information.',
         url: '/privacy-policy',
+    images: OG_IMAGES,
     },
     alternates: {
         canonical: '/privacy-policy',

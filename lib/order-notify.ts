@@ -235,3 +235,21 @@ export async function alertShop(subject: string, text: string): Promise<boolean>
     text,
   });
 }
+
+/** A message from the contact form, emailed to the shop with the sender as reply-to. */
+export async function sendContactMessage(m: { name: string; email: string; subject: string; message: string }): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  const shopTo = process.env.ORDER_TO_EMAIL;
+  if (!apiKey || !shopTo) {
+    console.error("[contact] RESEND_API_KEY or ORDER_TO_EMAIL is not set, so a contact message could not be sent.");
+    return false;
+  }
+  return sendEmail({
+    apiKey,
+    from: process.env.ORDER_FROM_EMAIL || "Ériu Sports <onboarding@resend.dev>",
+    to: shopTo,
+    replyTo: m.email,
+    subject: `Website message: ${m.subject}`.slice(0, 150),
+    text: `From: ${m.name} <${m.email}>\n\n${m.message}`,
+  });
+}

@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { OG_IMAGES } from '@/lib/seo';
+import { ldJson } from '@/lib/jsonld';
 
 const EMAIL = 'noel@eriusports.com';
 
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
     title: 'FAQ | Ériu Sports',
     description: 'Worldwide delivery for €5, free over €49. Sizing and 30-day returns.',
     url: '/faq',
+    images: OG_IMAGES,
   },
 };
 
@@ -109,7 +112,7 @@ const jsonLd = {
 export default function FAQPage() {
   return (
     <div className="bg-white min-h-screen py-12 md:py-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">FAQ</h1>

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/collections';
 import { getClubs } from '@/lib/products';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Shop by Club | Retro Football Shirts & GAA Jerseys',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: 'Shop by Club | Ériu Sports',
     description: 'Retro football shirts by club and GAA jerseys by county.',
     url: '/clubs',
+    images: OG_IMAGES,
   },
 };
 

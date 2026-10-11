@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getPosts, readingMinutes, formatDate } from '@/lib/blog';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Shirt Stories | Retro Football & GAA Jersey History',
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     title: 'Shirt Stories | Ériu Sports',
     description: 'The seasons, matches and players behind our retro shirts and GAA jerseys.',
     url: '/blog',
+    images: OG_IMAGES,
   },
 };
 

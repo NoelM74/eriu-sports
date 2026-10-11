@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getPlayers } from '@/lib/products';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Shop by Player | Retro Shirts with Name & Number',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: 'Shop by Player | Ériu Sports',
     description: 'Retro football shirts printed with the names of the greats.',
     url: '/players',
+    images: OG_IMAGES,
   },
 };
 

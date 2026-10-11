@@ -81,6 +81,7 @@ function validateForm(fields: FormFields): FormErrors {
 
 export default function CheckoutPage() {
   const { items, cartTotal, clearCart } = useCart();
+  const { convertPrice, formatPrice } = useCurrency();
 
   const [isSuccess, setIsSuccess] = useState(false);
   const [orderRef, setOrderRef] = useState<string | null>(null);
@@ -167,7 +168,6 @@ export default function CheckoutPage() {
     );
   }
 
-  const { convertPrice, formatPrice } = useCurrency();
   const shippingInfo = calculateShipping(cartTotal, undefined, items.length > 0 && items.every((i) => i.product.test));
   const shippingCost = shippingInfo.cost;
   const convertedCartTotal = convertPrice(cartTotal);

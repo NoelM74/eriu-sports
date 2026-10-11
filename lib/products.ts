@@ -147,6 +147,7 @@ export const products: Product[] = allProducts.filter((p) => !p.test);
  * photos across hundreds of cards made pages heavy enough to hit Worker limits.
  */
 export function toCard(p: Product): Product {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { sizeGuide: _sizeGuide, ...rest } = p;
   return { ...rest, description: '', images: p.images.slice(0, 1), details: { colours: p.details.colours } };
 }

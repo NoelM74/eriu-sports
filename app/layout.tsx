@@ -7,6 +7,7 @@ import CookieConsent from "@/components/layout/CookieConsent";
 import { CartProvider } from "@/lib/cart-context";
 import { CurrencyProvider } from "@/lib/currency-context";
 import { MARKET_COUNTRIES } from "@/lib/collections";
+import { ldJson } from '@/lib/jsonld';
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -72,6 +73,20 @@ const storeJsonLd = [
     description: DESCRIPTION,
     // Irish-run, delivering worldwide.
     areaServed: "Worldwide",
+    email: "noel@eriusports.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Elevation Business Park",
+      addressLocality: "Ennis",
+      addressRegion: "Co. Clare",
+      addressCountry: "IE",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: "noel@eriusports.com",
+      availableLanguage: "English",
+    },
     sameAs: ["https://www.instagram.com/eriusports/", "https://www.facebook.com/EriuSports"],
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",
@@ -105,7 +120,7 @@ export default function RootLayout({
   return (
     <html lang="en-IE">
       <body className={`${lexend.variable} antialiased`}>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(storeJsonLd) }} />
         <CurrencyProvider>
           <CartProvider>
             <Navbar />

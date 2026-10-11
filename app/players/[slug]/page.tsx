@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product } from '@/lib/products';
 import { PLAYER_BIOS } from '@/lib/players';
+import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
 
@@ -89,7 +90,7 @@ export default async function PlayerPage({ params }: Props) {
 
   return (
     <div className="bg-white min-h-screen">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
 
       <section className="bg-[#0F2131] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 md:pb-16">

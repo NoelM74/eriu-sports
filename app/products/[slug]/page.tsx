@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, products, type ProductDetails } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, type ProductDetails } from '@/lib/products';
 import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
 import ImageGallery from './ImageGallery';
+import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
 
@@ -22,6 +23,12 @@ function formatPrice(p: number) {
   return `€${p % 1 ? p.toFixed(2) : p}`;
 }
 
+function clip(text: string, max: number) {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[.,;:\s]+$/, '')}…`;
+}
+
 function firstSentence(text: string, max = 110) {
   const s = text.split(/(?<=\.)\s/)[0];
   return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
@@ -34,11 +41,14 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const price = formatPrice(product.price);
   const sizeRange = `${product.sizes[0]}–${product.sizes[product.sizes.length - 1]}`;
-  const description = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`;
+  // Named shirts share a description with their plain version, so lead with the print to keep each one unique.
+  const printed = product.details.print ? `Printed ${product.details.print}. ` : '';
+  const description = clip(`${printed}${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`, 160);
   const image = product.images[0] ? `${SITE}${product.images[0]}` : undefined;
 
   return {
-    title: `${product.title} | ${price}`,
+    // The site template adds " | Ériu Sports", so keep the rest short enough for a search result.
+    title: `${product.title} | ${price}`.length <= 50 ? `${product.title} | ${price}` : product.title,
     description,
     alternates: { canonical: `/products/${product.slug}` },
     // Keep the hidden test product out of search engines.
@@ -154,7 +164,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
 
   return (
     <div className="bg-white min-h-screen text-[var(--color-foreground)]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
 
       <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <ol className="flex flex-wrap items-center gap-x-2 text-sm text-gray-500">

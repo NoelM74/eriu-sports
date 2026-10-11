@@ -52,7 +52,7 @@ export const POSTS: BlogPost[] = [
     title: "Ireland 1992–94 and USA 94: The Shirts That Beat Italy",
     seoTitle: "Ireland USA 94 Jersey & 1992-94 Shirts: Houghton v Italy",
     description:
-      "Ray Houghton's goal against Italy at Giants Stadium, McLoughlin's equaliser at Windsor Park and a last-16 exit in Orlando. The story behind Ireland's 1992-94 and USA 94 jerseys.",
+      "Houghton's goal against Italy at Giants Stadium, McLoughlin's equaliser at Windsor Park and a last-16 exit. The story behind Ireland's 1992-94 and USA 94 jerseys.",
     category: "Irish Classics",
     datePublished: "2026-10-08",
     heroImage: "/images/ireland-classics/692734038-1.webp",
@@ -119,7 +119,7 @@ export const POSTS: BlogPost[] = [
     title: "Ireland at Euro 88: The Shirt From Stuttgart",
     seoTitle: "Ireland Euro 88 Jersey: Houghton's Header v England",
     description:
-      "Ray Houghton's header against England in Stuttgart, Whelan's volley against the USSR and a late Dutch goal. The story behind Ireland's Euro 88 jersey, Jack Charlton's first tournament.",
+      "Houghton's header against England in Stuttgart, Whelan's volley against the USSR and a late Dutch goal. The story behind Ireland's Euro 88 jersey.",
     category: "Irish Classics",
     datePublished: "2026-10-08",
     heroImage: "/images/ireland-classics/679941594-1.webp",
@@ -269,9 +269,9 @@ export const POSTS: BlogPost[] = [
   {
     slug: "inter-milan-2009-10-treble-shirt",
     title: "Inter Milan 2009/10: The Treble Shirt",
-    seoTitle: "Inter Milan 2010 Champions League Final Shirt: The Treble Kit",
+    seoTitle: "Inter Milan 2010 Champions League Final Shirt",
     description:
-      "Inter's 2009/10 black and blue stripes with Pirelli: the shirt Mourinho's side wore to win Serie A, the Coppa Italia and the Champions League, with Milito's two goals in Madrid.",
+      "Inter's 2009/10 black and blue stripes with Pirelli: the shirt worn to win Serie A, the Coppa Italia and the Champions League, with Milito's two goals in Madrid.",
     category: "European & World Classics",
     datePublished: "2026-10-08",
     heroImage: "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-1.webp",
@@ -348,9 +348,9 @@ export const POSTS: BlogPost[] = [
   {
     slug: "bohemians-music-shirts-fontaines-dc-oasis-kneecap",
     title: "Bohemians' Music Shirts: Fontaines D.C., Oasis and Kneecap",
-    seoTitle: "Bohemians Jerseys: Fontaines D.C., Oasis, Kneecap & Guinness",
+    seoTitle: "Bohemians Jerseys: Fontaines D.C., Oasis & Kneecap",
     description:
-      "How a Phibsborough football club ended up with Fontaines D.C., Oasis and Kneecap on its shirts. The story behind each Bohemians jersey, from Bob Marley to Guinness, and how they fit.",
+      "How a Phibsborough club ended up with Fontaines D.C., Oasis and Kneecap on its shirts. The story behind each Bohemians jersey, from Bob Marley to Guinness.",
     category: "Irish Classics",
     datePublished: "2026-09-24",
     heroImage: "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
@@ -813,9 +813,9 @@ export const POSTS: BlogPost[] = [
   {
     slug: "retro-european-football-shirts",
     title: "Beyond the Premier League: Five Classic European and World Shirts",
-    seoTitle: "Retro European Football Shirts: Juventus, Roma, Bayern & More",
+    seoTitle: "Retro European Football Shirts: Juventus, Roma & More",
     description:
-      "Juventus's Champions League season, Capello's first year at Roma, Trapattoni's Bayern, Betis's cup final and Club América's flames. Five classic shirts from beyond England, and the stories behind them.",
+      "Juventus, Roma, Bayern, Betis and Club América: five retro shirts from beyond England, and the stories behind each one.",
     category: "European & World Classics",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
@@ -944,7 +944,7 @@ export const POSTS: BlogPost[] = [
     title: "Cork City 1988/89: Guinness, Derry and a First FAI Cup Final",
     seoTitle: "Cork City 1988/89 Jersey and the 1989 FAI Cup Final",
     description:
-      "Cork City reached their first FAI Cup final in 1989, five years after they were founded, and took Derry City to a replay. The story of the white, green and red Guinness jersey from that season.",
+      "Cork City reached their first FAI Cup final in 1989 and took Derry City to a replay. The story of the white, green and red Guinness jersey.",
     category: "Irish Classics",
     datePublished: "2026-04-15",
     dateModified: "2026-09-24",

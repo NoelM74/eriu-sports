@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { products, getClubs } from '@/lib/products';
+import { OG_IMAGES } from '@/lib/seo';
+import { ldJson } from '@/lib/jsonld';
 
 const EMAIL = 'noel@eriusports.com';
 
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
     title: 'Why Choose Ériu Sports?',
     description: 'Retro shirts from €25, worldwide delivery free over €49, easy returns and bulk discounts.',
     url: '/why-choose-us',
+    images: OG_IMAGES,
   },
 };
 
@@ -93,7 +96,7 @@ const jsonLd = {
 export default function WhyChooseUsPage() {
   return (
     <div className="bg-white min-h-screen py-12 md:py-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-4">Why Choose Ériu Sports?</h1>

@@ -20,11 +20,3 @@ export function calculateShipping(
     freeThreshold: FREE_DELIVERY_OVER,
   };
 }
-
-/**
- * Legacy function for backward compatibility.
- * Returns just the cost for existing code that doesn't need full config.
- */
-export function calculateShippingCost(subtotal: number, countryCode?: string): number {
-  return calculateShipping(subtotal, countryCode).cost;
-}

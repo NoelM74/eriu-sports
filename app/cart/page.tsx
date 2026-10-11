@@ -8,8 +8,8 @@ import { calculateShipping } from "@/lib/shipping";
 import { sizeLabel } from "@/lib/size-chart";
 
 export default function CartPage() {
-  const { items, cartTotal, removeItem, updateQty, clearCart } = useCart();
-  const { convertPrice, formatPrice, symbol } = useCurrency();
+  const { items, cartTotal, removeItem, updateQty } = useCart();
+  const { convertPrice, formatPrice } = useCurrency();
   const shippingInfo = calculateShipping(cartTotal, undefined, items.length > 0 && items.every((i) => i.product.test));
   const convertedCartTotal = convertPrice(cartTotal);
   const convertedShipping = shippingInfo.cost > 0 ? convertPrice(shippingInfo.cost) : 0;
@@ -19,7 +19,7 @@ export default function CartPage() {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center px-4">
         <h1 className="text-3xl font-bold text-[#0F2131] mb-4 uppercase tracking-wider">Your Cart is Empty</h1>
-        <p className="text-gray-500 mb-8 max-w-md text-center">Looks like you haven't added any shirts to your bag yet.</p>
+        <p className="text-gray-500 mb-8 max-w-md text-center">Looks like you haven&apos;t added any shirts to your bag yet.</p>
         <Link
           href="/catalog"
           className="bg-[#0A7A44] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#086035] transition-colors"

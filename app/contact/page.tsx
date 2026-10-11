@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
+import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
     title: 'Contact Us | Ériu Sports',
@@ -7,6 +9,7 @@ export const metadata: Metadata = {
         title: 'Contact Us | Ériu Sports',
         description: 'Get in touch with our friendly team. We\'re here to help.',
         url: '/contact',
+    images: OG_IMAGES,
     },
     alternates: {
         canonical: '/contact',
@@ -46,7 +49,7 @@ export default function ContactPage() {
                             <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                                 <h3 className="text-xl font-bold text-[#0F2131] mb-3">Hours</h3>
                                 <p className="text-gray-700">
-                                    We're available to help you Monday to Friday:
+                                    We&apos;re available to help you Monday to Friday:
                                 </p>
                                 <ul className="mt-3 space-y-1 text-gray-700">
                                     <li>9:00 AM - 5:30 PM (Ireland Time)</li>
@@ -58,7 +61,7 @@ export default function ContactPage() {
                             <div className="p-6 bg-gray-50 rounded-lg border border-gray-200">
                                 <h3 className="text-xl font-bold text-[#0F2131] mb-3">Our Team</h3>
                                 <p className="text-gray-700">
-                                    We're a small team of jersey lovers based in Cork and Dublin.
+                                    We&apos;re an Irish-run shop based in Ennis, Co. Clare.
                                     Looking for a particular shirt? Just ask and we will see if we can find it.
                                 </p>
                             </div>
@@ -70,73 +73,12 @@ export default function ContactPage() {
                             Send Us a Message
                         </h2>
 
-                        <form className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Your name
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A533E] focus:border-[#1A533E]"
-                                    placeholder="John Smith"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Email address
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A533E] focus:border-[#1A533E]"
-                                    placeholder="john@example.com"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Subject
-                                </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A533E] focus:border-[#1A533E]"
-                                    placeholder="About my order #12345"
-                                />
-                            </div>
-
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Your message
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows={5}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1A533E] focus:border-[#1A533E]"
-                                    placeholder="Tell us about your question or order..."
-                                ></textarea>
-                            </div>
-
-                            <div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#1A533E] text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-[#133d2d] transition-colors"
-                                >
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                        <ContactForm />
 
                         <div className="mt-6 text-sm text-gray-500">
                             <p>
                                 By sending this message, you agree that we may contact you by email
-                                to answer your question. We won't share your information with anyone else.
+                                to answer your question. We won&apos;t share your information with anyone else.
                             </p>
                         </div>
                     </section>

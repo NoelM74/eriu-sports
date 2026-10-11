@@ -1,6 +1,6 @@
 /**
  * Geo/Currency utility for internationalization.
- * Maps country codes to currencies and shipping rates.
+ * Maps country codes to the display currency. Delivery is a flat fee worldwide (see lib/shipping.ts).
  */
 
 export type CurrencyCode = 'EUR' | 'GBP' | 'USD';
@@ -9,21 +9,19 @@ export type LocaleCode = 'en-IE' | 'en-GB' | 'en-US';
 export interface GeoConfig {
     currency: CurrencyCode;
     locale: LocaleCode;
-    shippingRate: number;
-    freeShippingThreshold: number;
     symbol: string;
 }
 
 // Country to locale/currency mapping
 const countryToLocale: Record<string, GeoConfig> = {
     // Ireland / EU
-    IE: { currency: 'EUR', locale: 'en-IE', shippingRate: 5, freeShippingThreshold: 49, symbol: '€' },
+    IE: { currency: 'EUR', locale: 'en-IE', symbol: '€' },
     // United Kingdom
-    GB: { currency: 'GBP', locale: 'en-GB', shippingRate: 5.95, freeShippingThreshold: 39, symbol: '£' },
+    GB: { currency: 'GBP', locale: 'en-GB', symbol: '£' },
     // United States
-    US: { currency: 'USD', locale: 'en-US', shippingRate: 12.95, freeShippingThreshold: 79, symbol: '$' },
+    US: { currency: 'USD', locale: 'en-US', symbol: '$' },
     // Default EU
-    EU: { currency: 'EUR', locale: 'en-IE', shippingRate: 7.95, freeShippingThreshold: 59, symbol: '€' },
+    EU: { currency: 'EUR', locale: 'en-IE', symbol: '€' },
 };
 
 // EU country codes
@@ -61,8 +59,7 @@ export function getCountryFromHeaders(headers: Headers): string | undefined {
 
 /**
  * Convert price from EUR to target currency.
- * Uses simple fixed rates for demo purposes.
- * In production, use a real exchange rate API.
+ * Fixed display rates only: the shop always charges in euro, and other currencies are a guide.
  */
 const exchangeRates: Record<CurrencyCode, number> = {
     EUR: 1,
