@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     // No request ID: a repeat capture then comes back as "already captured", so emails are never sent twice.
     const result = await captureOrder(orderID);
 
-    if (result.outcome === "declined" || result.outcome === "failed") {
+    if (result.outcome === "declined" || result.outcome === "rejected" || result.outcome === "failed") {
       // Pass PayPal's details through so the button can ask for another card.
       return NextResponse.json({ error: result.error, details: result.details }, { status: result.status ?? 502 });
     }

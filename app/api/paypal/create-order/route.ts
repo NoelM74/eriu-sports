@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { generateAccessToken, PAYPAL_API } from "@/lib/paypal";
 import { priceBasket, REGION_REQUIRED } from "@/lib/order-pricing";
 import { makeReference } from "@/lib/order-notify";
-import { packContact } from "@/lib/paypal-orders";
+import { packContact, signOrder } from "@/lib/paypal-orders";
 
 /**
  * Creates a PayPal order.
@@ -57,6 +57,13 @@ export async function POST(req: Request) {
     const eur = (n: number) => ({ currency_code: "EUR", value: n.toFixed(2) });
 
     const purchaseUnit = {
+      // Signature that lets capture tell our orders from ones made elsewhere with our public client ID.
+      reference_id: await signOrder({
+        reference,
+        currency: "EUR",
+        total: priced.total,
+        lines: priced.lines.map((l) => ({ quantity: l.quantity, unitPrice: l.unitPrice })),
+      }),
       invoice_id: reference,
       custom_id: packContact(phone, email),
       description: `Ériu Sports order ${reference}`,

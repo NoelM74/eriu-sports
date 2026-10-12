@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 // targets only; a full script-src policy would need nonces to keep PayPal, Stripe and
 // Google Analytics working.
 const securityHeaders = [
-  { key: "Strict-Transport-Security", value: "max-age=31536000" },
+  { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

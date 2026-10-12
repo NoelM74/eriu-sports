@@ -11,6 +11,10 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  // Only serve on eriusports.com, where the Cloudflare security rules apply.
+  // No public workers.dev address and no per-version preview addresses.
+  "workers_dev": false,
+  "preview_urls": false,
   "routes": [
     {
       "pattern": "eriusports.com",

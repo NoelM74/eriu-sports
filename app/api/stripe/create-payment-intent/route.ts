@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { priceBasket, REGION_REQUIRED } from "@/lib/order-pricing";
 import { makeReference } from "@/lib/order-notify";
 import { itemMetadata, stripe } from "@/lib/stripe-orders";
+import { CARD_PAYMENTS_ENABLED } from "@/lib/payments";
 
 /**
  * Creates a Stripe PaymentIntent for a card payment.
@@ -16,7 +17,7 @@ import { itemMetadata, stripe } from "@/lib/stripe-orders";
  */
 export async function POST(req: Request) {
   try {
-    if (!process.env.STRIPE_SECRET_KEY) {
+    if (!CARD_PAYMENTS_ENABLED || !process.env.STRIPE_SECRET_KEY) {
       return NextResponse.json({ error: "Card payments aren't available right now. Please use PayPal." }, { status: 503 });
     }
 

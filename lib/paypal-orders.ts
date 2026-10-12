@@ -10,8 +10,11 @@ import { notifyOrder, type OrderItem, type OrderRecord } from './order-notify';
 type PayPalOrder = any;
 
 export interface CaptureResult {
-  /** captured: we captured it now. already: it was captured before. declined: card refused. failed: anything else. */
-  outcome: 'captured' | 'already' | 'declined' | 'failed';
+  /**
+   * captured: we captured it now. already: it was captured before. declined: card refused.
+   * rejected: not an order this site created (see isOurOrder), so not captured. failed: anything else.
+   */
+  outcome: 'captured' | 'already' | 'declined' | 'rejected' | 'failed';
   order?: PayPalOrder;
   status?: number;
   error?: string;
@@ -37,10 +40,78 @@ export async function getOrder(orderID: string): Promise<PayPalOrder | null> {
 }
 
 /**
- * Captures an approved order. Asks PayPal for the full order back (items, address,
- * invoice ID) so the record comes from PayPal, not from the browser.
+ * Our public client ID lets anyone create a PayPal order in their own browser, at any
+ * price and with any items. So every order this site creates carries a signature in
+ * reference_id, made with our PayPal secret over the reference, total and each line's
+ * quantity and price. Only orders with a matching signature are captured.
+ */
+export interface SignedOrder {
+  reference: string;
+  currency: string;
+  total: number | string;
+  lines: { quantity: number | string; unitPrice: number | string }[];
+}
+
+const money = (v: number | string) => Number(v).toFixed(2);
+
+export async function signOrder(o: SignedOrder): Promise<string> {
+  const secret = process.env.PAYPAL_CLIENT_SECRET;
+  if (!secret) throw new Error('PayPal credentials are not configured.');
+  const text = [
+    'eriu-order-v1',
+    o.reference,
+    String(o.currency).toUpperCase(),
+    money(o.total),
+    o.lines.map((l) => `${Number(l.quantity)}x${money(l.unitPrice)}`).join(','),
+  ].join('|');
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey('raw', enc.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const mac = await crypto.subtle.sign('HMAC', key, enc.encode(text));
+  return `eriu1-${[...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, '0')).join('')}`;
+}
+
+/** True if this is an order the site created (see signOrder), checked against PayPal's copy. */
+export async function isOurOrder(order: PayPalOrder): Promise<boolean> {
+  const units = order?.purchase_units;
+  if (!Array.isArray(units) || units.length !== 1) return false;
+  const unit = units[0];
+  const items: any[] = Array.isArray(unit.items) ? unit.items : [];
+  if (!unit.invoice_id || !unit.amount?.value || items.length === 0) return false;
+  const expected = await signOrder({
+    reference: String(unit.invoice_id),
+    currency: String(unit.amount.currency_code ?? ''),
+    total: unit.amount.value,
+    lines: items.map((i) => ({ quantity: i.quantity, unitPrice: i.unit_amount?.value })),
+  });
+  const actual = String(unit.reference_id ?? '');
+  // Compare in constant time.
+  if (actual.length !== expected.length) return false;
+  let diff = 0;
+  for (let i = 0; i < actual.length; i++) diff |= actual.charCodeAt(i) ^ expected.charCodeAt(i);
+  return diff === 0;
+}
+
+/**
+ * Captures an approved order, but only one this site created. Asks PayPal for the
+ * full order back (items, address, invoice ID) so the record comes from PayPal,
+ * not from the browser.
  */
 export async function captureOrder(orderID: string, requestId?: string): Promise<CaptureResult> {
+  const existing = await getOrder(orderID);
+  if (!existing) {
+    return { outcome: 'failed', status: 502, error: "We couldn't reach PayPal to confirm your payment. You haven't been charged. Please try again." };
+  }
+  if (!(await isOurOrder(existing))) {
+    const amount = existing?.purchase_units?.[0]?.amount;
+    console.error(`[paypal] Order ${orderID} (${amount?.currency_code ?? ''} ${amount?.value ?? ''}) wasn't created by this site, so it wasn't captured.`);
+    return {
+      outcome: 'rejected',
+      status: 400,
+      error: "We couldn't match this payment to your order, so it wasn't taken. Please refresh the page and try again.",
+    };
+  }
+  if (existing.status === 'COMPLETED') return { outcome: 'already', order: existing };
+
   const res = await paypal(`/v2/checkout/orders/${encodeURIComponent(orderID)}/capture`, {
     method: 'POST',
     headers: {

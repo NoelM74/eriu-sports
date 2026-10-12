@@ -15,13 +15,15 @@ import { alertShop } from "@/lib/order-notify";
  * If a customer approves a payment but closes the page before the site captures it,
  * this captures it and records the order, so no approved payment is left hanging.
  */
-async function verified(req: Request, rawBody: string): Promise<boolean> {
+async function verified(req: Request, event: unknown): Promise<boolean> {
   const webhookId = process.env.PAYPAL_WEBHOOK_ID;
   if (!webhookId) {
     console.error("[paypal-webhook] PAYPAL_WEBHOOK_ID is not set, so the webhook can't be verified.");
     return false;
   }
   const h = (name: string) => req.headers.get(name) ?? "";
+  // PayPal always sends these. Without them there's nothing to check, so don't ask PayPal.
+  if (!h("paypal-transmission-sig") || !h("paypal-transmission-id") || !h("paypal-cert-url")) return false;
   const token = await generateAccessToken();
   const res = await fetch(`${PAYPAL_API}/v1/notifications/verify-webhook-signature`, {
     method: "POST",
@@ -33,7 +35,7 @@ async function verified(req: Request, rawBody: string): Promise<boolean> {
       transmission_sig: h("paypal-transmission-sig"),
       transmission_time: h("paypal-transmission-time"),
       webhook_id: webhookId,
-      webhook_event: JSON.parse(rawBody),
+      webhook_event: event,
     }),
   });
   const data = await res.json().catch(() => ({}));
@@ -41,12 +43,16 @@ async function verified(req: Request, rawBody: string): Promise<boolean> {
 }
 
 export async function POST(req: Request) {
-  const rawBody = await req.text();
+  let event;
   try {
-    if (!(await verified(req, rawBody))) {
+    event = JSON.parse(await req.text());
+  } catch {
+    return NextResponse.json({ error: "Invalid body." }, { status: 400 });
+  }
+  try {
+    if (!(await verified(req, event))) {
       return NextResponse.json({ error: "Not verified." }, { status: 401 });
     }
-    const event = JSON.parse(rawBody);
     const type = String(event?.event_type ?? "");
     const resource = event?.resource ?? {};
 
