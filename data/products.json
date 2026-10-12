@@ -13534,7 +13534,10 @@
       "colours": "White / Blue / Navy",
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
-    }
+    },
+    "soldOut": [
+      "S"
+    ]
   },
   {
     "id": "900000019",
