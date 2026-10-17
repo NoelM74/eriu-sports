@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import { generateAccessToken, PAYPAL_API } from "@/lib/paypal";
 import { captureOf, captureOrder, recordOrder } from "@/lib/paypal-orders";
 import { alertShop } from "@/lib/order-notify";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
+
+/** How long the checkout page gets to capture an approved order before the webhook does. Workers allow 30 seconds after replying. */
+const CHECKOUT_GRACE_MS = 25_000;
 
 /**
  * PayPal webhook. Set it up in the PayPal developer dashboard (your live app →
@@ -57,12 +61,22 @@ export async function POST(req: Request) {
     const resource = event?.resource ?? {};
 
     if (type === "CHECKOUT.ORDER.APPROVED") {
-      const result = await captureOrder(String(resource.id));
-      if (result.outcome === "captured") {
-        const status = captureOf(result.order).status;
-        console.log(`[paypal-webhook] Captured approved order ${resource.id} (${status}) that the checkout didn't finish.`);
-        await recordOrder(result.order);
-      }
+      // This arrives at the same moment the checkout page captures the order. If both
+      // capture at once, both can come back as captured and the emails go out twice.
+      // So give the checkout time to finish first, then only step in if it didn't
+      // (e.g. the customer closed the tab). The reply to PayPal goes straight away.
+      const orderId = String(resource.id);
+      getCloudflareContext().ctx.waitUntil(
+        (async () => {
+          await new Promise((r) => setTimeout(r, CHECKOUT_GRACE_MS));
+          const result = await captureOrder(orderId);
+          if (result.outcome === "captured") {
+            const status = captureOf(result.order).status;
+            console.log(`[paypal-webhook] Captured approved order ${orderId} (${status}) that the checkout didn't finish.`);
+            await recordOrder(result.order);
+          }
+        })().catch((e) => console.error(`[paypal-webhook] Late capture of ${orderId} failed: ${e instanceof Error ? e.message : e}`))
+      );
     } else if (
       type === "PAYMENT.CAPTURE.DENIED" ||
       type === "PAYMENT.CAPTURE.REVERSED" ||
