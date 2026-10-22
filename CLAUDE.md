@@ -69,7 +69,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - Supplier imports: no long sleeves, no seasons starting 2010 or later, no photos showing a person wearing the shirt. Don't duplicate existing products (plain and named versions of the same shirt are allowed).
 - The user's own photos may be current-season (e.g. 2025/26, 2026/27).
 - "New Season" badge only when the title contains 2026 or 2027 (current season is 2026-27).
-- Size charts: football = retro chart (S–2XL); GAA = GAA flat chart (S–2XL; the 2XL column continues the 2 cm steps and is waiting for the user to confirm it); AFL = AFL chart; kids football = kids football chart (XXS–2XL, ages 2–13); kids GAA chart is ready for when kids GAA jerseys are added. Kids sizes show as ages on the site (e.g. "2–3"); orders carry both size and age.
+- Size charts: football = retro chart (S–2XL); GAA = GAA flat chart (S–2XL; 2XL confirmed by the user on 22 October 2026: 60 cm chest); AFL = AFL chart; kids football = kids football chart (XXS–2XL, ages 2–13); kids GAA chart is ready for when kids GAA jerseys are added. Kids sizes show as ages on the site (e.g. "2–3"); orders carry both size and age.
 - All adult products, in every category, come in S to 2XL (user, 22 October 2026). The default `SIZES` in `lib/products.ts` is S–2XL; set `soldOut` for gaps rather than removing sizes.
 - Stock updates arrive as "X – size – SOLD OUT": set `soldOut` sizes on the product.
 
