@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const COLLECTION_LINKS = [
-  { href: '/collections/ireland-classics', label: 'Retro Irish Shirts' },
+  { href: '/collections/ireland-classics', label: 'Retro Irish Jerseys' },
   { href: '/collections/premier-league-classics', label: 'Premier League Classics' },
   { href: '/collections/european-world-classics', label: 'European & World Classics' },
   { href: '/collections/kids-football-kits', label: 'Kids Football Kits' },

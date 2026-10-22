@@ -20,7 +20,9 @@ function resolveCategory(raw?: string): CategoryKey | 'all' {
 export async function generateMetadata({ searchParams }: { searchParams: SearchParams }): Promise<Metadata> {
   const sp = await searchParams;
   const key = resolveCategory(sp.category);
-  const filtered = Boolean(sp.q || sp.club);
+  // Category, club and search views repeat the /collections and /clubs pages, so only
+  // the plain /catalog page is indexed. Search engines still follow the links.
+  const filtered = Boolean(sp.q || sp.club || sp.category);
   const cat = CATEGORIES.find((c) => c.key === key);
   const title = cat ? `${cat.h1} | Shop` : 'Shop Retro Football Shirts, GAA & AFL Jerseys';
   const description =
@@ -31,7 +33,6 @@ export async function generateMetadata({ searchParams }: { searchParams: SearchP
     title,
     description,
     alternates: { canonical: url },
-    // Search and club-filter results point search engines at /clubs pages instead.
     ...(filtered ? { robots: { index: false, follow: true } } : {}),
     openGraph: { title: `${title} | Ériu Sports`, description, url, type: 'website', images: OG_IMAGES },
   };

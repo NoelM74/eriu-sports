@@ -40,13 +40,13 @@ export const COLLECTIONS: CollectionDef[] = [
     slug: "ireland-classics",
     name: "Irish Classics",
     category: "football",
-    h1: "Retro Irish Shirts",
+    h1: "Retro Ireland Jerseys",
     intro:
-      "Ireland shirts everyone remembers from Euro 88, Italia 90 and USA 94, plus League of Ireland shirts from Bohemians and Cork City. €25 each, delivered worldwide.",
-    seoTitle: "Retro Irish Shirts | Ireland & League of Ireland",
+      "The Ireland jerseys everyone remembers from Euro 88, Italia 90 and USA 94, plus League of Ireland jerseys from Bohemians and Cork City. €25 each, delivered worldwide.",
+    seoTitle: "Retro Ireland Jerseys | Italia 90, USA 94 & Euro 88",
     seoDescription:
-      "Retro Ireland jerseys from Euro 88, Italia 90 and USA 94, plus League of Ireland shirts from Bohemians and Cork City. €25 each. Worldwide delivery, free over €49.",
-    keywords: ["retro Irish shirts", "retro Ireland jersey", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Cork City jersey"],
+      "Retro Ireland jerseys from Euro 88, Italia 90 and USA 94, plus League of Ireland jerseys from Bohemians and Cork City. €25 each. Worldwide delivery, free over €49.",
+    keywords: ["retro Ireland jersey", "Ireland retro jersey", "vintage Ireland jersey", "retro Irish jersey", "retro Irish shirts", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Cork City jersey"],
     priceFrom: 25,
     featured: "ireland-1990-italia-90-world",
   },

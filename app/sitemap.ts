@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { products, getClubs, getPlayers } from '@/lib/products';
-import { COLLECTIONS, CATEGORIES } from '@/lib/collections';
+import { COLLECTIONS } from '@/lib/collections';
 import { getPosts } from '@/lib/blog';
 
 const SITE = 'https://eriusports.com';
@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     page('', 1, 'daily'),
     page('/catalog', 0.8, 'daily'),
-    ...CATEGORIES.map((c) => page(`/catalog?category=${c.key}`, 0.8, 'weekly')),
     ...COLLECTIONS.map((c) => page(`/collections/${c.slug}`, 0.9, 'weekly')),
     page('/clubs', 0.8, 'weekly'),
     ...getClubs()

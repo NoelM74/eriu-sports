@@ -8,6 +8,7 @@ import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
 import ImageGallery from './ImageGallery';
 import { ldJson } from '@/lib/jsonld';
+import { getPosts } from '@/lib/blog';
 
 const SITE = 'https://eriusports.com';
 
@@ -111,6 +112,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
   const category = CATEGORIES.find((c) => c.key === product.category)!;
   const related = getRelatedProducts(product);
   const player = product.player ? getPlayerBySlug(product.player.slug) : undefined;
+  const stories = getPosts().filter((post) => post.products.includes(product.slug)).slice(0, 2);
   const url = `${SITE}/products/${product.slug}`;
   const details = DETAIL_LABELS.filter(([key]) => product.details[key]);
   const altBase = product.details.colours
@@ -197,7 +199,26 @@ export default async function ProductDetail({ params }: ProductPageProps) {
               <span className="text-sm text-gray-500">Free delivery on orders over €49</span>
             </div>
 
-            <p className="mt-6 text-base text-gray-700 leading-relaxed">{product.description}</p>
+            <div className="mt-6 space-y-4 text-base text-gray-700 leading-relaxed">
+              {product.description.split(/\n\n+/).map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+
+            {stories.length > 0 && (
+              <ul className="mt-4 space-y-1">
+                {stories.map((post) => (
+                  <li key={post.slug}>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="text-sm font-semibold text-[var(--color-teal)] underline underline-offset-4"
+                    >
+                      Read the story: {post.title} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             {details.length > 0 && (
               <dl className="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm border-t border-gray-200 pt-6">

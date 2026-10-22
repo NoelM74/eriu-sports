@@ -55,6 +55,7 @@ export const POSTS: BlogPost[] = [
       "Houghton's goal against Italy at Giants Stadium, McLoughlin's equaliser at Windsor Park and a last-16 exit. The story behind Ireland's 1992-94 and USA 94 jerseys.",
     category: "Irish Classics",
     datePublished: "2026-10-08",
+    dateModified: "2026-10-22",
     heroImage: "/images/ireland-classics/692734038-1.webp",
     heroAlt: "Ireland USA 94 World Cup home jersey in emerald green with a black geometric pattern",
     heroFit: "contain",
@@ -93,7 +94,7 @@ export const POSTS: BlogPost[] = [
         heading: "The USA 94 shirts",
         paragraphs: [
           "The home is emerald green with a bold black geometric pattern and tricolour trim at the collar. The away is white with three broad green stripes, the FAI crest and the Opel sponsor.",
-          "Sizes run S to 2XL, and the size guide has measurements.",
+          "Sizes run S to XL, and the size guide has measurements.",
         ],
       },
     ],
@@ -122,6 +123,7 @@ export const POSTS: BlogPost[] = [
       "Houghton's header against England in Stuttgart, Whelan's volley against the USSR and a late Dutch goal. The story behind Ireland's Euro 88 jersey.",
     category: "Irish Classics",
     datePublished: "2026-10-08",
+    dateModified: "2026-10-22",
     heroImage: "/images/ireland-classics/679941594-1.webp",
     heroAlt: "Ireland Euro 88 home jersey in emerald green with white and orange trim",
     heroFit: "contain",
@@ -146,7 +148,7 @@ export const POSTS: BlogPost[] = [
         heading: "The shirt",
         paragraphs: [
           "Emerald green with white and orange trim. It was Jack Charlton's first major tournament as manager, and it set up everything that followed, from Italia 90 to USA 94.",
-          "We stock the home, in sizes S to 2XL.",
+          "We stock the home, in sizes S to XL.",
         ],
       },
     ],

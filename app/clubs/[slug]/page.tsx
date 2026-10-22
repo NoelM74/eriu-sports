@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import AboutSection from '@/components/catalog/AboutSection';
+import { CLUB_ABOUT } from '@/lib/page-copy';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { CATEGORIES } from '@/lib/collections';
@@ -141,6 +143,8 @@ export default async function ClubPage({ params }: Props) {
           </section>
         ))}
       </div>
+
+      <AboutSection copy={CLUB_ABOUT[club.slug]} />
 
       {others.length > 0 && (
         <section className="border-t border-gray-100 bg-gray-50">

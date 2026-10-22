@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import AboutSection from '@/components/catalog/AboutSection';
+import { PLAYER_ABOUT } from '@/lib/page-copy';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product } from '@/lib/products';
@@ -126,6 +128,8 @@ export default async function PlayerPage({ params }: Props) {
           </section>
         ))}
       </div>
+
+      <AboutSection copy={PLAYER_ABOUT[player.slug]} />
 
       {others.length > 0 && (
         <section className="border-t border-gray-100 bg-gray-50">

@@ -16,7 +16,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - Irish-run, written by a fan. Warm and plain, never over the top. Personal but restrained.
 - Short sentences, one idea each. Mobile first: 2–3 line paragraphs.
 - Say it the way you'd tell a mate in the pub, not a brochure.
-- UK English: colour, organise, "shirts" not "jerseys" for football.
+- UK English: colour, organise, "shirts" not "jerseys" for football. Exception (user approved 22 October 2026): Ireland and League of Ireland retro pages say "jersey", because that is how Irish customers search.
 
 **Honesty (non-negotiable)**
 - Never say "official" or "authentic". Say "replica" or "fan replica" where it matters.
@@ -38,6 +38,7 @@ Read this first. It records how the site is run, how we write everything, and th
 **Product listings (2–4 sentences)**
 - Order: what makes it that shirt (season, kit, a visible detail) → colours and trim → sponsor → crest or print → one line of fan context.
 - Kids kits end with: "Shirt and shorts; socks aren't included."
+- Best sellers and pages that already get search impressions may carry two or three short paragraphs (separated by a blank line in `description`): visible details, a short fact-checked story, then fit and sizes. Reuse facts from our blog posts. Product pages link to any blog post that lists the product in its `products`.
 - GAA: player fit, "go up a size for a looser fit".
 - Keep new listings consistent with the existing ones in the same collection (look at neighbouring entries first).
 - Fan context for current kits comes from the club's or maker's own kit launch plus a trusted kit site. Cite sources in the reply to the user.
@@ -82,7 +83,7 @@ Read this first. It records how the site is run, how we write everything, and th
 
 ## 5. Naming
 
-- Collections: "Retro Irish Shirts" (slug `ireland-classics`, name "Irish Classics", includes League of Ireland), Premier League Classics, European & World Classics, Kids Football Kits, GAA Jerseys, GAA Training Vests, AFL Jerseys.
+- Collections: "Retro Irish Jerseys" (slug `ireland-classics`, name "Irish Classics", includes League of Ireland), Premier League Classics, European & World Classics, Kids Football Kits, GAA Jerseys, GAA Training Vests, AFL Jerseys.
 - Titles: "Team Season Kit [Kids Kit]" e.g. "Arsenal 2026-27 Home Kids Kit". Named shirts add "– Player Number".
 - Team names in data: "Arsenal FC", "Chelsea FC", "Liverpool FC", "Manchester United", "Barcelona", "Republic of Ireland". Don't change them.
 - Kids kit sections (auto): Premier League, International, European & World Clubs, Retro Classics (anything before 2015).
@@ -107,6 +108,9 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Cookies**: `components/layout/CookieConsent.tsx` loads Google Analytics (G-NEML64KY0M) only after the visitor accepts; Reject is equal in weight; the footer "Cookie settings" link reopens the banner; the Privacy Policy has a Cookies section. Don't add other tracking scripts outside this component.
 - **Security and quality**: security headers are set in `next.config.ts` (HSTS with includeSubDomains; no full script CSP, because PayPal, Stripe and Analytics need inline scripts). `wrangler.jsonc` sets `workers_dev` and `preview_urls` to false so the Worker is only reachable on eriusports.com, behind the Cloudflare rules; keep them. `public/.well-known/security.txt` expires 2027-10-01: renew the date before then. The contact form posts to `/api/contact` (emails the shop through Resend, honeypot field). `npx eslint .` and `npx tsc --noEmit` should both pass before a push. Run `npm audit --omit=dev` now and then; the only open items are build-time tools. `public/llms.txt` summarises the shop for AI search and must match section 4 facts. Shared share image: `lib/seo.ts`. JSON-LD goes through `lib/jsonld.ts`.
 - **Do not upgrade Next.js or @opennextjs/cloudflare without testing the Worker.** Next 16.4.0 with OpenNext 1.20.10 built fine but crashed on Cloudflare (error 1101, `Unexpected loadManifest(preview-props.json)`) on every server-rendered route; it was rolled back once (commit b099584). Next 16.3.8 with OpenNext 1.20.10 passes. Test any upgrade with `npx opennextjs-cloudflare build`, then `npx wrangler dev --port 8799` and check `/catalog`, an unknown URL and a POST to `/api/contact` (and the whole sitemap) before going live. Don't use `pkill -f` with those words, it kills your own shell.
+- **Best sellers (user, 22 October 2026)**: Ireland Italia 90 home, Manchester United 1998-99 Treble home, Ireland 1992-94 home.
+- **Search Console (3 months to October 2026)**: Ireland is the core market (116 of ~207 clicks). Strong or close: AFL collection, Euro 88 jersey, GAA 2026 county jerseys (positions 5-12), the Bohemians music shirts post, Ronaldinho. Man United retro searches sit at positions 45-65, so they are not a priority. Filtered `/catalog?category=` views are noindex and out of the sitemap so they don't compete with `/collections`.
+- **About copy**: longer copy under the grid on collection, club and player pages lives in `lib/page-copy.ts` (`COLLECTION_ABOUT`, `CLUB_ABOUT`, `PLAYER_ABOUT`), with links to the blog posts the facts come from.
 - **Collections copy** in `lib/collections.ts` (intro, SEO title, description, keywords) should mention new clubs as they are added.
 - **Feed**: Google Merchant Center feed at `/merchant-feed.xml` (one item per size). Counterfeit-policy risk was explained to the user.
 - **Page cache**: `open-next.config.ts` uses the static assets incremental cache with cache interception, and product cards get only card fields (`toCard`). Do not remove them (Error 1102).

@@ -3,7 +3,7 @@
     "id": "678616545",
     "title": "Ireland Italia 90 World Cup Home Jersey",
     "slug": "ireland-1990-italia-90-world",
-    "description": "The green home jersey from Italia 90, Ireland's first World Cup, when Jack Charlton's side reached the quarter-finals. Opel sponsor with classic stripe detailing.",
+    "description": "The green home jersey from Italia 90, Ireland's first World Cup. Deep green with a tonal chevron pattern, white stripes down the shoulders and sleeves, and a white V-neck with orange trim. The round FAI crest with the shamrock is on the chest, with Opel across the front.\n\nJack Charlton's side drew all three group games, starting with Kevin Sheedy's equaliser against England in Cagliari. In the last 16 in Genoa, Packie Bonner saved from Daniel Timofte and David O'Leary scored the last penalty against Romania. Italy ended the run 1-0 in the quarter-final in Rome.\n\nFIFA didn't allow sponsors on World Cup match shirts, so this Opel version is the one fans bought and wore that summer. Sizes S to XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/ireland-classics/678616545-1.webp",
@@ -27,7 +27,7 @@
     "id": "677983042",
     "title": "Ireland 1992-94 Home Jersey",
     "slug": "ireland-1992-94-home-retro-jersey",
-    "description": "Ireland's green home jersey from 1992-94, the side that qualified for USA 94. Opel sponsor.",
+    "description": "Ireland's green home jersey from 1992-94, worn through the qualifying campaign for USA 94. Green with a tonal stripe, bold white bars over the right shoulder and a white collar with orange and green trim. Opel's logo and name run across the chest, with the FAI crest beside them.\n\nQualifying came down to Windsor Park in November 1993. Northern Ireland went ahead through Jimmy Quinn, and five minutes later Alan McLoughlin hit the equaliser from the edge of the box. The 1-1 draw sent Ireland to America as group runners-up.\n\nIt's a big, bold 90s design and one of our best sellers. Sizes S to XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/ireland-classics/677983042-1.webp",
@@ -396,9 +396,9 @@
   },
   {
     "id": "647601889",
-    "title": "Manchester United 1998-99 Home Shirt",
+    "title": "Manchester United 1998-99 Treble Home Shirt",
     "slug": "manchester-united-98-99-treble-season",
-    "description": "United's home shirt from the 1998-99 Treble season, with the SHARP sponsor and a quarter-zip collar.",
+    "description": "United's home shirt from 1998-99, the season they won the Treble. Classic red with a white collar and zip neck, black and white taped sleeves and white cuffs, with SHARP across the chest and the club crest.\n\nUnited won the league against Spurs on the last day and beat Newcastle 2-0 in the FA Cup final. Four days later in Barcelona, Bayern Munich led into stoppage time, until Teddy Sheringham and Ole Gunnar Solskjær scored two minutes apart. Roy Keane, suspended for the final, had dragged them through the semi-final in Turin, and Cork's Denis Irwin started at left-back.\n\nA classic 90s cut, a little boxier than a modern shirt. Sizes S to XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/premier-league-classics/647601889-1.webp",
@@ -1022,7 +1022,7 @@
     "id": "592696996",
     "title": "Galway GAA Away Jersey",
     "slug": "galway-away-jersey-perfect-b23b",
-    "description": "Galway's black away jersey with maroon and white detail, with sponsor logos on the front, back and sleeves.",
+    "description": "Galway's black away jersey, with a maroon print of city scenes across the front, including the Statue of Liberty and a suspension bridge. It has a white V-neck with maroon trim, white cuffs with maroon stripes and the Galway crest on the chest.\n\nSupermac's is across the front and Sō Hotels is on the sleeves. Player fit, snug through the body, so go up a size for a looser fit.",
     "price": 29.95,
     "images": [
       "/images/gaa-gear/592696996-1.webp",
@@ -1192,7 +1192,7 @@
     "id": "900000004",
     "title": "Tipperary GAA 2026 Home Jersey",
     "slug": "tipperary-2026-home-jersey",
-    "description": "Tipperary's 2026 home jersey: classic blue with the gold central hoop and the Clover sponsor.",
+    "description": "Tipperary's 2026 home jersey: classic blue with the gold hoop across the chest and the Clover sponsor on it. It has white cuffs with blue and gold trim, a blue and white collar and the Tiobraid Árann crest.\n\nPlayer fit, snug through the body, so go up a size for a looser fit.",
     "price": 29.95,
     "images": [
       "/images/gaa-gear/900000004-1.webp",
@@ -1216,7 +1216,7 @@
     "id": "900000005",
     "title": "Wexford GAA 2026 Home Jersey",
     "slug": "wexford-2026-home-jersey",
-    "description": "Wexford's 2026 home jersey in the Model County's purple and gold, with a gold chest panel.",
+    "description": "Wexford's 2026 home jersey in the Model County's purple and gold. A gold yoke with purple stripes runs across the shoulders, over a purple body with a fine herringbone texture, and the Loch Garman crest is on the chest.\n\nZurich is across the front, with 'Tackle Your Feelings' on the sleeves. Player fit, snug through the body, so go up a size for a looser fit.",
     "price": 29.95,
     "images": [
       "/images/gaa-gear/900000005-1.webp",
@@ -1232,14 +1232,15 @@
       "kit": "Home",
       "colours": "Purple / Gold",
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
-      "condition": "New"
+      "condition": "New",
+      "sponsor": "Zurich"
     }
   },
   {
     "id": "900000006",
     "title": "Dublin GAA 2026 Home Jersey",
     "slug": "dublin-gaa-2026-home-jersey",
-    "description": "Dublin's 2026 home jersey: sky blue with a navy pinstripe, navy yoke and sleeves, and the Staycity sponsor.",
+    "description": "Dublin's 2026 home jersey in sky blue, with thin navy pinstripes and a fine herringbone texture. The yoke, sleeves and collar are navy, with white trim on the cuffs and the Áth Cliath crest on the chest.\n\nStaycity Aparthotels is across the front. Player fit, snug through the body, so go up a size for a looser fit.",
     "price": 29.95,
     "images": [
       "/images/gaa-gear/900000006-1.webp",

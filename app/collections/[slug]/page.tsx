@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import AboutSection from '@/components/catalog/AboutSection';
+import { COLLECTION_ABOUT } from '@/lib/page-copy';
 import { notFound } from 'next/navigation';
 import ShuffledGrid from '@/components/catalog/ShuffledGrid';
 import ClubPicker from '@/components/catalog/ClubPicker';
@@ -129,6 +131,8 @@ export default async function CollectionPage({ params }: Props) {
           </>
         )}
       </section>
+
+      <AboutSection copy={COLLECTION_ABOUT[c.slug]} />
 
       <section className="border-t border-gray-100 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
