@@ -94,7 +94,7 @@ export const POSTS: BlogPost[] = [
         heading: "The USA 94 shirts",
         paragraphs: [
           "The home is emerald green with a bold black geometric pattern and tricolour trim at the collar. The away is white with three broad green stripes, the FAI crest and the Opel sponsor.",
-          "Sizes run S to XL, and the size guide has measurements.",
+          "Sizes run S to 2XL, and the size guide has measurements.",
         ],
       },
     ],
@@ -148,7 +148,7 @@ export const POSTS: BlogPost[] = [
         heading: "The shirt",
         paragraphs: [
           "Emerald green with white and orange trim. It was Jack Charlton's first major tournament as manager, and it set up everything that followed, from Italia 90 to USA 94.",
-          "We stock the home, in sizes S to XL.",
+          "We stock the home, in sizes S to 2XL.",
         ],
       },
     ],

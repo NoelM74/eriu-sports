@@ -3,7 +3,7 @@
     "id": "678616545",
     "title": "Ireland Italia 90 World Cup Home Jersey",
     "slug": "ireland-1990-italia-90-world",
-    "description": "The green home jersey from Italia 90, Ireland's first World Cup. Deep green with a tonal chevron pattern, white stripes down the shoulders and sleeves, and a white V-neck with orange trim. The round FAI crest with the shamrock is on the chest, with Opel across the front.\n\nJack Charlton's side drew all three group games, starting with Kevin Sheedy's equaliser against England in Cagliari. In the last 16 in Genoa, Packie Bonner saved from Daniel Timofte and David O'Leary scored the last penalty against Romania. Italy ended the run 1-0 in the quarter-final in Rome.\n\nFIFA didn't allow sponsors on World Cup match shirts, so this Opel version is the one fans bought and wore that summer. Sizes S to XL; the size guide has measurements.",
+    "description": "The green home jersey from Italia 90, Ireland's first World Cup. Deep green with a tonal chevron pattern, white stripes down the shoulders and sleeves, and a white V-neck with orange trim. The round FAI crest with the shamrock is on the chest, with Opel across the front.\n\nJack Charlton's side drew all three group games, starting with Kevin Sheedy's equaliser against England in Cagliari. In the last 16 in Genoa, Packie Bonner saved from Daniel Timofte and David O'Leary scored the last penalty against Romania. Italy ended the run 1-0 in the quarter-final in Rome.\n\nFIFA didn't allow sponsors on World Cup match shirts, so this Opel version is the one fans bought and wore that summer. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/ireland-classics/678616545-1.webp",
@@ -21,13 +21,20 @@
       "sponsor": "Opel",
       "colours": "Green / White / Orange",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "677983042",
     "title": "Ireland 1992-94 Home Jersey",
     "slug": "ireland-1992-94-home-retro-jersey",
-    "description": "Ireland's green home jersey from 1992-94, worn through the qualifying campaign for USA 94. Green with a tonal stripe, bold white bars over the right shoulder and a white collar with orange and green trim. Opel's logo and name run across the chest, with the FAI crest beside them.\n\nQualifying came down to Windsor Park in November 1993. Northern Ireland went ahead through Jimmy Quinn, and five minutes later Alan McLoughlin hit the equaliser from the edge of the box. The 1-1 draw sent Ireland to America as group runners-up.\n\nIt's a big, bold 90s design and one of our best sellers. Sizes S to XL; the size guide has measurements.",
+    "description": "Ireland's green home jersey from 1992-94, worn through the qualifying campaign for USA 94. Green with a tonal stripe, bold white bars over the right shoulder and a white collar with orange and green trim. Opel's logo and name run across the chest, with the FAI crest beside them.\n\nQualifying came down to Windsor Park in November 1993. Northern Ireland went ahead through Jimmy Quinn, and five minutes later Alan McLoughlin hit the equaliser from the edge of the box. The 1-1 draw sent Ireland to America as group runners-up.\n\nIt's a big, bold 90s design and one of our best sellers. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/ireland-classics/677983042-1.webp",
@@ -45,7 +52,14 @@
       "sponsor": "Opel",
       "colours": "Green / White",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "677985214",
@@ -68,7 +82,14 @@
       "kit": "Away",
       "colours": "White / Green",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "678621136",
@@ -92,7 +113,14 @@
       "sponsor": "Opel",
       "colours": "White / Green",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "692734038",
@@ -114,7 +142,14 @@
       "kit": "Home",
       "colours": "Green / Black / White",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "692696303",
@@ -139,7 +174,14 @@
       "sponsor": "Opel",
       "colours": "White / Green",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "692734040",
@@ -164,7 +206,14 @@
       "sponsor": "Opel",
       "colours": "White / Green / Orange",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "679941594",
@@ -187,7 +236,14 @@
       "kit": "Home",
       "colours": "Green / White / Orange",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "695614771",
@@ -211,7 +267,14 @@
       "sponsor": "Opel",
       "colours": "Orange / Green / Black",
       "condition": "New"
-    }
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   },
   {
     "id": "677960419",
@@ -1020,9 +1083,9 @@
   },
   {
     "id": "592696996",
-    "title": "Galway GAA Away Jersey",
+    "title": "Galway GAA 2025 Special Edition Alternative Jersey",
     "slug": "galway-away-jersey-perfect-b23b",
-    "description": "Galway's black away jersey, with a maroon print of city scenes across the front, including the Statue of Liberty and a suspension bridge. It has a white V-neck with maroon trim, white cuffs with maroon stripes and the Galway crest on the chest.\n\nSupermac's is across the front and Sō Hotels is on the sleeves. Player fit, snug through the body, so go up a size for a looser fit.",
+    "description": "Galway's 2025 special edition alternative jersey, made for Galway GAA's 'Dancing Like A Star Stateside' charity event in New York. The black body carries a maroon print of landmarks from the five cities taking part: Galway, New York, Boston, Chicago and San Francisco, including the Statue of Liberty.\n\nIt has a white V-neck with maroon trim, white cuffs with maroon stripes and the Galway crest on the chest. Supermac's is across the front and Sō Hotels is on the sleeves. Player fit, snug through the body, so go up a size for a looser fit.",
     "price": 29.95,
     "images": [
       "/images/gaa-gear/592696996-1.webp",
@@ -1033,8 +1096,8 @@
     "currency": "EUR",
     "details": {
       "team": "Galway",
-      "season": "Current",
-      "kit": "Away",
+      "season": "2025",
+      "kit": "Alternative",
       "colours": "Black / Maroon / White",
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
