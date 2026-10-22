@@ -461,7 +461,7 @@
     "id": "647601889",
     "title": "Manchester United 1998-99 Treble Home Shirt",
     "slug": "manchester-united-98-99-treble-season",
-    "description": "United's home shirt from 1998-99, the season they won the Treble. Classic red with a white collar and zip neck, black and white taped sleeves and white cuffs, with SHARP across the chest and the club crest.\n\nUnited won the league against Spurs on the last day and beat Newcastle 2-0 in the FA Cup final. Four days later in Barcelona, Bayern Munich led into stoppage time, until Teddy Sheringham and Ole Gunnar Solskjær scored two minutes apart. Roy Keane, suspended for the final, had dragged them through the semi-final in Turin, and Cork's Denis Irwin started at left-back.\n\nA classic 90s cut, a little boxier than a modern shirt. Sizes S to XL; the size guide has measurements.",
+    "description": "United's home shirt from 1998-99, the season they won the Treble. Classic red with a white collar and zip neck, black and white taped sleeves and white cuffs, with SHARP across the chest and the club crest.\n\nUnited won the league against Spurs on the last day and beat Newcastle 2-0 in the FA Cup final. Four days later in Barcelona, Bayern Munich led into stoppage time, until Teddy Sheringham and Ole Gunnar Solskjær scored two minutes apart. Roy Keane, suspended for the final, had dragged them through the semi-final in Turin, and Cork's Denis Irwin started at left-back.\n\nA classic 90s cut, a little boxier than a modern shirt. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/premier-league-classics/647601889-1.webp",
@@ -4699,6 +4699,7 @@
     },
     "sizes": [
       "S",
+      "M",
       "L",
       "XL",
       "2XL"
@@ -5041,7 +5042,10 @@
     },
     "sizes": [
       "S",
-      "XL"
+      "M",
+      "L",
+      "XL",
+      "2XL"
     ]
   },
   {
@@ -5219,6 +5223,7 @@
     },
     "sizes": [
       "S",
+      "M",
       "L",
       "XL",
       "2XL"
@@ -5309,6 +5314,7 @@
       "S",
       "M",
       "L",
+      "XL",
       "2XL"
     ]
   },
@@ -5793,8 +5799,11 @@
       "condition": "New"
     },
     "sizes": [
+      "S",
       "M",
-      "L"
+      "L",
+      "XL",
+      "2XL"
     ]
   },
   {
@@ -6137,6 +6146,7 @@
       "S",
       "M",
       "L",
+      "XL",
       "2XL"
     ]
   },
@@ -6655,6 +6665,7 @@
     "sizes": [
       "S",
       "M",
+      "L",
       "XL",
       "2XL"
     ]
@@ -7632,6 +7643,7 @@
     "sizes": [
       "S",
       "M",
+      "L",
       "XL",
       "2XL"
     ]
@@ -9413,7 +9425,8 @@
       "S",
       "M",
       "L",
-      "XL"
+      "XL",
+      "2XL"
     ]
   },
   {
@@ -9902,6 +9915,7 @@
       "S",
       "M",
       "L",
+      "XL",
       "2XL"
     ]
   },
@@ -10493,6 +10507,7 @@
     "sizes": [
       "S",
       "M",
+      "L",
       "XL",
       "2XL"
     ]
@@ -10525,6 +10540,7 @@
     "sizes": [
       "S",
       "M",
+      "L",
       "XL",
       "2XL"
     ]
@@ -12811,6 +12827,7 @@
       "S",
       "M",
       "L",
+      "XL",
       "2XL"
     ]
   },

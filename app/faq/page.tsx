@@ -53,7 +53,7 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: 'What sizes do you stock?',
-        a: 'Most shirts come in S to XL, and many go up to 2XL. Each shirt page shows its sizes. Check the size guide if you are between sizes.',
+        a: 'Adult shirts and jerseys come in S to 2XL. Each shirt page shows its sizes. Check the size guide if you are between sizes.',
       },
     ],
   },

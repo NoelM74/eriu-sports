@@ -77,7 +77,7 @@ interface RawProduct {
   test?: boolean;
 }
 
-export const SIZES = ['S', 'M', 'L', 'XL'];
+export const SIZES = ['S', 'M', 'L', 'XL', '2XL'];
 
 /** Only flag current-season kits. Most retro products need no badge. */
 function deriveBadge(p: RawProduct): string | null {

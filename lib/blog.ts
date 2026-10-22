@@ -879,10 +879,10 @@ export const POSTS: BlogPost[] = [
     title: "GAA Jersey Sizes: How Player Fit Works",
     seoTitle: "GAA Jersey Size Guide: Player Fit Explained",
     description:
-      "Do GAA jerseys run small? What player fit means, chest measurements for S to XL, and when to size up for a GAA jersey or training vest.",
+      "Do GAA jerseys run small? What player fit means, chest measurements for S to 2XL, and when to size up for a GAA jersey or training vest.",
     category: "GAA",
     datePublished: "2026-09-23",
-    dateModified: "2026-09-24",
+    dateModified: "2026-10-22",
     heroImage: "/images/gaa-gear/900000006-1.webp",
     heroAlt: "Dublin GAA home jersey in sky blue with navy pinstripes",
     heroFit: "contain",
@@ -906,6 +906,7 @@ export const POSTS: BlogPost[] = [
           "Medium: 54 cm flat (108 cm, 42.5 in all round)",
           "Large: 56 cm flat (112 cm, 44 in all round)",
           "XL: 58 cm flat (116 cm, 45.5 in all round)",
+          "2XL: 60 cm flat (120 cm, 47 in all round)",
         ],
       },
       {

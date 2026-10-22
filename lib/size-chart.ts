@@ -55,13 +55,13 @@ const FOOTBALL_KIDS: ChartDef = {
 
 /** Adult GAA jerseys, measured flat. */
 const GAA: ChartDef = {
-  sizes: ['S', 'M', 'L', 'XL'],
+  sizes: ['S', 'M', 'L', 'XL', '2XL'],
   rows: [
-    { label: 'Chest', unit: 'cm', values: [52, 54, 56, 58] },
-    { label: 'Waist', unit: 'cm', values: [49, 51, 53, 55] },
-    { label: 'Hem', unit: 'cm', values: [52, 54, 56, 58] },
-    { label: 'Length', unit: 'cm', values: [71, 73, 75, 77] },
-    { label: 'Shoulder', unit: 'cm', values: [32, 32.5, 33, 33.5] },
+    { label: 'Chest', unit: 'cm', values: [52, 54, 56, 58, 60] },
+    { label: 'Waist', unit: 'cm', values: [49, 51, 53, 55, 57] },
+    { label: 'Hem', unit: 'cm', values: [52, 54, 56, 58, 60] },
+    { label: 'Length', unit: 'cm', values: [71, 73, 75, 77, 79] },
+    { label: 'Shoulder', unit: 'cm', values: [32, 32.5, 33, 33.5, 34] },
   ],
   note: `${FLAT_NOTE} GAA jerseys are a player fit, so go up a size for a looser fit.`,
   howTo: FLAT_HOW_TO,
