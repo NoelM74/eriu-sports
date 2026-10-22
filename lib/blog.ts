@@ -1097,6 +1097,386 @@ export const POSTS: BlogPost[] = [
     ],
     cta: { label: "Shop Premier League classics", href: "/collections/premier-league-classics" },
   },
+  {
+    slug: "fiorentina-batistuta-rui-costa-shirts",
+    title: "Fiorentina's Purple Shirts: Batistuta, Rui Costa and the Late 90s",
+    seoTitle: "Retro Fiorentina Shirts: Batistuta & Rui Costa Jerseys",
+    description:
+      "Batistuta stayed when Fiorentina went down, Rui Costa arrived from Benfica, and for a few seasons Florence had a side to fear. The story behind the Nintendo and Toyota shirts.",
+    category: "European & World Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/european-world-classics/fiorentina-1998-99-home-shirt-1.webp",
+    heroAlt: "Fiorentina 1998-99 purple home shirt with the Nintendo sponsor",
+    heroFit: "contain",
+    intro:
+      "Fiorentina fans put up a bronze statue of Gabriel Batistuta in 1996, while he was still playing for them. That tells you most of what you need to know about Florence in the 90s, and about the purple shirt he wore.",
+    sections: [
+      {
+        heading: "Batigol stays",
+        paragraphs: [
+          "Fiorentina signed Batistuta from Boca Juniors in 1991, after a club vice-president watched him at that summer's Copa América. Two years later Fiorentina went down to Serie B.",
+          "He stayed. He scored 16 league goals, and Fiorentina won Serie B at the first attempt. In 1994-95 he was Serie A's top scorer with 26, and in 1996 he scored in both legs of the Coppa Italia final against Atalanta.",
+        ],
+      },
+      {
+        heading: "Rui Costa and the 10",
+        paragraphs: [
+          "Rui Costa came from Benfica in 1994 and played behind Batistuta for seven seasons, wearing 10. He won the Coppa Italia twice with the club, in 1996 and 2001, and left for AC Milan in 2001.",
+        ],
+      },
+      {
+        heading: "1998-99: top at Christmas",
+        paragraphs: [
+          "Under Giovanni Trapattoni, Fiorentina led Serie A for much of the first half of 1998-99 and were top at the winter break. The challenge faded. They finished third and lost the Coppa Italia final to Parma on away goals.",
+          "That season's home shirt is the one with Nintendo across the chest, a button collar and white blocks across the shoulders.",
+        ],
+      },
+      {
+        heading: "1999-2000: Wembley",
+        paragraphs: [
+          "Third place meant the Champions League. On 27 October 1999 Fiorentina played Arsenal at Wembley, and Batistuta scored the only goal from a tight angle with 15 minutes left. In the second group stage they beat Manchester United 2-0 in Florence, with goals from Batistuta and Abel Balbo.",
+          "A 3-3 draw at home to Bordeaux in the last game meant they still went out. Batistuta joined Roma that summer and won the league there in 2001. The shirt from his last Fiorentina season has Toyota across the front.",
+        ],
+        image: {
+          src: "/images/blog/batistuta-fiorentina-9-shirt.webp",
+          alt: "Gabriel Batistuta holding up a purple and white Fiorentina shirt printed BATISTUTA 9",
+          caption: "Gabriel Batistuta holds up one of his old Fiorentina shirts, printed BATISTUTA 9.",
+          credit: {
+            author: "Roberto Vicario",
+            license: "CC BY-SA 3.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Omar_Batistuta.jpg",
+          },
+        },
+      },
+      {
+        heading: "Which shirt?",
+        paragraphs: [
+          "We stock the 1998-99 Nintendo home and the 1999-2000 Toyota home, plain for €25 or printed BATISTUTA 9 or RUI COSTA 10 for €35. Both wore those numbers in those seasons.",
+          "There's also the 1992-93 home with 7UP, and two Sammontana shirts from the mid-90s. Sizes run S to 2XL.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Did Batistuta play for Fiorentina in Serie B?", a: "Yes. He stayed after relegation in 1993, scored 16 league goals in 1993-94, and Fiorentina won Serie B." },
+      { q: "Who scored when Fiorentina beat Arsenal at Wembley?", a: "Gabriel Batistuta, on 27 October 1999. Fiorentina won 1-0 in the Champions League group stage." },
+      { q: "What number did Rui Costa wear at Fiorentina?", a: "10, behind Batistuta's 9." },
+    ],
+    products: [
+      "fiorentina-1998-99-home-shirt",
+      "fiorentina-1999-00-home-shirt-batistuta-9",
+      "fiorentina-1998-99-home-shirt-rui-costa-10",
+      "fiorentina-1999-00-home-shirt",
+    ],
+    cta: { label: "Shop retro Fiorentina shirts", href: "/clubs/fiorentina" },
+  },
+  {
+    slug: "manchester-united-1993-95-black-away-shirt",
+    title: "Manchester United's Black Away Shirt, 1993-95",
+    seoTitle: "Man United 1993-95 Black Away Shirt: Cantona & Keane",
+    description:
+      "Roy Keane's first season, a Double, and Cantona at his best. The story of United's all-black away shirt from 1993-95, with Sharp Viewcam across the chest in gold.",
+    category: "Premier League Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/premier-league-classics/671313157-1.webp",
+    heroAlt: "Manchester United 1993-95 black away shirt with gold Sharp Viewcam lettering",
+    heroFit: "contain",
+    intro:
+      "In the summer of 1993 United had just won their first league title in 26 years. They signed a 21-year-old from Cork, and they brought out a black away shirt. Both worked out.",
+    sections: [
+      {
+        heading: "The shirt",
+        paragraphs: [
+          "All black, with gold trim on the collar and sleeves, blue patterned cuffs and SHARP VIEWCAM across the chest in gold. The crest sits in a shield-shaped patch.",
+          "Black wasn't a usual colour for an English club then, and this one stood out. It stayed as the away shirt for two seasons, 1993-94 and 1994-95.",
+        ],
+      },
+      {
+        heading: "Keane arrives",
+        paragraphs: [
+          "Roy Keane signed from Nottingham Forest on 19 July 1993 for £3.75 million, a British record at the time. Denis Irwin was already at left-back, so the side had two Cork men in it.",
+        ],
+      },
+      {
+        heading: "The Double",
+        paragraphs: [
+          "United won the league by eight points from Blackburn, with 92 points. Eric Cantona scored 25 goals in all competitions and was named PFA Player of the Year.",
+          "In the FA Cup final at Wembley on 14 May 1994, Cantona scored two penalties in a 4-0 win over Chelsea, and Mark Hughes and Brian McClair got the others. It was the club's first Double.",
+        ],
+      },
+      {
+        heading: "Plain or Cantona 7",
+        paragraphs: [
+          "We stock the shirt plain for €25, or printed CANTONA 7, his number at United, for €35. Sizes run S to 2XL. If you want the Treble shirt from five years later, that's on the site too.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Who sponsored United's black away shirt?", a: "Sharp. The shirt carries SHARP VIEWCAM in gold across the chest." },
+      { q: "When did Roy Keane join Manchester United?", a: "On 19 July 1993, from Nottingham Forest, for £3.75 million." },
+      { q: "Who did United beat in the 1994 FA Cup final?", a: "Chelsea, 4-0 at Wembley. Cantona scored two penalties." },
+    ],
+    products: [
+      "manchester-united-away-1993-95",
+      "manchester-united-1993-95-away-shirt-cantona-7",
+      "manchester-united-98-99-treble-season",
+    ],
+    cta: { label: "Shop retro Man United shirts", href: "/clubs/manchester-united" },
+  },
+  {
+    slug: "arsenal-bruised-banana-shirt-1991-93",
+    title: "Arsenal's Bruised Banana Shirt, 1991-93",
+    seoTitle: "Arsenal Bruised Banana Shirt 1991-93: The Story",
+    description:
+      "Yellow with black zigzags, JVC in red, and a nickname that stuck. How Arsenal's 1991-93 away shirt went from a joke to a shirt fans hunt for.",
+    category: "Premier League Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/premier-league-classics/670532150-1.webp",
+    heroAlt: "Arsenal 1991-93 yellow and black zigzag away shirt with the JVC sponsor",
+    heroFit: "contain",
+    intro:
+      "Arsenal fans called it the bruised banana almost as soon as they saw it. More than thirty years on, people still search for it by its nickname, and the club has brought the pattern back.",
+    sections: [
+      {
+        heading: "The shirt",
+        paragraphs: [
+          "Yellow, covered in bands of black zigzags, with red trim on the V-neck and sleeves, the old cannon crest and JVC in red across the chest. Arsenal wore it as their away shirt from 1991 to 1993.",
+          "The nickname explains itself. Yellow with dark marks all over it, like fruit left too long in the bowl.",
+        ],
+      },
+      {
+        heading: "Ian Wright",
+        paragraphs: [
+          "Ian Wright joined from Crystal Palace in September 1991 for £2.5 million, a club record, and scored a hat-trick on his league debut at Southampton.",
+          "He finished 1991-92 with 29 league goals, 24 of them for Arsenal, and won the First Division Golden Boot.",
+        ],
+      },
+      {
+        heading: "1992-93: two cups",
+        paragraphs: [
+          "In the first Premier League season Arsenal finished tenth, but they won both domestic cups. They beat Sheffield Wednesday in the League Cup final, then beat them again in the FA Cup final after a replay. Wright scored in the final and in the replay.",
+        ],
+      },
+      {
+        heading: "From joke to classic",
+        paragraphs: [
+          "For years it was the shirt people laughed about. Then fans started wearing it again, and in 2019 Arsenal brought the pattern back on a new away shirt. That tells you how much opinion had changed.",
+        ],
+      },
+      {
+        heading: "Sizes",
+        paragraphs: [
+          "The adult shirt is €25, in sizes S to 2XL. There's a kids kit too, shirt and shorts for €30, and the red and white 1992-94 home from the cup double season.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Why is it called the bruised banana?", a: "It's yellow with dark zigzag marks all over, like a bruised banana. Fans gave it the name when it came out." },
+      { q: "When did Arsenal wear the bruised banana?", a: "It was their away shirt from 1991 to 1993." },
+      { q: "Did Arsenal bring the bruised banana back?", a: "Yes. The 2019-20 away shirt brought back the zigzag pattern." },
+    ],
+    products: ["arsenal-1991-93-bruised-banana", "arsenal-1991-93-bruised-banana-away-kids-kit", "arsenal-1992-94-home-jersey"],
+    cta: { label: "Shop retro Arsenal shirts", href: "/clubs/arsenal" },
+  },
+  {
+    slug: "ireland-jerseys-1990-1994-2002",
+    title: "Ireland's World Cup Jerseys: 1990, 1994 and 2002 Compared",
+    seoTitle: "Retro Ireland Jerseys: Italia 90 vs USA 94 vs 2002",
+    description:
+      "Three World Cups, three green jerseys. What each one looks like, what happened in it, and how to choose between Italia 90, USA 94 and Japan and Korea 2002.",
+    category: "Irish Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/ireland-classics/692734038-1.webp",
+    heroAlt: "Ireland USA 94 World Cup home jersey in emerald green with a black geometric pattern",
+    heroFit: "contain",
+    intro:
+      "Ireland have been to three World Cups, and each one has its own green jersey. If you can only have one, here's how they compare.",
+    sections: [
+      {
+        heading: "Where it started: Euro 88",
+        paragraphs: [
+          "Before the World Cups came Euro 88, Jack Charlton's first tournament. Ray Houghton's header beat England in Stuttgart, and the Netherlands only got past Ireland with Wim Kieft's header eight minutes from the end.",
+        ],
+        image: {
+          src: "/images/blog/ireland-netherlands-euro-88-kieft-goal.webp",
+          alt: "Black and white photo of Wim Kieft's goal for the Netherlands against Ireland at Euro 88, with a packed stand behind the goal",
+          caption: "Wim Kieft's header goes in for the Netherlands against Ireland in Gelsenkirchen, 18 June 1988. Ireland are in the darker shirts.",
+          credit: {
+            author: "Rob Bogaerts / Anefo, Nationaal Archief",
+            license: "CC0 1.0",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:EK_voetbal_in_West_Duitsland_Nederland_tegen_Ierland_1_Kieft_scoort_(van_overk,_Bestanddeelnr_934-2696.jpg",
+          },
+        },
+      },
+      {
+        heading: "Italia 90",
+        paragraphs: [
+          "Deep green with a tonal chevron pattern, white stripes on the shoulders and a white V-neck with orange trim, with Opel across the front.",
+          "Ireland drew all three group games, beat Romania on penalties in Genoa after Packie Bonner's save and David O'Leary's kick, and went out 1-0 to Italy in the quarter-final in Rome. Pick this one if you want the jersey from the summer everyone remembers.",
+        ],
+      },
+      {
+        heading: "USA 94",
+        paragraphs: [
+          "Two jerseys cover this one. The 1992-94 home, with the big white bars over one shoulder, took Ireland through qualifying, which came down to Alan McLoughlin's equaliser at Windsor Park. The USA 94 home is emerald green with a bold black geometric pattern and tricolour trim on the collar.",
+          "At Giants Stadium, Houghton chipped Gianluca Pagliuca and Ireland beat Italy 1-0, their first win at a World Cup finals. The Netherlands knocked them out in Orlando. Pick this one if you want the boldest design of the three.",
+        ],
+      },
+      {
+        heading: "Japan and Korea 2002",
+        paragraphs: [
+          "Bright green with white contrast stitching down the seams, a green and white ribbed collar and eircom across the chest.",
+          "Mick McCarthy's side drew 1-1 with Cameroon, Matt Holland scoring. Against Germany in Ibaraki, Robbie Keane equalised in the second minute of stoppage time. Keane, Gary Breen and Damien Duff scored in a 3-0 win over Saudi Arabia.",
+          "In the last 16 in Suwon, Ian Harte missed a penalty and Keane scored one in the 90th minute to make it 1-1. Spain won the shoot-out 3-2. Pick this one if you grew up with Keane and Duff.",
+        ],
+      },
+      {
+        heading: "Side by side",
+        paragraphs: ["All four are €25, in sizes S to 2XL."],
+        bullets: [
+          "Italia 90 home: deep green, white V-neck, Opel.",
+          "1992-94 home: white shoulder bars, Opel, the road to America.",
+          "USA 94 home: emerald green with a black geometric pattern.",
+          "2002 home: bright green with white stitching, eircom.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How many World Cups have Ireland played in?", a: "Three: Italia 90, USA 94 and Japan and Korea 2002." },
+      { q: "Who scored Ireland's late equaliser against Germany in 2002?", a: "Robbie Keane, in the second minute of stoppage time in Ibaraki. It finished 1-1." },
+      { q: "Which Ireland jersey has the eircom sponsor?", a: "The 2002 World Cup era home jersey. The Italia 90 and 1992-94 jerseys carry Opel." },
+    ],
+    products: [
+      "ireland-1990-italia-90-world",
+      "ireland-1994-world-cup-home",
+      "ireland-2002-world-cup-home-jersey",
+      "ireland-1992-94-home-retro-jersey",
+    ],
+    cta: { label: "Shop retro Ireland jerseys", href: "/collections/ireland-classics" },
+  },
+  {
+    slug: "lazio-1998-2000-shirts-nedved-salas-nesta",
+    title: "Lazio 1998-2000: Cirio, Eriksson and a Centenary Title",
+    seoTitle: "Retro Lazio Shirts 1998-2000: Nedved, Salas & Nesta",
+    description:
+      "A Cup Winners' Cup at Villa Park, a Super Cup win over the Treble winners, and the title on the last day of the club's 100th season. The story behind Lazio's sky blue Cirio shirts.",
+    category: "European & World Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/european-world-classics/lazio-1998-2000-home-shirt-1.webp",
+    heroAlt: "Lazio 1998-2000 sky blue home shirt with a black chest band and the Cirio sponsor",
+    heroFit: "contain",
+    intro:
+      "Lazio were founded in 1900, and in their 100th season they won Serie A on the last afternoon. The shirts from those two years, sky blue with Cirio across the chest, carry one of the best spells in the club's history.",
+    sections: [
+      {
+        heading: "Villa Park, May 1999",
+        paragraphs: [
+          "Sven-Göran Eriksson's side reached the last ever Cup Winners' Cup final, against Mallorca at Villa Park on 19 May 1999. Christian Vieri scored early, Mallorca equalised four minutes later, and Pavel Nedvěd won it nine minutes from time.",
+          "It was Lazio's first European trophy.",
+        ],
+      },
+      {
+        heading: "Monaco, August 1999",
+        paragraphs: [
+          "Manchester United had just won the Treble. Three months later Lazio beat them 1-0 in the Super Cup in Monaco, and Marcelo Salas scored the goal.",
+        ],
+      },
+      {
+        heading: "The last afternoon",
+        paragraphs: [
+          "In March 2000 Juventus led Lazio by nine points with eight games left. On the last day, 14 May 2000, Lazio beat Reggina 3-0 at the Olimpico, while Juventus lost 1-0 at Perugia on an almost flooded pitch.",
+          "Lazio finished a point clear, and added the Coppa Italia for a double in the club's centenary season.",
+        ],
+      },
+      {
+        heading: "The shirts",
+        paragraphs: [
+          "The home is sky blue with a black band across the chest, edged in white, a black and white collar and Cirio in black, with the club eagle on the band. The away is black with sky blue panels.",
+          "Alessandro Nesta was at the back, Nedvěd in midfield, Roberto Mancini in the 10 and Salas up front. We stock the home plain for €25, or printed NESTA 13, NEDVED 18, MANCINI 10 or SALAS 9 for €35. Sizes run S to 2XL.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Who scored in the 1999 Cup Winners' Cup final?", a: "Christian Vieri and Pavel Nedvěd for Lazio, and Dani for Mallorca. Lazio won 2-1 at Villa Park." },
+      { q: "When did Lazio win Serie A in 2000?", a: "On the last day, 14 May 2000. Lazio beat Reggina 3-0 and Juventus lost 1-0 at Perugia." },
+      { q: "Who scored when Lazio beat Manchester United in the 1999 Super Cup?", a: "Marcelo Salas, in a 1-0 win in Monaco on 27 August 1999." },
+    ],
+    products: [
+      "lazio-1998-2000-home-shirt",
+      "lazio-1998-2000-home-shirt-nedved-18",
+      "lazio-1998-2000-home-shirt-salas-9",
+      "lazio-1998-2000-home-shirt-nesta-13",
+    ],
+    cta: { label: "Shop retro Lazio shirts", href: "/clubs/lazio" },
+  },
+  {
+    slug: "liverpool-istanbul-2005-shirt",
+    title: "Liverpool in Istanbul, 2005: The Shirt From the Comeback",
+    seoTitle: "Liverpool 2005 Istanbul Shirt: The Champions League Final",
+    description:
+      "Three down at half-time against Milan, level within six minutes, and Dudek in the shoot-out. The story of Liverpool's 2005 Champions League final shirt, and the Limerick man who started that night.",
+    category: "Premier League Classics",
+    datePublished: "2026-10-22",
+    heroImage: "/images/premier-league-classics/669914307-1.webp",
+    heroAlt: "Liverpool 2005 Champions League final home shirt with the Carlsberg sponsor",
+    heroFit: "contain",
+    intro:
+      "At half-time in Istanbul on 25 May 2005, Liverpool were 3-0 down to AC Milan. By the end of the night they were champions of Europe, and fans still want the red shirt they wore.",
+    sections: [
+      {
+        heading: "First half",
+        paragraphs: [
+          "Paolo Maldini scored in the first minute. Hernán Crespo added two before the break, and it looked over.",
+          "Steve Finnan, from Limerick, started at right-back, but a thigh injury forced him off at half-time and Dietmar Hamann came on.",
+        ],
+      },
+      {
+        heading: "Six minutes",
+        paragraphs: [
+          "Steven Gerrard headed in on 54 minutes. Two minutes later Vladimír Šmicer scored from distance. On the hour Xabi Alonso's penalty was saved, and he put the rebound in. 3-3.",
+        ],
+      },
+      {
+        heading: "Dudek",
+        paragraphs: [
+          "In the 117th minute Jerzy Dudek saved twice from Andriy Shevchenko at close range. In the shoot-out Serginho shot over, Dudek saved from Andrea Pirlo, and then from Shevchenko to win it.",
+          "Rafa Benítez had won the Champions League in his first season at the club.",
+        ],
+        image: {
+          src: "/images/blog/liverpool-champions-league-parade-2005.webp",
+          alt: "Liverpool players on an open-top bus with a Champions of Europe banner, surrounded by fans in the city centre",
+          caption: "The Liverpool team on their open-top bus in the city centre the day after the final, 26 May 2005.",
+          credit: {
+            author: "Jprw",
+            license: "CC BY-SA 3.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:CL_parade_Lpool.jpg",
+          },
+        },
+      },
+      {
+        heading: "The shirt",
+        paragraphs: [
+          "Red with white side panels, Carlsberg across the chest and gold 'Istanbul 2005' final embroidery. We have it plain for €25 or printed GERRARD 8 for €35, in sizes S to 2XL.",
+          "From the same season there's the yellow away, and there's the 2005-06 home, Liverpool's first shirt as European champions.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What was the score at half-time in Istanbul?", a: "AC Milan 3-0 Liverpool. It finished 3-3 and Liverpool won 3-2 on penalties." },
+      { q: "Who scored Liverpool's goals in the 2005 final?", a: "Steven Gerrard, Vladimír Šmicer and Xabi Alonso, all within six minutes of the second half." },
+      { q: "Which Irish player started the 2005 Champions League final?", a: "Steve Finnan, from Limerick, at right-back. He went off injured at half-time." },
+    ],
+    products: [
+      "liverpool-2005-istanbul-champions",
+      "liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8",
+      "liverpool-2004-05-away-shirt",
+      "liverpool-2005-06-home-shirt",
+    ],
+    cta: { label: "Shop retro Liverpool shirts", href: "/clubs/liverpool" },
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
