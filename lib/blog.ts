@@ -111,6 +111,7 @@ export const POSTS: BlogPost[] = [
     ],
     products: [
       "ireland-1994-world-cup-home",
+      "ireland-1994-world-cup-home-keane-6",
       "ireland-1994-world-cup-away",
       "ireland-1992-94-home-retro-jersey",
       "ireland-1992-94-away-retro-jersey",
