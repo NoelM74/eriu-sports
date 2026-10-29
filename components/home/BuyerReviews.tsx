@@ -6,13 +6,19 @@ import { REVIEWS } from '@/lib/reviews';
 /** The full set of buyer reviews (data and rules in lib/reviews.ts). */
 export default function BuyerReviews() {
   return (
-    <section className="bg-white py-16 md:py-20 border-t border-gray-100" aria-labelledby="buyer-reviews">
+    <section className="bg-white py-12 md:py-16 border-t border-gray-100" aria-labelledby="buyer-reviews">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-3">From our Depop shop</p>
-        <h2 id="buyer-reviews" className="text-3xl sm:text-4xl font-bold uppercase text-[#0F2131] mb-8">
-          What buyers say
-        </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex items-end justify-between gap-4 mb-8">
+          <h2 id="buyer-reviews" className="text-3xl sm:text-4xl font-bold uppercase text-[#0F2131]">
+            What buyers say
+          </h2>
+          <p className="sm:hidden shrink-0 text-xs font-semibold text-gray-500" aria-hidden>
+            Swipe for more →
+          </p>
+        </div>
+        {/* Phones: one swipeable row with the next card peeking in, so the section stays short. */}
+        <ul className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 pb-2 sm:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {REVIEWS.map((r) => {
             const thumb = (
               <Image
@@ -24,7 +30,7 @@ export default function BuyerReviews() {
               />
             );
             return (
-              <li key={r.handle} className="border border-gray-200 bg-gray-50 p-5 flex flex-col justify-between">
+              <li key={r.handle} className="snap-start shrink-0 w-[85%] sm:w-auto border border-gray-200 bg-gray-50 p-5 flex flex-col justify-between">
                 <div>
                   <p className="text-[#1A533E] text-lg tracking-widest mb-3" aria-label="5 out of 5 stars on Depop">
                     <span aria-hidden>★★★★★</span>
@@ -33,7 +39,7 @@ export default function BuyerReviews() {
                 </div>
                 <div className="mt-5 flex items-center gap-3">
                   {r.slug ? (
-                    <Link href={`/products/${r.slug}`} aria-label={`See the ${r.bought}`}>
+                    <Link href={`/products/${r.slug}`} aria-label={`See the ${r.bought}`} className="shrink-0">
                       {thumb}
                     </Link>
                   ) : (

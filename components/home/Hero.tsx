@@ -6,7 +6,7 @@ import { Stars } from "@/components/reviews/ReviewQuote";
 export default function Hero() {
   return (
     <section className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full py-12 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full py-10 lg:py-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           <div className="relative z-10">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-4">

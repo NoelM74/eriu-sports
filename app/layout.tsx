@@ -56,7 +56,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    // app/favicon.ico is linked automatically; the SVG is for browsers that prefer it.
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     apple: "/apple-touch-icon.png",
   },
 };
@@ -68,7 +69,7 @@ const storeJsonLd = [
     "@id": `${SITE}/#store`,
     name: "Ériu Sports",
     url: SITE,
-    logo: `${SITE}/apple-touch-icon.png`,
+    logo: `${SITE}/icon-512.png`,
     image: `${SITE}/og-image.jpg`,
     description: DESCRIPTION,
     // Irish-run, delivering worldwide.

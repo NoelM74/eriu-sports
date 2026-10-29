@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-          <Link href="/" className="flex items-center gap-1 shrink-0 font-[family-name:var(--font-lexend)] mb-4">
-            <span className="text-2xl font-bold tracking-tighter text-white">ÉRIU</span>
-            <span className="text-2xl font-extrabold tracking-tight text-white/90">SPORTS</span>
+          <Link href="/" className="inline-block mb-4" aria-label="Ériu Sports home">
+            {/* eslint-disable-next-line @next/next/no-img-element -- a 5 KB SVG needs no image optimiser */}
+            <img src="/logo-white.svg" alt="Ériu Sports" width={669} height={98} className="h-6 w-auto" />
           </Link>
           <p className="text-white/60 text-sm leading-relaxed max-w-xs">
             Retro football shirts, GAA county jerseys, training vests and AFL jerseys.

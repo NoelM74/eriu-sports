@@ -59,8 +59,8 @@ export default function Navbar() {
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3 h-16 md:h-20" aria-label="Main">
         <Link href="/" className="flex items-center gap-1 shrink-0" aria-label="Ériu Sports home" onClick={close}>
-          <span className="text-[22px] sm:text-2xl md:text-3xl font-bold tracking-tighter text-[#0A7A44]">ÉRIU</span>
-          <span className="text-[22px] sm:text-2xl md:text-3xl font-extrabold tracking-tight text-black">SPORTS</span>
+          {/* eslint-disable-next-line @next/next/no-img-element -- a 5 KB SVG needs no image optimiser */}
+          <img src="/logo.svg" alt="Ériu Sports" width={669} height={98} className="h-[22px] sm:h-6 md:h-[29px] w-auto" />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#0F2131] uppercase tracking-wide">
