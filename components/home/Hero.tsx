@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { HERO_REVIEW, REVIEWS } from "@/lib/reviews";
+import { Stars } from "@/components/reviews/ReviewQuote";
 
 export default function Hero() {
   return (
@@ -34,7 +36,14 @@ export default function Hero() {
               </Link>
             </div>
 
-            <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-10 text-xs font-medium text-[#555] uppercase tracking-wide">
+            <a href="#buyer-reviews" className="mt-6 block max-w-md text-sm leading-snug text-[#404040] hover:text-[#0F2131]">
+              <Stars /> <span className="text-gray-500">{REVIEWS.length} five-star reviews from our buyers</span>
+              <span className="block mt-1">
+                &ldquo;{HERO_REVIEW.text}&rdquo; <span className="text-gray-500">@{HERO_REVIEW.handle}</span>
+              </span>
+            </a>
+
+            <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-xs font-medium text-[#555] uppercase tracking-wide">
               <li>✓ Worldwide delivery</li>
               <li>✓ Free delivery over €49</li>
               <li>✓ 30-day returns</li>

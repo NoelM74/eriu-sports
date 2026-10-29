@@ -9,6 +9,8 @@ import PriceDisplay from './PriceDisplay';
 import ImageGallery from './ImageGallery';
 import { ldJson } from '@/lib/jsonld';
 import { getPosts } from '@/lib/blog';
+import { reviewsFor } from '@/lib/reviews';
+import ReviewQuote from '@/components/reviews/ReviewQuote';
 
 const SITE = 'https://eriusports.com';
 
@@ -241,6 +243,17 @@ export default async function ProductDetail({ params }: ProductPageProps) {
             )}
 
             <AddToCartForm product={product} sizes={product.sizes} />
+
+            <section aria-labelledby="buyer-says" className="mt-6 border border-gray-200 p-5">
+              <h2 id="buyer-says" className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">
+                What buyers say
+              </h2>
+              <div className="space-y-4">
+                {reviewsFor(product).map((r) => (
+                  <ReviewQuote key={r.handle} review={r} linkProduct={r.slug !== product.slug} />
+                ))}
+              </div>
+            </section>
 
             <div className="mt-8 border border-gray-200 bg-gray-50 p-5 text-sm text-gray-700">
               <p className="font-semibold text-gray-900">Tracked delivery worldwide</p>

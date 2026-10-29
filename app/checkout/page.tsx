@@ -11,6 +11,8 @@ import { calculateShipping } from "@/lib/shipping";
 import { sizeLabel } from "@/lib/size-chart";
 import { REGION_REQUIRED } from "@/lib/regions";
 import { CARD_PAYMENTS_ENABLED } from "@/lib/payments";
+import { CHECKOUT_REVIEW } from "@/lib/reviews";
+import ReviewQuote from "@/components/reviews/ReviewQuote";
 
 interface FormFields {
   email: string;
@@ -80,6 +82,7 @@ export default function CheckoutPage() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [orderRef, setOrderRef] = useState<string | null>(null);
   const [paymentPending, setPaymentPending] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState<"stripe" | "paypal">(
     CARD_PAYMENTS_ENABLED ? "stripe" : "paypal"
   );
@@ -122,6 +125,14 @@ export default function CheckoutPage() {
   const handleSuccess = (reference?: string, status?: string) => {
     if (reference) setOrderRef(reference);
     setPaymentPending(status === "PENDING");
+    // Ticked "Email me about new shirts": sign them up the same way as the homepage box.
+    if (newsletter && validateEmail(fields.email)) {
+      fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: fields.email.trim() }),
+      }).catch(() => {});
+    }
     clearCart();
     setIsSuccess(true);
   };
@@ -249,6 +260,8 @@ export default function CheckoutPage() {
                       id="newsletter"
                       name="newsletter"
                       type="checkbox"
+                      checked={newsletter}
+                      onChange={(e) => setNewsletter(e.target.checked)}
                       className="h-4 w-4 rounded border-gray-300 text-[#0A7A44] focus:ring-[#0A7A44]"
                     />
                     <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-600">
@@ -505,6 +518,10 @@ export default function CheckoutPage() {
                     </label>
                   </div>
                   )}
+
+                  <div className="mt-6 bg-gray-50 border border-gray-200 p-4">
+                    <ReviewQuote review={CHECKOUT_REVIEW} linkProduct={false} />
+                  </div>
 
                   <div className="mt-6">
                     {paymentMethod === "stripe" && (

@@ -17,9 +17,9 @@ export default function HomePage() {
       <Hero />
       <FeatureBento />
       <LatestArrivals />
+      <BuyerReviews />
       <TopGAAPicks />
       <Trending />
-      <BuyerReviews />
       <JoinMovement />
     </>
   );
