@@ -53,7 +53,17 @@ export default async function BlogPostPage({ params }: Props) {
       headline: post.title,
       description: post.description,
       image: [
-        `${SITE}${post.heroImage}`,
+        post.heroCredit
+          ? {
+              '@type': 'ImageObject',
+              contentUrl: `${SITE}${post.heroImage}`,
+              caption: post.heroAlt,
+              creditText: `${post.heroCredit.author}, ${post.heroCredit.license}, via Wikimedia Commons`,
+              creator: { '@type': 'Person', name: post.heroCredit.author },
+              license: post.heroCredit.licenseUrl,
+              acquireLicensePage: post.heroCredit.sourceUrl,
+            }
+          : `${SITE}${post.heroImage}`,
         ...post.sections
           .filter((s) => s.image)
           .map((s) => ({
@@ -129,6 +139,19 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         )}
       </header>
+      {post.heroCredit && (
+        <p className="max-w-3xl mx-auto px-4 sm:px-6 pt-2 text-xs text-gray-500">
+          Photo:{' '}
+          <a href={post.heroCredit.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline">
+            {post.heroCredit.author}
+          </a>
+          ,{' '}
+          <a href={post.heroCredit.licenseUrl} target="_blank" rel="noopener noreferrer license" className="underline">
+            {post.heroCredit.license}
+          </a>
+          , via Wikimedia Commons.
+        </p>
+      )}
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 md:py-10">
         <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-4">

@@ -37,6 +37,8 @@ export interface BlogPost {
   heroAlt: string;
   /** "cover" for photos, "contain" for product shots on a plain background. */
   heroFit: "cover" | "contain";
+  /** Licence credit when the hero is an openly licensed photo (shown under the header). */
+  heroCredit?: BlogImage["credit"];
   intro: string;
   sections: BlogSection[];
   /** Product slugs featured at the end of the post. */
@@ -56,9 +58,9 @@ export const POSTS: BlogPost[] = [
     category: "Irish Classics",
     datePublished: "2026-10-08",
     dateModified: "2026-10-22",
-    heroImage: "/images/ireland-classics/692734038-1.webp",
+    heroImage: "/images/blog/cover-ireland-usa-94-world-cup-shirts.webp",
     heroAlt: "Ireland USA 94 World Cup home jersey in emerald green with a black geometric pattern",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Ireland qualified for USA 94 with a draw in Belfast, then beat Italy 1-0 in New Jersey with a goal from Ray Houghton. Two jerseys cover that run: the 1992-94 shirts from the qualifying campaign, and the USA 94 shirts from the tournament itself.",
     sections: [
@@ -124,9 +126,9 @@ export const POSTS: BlogPost[] = [
     category: "Irish Classics",
     datePublished: "2026-10-08",
     dateModified: "2026-10-22",
-    heroImage: "/images/ireland-classics/679941594-1.webp",
+    heroImage: "/images/blog/cover-ireland-euro-88-shirt.webp",
     heroAlt: "Ireland Euro 88 home jersey in emerald green with white and orange trim",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Ireland's first major tournament was Euro 88 in West Germany. They beat England 1-0 in the opening game, drew with the USSR and lost to the Netherlands to a goal nine minutes from the end. The green jersey from that summer is where it all started.",
     sections: [
@@ -173,9 +175,16 @@ export const POSTS: BlogPost[] = [
       "The numbers Ronaldinho wore at PSG, Barcelona and AC Milan, and the story behind each shirt: 21 and 10 in Paris, 10 in Catalonia, and why he took 80 at Milan.",
     category: "Players",
     datePublished: "2026-10-08",
-    heroImage: "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-1.webp",
-    heroAlt: "Barcelona 2005-06 yellow away shirt printed RONALDINHO 10",
-    heroFit: "contain",
+    heroImage: "/images/blog/ronaldinho-barcelona-goal-celebration-2006.webp",
+    heroAlt: "Ronaldinho in the red and blue Barcelona shirt, number 10, celebrating a goal with two team-mates",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Darz Mol",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Ronaldinho_Belletti_and_Giuly_9dec2006.jpg",
+    },
     intro:
       "Ronaldinho wore three numbers at three clubs. He was 21 and then 10 at Paris Saint-Germain, 10 at Barcelona and 80 at AC Milan. Most people remember the Barcelona years, from 2003 to 2008, but every one of those shirts has a story.",
     sections: [
@@ -276,9 +285,16 @@ export const POSTS: BlogPost[] = [
       "Inter's 2009/10 black and blue stripes with Pirelli: the shirt worn to win Serie A, the Coppa Italia and the Champions League, with Milito's two goals in Madrid.",
     category: "European & World Classics",
     datePublished: "2026-10-08",
-    heroImage: "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-1.webp",
-    heroAlt: "Inter Milan 2009-10 black and blue striped home shirt with the Champions League final details",
-    heroFit: "contain",
+    heroImage: "/images/blog/inter-milan-2009-10-squad-photo.webp",
+    heroAlt: "Inter Milan players posing for a team photo in black and blue striped shirts with Pirelli on the front",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Steindy",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Inter_Mailand_(2009-08-16).jpg",
+    },
     intro:
       "In 2009/10 Inter won Serie A, the Coppa Italia and the Champions League. No Italian club had won the treble before. The black and blue stripes with Pirelli across the chest are the shirt they wore in Madrid on 22 May 2010.",
     sections: [
@@ -355,9 +371,16 @@ export const POSTS: BlogPost[] = [
       "How a Phibsborough club ended up with Fontaines D.C., Oasis and Kneecap on its shirts. The story behind each Bohemians jersey, from Bob Marley to Guinness.",
     category: "Irish Classics",
     datePublished: "2026-09-24",
-    heroImage: "/images/ireland-classics/bohemians-oasis-2025-fai-cup-jersey-1.webp",
-    heroAlt: "Bohemians x Oasis 2025 FAI Cup jersey in sky blue with the Oasis logo",
-    heroFit: "contain",
+    heroImage: "/images/blog/dalymount-park-bohemians-entrance.webp",
+    heroAlt: "The Bohemian Football Club entrance at Dalymount Park, Dublin",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Bjørn Christian Tørrissen",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Bohemians-Football-Club-Dalymount-Park-Entrance-2012.JPG",
+    },
     intro:
       "Bohemians call themselves Dublin's Originals. The club was founded in 1890, it's owned by its members, and in the last few years it has put more bands on its shirts than any club we know of. The shirts turn up at gigs as well as at Dalymount.",
     sections: [
@@ -426,9 +449,16 @@ export const POSTS: BlogPost[] = [
       "The 2026 county jerseys from Dublin, Tyrone, Down, Antrim and Louth: what's on each one, the history behind the details, and how player fit sizing works.",
     category: "GAA",
     datePublished: "2026-09-24",
-    heroImage: "/images/gaa-gear/900000016-1.webp",
-    heroAlt: "Tyrone GAA 2026 home jersey in white and red with the McAleer & Rushe sponsor",
-    heroFit: "contain",
+    heroImage: "/images/blog/all-ireland-football-final-2026-parade.webp",
+    heroAlt: "The pre-match parade at Croke Park before the 2026 All-Ireland football final",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Seankivlehan",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:2026_All_Ireland_Football_Final.png",
+    },
     intro:
       "The new county jersey turns up around the start of the League, and for a lot of us it's the first sign the season is on its way. These are the five 2026 jerseys in our range, and the stories stitched into them.",
     sections: [
@@ -498,9 +528,9 @@ export const POSTS: BlogPost[] = [
       "Football Italia, Gazzetta on a Saturday morning, and the Serie A shirts we grew up watching: Maradona's Napoli, Capello's Milan, Parma, Inter and Lazio.",
     category: "European & World Classics",
     datePublished: "2026-09-24",
-    heroImage: "/images/european-world-classics/ac-milan-1991-92-home-shirt-1.webp",
+    heroImage: "/images/blog/cover-serie-a-90s-shirts.webp",
     heroAlt: "AC Milan 1991-92 home shirt in red and black stripes with the Mediolanum sponsor",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "If you grew up in Ireland or Britain in the 90s, Serie A came into your house every weekend. For ten years, the best players in the world played in Italy, and Channel 4 showed us all of it. These are the shirts from that era in our range.",
     sections: [
@@ -569,9 +599,9 @@ export const POSTS: BlogPost[] = [
     category: "European & World Classics",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
-    heroImage: "/images/european-world-classics/juventus-1997-98-away-shirt-1.webp",
+    heroImage: "/images/blog/cover-juventus-1997-98-pink-shirt-del-piero-zidane.webp",
     heroAlt: "Juventus 1997-98 pink away shirt with Sony MiniDisc sponsor",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Lippi's Juventus of 1997/98 had Zidane pulling the strings, Del Piero scoring for fun and Inzaghi fresh from Atalanta. They won the league and reached a third Champions League final in a row. They also had the best away shirt in Italy, and it was pink.",
     sections: [
@@ -631,9 +661,9 @@ export const POSTS: BlogPost[] = [
     category: "Players",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
-    heroImage: "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-1.webp",
+    heroImage: "/images/blog/cover-ronaldo-r9-career-in-shirts.webp",
     heroAlt: "Brazil 2002 World Cup home shirt printed RONALDO 9",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Ask anyone who watched football in the late 90s who the best player in the world was, and most will say Ronaldo. The Brazilian one. He played for five clubs in Europe, changed his number more than once and wrecked both knees, and he still won two World Cups.",
     sections: [
@@ -708,9 +738,16 @@ export const POSTS: BlogPost[] = [
     category: "Premier League Classics",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
-    heroImage: "/images/premier-league-classics/arsenal-2002-04-home-shirt-1.webp",
-    heroAlt: "Arsenal 2002-04 home shirt, red with white sleeves and the O2 sponsor",
-    heroFit: "contain",
+    heroImage: "/images/blog/arsenal-highbury-trophy-2004.webp",
+    heroAlt: "The Premier League trophy presentation at Highbury after Arsenal finished the 2003-04 season unbeaten",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Alexander Ottesen",
+      license: "CC BY-SA 2.5",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Trophy_presentation_Highbury_2004.JPG",
+    },
     intro:
       "Arsenal went through the 2003/04 Premier League season without losing. They won 26, drew 12 and finished on 90 points. Twenty-odd years on, nobody else has done it in the Premier League, and you can still start an argument in any pub by asking whether they were the best side the league has seen.",
     sections: [
@@ -771,9 +808,16 @@ export const POSTS: BlogPost[] = [
     category: "Premier League Classics",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
-    heroImage: "/images/premier-league-classics/647601889-1.webp",
-    heroAlt: "Manchester United 1998-99 home shirt with SHARP sponsor",
-    heroFit: "contain",
+    heroImage: "/images/blog/manchester-united-1999-champions-league-winners.webp",
+    heroAlt: "Manchester United players celebrate behind a Champions League winners banner at the Camp Nou, 26 May 1999",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Seán Murray, cropped by Danyele",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:1999_UEFA_Champions_League_celebration_(edited).jpg",
+    },
     intro:
       "Between 16 and 26 May 1999, Manchester United won the Premier League, the FA Cup and the Champions League. No English club had done it before. For Irish United fans the season had an extra pull, because two Cork men played a big part in it.",
     sections: [
@@ -821,9 +865,9 @@ export const POSTS: BlogPost[] = [
     category: "European & World Classics",
     datePublished: "2026-09-23",
     dateModified: "2026-09-24",
-    heroImage: "/images/european-world-classics/juventus-1995-96-away-shirt-1.webp",
+    heroImage: "/images/blog/cover-retro-european-football-shirts.webp",
     heroAlt: "Juventus 1995-96 away shirt in blue with gold star panels",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "The Premier League gets most of the attention, but some of the best shirts of the 90s came from Italy, Germany, Spain and Mexico. These five are our favourites from outside England, and each one comes with a season worth remembering.",
     sections: [
@@ -883,9 +927,16 @@ export const POSTS: BlogPost[] = [
     category: "GAA",
     datePublished: "2026-09-23",
     dateModified: "2026-10-22",
-    heroImage: "/images/gaa-gear/900000006-1.webp",
-    heroAlt: "Dublin GAA home jersey in sky blue with navy pinstripes",
-    heroFit: "contain",
+    heroImage: "/images/blog/gaelic-football-croke-park-club-final-2011.webp",
+    heroAlt: "Crossmaglen Rangers and St Brigid's in the All-Ireland club football final at Croke Park, 2011",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Sheila1988",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Gaelic_football_game.jpg",
+    },
     intro:
       "Buying a county jersey online, the size is the thing people get wrong. GAA jerseys fit tighter than a football shirt, and plenty of us have ordered our usual size and ended up with something closer to a base layer. A couple of minutes with a tape measure fixes that.",
     sections: [
@@ -1105,9 +1156,16 @@ export const POSTS: BlogPost[] = [
       "Batistuta stayed when Fiorentina went down, Rui Costa arrived from Benfica, and for a few seasons Florence had a side to fear. The story behind the Nintendo and Toyota shirts.",
     category: "European & World Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/european-world-classics/fiorentina-1998-99-home-shirt-1.webp",
-    heroAlt: "Fiorentina 1998-99 purple home shirt with the Nintendo sponsor",
-    heroFit: "contain",
+    heroImage: "/images/blog/batistuta-fiorentina-9-shirt.webp",
+    heroAlt: "Gabriel Batistuta holding up a purple and white Fiorentina shirt printed BATISTUTA 9",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Roberto Vicario",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Omar_Batistuta.jpg",
+    },
     intro:
       "Fiorentina fans put up a bronze statue of Gabriel Batistuta in 1996, while he was still playing for them. That tells you most of what you need to know about Florence in the 90s, and about the purple shirt he wore.",
     sections: [
@@ -1178,9 +1236,9 @@ export const POSTS: BlogPost[] = [
       "Roy Keane's first season, a Double, and Cantona at his best. The story of United's all-black away shirt from 1993-95, with Sharp Viewcam across the chest in gold.",
     category: "Premier League Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/premier-league-classics/671313157-1.webp",
+    heroImage: "/images/blog/cover-manchester-united-1993-95-black-away-shirt.webp",
     heroAlt: "Manchester United 1993-95 black away shirt with gold Sharp Viewcam lettering",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "In the summer of 1993 United had just won their first league title in 26 years. They signed a 21-year-old from Cork, and they brought out a black away shirt. Both worked out.",
     sections: [
@@ -1231,9 +1289,9 @@ export const POSTS: BlogPost[] = [
       "Yellow with black zigzags, JVC in red, and a nickname that stuck. How Arsenal's 1991-93 away shirt went from a joke to a shirt fans hunt for.",
     category: "Premier League Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/premier-league-classics/670532150-1.webp",
+    heroImage: "/images/blog/cover-arsenal-bruised-banana-shirt-1991-93.webp",
     heroAlt: "Arsenal 1991-93 yellow and black zigzag away shirt with the JVC sponsor",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Arsenal fans called it the bruised banana almost as soon as they saw it. More than thirty years on, people still search for it by its nickname, and the club has brought the pattern back.",
     sections: [
@@ -1286,9 +1344,9 @@ export const POSTS: BlogPost[] = [
       "Three World Cups, three green jerseys. What each one looks like, what happened in it, and how to choose between Italia 90, USA 94 and Japan and Korea 2002.",
     category: "Irish Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/ireland-classics/692734038-1.webp",
+    heroImage: "/images/blog/cover-ireland-jerseys-1990-1994-2002.webp",
     heroAlt: "Ireland USA 94 World Cup home jersey in emerald green with a black geometric pattern",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Ireland have been to three World Cups, and each one has its own green jersey. If you can only have one, here's how they compare.",
     sections: [
@@ -1364,9 +1422,9 @@ export const POSTS: BlogPost[] = [
       "A Cup Winners' Cup at Villa Park, a Super Cup win over the Treble winners, and the title on the last day of the club's 100th season. The story behind Lazio's sky blue Cirio shirts.",
     category: "European & World Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/european-world-classics/lazio-1998-2000-home-shirt-1.webp",
+    heroImage: "/images/blog/cover-lazio-1998-2000-shirts-nedved-salas-nesta.webp",
     heroAlt: "Lazio 1998-2000 sky blue home shirt with a black chest band and the Cirio sponsor",
-    heroFit: "contain",
+    heroFit: "cover",
     intro:
       "Lazio were founded in 1900, and in their 100th season they won Serie A on the last afternoon. The shirts from those two years, sky blue with Cirio across the chest, carry one of the best spells in the club's history.",
     sections: [
@@ -1419,9 +1477,16 @@ export const POSTS: BlogPost[] = [
       "Three down at half-time against Milan, level within six minutes, and Dudek in the shoot-out. The story of Liverpool's 2005 Champions League final shirt, and the Limerick man who started that night.",
     category: "Premier League Classics",
     datePublished: "2026-10-22",
-    heroImage: "/images/premier-league-classics/669914307-1.webp",
-    heroAlt: "Liverpool 2005 Champions League final home shirt with the Carlsberg sponsor",
-    heroFit: "contain",
+    heroImage: "/images/blog/liverpool-champions-league-parade-2005.webp",
+    heroAlt: "Liverpool players on an open-top bus with a Champions of Europe banner, surrounded by fans in the city centre",
+    heroFit: "cover",
+    heroCredit: {
+      author: "Jprw",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:CL_parade_Lpool.jpg",
+    },
     intro:
       "At half-time in Istanbul on 25 May 2005, Liverpool were 3-0 down to AC Milan. By the end of the night they were champions of Europe, and fans still want the red shirt they wore.",
     sections: [

@@ -64,7 +64,9 @@ function validateForm(fields: FormFields): FormErrors {
   }
   if (!fields.firstName.trim()) errors.firstName = "First name is required.";
   if (!fields.lastName.trim()) errors.lastName = "Last name is required.";
-  if (fields.phone.replace(/[^\d]/g, "").length < 6) errors.phone = "A phone number is needed for the courier.";
+  // Phone is optional: only check it if one was typed.
+  const phoneDigits = fields.phone.replace(/[^\d]/g, "").length;
+  if (phoneDigits > 0 && phoneDigits < 6) errors.phone = "That phone number looks too short.";
   if (!fields.address.trim()) errors.address = "Address is required.";
   if (REGION_REQUIRED.includes(fields.country) && !fields.region.trim()) {
     errors.region = "State, province or county is required for this country.";
@@ -428,7 +430,7 @@ export default function CheckoutPage() {
                   </div>
                   <div className="sm:col-span-2">
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                      Phone
+                      Phone <span className="font-normal text-gray-500">(optional, helps the courier)</span>
                     </label>
                     <input
                       type="tel"

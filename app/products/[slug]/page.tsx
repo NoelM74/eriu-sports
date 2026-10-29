@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, type ProductDetails } from '@/lib/products';
-import { CATEGORIES, getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
+import { getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
 import PriceDisplay from './PriceDisplay';
@@ -111,7 +111,6 @@ export default async function ProductDetail({ params }: ProductPageProps) {
   if (!product) notFound();
 
   const collection = getCollectionBySlug(product.collectionSlug)!;
-  const category = CATEGORIES.find((c) => c.key === product.category)!;
   const related = getRelatedProducts(product);
   const player = product.player ? getPlayerBySlug(product.player.slug) : undefined;
   const stories = getPosts().filter((post) => post.products.includes(product.slug)).slice(0, 2);
@@ -131,6 +130,11 @@ export default async function ProductDetail({ params }: ProductPageProps) {
       sku: product.originalId,
       category: collection.name,
       ...(product.details.colours ? { color: product.details.colours } : {}),
+      size: product.sizes.join(', '),
+      // Plain facts AI and shopping search can quote: team, season, kit, sponsor, print.
+      additionalProperty: details
+        .filter(([key]) => key !== 'fit' && key !== 'condition' && key !== 'colours')
+        .map(([key, label]) => ({ '@type': 'PropertyValue', name: label, value: product.details[key] })),
       offers: {
         '@type': 'Offer',
         url,
@@ -156,12 +160,11 @@ export default async function ProductDetail({ params }: ProductPageProps) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
-        { '@type': 'ListItem', position: 2, name: category.label, item: `${SITE}/catalog?category=${category.key}` },
-        { '@type': 'ListItem', position: 3, name: collection.name, item: `${SITE}/collections/${collection.slug}` },
+        { '@type': 'ListItem', position: 2, name: collection.name, item: `${SITE}/collections/${collection.slug}` },
         ...(product.club
-          ? [{ '@type': 'ListItem', position: 4, name: product.club.name, item: `${SITE}/clubs/${product.club.slug}` }]
+          ? [{ '@type': 'ListItem', position: 3, name: product.club.name, item: `${SITE}/clubs/${product.club.slug}` }]
           : []),
-        { '@type': 'ListItem', position: product.club ? 5 : 4, name: product.title, item: url },
+        { '@type': 'ListItem', position: product.club ? 4 : 3, name: product.title, item: url },
       ],
     },
   ];
