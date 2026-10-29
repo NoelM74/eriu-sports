@@ -55,7 +55,7 @@ export default function AddToCartForm({ product, sizes }: AddToCartFormProps) {
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-sm font-medium">Added to bag!</span>
+                        <span className="text-sm font-medium">Added to bag</span>
                         <a href="/cart" className="underline ml-2 text-xs">View cart →</a>
                     </div>
                 </div>

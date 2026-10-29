@@ -38,6 +38,7 @@ Read this first. It records how the site is run, how we write everything, and th
 **Product listings (2–4 sentences)**
 - Order: what makes it that shirt (season, kit, a visible detail) → colours and trim → sponsor → crest or print → one line of fan context.
 - Kids kits end with: "Shirt and shorts; socks aren't included."
+- Check every listing against the full-size photo, never a thumbnail (a contact sheet caused the USA 94 away error).
 - Best sellers and pages that already get search impressions may carry two or three short paragraphs (separated by a blank line in `description`): visible details, a short fact-checked story, then fit and sizes. Reuse facts from our blog posts. Product pages link to any blog post that lists the product in its `products`.
 - GAA: player fit, "go up a size for a looser fit".
 - Keep new listings consistent with the existing ones in the same collection (look at neighbouring entries first).
@@ -79,7 +80,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Customs**: every order is sent duties paid. Nothing to pay on delivery. If a courier asks for a charge, the customer should contact us.
 - **Returns**: 30 days, unworn with tags on. The buyer pays return postage unless the item is faulty or not as described. Refund within 14 days of the return arriving. EU/UK 14-day cancellation right is unaffected.
 - **Prices**: euro, no VAT added (not VAT registered).
-- **Payment**: PayPal (cards switched off until Stripe is verified; code is ready).
+- **Payment**: PayPal (cards switched off until Stripe is verified; code is ready). Phone is optional at checkout (user, 29 October 2026).
 - **Not official**: the Terms say these are fan replicas, with no affiliation to any club, board, federation or brand.
 
 ## 5. Naming
@@ -103,8 +104,9 @@ Read this first. It records how the site is run, how we write everything, and th
 
 - **Data**: `data/products.json` is the source of truth. Fields: `id`, `title`, `slug`, `description`, `price`, `images`, `collection`, `currency`, `details {team, season, kit, sponsor, colours, fit, condition, print?, player?}`, `sizes?`, `soldOut?`, `sizeGuide?`, `test?`.
 - **Manual IDs**: `9000000xx`. Last used 900000075 (Argentina 2026 away kids kit). The hidden €1 payment test product (900000099) was deleted after a full PayPal test passed on 11 October 2026; the `test: true` flag still works in the code (hidden from lists, sitemap and feed, free delivery) if a new one is needed. Its old data is in git (commit e220023).
-- **Images**: convert to WebP (max 1200px, quality 80, flattened on white) with `sharp`. Kids kits live in `public/images/kids-kits/<id>-1.webp`; GAA in `gaa-gear`, AFL in `afl-jerseys`.
+- **Images**: convert to WebP (max 1200px, quality 80, flattened on white) with `sharp`. Product photos must be clean: no supplier logos (Boru Sportswear, Camisetas), size badges or supplier size charts (60 charts were removed and 82 photos cleaned on 29 October 2026; paint the plain backdrop over a corner logo, or crop it off a close-up). Check new imports for these before adding. Kids kits live in `public/images/kids-kits/<id>-1.webp`; GAA in `gaa-gear`, AFL in `afl-jerseys`.
 - **Kids kits**: collection "Kids Football Kits", price 30, `sizes` XXS–2XL, fit text "Kids sizes, ages 2 to 13. Go by height rather than age". A title containing "Kids" selects the kids size chart.
+- **Story covers**: every post's `heroImage` is either an openly licensed Commons photo with `heroCredit` (shown under the header and in the structured data) or a designed cover `public/images/blog/cover-<slug>.webp` (the jersey cut out on club colours with the season in outline). Never use press or agency photos (Getty, Sportsfile, Inpho). The Cork City, Italia 90 and Liverpool 95-96 hero photos came with the original site and have no recorded licence.
 - **Blog photos**: only openly licensed images (Wikimedia Commons CC BY or CC BY-SA, or public domain), saved to `public/images/blog/` as WebP, set as `image` on a section in `lib/blog.ts` with author, licence, licence URL and file page. The post shows the credit under the photo and adds it to the structured data. Check that the shirt in the photo matches the caption.
 - **Logo and icons**: the header and footer wordmark are SVGs (`public/logo.svg`, `public/logo-white.svg`), drawn from the Lexend font as outlines so they look the same on every device. Icons: `app/favicon.ico` (16, 32, 48 px), `public/icon.svg`, `public/apple-touch-icon.png`, `public/icon-192.png` and `public/icon-512.png` (also the logo in the store's structured data), plus `app/manifest.ts`. All are a white É on brand green #0A7A44. (Until 29 October 2026 the favicon was still the Next.js starter icon.)
 - **Cookies**: `components/layout/CookieConsent.tsx` loads Google Analytics (G-NEML64KY0M) only after the visitor accepts; Reject is equal in weight; the footer "Cookie settings" link reopens the banner; the Privacy Policy has a Cookies section. Don't add other tracking scripts outside this component.
