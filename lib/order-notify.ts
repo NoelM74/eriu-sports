@@ -253,3 +253,21 @@ export async function sendContactMessage(m: { name: string; email: string; subje
     text: `From: ${m.name} <${m.email}>\n\n${m.message}`,
   });
 }
+
+/** A newsletter signup, emailed to the shop so it can be added to the mailing list. */
+export async function sendSignup(email: string): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  const shopTo = process.env.ORDER_TO_EMAIL;
+  if (!apiKey || !shopTo) {
+    console.error("[subscribe] RESEND_API_KEY or ORDER_TO_EMAIL is not set, so a signup could not be sent.");
+    return false;
+  }
+  return sendEmail({
+    apiKey,
+    from: process.env.ORDER_FROM_EMAIL || "Ériu Sports <onboarding@resend.dev>",
+    to: shopTo,
+    replyTo: email,
+    subject: `Newsletter signup: ${email}`.slice(0, 150),
+    text: `${email} signed up on the website for news about new jerseys and restocks.\n\nAdd them to the mailing list. If they ask to stop, take them off.`,
+  });
+}
