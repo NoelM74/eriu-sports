@@ -5,6 +5,7 @@ import LatestArrivals from "@/components/home/LatestArrivals";
 import TopGAAPicks from "@/components/home/TopGAAPicks";
 import Trending from "@/components/home/Trending";
 import JoinMovement from "@/components/home/JoinMovement";
+import BuyerReviews from "@/components/home/BuyerReviews";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -18,6 +19,7 @@ export default function HomePage() {
       <LatestArrivals />
       <TopGAAPicks />
       <Trending />
+      <BuyerReviews />
       <JoinMovement />
     </>
   );
