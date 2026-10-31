@@ -3,11 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
-import { POSTS, getPost, readingMinutes, formatDate } from '@/lib/blog';
+import { POSTS, getPost, readingMinutes, formatDate, type BlogImage } from '@/lib/blog';
 import { getProductBySlug, toCard, type Product } from '@/lib/products';
 import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
+
+/** Google image metadata for an openly licensed Commons photo. */
+function imageObject(src: string, caption: string, credit: BlogImage['credit']) {
+  const publicDomain = /^(CC0|Public domain)/i.test(credit.license);
+  return {
+    '@type': 'ImageObject',
+    contentUrl: `${SITE}${src}`,
+    caption,
+    creditText: `${credit.author}, ${credit.license}, via Wikimedia Commons`,
+    creator: { '@type': 'Person', name: credit.author },
+    copyrightNotice: publicDomain
+      ? `${credit.author}. Public domain (${credit.license}).`
+      : `© ${credit.author}. Licensed under ${credit.license}.`,
+    license: credit.licenseUrl,
+    acquireLicensePage: credit.sourceUrl,
+  };
+}
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -54,27 +71,11 @@ export default async function BlogPostPage({ params }: Props) {
       description: post.description,
       image: [
         post.heroCredit
-          ? {
-              '@type': 'ImageObject',
-              contentUrl: `${SITE}${post.heroImage}`,
-              caption: post.heroAlt,
-              creditText: `${post.heroCredit.author}, ${post.heroCredit.license}, via Wikimedia Commons`,
-              creator: { '@type': 'Person', name: post.heroCredit.author },
-              license: post.heroCredit.licenseUrl,
-              acquireLicensePage: post.heroCredit.sourceUrl,
-            }
+          ? imageObject(post.heroImage, post.heroAlt, post.heroCredit)
           : `${SITE}${post.heroImage}`,
         ...post.sections
           .filter((s) => s.image)
-          .map((s) => ({
-            '@type': 'ImageObject',
-            contentUrl: `${SITE}${s.image!.src}`,
-            caption: s.image!.caption,
-            creditText: `${s.image!.credit.author}, ${s.image!.credit.license}, via Wikimedia Commons`,
-            creator: { '@type': 'Person', name: s.image!.credit.author },
-            license: s.image!.credit.licenseUrl,
-            acquireLicensePage: s.image!.credit.sourceUrl,
-          })),
+          .map((s) => imageObject(s.image!.src, s.image!.caption, s.image!.credit)),
       ],
       datePublished: post.datePublished,
       dateModified: post.dateModified ?? post.datePublished,
