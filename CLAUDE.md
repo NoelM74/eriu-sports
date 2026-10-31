@@ -76,7 +76,7 @@ Read this first. It records how the site is run, how we write everything, and th
 
 ## 4. Customer-facing facts (keep identical everywhere)
 
-- **Delivery**: tracked, worldwide, flat €5, free on orders of €49 or more. 8–14 days to Ireland and the UK. Other countries vary, so quote no time.
+- **Delivery**: tracked, worldwide, flat €5, free on orders of €49 or more. 8–14 days to Ireland and the UK. Other countries vary, so quote no time. Exception: Google's product structured data gives other countries 10–21 days (user, 31 October 2026), because Google wants a time for every country; the site text still says times vary.
 - **Customs**: every order is sent duties paid. Nothing to pay on delivery. If a courier asks for a charge, the customer should contact us.
 - **Returns**: 30 days, unworn with tags on. The buyer pays return postage unless the item is faulty or not as described. Refund within 14 days of the return arriving. EU/UK 14-day cancellation right is unaffected.
 - **Prices**: euro, no VAT added (not VAT registered).

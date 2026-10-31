@@ -83,25 +83,30 @@ const DETAIL_LABELS: [keyof ProductDetails, string][] = [
   ['condition', 'Condition'],
 ];
 
-/** Countries beyond Ireland and the UK, where we don't quote a delivery time. */
+/** Countries beyond Ireland and the UK (the site quotes no time; Google gets 10–21 days). */
 const OTHER_MARKETS = MARKET_COUNTRIES.filter((c) => c !== 'IE' && c !== 'GB');
 
 /**
- * Offer shipping details: the flat worldwide fee, with a delivery time only for
- * Ireland and the UK (8–14 days from order). Other countries vary, so no time is given.
+ * Offer shipping details: the flat worldwide fee and a delivery time (handling plus transit).
+ * Ireland and the UK: 8–14 days from order, as quoted on the site. Other countries: 10–21 days
+ * for Google only (user, 31 October 2026); the site itself still says times vary.
  */
-function shippingTo(countries: string[], withTime: boolean) {
+function shippingTo(countries: string[], handling: [number, number], transit: [number, number]) {
+  const days = ([minValue, maxValue]: [number, number]) => ({
+    '@type': 'QuantitativeValue',
+    minValue,
+    maxValue,
+    unitCode: 'DAY',
+  });
   return {
     '@type': 'OfferShippingDetails',
     shippingRate: { '@type': 'MonetaryAmount', value: SHIPPING_FEE, currency: 'EUR' },
     shippingDestination: countries.map((c) => ({ '@type': 'DefinedRegion', addressCountry: c })),
-    ...(withTime && {
-      deliveryTime: {
-        '@type': 'ShippingDeliveryTime',
-        handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 2, unitCode: 'DAY' },
-        transitTime: { '@type': 'QuantitativeValue', minValue: 8, maxValue: 12, unitCode: 'DAY' },
-      },
-    }),
+    deliveryTime: {
+      '@type': 'ShippingDeliveryTime',
+      handlingTime: days(handling),
+      transitTime: days(transit),
+    },
   };
 }
 
@@ -145,7 +150,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           : 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
         seller: { '@type': 'Organization', name: 'Ériu Sports' },
-        shippingDetails: [shippingTo(['IE', 'GB'], true), shippingTo(OTHER_MARKETS, false)],
+        shippingDetails: [shippingTo(['IE', 'GB'], [0, 2], [8, 12]), shippingTo(OTHER_MARKETS, [2, 2], [8, 19])],
         hasMerchantReturnPolicy: {
           '@type': 'MerchantReturnPolicy',
           applicableCountry: MARKET_COUNTRIES,
