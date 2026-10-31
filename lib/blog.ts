@@ -723,7 +723,7 @@ export const POSTS: BlogPost[] = [
       "inter-milan-1997-98-uefa-cup-away-shirt-ronaldo-10",
       "inter-milan-1998-99-home-shirt-ronaldo-9",
       "brazil-2002-world-cup-home-shirt-ronaldo-9",
-      "real-madrid-2002-03-centenary-home-shirt-ronaldo-11",
+      "real-madrid-2001-02-centenary-home-shirt-ronaldo-11",
       "real-madrid-2003-04-home-shirt-ronaldo-9",
       "ac-milan-2006-07-home-shirt-ronaldo-99",
       "brazil-1998-world-cup-home-shirt-ronaldo-9",
