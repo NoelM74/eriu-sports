@@ -34,6 +34,8 @@ const nextConfig: NextConfig = {
       { source: "/products/liverpool-2013-14-home-shirt", destination: "/clubs/liverpool", permanent: true },
       // Real Madrid centenary kits were listed as 2002-03; they are the 2001-02 kits.
       { source: "/products/real-madrid-2002-03-centenary-:rest", destination: "/products/real-madrid-2001-02-centenary-:rest", permanent: true },
+      // The Milan "1992-93" home listing showed the 1993-94 shirt.
+      { source: "/products/ac-milan-1992-93-home-shirt", destination: "/products/ac-milan-1993-94-home-shirt", permanent: true },
       // Language paths from an earlier version of the site (Search Console 404s, October 2026).
       { source: "/:locale(en-US|en-IE|en-GB|en-us|en-ie|en-gb)", destination: "/", permanent: true },
       { source: "/:locale(en-US|en-IE|en-GB|en-us|en-ie|en-gb)/:path+", destination: "/:path+", permanent: true },
