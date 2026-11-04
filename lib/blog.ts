@@ -1539,6 +1539,7 @@ export const POSTS: BlogPost[] = [
     products: [
       "liverpool-2005-istanbul-champions",
       "liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8",
+      "liverpool-2005-istanbul-final-home-kids-kit",
       "liverpool-2004-05-away-shirt",
       "liverpool-2005-06-home-shirt",
     ],
