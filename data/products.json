@@ -14842,6 +14842,40 @@
     ]
   },
   {
+    "id": "900000089",
+    "title": "Manchester United 2001-02 Centenary Kids Kit",
+    "slug": "manchester-united-2001-02-centenary-kids-kit",
+    "description": "United's 2001-02 centenary kit, in kids sizes, made for 100 years of the Manchester United name. The gold shirt has black side panels and a black collar, with black and white stripes over the shoulders. Vodafone is across the chest in black, under the crest and a '1902 Centenary 2002' badge. The black shorts have gold piping and the crest in gold.\n\nThe original shirt was reversible, white on the other side. Newton Heath took the name Manchester United in 1902. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000089-1.webp",
+      "/images/kids-kits/900000089-2.webp",
+      "/images/kids-kits/900000089-3.webp",
+      "/images/kids-kits/900000089-4.webp",
+      "/images/kids-kits/900000089-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2001-02",
+      "kit": "Away",
+      "sponsor": "Vodafone",
+      "colours": "Gold / Black / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
     "id": "900000050",
     "title": "Manchester United 2007-08 Away Kids Kit",
     "slug": "manchester-united-2007-08-away-kids-kit",
