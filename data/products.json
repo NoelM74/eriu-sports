@@ -13884,10 +13884,13 @@
     "id": "900000032",
     "title": "Arsenal 1991-93 'Bruised Banana' Away Kids Kit",
     "slug": "arsenal-1991-93-bruised-banana-away-kids-kit",
-    "description": "The Bruised Banana, in kids sizes. Yellow with navy zigzags and dashes, JVC in red and a navy V-neck with red trim, with navy shorts. Plenty of people laughed at it in 1991. Now it's one of the best-loved away shirts Arsenal have had, and the 2026-27 away kit is based on it. It arrived the season after the 1990-91 title, the same autumn Ian Wright signed from Crystal Palace. Shirt and shorts; socks aren't included.",
+    "description": "The Bruised Banana, in kids sizes. The yellow shirt is covered in zigzags that shade from green to dark navy, broken up by black dashes. The V-neck is yellow with navy and red trim, and JVC is across the chest in red. The navy shorts have yellow and red stripes down the side.\n\nPlenty of people laughed at it in 1991. Now it's one of the best-loved away shirts Arsenal have had, and the 2026-27 away kit is based on it. It arrived the season after the 1990-91 title, the same autumn Ian Wright signed from Crystal Palace. Shirt and shorts; socks aren't included.",
     "price": 30,
     "images": [
-      "/images/kids-kits/900000032-1.webp"
+      "/images/kids-kits/900000032-1.webp",
+      "/images/kids-kits/900000032-2.webp",
+      "/images/kids-kits/900000032-3.webp",
+      "/images/kids-kits/900000032-4.webp"
     ],
     "collection": "Kids Football Kits",
     "currency": "EUR",
@@ -13896,7 +13899,7 @@
       "season": "1991-93",
       "kit": "Away",
       "sponsor": "JVC",
-      "colours": "Yellow / Navy / Red",
+      "colours": "Yellow / Green / Navy",
       "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
       "condition": "New"
     },
