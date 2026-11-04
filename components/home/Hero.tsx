@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HERO_REVIEW, REVIEWS } from "@/lib/reviews";
 import { Stars } from "@/components/reviews/ReviewQuote";
 import { getProductBySlug } from "@/lib/products";
+import HeroPick from "./HeroPick";
 
 /**
  * Shirts the hero can show. One is picked for each visit (never the same one twice in a
@@ -12,9 +13,9 @@ const HERO_PICKS = [
   { slug: "ireland-1992-94-home-retro-jersey", tag: "Irish classic", name: "Ireland 1992-94 Home", alt: "Retro Ireland 1992-94 home jersey in green" },
   { slug: "ireland-1990-italia-90-world", tag: "Irish classic", name: "Ireland Italia 90 Home", alt: "Retro Ireland Italia 90 home jersey in green" },
   { slug: "ireland-euro-88-home-jersey", tag: "Irish classic", name: "Ireland Euro 88 Home", alt: "Retro Ireland Euro 88 home jersey in green" },
-  { slug: "manchester-united-98-99-treble-season", tag: "Premier League classic", name: "Man United 1998-99 Treble Home", alt: "Retro Manchester United 1998-99 home shirt in red" },
+  { slug: "barcelona-2026-27-home-kids-kit", tag: "Kids kit", name: "Barcelona 2026-27 Home Kids Kit", alt: "Barcelona 2026-27 home kids kit in blue and red stripes" },
   { slug: "dublin-gaa-2026-home-jersey", tag: "GAA 2026", name: "Dublin GAA 2026 Home", alt: "Dublin GAA 2026 home jersey in sky blue and navy" },
-  { slug: "arsenal-1988-89-away-kids-kit", tag: "Kids kit", name: "Arsenal 1988-89 Away Kids Kit", alt: "Arsenal 1988-89 yellow and navy away kids kit" },
+  { slug: "ireland-2026-away-kids-kit", tag: "Kids kit", name: "Ireland 2026 Away Kids Kit", alt: "Ireland 2026 white and green away kids kit" },
 ];
 
 const euro = (n: number) => `€${Number.isInteger(n) ? n : n.toFixed(2)}`;
@@ -104,6 +105,8 @@ export default function Hero() {
               <p id="hero-name" suppressHydrationWarning className="text-sm font-bold mt-0.5">{first.name}</p>
             </div>
             <script dangerouslySetInnerHTML={{ __html: PICK_SCRIPT }} />
+            {/* In-site links to the home page don't run the script above; this covers them. */}
+            <HeroPick picks={PICKS} />
           </div>
         </div>
       </div>
