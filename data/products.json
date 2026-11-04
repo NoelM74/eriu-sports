@@ -14499,9 +14499,9 @@
   },
   {
     "id": "900000087",
-    "title": "Manchester United 1999-2000 Home Kids Kit (Camp Nou 1999)",
-    "slug": "manchester-united-1999-2000-home-kids-kit",
-    "description": "Manchester United's home kit from 1999-2000, in kids sizes, with 'Camp Nou Champions League The Final 1999' embroidered on the chest. The red shirt has a tonal pattern of MUFC lettering and star balls, with a white collar trimmed in black. SHARP is across the front in white, and the crest sits in a grey shield edged in gold. The white shorts have a red and black stripe down the side and the crest on the leg.\n\nUnited won the Champions League at the Camp Nou in May 1999, with Teddy Sheringham and Ole Gunnar Solskjær scoring in stoppage time against Bayern Munich. We have the 1998-99 Treble kit in kids sizes too. Shirt and shorts; socks aren't included.",
+    "title": "Manchester United 1999 Champions League Final Kids Kit",
+    "slug": "manchester-united-1999-champions-league-final-kids-kit",
+    "description": "The red shirt Manchester United wore in Europe, including the 1999 Champions League final, in kids sizes. 'Camp Nou Champions League The Final 1999' is embroidered on the chest. The shirt has a tonal pattern of MUFC lettering and star balls, with a white collar trimmed in black. SHARP is across the front in white, and the crest sits in a grey shield edged in gold. The white shorts have a red and black stripe down the side and the crest on the leg.\n\nUnited kept this design for Champions League games, which is why it differs from the shirt they won the league and FA Cup in. At the Camp Nou in May 1999, Teddy Sheringham and Ole Gunnar Solskjær scored in stoppage time to beat Bayern Munich. We have the 1998-99 Treble kit in kids sizes too. Shirt and shorts; socks aren't included.",
     "price": 30,
     "images": [
       "/images/kids-kits/900000087-1.webp",
@@ -14515,7 +14515,7 @@
     "currency": "EUR",
     "details": {
       "team": "Manchester United",
-      "season": "1999-00",
+      "season": "1998-99",
       "kit": "Home",
       "sponsor": "Sharp",
       "colours": "Red / White / Black",
