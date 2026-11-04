@@ -14559,6 +14559,39 @@
     ]
   },
   {
+    "id": "900000081",
+    "title": "Arsenal 2004-05 Home Kids Kit",
+    "slug": "arsenal-2004-05-home-kids-kit",
+    "description": "Arsenal's home kit from 2004-05, in kids sizes. The red shirt has white sleeves and thin gold piping that frames a panel across the chest and back, with a red V-neck lined in yellow. O2 is across the chest in white under the club crest. The white shorts carry the crest on the leg.\n\nThe unbeaten league run reached 49 games before it ended at Old Trafford that October. Arsenal finished the season with the FA Cup, beating Manchester United on penalties in Cardiff, where Patrick Vieira scored the winning kick in his last game for the club. We have the 2004-05 away shirt in adult sizes too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000081-1.webp",
+      "/images/kids-kits/900000081-2.webp",
+      "/images/kids-kits/900000081-3.webp",
+      "/images/kids-kits/900000081-4.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2004-05",
+      "kit": "Home",
+      "sponsor": "O2",
+      "colours": "Red / White / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
     "id": "900000050",
     "title": "Manchester United 2007-08 Away Kids Kit",
     "slug": "manchester-united-2007-08-away-kids-kit",
