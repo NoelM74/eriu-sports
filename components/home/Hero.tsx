@@ -1,9 +1,36 @@
 import Link from "next/link";
-import Image from "next/image";
 import { HERO_REVIEW, REVIEWS } from "@/lib/reviews";
 import { Stars } from "@/components/reviews/ReviewQuote";
+import { getProductBySlug } from "@/lib/products";
+
+/**
+ * Shirts the hero can show. One is picked for each visit (never the same one twice in a
+ * row), so repeat visitors see the shop change. Price, link and photo come from the
+ * product data; the first entry is the fallback when scripts are off.
+ */
+const HERO_PICKS = [
+  { slug: "ireland-1992-94-home-retro-jersey", tag: "Irish classic", name: "Ireland 1992-94 Home", alt: "Retro Ireland 1992-94 home jersey in green" },
+  { slug: "ireland-1990-italia-90-world", tag: "Irish classic", name: "Ireland Italia 90 Home", alt: "Retro Ireland Italia 90 home jersey in green" },
+  { slug: "ireland-euro-88-home-jersey", tag: "Irish classic", name: "Ireland Euro 88 Home", alt: "Retro Ireland Euro 88 home jersey in green" },
+  { slug: "manchester-united-98-99-treble-season", tag: "Premier League classic", name: "Man United 1998-99 Treble Home", alt: "Retro Manchester United 1998-99 home shirt in red" },
+  { slug: "dublin-gaa-2026-home-jersey", tag: "GAA 2026", name: "Dublin GAA 2026 Home", alt: "Dublin GAA 2026 home jersey in sky blue and navy" },
+  { slug: "arsenal-1988-89-away-kids-kit", tag: "Kids kit", name: "Arsenal 1988-89 Away Kids Kit", alt: "Arsenal 1988-89 yellow and navy away kids kit" },
+];
+
+const euro = (n: number) => `€${Number.isInteger(n) ? n : n.toFixed(2)}`;
+
+const PICKS = HERO_PICKS.map((p) => {
+  const product = getProductBySlug(p.slug);
+  if (!product) throw new Error(`Hero pick not found: ${p.slug}`);
+  return { src: product.images[0], href: `/products/${p.slug}`, alt: p.alt, tag: p.tag, name: `${p.name} · ${euro(product.price)}` };
+});
+
+// Runs while the page is still loading, before the photo is fetched, so only the chosen
+// photo downloads and nothing flashes.
+const PICK_SCRIPT = `(function(){var P=${JSON.stringify(PICKS).replace(/</g, "\\u003c")};var last=-1;try{last=parseInt(localStorage.getItem('eriu-hero')||'-1',10)}catch(e){}var i=Math.floor(Math.random()*P.length);if(P.length>1&&i===last)i=(i+1)%P.length;try{localStorage.setItem('eriu-hero',String(i))}catch(e){}var p=P[i],d=document;var img=d.getElementById('hero-img');img.alt=p.alt;img.src=p.src;d.getElementById('hero-link').href=p.href;d.getElementById('hero-tag').textContent=p.tag;d.getElementById('hero-name').textContent=p.name})()`;
 
 export default function Hero() {
+  const first = PICKS[0];
   return (
     <section className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full py-10 lg:py-14">
@@ -52,20 +79,31 @@ export default function Hero() {
 
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-br from-[#f0f7f4] to-[#e8f4f5] rounded-sm" />
-            <Link href="/products/ireland-1992-94-home-retro-jersey" className="relative w-full aspect-[4/5] max-w-md mx-auto block">
-              <Image
-                src="/images/ireland-classics/677983042-1.webp"
-                alt="Retro Ireland 1992-94 home jersey in green"
-                fill
-                sizes="(max-width: 1024px) 90vw, 450px"
-                className="object-contain object-center scale-110 drop-shadow-2xl"
-                priority
+            <a
+              id="hero-link"
+              href={first.href}
+              suppressHydrationWarning
+              className="relative w-full aspect-[4/5] max-w-md mx-auto block"
+            >
+              {/* A plain img so the script below can choose the photo before it loads. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                id="hero-img"
+                alt={first.alt}
+                suppressHydrationWarning
+                fetchPriority="high"
+                className="absolute inset-0 h-full w-full object-contain object-center scale-110 drop-shadow-2xl"
               />
-            </Link>
+              <noscript>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={first.src} alt={first.alt} className="absolute inset-0 h-full w-full object-contain object-center scale-110 drop-shadow-2xl" />
+              </noscript>
+            </a>
             <div className="absolute bottom-6 left-0 bg-[#0F2131] text-white px-4 py-3 shadow-lg">
-              <p className="text-[10px] uppercase tracking-widest text-[#1C7C83] font-bold">Irish classic</p>
-              <p className="text-sm font-bold mt-0.5">Ireland 1992-94 Home · €25</p>
+              <p id="hero-tag" suppressHydrationWarning className="text-[10px] uppercase tracking-widest text-[#1C7C83] font-bold">{first.tag}</p>
+              <p id="hero-name" suppressHydrationWarning className="text-sm font-bold mt-0.5">{first.name}</p>
             </div>
+            <script dangerouslySetInnerHTML={{ __html: PICK_SCRIPT }} />
           </div>
         </div>
       </div>
