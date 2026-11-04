@@ -14845,13 +14845,17 @@
     "id": "900000089",
     "title": "Manchester United 2001-02 Centenary Kids Kit",
     "slug": "manchester-united-2001-02-centenary-kids-kit",
-    "description": "United's 2001-02 centenary kit, in kids sizes, made for 100 years of the Manchester United name. The gold shirt has black side panels and a black collar, with black and white stripes over the shoulders. Vodafone is across the chest in black, under the crest and a '1902 Centenary 2002' badge. The black shorts have gold piping and the crest in gold.\n\nThe original shirt was reversible, white on the other side. Newton Heath took the name Manchester United in 1902. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "description": "United's 2001-02 centenary kit, in kids sizes, made for 100 years of the Manchester United name. The shirt is reversible. One side is gold with black side panels and black and white stripes over the shoulders. The other is white with black sleeves and side panels, trimmed in gold. Both sides carry Vodafone in black, the crest and a centenary badge. The black shorts have gold piping and the crest in gold.\n\nNewton Heath took the name Manchester United in 1902. We have the adult shirt too. Shirt and shorts; socks aren't included.",
     "price": 30,
     "images": [
       "/images/kids-kits/900000089-1.webp",
+      "/images/kids-kits/900000089-6.webp",
       "/images/kids-kits/900000089-2.webp",
+      "/images/kids-kits/900000089-7.webp",
       "/images/kids-kits/900000089-3.webp",
+      "/images/kids-kits/900000089-8.webp",
       "/images/kids-kits/900000089-4.webp",
+      "/images/kids-kits/900000089-9.webp",
       "/images/kids-kits/900000089-5.webp"
     ],
     "collection": "Kids Football Kits",
@@ -14861,7 +14865,7 @@
       "season": "2001-02",
       "kit": "Away",
       "sponsor": "Vodafone",
-      "colours": "Gold / Black / White",
+      "colours": "Gold / White / Black",
       "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
       "condition": "New"
     },
