@@ -14525,6 +14525,39 @@
     ]
   },
   {
+    "id": "900000080",
+    "title": "Arsenal 2007-08 Third Kids Kit",
+    "slug": "arsenal-2007-08-third-kids-kit",
+    "description": "Arsenal's redcurrant and navy third kit from 2007-08, in kids sizes. The shirt has broad hoops all the way round, with a navy polo collar and cuffs edged in gold. Fly Emirates is across the chest in gold, and 'Arsenal F.C.' is stitched in gold script on the back of the collar. The navy shorts have gold edging and the club crest.\n\nIt's from Arsenal's first season after Thierry Henry left for Barcelona, when Emmanuel Adebayor scored 24 league goals. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000080-1.webp",
+      "/images/kids-kits/900000080-2.webp",
+      "/images/kids-kits/900000080-3.webp",
+      "/images/kids-kits/900000080-4.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Arsenal FC",
+      "season": "2007-08",
+      "kit": "Third",
+      "sponsor": "Fly Emirates",
+      "colours": "Redcurrant / Navy / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
     "id": "900000050",
     "title": "Manchester United 2007-08 Away Kids Kit",
     "slug": "manchester-united-2007-08-away-kids-kit",
