@@ -13,7 +13,7 @@ const HERO_PICKS = [
   { slug: "ireland-1992-94-home-retro-jersey", tag: "Irish classic", name: "Ireland 1992-94 Home", alt: "Retro Ireland 1992-94 home jersey in green" },
   { slug: "ireland-1990-italia-90-world", tag: "Irish classic", name: "Ireland Italia 90 Home", alt: "Retro Ireland Italia 90 home jersey in green" },
   { slug: "ireland-euro-88-home-jersey", tag: "Irish classic", name: "Ireland Euro 88 Home", alt: "Retro Ireland Euro 88 home jersey in green" },
-  { slug: "barcelona-2026-27-home-kids-kit", tag: "Kids kit", name: "Barcelona 2026-27 Home Kids Kit", alt: "Barcelona 2026-27 home kids kit in blue and red stripes" },
+  { slug: "barcelona-2004-05-home-shirt-ronaldinho-10", tag: "European classic", name: "Barcelona 2004-05 Home, Ronaldinho 10", alt: "Back of a retro Barcelona 2004-05 home shirt printed RONALDINHO 10" },
   { slug: "dublin-gaa-2026-home-jersey", tag: "GAA 2026", name: "Dublin GAA 2026 Home", alt: "Dublin GAA 2026 home jersey in sky blue and navy" },
   { slug: "ireland-2026-away-kids-kit", tag: "Kids kit", name: "Ireland 2026 Away Kids Kit", alt: "Ireland 2026 white and green away kids kit" },
 ];
