@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Product } from "@/lib/products";
+import { isClientReady, markClientReady } from "@/lib/session-order";
 import ClubPicker from "./ClubPicker";
 import ShuffledGrid from "./ShuffledGrid";
 
@@ -19,9 +20,32 @@ interface Props {
 /**
  * Kids kits grouped into sections, with a club filter that stays on this page.
  * Linking to the club page instead mixed the kids kits in with every adult shirt.
+ * The chosen club lives in the address (?club=liverpool), so the back button and the
+ * breadcrumb on a kids kit page return to the filtered list.
  */
 export default function KidsKitsBrowser({ sections, clubs }: Props) {
-  const [club, setClub] = useState("");
+  const readClub = () => {
+    const c = new URLSearchParams(window.location.search).get("club") ?? "";
+    return clubs.some((x) => x.slug === c) ? c : "";
+  };
+  const [club, setClubState] = useState(() => (isClientReady() ? readClub() : ""));
+
+  useEffect(() => {
+    markClientReady();
+    const c = readClub();
+    if (c) setClubState(c);
+    // Read the address once when the page opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const setClub = (c: string) => {
+    setClubState(c);
+    const url = new URL(window.location.href);
+    if (c) url.searchParams.set("club", c);
+    else url.searchParams.delete("club");
+    url.hash = "";
+    window.history.replaceState(window.history.state, "", url.toString());
+  };
   const shown = sections
     .map((s) => ({ ...s, items: club ? s.items.filter((p) => p.club?.slug === club) : s.items }))
     .filter((s) => s.items.length > 0);

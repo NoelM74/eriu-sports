@@ -2,8 +2,11 @@
 
 import { useEffect, useState } from "react";
 import type { Product } from "@/lib/products";
-import { mixByClub } from "@/lib/shuffle";
+import { mixByClub, seededRandom } from "@/lib/shuffle";
+import { isClientReady, markClientReady, sessionSeed } from "@/lib/session-order";
 import ProductCard from "./ProductCard";
+
+const mix = (products: Product[]) => mixByClub(products, seededRandom(sessionSeed()));
 
 interface Props {
   products: Product[];
@@ -19,6 +22,8 @@ interface Props {
 /**
  * Product grid that shows a fresh, club-mixed order on every visit.
  * The server renders the order it was given; the browser reshuffles after loading.
+ * The order is seeded once per tab session, so going back to a grid shows the same order
+ * (and the browser can return to the same spot).
  */
 export default function ShuffledGrid({
   products,
@@ -27,11 +32,13 @@ export default function ShuffledGrid({
   priorityCount = 0,
   pageSize,
 }: Props) {
-  const [order, setOrder] = useState<Product[] | null>(null);
+  // After the first page load, in-site navigations render the session order straight away.
+  const [order, setOrder] = useState<Product[] | null>(() => (isClientReady() ? mix(products) : null));
   const [visible, setVisible] = useState(pageSize ?? Infinity);
 
   useEffect(() => {
-    setOrder(mixByClub(products));
+    markClientReady();
+    setOrder(mix(products));
   }, [products]);
 
   const all = (order ?? products).slice(0, limit ?? products.length);

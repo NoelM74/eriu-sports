@@ -116,6 +116,12 @@ export default async function ProductDetail({ params }: ProductPageProps) {
   if (!product) notFound();
 
   const collection = getCollectionBySlug(product.collectionSlug)!;
+  // Kids kits link back to that club's kids kits, not the club page full of adult shirts.
+  const clubHref = product.club
+    ? collection.slug === 'kids-football-kits'
+      ? `/collections/kids-football-kits?club=${product.club.slug}`
+      : `/clubs/${product.club.slug}`
+    : undefined;
   const related = getRelatedProducts(product);
   const player = product.player ? getPlayerBySlug(product.player.slug) : undefined;
   const stories = getPosts().filter((post) => post.products.includes(product.slug)).slice(0, 2);
@@ -186,7 +192,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           {product.club && (
             <>
               <li aria-hidden>/</li>
-              <li><Link href={`/clubs/${product.club.slug}`} className="hover:text-[var(--color-teal)]">{product.club.name}</Link></li>
+              <li><Link href={clubHref!} className="hover:text-[var(--color-teal)]">{product.club.name}</Link></li>
             </>
           )}
           <li aria-hidden>/</li>
@@ -304,7 +310,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
               <h2 id="related" className="text-2xl font-bold uppercase text-[#0F2131]">You might also like</h2>
               <Link
-                href={product.club ? `/clubs/${product.club.slug}` : `/collections/${collection.slug}`}
+                href={clubHref ?? `/collections/${collection.slug}`}
                 className="shrink-0 text-xs font-bold uppercase tracking-widest text-[#1A533E] border-b border-[#1A533E] pb-0.5"
               >
                 More {product.club?.name ?? collection.name} →
