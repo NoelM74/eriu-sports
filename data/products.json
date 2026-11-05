@@ -2798,7 +2798,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-henry-14-1.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-henry-14-2.webp",
-      "/images/premier-league-classics/arsenal-1998-99-home-shirt-henry-14-3.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-henry-14-4.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-henry-14-5.webp"
     ],
@@ -3643,7 +3642,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-1.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-1998-99-home-shirt-3.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-4.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-5.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-6.webp"
@@ -4886,23 +4884,22 @@
   },
   {
     "id": "mj-546009",
-    "title": "Manchester United 1999-2000 Champions League Winners Shirt",
+    "title": "Manchester United 1999 Champions League Final Shirt",
     "slug": "manchester-united-1999-champions-league-final-shirt",
-    "description": "The shirt United wore as European champions in 1999-2000, with 'UEFA Champions League Winners 1999' embroidered on the chest. Red with a tonal pattern of Champions League star balls, a white collar trimmed in black and red, and the crest in a silver shield. SHARP is across the front in white.\n\nUnited won the Champions League in Barcelona in May 1999. As holders the next season, they beat Palmeiras in Tokyo to win the Intercontinental Cup and went out to Real Madrid in the quarter-finals. Sizes S to 2XL; the size guide has measurements.",
+    "description": "The red shirt Manchester United wore in Europe, including the 1999 Champions League final. 'Camp Nou Champions League The Final 1999' is embroidered on the chest. The shirt has a tonal pattern of star balls and a white collar trimmed in black, and the crest sits in a grey shield edged in gold. SHARP is across the front in white.\n\nUnited kept this design for Champions League games, which is why it differs from the shirt they won the league and FA Cup in. At the Camp Nou in May 1999, Teddy Sheringham and Ole Gunnar Solskjær scored in stoppage time to beat Bayern Munich. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-1.webp",
       "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-2.webp",
       "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-3.webp",
       "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-4.webp",
-      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-5.webp",
-      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-6.webp"
+      "/images/premier-league-classics/manchester-united-1999-champions-league-final-shirt-5.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
     "details": {
       "team": "Manchester United",
-      "season": "1999-00",
+      "season": "1998-99",
       "kit": "Home",
       "colours": "Red / White / Black",
       "fit": "Classic 90s cut, a little boxier than a modern shirt",
@@ -5225,8 +5222,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-united-2008-09-away-shirt-1.webp",
-      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-2.webp",
-      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-3.webp"
+      "/images/premier-league-classics/manchester-united-2008-09-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -5625,8 +5621,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-1992-95-away-shirt-1.webp",
-      "/images/european-world-classics/barcelona-1992-95-away-shirt-2.webp",
-      "/images/european-world-classics/barcelona-1992-95-away-shirt-3.webp"
+      "/images/european-world-classics/barcelona-1992-95-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6082,7 +6077,6 @@
     "images": [
       "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-1.webp",
       "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-2.webp",
-      "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-3.webp",
       "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-4.webp"
     ],
     "collection": "European & World Classics",
@@ -6179,7 +6173,6 @@
     "images": [
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-1.webp",
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-2.webp",
-      "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-3.webp",
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-4.webp",
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-5.webp"
     ],
@@ -6212,8 +6205,6 @@
     "images": [
       "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-4.webp",
       "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6245,7 +6236,6 @@
     "images": [
       "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-3.webp",
       "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-4.webp"
     ],
     "collection": "European & World Classics",
@@ -6276,8 +6266,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-3.webp"
+      "/images/european-world-classics/brazil-2002-world-cup-home-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6340,8 +6329,6 @@
     "images": [
       "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-4.webp",
       "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-5.webp"
     ],
     "collection": "European & World Classics",
@@ -12385,9 +12372,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/chelsea-1996-97-away-shirt-1.webp",
-      "/images/premier-league-classics/chelsea-1996-97-away-shirt-2.webp",
-      "/images/premier-league-classics/chelsea-1996-97-away-shirt-3.webp",
-      "/images/premier-league-classics/chelsea-1996-97-away-shirt-4.webp"
+      "/images/premier-league-classics/chelsea-1996-97-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12835,9 +12820,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-1.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-3.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-4.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12867,8 +12850,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-1.webp",
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-3.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-4.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12900,8 +12882,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-1.webp",
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-3.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-4.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12933,8 +12914,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-1.webp",
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-3.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-4.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
