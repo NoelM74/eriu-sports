@@ -15722,5 +15722,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000092",
+    "title": "Manchester City 2026-27 Home Kids Kit",
+    "slug": "manchester-city-2026-27-home-kids-kit",
+    "description": "Manchester City's 2026-27 home kit, in kids sizes. The sky blue fades from a darker shade at the shoulders to a lighter one at the hem, with a fine diamond pattern through the fabric. White trims the crew neck and cuffs, white mesh runs down the sides, and CITY is printed below the collar on the back. Etihad Airways across the front, the club crest on the chest, and sky blue shorts with the crest on the leg. City first wore it against Aston Villa on the last day of the 2025-26 Premier League season. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000092-1.webp",
+      "/images/kids-kits/900000092-2.webp",
+      "/images/kids-kits/900000092-3.webp",
+      "/images/kids-kits/900000092-4.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester City",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Etihad Airways",
+      "colours": "Sky Blue / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
