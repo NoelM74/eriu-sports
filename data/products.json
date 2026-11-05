@@ -14283,6 +14283,40 @@
     ]
   },
   {
+    "id": "900000091",
+    "title": "Liverpool 1995-96 Home Kids Kit",
+    "slug": "liverpool-1995-96-home-kids-kit",
+    "description": "Liverpool's home kit from 1995-96, in kids sizes. The red shirt has a tonal stripe and white stripes over the shoulders, with a white V-neck trimmed in red and yellow. Carlsberg is across the chest in white, under a crest set on red and dark red stripes. The red shorts have white stripes down the side and the crest on the leg.\n\nIn April 1996 Liverpool beat Newcastle 4-3 at Anfield, with Stan Collymore scoring the winner in stoppage time. We have the adult shirt too, plain or with a name and number. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000091-1.webp",
+      "/images/kids-kits/900000091-2.webp",
+      "/images/kids-kits/900000091-3.webp",
+      "/images/kids-kits/900000091-4.webp",
+      "/images/kids-kits/900000091-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Liverpool FC",
+      "season": "1995-96",
+      "kit": "Home",
+      "sponsor": "Carlsberg",
+      "colours": "Red / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
     "id": "900000043",
     "title": "Liverpool 1996-97 Away Kids Kit",
     "slug": "liverpool-1996-97-away-kids-kit",

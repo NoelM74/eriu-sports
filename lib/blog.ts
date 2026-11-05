@@ -1144,6 +1144,7 @@ export const POSTS: BlogPost[] = [
     products: [
       "liverpool-away-1995-96-carlsberg",
       "liverpool-1995-96-away-kids-kit",
+      "liverpool-1995-96-home-kids-kit",
       "liverpool-1995-96-home-shirt",
       "liverpool-96-97-away-shirt",
       "liverpool-1996-97-third-shirt",
