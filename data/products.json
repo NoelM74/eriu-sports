@@ -15692,5 +15692,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000103",
+    "title": "Barcelona 2005-06 Away Kids Kit",
+    "slug": "barcelona-2005-06-away-kids-kit",
+    "description": "Barcelona's bright yellow away kit from 2005-06, in kids sizes. It has a navy V-neck, with navy trim curving from the collar to the underarms. The cuffs are navy with red and blue stripes, and there are navy panels at the hem. The Catalan flag sits at the back of the neck, and the crest is embroidered on the chest. The navy shorts have a yellow panel on the leg, a Catalan flag stripe at the hem and the crest.\n\nIn November 2005 Ronaldinho won the Ballon d'Or, and Barcelona won La Liga and the Champions League that season. We have the adult shirt too, printed RONALDINHO 10. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000103-1.webp",
+      "/images/kids-kits/900000103-2.webp",
+      "/images/kids-kits/900000103-3.webp",
+      "/images/kids-kits/900000103-4.webp",
+      "/images/kids-kits/900000103-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Barcelona",
+      "season": "2005-06",
+      "kit": "Away",
+      "colours": "Yellow / Navy / Red / Blue",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
