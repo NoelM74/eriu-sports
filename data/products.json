@@ -15863,5 +15863,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000097",
+    "title": "Chelsea 2003-05 Away Kids Kit",
+    "slug": "chelsea-2003-05-away-kids-kit",
+    "description": "Chelsea's white away kit from 2003 to 2005, in kids sizes. A navy and royal blue stripe runs down the front and fades out behind the sponsor. The crew neck, cuffs and hem are trimmed in blue, Fly Emirates is across the chest in navy and the lion crest is embroidered in blue. The white shorts have blue trim and the crest on the leg.\n\nChelsea won the league in 2004-05 with 95 points, their first title in 50 years. We have the adult shirt too, plain or printed for Drogba and Gudjohnsen. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000097-1.webp",
+      "/images/kids-kits/900000097-2.webp",
+      "/images/kids-kits/900000097-3.webp",
+      "/images/kids-kits/900000097-4.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Chelsea FC",
+      "season": "2003-05",
+      "kit": "Away",
+      "sponsor": "Fly Emirates",
+      "colours": "White / Blue / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
