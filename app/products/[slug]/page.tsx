@@ -89,7 +89,7 @@ const OTHER_MARKETS = MARKET_COUNTRIES.filter((c) => c !== 'IE' && c !== 'GB');
 
 /**
  * Offer shipping details: the flat worldwide fee and a delivery time (handling plus transit).
- * Ireland and the UK: 8–14 days from order, as quoted on the site. Other countries: 10–21 days
+ * Ireland and the UK: 10–16 days from order, as quoted on the site. Other countries: 10–21 days
  * for Google only (user, 31 October 2026); the site itself still says times vary.
  */
 function shippingTo(countries: string[], handling: [number, number], transit: [number, number]) {
@@ -159,7 +159,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           : 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
         seller: { '@type': 'Organization', name: 'Ériu Sports' },
-        shippingDetails: [shippingTo(['IE', 'GB'], [0, 2], [8, 12]), shippingTo(OTHER_MARKETS, [2, 2], [8, 19])],
+        shippingDetails: [shippingTo(['IE', 'GB'], [0, 2], [10, 14]), shippingTo(OTHER_MARKETS, [2, 2], [8, 19])],
         hasMerchantReturnPolicy: {
           '@type': 'MerchantReturnPolicy',
           applicableCountry: MARKET_COUNTRIES,
@@ -275,7 +275,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
             <div className="mt-8 border border-gray-200 bg-gray-50 p-5 text-sm text-gray-700">
               <p className="font-semibold text-gray-900">Tracked delivery worldwide</p>
               <ul className="mt-2 space-y-1">
-                <li>{DELIVERY} to Ireland and the UK</li>
+                <li>Usually {DELIVERY} to Ireland and the UK</li>
                 <li>€{SHIPPING_FEE} delivery, free on orders over €{FREE_DELIVERY_OVER}</li>
                 <li>30-day returns on unworn items with tags on</li>
               </ul>

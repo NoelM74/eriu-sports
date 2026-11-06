@@ -112,9 +112,9 @@ export default function TermsOfServicePage() {
             Delivery is a flat €5 per order to any country, and free on orders of €49 or more.
           </p>
           <p>
-            Orders to Ireland and the UK usually arrive 8–14 days from the day you order. Delivery times to other
+            Orders to Ireland and the UK usually arrive 10–16 days from the day you order. Delivery times to other
             countries vary; email us before you order if you&apos;d like an estimate. Busy periods such as Christmas and
-            Black Friday, or delays at the border, can add time.
+            Black Friday, or delays at the border, can add time. Delivery times are estimates, not guaranteed dates.
           </p>
         </Section>
 

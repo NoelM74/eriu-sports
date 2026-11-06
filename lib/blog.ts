@@ -431,7 +431,7 @@ export const POSTS: BlogPost[] = [
       { q: "Where do Bohemians play?", a: "Dalymount Park in Phibsborough, north Dublin, less than a mile from Croke Park." },
       { q: "Is Bohemian FC fan-owned?", a: "Yes. The club is owned by its members." },
       { q: "Who designed the Fontaines D.C. shirt?", a: "Guitarist Carlos O'Connell, working with the club's own designers." },
-      { q: "What sizes do the Bohemians shirts come in?", a: "S to 2XL, in a regular fit. Delivery to Ireland and the UK takes 8 to 14 days." },
+      { q: "What sizes do the Bohemians shirts come in?", a: "S to 2XL, in a regular fit. Delivery to Ireland and the UK usually takes 10 to 16 days." },
     ],
     products: [
       "bohemians-oasis-2025-fai-cup-jersey",
@@ -510,7 +510,7 @@ export const POSTS: BlogPost[] = [
       { q: "Do GAA jerseys run small?", a: "They're a player fit, so they sit close to the body. Many people go up one size for a looser fit." },
       { q: "How many All-Irelands have Tyrone won?", a: "Four senior football titles: 2003, 2005, 2008 and 2021." },
       { q: "When did Louth last win Leinster?", a: "2025, beating Meath 3-14 to 1-18. Before that, their last Leinster title came in 1957." },
-      { q: "How long does delivery take?", a: "8 to 14 days to Ireland and the UK. Delivery is free on orders over €49." },
+      { q: "How long does delivery take?", a: "Usually 10 to 16 days to Ireland and the UK, a little longer at busy times like Christmas. Delivery is free on orders over €49." },
     ],
     products: [
       "dublin-gaa-2026-home-jersey",

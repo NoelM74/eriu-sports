@@ -156,7 +156,7 @@ export default function CheckoutPage() {
           </p>
         )}
         <p className="text-gray-600 mb-8 max-w-md text-center text-lg">
-          Thanks for your order. Orders to Ireland and the UK arrive within 8–14 days; times to other countries vary. PayPal will email you a
+          Thanks for your order. Orders to Ireland and the UK usually arrive within 10–16 days. Busy times like Christmas can add a few days, and times to other countries vary. PayPal will email you a
           receipt. Please keep your order reference handy.
         </p>
         {paymentPending && (

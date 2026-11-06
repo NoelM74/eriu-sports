@@ -7,11 +7,11 @@ const EMAIL = 'noel@eriusports.com';
 export const metadata: Metadata = {
   title: 'Delivery & Returns | Worldwide, Free Over €49',
   description:
-    'We deliver worldwide for a flat €5, free on orders over €49. Tracked, and 8–14 days to Ireland and the UK. 30-day returns on unworn items.',
+    'We deliver worldwide for a flat €5, free on orders over €49. Tracked, and 10–16 days to Ireland and the UK. 30-day returns on unworn items.',
   alternates: { canonical: '/shipping-returns' },
   openGraph: {
     title: 'Delivery & Returns | Ériu Sports',
-    description: 'Worldwide delivery for €5, free over €49. 8–14 days to Ireland and the UK. 30-day returns.',
+    description: 'Worldwide delivery for €5, free over €49. 10–16 days to Ireland and the UK. 30-day returns.',
     url: '/shipping-returns',
     images: OG_IMAGES,
   },
@@ -45,7 +45,7 @@ export default function ShippingReturnsPage() {
               We deliver to any country, for the same price.
             </Card>
             <Card title="How long it takes">
-              Orders to Ireland and the UK arrive 8–14 days from the day you order. Delivery times to other countries vary.
+              Orders to Ireland and the UK usually arrive 10–16 days from the day you order. Busy times like Christmas, or courier delays, can add a few days. Delivery times to other countries vary.
               Email us before you order and we&apos;ll give you an idea for your country.
             </Card>
             <Card title="Tracking">

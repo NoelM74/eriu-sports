@@ -22,7 +22,7 @@ export interface CollectionDef {
 }
 
 /** Delivery time to Ireland and the UK. Times to other countries vary, so we don't quote one. */
-export const DELIVERY = "8–14 days";
+export const DELIVERY = "10–16 days";
 /** Flat delivery fee in euro, anywhere in the world. */
 export const SHIPPING_FEE = 5;
 /** Orders at or over this total (in euro) ship free. */

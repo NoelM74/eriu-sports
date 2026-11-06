@@ -37,7 +37,7 @@ const REASONS: { title: string; lead: string; body: React.ReactNode }[] = [
     lead: 'No hidden fees. What you see is what you pay.',
     body: (
       <>
-        We deliver worldwide, tracked, for a flat €5, or free when you spend €49 or more. Orders to Ireland and the UK arrive in 8–14 days.{' '}
+        We deliver worldwide, tracked, for a flat €5, or free when you spend €49 or more. Orders to Ireland and the UK usually arrive in 10–16 days.{' '}
         <Link href="/shipping-returns" className="text-[#1C7C83] font-semibold hover:underline">Delivery details</Link>
       </>
     ),

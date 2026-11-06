@@ -24,7 +24,7 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
     items: [
       {
         q: 'How long does delivery take?',
-        a: 'Orders to Ireland and the UK take 8–14 days from the day you order. Times to other countries vary; email us and we will give you an idea. Every parcel is tracked.',
+        a: 'Orders to Ireland and the UK usually take 10–16 days from the day you order. Busy times like Christmas, or courier delays, can add a few days. Times to other countries vary; email us and we will give you an idea. Every parcel is tracked.',
       },
       {
         q: 'Do you deliver outside Ireland?',

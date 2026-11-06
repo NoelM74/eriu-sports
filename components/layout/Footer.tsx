@@ -75,7 +75,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/50">
           <span>© {new Date().getFullYear()} Ériu Sports. All rights reserved.</span>
           <span className="uppercase tracking-widest font-medium text-[#1C7C83]">
-            Worldwide delivery · 8–14 days to Ireland &amp; the UK
+            Worldwide delivery · 10–16 days to Ireland &amp; the UK
           </span>
         </div>
       </div>
