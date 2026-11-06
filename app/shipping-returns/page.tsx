@@ -52,6 +52,9 @@ export default function ShippingReturnsPage() {
               Orders ship from our warehouse in China. You get a tracking link once your order is on its way, so you can
               follow it to your door.
             </Card>
+            <Card title="Not arrived?">
+              If your order hasn&apos;t arrived 30 days after you order, contact us and we&apos;ll trace it or refund you.
+            </Card>
             <Card title="No customs charges">
               Every order is sent duties paid, so there are no import charges or taxes to pay when it arrives.
             </Card>

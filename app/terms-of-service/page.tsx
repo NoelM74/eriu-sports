@@ -116,6 +116,10 @@ export default function TermsOfServicePage() {
             countries vary; email us before you order if you&apos;d like an estimate. Busy periods such as Christmas and
             Black Friday, or delays at the border, can add time. Delivery times are estimates, not guaranteed dates.
           </p>
+          <p>
+            If your order hasn&apos;t arrived 30 days after you order, contact us and we&apos;ll trace it or refund you in
+            full. This doesn&apos;t affect your legal rights.
+          </p>
         </Section>
 
         <Section n={6} title="Customs, duties and taxes">

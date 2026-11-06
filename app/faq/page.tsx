@@ -27,6 +27,10 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
         a: 'Orders to Ireland and the UK usually take 10–16 days from the day you order. Busy times like Christmas, or courier delays, can add a few days. Times to other countries vary; email us and we will give you an idea. Every parcel is tracked.',
       },
       {
+        q: 'What if my order hasn\'t arrived?',
+        a: "Check your tracking link first, as parcels can sit with the courier for a few days at busy times. If your order hasn't arrived 30 days after you order, contact us and we'll trace it or refund you.",
+      },
+      {
         q: 'Do you deliver outside Ireland?',
         a: 'Yes. We deliver worldwide, including the UK, for the same price.',
       },
