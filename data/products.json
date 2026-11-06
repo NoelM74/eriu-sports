@@ -8,7 +8,6 @@
     "images": [
       "/images/ireland-classics/678616545-1.webp",
       "/images/ireland-classics/678616545-2.webp",
-      "/images/ireland-classics/678616545-4.webp",
       "/images/ireland-classics/678616545-5.webp"
     ],
     "collection": "Irish Classics",
@@ -68,8 +67,7 @@
     "images": [
       "/images/ireland-classics/677985214-1.webp",
       "/images/ireland-classics/677985214-2.webp",
-      "/images/ireland-classics/677985214-4.webp",
-      "/images/ireland-classics/677985214-5.webp"
+      "/images/ireland-classics/677985214-4.webp"
     ],
     "collection": "Irish Classics",
     "currency": "EUR",
@@ -97,7 +95,6 @@
     "images": [
       "/images/ireland-classics/678621136-1.webp",
       "/images/ireland-classics/678621136-2.webp",
-      "/images/ireland-classics/678621136-4.webp",
       "/images/ireland-classics/678621136-5.webp"
     ],
     "collection": "Irish Classics",
@@ -185,7 +182,6 @@
     "images": [
       "/images/ireland-classics/692696303-1.webp",
       "/images/ireland-classics/692696303-2.webp",
-      "/images/ireland-classics/692696303-4.webp",
       "/images/ireland-classics/692696303-5.webp",
       "/images/ireland-classics/692696303-6.webp"
     ],
@@ -217,7 +213,6 @@
       "/images/ireland-classics/692734040-1.webp",
       "/images/ireland-classics/692734040-2.webp",
       "/images/ireland-classics/692734040-4.webp",
-      "/images/ireland-classics/692734040-5.webp",
       "/images/ireland-classics/692734040-6.webp"
     ],
     "collection": "Irish Classics",
@@ -247,7 +242,6 @@
     "images": [
       "/images/ireland-classics/679941594-1.webp",
       "/images/ireland-classics/679941594-2.webp",
-      "/images/ireland-classics/679941594-4.webp",
       "/images/ireland-classics/679941594-5.webp"
     ],
     "collection": "Irish Classics",
@@ -307,8 +301,7 @@
       "/images/ireland-classics/677960419-1.webp",
       "/images/ireland-classics/677960419-2.webp",
       "/images/ireland-classics/677960419-4.webp",
-      "/images/ireland-classics/677960419-5.webp",
-      "/images/ireland-classics/677960419-6.webp"
+      "/images/ireland-classics/677960419-5.webp"
     ],
     "collection": "Irish Classics",
     "currency": "EUR",
@@ -1342,8 +1335,7 @@
     "images": [
       "/images/premier-league-classics/west-ham-united-1999-01-home-shirt-1.webp",
       "/images/premier-league-classics/west-ham-united-1999-01-home-shirt-2.webp",
-      "/images/premier-league-classics/west-ham-united-1999-01-home-shirt-3.webp",
-      "/images/premier-league-classics/west-ham-united-1999-01-home-shirt-4.webp"
+      "/images/premier-league-classics/west-ham-united-1999-01-home-shirt-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -1465,8 +1457,7 @@
     "images": [
       "/images/premier-league-classics/liverpool-1996-97-third-shirt-1.webp",
       "/images/premier-league-classics/liverpool-1996-97-third-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-1996-97-third-shirt-3.webp",
-      "/images/premier-league-classics/liverpool-1996-97-third-shirt-4.webp"
+      "/images/premier-league-classics/liverpool-1996-97-third-shirt-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -1542,13 +1533,12 @@
     "id": "noedm9597-as-roma-1999-00-away-shirt-16b5",
     "title": "AS Roma 1999-00 Away Shirt",
     "slug": "as-roma-1999-00-away-shirt",
-    "description": "Roma's 1999-2000 away shirt in grey and black, with an orange wolf print across the shoulders and the INA Assitalia sponsor.",
+    "description": "Roma's charcoal away shirt from 1999-2000, with tonal pinstripes and an orange outline of the she-wolf across the shoulders. The polo collar and cuffs are orange, and INA Assitalia is across the chest in white.\n\nIt was Fabio Capello's first season as Roma manager. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/as-roma-1999-00-away-shirt-1.webp",
       "/images/european-world-classics/as-roma-1999-00-away-shirt-2.webp",
-      "/images/european-world-classics/as-roma-1999-00-away-shirt-3.webp",
-      "/images/european-world-classics/as-roma-1999-00-away-shirt-4.webp"
+      "/images/european-world-classics/as-roma-1999-00-away-shirt-3.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -1583,7 +1573,7 @@
     "id": "nozlm9597-juventus-1995-96-away-shirt-ea61",
     "title": "Juventus 1995-96 Away Shirt",
     "slug": "juventus-1995-96-away-shirt",
-    "description": "Juventus's away shirt from 1995-96, the season they won the Champions League. Blue with gold star panels on the shoulders and the Sony sponsor.",
+    "description": "Juventus's blue away shirt from 1995-96, with big gold stars across the shoulders and a yellow polo collar and cuffs. The chest carries the champions' shield with two stars, and Sony is across the front in white.\n\nJuventus won the Champions League that season, beating Ajax on penalties in Rome. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1995-96-away-shirt-1.webp",
@@ -1752,7 +1742,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1997-99-away-shirt-1.webp",
       "/images/premier-league-classics/arsenal-1997-99-away-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-1997-99-away-shirt-3.webp",
       "/images/premier-league-classics/arsenal-1997-99-away-shirt-4.webp"
     ],
     "collection": "Premier League Classics",
@@ -1788,12 +1777,11 @@
     "id": "noehm9597-bayern-munich-1997-99-away-73ee",
     "title": "Bayern Munich 1997-99 Away Shirt",
     "slug": "bayern-munich-1997-99-away-shirt",
-    "description": "Bayern Munich's navy and red away shirt from 1997-99, with the Opel sponsor. A Bundesliga pick beyond the usual Premier League kits.",
+    "description": "Bayern Munich's navy away shirt from 1997-99, with a red band across the chest carrying Opel in white. The sleeves are red with navy stripes, the collar is white trimmed in red, and Bayern München runs across the back.\n\nBayern won the German Cup in 1998 and the Bundesliga in 1999. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-1997-99-away-shirt-1.webp",
       "/images/european-world-classics/bayern-munich-1997-99-away-shirt-2.webp",
-      "/images/european-world-classics/bayern-munich-1997-99-away-shirt-3.webp",
       "/images/european-world-classics/bayern-munich-1997-99-away-shirt-4.webp"
     ],
     "collection": "European & World Classics",
@@ -1829,7 +1817,7 @@
     "id": "noelm9597-real-betis-1995-97-home-51f4",
     "title": "Real Betis 1995-97 Home Shirt",
     "slug": "real-betis-1995-97-home-shirt",
-    "description": "Real Betis's 1995-97 home shirt in the classic green and white stripes, with the KELIA sponsor.",
+    "description": "Real Betis's 1995-97 home shirt, with green and white stripes and a tonal logo pattern in the green. The V-neck is white and green with Real Betis stitched at the throat, and KELIA is across the chest in black on white.\n\nBetis reached the Copa del Rey final in 1997, losing to Barcelona after extra time. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/real-betis-1995-97-home-shirt-1.webp",
@@ -2008,9 +1996,7 @@
     "price": 25,
     "images": [
       "/images/gaa-training-vests/galway-gaa-commemorative-training-vest-1.webp",
-      "/images/gaa-training-vests/galway-gaa-commemorative-training-vest-2.webp",
-      "/images/gaa-training-vests/galway-gaa-commemorative-training-vest-4.webp",
-      "/images/gaa-training-vests/galway-gaa-commemorative-training-vest-5.webp"
+      "/images/gaa-training-vests/galway-gaa-commemorative-training-vest-2.webp"
     ],
     "collection": "GAA Training Vests",
     "currency": "EUR",
@@ -2195,8 +2181,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/fremantle-dockers-indigenous-afl-jersey-1.webp",
-      "/images/afl-jerseys/fremantle-dockers-indigenous-afl-jersey-2.webp",
-      "/images/afl-jerseys/fremantle-dockers-indigenous-afl-jersey-3.webp"
+      "/images/afl-jerseys/fremantle-dockers-indigenous-afl-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2226,8 +2211,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/collingwood-magpies-indigenous-afl-jersey-1.webp",
-      "/images/afl-jerseys/collingwood-magpies-indigenous-afl-jersey-2.webp",
-      "/images/afl-jerseys/collingwood-magpies-indigenous-afl-jersey-3.webp"
+      "/images/afl-jerseys/collingwood-magpies-indigenous-afl-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2257,8 +2241,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/port-adelaide-indigenous-afl-jersey-1.webp",
-      "/images/afl-jerseys/port-adelaide-indigenous-afl-jersey-2.webp",
-      "/images/afl-jerseys/port-adelaide-indigenous-afl-jersey-3.webp"
+      "/images/afl-jerseys/port-adelaide-indigenous-afl-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2288,8 +2271,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/geelong-cats-2026-afl-jersey-1.webp",
-      "/images/afl-jerseys/geelong-cats-2026-afl-jersey-2.webp",
-      "/images/afl-jerseys/geelong-cats-2026-afl-jersey-3.webp"
+      "/images/afl-jerseys/geelong-cats-2026-afl-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2319,8 +2301,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/st-kilda-saints-stickman-afl-jersey-1.webp",
-      "/images/afl-jerseys/st-kilda-saints-stickman-afl-jersey-2.webp",
-      "/images/afl-jerseys/st-kilda-saints-stickman-afl-jersey-3.webp"
+      "/images/afl-jerseys/st-kilda-saints-stickman-afl-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2350,8 +2331,7 @@
     "price": 25,
     "images": [
       "/images/afl-jerseys/carlton-blues-afl-away-jersey-1.webp",
-      "/images/afl-jerseys/carlton-blues-afl-away-jersey-2.webp",
-      "/images/afl-jerseys/carlton-blues-afl-away-jersey-3.webp"
+      "/images/afl-jerseys/carlton-blues-afl-away-jersey-2.webp"
     ],
     "collection": "AFL Jerseys",
     "currency": "EUR",
@@ -2592,7 +2572,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-wright-8-1.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-wright-8-2.webp",
-      "/images/premier-league-classics/arsenal-1993-94-away-shirt-wright-8-3.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-wright-8-4.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-wright-8-5.webp"
     ],
@@ -2626,9 +2605,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-1995-96-away-shirt-adams-6-1.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-adams-6-2.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-adams-6-3.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-adams-6-4.webp"
+      "/images/premier-league-classics/arsenal-1995-96-away-shirt-adams-6-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -2660,9 +2637,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-1995-96-away-shirt-bergkamp-10-1.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-bergkamp-10-3.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-bergkamp-10-4.webp"
+      "/images/premier-league-classics/arsenal-1995-96-away-shirt-bergkamp-10-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -2694,9 +2669,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-1995-96-away-shirt-merson-9-1.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-merson-9-2.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-merson-9-3.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-merson-9-4.webp"
+      "/images/premier-league-classics/arsenal-1995-96-away-shirt-merson-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -2728,9 +2701,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-1995-96-away-shirt-wright-8-1.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-wright-8-2.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-wright-8-3.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-wright-8-4.webp"
+      "/images/premier-league-classics/arsenal-1995-96-away-shirt-wright-8-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -2763,7 +2734,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-bergkamp-10-1.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-1998-99-home-shirt-bergkamp-10-3.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-bergkamp-10-4.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-bergkamp-10-5.webp"
     ],
@@ -2832,7 +2802,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-vieira-4-1.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-vieira-4-2.webp",
-      "/images/premier-league-classics/arsenal-1998-99-home-shirt-vieira-4-3.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-vieira-4-4.webp",
       "/images/premier-league-classics/arsenal-1998-99-home-shirt-vieira-4-5.webp"
     ],
@@ -2867,7 +2836,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-bergkamp-10-1.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-2002-04-home-shirt-bergkamp-10-3.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-bergkamp-10-4.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-bergkamp-10-5.webp"
     ],
@@ -2902,7 +2870,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-henry-14-1.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-henry-14-2.webp",
-      "/images/premier-league-classics/arsenal-2002-04-home-shirt-henry-14-3.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-henry-14-4.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-henry-14-5.webp"
     ],
@@ -2937,7 +2904,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-ljungberg-8-1.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-ljungberg-8-2.webp",
-      "/images/premier-league-classics/arsenal-2002-04-home-shirt-ljungberg-8-3.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-ljungberg-8-4.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-ljungberg-8-5.webp"
     ],
@@ -2972,7 +2938,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-vieira-4-1.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-vieira-4-2.webp",
-      "/images/premier-league-classics/arsenal-2002-04-home-shirt-vieira-4-3.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-vieira-4-4.webp"
     ],
     "collection": "Premier League Classics",
@@ -3005,8 +2970,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2003-04-away-shirt-bergkamp-10-1.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-bergkamp-10-3.webp"
+      "/images/premier-league-classics/arsenal-2003-04-away-shirt-bergkamp-10-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3038,8 +3002,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2003-04-away-shirt-henry-14-1.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-henry-14-2.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-henry-14-3.webp"
+      "/images/premier-league-classics/arsenal-2003-04-away-shirt-henry-14-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3071,8 +3034,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2003-04-away-shirt-ljungberg-8-1.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-ljungberg-8-2.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-ljungberg-8-3.webp"
+      "/images/premier-league-classics/arsenal-2003-04-away-shirt-ljungberg-8-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3104,8 +3066,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2003-04-away-shirt-reyes-9-1.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-reyes-9-2.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-reyes-9-3.webp"
+      "/images/premier-league-classics/arsenal-2003-04-away-shirt-reyes-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3137,8 +3098,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2003-04-away-shirt-vieira-4-1.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-vieira-4-2.webp",
-      "/images/premier-league-classics/arsenal-2003-04-away-shirt-vieira-4-3.webp"
+      "/images/premier-league-classics/arsenal-2003-04-away-shirt-vieira-4-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3171,8 +3131,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-bergkamp-10-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-bergkamp-10-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-bergkamp-10-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-bergkamp-10-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3205,8 +3163,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-home-shirt-bergkamp-10-1.webp",
-      "/images/premier-league-classics/arsenal-2005-06-home-shirt-bergkamp-10-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-home-shirt-bergkamp-10-3.webp"
+      "/images/premier-league-classics/arsenal-2005-06-home-shirt-bergkamp-10-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3239,8 +3196,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-cole-3-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-cole-3-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-cole-3-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-cole-3-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-cole-3-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3274,8 +3229,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-fabregas-15-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-fabregas-15-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-fabregas-15-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-fabregas-15-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-fabregas-15-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3309,8 +3262,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-henry-14-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-henry-14-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-henry-14-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-henry-14-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-henry-14-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3343,8 +3294,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-home-shirt-henry-14-1.webp",
-      "/images/premier-league-classics/arsenal-2005-06-home-shirt-henry-14-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-home-shirt-henry-14-3.webp"
+      "/images/premier-league-classics/arsenal-2005-06-home-shirt-henry-14-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3377,8 +3327,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-ljungberg-8-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-ljungberg-8-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-ljungberg-8-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-ljungberg-8-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-ljungberg-8-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3412,8 +3360,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-van-persie-11-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-van-persie-11-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-van-persie-11-3.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-van-persie-11-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-van-persie-11-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -3446,8 +3392,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2008-10-home-shirt-arshavin-23-1.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-arshavin-23-2.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-arshavin-23-3.webp"
+      "/images/premier-league-classics/arsenal-2008-10-home-shirt-arshavin-23-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3479,8 +3424,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2008-10-home-shirt-fabregas-4-1.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-fabregas-4-2.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-fabregas-4-3.webp"
+      "/images/premier-league-classics/arsenal-2008-10-home-shirt-fabregas-4-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3512,8 +3456,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/arsenal-2008-10-home-shirt-van-persie-11-1.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-van-persie-11-2.webp",
-      "/images/premier-league-classics/arsenal-2008-10-home-shirt-van-persie-11-3.webp"
+      "/images/premier-league-classics/arsenal-2008-10-home-shirt-van-persie-11-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3576,8 +3519,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-1.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-1993-94-away-shirt-3.webp",
-      "/images/premier-league-classics/arsenal-1993-94-away-shirt-4.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-5.webp",
       "/images/premier-league-classics/arsenal-1993-94-away-shirt-6.webp"
     ],
@@ -3609,9 +3550,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/arsenal-1995-96-away-shirt-1.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-3.webp",
-      "/images/premier-league-classics/arsenal-1995-96-away-shirt-4.webp"
+      "/images/premier-league-classics/arsenal-1995-96-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -3675,7 +3614,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-1.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-2002-04-home-shirt-3.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-4.webp",
       "/images/premier-league-classics/arsenal-2002-04-home-shirt-5.webp"
     ],
@@ -3738,7 +3676,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2004-05-away-shirt-1.webp",
       "/images/premier-league-classics/arsenal-2004-05-away-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-2004-05-away-shirt-3.webp",
       "/images/premier-league-classics/arsenal-2004-05-away-shirt-4.webp"
     ],
     "collection": "Premier League Classics",
@@ -3770,7 +3707,6 @@
     "images": [
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-1.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-2.webp",
-      "/images/premier-league-classics/arsenal-2005-06-away-shirt-3.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-4.webp",
       "/images/premier-league-classics/arsenal-2005-06-away-shirt-5.webp"
     ],
@@ -3833,7 +3769,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-collymore-8-1.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-collymore-8-2.webp",
-      "/images/premier-league-classics/liverpool-1995-96-home-shirt-collymore-8-3.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-collymore-8-4.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-collymore-8-5.webp"
     ],
@@ -3867,7 +3802,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-rush-9-1.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-rush-9-2.webp",
-      "/images/premier-league-classics/liverpool-1995-96-home-shirt-rush-9-3.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-rush-9-4.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-rush-9-5.webp"
     ],
@@ -3901,7 +3835,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-barnes-10-1.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-barnes-10-2.webp",
-      "/images/premier-league-classics/liverpool-1995-96-home-shirt-barnes-10-3.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-barnes-10-4.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-barnes-10-5.webp"
     ],
@@ -3935,7 +3868,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-fowler-23-1.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-fowler-23-2.webp",
-      "/images/premier-league-classics/liverpool-1995-96-home-shirt-fowler-23-3.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-fowler-23-4.webp",
       "/images/premier-league-classics/liverpool-1995-96-home-shirt-fowler-23-5.webp"
     ],
@@ -3969,7 +3901,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-2000-01-fa-cup-final-away-shirt-fowler-9-1.webp",
       "/images/premier-league-classics/liverpool-2000-01-fa-cup-final-away-shirt-fowler-9-2.webp",
-      "/images/premier-league-classics/liverpool-2000-01-fa-cup-final-away-shirt-fowler-9-3.webp",
       "/images/premier-league-classics/liverpool-2000-01-fa-cup-final-away-shirt-fowler-9-4.webp",
       "/images/premier-league-classics/liverpool-2000-01-fa-cup-final-away-shirt-fowler-9-5.webp"
     ],
@@ -4002,8 +3933,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/liverpool-2000-02-home-shirt-gerrard-17-1.webp",
-      "/images/premier-league-classics/liverpool-2000-02-home-shirt-gerrard-17-2.webp",
-      "/images/premier-league-classics/liverpool-2000-02-home-shirt-gerrard-17-3.webp"
+      "/images/premier-league-classics/liverpool-2000-02-home-shirt-gerrard-17-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4035,7 +3965,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-fowler-11-1.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-fowler-11-2.webp",
-      "/images/premier-league-classics/liverpool-2004-05-away-shirt-fowler-11-3.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-fowler-11-4.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-fowler-11-5.webp"
     ],
@@ -4068,8 +3997,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8-1.webp",
-      "/images/premier-league-classics/liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8-2.webp",
-      "/images/premier-league-classics/liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8-3.webp"
+      "/images/premier-league-classics/liverpool-2005-istanbul-champions-league-final-shirt-gerrard-8-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4101,7 +4029,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-2008-09-home-shirt-gerrard-8-1.webp",
       "/images/premier-league-classics/liverpool-2008-09-home-shirt-gerrard-8-2.webp",
-      "/images/premier-league-classics/liverpool-2008-09-home-shirt-gerrard-8-3.webp",
       "/images/premier-league-classics/liverpool-2008-09-home-shirt-gerrard-8-4.webp",
       "/images/premier-league-classics/liverpool-2008-09-home-shirt-gerrard-8-5.webp"
     ],
@@ -4163,9 +4090,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/liverpool-1992-93-centenary-home-shirt-1.webp",
-      "/images/premier-league-classics/liverpool-1992-93-centenary-home-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-1992-93-centenary-home-shirt-3.webp",
-      "/images/premier-league-classics/liverpool-1992-93-centenary-home-shirt-4.webp"
+      "/images/premier-league-classics/liverpool-1992-93-centenary-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4194,8 +4119,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/liverpool-1992-93-centenary-away-shirt-1.webp",
-      "/images/premier-league-classics/liverpool-1992-93-centenary-away-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-1992-93-centenary-away-shirt-3.webp"
+      "/images/premier-league-classics/liverpool-1992-93-centenary-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4225,7 +4149,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-1995-96-third-shirt-1.webp",
       "/images/premier-league-classics/liverpool-1995-96-third-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-1995-96-third-shirt-3.webp",
       "/images/premier-league-classics/liverpool-1995-96-third-shirt-4.webp",
       "/images/premier-league-classics/liverpool-1995-96-third-shirt-5.webp"
     ],
@@ -4286,7 +4209,6 @@
     "images": [
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-1.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-2.webp",
-      "/images/premier-league-classics/liverpool-2004-05-away-shirt-3.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-4.webp",
       "/images/premier-league-classics/liverpool-2004-05-away-shirt-5.webp"
     ],
@@ -4379,8 +4301,7 @@
       "/images/premier-league-classics/liverpool-2006-07-home-shirt-1.webp",
       "/images/premier-league-classics/liverpool-2006-07-home-shirt-2.webp",
       "/images/premier-league-classics/liverpool-2006-07-home-shirt-3.webp",
-      "/images/premier-league-classics/liverpool-2006-07-home-shirt-4.webp",
-      "/images/premier-league-classics/liverpool-2006-07-home-shirt-5.webp"
+      "/images/premier-league-classics/liverpool-2006-07-home-shirt-4.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4442,8 +4363,6 @@
     "images": [
       "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-1.webp",
       "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-2.webp",
-      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-3.webp",
-      "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-4.webp",
       "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-5.webp",
       "/images/premier-league-classics/manchester-united-1992-94-home-shirt-cantona-7-6.webp"
     ],
@@ -4476,8 +4395,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-1.webp",
-      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-2.webp",
-      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-3.webp"
+      "/images/premier-league-classics/manchester-united-1993-95-away-shirt-cantona-7-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4509,8 +4427,6 @@
     "images": [
       "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-1.webp",
       "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-3.webp",
-      "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-4.webp",
       "/images/premier-league-classics/manchester-united-2000-02-home-shirt-beckham-7-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -4542,8 +4458,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-1.webp",
-      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-3.webp"
+      "/images/premier-league-classics/manchester-united-2004-06-home-shirt-ronaldo-7-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4575,7 +4490,6 @@
     "images": [
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-1.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-3.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-4.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-ronaldo-7-5.webp"
     ],
@@ -4608,8 +4522,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-1.webp",
-      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-2.webp",
-      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-3.webp"
+      "/images/premier-league-classics/manchester-united-2006-08-away-shirt-rooney-8-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4640,8 +4553,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-1.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-3.webp"
+      "/images/premier-league-classics/manchester-united-2007-08-home-shirt-ronaldo-7-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4673,8 +4585,7 @@
     "images": [
       "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-1.webp",
       "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-3.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-5.webp"
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-ronaldo-7-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4737,8 +4648,6 @@
     "images": [
       "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-1.webp",
       "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-2.webp",
-      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-3.webp",
-      "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-4.webp",
       "/images/premier-league-classics/manchester-united-2008-09-third-shirt-ronaldo-7-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -4770,9 +4679,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-united-1986-away-shirt-1.webp",
-      "/images/premier-league-classics/manchester-united-1986-away-shirt-2.webp",
       "/images/premier-league-classics/manchester-united-1986-away-shirt-3.webp",
-      "/images/premier-league-classics/manchester-united-1986-away-shirt-4.webp",
       "/images/premier-league-classics/manchester-united-1986-away-shirt-5.webp",
       "/images/premier-league-classics/manchester-united-1986-away-shirt-6.webp"
     ],
@@ -4860,8 +4767,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-1.webp",
-      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-2.webp",
-      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-3.webp"
+      "/images/premier-league-classics/manchester-united-1995-96-grey-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -4983,8 +4889,7 @@
       "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-1.webp",
       "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-2.webp",
       "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-3.webp",
-      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-4.webp",
-      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-5.webp"
+      "/images/premier-league-classics/manchester-united-2001-02-centenary-reversible-shirt-4.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -5101,7 +5006,6 @@
     "images": [
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-1.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-2.webp",
-      "/images/premier-league-classics/manchester-united-2006-07-home-shirt-3.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-4.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-5.webp",
       "/images/premier-league-classics/manchester-united-2006-07-home-shirt-6.webp"
@@ -5192,8 +5096,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-united-2007-08-away-shirt-1.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-2.webp",
-      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-3.webp"
+      "/images/premier-league-classics/manchester-united-2007-08-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -5336,7 +5239,7 @@
     "id": "mj-656558",
     "title": "Barcelona 2003-05 Away Shirt – Ronaldinho 10",
     "slug": "barcelona-2003-05-away-shirt-ronaldinho-10",
-    "description": "The pale grey away shirt with thin red and blue stripes and a polo collar. Printed with RONALDINHO 10 on the back. Ronaldinho's number 10.",
+    "description": "Barcelona's away shirt from 2003 to 2005: pale stone grey with thin red and blue hoops, and a navy polo collar and cuffs.\n\nRonaldinho joined from Paris Saint-Germain in 2003 and wore this shirt in his first two seasons.\n\nPrinted with RONALDINHO 10 on the back in navy. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/barcelona-2003-05-away-shirt-ronaldinho-10-1.webp",
@@ -5366,7 +5269,7 @@
     "id": "mj-563597",
     "title": "Barcelona 2004-05 Home Shirt – Ronaldinho 10",
     "slug": "barcelona-2004-05-home-shirt-ronaldinho-10",
-    "description": "The blue and red striped home shirt from 2004-05, the season Barcelona won La Liga. Printed with RONALDINHO 10 on the back. Ronaldinho's number 10.",
+    "description": "Barcelona's 2004-05 home shirt, with blue and red stripes, a wide blue stripe down the middle, blue shoulders and a blue crew neck.\n\nBarcelona won La Liga that season, their first title in six years. Ronaldinho was named FIFA World Player of the Year in 2004 and again in 2005.\n\nPrinted with RONALDINHO 10 on the back in yellow. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/barcelona-2004-05-home-shirt-ronaldinho-10-1.webp",
@@ -5401,9 +5304,7 @@
     "images": [
       "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-1.webp",
       "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-2.webp",
-      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-3.webp",
-      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-4.webp",
-      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-5.webp"
+      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-ronaldinho-10-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -5429,12 +5330,11 @@
     "id": "mj-558542",
     "title": "Barcelona 2005-06 Away Shirt – Ronaldinho 10",
     "slug": "barcelona-2005-06-away-shirt-ronaldinho-10",
-    "description": "The bright yellow away shirt from 2005-06, with navy trim. Printed with RONALDINHO 10 on the back. Ronaldinho won the Ballon d'Or in 2005.",
+    "description": "Barcelona's bright yellow away shirt from 2005-06, with a navy V-neck, navy shoulder trim and red and blue cuffs. The Catalan flag sits at the back of the neck.\n\nIn November 2005 Real Madrid fans stood to applaud Ronaldinho's two goals at the Bernabéu, and later that month he won the Ballon d'Or. Barcelona won La Liga and the Champions League that season.\n\nPrinted with RONALDINHO 10 on the back in navy. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-1.webp",
-      "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-2.webp",
-      "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-3.webp"
+      "/images/european-world-classics/barcelona-2005-06-away-shirt-ronaldinho-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -5465,7 +5365,6 @@
     "images": [
       "/images/european-world-classics/barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10-1.webp",
       "/images/european-world-classics/barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10-2.webp",
-      "/images/european-world-classics/barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10-3.webp",
       "/images/european-world-classics/barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10-4.webp",
       "/images/european-world-classics/barcelona-2007-08-camp-nou-50th-anniversary-home-shirt-ronaldinho-10-5.webp"
     ],
@@ -5589,7 +5488,7 @@
     "id": "mj-551406",
     "title": "Barcelona 1992-95 Home Shirt",
     "slug": "barcelona-1992-95-home-shirt",
-    "description": "The blue and red striped home shirt from Johan Cruyff's Dream Team era, with club lettering woven into the fabric. Barcelona won La Liga in 1992-93 and 1993-94.",
+    "description": "Barcelona's 1992-95 home shirt, with blue and red stripes, a blue polo collar and logo tape over the shoulders. Barça script is woven faintly through the fabric.\n\nJohan Cruyff's Dream Team won La Liga in 1992-93 and 1993-94, and Romário joined in 1993. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-1992-95-home-shirt-1.webp",
@@ -5617,7 +5516,7 @@
     "id": "mj-551407",
     "title": "Barcelona 1992-95 Away Shirt",
     "slug": "barcelona-1992-95-away-shirt",
-    "description": "The teal away shirt from the Dream Team era, with blue and red shoulder stripes and a polo collar.",
+    "description": "Barcelona's teal away shirt from 1992-95, with blue and red stripes over the shoulders, a blue polo collar and logo tape on the sleeves. Barça script is woven faintly through the fabric.\n\nJohan Cruyff's Dream Team won La Liga in 1992-93 and 1993-94, and Romário joined in 1993. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-1992-95-away-shirt-1.webp",
@@ -5645,7 +5544,7 @@
     "id": "mj-560021",
     "title": "Barcelona 1998-99 Home Shirt",
     "slug": "barcelona-1998-99-home-shirt",
-    "description": "The 1998-99 home shirt with a navy V-neck. Barcelona won La Liga that season.",
+    "description": "Barcelona's 1998-99 home shirt, with blue and red stripes and a navy V-neck trimmed in red. The crest sits in the middle of the chest, and Barça is stitched on the sleeve.\n\nBarcelona won La Liga in 1998-99, the club's centenary season. Rivaldo won the Ballon d'Or in 1999. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-1998-99-home-shirt-1.webp",
@@ -5676,13 +5575,11 @@
     "id": "mj-656612",
     "title": "Barcelona 1999-00 Centenary Home Shirt",
     "slug": "barcelona-1999-00-centenary-home-shirt",
-    "description": "Made for the club's 100th anniversary, with a half blue, half red design and the 1899-1999 centenary crest.",
+    "description": "Made for Barcelona's 100th birthday: half red, half blue, with navy sleeves and a navy polo collar. The crest sits between 1899 and 1999 in gold.\n\nThe club was founded on 29 November 1899. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-1999-00-centenary-home-shirt-1.webp",
-      "/images/european-world-classics/barcelona-1999-00-centenary-home-shirt-2.webp",
       "/images/european-world-classics/barcelona-1999-00-centenary-home-shirt-3.webp",
-      "/images/european-world-classics/barcelona-1999-00-centenary-home-shirt-4.webp",
       "/images/european-world-classics/barcelona-1999-00-centenary-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -5707,7 +5604,7 @@
     "id": "mj-669988",
     "title": "Barcelona 2001-03 Away Shirt",
     "slug": "barcelona-2001-03-away-shirt",
-    "description": "The gold away shirt with a navy and red stripe down the middle.",
+    "description": "Barcelona's gold away shirt from 2001-03, with a navy and red stripe down the middle carrying the crest, and navy trim on the collar and cuffs.\n\nJavier Saviola joined from River Plate in 2001. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2001-03-away-shirt-1.webp",
@@ -5735,7 +5632,7 @@
     "id": "mj-564437",
     "title": "Barcelona 2002-03 Third Shirt",
     "slug": "barcelona-2002-03-third-shirt",
-    "description": "The navy third shirt from 2002-03, with a blue and red sash across the front.",
+    "description": "Barcelona's navy third shirt from 2002-03, with a blue and red sash across the front, grey-blue panels at the sides and a polo collar.\n\nLouis van Gaal returned as manager in the summer of 2002. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2002-03-third-shirt-1.webp",
@@ -5763,7 +5660,7 @@
     "id": "mj-554659",
     "title": "Barcelona 2003-04 Home Shirt",
     "slug": "barcelona-2003-04-home-shirt",
-    "description": "The 2003-04 home shirt with navy sleeves and a wide blue centre stripe. Ronaldinho's first season at the club.",
+    "description": "Barcelona's 2003-04 home shirt, with blue and red stripes, a wide blue stripe down the middle, navy sleeves and a red band at the hem.\n\nIt was the first season for both Frank Rijkaard and Ronaldinho, who joined from Paris Saint-Germain. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2003-04-home-shirt-1.webp",
@@ -5791,11 +5688,10 @@
     "id": "mj-656557",
     "title": "Barcelona 2003-05 Away Shirt",
     "slug": "barcelona-2003-05-away-shirt",
-    "description": "The pale grey away shirt with thin red and blue stripes and a polo collar.",
+    "description": "Barcelona's away shirt from 2003 to 2005: pale stone grey with thin red and blue hoops, and a navy polo collar and cuffs.\n\nRonaldinho joined from Paris Saint-Germain in 2003, and Barcelona won La Liga in 2004-05. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2003-05-away-shirt-1.webp",
-      "/images/european-world-classics/barcelona-2003-05-away-shirt-2.webp",
       "/images/european-world-classics/barcelona-2003-05-away-shirt-3.webp"
     ],
     "collection": "European & World Classics",
@@ -5820,7 +5716,7 @@
     "id": "mj-561811",
     "title": "Barcelona 2004-05 Home Shirt",
     "slug": "barcelona-2004-05-home-shirt",
-    "description": "The blue and red striped home shirt from 2004-05, the season Barcelona won La Liga.",
+    "description": "Barcelona's 2004-05 home shirt, with blue and red stripes, a wide blue stripe down the middle, blue shoulders and a blue crew neck.\n\nBarcelona won La Liga that season, their first title in six years. Ronaldinho was named FIFA World Player of the Year in 2004 and again in 2005. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2004-05-home-shirt-1.webp",
@@ -5849,12 +5745,10 @@
     "id": "mj-656605",
     "title": "Barcelona 2006 Champions League Final Shirt",
     "slug": "barcelona-2006-champions-league-final-shirt",
-    "description": "The home shirt from 2005-06, when Barcelona beat Arsenal 2-1 in the Champions League final in Paris. Embroidered with the final details.",
+    "description": "Barcelona's 2005-06 home shirt, with narrow blue and red stripes, a crew neck and yellow inserts at the hem. It's embroidered with the final details in yellow: 'UEFA Champions League Final 2006, FC Barcelona vs Arsenal FC, Paris 17.05.06'.\n\nBarcelona came from a goal down to beat Arsenal 2-1, with late goals from Samuel Eto'o and Juliano Belletti. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-1.webp",
-      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-2.webp",
-      "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-3.webp",
       "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-4.webp",
       "/images/european-world-classics/barcelona-2006-champions-league-final-shirt-5.webp"
     ],
@@ -5880,7 +5774,7 @@
     "id": "mj-548441",
     "title": "Barcelona 2008-09 Away Shirt",
     "slug": "barcelona-2008-09-away-shirt",
-    "description": "The yellow away shirt with a thin red and blue stripe, from the season Barcelona won the Treble.",
+    "description": "Barcelona's yellow away shirt from 2008-09, with a thin red and blue stripe running down through the crest and a dark crew neck. UNICEF is across the chest.\n\nIn Pep Guardiola's first season, Barcelona won the Treble. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2008-09-away-shirt-1.webp",
@@ -5911,13 +5805,12 @@
     "id": "mj-656598",
     "title": "Barcelona 2009 Champions League Final Shirt",
     "slug": "barcelona-2009-champions-league-final-shirt",
-    "description": "The half blue, half red home shirt from 2008-09, when Barcelona won the Treble, beating Manchester United 2-0 in the Champions League final in Rome.",
+    "description": "Barcelona's half blue, half red home shirt from 2008-09, with UNICEF across the chest.\n\nIn Pep Guardiola's first season, Barcelona won the Treble. They beat Manchester United 2-0 in the Champions League final in Rome, with goals from Samuel Eto'o and Lionel Messi. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2009-champions-league-final-shirt-1.webp",
       "/images/european-world-classics/barcelona-2009-champions-league-final-shirt-2.webp",
       "/images/european-world-classics/barcelona-2009-champions-league-final-shirt-3.webp",
-      "/images/european-world-classics/barcelona-2009-champions-league-final-shirt-4.webp",
       "/images/european-world-classics/barcelona-2009-champions-league-final-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -5943,7 +5836,7 @@
     "id": "mj-548338",
     "title": "Barcelona 2009-10 Home Shirt",
     "slug": "barcelona-2009-10-home-shirt",
-    "description": "The blue and red striped home shirt from 2009-10, with UNICEF on the front. Barcelona won La Liga that season.",
+    "description": "Barcelona's 2009-10 home shirt, with blue and red stripes, a navy V-neck and the Catalan flag at the back of the neck. UNICEF is across the chest.\n\nZlatan Ibrahimović joined that summer, and Barcelona won La Liga with 99 points. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/barcelona-2009-10-home-shirt-1.webp",
@@ -5972,12 +5865,11 @@
     "id": "mj-558604",
     "title": "Inter Milan 1998-99 Home Shirt – Baggio 10",
     "slug": "inter-milan-1998-99-home-shirt-baggio-10",
-    "description": "Inter's 1998-99 home shirt, blue and black stripes with the Pirelli sponsor. Printed with BAGGIO 10 on the back. Roberto Baggio joined Inter in 1998 and wore 10.",
+    "description": "Inter's 1998-99 home shirt, with blue and black stripes, a black polo collar and the crest edged in yellow. Pirelli is across the chest in white.\n\nRoberto Baggio joined Inter in 1998 and wore 10, alongside Ronaldo.\n\nPrinted with BAGGIO 10 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-baggio-10-1.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-baggio-10-2.webp",
-      "/images/european-world-classics/inter-milan-1998-99-home-shirt-baggio-10-3.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-baggio-10-4.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-baggio-10-5.webp"
     ],
@@ -6011,8 +5903,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-baggio-18-1.webp",
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-baggio-18-2.webp",
-      "/images/european-world-classics/ac-milan-1996-97-home-shirt-baggio-18-3.webp",
-      "/images/european-world-classics/ac-milan-1996-97-home-shirt-baggio-18-4.webp",
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-baggio-18-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6040,12 +5930,11 @@
     "id": "mj-563625",
     "title": "Italy 1998 World Cup Home Shirt – Baggio 18",
     "slug": "italy-1998-world-cup-home-shirt-baggio-18",
-    "description": "Italy's blue home shirt from the 1998 World Cup in France. Printed with BAGGIO 18 on the back. Roberto Baggio scored twice at the tournament.",
+    "description": "Italy's blue home shirt from the 1998 World Cup in France, with white piping, a polo collar and 18 on the front. The tournament badge sits under the crest.\n\nRoberto Baggio scored against Chile and Austria. Italy went out to France on penalties in the quarter-final, and Baggio scored his.\n\nPrinted with BAGGIO R. 18 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/italy-1998-world-cup-home-shirt-baggio-18-1.webp",
       "/images/european-world-classics/italy-1998-world-cup-home-shirt-baggio-18-2.webp",
-      "/images/european-world-classics/italy-1998-world-cup-home-shirt-baggio-18-3.webp",
       "/images/european-world-classics/italy-1998-world-cup-home-shirt-baggio-18-4.webp"
     ],
     "collection": "European & World Classics",
@@ -6072,12 +5961,11 @@
     "id": "mj-563397",
     "title": "Italy 1998 World Cup Away Shirt – Baggio 18",
     "slug": "italy-1998-world-cup-away-shirt-baggio-18",
-    "description": "Italy's white away shirt from the 1998 World Cup in France. Printed with BAGGIO 18 on the back. Roberto Baggio scored twice at the tournament.",
+    "description": "Italy's white away shirt from the 1998 World Cup in France, with blue trim and 18 on the front. The tournament badge sits under the crest.\n\nRoberto Baggio scored against Chile and Austria. Italy went out to France on penalties in the quarter-final, and Baggio scored his.\n\nPrinted with BAGGIO R 18 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-1.webp",
-      "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-2.webp",
-      "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-4.webp"
+      "/images/european-world-classics/italy-1998-world-cup-away-shirt-baggio-18-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6108,7 +5996,6 @@
     "images": [
       "/images/european-world-classics/italy-1994-world-cup-away-shirt-baggio-10-1.webp",
       "/images/european-world-classics/italy-1994-world-cup-away-shirt-baggio-10-2.webp",
-      "/images/european-world-classics/italy-1994-world-cup-away-shirt-baggio-10-3.webp",
       "/images/european-world-classics/italy-1994-world-cup-away-shirt-baggio-10-4.webp",
       "/images/european-world-classics/italy-1994-world-cup-away-shirt-baggio-10-5.webp"
     ],
@@ -6173,7 +6060,6 @@
     "images": [
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-1.webp",
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-2.webp",
-      "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-4.webp",
       "/images/european-world-classics/brazil-1994-world-cup-home-shirt-ronaldo-20-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6200,7 +6086,7 @@
     "id": "mj-558593",
     "title": "Brazil 1998 World Cup Home Shirt – Ronaldo 9",
     "slug": "brazil-1998-world-cup-home-shirt-ronaldo-9",
-    "description": "Brazil's yellow home shirt from the 1998 World Cup in France. Printed with RONALDO 9 on the back. Ronaldo scored four goals as Brazil reached the final.",
+    "description": "Brazil's yellow home shirt from the 1998 World Cup in France, with a green crew neck, green trim on the shoulders and cuffs, and 9 on the front.\n\nRonaldo scored four goals as Brazil reached the final.\n\nPrinted with RONALDO 9 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/brazil-1998-world-cup-home-shirt-ronaldo-9-1.webp",
@@ -6231,12 +6117,11 @@
     "id": "mj-564953",
     "title": "Brazil 1998 World Cup Away Shirt – Ronaldo 9",
     "slug": "brazil-1998-world-cup-away-shirt-ronaldo-9",
-    "description": "Brazil's blue away shirt from the 1998 World Cup in France. Printed with RONALDO 9 on the back. Ronaldo scored four goals as Brazil reached the final.",
+    "description": "Brazil's blue away shirt from the 1998 World Cup in France, with white piping across the shoulders and 9 on the front.\n\nRonaldo scored four goals as Brazil reached the final.\n\nPrinted with RONALDO 9 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-4.webp"
+      "/images/european-world-classics/brazil-1998-world-cup-away-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6296,9 +6181,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/brazil-2002-world-cup-away-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/brazil-2002-world-cup-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/brazil-2002-world-cup-away-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/brazil-2002-world-cup-away-shirt-ronaldo-9-4.webp"
+      "/images/european-world-classics/brazil-2002-world-cup-away-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6324,7 +6207,7 @@
     "id": "mj-558577",
     "title": "Brazil 2004 Home Shirt – Ronaldo 9",
     "slug": "brazil-2004-home-shirt-ronaldo-9",
-    "description": "Brazil's yellow home shirt from 2004, with green trim. Printed with RONALDO 9 on the back. Ronaldo's famous number 9.",
+    "description": "Brazil's yellow home shirt from 2004, with a green V-neck, thin green piping and 9 in a circle on the front. The crest carries five stars.\n\nThe fifth star came from the 2002 World Cup, when Ronaldo scored eight goals, two of them in the final.\n\nPrinted with RONALDO 9 on the back, on a green panel. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/brazil-2004-home-shirt-ronaldo-9-1.webp",
@@ -6387,12 +6270,11 @@
     "id": "mj-558579",
     "title": "Inter Milan 1998-99 Home Shirt – Ronaldo 9",
     "slug": "inter-milan-1998-99-home-shirt-ronaldo-9",
-    "description": "Inter's 1998-99 home shirt, blue and black stripes with the Pirelli sponsor. Printed with RONALDO 9 on the back. Ronaldo switched to number 9 in 1998.",
+    "description": "Inter's 1998-99 home shirt, with blue and black stripes, a black polo collar and the crest edged in yellow. Pirelli is across the chest in white.\n\nRonaldo switched to 9 in 1998, with Roberto Baggio taking 10.\n\nPrinted with RONALDO 9 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/inter-milan-1998-99-home-shirt-ronaldo-9-3.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-ronaldo-9-4.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-ronaldo-9-5.webp"
     ],
@@ -6421,13 +6303,11 @@
     "id": "mj-565142",
     "title": "Inter Milan 1998-99 Away Shirt – Ronaldo 9",
     "slug": "inter-milan-1998-99-away-shirt-ronaldo-9",
-    "description": "Inter's white away shirt from 1998-99, with a black collar and the Pirelli sponsor. Printed with RONALDO 9 on the back. Ronaldo switched to number 9 in 1998.",
+    "description": "Inter's white away shirt from 1998-99, with a black polo collar and black cuffs edged in blue. Pirelli sits between a blue line and a black line across the chest.\n\nRonaldo switched to 9 in 1998, with Roberto Baggio taking 10.\n\nPrinted with RONALDO 9 on the back. Sizes S to 2XL; the size guide has measurements.",
     "price": 35,
     "images": [
       "/images/european-world-classics/inter-milan-1998-99-away-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/inter-milan-1998-99-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/inter-milan-1998-99-away-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/inter-milan-1998-99-away-shirt-ronaldo-9-4.webp"
+      "/images/european-world-classics/inter-milan-1998-99-away-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6458,9 +6338,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/inter-milan-2001-02-home-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/inter-milan-2001-02-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/inter-milan-2001-02-home-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/inter-milan-2001-02-home-shirt-ronaldo-9-4.webp"
+      "/images/european-world-classics/inter-milan-2001-02-home-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6491,9 +6369,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-ronaldo-11-1.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-ronaldo-11-2.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-ronaldo-11-3.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-ronaldo-11-4.webp"
+      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-ronaldo-11-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6553,8 +6429,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2002-03-centenary-third-shirt-ronaldo-11-1.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-third-shirt-ronaldo-11-2.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-third-shirt-ronaldo-11-3.webp"
+      "/images/european-world-classics/real-madrid-2002-03-centenary-third-shirt-ronaldo-11-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6585,7 +6460,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2003-04-home-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/real-madrid-2003-04-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2003-04-home-shirt-ronaldo-9-3.webp",
       "/images/european-world-classics/real-madrid-2003-04-home-shirt-ronaldo-9-4.webp",
       "/images/european-world-classics/real-madrid-2003-04-home-shirt-ronaldo-9-5.webp"
     ],
@@ -6618,8 +6492,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2003-04-away-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/real-madrid-2003-04-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2003-04-away-shirt-ronaldo-9-3.webp"
+      "/images/european-world-classics/real-madrid-2003-04-away-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6650,8 +6523,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2004-05-home-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/real-madrid-2004-05-home-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2004-05-home-shirt-ronaldo-9-3.webp"
+      "/images/european-world-classics/real-madrid-2004-05-home-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6682,8 +6554,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2004-05-away-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/real-madrid-2004-05-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2004-05-away-shirt-ronaldo-9-3.webp"
+      "/images/european-world-classics/real-madrid-2004-05-away-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6714,8 +6585,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/real-madrid-2004-05-third-shirt-ronaldo-9-1.webp",
-      "/images/european-world-classics/real-madrid-2004-05-third-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2004-05-third-shirt-ronaldo-9-3.webp"
+      "/images/european-world-classics/real-madrid-2004-05-third-shirt-ronaldo-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6747,9 +6617,7 @@
     "images": [
       "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-1.webp",
       "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-2.webp",
-      "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-3.webp",
-      "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-4.webp",
-      "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-5.webp"
+      "/images/european-world-classics/real-madrid-2006-07-away-shirt-ronaldo-9-3.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6811,8 +6679,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/ac-milan-2006-07-champions-league-home-shirt-ronaldo-99-1.webp",
-      "/images/european-world-classics/ac-milan-2006-07-champions-league-home-shirt-ronaldo-99-2.webp",
-      "/images/european-world-classics/ac-milan-2006-07-champions-league-home-shirt-ronaldo-99-3.webp"
+      "/images/european-world-classics/ac-milan-2006-07-champions-league-home-shirt-ronaldo-99-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -6844,8 +6711,6 @@
     "images": [
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-batistuta-9-1.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-batistuta-9-2.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-batistuta-9-3.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-batistuta-9-4.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-batistuta-9-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6878,8 +6743,6 @@
     "images": [
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-rui-costa-10-1.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-rui-costa-10-2.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-rui-costa-10-3.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-rui-costa-10-4.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-rui-costa-10-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6912,8 +6775,6 @@
     "images": [
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-batistuta-9-1.webp",
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-batistuta-9-2.webp",
-      "/images/european-world-classics/fiorentina-1999-00-home-shirt-batistuta-9-3.webp",
-      "/images/european-world-classics/fiorentina-1999-00-home-shirt-batistuta-9-4.webp",
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-batistuta-9-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6946,8 +6807,6 @@
     "images": [
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-rui-costa-10-1.webp",
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-rui-costa-10-2.webp",
-      "/images/european-world-classics/fiorentina-1999-00-home-shirt-rui-costa-10-3.webp",
-      "/images/european-world-classics/fiorentina-1999-00-home-shirt-rui-costa-10-4.webp",
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-rui-costa-10-5.webp"
     ],
     "collection": "European & World Classics",
@@ -6975,11 +6834,10 @@
     "id": "mj-614384",
     "title": "Fiorentina 1992-93 Home Shirt",
     "slug": "fiorentina-1992-93-home-shirt",
-    "description": "Fiorentina's purple home shirt from 1992-93, with a patterned design and the 7UP sponsor.",
+    "description": "Fiorentina's purple home shirt from 1992-93, with a tonal abstract pattern and a polo collar striped in white and sky blue. 7UP is across the chest.\n\nGabriel Batistuta stayed when Fiorentina went down that season, and his goals took them straight back up. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/fiorentina-1992-93-home-shirt-1.webp",
-      "/images/european-world-classics/fiorentina-1992-93-home-shirt-2.webp",
       "/images/european-world-classics/fiorentina-1992-93-home-shirt-3.webp",
       "/images/european-world-classics/fiorentina-1992-93-home-shirt-4.webp",
       "/images/european-world-classics/fiorentina-1992-93-home-shirt-5.webp"
@@ -7007,7 +6865,7 @@
     "id": "mj-565269",
     "title": "Fiorentina 1995-96 Away Shirt",
     "slug": "fiorentina-1995-96-away-shirt",
-    "description": "The white away shirt with purple flame details on the shoulders and the Sammontana sponsor. Fiorentina won the Coppa Italia in 1996.",
+    "description": "Fiorentina's white away shirt from 1995-96, with purple flame shapes over the shoulders and a purple and red polo collar. Sammontana is across the chest in purple.\n\nFiorentina won the Coppa Italia in 1996, with Batistuta and Rui Costa in the side. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/fiorentina-1995-96-away-shirt-1.webp",
@@ -7036,13 +6894,11 @@
     "id": "mj-559791",
     "title": "Fiorentina 1995-97 Third Shirt",
     "slug": "fiorentina-1995-97-third-shirt",
-    "description": "The red third shirt with purple flame details on the shoulders and the Sammontana sponsor.",
+    "description": "Fiorentina's red third shirt from 1995-97, with purple flame shapes over the shoulders and a red polo collar. Sammontana is across the chest in white.\n\nFiorentina won the Coppa Italia in 1996, then beat Milan for the Supercoppa that August. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/fiorentina-1995-97-third-shirt-1.webp",
       "/images/european-world-classics/fiorentina-1995-97-third-shirt-2.webp",
-      "/images/european-world-classics/fiorentina-1995-97-third-shirt-3.webp",
-      "/images/european-world-classics/fiorentina-1995-97-third-shirt-4.webp",
       "/images/european-world-classics/fiorentina-1995-97-third-shirt-6.webp"
     ],
     "collection": "European & World Classics",
@@ -7068,13 +6924,11 @@
     "id": "mj-614372",
     "title": "Fiorentina 1998-99 Home Shirt",
     "slug": "fiorentina-1998-99-home-shirt",
-    "description": "Fiorentina's purple home shirt from 1998-99, with the Nintendo sponsor. Under Giovanni Trapattoni they finished third in Serie A.",
+    "description": "Fiorentina's purple home shirt from 1998-99, with a white band of battlements over the shoulders dotted with red lilies, and a polo collar. Nintendo is across the chest in red.\n\nUnder Giovanni Trapattoni, Fiorentina finished third in Serie A. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-1.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-2.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-3.webp",
-      "/images/european-world-classics/fiorentina-1998-99-home-shirt-4.webp",
       "/images/european-world-classics/fiorentina-1998-99-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7100,7 +6954,7 @@
     "id": "mj-547482",
     "title": "Fiorentina 1999-00 Home Shirt",
     "slug": "fiorentina-1999-00-home-shirt",
-    "description": "The purple home shirt from 1999-00, with white side panels and the Toyota sponsor. Fiorentina played in the Champions League that season.",
+    "description": "Fiorentina's purple home shirt from 1999-2000, with white side panels, white battlements over the shoulders and a polo collar. Toyota is across the chest in white.\n\nFiorentina played in the Champions League that season and beat Arsenal 1-0 at Wembley, with a goal from Batistuta. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/fiorentina-1999-00-home-shirt-1.webp",
@@ -7136,8 +6990,6 @@
     "images": [
       "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-1.webp",
       "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-2.webp",
-      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-3.webp",
-      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-4.webp",
       "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-torres-9-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7165,7 +7017,7 @@
     "id": "mj-564652",
     "title": "Atlético Madrid 1995-96 Home Shirt",
     "slug": "atletico-madrid-1995-96-home-shirt",
-    "description": "Atlético's red and white striped home shirt from 1995-96, with the Marbella sponsor. That season Atlético won the Double: La Liga and the Copa del Rey.",
+    "description": "Atlético Madrid's 1995-96 home shirt, with red and white stripes, a blue V-neck and striped tape over the shoulders. Marbella is across the chest in blue.\n\nAtlético won La Liga and the Copa del Rey that season, their first league title in nearly 20 years. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/atletico-madrid-1995-96-home-shirt-1.webp",
@@ -7194,13 +7046,11 @@
     "id": "mj-632143",
     "title": "Atlético Madrid 2004-05 Spider-Man Away Shirt",
     "slug": "atletico-madrid-2004-05-spider-man-away-shirt",
-    "description": "The famous navy away shirt from 2004-05, with a spider web design and a Spider-Man 2 sponsor promoting the film.",
+    "description": "Atlético Madrid's navy away shirt from 2004-05, with a spider web printed across the front, a red spider in the middle and Spider-Man 2 below it. The back has a dark red panel across the shoulders.\n\nThe film's makers paid for the shirt space, and Fernando Torres was Atlético's captain. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-1.webp",
-      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-2.webp",
-      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-3.webp",
-      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-4.webp"
+      "/images/european-world-classics/atletico-madrid-2004-05-spider-man-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7260,8 +7110,7 @@
       "/images/european-world-classics/real-madrid-1996-97-home-shirt-1.webp",
       "/images/european-world-classics/real-madrid-1996-97-home-shirt-2.webp",
       "/images/european-world-classics/real-madrid-1996-97-home-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-1996-97-home-shirt-4.webp",
-      "/images/european-world-classics/real-madrid-1996-97-home-shirt-5.webp"
+      "/images/european-world-classics/real-madrid-1996-97-home-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7292,8 +7141,7 @@
       "/images/european-world-classics/real-madrid-1996-97-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-1996-97-away-shirt-2.webp",
       "/images/european-world-classics/real-madrid-1996-97-away-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-1996-97-away-shirt-4.webp",
-      "/images/european-world-classics/real-madrid-1996-97-away-shirt-5.webp"
+      "/images/european-world-classics/real-madrid-1996-97-away-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7410,8 +7258,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-1999-2001-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-1999-2001-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-1999-2001-away-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-1999-2001-away-shirt-4.webp",
       "/images/european-world-classics/real-madrid-1999-2001-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7472,8 +7318,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-1.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-3.webp"
+      "/images/european-world-classics/real-madrid-2002-03-centenary-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7501,9 +7346,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/real-madrid-2002-03-centenary-away-shirt-1.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-away-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-2002-03-centenary-away-shirt-4.webp"
+      "/images/european-world-classics/real-madrid-2002-03-centenary-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7620,9 +7463,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/real-madrid-2004-05-home-shirt-1.webp",
-      "/images/european-world-classics/real-madrid-2004-05-home-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2004-05-home-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-2004-05-home-shirt-4.webp"
+      "/images/european-world-classics/real-madrid-2004-05-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7652,8 +7493,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2004-05-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-2004-05-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2004-05-away-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-2004-05-away-shirt-4.webp",
       "/images/european-world-classics/real-madrid-2004-05-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7742,7 +7581,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2005-06-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-2005-06-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2005-06-away-shirt-3.webp",
       "/images/european-world-classics/real-madrid-2005-06-away-shirt-4.webp",
       "/images/european-world-classics/real-madrid-2005-06-away-shirt-5.webp"
     ],
@@ -7803,8 +7641,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2006-07-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-2006-07-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2006-07-away-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-2006-07-away-shirt-4.webp",
       "/images/european-world-classics/real-madrid-2006-07-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7866,8 +7702,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2008-09-home-shirt-1.webp",
       "/images/european-world-classics/real-madrid-2008-09-home-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2008-09-home-shirt-3.webp",
-      "/images/european-world-classics/real-madrid-2008-09-home-shirt-4.webp",
       "/images/european-world-classics/real-madrid-2008-09-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -7897,8 +7731,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/real-madrid-2009-10-home-shirt-1.webp",
-      "/images/european-world-classics/real-madrid-2009-10-home-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2009-10-home-shirt-3.webp",
       "/images/european-world-classics/real-madrid-2009-10-home-shirt-4.webp",
       "/images/european-world-classics/real-madrid-2009-10-home-shirt-5.webp"
     ],
@@ -7930,7 +7762,6 @@
     "images": [
       "/images/european-world-classics/real-madrid-2009-10-away-shirt-1.webp",
       "/images/european-world-classics/real-madrid-2009-10-away-shirt-2.webp",
-      "/images/european-world-classics/real-madrid-2009-10-away-shirt-3.webp",
       "/images/european-world-classics/real-madrid-2009-10-away-shirt-4.webp"
     ],
     "collection": "European & World Classics",
@@ -7956,12 +7787,11 @@
     "id": "mj-557670",
     "title": "Juventus 1992-94 Home Shirt",
     "slug": "juventus-1992-94-home-shirt",
-    "description": "Juventus's black and white striped home shirt from 1992-94, with the Danone sponsor and Kappa logos. Juve won the UEFA Cup in 1993.",
+    "description": "Juventus's 1992-94 home shirt in black and white stripes, with a white polo collar and two gold stars on the chest. Danone is across the front in white on a black panel.\n\nJuventus won the UEFA Cup in 1993, beating Borussia Dortmund 6-1 on aggregate. Roberto Baggio won the Ballon d'Or that year. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1992-94-home-shirt-1.webp",
-      "/images/european-world-classics/juventus-1992-94-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-1992-94-home-shirt-3.webp"
+      "/images/european-world-classics/juventus-1992-94-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -7986,13 +7816,11 @@
     "id": "mj-546793",
     "title": "Juventus 1996-97 Home Shirt",
     "slug": "juventus-1996-97-home-shirt",
-    "description": "Juventus's 1996-97 home shirt, black and white stripes with a white collar and the Sony sponsor. Juve won Serie A that season.",
+    "description": "Juventus's 1996-97 home shirt in black and white stripes, with a white polo collar trimmed in black and two gold stars on the chest. Sony is across the front in navy, and the back has a black panel for the number.\n\nJuventus won Serie A that season and reached the Champions League final, losing to Borussia Dortmund in Munich. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1996-97-home-shirt-1.webp",
       "/images/european-world-classics/juventus-1996-97-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-1996-97-home-shirt-3.webp",
-      "/images/european-world-classics/juventus-1996-97-home-shirt-4.webp",
       "/images/european-world-classics/juventus-1996-97-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8018,7 +7846,7 @@
     "id": "mj-546794",
     "title": "Juventus 1996-97 Away Shirt",
     "slug": "juventus-1996-97-away-shirt",
-    "description": "The navy away shirt from 1996-97, with yellow stars across the shoulders and the Sony sponsor.",
+    "description": "Juventus's black away shirt from 1996-97, with big yellow stars across the shoulders and a yellow V at the neck. Two yellow stars sit on the chest, the crest is inside the collar, and Sony is across the front in white.\n\nJuventus won Serie A that season and reached the Champions League final, losing to Borussia Dortmund in Munich. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1996-97-away-shirt-1.webp",
@@ -8033,7 +7861,7 @@
       "team": "Juventus",
       "season": "1996-97",
       "kit": "Away",
-      "colours": "Navy / Yellow",
+      "colours": "Black / Yellow",
       "fit": "Classic 90s cut, a little boxier than a modern shirt",
       "condition": "New",
       "sponsor": "Sony"
@@ -8050,7 +7878,7 @@
     "id": "mj-641708",
     "title": "Juventus 1997-98 Home Shirt",
     "slug": "juventus-1997-98-home-shirt",
-    "description": "Juventus's black and white home shirt from 1997-98, with the Sony MiniDisc sponsor. Juve won Serie A and reached the Champions League final that season.",
+    "description": "Juventus's 1997-98 home shirt, with black and white stripes, wide black panels over the shoulders and a black polo collar. Sony MiniDisc is in navy on a white panel, and the crest sits on the sleeve.\n\nJuventus won Serie A that season and reached a third Champions League final in a row, losing 1-0 to Real Madrid in Amsterdam. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1997-98-home-shirt-1.webp",
@@ -8079,13 +7907,11 @@
     "id": "mj-545912",
     "title": "Juventus 1997-98 Away Shirt",
     "slug": "juventus-1997-98-away-shirt",
-    "description": "The pink away shirt from 1997-98, with black trim and the Sony MiniDisc sponsor. Pink was Juventus's first colour when the club was founded in 1897.",
+    "description": "Juventus's pink away shirt from 1997-98, with a black polo collar, black cuffs and black piping down the sides. The club's 100-year badge sits on the chest, and Sony MiniDisc is across the front in black.\n\nPink was Juventus's first colour when the club was founded in 1897, and this shirt came out in its centenary year. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1997-98-away-shirt-1.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-2.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-3.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-4.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8178,8 +8004,6 @@
     "images": [
       "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-1.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-2.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-3.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-4.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-del-piero-10-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8212,8 +8036,6 @@
     "images": [
       "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-1.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-2.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-3.webp",
-      "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-4.webp",
       "/images/european-world-classics/juventus-1997-98-away-shirt-zidane-21-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8241,7 +8063,7 @@
     "id": "mj-563986",
     "title": "Juventus 1998-99 Home Shirt",
     "slug": "juventus-1998-99-home-shirt",
-    "description": "Juventus's 1998-99 home shirt, black and white stripes with the D+ Libertà Digitale sponsor.",
+    "description": "Juventus's 1998-99 home shirt in black and white stripes, with a white polo collar trimmed in black. D+ Libertà Digitale is across the chest.\n\nCarlo Ancelotti took over as manager in February 1999. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1998-99-home-shirt-1.webp",
@@ -8270,13 +8092,11 @@
     "id": "mj-546828",
     "title": "Juventus 1999-2000 Home Shirt",
     "slug": "juventus-1999-2000-home-shirt",
-    "description": "Juventus's 1999-2000 home shirt, black and white stripes with the D+ sponsor and Kappa tape on the shoulders.",
+    "description": "Juventus's 1999-2000 home shirt in black and white stripes, with a white polo collar and the crest under two gold stars. D+ Libertà Digitale is across the chest, with logo tape along the sleeves.\n\nJuventus went into the last day top of Serie A, lost in heavy rain at Perugia, and Lazio took the title. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-1999-2000-home-shirt-1.webp",
       "/images/european-world-classics/juventus-1999-2000-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-1999-2000-home-shirt-3.webp",
-      "/images/european-world-classics/juventus-1999-2000-home-shirt-4.webp",
       "/images/european-world-classics/juventus-1999-2000-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8302,13 +8122,11 @@
     "id": "mj-556351",
     "title": "Juventus 2001-02 Home Shirt",
     "slug": "juventus-2001-02-home-shirt",
-    "description": "Juventus's 2001-02 home shirt, black and white stripes with the Fastweb sponsor and Lotto trim. Juve won Serie A that season.",
+    "description": "Juventus's 2001-02 home shirt in black and white stripes, with a white polo collar and a black panel on the back for the number. Fastweb is across the chest in yellow on black.\n\nMarcello Lippi returned that summer, and Gianluigi Buffon, Pavel Nedvěd and Lilian Thuram all joined. Juventus won Serie A on the last day. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2001-02-home-shirt-1.webp",
-      "/images/european-world-classics/juventus-2001-02-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-2001-02-home-shirt-3.webp",
-      "/images/european-world-classics/juventus-2001-02-home-shirt-4.webp"
+      "/images/european-world-classics/juventus-2001-02-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8333,13 +8151,11 @@
     "id": "mj-559935",
     "title": "Juventus 2001-02 Away Shirt",
     "slug": "juventus-2001-02-away-shirt",
-    "description": "Juventus's black away shirt from 2001-02, with gold Fastweb lettering and Lotto diamonds on the sleeves. Juve won Serie A that season.",
+    "description": "Juventus's black away shirt from 2001-02, with a V-neck and the crest under two gold stars. Fastweb is across the chest in gold.\n\nMarcello Lippi returned that summer, and Gianluigi Buffon, Pavel Nedvěd and Lilian Thuram all joined. Juventus won Serie A on the last day. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2001-02-away-shirt-1.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-2.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-3.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-4.webp"
+      "/images/european-world-classics/juventus-2001-02-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8369,8 +8185,6 @@
     "images": [
       "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-1.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-2.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-3.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-4.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-del-piero-10-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8403,8 +8217,6 @@
     "images": [
       "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-1.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-2.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-3.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-4.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-nedved-11-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8437,8 +8249,6 @@
     "images": [
       "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-1.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-2.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-3.webp",
-      "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-4.webp",
       "/images/european-world-classics/juventus-2001-02-away-shirt-trezeguet-17-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8471,7 +8281,6 @@
     "images": [
       "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-1.webp",
       "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-3.webp",
       "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-4.webp",
       "/images/european-world-classics/juventus-2002-03-champions-league-home-shirt-5.webp"
     ],
@@ -8498,7 +8307,7 @@
     "id": "mj-551441",
     "title": "Juventus 2002-03 Goalkeeper Shirt",
     "slug": "juventus-2002-03-goalkeeper-shirt",
-    "description": "Juventus's pink and black goalkeeper shirt from 2002-03, with the Tamoil sponsor. Plain, with no name or number.",
+    "description": "Juventus's goalkeeper shirt from 2002-03: a pink front with shaded black blocks down the body, black sides and black sleeves. The champions' shield sits on the chest, and Tamoil is in its blue and red oval. Plain, with no name or number.\n\nJuventus won Serie A that season and reached the Champions League final, losing to Milan on penalties at Old Trafford. Gianluigi Buffon was in goal. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2002-03-goalkeeper-shirt-1.webp"
@@ -8526,7 +8335,7 @@
     "id": "mj-565603",
     "title": "Juventus 2003-04 Home Shirt",
     "slug": "juventus-2003-04-home-shirt",
-    "description": "Juventus's 2003-04 home shirt, black and white stripes with the Fastweb sponsor. The first season in Nike kit.",
+    "description": "Juventus's 2003-04 home shirt in black and white stripes, with a white crew neck and a white lower back. Fastweb is across the chest in yellow on black.\n\nIt was Marcello Lippi's last season before he left to manage Italy. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2003-04-home-shirt-1.webp",
@@ -8555,7 +8364,7 @@
     "id": "mj-565626",
     "title": "Juventus 2003-04 Away Shirt",
     "slug": "juventus-2003-04-away-shirt",
-    "description": "Juventus's pale pink away shirt from 2003-04, with black trim and the Fastweb sponsor.",
+    "description": "Juventus's pale pink away shirt from 2003-04, with a fine tonal pattern and a V-neck trimmed in black. Fastweb is across the chest in yellow on black.\n\nIt was Marcello Lippi's last season before he left to manage Italy. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2003-04-away-shirt-1.webp",
@@ -8584,12 +8393,11 @@
     "id": "mj-556127",
     "title": "Juventus 2005-06 Home Shirt",
     "slug": "juventus-2005-06-home-shirt",
-    "description": "Juventus's 2005-06 home shirt, black and white stripes with the Tamoil sponsor and Nike trim.",
+    "description": "Juventus's 2005-06 home shirt in black and white stripes, with a black crew neck, an Italian flag tab at the neck and yellow inserts at the hem. Two gold stars sit beside the crest, and Tamoil is in its blue and red oval.\n\nPatrick Vieira joined from Arsenal that summer. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2005-06-home-shirt-1.webp",
-      "/images/european-world-classics/juventus-2005-06-home-shirt-2.webp",
-      "/images/european-world-classics/juventus-2005-06-home-shirt-3.webp"
+      "/images/european-world-classics/juventus-2005-06-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8618,9 +8426,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-1.webp",
-      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-2.webp",
-      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-3.webp",
-      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-4.webp"
+      "/images/european-world-classics/juventus-2005-06-home-shirt-del-piero-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8647,7 +8453,7 @@
     "id": "mj-563677",
     "title": "Juventus 2005-06 Away Shirt",
     "slug": "juventus-2005-06-away-shirt",
-    "description": "Juventus's red away shirt from 2005-06, with a green and white stripe down the front and the Tamoil sponsor.",
+    "description": "Juventus's red away shirt from 2005-06, with a green and white stripe down the front carrying two stars, and an Italian flag tab at the neck. Tamoil is in its blue and red oval.\n\nPatrick Vieira joined from Arsenal that summer. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/juventus-2005-06-away-shirt-1.webp",
@@ -8680,7 +8486,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-1990-91-home-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-1990-91-home-shirt-2.webp",
       "/images/european-world-classics/ac-milan-1990-91-home-shirt-3.webp",
       "/images/european-world-classics/ac-milan-1990-91-home-shirt-4.webp",
       "/images/european-world-classics/ac-milan-1990-91-home-shirt-5.webp"
@@ -8741,9 +8546,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-1992-93-home-shirt-2.webp",
-      "/images/european-world-classics/ac-milan-1992-93-home-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-1992-93-home-shirt-4.webp",
-      "/images/european-world-classics/ac-milan-1992-93-home-shirt-5.webp"
+      "/images/european-world-classics/ac-milan-1992-93-home-shirt-3.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8772,7 +8575,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-1993-94-away-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-1993-94-away-shirt-2.webp",
       "/images/european-world-classics/ac-milan-1993-94-away-shirt-3.webp"
     ],
     "collection": "European & World Classics",
@@ -8802,7 +8604,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-1995-96-home-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-1995-96-home-shirt-2.webp",
       "/images/european-world-classics/ac-milan-1995-96-home-shirt-3.webp"
     ],
     "collection": "European & World Classics",
@@ -8832,7 +8633,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-1995-96-fourth-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-1995-96-fourth-shirt-2.webp",
       "/images/european-world-classics/ac-milan-1995-96-fourth-shirt-3.webp",
       "/images/european-world-classics/ac-milan-1995-96-fourth-shirt-4.webp",
       "/images/european-world-classics/ac-milan-1995-96-fourth-shirt-5.webp"
@@ -8865,8 +8665,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-1.webp",
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-2.webp",
-      "/images/european-world-classics/ac-milan-1996-97-home-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-1996-97-home-shirt-4.webp",
       "/images/european-world-classics/ac-milan-1996-97-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -8954,9 +8752,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-2002-03-home-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-2002-03-home-shirt-2.webp",
-      "/images/european-world-classics/ac-milan-2002-03-home-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-2002-03-home-shirt-4.webp"
+      "/images/european-world-classics/ac-milan-2002-03-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -8985,8 +8781,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/ac-milan-2002-03-home-shirt-rivaldo-11-1.webp",
-      "/images/european-world-classics/ac-milan-2002-03-home-shirt-rivaldo-11-2.webp",
-      "/images/european-world-classics/ac-milan-2002-03-home-shirt-rivaldo-11-3.webp"
+      "/images/european-world-classics/ac-milan-2002-03-home-shirt-rivaldo-11-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9048,7 +8843,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-nesta-13-1.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-nesta-13-2.webp",
-      "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-nesta-13-3.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-nesta-13-4.webp"
     ],
     "collection": "European & World Classics",
@@ -9081,7 +8875,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-maldini-3-1.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-maldini-3-2.webp",
-      "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-maldini-3-3.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-maldini-3-4.webp"
     ],
     "collection": "European & World Classics",
@@ -9114,7 +8907,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-shevchenko-7-1.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-shevchenko-7-2.webp",
-      "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-shevchenko-7-3.webp",
       "/images/european-world-classics/ac-milan-2003-champions-league-final-away-shirt-shevchenko-7-4.webp"
     ],
     "collection": "European & World Classics",
@@ -9147,8 +8939,7 @@
     "images": [
       "/images/european-world-classics/ac-milan-2006-07-home-shirt-1.webp",
       "/images/european-world-classics/ac-milan-2006-07-home-shirt-2.webp",
-      "/images/european-world-classics/ac-milan-2006-07-home-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-2006-07-home-shirt-5.webp"
+      "/images/european-world-classics/ac-milan-2006-07-home-shirt-3.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9334,8 +9125,7 @@
       "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-1.webp",
       "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-2.webp",
       "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-4.webp",
-      "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-5.webp"
+      "/images/european-world-classics/ac-milan-2007-champions-league-final-away-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9364,7 +9154,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-2007-08-away-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-2007-08-away-shirt-2.webp",
       "/images/european-world-classics/ac-milan-2007-08-away-shirt-3.webp",
       "/images/european-world-classics/ac-milan-2007-08-away-shirt-4.webp",
       "/images/european-world-classics/ac-milan-2007-08-away-shirt-5.webp"
@@ -9396,7 +9185,6 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/ac-milan-2007-08-third-shirt-1.webp",
-      "/images/european-world-classics/ac-milan-2007-08-third-shirt-2.webp",
       "/images/european-world-classics/ac-milan-2007-08-third-shirt-3.webp",
       "/images/european-world-classics/ac-milan-2007-08-third-shirt-4.webp",
       "/images/european-world-classics/ac-milan-2007-08-third-shirt-5.webp"
@@ -9457,8 +9245,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/ac-milan-2009-10-home-shirt-pato-7-1.webp",
-      "/images/european-world-classics/ac-milan-2009-10-home-shirt-pato-7-2.webp",
-      "/images/european-world-classics/ac-milan-2009-10-home-shirt-pato-7-3.webp"
+      "/images/european-world-classics/ac-milan-2009-10-home-shirt-pato-7-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9490,8 +9277,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-1.webp",
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-2.webp",
-      "/images/european-world-classics/ac-milan-2009-10-away-shirt-3.webp",
-      "/images/european-world-classics/ac-milan-2009-10-away-shirt-4.webp",
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -9522,8 +9307,6 @@
     "images": [
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-ronaldinho-80-1.webp",
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-ronaldinho-80-2.webp",
-      "/images/european-world-classics/ac-milan-2009-10-away-shirt-ronaldinho-80-3.webp",
-      "/images/european-world-classics/ac-milan-2009-10-away-shirt-ronaldinho-80-4.webp",
       "/images/european-world-classics/ac-milan-2009-10-away-shirt-ronaldinho-80-5.webp"
     ],
     "collection": "European & World Classics",
@@ -9585,8 +9368,6 @@
     "images": [
       "/images/european-world-classics/inter-milan-1992-93-away-shirt-1.webp",
       "/images/european-world-classics/inter-milan-1992-93-away-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-1992-93-away-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-1992-93-away-shirt-4.webp",
       "/images/european-world-classics/inter-milan-1992-93-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -9645,8 +9426,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/inter-milan-1995-96-away-shirt-1.webp",
-      "/images/european-world-classics/inter-milan-1995-96-away-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-1995-96-away-shirt-3.webp"
+      "/images/european-world-classics/inter-milan-1995-96-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9705,7 +9485,6 @@
     "images": [
       "/images/european-world-classics/inter-milan-1997-98-uefa-cup-away-shirt-1.webp",
       "/images/european-world-classics/inter-milan-1997-98-uefa-cup-away-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-1997-98-uefa-cup-away-shirt-3.webp",
       "/images/european-world-classics/inter-milan-1997-98-uefa-cup-away-shirt-4.webp",
       "/images/european-world-classics/inter-milan-1997-98-uefa-cup-away-shirt-5.webp"
     ],
@@ -9736,10 +9515,8 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-1.webp",
-      "/images/european-world-classics/inter-milan-1998-99-home-shirt-2.webp",
       "/images/european-world-classics/inter-milan-1998-99-home-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-1998-99-home-shirt-4.webp",
-      "/images/european-world-classics/inter-milan-1998-99-home-shirt-5.webp"
+      "/images/european-world-classics/inter-milan-1998-99-home-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9885,8 +9662,7 @@
       "/images/european-world-classics/inter-milan-2002-03-home-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2002-03-home-shirt-2.webp",
       "/images/european-world-classics/inter-milan-2002-03-home-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2002-03-home-shirt-4.webp",
-      "/images/european-world-classics/inter-milan-2002-03-home-shirt-5.webp"
+      "/images/european-world-classics/inter-milan-2002-03-home-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9917,8 +9693,7 @@
       "/images/european-world-classics/inter-milan-2002-03-away-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2002-03-away-shirt-2.webp",
       "/images/european-world-classics/inter-milan-2002-03-away-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2002-03-away-shirt-4.webp",
-      "/images/european-world-classics/inter-milan-2002-03-away-shirt-5.webp"
+      "/images/european-world-classics/inter-milan-2002-03-away-shirt-4.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -9947,9 +9722,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/inter-milan-2002-03-third-shirt-1.webp",
-      "/images/european-world-classics/inter-milan-2002-03-third-shirt-2.webp",
       "/images/european-world-classics/inter-milan-2002-03-third-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2002-03-third-shirt-4.webp",
       "/images/european-world-classics/inter-milan-2002-03-third-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -9980,8 +9753,6 @@
     "images": [
       "/images/european-world-classics/inter-milan-2004-05-away-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2004-05-away-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-2004-05-away-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2004-05-away-shirt-4.webp",
       "/images/european-world-classics/inter-milan-2004-05-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10073,7 +9844,6 @@
     "images": [
       "/images/european-world-classics/inter-milan-2007-08-centenary-away-shirt-figo-7-1.webp",
       "/images/european-world-classics/inter-milan-2007-08-centenary-away-shirt-figo-7-2.webp",
-      "/images/european-world-classics/inter-milan-2007-08-centenary-away-shirt-figo-7-3.webp",
       "/images/european-world-classics/inter-milan-2007-08-centenary-away-shirt-figo-7-4.webp",
       "/images/european-world-classics/inter-milan-2007-08-centenary-away-shirt-figo-7-5.webp"
     ],
@@ -10131,13 +9901,11 @@
     "id": "mj-560267",
     "title": "Inter Milan 2009-10 Home Shirt",
     "slug": "inter-milan-2009-10-home-shirt",
-    "description": "Inter's 2009-10 home shirt, blue and black stripes with the Pirelli sponsor. The Treble season, when Inter won Serie A, the Coppa Italia and the Champions League.",
+    "description": "Inter's 2009-10 home shirt, with blue and black stripes and a black crew neck trimmed in white. The crest has a green, white and red ring, and Pirelli is across the chest in white.\n\nThis was the Treble season, completed with a 2-0 win over Bayern Munich in the Champions League final in Madrid. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/inter-milan-2009-10-home-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2009-10-home-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-2009-10-home-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2009-10-home-shirt-4.webp",
       "/images/european-world-classics/inter-milan-2009-10-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10163,13 +9931,11 @@
     "id": "mj-548222",
     "title": "Inter Milan 2010 Champions League Final Home Shirt",
     "slug": "inter-milan-2010-champions-league-final-home-shirt",
-    "description": "The Champions League final version of Inter's 2009-10 home shirt, with the final's details stitched on the front. Inter beat Bayern Munich 2-0 in Madrid to complete the Treble.",
+    "description": "Inter's 2009-10 home shirt as worn in the Champions League final, with 'Final Madrid 2010' and the match details stitched in gold above Pirelli. Blue and black stripes, a black crew neck and the crest with its green, white and red ring.\n\nInter beat Bayern Munich 2-0 at the Bernabéu to complete the Treble, and Diego Milito scored both goals. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-4.webp",
       "/images/european-world-classics/inter-milan-2010-champions-league-final-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10200,8 +9966,6 @@
     "images": [
       "/images/european-world-classics/inter-milan-2009-10-away-shirt-1.webp",
       "/images/european-world-classics/inter-milan-2009-10-away-shirt-2.webp",
-      "/images/european-world-classics/inter-milan-2009-10-away-shirt-3.webp",
-      "/images/european-world-classics/inter-milan-2009-10-away-shirt-4.webp",
       "/images/european-world-classics/inter-milan-2009-10-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10232,8 +9996,6 @@
     "images": [
       "/images/european-world-classics/napoli-1986-87-home-shirt-1.webp",
       "/images/european-world-classics/napoli-1986-87-home-shirt-2.webp",
-      "/images/european-world-classics/napoli-1986-87-home-shirt-3.webp",
-      "/images/european-world-classics/napoli-1986-87-home-shirt-4.webp",
       "/images/european-world-classics/napoli-1986-87-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10259,7 +10021,7 @@
     "id": "mj-550443",
     "title": "Napoli 1988-89 Away Shirt",
     "slug": "napoli-1988-89-away-shirt",
-    "description": "Napoli's white away shirt from 1988-89, with sky blue chevrons and the Mars sponsor. Napoli won the UEFA Cup that season, beating Stuttgart in the final.",
+    "description": "Napoli's white away shirt from 1988-89, with sky blue chevrons across the chest and sleeves and a white polo collar. Mars is across the chest in red.\n\nWith Diego Maradona, Napoli won the UEFA Cup that season, beating Stuttgart in the final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/napoli-1988-89-away-shirt-1.webp",
@@ -10288,7 +10050,7 @@
     "id": "mj-565007",
     "title": "Napoli 1990-91 Home Shirt",
     "slug": "napoli-1990-91-home-shirt",
-    "description": "Napoli's 1990-91 home shirt, with white shoulders, the Mars sponsor and the Italian champions' shield. Napoli had won their second Serie A title in 1990.",
+    "description": "Napoli's sky blue home shirt from 1990-91, with a white chevron across the chest, white bands on the sleeves and the Italian champions' shield. Mars is across the chest in navy.\n\nNapoli had won their second Serie A title with Maradona in 1990. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/napoli-1990-91-home-shirt-1.webp",
@@ -10317,13 +10079,11 @@
     "id": "mj-556146",
     "title": "Parma 1993-95 Home Shirt",
     "slug": "parma-1993-95-home-shirt",
-    "description": "Parma's white home shirt from 1993-95, with blue and yellow trim, the Parmalat sponsor and Umbro logos. Parma won the UEFA Cup in 1995, beating Juventus in the final.",
+    "description": "Parma's white home shirt from 1993-95, with a blue polo collar trimmed in yellow and blue and yellow striped cuffs. Parmalat is across the chest in blue.\n\nParma won the UEFA Cup in 1995, beating Juventus in the final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/parma-1993-95-home-shirt-1.webp",
       "/images/european-world-classics/parma-1993-95-home-shirt-2.webp",
-      "/images/european-world-classics/parma-1993-95-home-shirt-3.webp",
-      "/images/european-world-classics/parma-1993-95-home-shirt-4.webp",
       "/images/european-world-classics/parma-1993-95-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10349,11 +10109,10 @@
     "id": "mj-550078",
     "title": "Parma 2001-02 Home Shirt",
     "slug": "parma-2001-02-home-shirt",
-    "description": "Parma's yellow and blue hooped home shirt from 2001-02, with the Joy by Parmalat sponsor. Parma won the Coppa Italia that season.",
+    "description": "Parma's 2001-02 home shirt, with yellow and blue hoops, navy shoulders with logo tape and a navy V-neck. Joy by Parmalat is across the chest.\n\nParma won the Coppa Italia that season, beating Juventus in the final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/parma-2001-02-home-shirt-1.webp",
-      "/images/european-world-classics/parma-2001-02-home-shirt-2.webp",
       "/images/european-world-classics/parma-2001-02-home-shirt-3.webp"
     ],
     "collection": "European & World Classics",
@@ -10383,9 +10142,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/parma-2001-02-home-shirt-nakata-10-1.webp",
-      "/images/european-world-classics/parma-2001-02-home-shirt-nakata-10-2.webp",
-      "/images/european-world-classics/parma-2001-02-home-shirt-nakata-10-3.webp",
-      "/images/european-world-classics/parma-2001-02-home-shirt-nakata-10-4.webp"
+      "/images/european-world-classics/parma-2001-02-home-shirt-nakata-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10412,13 +10169,11 @@
     "id": "mj-549784",
     "title": "Parma 2002-03 Away Shirt",
     "slug": "parma-2002-03-away-shirt",
-    "description": "Parma's white away shirt from 2002-03, with a navy and yellow band across the chest and the Parmalat sponsor.",
+    "description": "Parma's white away shirt from 2002-03, with a navy band across the chest carrying the crest, and navy shoulders with logo tape. Parmalat is in navy, with the Coppa Italia holders' badge on the chest.\n\nAdriano and Adrian Mutu led the attack that season. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/parma-2002-03-away-shirt-1.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-2.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-3.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-4.webp"
+      "/images/european-world-classics/parma-2002-03-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10447,9 +10202,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/parma-2002-03-away-shirt-nakata-10-1.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-nakata-10-2.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-nakata-10-3.webp",
-      "/images/european-world-classics/parma-2002-03-away-shirt-nakata-10-4.webp"
+      "/images/european-world-classics/parma-2002-03-away-shirt-nakata-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10476,7 +10229,7 @@
     "id": "mj-564026",
     "title": "Parma 2003-04 Away Shirt",
     "slug": "parma-2003-04-away-shirt",
-    "description": "Parma's white away shirt from 2003-04, with navy and yellow panels down the sides and the Parmalat sponsor.",
+    "description": "Parma's white away shirt from 2003-04, with navy and yellow stripes down the sides and a navy polo collar trimmed in yellow. Parmalat is across the chest in navy.\n\nAlberto Gilardino scored 23 Serie A goals for Parma that season. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/parma-2003-04-away-shirt-1.webp",
@@ -10505,7 +10258,7 @@
     "id": "mj-664461",
     "title": "Parma 2005-06 Home Shirt",
     "slug": "parma-2005-06-home-shirt",
-    "description": "Parma's white home shirt from 2005-06, with the club's traditional navy cross on the front and no sponsor.",
+    "description": "Parma's white home shirt from 2005-06, with the club's navy cross on the front and no sponsor. The polo collar is navy trimmed in yellow, with yellow and navy cuffs.\n\nThe cross is Parma's traditional home design. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/parma-2005-06-home-shirt-1.webp",
@@ -10566,8 +10319,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-home-shirt-nesta-13-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-nesta-13-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-nesta-13-3.webp"
+      "/images/european-world-classics/lazio-1998-2000-home-shirt-nesta-13-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10598,8 +10350,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-home-shirt-nedved-18-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-nedved-18-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-nedved-18-3.webp"
+      "/images/european-world-classics/lazio-1998-2000-home-shirt-nedved-18-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10630,8 +10381,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-home-shirt-salas-9-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-salas-9-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-salas-9-3.webp"
+      "/images/european-world-classics/lazio-1998-2000-home-shirt-salas-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10662,8 +10412,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-home-shirt-mancini-10-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-mancini-10-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-home-shirt-mancini-10-3.webp"
+      "/images/european-world-classics/lazio-1998-2000-home-shirt-mancini-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10695,8 +10444,6 @@
     "images": [
       "/images/european-world-classics/lazio-1998-2000-away-shirt-1.webp",
       "/images/european-world-classics/lazio-1998-2000-away-shirt-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-3.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-4.webp",
       "/images/european-world-classics/lazio-1998-2000-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -10726,9 +10473,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-away-shirt-nedved-18-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-nedved-18-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-nedved-18-3.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-nedved-18-4.webp"
+      "/images/european-world-classics/lazio-1998-2000-away-shirt-nedved-18-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10759,9 +10504,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/lazio-1998-2000-away-shirt-salas-9-1.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-salas-9-2.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-salas-9-3.webp",
-      "/images/european-world-classics/lazio-1998-2000-away-shirt-salas-9-4.webp"
+      "/images/european-world-classics/lazio-1998-2000-away-shirt-salas-9-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10788,7 +10531,7 @@
     "id": "mj-709200",
     "title": "AS Roma 1998-99 Home Shirt",
     "slug": "as-roma-1998-99-home-shirt",
-    "description": "Roma's dark red home shirt from 1998-99, made by Diadora with the INA Assitalia sponsor. Francesco Totti was made captain that season.",
+    "description": "Roma's dark red home shirt from 1998-99, with an orange polo collar and a band of orange wolves over the shoulders. INA Assitalia is across the chest in white.\n\nFrancesco Totti was made captain that season, aged 22. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/as-roma-1998-99-home-shirt-1.webp"
@@ -10821,7 +10564,6 @@
     "images": [
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-1.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-2.webp",
-      "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-3.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-4.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-5.webp"
     ],
@@ -10853,7 +10595,6 @@
     "images": [
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-totti-10-1.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-totti-10-2.webp",
-      "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-totti-10-3.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-totti-10-4.webp",
       "/images/european-world-classics/as-roma-2001-02-champions-league-home-shirt-totti-10-5.webp"
     ],
@@ -10914,7 +10655,7 @@
     "id": "mj-551487",
     "title": "Bayern Munich 1995-97 Home Shirt",
     "slug": "bayern-munich-1995-97-home-shirt",
-    "description": "Bayern's red and blue striped home shirt from 1995-97, made by adidas with the Opel sponsor. Bayern won the UEFA Cup in 1996.",
+    "description": "Bayern Munich's 1995-97 home shirt, with red and blue stripes and a white polo collar. Opel is across the chest in white.\n\nBayern won the UEFA Cup in 1996, beating Bordeaux in the final. Jürgen Klinsmann scored 15 goals in that run. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-1995-97-home-shirt-1.webp",
@@ -10945,13 +10686,11 @@
     "id": "mj-641229",
     "title": "Bayern Munich 1996-98 Away Shirt",
     "slug": "bayern-munich-1996-98-away-shirt",
-    "description": "Bayern's white away shirt from 1996-98, with a red and blue stripe down the front and the Opel sponsor.",
+    "description": "Bayern Munich's white away shirt from 1996-98, with a red and blue stripe down the front, a tonal diamond pattern and navy trim on the collar and cuffs. Opel is across the chest in black.\n\nBayern won the Bundesliga in 1997 under Giovanni Trapattoni. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-1996-98-away-shirt-1.webp",
-      "/images/european-world-classics/bayern-munich-1996-98-away-shirt-2.webp",
-      "/images/european-world-classics/bayern-munich-1996-98-away-shirt-3.webp",
-      "/images/european-world-classics/bayern-munich-1996-98-away-shirt-4.webp"
+      "/images/european-world-classics/bayern-munich-1996-98-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -10976,13 +10715,11 @@
     "id": "mj-641228",
     "title": "Bayern Munich 1998-99 Away Shirt",
     "slug": "bayern-munich-1998-99-away-shirt",
-    "description": "Bayern's grey away shirt from 1998-99, with maroon sleeves and the Opel sponsor. Bayern won the league that season and reached the Champions League final.",
+    "description": "Bayern Munich's grey away shirt from 1998-99, with maroon sleeves and side panels and a navy polo collar. Opel is across the chest in navy.\n\nBayern won the Bundesliga that season and reached the Champions League final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-1998-99-away-shirt-1.webp",
-      "/images/european-world-classics/bayern-munich-1998-99-away-shirt-2.webp",
-      "/images/european-world-classics/bayern-munich-1998-99-away-shirt-3.webp",
-      "/images/european-world-classics/bayern-munich-1998-99-away-shirt-4.webp"
+      "/images/european-world-classics/bayern-munich-1998-99-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11007,7 +10744,7 @@
     "id": "mj-730064",
     "title": "Bayern Munich 2002-03 Away Shirt",
     "slug": "bayern-munich-2002-03-away-shirt",
-    "description": "Bayern's white away shirt from 2002-03, with grey trim and the T-Mobile sponsor. Bayern won the league and the German Cup that season.",
+    "description": "Bayern Munich's white away shirt from 2002-03, with grey stripes over the shoulders and a grey V-neck and cuffs. T-Mobile is across the chest.\n\nMichael Ballack joined that summer, and Bayern won the league and the German Cup. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-2002-03-away-shirt-1.webp",
@@ -11036,13 +10773,11 @@
     "id": "mj-641221",
     "title": "Bayern Munich 2004-05 Away Shirt",
     "slug": "bayern-munich-2004-05-away-shirt",
-    "description": "Bayern's gold away shirt from 2004-05, with black trim and the T-Com sponsor. Bayern won the league and the German Cup that season.",
+    "description": "Bayern Munich's gold away shirt from 2004-05, with black stripes over the shoulders and Bayern München across the back. T-Com is across the chest in black.\n\nIn Felix Magath's first season, Bayern won the league and the German Cup. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-1.webp",
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-2.webp",
-      "/images/european-world-classics/bayern-munich-2004-05-away-shirt-3.webp",
-      "/images/european-world-classics/bayern-munich-2004-05-away-shirt-4.webp",
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -11073,8 +10808,6 @@
     "images": [
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-ballack-13-1.webp",
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-ballack-13-2.webp",
-      "/images/european-world-classics/bayern-munich-2004-05-away-shirt-ballack-13-3.webp",
-      "/images/european-world-classics/bayern-munich-2004-05-away-shirt-ballack-13-4.webp",
       "/images/european-world-classics/bayern-munich-2004-05-away-shirt-ballack-13-5.webp"
     ],
     "collection": "European & World Classics",
@@ -11102,13 +10835,11 @@
     "id": "mj-616686",
     "title": "Ajax 1989-90 Away Shirt",
     "slug": "ajax-1989-90-away-shirt",
-    "description": "Ajax's blue away shirt from 1989-90, with a bold red and white pattern, Umbro logos and the TDK sponsor. Ajax won the Dutch league that season.",
+    "description": "Ajax's blue away shirt from 1989-90, with a red, white and blue block pattern over the sleeves and lower body, fine pinstripes and a white collar. TDK is across the chest in red.\n\nAjax won the Dutch league that season. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/ajax-1989-90-away-shirt-1.webp",
       "/images/european-world-classics/ajax-1989-90-away-shirt-2.webp",
-      "/images/european-world-classics/ajax-1989-90-away-shirt-3.webp",
-      "/images/european-world-classics/ajax-1989-90-away-shirt-4.webp",
       "/images/european-world-classics/ajax-1989-90-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -11134,14 +10865,11 @@
     "id": "mj-616687",
     "title": "Ajax 1994-95 Away Shirt",
     "slug": "ajax-1994-95-away-shirt",
-    "description": "Ajax's navy away shirt from 1994-95, with a red pattern and the ABN AMRO sponsor. Ajax won the Champions League that season and went through the league without losing.",
+    "description": "Ajax's navy away shirt from 1994-95, with a red pattern across the front and a red and white collar. ABN AMRO runs down the front in white.\n\nAjax won the Champions League that season and went through the Dutch league without losing. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/ajax-1994-95-away-shirt-1.webp",
-      "/images/european-world-classics/ajax-1994-95-away-shirt-2.webp",
-      "/images/european-world-classics/ajax-1994-95-away-shirt-3.webp",
-      "/images/european-world-classics/ajax-1994-95-away-shirt-4.webp",
-      "/images/european-world-classics/ajax-1994-95-away-shirt-5.webp"
+      "/images/european-world-classics/ajax-1994-95-away-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11171,8 +10899,6 @@
     "images": [
       "/images/european-world-classics/ajax-1995-96-home-shirt-1.webp",
       "/images/european-world-classics/ajax-1995-96-home-shirt-2.webp",
-      "/images/european-world-classics/ajax-1995-96-home-shirt-3.webp",
-      "/images/european-world-classics/ajax-1995-96-home-shirt-4.webp",
       "/images/european-world-classics/ajax-1995-96-home-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -11198,7 +10924,7 @@
     "id": "mj-616688",
     "title": "Ajax 2004-05 Home Shirt",
     "slug": "ajax-2004-05-home-shirt",
-    "description": "Ajax's red and white home shirt from 2004-05, made by adidas with the ABN AMRO sponsor.",
+    "description": "Ajax's 2004-05 home shirt, white with the wide red panel down the middle and a red V-neck. ABN AMRO runs down the red panel in white.\n\nWesley Sneijder and Rafael van der Vaart, both from the club's academy, played in this shirt. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/ajax-2004-05-home-shirt-1.webp",
@@ -11227,7 +10953,7 @@
     "id": "mj-662508",
     "title": "PSG 1991-92 Away Shirt",
     "slug": "psg-1991-92-away-shirt",
-    "description": "PSG's white away shirt from 1991-92, with a painted blue and red stripe, the Commodore and Müller sponsors and Nike logos.",
+    "description": "PSG's white away shirt from 1991-92, with a painted blue and red stripe down the front. Commodore and Müller are on the front, and both appear again on the back.\n\nCanal+ took over the club in 1991. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-1991-92-away-shirt-1.webp",
@@ -11256,14 +10982,12 @@
     "id": "mj-550412",
     "title": "PSG 1993-94 Home Shirt",
     "slug": "psg-1993-94-home-shirt",
-    "description": "PSG's blue and red striped home shirt from 1993-94, with the Commodore and Tourtel sponsors. PSG won the French league that season.",
+    "description": "PSG's 1993-94 home shirt, blue with a red centre and thin red and blue stripes, and a white collar. Commodore and Tourtel are across the chest.\n\nPSG won the French league that season, with George Weah up front. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-1993-94-home-shirt-1.webp",
       "/images/european-world-classics/psg-1993-94-home-shirt-2.webp",
-      "/images/european-world-classics/psg-1993-94-home-shirt-3.webp",
-      "/images/european-world-classics/psg-1993-94-home-shirt-4.webp",
-      "/images/european-world-classics/psg-1993-94-home-shirt-5.webp"
+      "/images/european-world-classics/psg-1993-94-home-shirt-3.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11288,12 +11012,11 @@
     "id": "mj-642905",
     "title": "PSG 2001-02 Home Shirt",
     "slug": "psg-2001-02-home-shirt",
-    "description": "PSG's navy home shirt from 2001-02, with the red stripe down the front and the Opel sponsor.",
+    "description": "PSG's navy home shirt from 2001-02, with a red stripe down the front and a white V-neck. Opel is across the chest in white.\n\nRonaldinho joined PSG from Grêmio in 2001 and spent two seasons in Paris before moving to Barcelona. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-2001-02-home-shirt-1.webp",
       "/images/european-world-classics/psg-2001-02-home-shirt-2.webp",
-      "/images/european-world-classics/psg-2001-02-home-shirt-3.webp",
       "/images/european-world-classics/psg-2001-02-home-shirt-4.webp"
     ],
     "collection": "European & World Classics",
@@ -11351,7 +11074,7 @@
     "id": "mj-551413",
     "title": "PSG 2001-02 Away Shirt",
     "slug": "psg-2001-02-away-shirt",
-    "description": "PSG's grey away shirt from 2001-02, with pale grey panels and the Opel sponsor.",
+    "description": "PSG's white away shirt from 2001-02, with pale grey panels sweeping round the body. Opel is across the chest in black.\n\nRonaldinho joined PSG from Grêmio in 2001 and spent two seasons in Paris before moving to Barcelona. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-2001-02-away-shirt-1.webp",
@@ -11384,9 +11107,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/psg-2001-02-away-shirt-ronaldinho-21-1.webp",
-      "/images/european-world-classics/psg-2001-02-away-shirt-ronaldinho-21-2.webp",
-      "/images/european-world-classics/psg-2001-02-away-shirt-ronaldinho-21-3.webp",
-      "/images/european-world-classics/psg-2001-02-away-shirt-ronaldinho-21-4.webp"
+      "/images/european-world-classics/psg-2001-02-away-shirt-ronaldinho-21-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11413,7 +11134,7 @@
     "id": "mj-551269",
     "title": "PSG 2002-03 Home Shirt",
     "slug": "psg-2002-03-home-shirt",
-    "description": "PSG's navy home shirt from 2002-03, with the red stripe down the front and the Thomson sponsor.",
+    "description": "PSG's navy home shirt from 2002-03, with a red stripe edged in white down the front. Thomson is across the chest in white.\n\nIt was Ronaldinho's second and last season at PSG, who reached the Coupe de France final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-2002-03-home-shirt-1.webp",
@@ -11446,8 +11167,7 @@
     "price": 35,
     "images": [
       "/images/european-world-classics/psg-2002-03-home-shirt-ronaldinho-10-1.webp",
-      "/images/european-world-classics/psg-2002-03-home-shirt-ronaldinho-10-2.webp",
-      "/images/european-world-classics/psg-2002-03-home-shirt-ronaldinho-10-3.webp"
+      "/images/european-world-classics/psg-2002-03-home-shirt-ronaldinho-10-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11474,13 +11194,11 @@
     "id": "mj-551749",
     "title": "PSG 2002-03 Away Shirt",
     "slug": "psg-2002-03-away-shirt",
-    "description": "PSG's white away shirt from 2002-03, with a navy and red stripe down the front and the Thomson sponsor.",
+    "description": "PSG's white away shirt from 2002-03, with a navy and red stripe down the front carrying the crest. Thomson is across the chest in navy.\n\nIt was Ronaldinho's second and last season at PSG, who reached the Coupe de France final. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/psg-2002-03-away-shirt-1.webp",
       "/images/european-world-classics/psg-2002-03-away-shirt-2.webp",
-      "/images/european-world-classics/psg-2002-03-away-shirt-3.webp",
-      "/images/european-world-classics/psg-2002-03-away-shirt-4.webp",
       "/images/european-world-classics/psg-2002-03-away-shirt-5.webp"
     ],
     "collection": "European & World Classics",
@@ -11535,7 +11253,7 @@
     "id": "mj-551377",
     "title": "Marseille 1990 Away Shirt",
     "slug": "marseille-1990-away-shirt",
-    "description": "Marseille's sky blue away shirt from 1990, with white stripes on the sleeves, the Panasonic sponsor and adidas trefoil.",
+    "description": "Marseille's blue away shirt from 1990, with tonal stripes, white bands on the sleeves and a white V-neck. Panasonic is across the chest.\n\nChris Waddle joined from Spurs in 1989, and Marseille won the French league in 1990 and 1991. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/marseille-1990-away-shirt-1.webp"
@@ -11567,8 +11285,7 @@
     "price": 25,
     "images": [
       "/images/european-world-classics/marseille-1992-93-home-shirt-1.webp",
-      "/images/european-world-classics/marseille-1992-93-home-shirt-2.webp",
-      "/images/european-world-classics/marseille-1992-93-home-shirt-3.webp"
+      "/images/european-world-classics/marseille-1992-93-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11592,11 +11309,10 @@
     "id": "mj-552693",
     "title": "Marseille 1998-99 Away Shirt",
     "slug": "marseille-1998-99-away-shirt",
-    "description": "Marseille's sky blue away shirt from 1998-99, with the Ericsson sponsor. Marseille reached the UEFA Cup final that season.",
+    "description": "Marseille's sky blue away shirt from 1998-99, with a white polo collar and white striped bands at the sides. Ericsson is across the chest in navy.\n\nMarseille reached the UEFA Cup final that season, losing to Parma. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/marseille-1998-99-away-shirt-1.webp",
-      "/images/european-world-classics/marseille-1998-99-away-shirt-2.webp",
       "/images/european-world-classics/marseille-1998-99-away-shirt-3.webp"
     ],
     "collection": "European & World Classics",
@@ -11622,12 +11338,11 @@
     "id": "mj-551463",
     "title": "Marseille 1998-99 Third Shirt",
     "slug": "marseille-1998-99-third-shirt",
-    "description": "Marseille's yellow third shirt from 1998-99, with navy panels and the Ericsson sponsor. Marseille reached the UEFA Cup final that season.",
+    "description": "Marseille's yellow third shirt from 1998-99, with navy panels down the sides and a navy polo collar. Ericsson is across the chest in navy.\n\nMarseille reached the UEFA Cup final that season, losing to Parma. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/marseille-1998-99-third-shirt-1.webp",
-      "/images/european-world-classics/marseille-1998-99-third-shirt-2.webp",
-      "/images/european-world-classics/marseille-1998-99-third-shirt-3.webp"
+      "/images/european-world-classics/marseille-1998-99-third-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11652,7 +11367,7 @@
     "id": "mj-664467",
     "title": "Marseille 2009-10 Home Shirt",
     "slug": "marseille-2009-10-home-shirt",
-    "description": "Marseille's white home shirt from 2009-10, with fine sky blue pinstripes and the Direct Energie sponsor. Marseille won the French league that season, their first title since 1992.",
+    "description": "Marseille's white home shirt from 2009-10, with fine sky blue pinstripes and a sky blue V-neck. Direct Energie is across the chest, with Intersport on the back.\n\nUnder Didier Deschamps, Marseille won the French league, their first title since 1992. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/marseille-2009-10-home-shirt-1.webp",
@@ -11681,12 +11396,11 @@
     "id": "mj-556335",
     "title": "Chivas 1998-99 Home Shirt",
     "slug": "chivas-1998-99-home-shirt",
-    "description": "Chivas's red and white striped home shirt from 1998-99, made by Atlética with the Coca-Cola sponsor. Chivas famously only field Mexican players.",
+    "description": "Chivas's 1998-99 home shirt, with red and white stripes, a navy collar and Coca-Cola across the chest in red. The back carries a second sponsor.\n\nChivas field only Mexican players, a tradition the club has kept for decades. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/chivas-1998-99-home-shirt-1.webp",
-      "/images/european-world-classics/chivas-1998-99-home-shirt-2.webp",
-      "/images/european-world-classics/chivas-1998-99-home-shirt-3.webp"
+      "/images/european-world-classics/chivas-1998-99-home-shirt-2.webp"
     ],
     "collection": "European & World Classics",
     "currency": "EUR",
@@ -11711,7 +11425,7 @@
     "id": "mj-731149",
     "title": "Chivas 2008-09 Home Shirt",
     "slug": "chivas-2008-09-home-shirt",
-    "description": "Chivas's red and white home shirt from 2008-09, with navy side panels, the Bimbo sponsor and Toyota on the back. Chivas famously only field Mexican players.",
+    "description": "Chivas's 2008-09 home shirt, with red and white stripes fanning out from the centre and navy panels at the sides and shoulders. Bimbo is across the chest, with Toyota on the back.\n\nChivas field only Mexican players, a tradition the club has kept for decades. Sizes S to 2XL; the size guide has measurements.",
     "price": 25,
     "images": [
       "/images/european-world-classics/chivas-2008-09-home-shirt-1.webp",
@@ -11744,8 +11458,6 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-1991-93-home-shirt-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1991-93-home-shirt-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1991-93-home-shirt-3.webp",
       "/images/premier-league-classics/tottenham-hotspur-1991-93-home-shirt-4.webp"
     ],
     "collection": "Premier League Classics",
@@ -11775,9 +11487,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-1994-95-home-shirt-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-home-shirt-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-home-shirt-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-home-shirt-4.webp"
+      "/images/premier-league-classics/tottenham-hotspur-1994-95-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -11806,9 +11516,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-4.webp"
+      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -11837,8 +11545,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-klinsmann-18-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-klinsmann-18-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-klinsmann-18-3.webp"
+      "/images/premier-league-classics/tottenham-hotspur-1994-95-away-shirt-klinsmann-18-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -11956,8 +11663,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-keane-10-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-keane-10-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-keane-10-3.webp"
+      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-keane-10-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -11988,8 +11694,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-berbatov-9-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-berbatov-9-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-berbatov-9-3.webp"
+      "/images/premier-league-classics/tottenham-hotspur-2006-07-home-shirt-berbatov-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12020,8 +11725,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-3.webp"
+      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12050,9 +11754,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-modric-14-1.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-modric-14-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-modric-14-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-modric-14-4.webp"
+      "/images/premier-league-classics/tottenham-hotspur-2008-09-home-shirt-modric-14-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12084,8 +11786,6 @@
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-1.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-4.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12116,8 +11816,6 @@
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-modric-14-1.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-modric-14-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-modric-14-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-modric-14-4.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-modric-14-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12150,8 +11848,6 @@
     "images": [
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-bale-3-1.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-bale-3-2.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-bale-3-3.webp",
-      "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-bale-3-4.webp",
       "/images/premier-league-classics/tottenham-hotspur-2009-10-home-shirt-bale-3-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12213,8 +11909,6 @@
     "images": [
       "/images/premier-league-classics/leeds-united-2000-01-home-shirt-1.webp",
       "/images/premier-league-classics/leeds-united-2000-01-home-shirt-2.webp",
-      "/images/premier-league-classics/leeds-united-2000-01-home-shirt-3.webp",
-      "/images/premier-league-classics/leeds-united-2000-01-home-shirt-4.webp",
       "/images/premier-league-classics/leeds-united-2000-01-home-shirt-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12273,9 +11967,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/chelsea-1995-97-home-shirt-1.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-2.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-3.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-4.webp"
+      "/images/premier-league-classics/chelsea-1995-97-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12304,10 +11996,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-1.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-2.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-3.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-4.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-5.webp"
+      "/images/premier-league-classics/chelsea-1995-97-home-shirt-gullit-4-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12338,10 +12027,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-1.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-2.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-3.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-4.webp",
-      "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-5.webp"
+      "/images/premier-league-classics/chelsea-1995-97-home-shirt-vialli-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12430,8 +12116,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/chelsea-1997-99-home-shirt-zola-25-1.webp",
-      "/images/premier-league-classics/chelsea-1997-99-home-shirt-zola-25-2.webp",
-      "/images/premier-league-classics/chelsea-1997-99-home-shirt-zola-25-3.webp"
+      "/images/premier-league-classics/chelsea-1997-99-home-shirt-zola-25-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12462,8 +12147,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/chelsea-1997-99-home-shirt-vialli-9-1.webp",
-      "/images/premier-league-classics/chelsea-1997-99-home-shirt-vialli-9-2.webp",
-      "/images/premier-league-classics/chelsea-1997-99-home-shirt-vialli-9-3.webp"
+      "/images/premier-league-classics/chelsea-1997-99-home-shirt-vialli-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12626,8 +12310,6 @@
     "images": [
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-1.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-2.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-3.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-4.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12658,8 +12340,6 @@
     "images": [
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-drogba-15-1.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-drogba-15-2.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-drogba-15-3.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-drogba-15-4.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-drogba-15-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12692,8 +12372,6 @@
     "images": [
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-gudjohnsen-22-1.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-gudjohnsen-22-2.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-gudjohnsen-22-3.webp",
-      "/images/premier-league-classics/chelsea-2003-05-away-shirt-gudjohnsen-22-4.webp",
       "/images/premier-league-classics/chelsea-2003-05-away-shirt-gudjohnsen-22-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12726,7 +12404,6 @@
     "images": [
       "/images/premier-league-classics/chelsea-2008-champions-league-final-home-shirt-1.webp",
       "/images/premier-league-classics/chelsea-2008-champions-league-final-home-shirt-2.webp",
-      "/images/premier-league-classics/chelsea-2008-champions-league-final-home-shirt-3.webp",
       "/images/premier-league-classics/chelsea-2008-champions-league-final-home-shirt-4.webp",
       "/images/premier-league-classics/chelsea-2008-champions-league-final-home-shirt-5.webp"
     ],
@@ -12758,8 +12435,6 @@
     "images": [
       "/images/premier-league-classics/manchester-city-1997-98-away-shirt-1.webp",
       "/images/premier-league-classics/manchester-city-1997-98-away-shirt-2.webp",
-      "/images/premier-league-classics/manchester-city-1997-98-away-shirt-3.webp",
-      "/images/premier-league-classics/manchester-city-1997-98-away-shirt-4.webp",
       "/images/premier-league-classics/manchester-city-1997-98-away-shirt-5.webp"
     ],
     "collection": "Premier League Classics",
@@ -12789,9 +12464,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-city-1998-99-away-shirt-1.webp",
-      "/images/premier-league-classics/manchester-city-1998-99-away-shirt-2.webp",
-      "/images/premier-league-classics/manchester-city-1998-99-away-shirt-3.webp",
-      "/images/premier-league-classics/manchester-city-1998-99-away-shirt-4.webp"
+      "/images/premier-league-classics/manchester-city-1998-99-away-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12849,8 +12522,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-1.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-3.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dunne-22-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12881,8 +12553,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-1.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-3.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-dickov-9-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12913,8 +12584,7 @@
     "price": 35,
     "images": [
       "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-1.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-2.webp",
-      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-3.webp"
+      "/images/premier-league-classics/manchester-city-1999-2001-home-shirt-haaland-15-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12945,9 +12615,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-city-2001-02-home-shirt-1.webp",
-      "/images/premier-league-classics/manchester-city-2001-02-home-shirt-2.webp",
-      "/images/premier-league-classics/manchester-city-2001-02-home-shirt-3.webp",
-      "/images/premier-league-classics/manchester-city-2001-02-home-shirt-4.webp"
+      "/images/premier-league-classics/manchester-city-2001-02-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -12976,9 +12644,7 @@
     "price": 25,
     "images": [
       "/images/premier-league-classics/manchester-city-2002-03-home-shirt-1.webp",
-      "/images/premier-league-classics/manchester-city-2002-03-home-shirt-2.webp",
-      "/images/premier-league-classics/manchester-city-2002-03-home-shirt-3.webp",
-      "/images/premier-league-classics/manchester-city-2002-03-home-shirt-4.webp"
+      "/images/premier-league-classics/manchester-city-2002-03-home-shirt-2.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -13096,8 +12762,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-robinho-10-1.webp",
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-robinho-10-2.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-robinho-10-3.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-robinho-10-5.webp"
+      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-robinho-10-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -13129,8 +12794,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-elano-11-1.webp",
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-elano-11-2.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-elano-11-3.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-elano-11-5.webp"
+      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-elano-11-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
@@ -13162,8 +12826,7 @@
     "images": [
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-richards-2-1.webp",
       "/images/premier-league-classics/manchester-city-2008-09-away-shirt-richards-2-2.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-richards-2-3.webp",
-      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-richards-2-5.webp"
+      "/images/premier-league-classics/manchester-city-2008-09-away-shirt-richards-2-3.webp"
     ],
     "collection": "Premier League Classics",
     "currency": "EUR",
