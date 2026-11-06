@@ -15659,5 +15659,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000102",
+    "title": "Barcelona 1997-98 Home Kids Kit",
+    "slug": "barcelona-1997-98-home-kids-kit",
+    "description": "Barcelona's home kit from 1997-98, in kids sizes. Blue and red stripes are split by thin navy pinstripes, with a navy crew neck and black tape running over the shoulders. A small red Barça script sits under the collar, F.C. BARCELONA is printed in red on the neckband, and the crest is embroidered on the chest. The blue shorts have a red, black and white stripe down the side and the crest on the leg.\n\nIt was Louis van Gaal's first season, and Rivaldo arrived from Deportivo. Barcelona won La Liga and the Copa del Rey. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000102-1.webp",
+      "/images/kids-kits/900000102-2.webp",
+      "/images/kids-kits/900000102-3.webp",
+      "/images/kids-kits/900000102-4.webp",
+      "/images/kids-kits/900000102-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Barcelona",
+      "season": "1997-98",
+      "kit": "Home",
+      "colours": "Blue / Red / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
