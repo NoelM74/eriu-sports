@@ -15559,5 +15559,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000098",
+    "title": "Manchester United 2002-04 Home Kids Kit",
+    "slug": "manchester-united-2002-04-home-kids-kit",
+    "description": "Manchester United's home kit from 2002 to 2004, in kids sizes. Red, with black panels over the shoulders and down the sides, a black round collar and black trim on the cuffs. Vodafone is across the chest in white, edged in black, with the crest on the chest. The black shorts have a red insert at the side and the crest on the leg.\n\nUnited won the league in 2003, with Ruud van Nistelrooy scoring 25 league goals, and the FA Cup in 2004. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000098-1.webp",
+      "/images/kids-kits/900000098-2.webp",
+      "/images/kids-kits/900000098-3.webp",
+      "/images/kids-kits/900000098-4.webp",
+      "/images/kids-kits/900000098-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2002-04",
+      "kit": "Home",
+      "sponsor": "Vodafone",
+      "colours": "Red / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
