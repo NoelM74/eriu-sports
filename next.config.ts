@@ -18,7 +18,9 @@ const nextConfig: NextConfig = {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
   images: {
-    unoptimized: true,
+    // No image server on Cloudflare: lib/image-loader.ts picks the 640px copy or the full photo.
+    loader: "custom",
+    loaderFile: "./lib/image-loader.ts",
   },
   async redirects() {
     return [

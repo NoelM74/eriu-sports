@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { pageTitle, clipDescription } from '@/lib/seo';
 import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, type ProductDetails } from '@/lib/products';
 import { getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
@@ -26,11 +27,7 @@ function formatPrice(p: number) {
   return `€${p % 1 ? p.toFixed(2) : p}`;
 }
 
-function clip(text: string, max: number) {
-  if (text.length <= max) return text;
-  const cut = text.slice(0, max - 1);
-  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[.,;:\s]+$/, '')}…`;
-}
+const clip = clipDescription;
 
 function firstSentence(text: string, max = 110) {
   const s = text.split(/(?<=\.)\s/)[0];
@@ -46,12 +43,16 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const sizeRange = `${product.sizes[0]}–${product.sizes[product.sizes.length - 1]}`;
   // Named shirts share a description with their plain version, so lead with the print to keep each one unique.
   const printed = product.details.print ? `Printed ${product.details.print}. ` : '';
-  const description = clip(`${printed}${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`, 160);
+  // Two versions of the same named shirt (e.g. a Champions League edition) also lead with the title.
+  const body = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`;
+  const twins = allProducts.filter((p) => p.details.print === product.details.print && firstSentence(p.description) === firstSentence(product.description));
+  const lead = twins.length > 1 ? `${product.title}. ` : printed;
+  const description = clip(`${lead}${body}`, 160);
   const image = product.images[0] ? `${SITE}${product.images[0]}` : undefined;
 
   return {
     // The site template adds " | Ériu Sports", so keep the rest short enough for a search result.
-    title: `${product.title} | ${price}`.length <= 50 ? `${product.title} | ${price}` : product.title,
+    title: `${product.title} | ${price}`.length <= 50 ? `${product.title} | ${price}` : pageTitle(product.title),
     description,
     alternates: { canonical: `/products/${product.slug}` },
     // Keep the hidden test product out of search engines.
@@ -142,6 +143,8 @@ export default async function ProductDetail({ params }: ProductPageProps) {
       category: collection.name,
       ...(product.details.colours ? { color: product.details.colours } : {}),
       size: product.sizes.join(', '),
+      // Kids kits: tell shopping and AI search the age range the sizes cover.
+      ...(product.title.includes('Kids') ? { audience: { '@type': 'PeopleAudience', suggestedMinAge: 2, suggestedMaxAge: 13 } } : {}),
       // Plain facts AI and shopping search can quote: team, season, kit, sponsor, print.
       additionalProperty: details
         .filter(([key]) => key !== 'fit' && key !== 'condition' && key !== 'colours')

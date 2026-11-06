@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/make-thumbs.mjs",
     "build": "next build",
     "start": "next start",
     "build:worker": "opennextjs-cloudflare build",

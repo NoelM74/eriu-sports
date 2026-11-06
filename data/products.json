@@ -15828,5 +15828,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000096",
+    "title": "Chelsea 1997-99 Home Kids Kit",
+    "slug": "chelsea-1997-99-home-kids-kit",
+    "description": "Chelsea's home kit from 1997 to 1999, in kids sizes. It's blue with a tonal stripe, white panels under the arms edged in yellow and navy, and white cuffs. The white collar is striped in yellow and navy, with CHELSEA F.C. on the back. Autoglass is across the chest in white and the lion crest sits in a navy roundel. The blue shorts have a white side panel and the crest on the leg.\n\nChelsea won the League Cup and the Cup Winners' Cup in 1998, with Gianfranco Zola scoring the winner in the Stockholm final. We have the adult shirt too, plain or printed for Zola and Vialli. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000096-1.webp",
+      "/images/kids-kits/900000096-2.webp",
+      "/images/kids-kits/900000096-3.webp",
+      "/images/kids-kits/900000096-4.webp",
+      "/images/kids-kits/900000096-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Chelsea FC",
+      "season": "1997-99",
+      "kit": "Home",
+      "sponsor": "Autoglass",
+      "colours": "Blue / White / Yellow",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

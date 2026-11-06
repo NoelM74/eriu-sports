@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { clipDescription } from '@/lib/seo';
 import Link from 'next/link';
 import AboutSection from '@/components/catalog/AboutSection';
 import { PLAYER_ABOUT } from '@/lib/page-copy';
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const player = getPlayerBySlug(slug);
   if (!player) return { title: 'Player not found' };
-  const description = intro(player.name, player.count, player.teams);
+  const description = clipDescription(intro(player.name, player.count, player.teams));
   return {
     title: `${player.name} Shirts | Retro Name & Number`,
     description,

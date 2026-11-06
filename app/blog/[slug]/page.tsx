@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { pageTitle, clipDescription } from '@/lib/seo';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -39,8 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPost(slug);
   if (!post) return { title: 'Story not found' };
   return {
-    title: post.seoTitle,
-    description: post.description,
+    title: pageTitle(post.seoTitle),
+    description: clipDescription(post.description),
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       type: 'article',
