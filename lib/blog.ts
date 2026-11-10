@@ -1546,6 +1546,241 @@ export const POSTS: BlogPost[] = [
     ],
     cta: { label: "Shop retro Liverpool shirts", href: "/clubs/liverpool" },
   },
+  {
+    slug: "ac-milan-2003-2007-champions-league-final-shirts",
+    title: "AC Milan 2003 and 2007: The Champions League Final Shirts",
+    seoTitle: "AC Milan 2003 & 2007 Champions League Final Shirts",
+    description:
+      "Old Trafford in 2003 and Athens in 2007. The white away shirts AC Milan wore to beat Juventus on penalties and Liverpool 2-1, and the Kaká and Inzaghi prints.",
+    category: "European & World Classics",
+    datePublished: "2026-11-10",
+    heroImage: "/images/blog/old-trafford-2003-champions-league-final.webp",
+    heroAlt: "Old Trafford lit up at night after the 2003 Champions League final, with giant star balls hanging over the pitch",
+    heroFit: "cover",
+    heroCredit: {
+      author: "manc72 (Matthew Wilkinson)",
+      license: "CC BY-SA 2.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Old_Trafford_(2003_UEFA_Champions_League_Final).jpg",
+    },
+    intro:
+      "AC Milan reached three Champions League finals in five seasons. They won at Old Trafford in 2003, lost to Liverpool in Istanbul in 2005, and beat Liverpool in Athens two years later. Both wins came in white away shirts, and we stock both.",
+    sections: [
+      {
+        heading: "Old Trafford, 28 May 2003",
+        paragraphs: [
+          "It was the first Champions League final between two Italian clubs. Milan and Juventus drew 0-0 after extra time in Manchester, and it went to penalties.",
+          "Dida saved from David Trezeguet, Marcelo Zalayeta and Paolo Montero. Andriy Shevchenko scored the last kick, and Milan won the shoot-out 3-2.",
+          "Paolo Maldini lifted the cup. His father Cesare had done the same for Milan at Wembley in 1963, forty years earlier.",
+        ],
+      },
+      {
+        heading: "Istanbul in between",
+        paragraphs: [
+          "In 2005 Milan led Liverpool 3-0 at half-time and lost on penalties. Liverpool fans still bring it up, and we tell that side of it in our Istanbul story.",
+        ],
+      },
+      {
+        heading: "The road to Athens",
+        paragraphs: [
+          "Milan started the 2006-07 Champions League in the qualifying rounds, a penalty from the Italian football scandal of 2006.",
+          "In the semi-final they lost 3-2 at Old Trafford, then beat Manchester United 3-0 at San Siro. Kaká and Clarence Seedorf scored before half-time, and Alberto Gilardino added the third.",
+        ],
+      },
+      {
+        heading: "Athens, 23 May 2007",
+        paragraphs: [
+          "Liverpool again. Just before half-time, Andrea Pirlo's free kick hit Filippo Inzaghi and went past Pepe Reina. On 82 minutes Kaká put Inzaghi through and he rolled in the second. Dirk Kuyt scored late for Liverpool, and it finished 2-1.",
+          "It was Milan's seventh European Cup. Maldini, at 38, lifted it as captain. Kaká finished as the competition's top scorer with 10 goals, and won the Ballon d'Or that year.",
+        ],
+      },
+      {
+        heading: "The shirts",
+        paragraphs: [
+          "The 2003 final shirt is white with a red V-neck, red and black stripes on the shoulders and Opel across the chest. The final's details, Old Trafford, Manchester, 28 May 2003, are stitched in gold under the crest.",
+          "The 2007 final shirt is white with curved red and black panels and bwin across the chest, with 'The Final Athens 2007' stitched on the front. From the same season there's the red and black striped home, printed KAKÁ 22, INZAGHI 9, PIRLO 21 or MALDINI 3. Sizes run S to 2XL.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Who scored the winning penalty in the 2003 Champions League final?",
+        a: "Andriy Shevchenko. Milan and Juventus drew 0-0 at Old Trafford on 28 May 2003, and Milan won the shoot-out 3-2.",
+      },
+      {
+        q: "Who scored in the 2007 Champions League final?",
+        a: "Filippo Inzaghi scored both of Milan's goals and Dirk Kuyt scored for Liverpool. Milan won 2-1 in Athens on 23 May 2007.",
+      },
+      { q: "What did AC Milan wear in the 2003 and 2007 finals?", a: "Their white away shirts, both times." },
+      { q: "What number did Kaká wear for AC Milan?", a: "22. He was the top scorer in the 2006-07 Champions League with 10 goals." },
+    ],
+    products: [
+      "ac-milan-2007-champions-league-final-away-shirt",
+      "ac-milan-2003-champions-league-final-away-shirt-shevchenko-7",
+      "ac-milan-2006-07-home-shirt-kaka-22",
+      "ac-milan-2006-07-champions-league-home-shirt-inzaghi-9",
+      "ac-milan-2003-champions-league-final-away-shirt",
+      "ac-milan-2003-champions-league-final-away-shirt-maldini-3",
+      "ac-milan-2003-champions-league-final-away-shirt-nesta-13",
+      "ac-milan-2006-07-champions-league-home-shirt-pirlo-21",
+      "ac-milan-2006-07-champions-league-home-shirt-maldini-3",
+    ],
+    cta: { label: "Shop AC Milan shirts", href: "/clubs/ac-milan" },
+  },
+  {
+    slug: "chelsea-1997-98-zola-vialli-shirts",
+    title: "Chelsea 1997 and 1998: Zola, Vialli and Three Cups in a Year",
+    seoTitle: "Chelsea 1997-98 Shirts: Zola, Vialli and Three Cups",
+    description:
+      "Di Matteo after 43 seconds at Wembley, Vialli as player-manager and Zola's winner in Stockholm. Chelsea's three cups in a year, and the shirts they wore.",
+    category: "Premier League Classics",
+    datePublished: "2026-11-10",
+    heroImage: "/images/blog/cover-chelsea-1997-98-zola-vialli-shirts.webp",
+    heroAlt: "Chelsea 1997-99 home shirt in blue with white sleeve panels, a yellow and navy trimmed collar and Autoglass on the front",
+    heroFit: "cover",
+    intro:
+      "Chelsea went 26 years without a major trophy. Then they won three in twelve months: the FA Cup in May 1997, the League Cup in March 1998 and the Cup Winners' Cup in May 1998. Gianfranco Zola was at the heart of it, in the 25 shirt.",
+    sections: [
+      {
+        heading: "Wembley, 43 seconds",
+        paragraphs: [
+          "Ruud Gullit was player-manager when Chelsea met Middlesbrough in the FA Cup final on 17 May 1997. Roberto Di Matteo scored after 43 seconds, at the time the fastest goal in a Wembley FA Cup final.",
+          "Late on, Zola flicked the ball on for Eddie Newton to make it 2-0. It was Chelsea's first major trophy since 1971.",
+        ],
+      },
+      {
+        heading: "Zola",
+        paragraphs: [
+          "Zola joined from Parma in November 1996 and was given the number 25. By the end of that first season the football writers had voted him Footballer of the Year.",
+        ],
+        image: {
+          src: "/images/blog/zola-25-chelsea-legends-2018.webp",
+          alt: "Gianfranco Zola in a blue Chelsea shirt with ZOLA 25 on the back",
+          caption: "Zola back in the 25 shirt for a Chelsea Legends match against Inter Forever, 18 May 2018.",
+          credit: {
+            author: "Chelsea Debs",
+            license: "CC BY-SA 2.0",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Chelsea_Legends_1_Inter_Forever_4_(28453498678).jpg",
+          },
+        },
+      },
+      {
+        heading: "Vialli takes over",
+        paragraphs: [
+          "Gullit was sacked on 12 February 1998, and Gianluca Vialli, then 33, became player-manager.",
+          "Six weeks later Chelsea were back at Wembley against Middlesbrough, this time in the League Cup final. It was goalless after 90 minutes. Frank Sinclair and Di Matteo scored in extra time.",
+        ],
+      },
+      {
+        heading: "Stockholm, 13 May 1998",
+        paragraphs: [
+          "Zola started the Cup Winners' Cup final against Stuttgart on the bench at the Råsunda Stadium. He came on for Tore André Flo after about 70 minutes and, within seconds, ran onto a pass from Dennis Wise and scored with a half-volley.",
+          "Dan Petrescu was sent off late, and Chelsea held on to win 1-0.",
+        ],
+      },
+      {
+        heading: "The shirts",
+        paragraphs: [
+          "The 1995-97 home is royal blue with a yellow-trimmed collar and Coors on the front. We have it plain or printed GULLIT 4. The yellow away from 1996-97 has sky blue stripes.",
+          "The 1997-99 home brought in Autoglass, white panels under the arms and yellow and navy piping on the shoulders. It comes plain or printed ZOLA 25 or VIALLI 9, and there's a kids kit too.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Who scored in the 1997 FA Cup final?",
+        a: "Roberto Di Matteo after 43 seconds and Eddie Newton late on. Chelsea beat Middlesbrough 2-0 at Wembley on 17 May 1997.",
+      },
+      {
+        q: "Who scored the winner in the 1998 Cup Winners' Cup final?",
+        a: "Gianfranco Zola, within seconds of coming off the bench. Chelsea beat Stuttgart 1-0 in Stockholm on 13 May 1998.",
+      },
+      { q: "What number did Zola wear for Chelsea?", a: "25." },
+      { q: "When did Vialli become Chelsea manager?", a: "In February 1998, as player-manager, after Ruud Gullit was sacked." },
+    ],
+    products: [
+      "chelsea-1997-99-home-shirt-zola-25",
+      "chelsea-1995-97-home-shirt-gullit-4",
+      "chelsea-1997-99-home-shirt-vialli-9",
+      "chelsea-1996-97-away-shirt",
+      "chelsea-1997-99-home-shirt",
+      "chelsea-1995-97-home-shirt",
+      "chelsea-1995-97-home-shirt-vialli-9",
+      "chelsea-1997-99-home-kids-kit",
+    ],
+    cta: { label: "Shop Chelsea shirts", href: "/clubs/chelsea" },
+  },
+  {
+    slug: "real-madrid-centenary-shirt-zidane-hampden-2002",
+    title: "Real Madrid 2001/02: The Centenary Shirt and Zidane's Volley at Hampden",
+    seoTitle: "Real Madrid Centenary Shirt 2002: Zidane at Hampden",
+    description:
+      "A cup final lost on their 100th birthday, then Zidane's volley at Hampden Park for a ninth European Cup. The story of Real Madrid's 2001/02 centenary shirts.",
+    category: "European & World Classics",
+    datePublished: "2026-11-10",
+    heroImage: "/images/blog/hampden-park-glasgow-2004.webp",
+    heroAlt: "Hampden Park in Glasgow in 2004, seen from the road with the stadium sign in front",
+    heroFit: "cover",
+    heroCredit: {
+      author: "T-Rence",
+      license: "CC BY-SA 3.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hampden_Stadium.jpg",
+    },
+    intro:
+      "Real Madrid turned 100 in the 2001/02 season, and the white centenary shirt they finished it in had no sponsor on the front. They lost a cup final on the birthday itself. Ten weeks later, in Glasgow, Zinedine Zidane scored one of the great Champions League goals in it.",
+    sections: [
+      {
+        heading: "A birthday to forget",
+        paragraphs: [
+          "The club was founded on 6 March 1902. On 6 March 2002 Real played Deportivo La Coruña in the Copa del Rey final at the Bernabéu.",
+          "Sergio and Diego Tristán put Deportivo 2-0 up, and Raúl's goal wasn't enough. The Spanish press called it the Centenariazo.",
+        ],
+      },
+      {
+        heading: "Glasgow, 15 May 2002",
+        paragraphs: [
+          "Zidane had joined from Juventus the summer before for a world-record fee. In the Champions League final against Bayer Leverkusen at Hampden Park, Raúl scored after eight minutes and Lúcio equalised six minutes later.",
+          "Just before half-time Roberto Carlos sent a looping cross towards the edge of the box. Zidane met it on the volley with his left foot and it flew into the top corner.",
+          "In the second half César went off injured, and 20-year-old Iker Casillas came on. He made a run of saves near the end, and Real held on to win 2-1. It was their ninth European Cup, La Novena.",
+        ],
+      },
+      {
+        heading: "Hampden had seen it before",
+        paragraphs: [
+          "Real had won a European Cup final at Hampden once already. In 1960 they beat Eintracht Frankfurt 7-3 in front of 127,621, with four goals from Ferenc Puskás and three from Alfredo Di Stéfano.",
+        ],
+      },
+      {
+        heading: "The centenary shirts",
+        paragraphs: [
+          "The home is all white with a polo collar and no sponsor on the front. The crest sits on the chest, with the centenary logo on the sleeve. Real wore it at Hampden.",
+          "There's a black away with a polo collar and a purple third with a V-neck, both from the same 100th season. Sizes run S to 2XL.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Who scored in the 2002 Champions League final?",
+        a: "Raúl and Zinedine Zidane for Real Madrid, and Lúcio for Bayer Leverkusen. Real won 2-1 at Hampden Park on 15 May 2002.",
+      },
+      {
+        q: "Who crossed the ball for Zidane's volley?",
+        a: "Roberto Carlos, from the left. Zidane volleyed it in with his left foot just before half-time.",
+      },
+      { q: "When was Real Madrid's centenary?", a: "6 March 2002. The club was founded on 6 March 1902." },
+      { q: "Did Real Madrid's centenary shirt have a sponsor?", a: "No. The white home shirt they wore at Hampden had no sponsor on the front." },
+    ],
+    products: [
+      "real-madrid-2001-02-centenary-home-shirt",
+      "real-madrid-2001-02-centenary-away-shirt",
+      "real-madrid-2001-02-centenary-third-shirt",
+      "real-madrid-2000-01-home-shirt",
+      "real-madrid-2003-04-home-shirt",
+    ],
+    cta: { label: "Shop Real Madrid shirts", href: "/clubs/real-madrid" },
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
