@@ -995,7 +995,10 @@
       "colours": "Sky Blue / Navy / White",
       "fit": "Player fit, snug through the body. Go up a size for a looser fit",
       "condition": "New"
-    }
+    },
+    "soldOut": [
+      "S"
+    ]
   },
   {
     "id": "581046590",
