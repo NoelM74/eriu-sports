@@ -15763,5 +15763,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000105",
+    "title": "Real Madrid 1999-01 Away Kids Kit",
+    "slug": "real-madrid-1999-01-away-kids-kit",
+    "description": "Real Madrid's black away kit from 1999 to 2001, in kids sizes. Gold stripes run over the shoulders, and the cuffs and split hem are edged in gold. The black collar has a gold V at the neck, with a small gold badge just below it. Teka is across the chest in white, with the crest embroidered on the left. A small crest patch with black and white stripes sits near the hem. The black shorts have gold stripes down the leg and the crest, and the waistband is striped in gold.\n\nReal won the Champions League in May 2000 and La Liga in 2000-01, the season Luís Figo arrived from Barcelona. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000105-1.webp",
+      "/images/kids-kits/900000105-2.webp",
+      "/images/kids-kits/900000105-3.webp",
+      "/images/kids-kits/900000105-4.webp",
+      "/images/kids-kits/900000105-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Madrid",
+      "season": "1999-01",
+      "kit": "Away",
+      "sponsor": "Teka",
+      "colours": "Black / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
