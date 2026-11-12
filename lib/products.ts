@@ -314,14 +314,14 @@ const KIDS_SECTIONS = [
 
 /**
  * Split kids kits into headed sections: current Premier League, international and
- * European club kits, then retro kits (anything from before 2015). Empty sections are dropped.
+ * European club kits, then retro kits (anything from before 2020). Empty sections are dropped.
  */
 export function groupKidsKits(items: Product[]): { id: string; label: string; items: Product[] }[] {
   const premierLeague = new Set(
     products.filter((p) => p.collection === 'Premier League Classics').map((p) => p.details.team)
   );
   const sectionOf = (p: Product) => {
-    if (seasonStart(p) < 2015) return 'retro';
+    if (seasonStart(p) < 2020) return 'retro';
     if (NATIONAL_TEAMS.has(p.details.team ?? '')) return 'international';
     if (premierLeague.has(p.details.team)) return 'premier-league';
     return 'world-clubs';

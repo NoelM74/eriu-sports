@@ -88,7 +88,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - Collections: "Retro Irish Jerseys" (slug `ireland-classics`, name "Irish Classics", includes League of Ireland), Premier League Classics, European & World Classics, Kids Football Kits, GAA Jerseys, GAA Training Vests, AFL Jerseys.
 - Titles: "Team Season Kit [Kids Kit]" e.g. "Arsenal 2026-27 Home Kids Kit". Named shirts add "– Player Number".
 - Team names in data: "Arsenal FC", "Chelsea FC", "Liverpool FC", "Manchester United", "Barcelona", "Republic of Ireland". Don't change them.
-- Kids kit sections (auto): Premier League, International, European & World Clubs, Retro Classics (anything before 2015).
+- Kids kit sections (auto): Premier League, International, European & World Clubs, Retro Classics (anything before 2020; changed from 2015 on 12 November 2026 so the 2016-17 Real Madrid kit sits with the retro kits).
 
 ## 6. How we work (workflow rules)
 
