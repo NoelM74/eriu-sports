@@ -15729,5 +15729,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000104",
+    "title": "Real Madrid 2016-17 Home Kids Kit",
+    "slug": "real-madrid-2016-17-home-kids-kit",
+    "description": "Real Madrid's 2016-17 home kit in kids sizes. It's white with a buttoned polo collar and navy cuffs, and navy stripes run down each side. Fly Emirates is printed in navy across the chest, with the crest embroidered on the left. The white shorts have navy stripes down the leg and the crest near the hem.\n\nZidane's side won La Liga and the Champions League that season, beating Juventus 4-1 in the Cardiff final. They were the first club to retain the Champions League. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000104-1.webp",
+      "/images/kids-kits/900000104-2.webp",
+      "/images/kids-kits/900000104-3.webp",
+      "/images/kids-kits/900000104-4.webp",
+      "/images/kids-kits/900000104-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Madrid",
+      "season": "2016-17",
+      "kit": "Home",
+      "sponsor": "Emirates",
+      "colours": "White / Navy",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
