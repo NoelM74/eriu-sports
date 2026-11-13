@@ -15967,5 +15967,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000111",
+    "title": "Manchester United 1993-95 Away Kids Kit",
+    "slug": "manchester-united-1993-95-away-kids-kit",
+    "description": "United's black away kit from 1993 to 1995, in kids sizes. The black has a faint tonal stripe, and the collar is tipped in blue and white with a gold V at the neck. The cuffs are blue patterned with gold piping. SHARP VIEWCAM is across the chest in gold, and the crest sits in a gold-edged shield. The black shorts have the same blue patterned band at the hem, with the crest on the leg.\n\nRoy Keane's first season at United, after he signed from Nottingham Forest in July 1993. United won the Double, beating Chelsea 4-0 in the FA Cup final. We have the adult shirt too, plain or printed CANTONA 7. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000111-1.webp",
+      "/images/kids-kits/900000111-2.webp",
+      "/images/kids-kits/900000111-3.webp",
+      "/images/kids-kits/900000111-4.webp",
+      "/images/kids-kits/900000111-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1993-95",
+      "kit": "Away",
+      "sponsor": "Sharp Viewcam",
+      "colours": "Black / Gold / Blue",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

@@ -1241,6 +1241,7 @@ export const POSTS: BlogPost[] = [
       "Roy Keane's first season, a Double, and Cantona at his best. The story of United's all-black away shirt from 1993-95, with Sharp Viewcam across the chest in gold.",
     category: "Premier League Classics",
     datePublished: "2026-10-22",
+    dateModified: "2026-11-13",
     heroImage: "/images/blog/cover-manchester-united-1993-95-black-away-shirt.webp",
     heroAlt: "Manchester United 1993-95 black away shirt with gold Sharp Viewcam lettering",
     heroFit: "cover",
@@ -1271,6 +1272,7 @@ export const POSTS: BlogPost[] = [
         heading: "Plain or Cantona 7",
         paragraphs: [
           "We stock the shirt plain for €25, or printed CANTONA 7, his number at United, for €35. Sizes run S to 2XL. If you want the Treble shirt from five years later, that's on the site too.",
+          "There's a kids kit too, shirt and shorts in sizes for ages 2 to 13, for €30.",
         ],
       },
     ],
@@ -1282,6 +1284,7 @@ export const POSTS: BlogPost[] = [
     products: [
       "manchester-united-away-1993-95",
       "manchester-united-1993-95-away-shirt-cantona-7",
+      "manchester-united-1993-95-away-kids-kit",
       "manchester-united-98-99-treble-season",
     ],
     cta: { label: "Shop retro Man United shirts", href: "/clubs/manchester-united" },
