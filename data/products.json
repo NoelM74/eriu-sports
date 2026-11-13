@@ -15933,5 +15933,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000110",
+    "title": "AC Milan 1993-94 Away Kids Kit",
+    "slug": "ac-milan-1993-94-away-kids-kit",
+    "description": "Milan's white away kit from 1993-94, in kids sizes. A red and black band runs across the chest, and the white collar and cuffs are tipped in red and black. Motta is across the chest in red, with the champions' shield under a gold star. White shorts with the crest on the leg.\n\nMilan won Serie A and then beat Barcelona 4-0 in the Champions League final in Athens. They wore white that night, with Motta across the front. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000110-1.webp",
+      "/images/kids-kits/900000110-2.webp",
+      "/images/kids-kits/900000110-3.webp",
+      "/images/kids-kits/900000110-4.webp",
+      "/images/kids-kits/900000110-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "AC Milan",
+      "season": "1993-94",
+      "kit": "Away",
+      "sponsor": "Motta",
+      "colours": "White / Red / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
