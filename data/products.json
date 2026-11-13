@@ -16001,5 +16001,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000112",
+    "title": "Manchester United 1996-98 Home Kids Kit",
+    "slug": "manchester-united-1996-98-home-kids-kit",
+    "description": "United's home kit from 1996 to 1998, in kids sizes. The red carries a faint print of Old Trafford on both sides of the chest, and the sleeves have a darker diamond pattern. It has a white collar with a grey buttoned placket. SHARP is across the chest in white, with the crest in the middle above it and 'Theatre of Dreams' below. The white shorts have a red stripe down the side and the crest on the leg.\n\nUnited won the Premier League in 1996-97, Eric Cantona's last season before he retired. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000112-1.webp",
+      "/images/kids-kits/900000112-2.webp",
+      "/images/kids-kits/900000112-3.webp",
+      "/images/kids-kits/900000112-4.webp",
+      "/images/kids-kits/900000112-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "1996-98",
+      "kit": "Home",
+      "sponsor": "Sharp",
+      "colours": "Red / White / Grey",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
