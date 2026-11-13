@@ -16035,5 +16035,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000113",
+    "title": "Manchester United 2008-09 Away Kids Kit",
+    "slug": "manchester-united-2008-09-away-kids-kit",
+    "description": "United's white away kit from 2008-09, in kids sizes. Navy panels run down the sides, and the navy collar has a red V at the neck with 'MUFC' at the back. AIG is across the chest in navy inside a navy box, with the crest on the left. The navy shorts have a white stripe down the side and the crest on the leg.\n\nUnited won the league that season, their 18th title, level with Liverpool. It was Cristiano Ronaldo's last season at United before joining Real Madrid. We have the adult shirt too, plain or printed RONALDO 7. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000113-1.webp",
+      "/images/kids-kits/900000113-2.webp",
+      "/images/kids-kits/900000113-3.webp",
+      "/images/kids-kits/900000113-4.webp",
+      "/images/kids-kits/900000113-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Manchester United",
+      "season": "2008-09",
+      "kit": "Away",
+      "sponsor": "AIG",
+      "colours": "White / Navy / Red",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
