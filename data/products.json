@@ -15865,5 +15865,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000108",
+    "title": "AC Milan 2009-10 Away Kids Kit",
+    "slug": "ac-milan-2009-10-away-kids-kit",
+    "description": "Milan's white away kit from 2009-10, in kids sizes. Red and black stripes run over the shoulders, and the collar is trimmed in red and black. The cuffs are red, with mesh panels down the sides. bwin is across the chest in black, with the crest and a gold star on the left. 'A.C. Milan' is stitched in gold at the back of the neck. The white shorts have red and black stripes down the leg and the crest with its star.\n\nLeonardo's one season as Milan manager. David Beckham joined on loan in January. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000108-1.webp",
+      "/images/kids-kits/900000108-2.webp",
+      "/images/kids-kits/900000108-3.webp",
+      "/images/kids-kits/900000108-4.webp",
+      "/images/kids-kits/900000108-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "AC Milan",
+      "season": "2009-10",
+      "kit": "Away",
+      "sponsor": "bwin",
+      "colours": "White / Red / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
