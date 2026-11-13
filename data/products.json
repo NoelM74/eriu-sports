@@ -15831,5 +15831,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000107",
+    "title": "AC Milan 1996-97 Home Kids Kit",
+    "slug": "ac-milan-1996-97-home-kids-kit",
+    "description": "Milan's red and black striped home kit from 1996-97, in kids sizes. The black collar is trimmed with thin red stripes, and the cuffs are black with red edging. The champions' shield sits under a gold star on the chest. Opel is across the front in white, and the crest is on the sleeve. White shorts with the crest on the leg.\n\nMilan wore the champions' shield after winning Serie A the season before. It was Roberto Baggio's second and last season at the club. We have the adult shirt too. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000107-1.webp",
+      "/images/kids-kits/900000107-2.webp",
+      "/images/kids-kits/900000107-3.webp",
+      "/images/kids-kits/900000107-4.webp",
+      "/images/kids-kits/900000107-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "AC Milan",
+      "season": "1996-97",
+      "kit": "Home",
+      "sponsor": "Opel",
+      "colours": "Red / Black / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
