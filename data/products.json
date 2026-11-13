@@ -15899,5 +15899,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000109",
+    "title": "AC Milan 2006-07 Home Kids Kit",
+    "slug": "ac-milan-2006-07-home-kids-kit",
+    "description": "Milan's 2006-07 home kit in kids sizes. The red and black stripes are framed by black panels, with thin gold piping curving over the shoulders. The black collar is trimmed in red, and red stripes run down the sleeves. bwin is across the chest in white with a yellow dot, and the crest sits under a gold star on the left. The black shorts have red stripes and gold piping, with the crest and star on the leg.\n\nMilan won the Champions League that season, beating Liverpool 2-1 in Athens, two years after losing to them in Istanbul. Filippo Inzaghi scored both goals. We have the adult shirt too, plain or printed. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000109-1.webp",
+      "/images/kids-kits/900000109-2.webp",
+      "/images/kids-kits/900000109-3.webp",
+      "/images/kids-kits/900000109-4.webp",
+      "/images/kids-kits/900000109-5.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "AC Milan",
+      "season": "2006-07",
+      "kit": "Home",
+      "sponsor": "bwin",
+      "colours": "Red / Black / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
