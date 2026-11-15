@@ -16069,5 +16069,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000114",
+    "title": "Adelaide Crows Indigenous AFL Jersey",
+    "slug": "adelaide-crows-indigenous-afl-jersey",
+    "description": "Adelaide's Indigenous round jersey in navy, with a large crow's head across the front outlined in red and gold, two birds in flight and circles of dot artwork. Red and gold bands with more dot artwork run round the hem. Toyota is on the chest, with Adelaide University and Hungry Jack's on the back. Sleeveless, in a regular fit.\n\nThe design was made for Sir Doug Nicholls Round by Crows defender Wayne Milera with artist Steven Warrior. It tells Milera's story, from his Narungga and Gunditjmara heritage to his path into the AFL.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/adelaide-crows-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/adelaide-crows-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Adelaide Crows",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Toyota",
+      "colours": "Navy / Red / Gold",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
