@@ -31,7 +31,7 @@ export const COLLECTION_ABOUT: Record<string, AboutCopy> = {
     paragraphs: [
       'Irish footballers have been crossing to Australian rules for decades. Jim Stynes, from Dublin, won the Brownlow Medal with Melbourne in 1991. Kerry man Tadhg Kennelly won a premiership with the Sydney Swans in 2005.',
       "More recently, Laois man Zach Tuohy won the 2022 premiership with Geelong, so our Geelong Cats jersey has an Irish story of its own.",
-      'We also stock St Kilda and Carlton, and Indigenous designs from Adelaide, Fremantle, Collingwood and Port Adelaide. All are sleeveless and regular fit, €25 each.',
+      'We also stock St Kilda and Carlton, and Indigenous designs from Adelaide, GWS Giants, Fremantle, Collingwood and Port Adelaide. All are sleeveless and regular fit, €25 each.',
     ],
   },
 };

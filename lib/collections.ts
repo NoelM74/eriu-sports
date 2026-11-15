@@ -123,11 +123,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "afl",
     h1: "AFL Jerseys",
     intro:
-      "Aussie Rules jerseys, including Indigenous designs from Adelaide, Fremantle, Collingwood and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
+      "Aussie Rules jerseys, including Indigenous designs from Adelaide, GWS Giants, Fremantle, Collingwood and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
     seoTitle: "AFL Jerseys | Ireland, UK & Worldwide Delivery",
     seoDescription:
-      "AFL jerseys from Adelaide, Collingwood, Carlton, Geelong, St Kilda, Fremantle and Port Adelaide. €25 each. Worldwide delivery, free over €49.",
-    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey"],
+      "AFL jerseys from Adelaide, GWS Giants, Collingwood, Carlton, Geelong, St Kilda, Fremantle and Port Adelaide. €25 each. Worldwide delivery, free over €49.",
+    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey"],
     priceFrom: 25,
   },
 ];
