@@ -16156,5 +16156,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000117",
+    "title": "Carlton Blues Indigenous AFL Jersey",
+    "slug": "carlton-blues-indigenous-afl-jersey",
+    "description": "Carlton's Indigenous round jersey in navy, with all the artwork in white. A large turtle shell rises from the hem on the front and back, with a small turtle either side and patterned panels on the shoulders. Hyundai and the white CFC monogram are on the front, with Ampol and Great Southern Bank on the back. Sleeveless, in a regular fit.\n\nThe design is by Yorta Yorta siblings Luke and Siena Tieri, inspired by their grandfather Glenn James, the first Aboriginal man to umpire in the VFL/AFL. The long-necked turtle is the Yorta Yorta totem, and its oval shell also suggests a football.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/carlton-blues-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/carlton-blues-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Carlton Blues",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Hyundai",
+      "colours": "Navy / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
