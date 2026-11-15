@@ -16127,5 +16127,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000116",
+    "title": "St Kilda Saints Indigenous AFL Jersey",
+    "slug": "st-kilda-saints-indigenous-afl-jersey",
+    "description": "St Kilda's Indigenous round jersey, with red, yellow and black stripes down the front, each carrying line artwork, and a dark woven pattern down the sides. CMC Markets and Chery are on the front with the St K.F.C. crest, and the Aboriginal and Torres Strait Islander flags sit low on the right. The back is black, with RSEA Safety, Chery and three circles joined by red waves above a boomerang. Sleeveless, in a regular fit.\n\nFor Sir Doug Nicholls Round the club plays under its Boon Wurrung name, Euro-Yroke, which is printed on the yellow trim at the hem. The names of the First Nations players who have represented St Kilda are printed on the back.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/st-kilda-saints-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/st-kilda-saints-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "St Kilda Saints",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "CMC Markets",
+      "colours": "Red / Yellow / Black",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
