@@ -16402,5 +16402,34 @@
       "S",
       "XL"
     ]
+  },
+  {
+    "id": "900000125",
+    "title": "Collingwood Magpies Women's Pride AFL Jersey",
+    "slug": "collingwood-magpies-womens-pride-afl-jersey",
+    "description": "Collingwood's AFLW Pride jersey in the black and white stripes, with a magpie's wings spread across the front in the colours of the Progress Pride flag. The same colours run in bands down both sides and in a V at the neck. AIA is on the front with the magpie crest. The back is black over the stripes, with KFC and a smaller pair of rainbow wings. Women's fit, sleeveless.\n\nThe design was made with the Collingwood AFLW players, and each feather stands for a colour of the Progress Pride flag. The team wore it in AFLW Pride Round.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/collingwood-magpies-womens-pride-afl-jersey-1.webp",
+      "/images/afl-jerseys/collingwood-magpies-womens-pride-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Collingwood Magpies",
+      "season": "Current",
+      "kit": "Pride",
+      "sponsor": "AIA",
+      "colours": "Black / White / Rainbow",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
