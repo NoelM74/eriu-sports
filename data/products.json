@@ -16518,5 +16518,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000129",
+    "title": "St Kilda Saints Women's AFL Home Jersey",
+    "slug": "st-kilda-saints-womens-afl-home-jersey",
+    "description": "St Kilda's AFLW home jersey in the club's red, white and black panels, with the St K.F.C. crest on a laurel wreath marked 150. Opal is on the front. The back is black with red piping, with Furphy, Pura and Est. 1873 under the collar. Women's fit, sleeveless.\n\nThe club was founded in 1873, and the 150 crest marks its 150th year.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/st-kilda-saints-womens-afl-home-jersey-1.webp",
+      "/images/afl-jerseys/st-kilda-saints-womens-afl-home-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "St Kilda Saints",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Opal",
+      "colours": "Red / White / Black",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
