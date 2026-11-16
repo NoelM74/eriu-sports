@@ -16340,5 +16340,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000123",
+    "title": "Adelaide Crows Dot Art Indigenous AFL Jersey",
+    "slug": "adelaide-crows-dot-art-indigenous-afl-jersey",
+    "description": "Adelaide's Indigenous round jersey in navy, covered in dot art in blue, red, gold and olive. A large circle sits in the middle, ringed by blue U shapes, with red footballs at each corner and white crow tracks along the paths at the sides. Toyota is on the front, with crypto.com and Hungry Jack's on the back, where the artwork runs down the sides. Sleeveless, in a regular fit.\n\nThe design is by Anmatyerr artist and educator April Napangardi Campbell, from the Ti Tree community in the Northern Territory, and aunt of Crows AFLW premiership player Danielle Ponter. Its theme is connection as one club, and the thin white lines around the crow tracks show the pathways for young people into football.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/adelaide-crows-dot-art-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/adelaide-crows-dot-art-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Adelaide Crows",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Toyota",
+      "colours": "Navy / Blue / Red / Gold",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
