@@ -127,7 +127,7 @@ export const COLLECTIONS: CollectionDef[] = [
     seoTitle: "AFL Jerseys | Ireland, UK & Worldwide Delivery",
     seoDescription:
       "AFL jerseys from Adelaide, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, St Kilda and more, with Indigenous designs. €25 each, free delivery over €49.",
-    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "Brisbane Lions jersey", "Melbourne Demons jersey", "North Melbourne jersey", "Sydney Swans jersey", "Essendon jersey", "Western Bulldogs jersey", "West Coast Eagles jersey", "AFLW jersey", "AFLW Pride jersey", "women's AFL jersey"],
+    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "Brisbane Lions jersey", "Melbourne Demons jersey", "North Melbourne jersey", "Sydney Swans jersey", "Essendon jersey", "Dreamtime at the G jersey", "Western Bulldogs jersey", "West Coast Eagles jersey", "AFLW jersey", "AFLW Pride jersey", "women's AFL jersey"],
     priceFrom: 25,
   },
 ];
