@@ -123,11 +123,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "afl",
     h1: "AFL Jerseys",
     intro:
-      "Aussie Rules jerseys, including Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, Richmond, St Kilda and the Western Bulldogs, plus women's AFLW home, Indigenous and Pride jerseys from clubs including Sydney and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
+      "Aussie Rules jerseys: home and away jerseys from Carlton, Collingwood, GWS Giants, St Kilda, Sydney and West Coast, Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, Richmond, St Kilda and the Western Bulldogs, plus women's AFLW home, Indigenous and Pride jerseys from clubs including Sydney and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
     seoTitle: "AFL Jerseys | Ireland, UK & Worldwide Delivery",
     seoDescription:
       "AFL jerseys from Adelaide, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, St Kilda and more, with Indigenous designs. €25 each, free delivery over €49.",
-    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "Brisbane Lions jersey", "Melbourne Demons jersey", "North Melbourne jersey", "Sydney Swans jersey", "Essendon jersey", "Western Bulldogs jersey", "AFLW jersey", "AFLW Pride jersey", "women's AFL jersey"],
+    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "Brisbane Lions jersey", "Melbourne Demons jersey", "North Melbourne jersey", "Sydney Swans jersey", "Essendon jersey", "Western Bulldogs jersey", "West Coast Eagles jersey", "AFLW jersey", "AFLW Pride jersey", "women's AFL jersey"],
     priceFrom: 25,
   },
 ];

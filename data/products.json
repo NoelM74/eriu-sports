@@ -16793,5 +16793,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000138",
+    "title": "West Coast Eagles AFL Home Jersey",
+    "slug": "west-coast-eagles-afl-home-jersey",
+    "description": "West Coast's home jersey in royal blue and gold, with the gold eagle's head on a blue panel that runs up to the neck. Hungry Jack's is on the chest, with Caltex just below the neck. The back is blue with gold flashes down the sides, Audi Centre Perth across the shoulders and Lendi lower down. Sleeveless, in a regular fit.\n\nHungry Jack's has backed the Eagles for five decades, through all four of their men's premiership seasons.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/west-coast-eagles-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/west-coast-eagles-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "West Coast Eagles",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Hungry Jack's",
+      "colours": "Royal Blue / Gold",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "L"
+    ]
   }
 ]
