@@ -16460,5 +16460,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000127",
+    "title": "North Melbourne Kangaroos Women's Indigenous AFL Jersey",
+    "slug": "north-melbourne-kangaroos-womens-indigenous-afl-jersey",
+    "description": "North Melbourne's AFLW Indigenous jersey in royal blue, with a football ground drawn in the centre and navy rivers running out to circles across the front. White and light blue lines flow over the rest, with patterned panels on the shoulders and sides. Mazda is on the front and back. Women's fit, sleeveless.\n\nThe design, Connecting Through Identity, is by Wemba Wemba, Gunditjmara, Ngadjonji and Taungurung artist Emma Bamblett. The ground is Arden Street Oval, and the circles are the players and their communities, joined to it by the waterways of their Country. Bunjil flies low on the back for the Wurundjeri people, with a coolamon on the left and a woman's figure on the right.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/north-melbourne-kangaroos-womens-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/north-melbourne-kangaroos-womens-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "North Melbourne Kangaroos",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Mazda",
+      "colours": "Royal Blue / Navy / White",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
