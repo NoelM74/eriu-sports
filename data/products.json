@@ -16764,5 +16764,34 @@
     "soldOut": [
       "2XL"
     ]
+  },
+  {
+    "id": "900000137",
+    "title": "GWS Giants Canberra AFL Home Jersey",
+    "slug": "gws-giants-canberra-afl-home-jersey",
+    "description": "The Giants' home jersey in orange over charcoal, with the big white G across the front and #NEVERSURRENDER inside the collar. Toyo Tires is on the chest. The back is all orange, with CANBERRA across the shoulders, WANN-GAL and NGUNNAWAL printed at the neck, and Harvey Norman. Sleeveless, in a regular fit.\n\nThe Giants split their home games between western Sydney and Canberra, and this is the version with the capital's name on the back.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/gws-giants-canberra-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/gws-giants-canberra-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "GWS Giants",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Toyo Tires",
+      "colours": "Orange / Charcoal / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
