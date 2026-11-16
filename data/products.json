@@ -16579,5 +16579,34 @@
     "soldOut": [
       "L"
     ]
+  },
+  {
+    "id": "900000131",
+    "title": "Port Adelaide Women's AFL Home Jersey",
+    "slug": "port-adelaide-womens-afl-home-jersey",
+    "description": "Port Adelaide's AFLW home jersey in black, with the club's white and teal chevron across the chest and a teal collar. MG is on the front. The back has a white band with 1870 under teal piping, with KFC above it and Santos below. Women's fit, sleeveless.\n\nPort Adelaide was founded in 1870, and teal joined the black and white when the club entered the AFL.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/port-adelaide-womens-afl-home-jersey-1.webp",
+      "/images/afl-jerseys/port-adelaide-womens-afl-home-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Port Adelaide",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "MG",
+      "colours": "Black / Teal / White",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
