@@ -4,7 +4,7 @@
  */
 import type { Product } from './products';
 
-export type ChartKey = 'football' | 'football-kids' | 'gaa' | 'gaa-kids' | 'afl';
+export type ChartKey = 'football' | 'football-kids' | 'gaa' | 'gaa-kids' | 'afl' | 'afl-womens';
 
 type Value = number | [number, number];
 
@@ -94,13 +94,29 @@ const AFL: ChartDef = {
   howTo: FLAT_HOW_TO,
 };
 
-export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, 'football-kids': FOOTBALL_KIDS, gaa: GAA, 'gaa-kids': GAA_KIDS, afl: AFL };
+/** Women's AFL (AFLW) jerseys, measured flat. From the supplier's women's chart, which says they come up large. */
+const AFL_WOMENS: ChartDef = {
+  sizes: ['S', 'M', 'L', 'XL', '2XL'],
+  rows: [
+    { label: 'Chest', unit: 'cm', values: [52, 54, 56, 58, 60] },
+    { label: 'Length', unit: 'cm', values: [71, 73, 75, 77, 79] },
+    { label: 'Armhole', unit: 'cm', values: [28.7, 30, 31.3, 32.6, 33.9] },
+  ],
+  note: `${FLAT_NOTE} Women's AFL jerseys come up a little large, so if you're between sizes, take the smaller one.`,
+  howTo: FLAT_HOW_TO,
+};
+
+export const CHARTS: Record<ChartKey, ChartDef> = { football: FOOTBALL, 'football-kids': FOOTBALL_KIDS, gaa: GAA, 'gaa-kids': GAA_KIDS, afl: AFL, 'afl-womens': AFL_WOMENS };
+
+/** Women's products have "Women's" in the title. */
+export const isWomens = (title: string) => /\bwomen'?s\b/i.test(title);
 
 /** The chart that fits a product. */
 export function chartFor(product: Pick<Product, 'category' | 'title'>): ChartKey {
   const kids = /\bkids?\b/i.test(product.title);
   if (kids && product.category === 'football') return 'football-kids';
   if (kids && product.category === 'gaa') return 'gaa-kids';
+  if (product.category === 'afl' && isWomens(product.title)) return 'afl-womens';
   return product.category;
 }
 

@@ -1,6 +1,6 @@
 import { products, type Product } from '@/lib/products';
 import { CATEGORIES, getCollectionBySlug } from '@/lib/collections';
-import { chartFor } from '@/lib/size-chart';
+import { chartFor, isWomens } from '@/lib/size-chart';
 
 /**
  * Google Merchant Center product feed (RSS 2.0 with the g: namespace).
@@ -46,7 +46,7 @@ function items(p: Product): string[] {
       ['g:identifier_exists', 'no'],
       ['g:google_product_category', 'Apparel & Accessories > Clothing > Activewear'],
       ['g:product_type', [category?.label, collection?.h1].filter(Boolean).join(' > ')],
-      ['g:gender', 'unisex'],
+      ['g:gender', isWomens(p.title) ? 'female' : 'unisex'],
       ['g:age_group', kids ? 'kids' : 'adult'],
       ['g:color', colour || undefined],
       ['g:size', size],

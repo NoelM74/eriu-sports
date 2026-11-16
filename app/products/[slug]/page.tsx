@@ -12,6 +12,7 @@ import { ldJson } from '@/lib/jsonld';
 import { getPosts } from '@/lib/blog';
 import { reviewsFor } from '@/lib/reviews';
 import ReviewQuote from '@/components/reviews/ReviewQuote';
+import { isWomens } from '@/lib/size-chart';
 
 const SITE = 'https://eriusports.com';
 
@@ -145,6 +146,8 @@ export default async function ProductDetail({ params }: ProductPageProps) {
       size: product.sizes.join(', '),
       // Kids kits: tell shopping and AI search the age range the sizes cover.
       ...(product.title.includes('Kids') ? { audience: { '@type': 'PeopleAudience', suggestedMinAge: 2, suggestedMaxAge: 13 } } : {}),
+      // Women's jerseys: say who they are cut for.
+      ...(isWomens(product.title) ? { audience: { '@type': 'PeopleAudience', suggestedGender: 'female' } } : {}),
       // Plain facts AI and shopping search can quote: team, season, kit, sponsor, print.
       additionalProperty: details
         .filter(([key]) => key !== 'fit' && key !== 'condition' && key !== 'colours')
