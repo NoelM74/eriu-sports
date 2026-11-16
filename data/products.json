@@ -16825,5 +16825,37 @@
     "soldOut": [
       "L"
     ]
+  },
+  {
+    "id": "900000139",
+    "title": "Gold Coast Suns AFL Home Jersey",
+    "slug": "gold-coast-suns-afl-home-jersey",
+    "description": "Gold Coast's home jersey in bright red, with yellow panels down both sides and the GC logo in a gold oval on the front. Hostplus is on the chest, with plungie just below the neck. The back is red with Knotwood across the shoulders and Sixt lower down. Sleeveless, in a regular fit.\n\nThe Suns joined the AFL in 2011 as its 17th club.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/gold-coast-suns-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/gold-coast-suns-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Gold Coast Suns",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Hostplus",
+      "colours": "Red / Yellow",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "L"
+    ]
   }
 ]
