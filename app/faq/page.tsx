@@ -74,7 +74,7 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: 'What if a shirt sells out after I order?',
-        a: "Our stock is limited, so now and then a shirt sells out after an order comes in. We email you and refund the full price of that item through PayPal, within 14 days at the latest. If nothing in your order can be sent, we refund the delivery charge too. We never swap in a different shirt or size unless you ask.",
+        a: "Our stock is limited, so now and then a shirt sells out after an order comes in. We email you and refund the full price of that item through PayPal, within 14 days at the latest. We refund any delivery charge you paid too, and still send the rest of your order at no extra cost. We never swap in a different shirt or size unless you ask.",
       },
       {
         q: 'Are the shirts new?',

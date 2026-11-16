@@ -105,9 +105,8 @@ export default function TermsOfServicePage() {
             unless you ask us to.
           </p>
           <p>
-            If nothing in your order can be sent, we also refund the delivery charge. If the rest of your order can
-            still be sent, we send it at no extra cost, even if the refund takes your order below the free delivery
-            amount.
+            We also refund any delivery charge you paid, even if the rest of your order can still be sent. We send
+            the rest at no extra cost, even if the refund takes your order below the free delivery amount.
           </p>
           <p>
             Refunds go back to the way you paid, through PayPal, without delay and within 14 days at the latest. A
