@@ -16369,5 +16369,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000124",
+    "title": "Brisbane Lions Indigenous AFL Jersey",
+    "slug": "brisbane-lions-indigenous-afl-jersey",
+    "description": "Brisbane's Indigenous round jersey, with the gold lion on a maroon panel and blue rivers of dot art winding down both sides. A large circle of gold and white U shapes sits below the lion, with a white bird on the chest and gold trim at the collar and arms. McDonald's and Caltex are on the front. The back is maroon with a blue yoke, Hyundai and youi, and half of that circle again at the hem. Sleeveless, in a regular fit.\n\nThe design is by premiership players Des Headland and Ash McGrath, painted by Kevin Bynder, and tells the story of each player and his family in two halves. The initials DJH and CHM on the chest are for Des James Headland and Cliff Henry McGrath.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/brisbane-lions-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/brisbane-lions-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Brisbane Lions",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Caltex",
+      "colours": "Maroon / Blue / Gold",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "S",
+      "XL"
+    ]
   }
 ]

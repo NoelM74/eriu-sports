@@ -123,11 +123,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "afl",
     h1: "AFL Jerseys",
     intro:
-      "Aussie Rules jerseys, including Indigenous designs from Adelaide, Carlton, Collingwood, Fremantle, Gold Coast, GWS Giants, Hawthorn, Port Adelaide, Richmond and St Kilda, plus women's AFLW jerseys. Sleeveless, regular fit. €25 each, delivered worldwide.",
+      "Aussie Rules jerseys, including Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Fremantle, Gold Coast, GWS Giants, Hawthorn, Port Adelaide, Richmond and St Kilda, plus women's AFLW jerseys. Sleeveless, regular fit. €25 each, delivered worldwide.",
     seoTitle: "AFL Jerseys | Ireland, UK & Worldwide Delivery",
     seoDescription:
       "AFL jerseys from Adelaide, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, St Kilda and more, with Indigenous designs. €25 each, free delivery over €49.",
-    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "AFLW jersey", "women's AFL jersey"],
+    keywords: ["AFL jersey", "AFL jerseys Ireland", "Aussie Rules jersey", "AFL Indigenous jersey", "Collingwood jersey", "Adelaide Crows jersey", "GWS Giants jersey", "St Kilda Indigenous jersey", "Carlton Indigenous jersey", "Gold Coast Suns jersey", "Richmond Dreamtime jersey", "Brisbane Lions jersey", "AFLW jersey", "women's AFL jersey"],
     priceFrom: 25,
   },
 ];
