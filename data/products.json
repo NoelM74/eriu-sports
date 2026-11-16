@@ -16857,5 +16857,39 @@
     "soldOut": [
       "L"
     ]
+  },
+  {
+    "id": "900000140",
+    "title": "Brisbane Lions AFL Home Jersey",
+    "slug": "brisbane-lions-afl-home-jersey",
+    "description": "Brisbane's home jersey in maroon with a royal blue yoke and gold trim, and the gold lion with a football across the front. Small lions are printed all over in a darker shade. Caltex is on the chest, with McDonald's just below the neck. The back is maroon with BBFFC and Hyundai on the blue yoke and youi lower down. Sleeveless, in a regular fit.\n\nBBFFC stands for Brisbane Bears-Fitzroy Football Club, from the merger of the two clubs that formed the Lions.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/brisbane-lions-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/brisbane-lions-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Brisbane Lions",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Caltex",
+      "colours": "Maroon / Royal Blue / Gold",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "M",
+      "L",
+      "XL"
+    ]
   }
 ]
