@@ -16666,5 +16666,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000134",
+    "title": "Western Bulldogs Indigenous AFL Jersey",
+    "slug": "western-bulldogs-indigenous-afl-jersey",
+    "description": "The Bulldogs' Indigenous round jersey in royal blue with red trim, with a red band of white U shapes and circles sweeping across the chest. Below it, a large blue circle sits among dotted waterways, over a white band of tracks at the hem. Mission and F.F.C. are on the front. The back has Pedigree and CoinSpot, with red gum leaves, three white circles and paw prints. Sleeveless, in a regular fit.\n\nThe design is by artist Nathan Patterson with former Bulldog Lindsay Gilbee, from Gilbee's family story and the Boandik people of Mount Gambier. The big circle is the Blue Lake, with people gathered on its banks. On the back, the three circles are his family, his community and the club, and the prints are possum tracks, his totem.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/western-bulldogs-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/western-bulldogs-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Western Bulldogs",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Mission",
+      "colours": "Royal Blue / Red / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "L"
+    ]
   }
 ]
