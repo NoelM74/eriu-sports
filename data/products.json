@@ -16253,5 +16253,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000120",
+    "title": "Port Adelaide Eagle Indigenous AFL Jersey",
+    "slug": "port-adelaide-eagle-indigenous-afl-jersey",
+    "description": "Port Adelaide's Indigenous round jersey in black, with a white eagle across the front whose sky blue and white wings form the club's V. Seven feathers fall around the eagle, and the Aboriginal and Torres Strait Islander flags sit low on the right. MG is on the chest, and the back is black and white with KFC, GFG and a southern right whale ringed by emu tracks. Sleeveless, in a regular fit.\n\nThe design tells the story of Peter Burgoyne, a two-time Port Adelaide premiership player and a Mirning, Kokatha and Warai man, and was drawn with artist Laz Gein. The eagle was his grandfather's totem and the whale his grandmother's. The seven feathers stand for his children, and the 7 above the eagle's head is his old playing number.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/port-adelaide-eagle-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/port-adelaide-eagle-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Port Adelaide",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "MG",
+      "colours": "Black / Sky Blue / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
