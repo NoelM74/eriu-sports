@@ -12970,6 +12970,13 @@
       "L",
       "XL",
       "2XL"
+    ],
+    "soldOut": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
     ]
   },
   {
@@ -12994,6 +13001,13 @@
       "condition": "New"
     },
     "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
       "S",
       "M",
       "L",
@@ -13025,6 +13039,13 @@
       "condition": "New"
     },
     "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
       "S",
       "M",
       "L",

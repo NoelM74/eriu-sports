@@ -234,11 +234,20 @@ const ALIASES: Record<string, string> = {
   r9: 'nazario', cr7: 'cristiano', barca: 'barcelona',
 };
 
-/** Simple keyword search across title, team, season, kit, sponsor and printed name. */
+/** True when every listed size is sold out. */
+export function isSoldOut(p: Pick<Product, 'sizes' | 'soldOut'>): boolean {
+  return p.sizes.length > 0 && p.sizes.every((s) => p.soldOut.includes(s));
+}
+
+/**
+ * Simple keyword search across title, team, season, kit, sponsor and printed name.
+ * Products sold out in every size are left out of search results (user, 16 November 2026).
+ */
 export function searchProducts(query: string, list: Product[] = products): Product[] {
   const words = slugify(query).split('-').filter(Boolean).map((w) => ALIASES[w] ?? w);
   if (!words.length) return list;
   return list.filter((p) => {
+    if (isSoldOut(p)) return false;
     const d = p.details;
     const hay = slugify(
       [p.title, d.team, d.season, seasonYears(d.season), d.kit, d.sponsor, d.colours, d.print, d.player, p.collection].filter(Boolean).join(' ')

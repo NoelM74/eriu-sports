@@ -72,7 +72,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - "New Season" badge only when the title contains 2026 or 2027 (current season is 2026-27).
 - Size charts: football = retro chart (S–2XL); GAA = GAA flat chart (S–2XL; 2XL confirmed by the user on 22 October 2026: 60 cm chest); AFL = AFL chart (women's AFL jerseys, "Women's" in the title, get the women's AFL chart from the supplier's table, user 16 November 2026, and are tagged female in structured data and the feed); kids football = kids football chart (XXS–2XL, ages 2–13); kids GAA chart is ready for when kids GAA jerseys are added. Kids sizes show as ages on the site (e.g. "2–3"); orders carry both size and age.
 - All adult products, in every category, come in S to 2XL (user, 22 October 2026). The default `SIZES` in `lib/products.ts` is S–2XL; set `soldOut` for gaps rather than removing sizes.
-- Stock updates arrive as "X – size – SOLD OUT": set `soldOut` sizes on the product.
+- Stock updates arrive as "X – size – SOLD OUT": set `soldOut` sizes on the product. A product sold out in every size stays on its page and in collections (sizes crossed out) but is left out of site search (`isSoldOut` in `lib/products.ts`, user 16 November 2026).
 
 ## 4. Customer-facing facts (keep identical everywhere)
 
