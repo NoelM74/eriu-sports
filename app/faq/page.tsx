@@ -73,6 +73,10 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
         a: `Yes, if it has not been sent yet. Email ${EMAIL} with your order reference as soon as possible.`,
       },
       {
+        q: 'What if a shirt sells out after I order?',
+        a: "Our stock is limited, so now and then a shirt sells out after an order comes in. We email you and refund the full price of that item through PayPal, within 14 days at the latest. If nothing in your order can be sent, we refund the delivery charge too. We never swap in a different shirt or size unless you ask.",
+      },
+      {
         q: 'Are the shirts new?',
         a: 'Yes. Every shirt is brand new in the classic design from its era. Nothing is second-hand or match-worn.',
       },

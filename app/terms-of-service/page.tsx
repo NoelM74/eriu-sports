@@ -42,7 +42,7 @@ export default function TermsOfServicePage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Terms &amp; Conditions</h1>
-          <p className="text-gray-600">Last updated: 26 September 2026</p>
+          <p className="text-gray-600">Last updated: 16 November 2026</p>
         </div>
 
         <p className="text-gray-700 leading-relaxed">
@@ -95,8 +95,24 @@ export default function TermsOfServicePage() {
 
         <Section n={4} title="Orders">
           <p>
-            Your order is accepted when we email to confirm it. We may decline or cancel an order, for example if an
-            item has sold out, and we&apos;ll refund you in full if we do.
+            Your order is accepted when we email to confirm it. We may decline or cancel an order, and we&apos;ll refund
+            you in full if we do.
+          </p>
+          <h3 className="text-lg font-bold text-[#0F2131] pt-2">If an item is out of stock</h3>
+          <p>
+            Our stock is limited, so now and then a shirt sells out after you&apos;ve ordered it. If that happens, we&apos;ll
+            email you to let you know and refund the full price of that item. We won&apos;t send a different shirt or size
+            unless you ask us to.
+          </p>
+          <p>
+            If nothing in your order can be sent, we also refund the delivery charge. If the rest of your order can
+            still be sent, we send it at no extra cost, even if the refund takes your order below the free delivery
+            amount.
+          </p>
+          <p>
+            Refunds go back to the way you paid, through PayPal, without delay and within 14 days at the latest. A
+            refund to a PayPal balance usually shows straight away; a refund to a card can take a few working days to
+            appear, depending on your bank.
           </p>
           <p>
             To cancel an order before it ships, email <Mail /> as soon as you can with your order reference.
