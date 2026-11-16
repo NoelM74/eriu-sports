@@ -16637,5 +16637,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000133",
+    "title": "Hawthorn Hawks Indigenous AFL Jersey",
+    "slug": "hawthorn-hawks-indigenous-afl-jersey",
+    "description": "Hawthorn's Indigenous round jersey in gold with brown trim, with a brown band of dot work across the chest around a large circle. Brown arcs rise from the hem at each side, and a small circle is printed inside the neck. Tasmanian is on the front, with KFC and iiNet on the back above a second band and circle. Sleeveless, in a regular fit.\n\nThe design is by Miimi & Jiinda, the art business of mother and daughter Lauren Jarrett and Melissa Greenwood. The circle on the front is a meeting place where people from different communities gather, with Mother Earth along the bottom. The circle inside the neck stands for family, placed highest because it comes first.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/hawthorn-hawks-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/hawthorn-hawks-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Hawthorn Hawks",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Tasmanian",
+      "colours": "Gold / Brown",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
