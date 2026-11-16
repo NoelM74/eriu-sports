@@ -16431,5 +16431,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000126",
+    "title": "Melbourne Demons Women's Indigenous AFL Jersey",
+    "slug": "melbourne-demons-womens-indigenous-afl-jersey",
+    "description": "Melbourne's AFLW Indigenous jersey in navy with a red yoke, and red and blue line artwork down the front around a ringed circle and small red hearts. Arcs of red line work sit along the hem and down the sides. Hertz is on the front. The back has Furphy and Zurich over blue bands, with a list of names and red leaves near the hem. Women's fit, sleeveless.\n\nThe design, My Heart Beats True, is by Arabana and Kokatha artist Mali Isabel and honours her younger brother KC and his heart transplant. The centre stands for his heart, with layers around it for the club's players, staff, community and family. The Melbourne men wore it first in Sir Doug Nicholls Round, and the AFLW side wore it in the same colours.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/melbourne-demons-womens-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/melbourne-demons-womens-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Melbourne Demons",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Hertz",
+      "colours": "Navy / Red / Blue",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
