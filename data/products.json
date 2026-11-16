@@ -16282,5 +16282,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000121",
+    "title": "Richmond Tigers Dreamtime Indigenous AFL Jersey",
+    "slug": "richmond-tigers-dreamtime-indigenous-afl-jersey",
+    "description": "Richmond's Dreamtime jersey in yellow, with a painted sash in black, red and pink carrying two dancers, over a faint pattern of leaves. The Dreamtime at the 'G patch and nib are on the front. The back has KFC and Latitude, a faint dugong low down and a printed note on the artwork. Sleeveless, in a regular fit.\n\nThe design is by Xavier Clarke, a former St Kilda and Brisbane player who was then a Richmond assistant coach, a Larrakia and Amrreamo/Marritjavin man, and his family. The sash comes from a painting by his uncle Timothy Dumoo of a Wangka dance, about Elders calling on ancestors to protect their people. There are 42 merrepen leaves, one for each player on the list, and the dugong is a Larrakia family totem.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/richmond-tigers-dreamtime-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/richmond-tigers-dreamtime-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Richmond Tigers",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "nib",
+      "colours": "Yellow / Black / Red",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
