@@ -16547,5 +16547,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000130",
+    "title": "Sydney Swans Women's AFL Home Jersey",
+    "slug": "sydney-swans-womens-afl-home-jersey",
+    "description": "Sydney's AFLW home jersey in white, with the red yoke cut in the shape of the Opera House sails. QBE is on the front. The back is all red, with ARA, SMFC under the collar and Bing Lee. Women's fit, sleeveless.\n\nThe Swans have worn the Opera House yoke since moving to Sydney in 1987, when it replaced the red V of their South Melbourne days.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/sydney-swans-womens-afl-home-jersey-1.webp",
+      "/images/afl-jerseys/sydney-swans-womens-afl-home-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Sydney Swans",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "QBE",
+      "colours": "White / Red",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "L"
+    ]
   }
 ]
