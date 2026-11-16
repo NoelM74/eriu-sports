@@ -16891,5 +16891,34 @@
       "L",
       "XL"
     ]
+  },
+  {
+    "id": "900000141",
+    "title": "Western Bulldogs AFL Home Jersey",
+    "slug": "western-bulldogs-afl-home-jersey",
+    "description": "The Bulldogs' home jersey in royal blue, with the red and white hoops across the middle and red trim at the arms. WESTERN BULLDOGS runs around the inside of the white collar. Mission is on the chest, with F.F.C. underneath. The back is blue with Pedigree across the shoulders and CoinSpot on the hoops. Sleeveless, in a regular fit.\n\nF.F.C. is for Footscray Football Club, which is still the club's legal name.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/western-bulldogs-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/western-bulldogs-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Western Bulldogs",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Mission",
+      "colours": "Royal Blue / Red / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
