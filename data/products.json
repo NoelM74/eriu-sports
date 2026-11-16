@@ -16732,5 +16732,37 @@
       "L",
       "XL"
     ]
+  },
+  {
+    "id": "900000136",
+    "title": "Sydney Swans AFL Away Jersey",
+    "slug": "sydney-swans-afl-away-jersey",
+    "description": "Sydney's white clash jersey with the big red V across the front and red trim at the arms. QBE is on the chest, with EST.1874 on a red tab at the neck. The back is white, with SYDNEY across the collar and realestate.com.au low down. Sleeveless, in a regular fit.\n\nThe red V goes back to the club's South Melbourne days. The Swans brought it back as their away jersey and now wear it for games in Victoria.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/sydney-swans-afl-away-jersey-front.webp",
+      "/images/afl-jerseys/sydney-swans-afl-away-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Sydney Swans",
+      "season": "Current",
+      "kit": "Away",
+      "sponsor": "QBE",
+      "colours": "White / Red",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "2XL"
+    ]
   }
 ]
