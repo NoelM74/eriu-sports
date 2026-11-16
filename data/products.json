@@ -16920,5 +16920,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000142",
+    "title": "Fremantle Dockers AFL Away Jersey",
+    "slug": "fremantle-dockers-afl-away-jersey",
+    "description": "Fremantle's white clash jersey with two purple chevrons across the chest and purple side panels printed with a wave and dot pattern. FOREVERFREO runs around the inside of the collar. Bankwest is on the chest. The back is white with the anchor logo under the collar and Woodside Energy lower down. Sleeveless, in a regular fit.\n\nIt turns the Dockers' purple home jersey around, keeping the chevrons in purple on white.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/fremantle-dockers-afl-away-jersey-front.webp",
+      "/images/afl-jerseys/fremantle-dockers-afl-away-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Fremantle Dockers",
+      "season": "Current",
+      "kit": "Away",
+      "sponsor": "Bankwest",
+      "colours": "White / Purple",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
