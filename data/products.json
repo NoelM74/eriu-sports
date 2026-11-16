@@ -16224,5 +16224,34 @@
     "soldOut": [
       "M"
     ]
+  },
+  {
+    "id": "900000119",
+    "title": "GWS Giants 'Together We Stand' Indigenous AFL Jersey",
+    "slug": "gws-giants-together-we-stand-indigenous-afl-jersey",
+    "description": "Greater Western Sydney's Indigenous round jersey, white over orange with a black band between and soft peach dot circles across both halves. The G sits in a large dotted circle on the front, ringed by U shapes, with a kangaroo drawn inside it. Toyo Tires is on the chest and Harvey Norman on the back, with Canberra printed below the collar and a dotted boomerang lower down. Sleeveless, in a regular fit.\n\nThe design, called Together We Stand, is by Wiradjuri artist Peter Whitton. The two meeting places inside the G stand for the club's two homes, GIANTS Stadium in Western Sydney and Manuka Oval in Canberra. The U shapes around it are past and current players, staff and fans.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/gws-giants-together-we-stand-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/gws-giants-together-we-stand-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "GWS Giants",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Toyo Tires",
+      "colours": "White / Orange / Black",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
