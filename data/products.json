@@ -16698,5 +16698,39 @@
     "soldOut": [
       "L"
     ]
+  },
+  {
+    "id": "900000135",
+    "title": "Collingwood Magpies AFL Home Jersey",
+    "slug": "collingwood-magpies-afl-home-jersey",
+    "description": "Collingwood's home jersey in the club's black and white stripes, with MAGPIES printed inside the collar. Emirates Fly Better is on the front, beside the magpie crest in its laurel wreath. The back is black with Emirates and KFC, and three white stripes at the hem. Sleeveless, in a regular fit.\n\nThe black and white comes from the Australian magpie, which also gave the club its nickname.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/collingwood-magpies-afl-home-jersey-front.webp",
+      "/images/afl-jerseys/collingwood-magpies-afl-home-jersey-back.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Collingwood Magpies",
+      "season": "Current",
+      "kit": "Home",
+      "sponsor": "Emirates",
+      "colours": "Black / White",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "M",
+      "L",
+      "XL"
+    ]
   }
 ]
