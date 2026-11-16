@@ -16192,5 +16192,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000118",
+    "title": "Gold Coast Suns Indigenous AFL Jersey",
+    "slug": "gold-coast-suns-indigenous-afl-jersey",
+    "description": "Gold Coast's Indigenous round jersey in red, with a black crocodile across the bottom of the front and a black eagle spreading across the chest. A large circle of dot artwork wraps round one side onto the back, with small blue kangaroos and handprints dotted over the rest. Hostplus and plungie are on the front with the GC crest, and Knotwood and Cover-More are on the back. Sleeveless, in a regular fit.\n\nThe artwork comes from Our Cultural Journey by Jy Farrar. The crocodile, by Larrakia artist Trent Lee, stands for the Northern Territory, and the eagle, by Luther Cora, for the Gold Coast. The names across the upper back are the club's Indigenous players, past and present.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/gold-coast-suns-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/gold-coast-suns-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Gold Coast Suns",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Hostplus",
+      "colours": "Red / Black / Yellow",
+      "fit": "Regular fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "soldOut": [
+      "M"
+    ]
   }
 ]
