@@ -16608,5 +16608,34 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000132",
+    "title": "Essendon Bombers Women's Indigenous AFL Jersey",
+    "slug": "essendon-bombers-womens-indigenous-afl-jersey",
+    "description": "Essendon's AFLW Indigenous jersey in red with black trim, with a black serpent full of red circles and line work winding across the front and down the back. Fujitsu is on the front, with Liberty and Toyota Forklifts on the back. Women's fit, sleeveless.\n\nThe design is by former Bombers assistant coach Kirby Bentley, a Noongar woman. The serpent is the Waugal, the creator spirit that shaped the rivers, swamps and hills as it moved across the land. The team wore it for the AFLW Dreamtime match against Richmond.",
+    "price": 25,
+    "images": [
+      "/images/afl-jerseys/essendon-bombers-womens-indigenous-afl-jersey-1.webp",
+      "/images/afl-jerseys/essendon-bombers-womens-indigenous-afl-jersey-2.webp"
+    ],
+    "collection": "AFL Jerseys",
+    "currency": "EUR",
+    "details": {
+      "team": "Essendon Bombers",
+      "season": "Current",
+      "kit": "Indigenous",
+      "sponsor": "Fujitsu",
+      "colours": "Red / Black",
+      "fit": "Women's fit, sleeveless",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
