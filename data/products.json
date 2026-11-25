@@ -17074,5 +17074,65 @@
       "S",
       "M"
     ]
+  },
+  {
+    "id": "900000146",
+    "title": "Celtic 2026-27 Home Kids Kit",
+    "slug": "celtic-2026-27-home-kids-kit",
+    "description": "Celtic's 2026-27 home kit in kids sizes, made to mark 60 years since the Lisbon Lions won the European Cup in 1967. The green and white hoops come with green and white stripes on the shoulders, and the crest is picked out in gold with the star above it. White shorts with green side stripes and a gold crest. Celtic was set up by Brother Walfrid, a Marist brother from Ballymote in Co. Sligo, to raise money for the poor of Glasgow's East End. Shirt and shorts; socks aren't included.",
+    "images": [
+      "/images/kids-kits/900000146-1.webp",
+      "/images/kids-kits/900000146-2.webp"
+    ],
+    "price": 30,
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "details": {
+      "team": "Celtic",
+      "season": "2026-27",
+      "kit": "Home",
+      "colours": "Green / White / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    }
+  },
+  {
+    "id": "900000147",
+    "title": "Celtic 2026-27 Away Kids Kit",
+    "slug": "celtic-2026-27-away-kids-kit",
+    "description": "Celtic's 2026-27 away kit in kids sizes. Green and black stripes with jagged, zigzag edges, a black collar and cuffs, and white stripes on the shoulders. The crest and logos are in white and green. Black shorts with white side stripes and the crest. Like the home kit, it marks 60 years since the Lisbon Lions won the European Cup. Shirt and shorts; socks aren't included.",
+    "images": [
+      "/images/kids-kits/900000147-1.webp",
+      "/images/kids-kits/900000147-2.webp"
+    ],
+    "price": 30,
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "details": {
+      "team": "Celtic",
+      "season": "2026-27",
+      "kit": "Away",
+      "colours": "Green / Black",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    }
   }
 ]
