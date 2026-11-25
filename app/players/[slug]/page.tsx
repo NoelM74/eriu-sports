@@ -5,7 +5,7 @@ import AboutSection from '@/components/catalog/AboutSection';
 import { PLAYER_ABOUT } from '@/lib/page-copy';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
-import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product } from '@/lib/products';
+import { getPlayers, getPlayerBySlug, getProductsByPlayer, toCard, type Product, type PlayerSummary } from '@/lib/products';
 import { PLAYER_BIOS } from '@/lib/players';
 import { ldJson } from '@/lib/jsonld';
 
@@ -21,18 +21,25 @@ export function generateStaticParams() {
 
 const list = new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' });
 
-function intro(name: string, count: number, teams: string[], kids: boolean) {
-  const what = kids ? 'kids kits' : 'retro shirts';
-  return `${count} ${what} printed with ${name}'s name and number, from ${list.format(teams)}. €35 each. Worldwide delivery, free over €49.`;
+function intro(player: PlayerSummary) {
+  const what = player.kids
+    ? 'kids kits'
+    : player.someKids
+      ? 'shirts and kids kits'
+      : player.retro
+        ? 'retro shirts'
+        : 'shirts';
+  const price = player.minPrice === player.maxPrice ? `€${player.minPrice} each` : `€${player.minPrice} to €${player.maxPrice}`;
+  return `${player.count} ${what} printed with ${player.name}'s name and number, from ${list.format(player.teams)}. ${price}. Worldwide delivery, free over €49.`;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const player = getPlayerBySlug(slug);
   if (!player) return { title: 'Player not found' };
-  const description = clipDescription(intro(player.name, player.count, player.teams, player.kids));
+  const description = clipDescription(intro(player));
   return {
-    title: player.kids ? `${player.name} Kids Kits | Name & Number` : `${player.name} Shirts | Retro Name & Number`,
+    title: `${player.name} ${player.kids ? 'Kids Kits' : 'Shirts'} | ${player.retro ? 'Retro ' : ''}Name & Number`,
     description,
     alternates: { canonical: `/players/${player.slug}` },
     openGraph: {
@@ -67,7 +74,7 @@ export default async function PlayerPage({ params }: Props) {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: `${player.name} ${player.kids ? 'Kids Kits' : 'Shirts'}`,
-      description: intro(player.name, player.count, player.teams, player.kids),
+      description: intro(player),
       url: `${SITE}/players/${player.slug}`,
       about: { '@type': 'Person', name: player.name },
       mainEntity: {
@@ -112,7 +119,7 @@ export default async function PlayerPage({ params }: Props) {
             {player.name} {player.kids ? 'Kids Kits' : 'Shirts'}
           </h1>
           {bio && <p className="mt-5 text-base md:text-lg text-white/90 max-w-2xl leading-relaxed">{bio}</p>}
-          <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">{intro(player.name, player.count, player.teams, player.kids)}</p>
+          <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">{intro(player)}</p>
         </div>
       </section>
 

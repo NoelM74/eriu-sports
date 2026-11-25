@@ -17335,5 +17335,67 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000154",
+    "title": "Real Betis 2026-27 Home Shirt – Parrott 19",
+    "slug": "real-betis-2026-27-home-shirt-parrott-19",
+    "description": "Real Betis's 2026-27 home shirt, printed PARROTT 19 on the back in green. Green and white stripes with fine diagonal lines across the front, and a white polo collar that says 'Somos Balompié' on the inside. Gree is in black across the chest, with Revel on the sleeve and Trainline on the back.\n\nTroy Parrott joined Betis from AZ Alkmaar in August 2026 and wears 19. Betis are in the Champions League this season for the first time since 2005-06. Sizes S to 2XL; the size guide has measurements.",
+    "price": 30,
+    "images": [
+      "/images/european-world-classics/real-betis-2026-27-home-shirt-parrott-19-front.webp",
+      "/images/european-world-classics/real-betis-2026-27-home-shirt-parrott-19-back.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Gree",
+      "colours": "Green / White",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "print": "Parrott 19",
+      "player": "Troy Parrott"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000155",
+    "title": "Ireland 2026 Home Jersey – Parrott 7",
+    "slug": "ireland-2026-home-jersey-parrott-7",
+    "description": "Ireland's 2026 home jersey, printed PARROTT 7 on the back in white. Deep green with a white V-neck, orange piping over the shoulders and orange and white trim on the collar and cuffs. Sky is across the front in white, and there's a shamrock below the collar on the back.\n\nParrott wears 7 for Ireland. His hat-trick in Budapest in November 2025, with the winner in the 96th minute, beat Hungary 3-2 and sent Ireland into the World Cup play-offs. Sizes S to 2XL; the size guide has measurements.",
+    "price": 30,
+    "images": [
+      "/images/ireland-classics/ireland-2026-home-jersey-parrott-7-front.webp",
+      "/images/ireland-classics/ireland-2026-home-jersey-parrott-7-back.webp"
+    ],
+    "collection": "Irish Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2026",
+      "kit": "Home",
+      "sponsor": "Sky",
+      "colours": "Green / White / Orange",
+      "fit": "Regular fit, true to size",
+      "condition": "New",
+      "print": "Parrott 7",
+      "player": "Troy Parrott"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

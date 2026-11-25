@@ -46,7 +46,7 @@ export const COLLECTIONS: CollectionDef[] = [
     seoTitle: "Retro Ireland Jerseys | Italia 90, USA 94 & Euro 88",
     seoDescription:
       "Retro Ireland jerseys from Euro 88, Italia 90 and USA 94, plus League of Ireland jerseys from Bohemians and Cork City. €25 each. Worldwide delivery, free over €49.",
-    keywords: ["retro Ireland jersey", "Ireland retro jersey", "vintage Ireland jersey", "retro Irish jersey", "retro Irish shirts", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Cork City jersey"],
+    keywords: ["retro Ireland jersey", "Ireland retro jersey", "vintage Ireland jersey", "retro Irish jersey", "retro Irish shirts", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Ireland 2026 jersey", "Troy Parrott Ireland jersey", "Parrott 7 jersey", "Cork City jersey"],
     priceFrom: 25,
     featured: "ireland-1990-italia-90-world",
   },
@@ -74,7 +74,7 @@ export const COLLECTIONS: CollectionDef[] = [
     seoTitle: "Retro Barcelona, Real Madrid & Serie A Shirts",
     seoDescription:
       "Retro football shirts from Barcelona, Real Madrid, Inter, AC Milan, Juventus, Brazil and Italy. From €25. Worldwide delivery, free over €49.",
-    keywords: ["retro Celtic shirt", "Celtic 1997-98 shirt", "Celtic 10 in a row shirt", "Celtic yellow away shirt", "Celtic CR Smith shirt", "Celtic 1989-91 home shirt", "retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Lazio shirt", "retro Parma shirt", "retro Bayern Munich shirt", "retro Dortmund shirt", "retro Ajax shirt", "retro PSG shirt", "Ronaldinho PSG shirt", "retro Marseille shirt", "retro Chivas shirt", "retro European football shirts"],
+    keywords: ["retro Celtic shirt", "Celtic 1997-98 shirt", "Celtic 10 in a row shirt", "Celtic yellow away shirt", "Celtic CR Smith shirt", "Celtic 1989-91 home shirt", "Real Betis 2026-27 shirt", "Troy Parrott Betis shirt", "Parrott 19 Betis shirt", "retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Lazio shirt", "retro Parma shirt", "retro Bayern Munich shirt", "retro Dortmund shirt", "retro Ajax shirt", "retro PSG shirt", "Ronaldinho PSG shirt", "retro Marseille shirt", "retro Chivas shirt", "retro European football shirts"],
     priceFrom: 25,
   },
   {

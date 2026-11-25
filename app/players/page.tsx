@@ -39,7 +39,7 @@ export default function PlayersPage() {
                 <div className="relative aspect-square bg-[#f3f5f4] overflow-hidden">
                   <Image
                     src={p.image}
-                    alt={`${p.name} ${p.kids ? 'kids kit' : 'retro shirt'}, name and number on the back`}
+                    alt={`${p.name} ${p.kids ? 'kids kit' : p.retro ? 'retro shirt' : 'shirt'}, name and number on the back`}
                     fill
                     priority={i < 5}
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
