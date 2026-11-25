@@ -63,7 +63,7 @@ export const PLAYER_ABOUT: Record<string, AboutCopy> = {
     paragraphs: [
       'Troy Parrott wears 7 for Ireland and 19 for Real Betis, and our adult shirts and kids kits carry those numbers.',
       'His hat-trick in Budapest on 16 November 2025 beat Hungary 3-2 and sent Ireland into the World Cup play-offs. Betis signed him from AZ Alkmaar in August 2026.',
-      'The adult shirts are €30, in sizes S to 2XL. The kids kits are €35, shirt and shorts, for ages 2 to 13.',
+      'The adult shirts are €30, in sizes S to 2XL. The kids kits are €35 for ages 2 to 13; the Betis away kit comes with socks.',
     ],
   },
 };

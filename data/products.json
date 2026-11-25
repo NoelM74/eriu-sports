@@ -17397,5 +17397,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000156",
+    "title": "Real Betis 2026-27 Away Kids Kit – Parrott 19",
+    "slug": "real-betis-2026-27-away-kids-kit-parrott-19",
+    "description": "Real Betis's 2026-27 away kit in kids sizes, printed PARROTT 19 on the back in gold. Dark green with a tonal floral pattern, with Prima above the name and Trainline below the number. The dark green shorts carry a gold 19, the crest and gold chevrons, and the matching socks have gold chevrons too.\n\nTroy Parrott joined Betis from AZ Alkmaar in August 2026 and wears 19. This kit comes with shirt, shorts and socks.",
+    "price": 35,
+    "images": [
+      "/images/kids-kits/900000156-back.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Away",
+      "sponsor": "Gree",
+      "colours": "Dark Green / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New",
+      "print": "Parrott 19",
+      "player": "Troy Parrott"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
