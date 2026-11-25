@@ -15234,10 +15234,11 @@
     "id": "900000070",
     "title": "Real Betis 2026-27 Away Kids Kit",
     "slug": "real-betis-2026-27-away-kids-kit",
-    "description": "Real Betis's 2026-27 away kit in kids sizes. It's split down the middle in two shades of green, with an all-over floral pattern based on the nickname Verde Esperanza, or Green Hope. Gold chevrons on the shoulders, with Gree and the crest in gold. Dark green shorts with gold chevrons and AUS Global. Troy Parrott signed for Betis in August 2026. Shirt and shorts; socks aren't included.",
+    "description": "Real Betis's 2026-27 away kit in kids sizes. It's split down the middle in two shades of green, with an all-over floral pattern based on the nickname Verde Esperanza, or Green Hope. Yellow chevrons on the shoulders and Gree in yellow across the chest, with the crest in its usual colours. Dark green shorts with yellow chevrons. Troy Parrott signed for Betis in August 2026. Shirt and shorts; socks aren't included.",
     "price": 30,
     "images": [
-      "/images/kids-kits/900000070-1.webp"
+      "/images/kids-kits/900000070-1.webp",
+      "/images/kids-kits/900000070-2.webp"
     ],
     "collection": "Kids Football Kits",
     "currency": "EUR",
@@ -15246,7 +15247,7 @@
       "season": "2026-27",
       "kit": "Away",
       "sponsor": "Gree",
-      "colours": "Green / Gold",
+      "colours": "Green / Yellow",
       "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
       "condition": "New"
     },
