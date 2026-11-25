@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { pageTitle, clipDescription } from '@/lib/seo';
-import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, allProducts, type ProductDetails } from '@/lib/products';
+import { getProductBySlug, getRelatedProducts, toCard, getPlayerBySlug, getClubBySlug, allProducts, type ProductDetails } from '@/lib/products';
 import { getCollectionBySlug, DELIVERY, FREE_DELIVERY_OVER, MARKET_COUNTRIES, SHIPPING_FEE } from '@/lib/collections';
 import ProductCard from '@/components/catalog/ProductCard';
 import AddToCartForm from './AddToCartForm';
@@ -118,11 +118,13 @@ export default async function ProductDetail({ params }: ProductPageProps) {
   if (!product) notFound();
 
   const collection = getCollectionBySlug(product.collectionSlug)!;
+  // A club page only exists while the club has something in stock, so link it only then.
+  const club = product.club && getClubBySlug(product.club.slug) ? product.club : null;
   // Kids kits link back to that club's kids kits, not the club page full of adult shirts.
-  const clubHref = product.club
+  const clubHref = club
     ? collection.slug === 'kids-football-kits'
-      ? `/collections/kids-football-kits?club=${product.club.slug}`
-      : `/clubs/${product.club.slug}`
+      ? `/collections/kids-football-kits?club=${club.slug}`
+      : `/clubs/${club.slug}`
     : undefined;
   const related = getRelatedProducts(product);
   const player = product.player ? getPlayerBySlug(product.player.slug) : undefined;
@@ -178,10 +180,10 @@ export default async function ProductDetail({ params }: ProductPageProps) {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
         { '@type': 'ListItem', position: 2, name: collection.name, item: `${SITE}/collections/${collection.slug}` },
-        ...(product.club
-          ? [{ '@type': 'ListItem', position: 3, name: product.club.name, item: `${SITE}/clubs/${product.club.slug}` }]
+        ...(club
+          ? [{ '@type': 'ListItem', position: 3, name: club.name, item: `${SITE}/clubs/${club.slug}` }]
           : []),
-        { '@type': 'ListItem', position: product.club ? 4 : 3, name: product.title, item: url },
+        { '@type': 'ListItem', position: club ? 4 : 3, name: product.title, item: url },
       ],
     },
   ];
@@ -195,10 +197,10 @@ export default async function ProductDetail({ params }: ProductPageProps) {
           <li><Link href="/" className="hover:text-[var(--color-teal)]">Home</Link></li>
           <li aria-hidden>/</li>
           <li><Link href={`/collections/${collection.slug}`} className="hover:text-[var(--color-teal)]">{collection.name}</Link></li>
-          {product.club && (
+          {club && (
             <>
               <li aria-hidden>/</li>
-              <li><Link href={clubHref!} className="hover:text-[var(--color-teal)]">{product.club.name}</Link></li>
+              <li><Link href={clubHref!} className="hover:text-[var(--color-teal)]">{club.name}</Link></li>
             </>
           )}
           <li aria-hidden>/</li>
@@ -319,7 +321,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
                 href={clubHref ?? `/collections/${collection.slug}`}
                 className="shrink-0 text-xs font-bold uppercase tracking-widest text-[#1A533E] border-b border-[#1A533E] pb-0.5"
               >
-                More {product.club?.name ?? collection.name} →
+                More {club?.name ?? collection.name} →
               </Link>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">

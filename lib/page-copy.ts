@@ -16,7 +16,7 @@ export const COLLECTION_ABOUT: Record<string, AboutCopy> = {
       "Euro 88 was Ireland's first major tournament. In the opening game in Stuttgart, Ray Houghton looped a header over Peter Shilton and Ireland beat England 1-0.",
       "Two years later came Italia 90, the first World Cup. Packie Bonner saved from Daniel Timofte, David O'Leary scored the last penalty against Romania, and Italy ended the run 1-0 in the quarter-final in Rome.",
       "The 1992-94 jerseys took Ireland through qualifying for USA 94, which came down to Alan McLoughlin's equaliser at Windsor Park. At Giants Stadium, Houghton chipped Pagliuca and Ireland beat Italy 1-0, their first win at a World Cup finals.",
-      "There are League of Ireland jerseys here too. Cork City's 1988-89 Guinness jersey is from their first FAI Cup final, and the Bohemians jerseys carry Fontaines D.C., Oasis and Kneecap. Every one is a fan replica, €25 each.",
+      "There are League of Ireland jerseys here too. Cork City's 1988-89 Guinness jersey is from their first FAI Cup final, and Bohemians' Fontaines D.C. jersey is in the colours of the band's album Romance. Every one is a fan replica, €25 each.",
     ],
     links: [
       { href: '/blog/ireland-euro-88-shirt', label: 'Ireland at Euro 88' },
@@ -31,7 +31,7 @@ export const COLLECTION_ABOUT: Record<string, AboutCopy> = {
     paragraphs: [
       'Irish footballers have been crossing to Australian rules for decades. Jim Stynes, from Dublin, won the Brownlow Medal with Melbourne in 1991. Kerry man Tadhg Kennelly won a premiership with the Sydney Swans in 2005.',
       "More recently, Laois man Zach Tuohy won the 2022 premiership with Geelong, so our Geelong Cats jersey has an Irish story of its own.",
-      'We also stock home and away jerseys from Brisbane, Carlton, Collingwood, Fremantle, Gold Coast, GWS Giants, Richmond, St Kilda, Sydney, West Coast and the Western Bulldogs, and Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, Richmond, St Kilda and the Western Bulldogs, and women\'s AFLW home, Indigenous and Pride jerseys, including Sydney, St Kilda and Port Adelaide, with their own size chart. All are sleeveless, €25 each.',
+      'We also stock home and away jerseys from Brisbane, Carlton, Collingwood, Fremantle, Gold Coast, GWS Giants, Richmond, St Kilda and Sydney, and Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, Richmond, St Kilda and the Western Bulldogs, and women\'s AFLW home, Indigenous and Pride jerseys, including Sydney, St Kilda and Port Adelaide, with their own size chart. All are sleeveless, €25 each.',
     ],
   },
 };
@@ -42,7 +42,7 @@ export const CLUB_ABOUT: Record<string, AboutCopy> = {
     paragraphs: [
       'Bohemians were founded in 1890 and play at Dalymount Park in Phibsborough. The club is owned by its members, and lately it has put more bands on its shirts than any club we know of.',
       'It started in 2022 with Bob Marley, who played Dalymount in July 1980. Since then there has been a Fontaines D.C. third jersey in the colours of their album Romance, and an Oasis cup jersey for the band\'s Croke Park gigs in 2025.',
-      'Kneecap, the Belfast trio who rap in Irish, designed the 2026 away with the club, and there is a black version too. The 2025 Guinness away looks back to the 80s, with a cream body and thin red pinstripes. All are regular fit, in sizes S to 2XL.',
+      'Kneecap, the Belfast trio who rap in Irish, designed the 2026 away with the club. The Oasis, Kneecap and Guinness jerseys have sold out. The Fontaines D.C. jersey is still here, regular fit, in sizes S to 2XL.',
     ],
     links: [{ href: '/blog/bohemians-music-shirts-fontaines-dc-oasis-kneecap', label: "Bohemians' music shirts: the full story" }],
   },

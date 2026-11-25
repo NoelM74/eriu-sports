@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { POSTS, getPost, readingMinutes, formatDate, type BlogImage } from '@/lib/blog';
-import { getProductBySlug, toCard, type Product } from '@/lib/products';
+import { getProductBySlug, isSoldOut, toCard, type Product } from '@/lib/products';
 import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
@@ -60,7 +60,8 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPost(slug);
   if (!post) notFound();
 
-  const products = post.products.map(getProductBySlug).filter((p): p is Product => Boolean(p));
+  // Shirts sold out in every size are left out of the list (user, 25 November 2026).
+  const products = post.products.map(getProductBySlug).filter((p): p is Product => p !== undefined && !isSoldOut(p));
   const minutes = readingMinutes(post);
   const url = `${SITE}/blog/${post.slug}`;
 

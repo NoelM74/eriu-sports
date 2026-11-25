@@ -14,6 +14,17 @@ interface ImageGalleryProps {
  * snaps into place as you swipe. Thumbnails underneath jump straight to a photo,
  * and arrows do the same on larger screens.
  */
+/**
+ * Alt text for image search: the title and colours, plus which view it is when the
+ * file name says so (-front, -back, -detail, -crest); otherwise "view N".
+ */
+function photoAlt(title: string, src: string, idx: number): string {
+  if (idx === 0) return title;
+  const view = src.match(/-(front|back|detail|crest)\.webp$/)?.[1];
+  const label = { front: 'front', back: 'back', detail: 'close-up of the chest', crest: 'close-up of the crest' }[view ?? ''];
+  return `${title}, ${label ?? `view ${idx + 1}`}`;
+}
+
 export default function ImageGallery({ images, title, badge }: ImageGalleryProps) {
   const photos = images.length ? images : ['/placeholder.png'];
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -70,7 +81,7 @@ export default function ImageGallery({ images, title, badge }: ImageGalleryProps
             >
               <Image
                 src={src}
-                alt={idx === 0 ? title : `${title}, view ${idx + 1}`}
+                alt={photoAlt(title, src, idx)}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-contain"

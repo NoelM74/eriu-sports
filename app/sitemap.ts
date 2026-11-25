@@ -25,7 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getPlayers().map((p) => page(`/players/${p.slug}`, 0.8, 'weekly')),
     ...products.map((p) => ({
       ...page(`/products/${p.slug}`, 0.7, 'weekly'),
-      images: p.images.slice(0, 3).map((img) => `${SITE}${img}`),
+      // Every photo, so back views and close-ups can show up in image search too.
+      images: p.images.map((img) => `${SITE}${img}`),
     })),
     page('/blog', 0.6, 'weekly'),
     ...getPosts().map((post) => ({

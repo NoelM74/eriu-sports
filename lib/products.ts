@@ -142,6 +142,13 @@ export const allProducts: Product[] = (productsData as RawProduct[]).map((p) => 
 export const products: Product[] = allProducts.filter((p) => !p.test);
 
 /**
+ * Products with at least one size left. Lists (collections, catalog, club and player
+ * pages, homepage, related shirts, search) only show these; a product sold out in
+ * every size keeps its own page but is hidden from lists (user, 25 November 2026).
+ */
+export const inStockProducts: Product[] = products.filter((p) => !isSoldOut(p));
+
+/**
  * Just what a product card (and the bag) needs. Cards are client components, so
  * everything passed to them is sent to the browser; long descriptions and extra
  * photos across hundreds of cards made pages heavy enough to hit Worker limits.
@@ -162,29 +169,29 @@ export function getProductById(id: string): Product | undefined {
 
 /** Products in a collection, newest listings first. */
 export function getProductsByCollection(collectionName: string): Product[] {
-  return products.filter((p) => p.collection === collectionName).reverse();
+  return inStockProducts.filter((p) => p.collection === collectionName).reverse();
 }
 
 export function getProductsByCollectionSlug(slug: string): Product[] {
-  return products.filter((p) => p.collectionSlug === slug).reverse();
+  return inStockProducts.filter((p) => p.collectionSlug === slug).reverse();
 }
 
 /** Products in a top-level category, newest first. `all` returns everything. */
 export function getProductsByCategory(category: CategoryKey | 'all'): Product[] {
-  const list = category === 'all' ? products : products.filter((p) => p.category === category);
+  const list = category === 'all' ? inStockProducts : inStockProducts.filter((p) => p.category === category);
   return [...list].reverse();
 }
 
 /** Most recently added products across the whole shop. */
 export function getLatestProducts(limit = 8): Product[] {
-  return [...products].reverse().slice(0, limit);
+  return [...inStockProducts].reverse().slice(0, limit);
 }
 
 /** Other products from the same team, then the same collection. */
 export function getRelatedProducts(product: Product, limit = 4): Product[] {
   const team = product.details.team;
-  const sameTeam = team ? products.filter((p) => p.slug !== product.slug && p.details.team === team) : [];
-  const sameCollection = products.filter(
+  const sameTeam = team ? inStockProducts.filter((p) => p.slug !== product.slug && p.details.team === team) : [];
+  const sameCollection = inStockProducts.filter(
     (p) => p.slug !== product.slug && p.collection === product.collection && !sameTeam.includes(p)
   );
   return [...sameTeam, ...sameCollection].slice(0, limit);
@@ -198,7 +205,7 @@ export interface ClubSummary extends Club {
 /** Every club or county with stock, most products first. */
 export function getClubs(category?: CategoryKey): ClubSummary[] {
   const map = new Map<string, ClubSummary>();
-  for (const p of products) {
+  for (const p of inStockProducts) {
     if (!p.club || (category && p.category !== category)) continue;
     const c = map.get(p.club.slug);
     if (c) c.count++;
@@ -213,7 +220,7 @@ export function getClubBySlug(slug: string): ClubSummary | undefined {
 
 /** A club's products, newest first. */
 export function getProductsByClub(slug: string): Product[] {
-  return products.filter((p) => p.club?.slug === slug).reverse();
+  return inStockProducts.filter((p) => p.club?.slug === slug).reverse();
 }
 
 /** "2002-04" -> "2002 2003 2004", so a search for 2004 finds that shirt. */
@@ -241,9 +248,10 @@ export function isSoldOut(p: Pick<Product, 'sizes' | 'soldOut'>): boolean {
 
 /**
  * Simple keyword search across title, team, season, kit, sponsor and printed name.
- * Products sold out in every size are left out of search results (user, 16 November 2026).
+ * Products sold out in every size are left out of search results (user, 16 November 2026),
+ * even when a caller passes its own list.
  */
-export function searchProducts(query: string, list: Product[] = products): Product[] {
+export function searchProducts(query: string, list: Product[] = inStockProducts): Product[] {
   const words = slugify(query).split('-').filter(Boolean).map((w) => ALIASES[w] ?? w);
   if (!words.length) return list;
   return list.filter((p) => {
@@ -280,7 +288,7 @@ function seasonStart(p: Product): number {
 /** Players with at least `min` shirts, most shirts first. */
 export function getPlayers(min = 2): PlayerSummary[] {
   const map = new Map<string, Product[]>();
-  for (const p of products) {
+  for (const p of inStockProducts) {
     if (!p.player) continue;
     map.set(p.player.slug, [...(map.get(p.player.slug) ?? []), p]);
   }
@@ -305,7 +313,7 @@ export function getPlayerBySlug(slug: string): PlayerSummary | undefined {
 
 /** A player's shirts, oldest season first. */
 export function getProductsByPlayer(slug: string): Product[] {
-  return products.filter((p) => p.player?.slug === slug).sort((a, b) => seasonStart(a) - seasonStart(b));
+  return inStockProducts.filter((p) => p.player?.slug === slug).sort((a, b) => seasonStart(a) - seasonStart(b));
 }
 
 /** National sides, so kids kits can be split into club and international sections. */
