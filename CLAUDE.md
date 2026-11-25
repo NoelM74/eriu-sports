@@ -84,6 +84,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - **Out of stock after ordering** (user asked for it in the Terms, 16 November 2026): we email the customer and refund that item in full through PayPal, without delay and within 14 days at the latest; any delivery charge paid is refunded too, even when the rest of the order still ships (user, 16 November 2026: "we refund the shipping as thats only fair if they bought 2 and only 1 is in stock"); no substitutes unless the customer asks (Terms section 4, FAQ, llms.txt).
 - **Prices**: euro, no VAT added (not VAT registered).
 - **Payment**: PayPal (cards switched off until Stripe is verified; code is ready). Phone is optional at checkout (user, 29 October 2026).
+- **Washing** (user, 25 November 2026, all jerseys): machine wash warm; wash and iron inside out; no fabric softener; no bleach; remove straight away; line dry; no tumble dryer; touch up with a cool iron; no dry cleaning. Lives in `lib/care.ts` (product pages, FAQ) and llms.txt.
 - **Not official**: the Terms say these are fan replicas, with no affiliation to any club, board, federation or brand.
 
 ## 5. Naming

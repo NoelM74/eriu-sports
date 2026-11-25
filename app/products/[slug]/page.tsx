@@ -13,6 +13,7 @@ import { getPosts } from '@/lib/blog';
 import { reviewsFor } from '@/lib/reviews';
 import ReviewQuote from '@/components/reviews/ReviewQuote';
 import { isWomens } from '@/lib/size-chart';
+import { CARE_INSTRUCTIONS } from '@/lib/care';
 
 const SITE = 'https://eriusports.com';
 
@@ -288,6 +289,18 @@ export default async function ProductDetail({ params }: ProductPageProps) {
                 Delivery &amp; returns
               </Link>
             </div>
+
+            <details className="mt-4 border border-gray-200 p-5 text-sm text-gray-700 group">
+              <summary className="cursor-pointer font-semibold text-gray-900 list-none flex items-center justify-between">
+                Washing instructions
+                <span aria-hidden="true" className="text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <ul className="mt-3 space-y-1 list-disc pl-5">
+                {CARE_INSTRUCTIONS.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </details>
 
             {product.sizeGuide && (
               <div className="mt-6">

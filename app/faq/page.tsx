@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { CARE_SUMMARY } from '@/lib/care';
 import Link from 'next/link';
 import { OG_IMAGES } from '@/lib/seo';
 import { ldJson } from '@/lib/jsonld';
@@ -99,7 +100,7 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
       },
       {
         q: 'How do I wash my shirt?',
-        a: 'Wash cold on a gentle cycle with similar colours, skip the fabric softener, hang it to dry and never iron over the crest or sponsor.',
+        a: CARE_SUMMARY,
       },
     ],
   },
