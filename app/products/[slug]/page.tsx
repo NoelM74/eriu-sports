@@ -260,7 +260,7 @@ export default async function ProductDetail({ params }: ProductPageProps) {
                 href={`/players/${player.slug}`}
                 className="mt-4 inline-block text-sm font-semibold text-[var(--color-teal)] underline underline-offset-4"
               >
-                See all {player.count} {player.name} shirts →
+                See all {player.count} {player.name} {player.kids ? 'kits' : 'shirts'} →
               </Link>
             )}
 

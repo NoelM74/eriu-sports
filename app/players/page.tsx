@@ -39,7 +39,7 @@ export default function PlayersPage() {
                 <div className="relative aspect-square bg-[#f3f5f4] overflow-hidden">
                   <Image
                     src={p.image}
-                    alt={`${p.name} retro shirt, name and number on the back`}
+                    alt={`${p.name} ${p.kids ? 'kids kit' : 'retro shirt'}, name and number on the back`}
                     fill
                     priority={i < 5}
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
@@ -49,7 +49,7 @@ export default function PlayersPage() {
                 <div className="p-3">
                   <p className="font-bold text-[#0F2131] leading-tight">{p.name}</p>
                   <p className="mt-1 text-xs text-gray-500">
-                    {p.count} shirts · {p.teams.join(', ')}
+                    {p.count} {p.kids ? 'kids kits' : 'shirts'} · {p.teams.join(', ')}
                   </p>
                 </div>
               </Link>

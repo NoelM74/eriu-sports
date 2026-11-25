@@ -58,4 +58,12 @@ export const PLAYER_ABOUT: Record<string, AboutCopy> = {
     ],
     links: [{ href: '/blog/ronaldinho-shirts-psg-barcelona-milan', label: "Ronaldinho's shirts: the full story" }],
   },
+  'troy-parrott': {
+    heading: "Troy Parrott's numbers",
+    paragraphs: [
+      'Troy Parrott wears 7 for Ireland and 19 for Real Betis, and our kids kits carry those numbers.',
+      'His hat-trick in Budapest on 16 November 2025 beat Hungary 3-2 and sent Ireland into the World Cup play-offs. Betis signed him from AZ Alkmaar in August 2026.',
+      'Printed kids kits are €35, shirt and shorts, for ages 2 to 13.',
+    ],
+  },
 };

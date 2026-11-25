@@ -278,6 +278,8 @@ export interface PlayerSummary extends Player {
   /** Clubs and countries the player's shirts come from, earliest first. */
   teams: string[];
   image: string;
+  /** Every printed product for this player is a kids kit (e.g. Troy Parrott). */
+  kids: boolean;
 }
 
 function seasonStart(p: Product): number {
@@ -302,6 +304,7 @@ export function getPlayers(min = 2): PlayerSummary[] {
         teams: [...new Set(sorted.map((p) => p.club?.name).filter((t): t is string => Boolean(t)))],
         // First photo is the back of the shirt, showing the name.
         image: sorted[sorted.length - 1].images[0],
+        kids: list.every((p) => p.collection === 'Kids Football Kits'),
       };
     })
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));

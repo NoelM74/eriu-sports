@@ -21,21 +21,22 @@ export function generateStaticParams() {
 
 const list = new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' });
 
-function intro(name: string, count: number, teams: string[]) {
-  return `${count} retro shirts printed with ${name}'s name and number, from ${list.format(teams)}. €35 each. Worldwide delivery, free over €49.`;
+function intro(name: string, count: number, teams: string[], kids: boolean) {
+  const what = kids ? 'kids kits' : 'retro shirts';
+  return `${count} ${what} printed with ${name}'s name and number, from ${list.format(teams)}. €35 each. Worldwide delivery, free over €49.`;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const player = getPlayerBySlug(slug);
   if (!player) return { title: 'Player not found' };
-  const description = clipDescription(intro(player.name, player.count, player.teams));
+  const description = clipDescription(intro(player.name, player.count, player.teams, player.kids));
   return {
-    title: `${player.name} Shirts | Retro Name & Number`,
+    title: player.kids ? `${player.name} Kids Kits | Name & Number` : `${player.name} Shirts | Retro Name & Number`,
     description,
     alternates: { canonical: `/players/${player.slug}` },
     openGraph: {
-      title: `${player.name} Shirts | Ériu Sports`,
+      title: `${player.name} ${player.kids ? 'Kids Kits' : 'Shirts'} | Ériu Sports`,
       description,
       url: `/players/${player.slug}`,
       type: 'website',
@@ -65,8 +66,8 @@ export default async function PlayerPage({ params }: Props) {
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: `${player.name} Shirts`,
-      description: intro(player.name, player.count, player.teams),
+      name: `${player.name} ${player.kids ? 'Kids Kits' : 'Shirts'}`,
+      description: intro(player.name, player.count, player.teams, player.kids),
       url: `${SITE}/players/${player.slug}`,
       about: { '@type': 'Person', name: player.name },
       mainEntity: {
@@ -108,10 +109,10 @@ export default async function PlayerPage({ params }: Props) {
           </nav>
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-3">Name &amp; number shirts</p>
           <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight leading-[0.95] max-w-3xl">
-            {player.name} Shirts
+            {player.name} {player.kids ? 'Kids Kits' : 'Shirts'}
           </h1>
           {bio && <p className="mt-5 text-base md:text-lg text-white/90 max-w-2xl leading-relaxed">{bio}</p>}
-          <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">{intro(player.name, player.count, player.teams)}</p>
+          <p className="mt-3 text-sm md:text-base text-white/70 max-w-2xl">{intro(player.name, player.count, player.teams, player.kids)}</p>
         </div>
       </section>
 

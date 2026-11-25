@@ -17269,5 +17269,71 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000152",
+    "title": "Real Betis 2026-27 Home Kids Kit – Parrott 19",
+    "slug": "real-betis-2026-27-home-kids-kit-parrott-19",
+    "description": "Real Betis's 2026-27 home kit in kids sizes, printed PARROTT 19 on the back in green. Green and white stripes with fine diagonal lines across the front, and a white polo collar that says 'Somos Balompié' on the inside. Gree is in black across the chest, with Revel on the sleeve, Trainline on the back and Champions League badges on the sleeves. The white shorts have green side panels, the crest and a green 19.\n\nTroy Parrott joined Betis from AZ Alkmaar in August 2026 and wears 19. Betis are in the Champions League this season for the first time since 2005-06. Shirt and shorts; socks aren't included.",
+    "price": 35,
+    "images": [
+      "/images/kids-kits/900000152-front.webp",
+      "/images/kids-kits/900000152-back.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Real Betis",
+      "season": "2026-27",
+      "kit": "Home",
+      "sponsor": "Gree",
+      "colours": "Green / White",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New",
+      "print": "Parrott 19",
+      "player": "Troy Parrott"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
+  },
+  {
+    "id": "900000153",
+    "title": "Ireland 2026 Home Kids Kit – Parrott 7",
+    "slug": "ireland-2026-home-kids-kit-parrott-7",
+    "description": "A kids version of Ireland's 2026 home kit, printed PARROTT 7 on the back in white. Deep green with a white V-neck, orange and white trim on the collar and cuffs, and a shamrock below the collar on the back. Sky is across the front. The green shorts have white side panels, the crest and a white 7.\n\nParrott wears 7 for Ireland. His hat-trick in Budapest in November 2025, with the winner in the 96th minute, beat Hungary 3-2 and sent Ireland into the World Cup play-offs. Shirt and shorts; socks aren't included.",
+    "price": 35,
+    "images": [
+      "/images/kids-kits/900000153-front.webp",
+      "/images/kids-kits/900000153-back.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Republic of Ireland",
+      "season": "2026",
+      "kit": "Home",
+      "sponsor": "Sky",
+      "colours": "Green / White / Orange",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New",
+      "print": "Parrott 7",
+      "player": "Troy Parrott"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
