@@ -17195,5 +17195,36 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000150",
+    "title": "Celtic 1989-91 Away Shirt",
+    "slug": "celtic-1989-91-away-shirt",
+    "description": "Celtic's 1989-91 away shirt in yellow, with rows of green and dark green chevrons across the chest and waist and pinstripes running down from them. A tonal swirl pattern runs through the yellow. The collar is green with yellow and white trim, and CR Smith sits in green across the front under the round 1888 crest.\n\nIt comes from Billy McNeill's second spell as Celtic manager, with Paul McStay running the midfield. Sizes S to 2XL; the size guide has measurements.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/celtic-1989-91-away-shirt-1.webp",
+      "/images/european-world-classics/celtic-1989-91-away-shirt-2.webp",
+      "/images/european-world-classics/celtic-1989-91-away-shirt-3.webp",
+      "/images/european-world-classics/celtic-1989-91-away-shirt-4.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Celtic",
+      "season": "1989-91",
+      "kit": "Away",
+      "sponsor": "CR Smith",
+      "colours": "Yellow / Green",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
