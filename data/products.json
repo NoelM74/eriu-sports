@@ -17237,5 +17237,37 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000151",
+    "title": "Celtic 1989-91 Home Shirt",
+    "slug": "celtic-1989-91-home-shirt",
+    "description": "Celtic's 1989-91 home shirt in green and white hoops, with a tonal geometric pattern woven through both colours. The white polo collar has green and dark green tipping and white buttons at the placket. CR Smith is in black across the middle, with the round 1888 crest on the chest.\n\nIt's from Billy McNeill's last two seasons as manager, when Celtic reached the 1990 Scottish Cup final and the League Cup final that October. Sizes S to 2XL; the size guide has measurements.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/celtic-1989-91-home-shirt-front.webp",
+      "/images/european-world-classics/celtic-1989-91-home-shirt-back.webp",
+      "/images/european-world-classics/celtic-1989-91-home-shirt-detail.webp",
+      "/images/european-world-classics/celtic-1989-91-home-shirt-sponsor.webp",
+      "/images/european-world-classics/celtic-1989-91-home-shirt-crest.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Celtic",
+      "season": "1989-91",
+      "kit": "Home",
+      "sponsor": "CR Smith",
+      "colours": "Green / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
