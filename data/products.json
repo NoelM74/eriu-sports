@@ -17164,5 +17164,35 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000149",
+    "title": "Celtic 1997-99 Home Shirt",
+    "slug": "celtic-1997-99-home-shirt",
+    "description": "Celtic's 1997-99 home shirt in green and white hoops, with a tonal pattern through the green and a large shadow crest across the middle. The white polo collar has Celtic stitched at the throat, and \"Scottish Premier Division Champions 1997/98\" is embroidered on the chest. There's no club sponsor; the kit maker's logo sits large in black across the front.\n\nThis is the shirt from the season Celtic stopped Rangers winning ten in a row. They needed a win on the last day, 9 May 1998, and beat St Johnstone 2-0 at Celtic Park, with goals from Henrik Larsson and Harald Brattbakk. Sizes S to 2XL; the size guide has measurements.",
+    "price": 25,
+    "images": [
+      "/images/european-world-classics/celtic-1997-99-home-shirt-1.webp",
+      "/images/european-world-classics/celtic-1997-99-home-shirt-2.webp",
+      "/images/european-world-classics/celtic-1997-99-home-shirt-3.webp",
+      "/images/european-world-classics/celtic-1997-99-home-shirt-4.webp"
+    ],
+    "collection": "European & World Classics",
+    "currency": "EUR",
+    "details": {
+      "team": "Celtic",
+      "season": "1997-99",
+      "kit": "Home",
+      "colours": "Green / White",
+      "fit": "Classic 90s cut, a little boxier than a modern shirt",
+      "condition": "New"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]

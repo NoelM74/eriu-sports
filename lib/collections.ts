@@ -70,11 +70,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro European & World Shirts",
     intro:
-      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Juventus, the Milan clubs, Lazio, Roma, Parma, Bayern, Ajax, PSG, Marseille and more. €25, or €35 with a player name and number. Delivered worldwide.",
+      "Great shirts from beyond the Premier League: Barcelona, Real Madrid, Celtic, Juventus, the Milan clubs, Lazio, Roma, Parma, Bayern, Ajax, PSG, Marseille and more. €25, or €35 with a player name and number. Delivered worldwide.",
     seoTitle: "Retro Barcelona, Real Madrid & Serie A Shirts",
     seoDescription:
       "Retro football shirts from Barcelona, Real Madrid, Inter, AC Milan, Juventus, Brazil and Italy. From €25. Worldwide delivery, free over €49.",
-    keywords: ["retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Lazio shirt", "retro Parma shirt", "retro Bayern Munich shirt", "retro Dortmund shirt", "retro Ajax shirt", "retro PSG shirt", "Ronaldinho PSG shirt", "retro Marseille shirt", "retro Chivas shirt", "retro European football shirts"],
+    keywords: ["retro Celtic shirt", "Celtic 1997-98 shirt", "Celtic 10 in a row shirt", "retro Fiorentina shirt", "Batistuta shirt", "retro Barcelona shirt", "Ronaldinho Barcelona shirt", "Ronaldo R9 shirt", "Baggio shirt", "retro Brazil shirt", "retro Inter Milan shirt", "retro AC Milan shirt", "Maldini shirt", "retro Napoli shirt", "Maradona Napoli shirt", "retro Serie A shirts", "retro Juventus shirt", "Del Piero shirt", "Zidane Juventus shirt", "retro Roma shirt", "retro Lazio shirt", "retro Parma shirt", "retro Bayern Munich shirt", "retro Dortmund shirt", "retro Ajax shirt", "retro PSG shirt", "Ronaldinho PSG shirt", "retro Marseille shirt", "retro Chivas shirt", "retro European football shirts"],
     priceFrom: 25,
   },
   {
