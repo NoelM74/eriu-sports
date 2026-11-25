@@ -25,6 +25,7 @@ Read this first. It records how the site is run, how we write everything, and th
 - Never claim charity money from our sales. A shirt may mention a charity event; we don't.
 - No false superlatives ("best", "perfect", "highest quality", "number one"). Be specific instead.
 - Don't invent history. If a fact can't be confirmed, leave it out. Check every date, score and name against a source.
+- Leave competition and sleeve badges (Champions League, league, FIFA, UEFA Foundation and so on) out of listings: they vary and may not be on the shirt we send (user, 25 November 2026). Badges that are part of the design (a centenary crest, a final's embroidered badge) can stay.
 - Describe only what's visible in the photo. Don't guess sponsors we can't read (ask the user, or say what is legible).
 - Leave sensitive subjects out of a shop listing (e.g. Hillsborough).
 - Don't name kit makers or their logos (adidas, Nike, Umbro, Reebok, trefoil, swoosh and so on) in listings. Sponsors on the shirt (Emirates, Spotify, Carlsberg) are fine. Retro adult shirts from the supplier import still carry some maker names; clean up when asked.
