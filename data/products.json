@@ -17134,5 +17134,35 @@
       "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
       "condition": "New"
     }
+  },
+  {
+    "id": "900000148",
+    "title": "Celtic 2026-27 Third Kids Kit",
+    "slug": "celtic-2026-27-third-kids-kit",
+    "description": "Celtic's 2026-27 third kit in kids sizes. A cream shirt with a pale gold pattern inspired by the tilework of Lisbon, dark green stripes on the shoulders and a dark green collar. The crest sits in the centre of the chest, with CELTIC across the back of the neck. Dark green shorts with cream side stripes and the crest. It completes the set marking 60 years since the Lisbon Lions won the European Cup. Shirt and shorts; socks aren't included.",
+    "price": 30,
+    "images": [
+      "/images/kids-kits/900000148-1.webp",
+      "/images/kids-kits/900000148-2.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Celtic",
+      "season": "2026-27",
+      "kit": "Third",
+      "colours": "Cream / Dark Green / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
