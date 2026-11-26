@@ -42,11 +42,11 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "football",
     h1: "Retro Ireland Jerseys",
     intro:
-      "The Ireland jerseys everyone remembers from Euro 88, Italia 90 and USA 94, plus League of Ireland jerseys from Bohemians and Cork City. €25 each, delivered worldwide.",
-    seoTitle: "Retro Ireland Jerseys | Italia 90, USA 94 & Euro 88",
+      "The Ireland jerseys everyone remembers from Euro 88, Italia 90, USA 94 and the 2002 World Cup, plus League of Ireland jerseys from Bohemians and Cork City. From €25, delivered worldwide.",
+    seoTitle: "Retro Ireland Jerseys | Italia 90, USA 94, Euro 88 & 2002",
     seoDescription:
-      "Retro Ireland jerseys from Euro 88, Italia 90 and USA 94, plus League of Ireland jerseys from Bohemians and Cork City. €25 each. Worldwide delivery, free over €49.",
-    keywords: ["retro Ireland jersey", "Ireland retro jersey", "vintage Ireland jersey", "retro Irish jersey", "retro Irish shirts", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "League of Ireland jersey", "Bohemians jersey", "Ireland 2026 jersey", "Troy Parrott Ireland jersey", "Parrott 7 jersey", "Cork City jersey"],
+      "Retro and vintage Ireland jerseys from Euro 88, Italia 90, USA 94 and 2002, plus Bohemians and Cork City. From €25. Worldwide delivery, free over €49.",
+    keywords: ["retro Ireland jersey", "Ireland retro jersey", "vintage Ireland jersey", "retro Irish jersey", "retro Irish shirts", "Italia 90 jersey", "USA 94 Ireland jersey", "Euro 88 Ireland shirt", "Republic of Ireland retro kit", "Ireland retro soccer jersey", "Ireland 2002 World Cup jersey", "Italia 90 Ireland jersey", "League of Ireland jersey", "Bohemians jersey", "Ireland 2026 jersey", "Troy Parrott Ireland jersey", "Parrott 7 jersey", "Cork City jersey"],
     priceFrom: 25,
     featured: "ireland-1990-italia-90-world",
   },
@@ -98,10 +98,10 @@ export const COLLECTIONS: CollectionDef[] = [
     h1: "GAA County Jerseys",
     intro:
       "Home, away and goalkeeper jerseys from across the counties. Player fit, so go up a size if you like it looser. €29.95 each, delivered worldwide.",
-    seoTitle: "GAA Jerseys | Dublin, Kerry, Mayo & More",
+    seoTitle: "GAA Jerseys 2026 | Dublin, Tyrone, Louth & More",
     seoDescription:
-      "County GAA jerseys including Dublin, Kerry, Mayo, Galway, Cork, Donegal and Limerick. €29.95 each. Worldwide delivery, free over €49.",
-    keywords: ["GAA jerseys", "county GAA jersey", "Dublin GAA jersey", "Kerry GAA jersey", "Mayo GAA jersey", "GAA goalkeeper jersey"],
+      "County GAA jerseys for 2026: Dublin, Tyrone, Louth, Tipperary, Down, Wexford and more, plus goalkeeper jerseys. €29.95, player fit. Free delivery over €49.",
+    keywords: ["GAA jerseys", "GAA jerseys 2026", "county jerseys 2026", "new GAA jerseys 2026", "county GAA jersey", "Louth GAA jersey", "Louth jersey 2026", "Tipperary jersey 2026", "Tyrone jersey 2026", "Down GAA jersey 2026", "Dublin jersey 2026", "Wicklow GAA jersey", "Galway GAA jersey", "Wexford jersey 2026", "Cavan jersey 2026", "Kildare jersey 2026", "Limerick goalkeeper jersey", "Mayo goalkeeper jersey", "Dublin GAA jersey", "Kerry GAA jersey", "Mayo GAA jersey", "GAA goalkeeper jersey"],
     priceFrom: 29.95,
   },
   {

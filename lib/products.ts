@@ -286,6 +286,8 @@ export interface PlayerSummary extends Player {
   retro: boolean;
   minPrice: number;
   maxPrice: number;
+  /** Numbers printed on the player's shirts, by club or country, in career order (e.g. PSG 21 and 10). */
+  numbers: { team: string; numbers: string[] }[];
 }
 
 function seasonStart(p: Product): number {
@@ -315,6 +317,14 @@ export function getPlayers(min = 2): PlayerSummary[] {
         retro: list.every((p) => seasonStart(p) < 2020),
         minPrice: Math.min(...list.map((p) => p.price)),
         maxPrice: Math.max(...list.map((p) => p.price)),
+        numbers: sorted.reduce<{ team: string; numbers: string[] }[]>((acc, p) => {
+          const team = p.club?.name;
+          const n = p.details.print?.match(/(\d+)\s*$/)?.[1];
+          if (!team || !n) return acc;
+          const g = acc.find((x) => x.team === team) ?? acc[acc.push({ team, numbers: [] }) - 1];
+          if (!g.numbers.includes(n)) g.numbers.push(n);
+          return acc;
+        }, []),
       };
     })
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));

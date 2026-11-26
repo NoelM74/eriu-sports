@@ -16,7 +16,7 @@ export const COLLECTION_ABOUT: Record<string, AboutCopy> = {
       "Euro 88 was Ireland's first major tournament. In the opening game in Stuttgart, Ray Houghton looped a header over Peter Shilton and Ireland beat England 1-0.",
       "Two years later came Italia 90, the first World Cup. Packie Bonner saved from Daniel Timofte, David O'Leary scored the last penalty against Romania, and Italy ended the run 1-0 in the quarter-final in Rome.",
       "The 1992-94 jerseys took Ireland through qualifying for USA 94, which came down to Alan McLoughlin's equaliser at Windsor Park. At Giants Stadium, Houghton chipped Pagliuca and Ireland beat Italy 1-0, their first win at a World Cup finals.",
-      "There are League of Ireland jerseys here too. Cork City's 1988-89 Guinness jersey is from their first FAI Cup final, and Bohemians' Fontaines D.C. jersey is in the colours of the band's album Romance. Every one is a fan replica, €25 each.",
+      "There are League of Ireland jerseys here too. Cork City's 1988-89 Guinness jersey is from their first FAI Cup final, and Bohemians' Fontaines D.C. jersey is in the colours of the band's album Romance. Every one is a fan replica, from €25.",
     ],
     links: [
       { href: '/blog/ireland-euro-88-shirt', label: 'Ireland at Euro 88' },
@@ -57,6 +57,23 @@ export const PLAYER_ABOUT: Record<string, AboutCopy> = {
       'At Milan, Clarence Seedorf already had the 10, so he took 80 for 1980, the year he was born. Printed shirts are €35, in sizes S to 2XL.',
     ],
     links: [{ href: '/blog/ronaldinho-shirts-psg-barcelona-milan', label: "Ronaldinho's shirts: the full story" }],
+  },
+  'ronaldo-nazario': {
+    heading: "Ronaldo's numbers",
+    paragraphs: [
+      'Ronaldo wore 9 at PSV and for Brazil, 10 and then 9 at Inter, 11 and then 9 at Real Madrid, and 99 at AC Milan. At the 1994 World Cup, aged 17, he was Brazil\'s 20.',
+      "He came back from two years of knee injuries to win the 2002 World Cup, scoring eight goals, including both in the 2-0 final against Germany. That December he won his second Ballon d'Or.",
+      'Most of our shirts carry the number he wore that season. Where he never wore that shirt, the listing says so. Adult shirts are €35 in sizes S to 2XL, and the Brazil 2002 kids kit is €35 for ages 2 to 13.',
+    ],
+    links: [{ href: '/blog/ronaldo-r9-career-in-shirts', label: 'Ronaldo R9: a career in shirts' }],
+  },
+  'thierry-henry': {
+    heading: "Thierry Henry's 14",
+    paragraphs: [
+      "Thierry Henry joined Arsenal from Juventus in August 1999 and wore 14. He scored 228 goals in 377 games, more than anyone in the club's history.",
+      "He passed Ian Wright's club record with two goals against Sparta Prague in October 2005. In the last game at Highbury, on 7 May 2006, he scored a hat-trick against Wigan.",
+      'Our Henry 14 shirts run from the Invincibles season to Highbury\'s last. The 1998-99 home is from before he signed, so that print is fan-style. Printed shirts are €35, in sizes S to 2XL.',
+    ],
   },
   'troy-parrott': {
     heading: "Troy Parrott's numbers",

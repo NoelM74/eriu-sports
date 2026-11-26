@@ -31,9 +31,14 @@ function formatPrice(p: number) {
 
 const clip = clipDescription;
 
+/** First sentence for a meta description. A long one is cut at its last comma that fits, so it never stops mid-word. */
 function firstSentence(text: string, max = 110) {
   const s = text.split(/(?<=\.)\s/)[0];
-  return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const comma = Math.max(cut.lastIndexOf(', '), cut.lastIndexOf(': '));
+  if (comma > 50) return `${cut.slice(0, comma)}.`;
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:\s]+$/, '')}…`;
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -46,7 +51,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   // Named shirts share a description with their plain version, so lead with the print to keep each one unique.
   const printed = product.details.print ? `Printed ${product.details.print}. ` : '';
   // Two versions of the same named shirt (e.g. a Champions League edition) also lead with the title.
-  const body = `${firstSentence(product.description)} ${price}, sizes ${sizeRange}. Worldwide delivery, free over €49.`;
+  const fit = /GAA/.test(product.collection) ? 'player fit, ' : '';
+  const body = `${firstSentence(product.description)} ${price}, ${fit}sizes ${sizeRange}. Worldwide delivery, free over €49.`;
   const twins = allProducts.filter((p) => p.details.print === product.details.print && firstSentence(p.description) === firstSentence(product.description));
   const lead = twins.length > 1 ? `${product.title}. ` : printed;
   const description = clip(`${lead}${body}`, 160);

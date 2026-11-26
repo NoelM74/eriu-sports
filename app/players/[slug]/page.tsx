@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { clipDescription } from '@/lib/seo';
+import { clipDescription, pageTitle } from '@/lib/seo';
 import Link from 'next/link';
 import AboutSection from '@/components/catalog/AboutSection';
 import { PLAYER_ABOUT } from '@/lib/page-copy';
@@ -21,16 +21,62 @@ export function generateStaticParams() {
 
 const list = new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' });
 
+/** Short names searchers use, for titles where space is tight. */
+const SHORT_TEAM: Record<string, string> = {
+  'Paris Saint-Germain': 'PSG',
+  'Arsenal FC': 'Arsenal',
+  'Liverpool FC': 'Liverpool',
+  'Chelsea FC': 'Chelsea',
+  'Manchester United': 'Man United',
+  'Inter Milan': 'Inter',
+  'PSV Eindhoven': 'PSV',
+  'Republic of Ireland': 'Ireland',
+  'Tottenham Hotspur': 'Spurs',
+};
+
+/**
+ * Hand-written titles where the automatic one misses how people search. Ronaldo has five clubs and
+ * people type "ronaldo 9", "r9" and "ronaldo psv shirt", so name the clubs rather than the numbers.
+ */
+const TITLE_OVERRIDE: Record<string, string> = {
+  'ronaldo-nazario': 'Ronaldo R9 Shirts | Brazil, Inter, Real Madrid & PSV',
+};
+
+function what(player: PlayerSummary) {
+  return player.kids ? 'kids kits' : player.someKids ? 'shirts and kids kits' : player.retro ? 'retro shirts' : 'shirts';
+}
+
+/** "PSG 21 and 10, Barcelona 10 and AC Milan 80": the numbers on our shirts, in career order. */
+function numberList(player: PlayerSummary) {
+  return player.numbers.map((g) => `${g.team.replace(/ FC$/, '')} ${list.format(g.numbers)}`);
+}
+
 function intro(player: PlayerSummary) {
-  const what = player.kids
-    ? 'kids kits'
-    : player.someKids
-      ? 'shirts and kids kits'
-      : player.retro
-        ? 'retro shirts'
-        : 'shirts';
   const price = player.minPrice === player.maxPrice ? `€${player.minPrice} each` : `€${player.minPrice} to €${player.maxPrice}`;
-  return `${player.count} ${what} printed with ${player.name}'s name and number, from ${list.format(player.teams)}. ${price}. Worldwide delivery, free over €49.`;
+  const numbers = numberList(player);
+  const from = numbers.length ? list.format(numbers) : list.format(player.teams);
+  return `${player.name} ${what(player)} with name and number: ${from}. ${player.count} in stock, ${price}. Worldwide delivery, free over €49.`;
+}
+
+/**
+ * Search title that names the clubs and numbers people type ("ronaldinho psg shirt", "ronaldo psv shirt"):
+ * "Ronaldinho Shirts | PSG 21, Barcelona 10 & AC Milan 80". Pairs are added in career order while they fit.
+ */
+function playerTitle(player: PlayerSummary) {
+  const lead = `${player.name} ${player.kids ? 'Kids Kits' : player.someKids ? 'Shirts & Kids Kits' : 'Shirts'}`;
+  if (TITLE_OVERRIDE[player.slug]) return TITLE_OVERRIDE[player.slug];
+  const pairs = player.numbers.map((g) => `${SHORT_TEAM[g.team] ?? g.team} ${g.numbers[0]}`);
+  const parts: string[] = [];
+  for (const pair of pairs) {
+    const next = [...parts, pair];
+    const tail = next.length > 1 ? `${next.slice(0, -1).join(', ')} & ${next[next.length - 1]}` : next[0];
+    if (`${lead} | ${tail}`.length > 60) break;
+    parts.splice(0, parts.length, ...next);
+  }
+  if (!parts.length) return `${lead} | ${player.retro ? 'Retro ' : ''}Name & Number`;
+  const tail = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} & ${parts[parts.length - 1]}` : parts[0];
+  // One club only: say "Retro" too, as in "Thierry Henry Shirts | Retro Arsenal 14".
+  return `${lead} | ${parts.length === 1 && player.retro ? 'Retro ' : ''}${tail}`;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!player) return { title: 'Player not found' };
   const description = clipDescription(intro(player));
   return {
-    title: `${player.name} ${player.kids ? 'Kids Kits' : 'Shirts'} | ${player.retro ? 'Retro ' : ''}Name & Number`,
+    title: pageTitle(playerTitle(player)),
     description,
     alternates: { canonical: `/players/${player.slug}` },
     openGraph: {

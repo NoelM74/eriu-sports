@@ -6,7 +6,8 @@ import { notFound } from 'next/navigation';
 import ProductCard from '@/components/catalog/ProductCard';
 import { CATEGORIES } from '@/lib/collections';
 import { getClubs, getClubBySlug, getProductsByClub, toCard } from '@/lib/products';
-import { clubHeading, clubIntro, groupByDecade } from '@/lib/clubs';
+import { clubHeading, clubIntro, clubTitle, groupByDecade } from '@/lib/clubs';
+import { clipDescription, pageTitle } from '@/lib/seo';
 import { ldJson } from '@/lib/jsonld';
 
 const SITE = 'https://eriusports.com';
@@ -25,10 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!club) return { title: 'Club not found' };
   const items = getProductsByClub(slug);
   const heading = clubHeading(club, items);
-  const description = clubIntro(club, items);
+  const description = clipDescription(clubIntro(club, items));
   const image = items[0]?.images[0];
   return {
-    title: `${heading} | Home & Away Kits`,
+    title: pageTitle(clubTitle(club, items)),
     description,
     alternates: { canonical: `/clubs/${club.slug}` },
     // A single-shirt page is too thin to be worth indexing yet.
