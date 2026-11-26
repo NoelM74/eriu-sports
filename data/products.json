@@ -17493,5 +17493,38 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000159",
+    "title": "AC Milan 2006-07 Home Kids Kit – Maldini 3",
+    "slug": "ac-milan-2006-07-home-kids-kit-maldini-3",
+    "description": "Milan's 2006-07 home kit in kids sizes, printed MALDINI 3 on the back in gold. The red and black stripes are framed by black panels, with thin gold piping curving over the shoulders. The black collar is trimmed in red, and red stripes run down the sleeves. bwin is across the chest in white with a yellow dot, and the crest sits under a gold star on the left. The black shorts have red stripes and gold piping, with the crest, star and a gold 3 on the leg.\n\nPaolo Maldini wore 3 and captained Milan to the 2007 Champions League, beating Liverpool 2-1 in Athens. Shirt and shorts; socks aren't included.",
+    "price": 35,
+    "images": [
+      "/images/kids-kits/900000159-front.webp",
+      "/images/kids-kits/900000159-back.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "AC Milan",
+      "season": "2006-07",
+      "kit": "Home",
+      "sponsor": "bwin",
+      "colours": "Red / Black / Gold",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New",
+      "print": "Maldini 3",
+      "player": "Paolo Maldini"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
