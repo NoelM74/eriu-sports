@@ -16,12 +16,12 @@ interface ImageGalleryProps {
  */
 /**
  * Alt text for image search: the title and colours, plus which view it is when the
- * file name says so (-front, -back, -detail, -sponsor, -crest); otherwise "view N".
+ * file name says so (-front, -back, -detail, -sponsor, -crest, -print); otherwise "view N".
  */
 function photoAlt(title: string, src: string, idx: number): string {
   if (idx === 0) return title;
-  const view = src.match(/-(front|back|detail|sponsor|crest)\.webp$/)?.[1];
-  const label = { front: 'front', back: 'back', detail: 'close-up of the chest', sponsor: 'close-up of the sponsor', crest: 'close-up of the crest' }[view ?? ''];
+  const view = src.match(/-(front|back|detail|sponsor|crest|print)\.webp$/)?.[1];
+  const label = { front: 'front', back: 'back', detail: 'close-up of the chest', sponsor: 'close-up of the sponsor', crest: 'close-up of the crest', print: 'close-up of the name and number' }[view ?? ''];
   return `${title}, ${label ?? `view ${idx + 1}`}`;
 }
 

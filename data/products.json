@@ -17559,5 +17559,39 @@
       "XL",
       "2XL"
     ]
+  },
+  {
+    "id": "900000161",
+    "title": "Brazil 2002 World Cup Home Kids Kit – Ronaldo 9",
+    "slug": "brazil-2002-world-cup-home-kids-kit-ronaldo-9",
+    "description": "Brazil's 2002 World Cup home kit in kids sizes, printed RONALDO 9 on the back in green. The yellow shirt has green stripes over the shoulders and green panels down the sides, with a green 9 on the chest. The crest sits on the left under four stars, with BRASIL beneath it. The blue shorts have white piping, a white 9 and the crest on the leg.\n\nRonaldo scored eight goals at the 2002 World Cup, including both in the 2-0 final against Germany in Yokohama. Shirt and shorts; socks aren't included.",
+    "price": 35,
+    "images": [
+      "/images/kids-kits/900000161-front.webp",
+      "/images/kids-kits/900000161-back.webp",
+      "/images/kids-kits/900000161-detail.webp",
+      "/images/kids-kits/900000161-print.webp"
+    ],
+    "collection": "Kids Football Kits",
+    "currency": "EUR",
+    "details": {
+      "team": "Brazil",
+      "season": "2002",
+      "kit": "Home",
+      "colours": "Yellow / Green / Blue",
+      "fit": "Kids sizes, ages 2 to 13. Go by height rather than age",
+      "condition": "New",
+      "print": "Ronaldo 9",
+      "player": "Ronaldo Nazário"
+    },
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ]
   }
 ]
