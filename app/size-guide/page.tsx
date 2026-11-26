@@ -30,6 +30,7 @@ const TIPS = [
   'Between two sizes? Go up one for a relaxed fit.',
   '90s shirts are cut a bit boxier than modern ones. Each listing tells you the fit.',
   'Many listings also show the shirt measured flat, so you can compare with a shirt you own.',
+  'A football shirt weighs between 150g and 240g (about 5 to 8.5oz), depending on the size.',
 ];
 
 export default function SizeGuidePage() {

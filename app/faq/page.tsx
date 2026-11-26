@@ -60,6 +60,10 @@ const FAQS: { section: string; items: { q: string; a: string }[] }[] = [
         q: 'What sizes do you stock?',
         a: 'Adult shirts and jerseys come in S to 2XL. Each shirt page shows its sizes. Check the size guide if you are between sizes.',
       },
+      {
+        q: 'How much does a football shirt weigh?',
+        a: 'Our football shirts weigh between 150g and 240g (about 5 to 8.5oz), depending on the size.',
+      },
     ],
   },
   {
