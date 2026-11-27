@@ -41,7 +41,10 @@ const nextConfig: NextConfig = {
       // AFL jerseys withdrawn (availability, user 27 November 2026): send visitors to the club page.
       { source: "/products/essendon-bombers-dreamtime-indigenous-afl-jersey", destination: "/clubs/essendon-bombers", permanent: true },
       { source: "/products/hawthorn-hawks-indigenous-afl-jersey", destination: "/clubs/hawthorn-hawks", permanent: true },
-      { source: "/products/richmond-tigers-dreamtime-indigenous-afl-jersey", destination: "/clubs/richmond-tigers", permanent: true },
+      // Richmond has nothing left in stock, so its club page is gone: use the AFL collection.
+      { source: "/products/richmond-tigers-dreamtime-indigenous-afl-jersey", destination: "/collections/afl-jerseys", permanent: true },
+      { source: "/products/richmond-tigers-black-tiger-afl-jersey", destination: "/collections/afl-jerseys", permanent: true },
+      { source: "/clubs/richmond-tigers", destination: "/collections/afl-jerseys", permanent: true },
       { source: "/products/fremantle-dockers-afl-away-jersey", destination: "/clubs/fremantle-dockers", permanent: true },
       { source: "/products/gold-coast-suns-sunburst-indigenous-afl-jersey", destination: "/clubs/gold-coast-suns", permanent: true },
       // Language paths from an earlier version of the site (Search Console 404s, October 2026).

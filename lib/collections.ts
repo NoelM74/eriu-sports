@@ -123,7 +123,7 @@ export const COLLECTIONS: CollectionDef[] = [
     category: "afl",
     h1: "AFL Jerseys",
     intro:
-      "Aussie Rules jerseys: home and away jerseys from Brisbane, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, Richmond, St Kilda and Sydney, Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, St Kilda and the Western Bulldogs, plus women's AFLW home, Indigenous and Pride jerseys from clubs including Sydney and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
+      "Aussie Rules jerseys: home and away jerseys from Brisbane, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, St Kilda and Sydney, Indigenous designs from Adelaide, Brisbane, Carlton, Collingwood, Essendon, Fremantle, Gold Coast, GWS Giants, Hawthorn, Melbourne, North Melbourne, Port Adelaide, St Kilda and the Western Bulldogs, plus women's AFLW home, Indigenous and Pride jerseys from clubs including Sydney and Port Adelaide. Sleeveless, regular fit. €25 each, delivered worldwide.",
     seoTitle: "AFL Jerseys | Ireland, UK & Worldwide Delivery",
     seoDescription:
       "AFL jerseys from Adelaide, Carlton, Collingwood, Geelong, Gold Coast, GWS Giants, St Kilda and more, with Indigenous designs. €25 each, free delivery over €49.",
