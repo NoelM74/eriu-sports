@@ -9,6 +9,7 @@ import KidsKitsBrowser from '@/components/catalog/KidsKitsBrowser';
 import { COLLECTIONS, getCollectionBySlug, CATEGORIES } from '@/lib/collections';
 import { getProductsByCollectionSlug, groupKidsKits, toCard, type ClubSummary } from '@/lib/products';
 import { ldJson } from '@/lib/jsonld';
+import { pageTitle } from '@/lib/seo';
 
 const SITE = 'https://eriusports.com';
 
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!c) return { title: 'Collection not found' };
   const image = getProductsByCollectionSlug(slug)[0]?.images[0];
   return {
-    title: c.seoTitle,
+    title: pageTitle(c.seoTitle),
     description: c.seoDescription,
     keywords: c.keywords,
     alternates: { canonical: `/collections/${c.slug}` },

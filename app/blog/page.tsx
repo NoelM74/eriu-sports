@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getPosts, readingMinutes, formatDate } from '@/lib/blog';
 import { OG_IMAGES } from '@/lib/seo';
+import { ldJson } from '@/lib/jsonld';
+
+const SITE = 'https://eriusports.com';
 
 export const metadata: Metadata = {
   title: 'Shirt Stories | Retro Football & GAA Jersey History',
@@ -19,9 +22,27 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getPosts();
+  // Blog with its posts, so search and AI answers can see every story from the index.
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Shirt Stories',
+    url: `${SITE}/blog`,
+    description: 'The seasons, matches and players behind our retro football shirts and GAA jerseys.',
+    publisher: { '@type': 'Organization', name: 'Ériu Sports', url: SITE },
+    blogPost: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: `${SITE}/blog/${post.slug}`,
+      datePublished: post.datePublished,
+      dateModified: post.dateModified ?? post.datePublished,
+      image: `${SITE}${post.heroImage}`,
+    })),
+  };
 
   return (
     <div className="bg-white min-h-screen py-12 md:py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <h1 className="text-4xl font-extrabold text-[#0F2131] uppercase tracking-tight mb-3">Shirt Stories</h1>

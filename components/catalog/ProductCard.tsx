@@ -76,7 +76,7 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       </Link>
 
       <div className="pt-3 pb-2">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-[#1C7C83] mb-0.5">
+        <p className="text-[11px] font-bold uppercase tracking-widest text-[#1C7C83] mb-0.5">
           {product.collection}
         </p>
         <Link href={`/products/${product.slug}`}>

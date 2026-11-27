@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#0F2131]/10 shadow-sm">
-      <div className="bg-[#0F2131] text-white text-center text-[10px] sm:text-[11px] py-2 px-2 tracking-[0.18em] uppercase font-bold">
+      <div className="bg-[#0F2131] text-white text-center text-[11px] py-2 px-2 tracking-[0.12em] sm:tracking-[0.18em] uppercase font-bold">
         <span className="whitespace-nowrap">Free delivery over €49</span> <span className="text-[#1C7C83] px-1">·</span>{" "}
         <span className="whitespace-nowrap">€5 worldwide delivery</span>
         <span className="hidden sm:inline"><span className="text-[#1C7C83] px-1">·</span> 10–16 days to Ireland &amp; UK</span>

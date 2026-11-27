@@ -6,7 +6,7 @@ import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Shop by Player | Retro Shirts with Name & Number',
-  description: `Retro football shirts printed with the names of the greats: Ronaldo, Baggio, Henry, Bergkamp, Ronaldinho and Gerrard. €35 each. Worldwide delivery, free over €49.`,
+  description: `Football shirts printed with the names of the greats: Ronaldo, Baggio, Henry, Bergkamp, Ronaldinho and Gerrard. From €30, free delivery over €49.`,
   alternates: { canonical: '/players' },
   openGraph: {
     title: 'Shop by Player | Ériu Sports',
@@ -26,7 +26,7 @@ export default function PlayersPage() {
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#1C7C83] mb-3">Name &amp; number shirts</p>
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight">Shop by Player</h1>
           <p className="mt-4 text-base md:text-lg text-white/80 max-w-2xl">
-            Retro shirts printed with the names of the greats. €35 each. Worldwide delivery, free over €49.
+            Retro shirts printed with the names of the greats, €35 each, plus this season&apos;s Troy Parrott shirts at €30. Worldwide delivery, free over €49.
           </p>
         </div>
       </section>

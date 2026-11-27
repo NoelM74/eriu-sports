@@ -7,7 +7,7 @@ import { OG_IMAGES } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Size Guide | Retro Football Shirt Sizes S–2XL',
   description:
-    'Size charts in cm and inches for retro football shirts (S to 2XL, with a height and weight guide), GAA jerseys (S to 2XL) and AFL jerseys, men\'s and women\'s (S to 2XL).',
+    'Size charts in cm and inches for retro football shirts, GAA and AFL jerseys (S to 2XL, men\'s and women\'s AFL) and kids kits (ages 2 to 13).',
   alternates: { canonical: '/size-guide' },
   openGraph: {
     title: 'Size Guide | Ériu Sports',
